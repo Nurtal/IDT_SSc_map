@@ -187,6 +187,103 @@ ElementTree parse of the converted SBML:
 
 **Impact on the ROADMAP:** Phase 1 / week 1 risk-down item ✅ done. Risk R2 (Reactome → CellDesigner incompatibilities) lowered from medium to low. The 60/40 import/manual split stands.
 
+### 15:45 — Phase 1 / week 3 omics decision memo
+
+`docs/omics_decision.md` written (intentionally entered early — revisable until 5 Jun). Summary:
+
+- **Primary:** Tabib 2021 scRNAseq (GSE138669). Rationale: novelty (first sc × MIM overlay in SSc skin), resolution (SFRP2⁺/PRSS23⁺ fibroblasts and myofibroblasts match M2/M3 modelling), feasibility (~50k cells, fits on a workstation), stub infrastructure already in place.
+- **Reserve:** Whitfield/GENISOS/PRESS bulk. Switch triggers documented (clean signal absent by end-week-16, or QC retention < 30k cells, or bioinfo FTE drop).
+- **Complementary:** project Whitfield intrinsic subsets onto the MIM as a sanity check even on the primary path (1 day add in week 16). Strengthens F2.
+
+Open items: confirm Tabib metadata contains mRSS / disease duration / autoAb status; bioinformatician availability; kickoff sign-off.
+
+### 16:15 — Post-processor implemented and refined
+
+`scripts/post_process_reactome.py` (stdlib only) implements the three transforms from the Reactome decision:
+
+1. Rename species `id` from MINERVA UUIDs to `<sanitised_name>__<compartment_short>`.
+2. Collapse cofactor duplicates within the same compartment (ATP/ADP/H₂O/Pi/…). Each cofactor list-encoded.
+3. Remove free ubiquitin species; per `curation_guidelines.md` § 5 ubiquitination is a state variable.
+
+Also: rewrites `species`, `reactant`, `product`, `modifiers` attribute references, and `rdf:about` (uses `metaid` ⇒ kept consistent by also rewriting `metaid` to match the new `id`). Walks for orphan reactions and removes any reaction left with zero participants. Outputs both the processed XML and a JSON report.
+
+**Two bugs found and fixed during iteration:**
+
+1. **First run had 176 leftover UUID references.** Root cause: `rdf:about` references `metaid`, not `id`. I'd renamed `id` and `rdf:about` but left `metaid` as the old UUID, which would have broken downstream RDF cross-refs. Fix: rewrite `metaid` to match the new `id`. Leftovers dropped to 77.
+
+2. **Second run had 77 leftover UUIDs in `<celldesigner:reactantLink reactant="...">`, `<celldesigner:productLink product="...">`, and `<celldesigner:modifierLink modifiers="...">`.** These are CellDesigner-specific reaction-visualisation elements that use the attribute names `reactant` / `product` / `modifiers` rather than `species`. Fix: extend the rewrite to those attributes too; `modifiers` is space-separated so handled as a list. Leftovers dropped to **0**.
+
+Applied successfully to M2-TGFβ: 100 species → 99 (one free ubiquitin removed), 46 reactions → 46.
+
+### 16:45 — Fetched the other Reactome-anchored pathways
+
+Three more pilot runs through `scripts/reactome_pilot.py`:
+
+| Module | Pathway | Reactome stable ID | species | reactions | sizes |
+|--------|---------|---------------------|---------|-----------|-------|
+| M1 | Interferon α/β signaling | R-HSA-909733 | 83 | 25 | 63 / 488 / 288 kB |
+| M2 | Signaling by PDGF | R-HSA-186797 | 76 | 31 | 65 / 527 / 274 kB |
+| M4 | Interleukin-6 signaling | R-HSA-1059683 | 64 | 34 | 56 / 178 / 240 kB |
+
+All three converted cleanly via the MINERVA API. Post-processor applied; all four (M1, M2-TGFβ, M2-PDGF, M4) post-processed files have zero UUID leftovers.
+
+**Aggregate raw imported volume across the four pathways:**
+
+- 322 species (deduped to 308 unique cross-import)
+- 136 reactions
+- Module M3 (EndoMT) intentionally not imported — no high-quality Reactome anchor; M3 will be assembled from WikiPathways EndMT scaffold + manual curation in weeks 8–9.
+
+This already sits in the volumetric target ballpark (200–300 species, 300–450 reactions) for raw imports, before SSc-specific additions and cross-module dedupe. M3 will add a smaller batch (~60 species mostly manual), and SSc-specific Tier-1 additions will pad each module.
+
+### 17:00 — Seeded species_annotations.tsv from imports
+
+`scripts/seed_species_from_imports.py` parses every `*.processed.xml` under `curation/imports/`, dedupes by `species_id`, infers `module` from the parent directory, auto-fills `hgnc_symbol` when the name matches the HGNC regex, and writes idempotently to the annotation TSV. First run:
+
+```
+scanned 4 processed import(s)
+existing rows: 0
+new species:   308
+wrote curation/annotations/species_annotations.tsv: 308 total rows
+```
+
+Examples of clean rows (auto-HGNC):
+
+```
+ISG20__nuc      ISG20         nucleoplasm    M1
+GBP2__cyto      GBP2          cytosol        M1
+IFIT2__cyto     IFIT2         cytosol        M1
+PTPN1__cyto     PTPN1         cytosol        M1
+```
+
+Examples of rows that need manual cleanup (Reactome encoded biology in the name; documented as the "import-cleanup backlog" in `docs/import_pilot.md`):
+
+```
+p_minus_STAT2:p_minus_STAT1                # phospho-STAT1/2 dimer
+STAT1_minus_1                              # STAT1 isoform 1
+SOCS_minus_1_slash_SOCS_minus_3            # SOCS1/SOCS3 grouped
+Mx_space_GTPases                           # MX1+MX2 grouped
+OAS_space_proteins                         # OAS1+OAS2+OAS3 grouped
+Type_space_I_space_IFN_minus_regulated_…   # gene-set placeholder
+Dimeric_space_TGFB1                        # TGF-β1 homodimer
+```
+
+This is one of those moments where the import did most of the work but the next 30% (which is the curator's actual job) becomes visible.
+
+### 17:15 — Scripts-smoke CI workflow
+
+`.github/workflows/scripts-smoke.yml` — runs Python 3.11, compiles every `scripts/*.py` with `py_compile`, exercises `--help` on each, runs the linters in informational mode, dry-runs the Reactome pilot, and dry-runs the species seeder. Catches syntax errors and broken `--help` formatting before they reach the lint CI.
+
+Locally: `for f in scripts/*.py; do python3 -m py_compile "$f"; done` → all six scripts compile cleanly.
+
+### 17:30 — Batch 3 ready to commit
+
+Will split into four commits for traceability:
+
+1. `feat(phase1): omics dataset decision (Tabib scRNAseq primary, Whitfield bulk reserve)`
+2. `feat(scripts): Reactome post-processor + applied to M2 pilot`
+3. `feat(imports): M1 IFN-I + M2 PDGF + M4 IL-6 Reactome imports (post-processed)`
+4. `feat(annotations): seed species_annotations.tsv from imports; scripts-smoke CI; doc updates`
+
 ### 15:00 — Notebook stubs for the omics overlay
 
 Six JSON-skeleton notebooks under `analysis/overlay/tabib_scRNAseq/`:

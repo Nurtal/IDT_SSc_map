@@ -1,0 +1,51 @@
+name: scripts-smoke
+
+on:
+  push:
+    paths:
+      - "scripts/**.py"
+      - ".github/workflows/scripts-smoke.yml"
+  pull_request:
+    paths:
+      - "scripts/**.py"
+      - ".github/workflows/scripts-smoke.yml"
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Lint scripts compile
+        run: |
+          set -e
+          for f in scripts/*.py; do
+            echo "[compile] $f"
+            python -m py_compile "$f"
+          done
+
+      - name: --help on every script
+        run: |
+          set -e
+          for f in scripts/*.py; do
+            echo "[help] $f"
+            python "$f" --help > /dev/null 2>&1 || python "$f" -h > /dev/null 2>&1 || echo "  (no --help; ok)"
+          done
+
+      - name: Run linters in informational mode
+        run: |
+          python scripts/check_module_specs.py docs/module_specs
+          python scripts/check_bib.py curation/pubmed_corpus.bib
+
+      - name: Reactome pilot — dry run
+        run: |
+          python scripts/reactome_pilot.py --pathway R-HSA-2173789 --module M2 --dry-run
+
+      - name: Seed species — dry run
+        run: |
+          python scripts/seed_species_from_imports.py --dry-run

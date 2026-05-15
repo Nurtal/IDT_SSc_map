@@ -73,3 +73,39 @@ Observations:
 - HGNC-friendly names are present on `<species>` `name=` attributes (CBL, FURIN, SMAD2, …), so the rename pass is a `name → id` transform plus a deduplication.
 
 **Decision (logged in `docs/decisions/2026-05-15_reactome_import.md`):** adopt the import → post-process → curate workflow.
+
+## Post-processor results (2026-05-15)
+
+`scripts/post_process_reactome.py` applied to the four pathway imports. All four post-processed XMLs have zero UUID leftovers; reactions reference renamed HGNC-based species IDs.
+
+| Module | Pathway | species (in→out) | reactions (in→out) | Ub removed |
+|--------|---------|------------------|--------------------|------------|
+| M1 | R-HSA-909733 (IFN α/β signaling) | 83 → 83 | 25 → 25 | 0 |
+| M2 | R-HSA-2173789 (TGF-β / SMADs) | 100 → 99 | 46 → 46 | 1 |
+| M2 | R-HSA-186797 (PDGF signaling) | 76 → 76 | 31 → 31 | 0 |
+| M4 | R-HSA-1059683 (IL-6 signaling) | 64 → 64 | 34 → 34 | 0 |
+| **Total** | | **323 → 322** | **136 → 136** | **1** |
+
+No cofactor collapses occurred — each cofactor (ATP, ADP, H₂O, Pi) appears exactly once per compartment in the Reactome convention, which is already what we want.
+
+## Known gotchas surfaced by the four imports
+
+Reactome encodes several biological details inside the `name` attribute that survive the post-process step and need to be normalised in the curation phase (Phase 2):
+
+| Pattern in name | Biological meaning | Curation action |
+|-----------------|---------------------|-----------------|
+| `p_minus_STAT2`, `p_minus_Y701_minus_STAT1` | phosphorylation (`p-` prefix; sometimes residue-specific) | Encode as a CellDesigner state variable (`@P` or `@P:S<residue>`) on the parent species; collapse multiple phospho-states |
+| `STAT1_minus_1` | isoform 1 of STAT1 | Encode as a state variable or rename to `STAT1_iso1`; check UniProt for canonical isoform |
+| `SOCS_minus_1_slash_SOCS_minus_3` | grouped entity `SOCS1/SOCS3` | Split into two distinct species |
+| `Mx_space_GTPases` | the Mx family (MX1, MX2) | Split into MX1 and MX2 |
+| `IRF_space_1_minus_9` | "IRF 1-9" (IRF family) | Split into IRF1…IRF9 individually |
+| `OAS_space_proteins` | OAS family | Split into OAS1, OAS2, OAS3 |
+| `Type_space_I_space_IFN_minus_regulated_space_genes_…` | a gene-set placeholder | Replace with explicit species (IFI44, IFI44L, ISG15, IFIT1…) or model as a "gene-set" black box with documented members |
+| `Dimeric_space_TGFB1` | TGF-β1 homodimer | Encode as a complex of two TGFB1 |
+| `default` compartment | unmapped compartment | Map to `extracellular` or `cytosol` depending on the species role |
+
+These cases are tracked as the **import-cleanup backlog** for Phase 2 week 4 (M1, M2). The lead curator drives the cleanup before Tier-1 SSc-specific additions.
+
+## Seeded species_annotations.tsv (2026-05-15)
+
+`scripts/seed_species_from_imports.py` populated `curation/annotations/species_annotations.tsv` with **308 unique species** (dedup of 322 across modules → 14 cross-module collisions). `hgnc_symbol` is auto-filled when the species name matches the HGNC regex `^[A-Z][A-Z0-9\-]*$`; complex/phospho-form species are left for manual annotation.
