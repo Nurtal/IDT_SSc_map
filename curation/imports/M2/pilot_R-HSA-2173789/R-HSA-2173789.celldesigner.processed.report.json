@@ -1,0 +1,42 @@
+{
+  "input": "curation/imports/M2/pilot_R-HSA-2173789/R-HSA-2173789.celldesigner.xml",
+  "output": "curation/imports/M2/pilot_R-HSA-2173789/R-HSA-2173789.celldesigner.processed.xml",
+  "summary": {
+    "species_in": 100,
+    "species_out": 99,
+    "species_renamed": 99,
+    "species_collapsed_cofactor": 0,
+    "species_removed_ubiquitin": 1,
+    "reactions_in": 46,
+    "reactions_out": 46,
+    "reactions_removed_orphan": 0,
+    "rdf_descriptions_dropped": 0
+  },
+  "renames_sample": {
+    "s_id_entityVertex_112199_565": "CBL__cyto",
+    "s_id_entityVertex_113592_15": "ATP__endo",
+    "s_id_entityVertex_113592_22": "ATP__cyto",
+    "s_id_entityVertex_157049_5": "FURIN__golgi",
+    "s_id_entityVertex_165529_122": "XPO1__nuc",
+    "s_id_entityVertex_165539_125": "XPO1__cyto",
+    "s_id_entityVertex_170840_10": "TGFB1_x_TGFBR2_x_TGFBR1__cyto",
+    "s_id_entityVertex_170841_11": "TGFB1_x_TGFBR2_x_p_minus_TGFBR1__cyto",
+    "s_id_entityVertex_170842_527": "TGFBR2__cyto",
+    "s_id_entityVertex_170852_6": "Dimeric_space_TGFB1__def",
+    "s_id_entityVertex_170855_466": "SMAD3__cyto",
+    "s_id_entityVertex_170862_20": "SMAD4__cyto",
+    "s_id_entityVertex_170865_8": "Dimeric_space_TGFB1_x_TGFBR2_space_homodimer__cyto",
+    "s_id_entityVertex_171172_12": "SMAD2_3__cyto",
+    "s_id_entityVertex_171173_18": "TGFB1_x_p_minus_TGFBR_x_ZFYVE9__endo",
+    "s_id_entityVertex_171175_972": "p_minus_2S_minus_SMAD2_3_x_SMAD4__cyto",
+    "s_id_entityVertex_171180_16": "TGFB1_x_p_minus_TGFBR_x_ZFYVE9_x_p_minus_2S_minus_SMAD2_3__endo",
+    "s_id_entityVertex_171182_19": "p_minus_2S_minus_SMAD2_3__cyto",
+    "s_id_entityVertex_171260_3": "Pre_minus_TGFB1_space_complex__golgi",
+    "s_id_entityVertex_171266_14": "TGFB1_x_p_minus_TGFBR_x_ZFYVE9_x_SMAD2_slash_3__endo"
+  },
+  "cofactor_collapses": [],
+  "ubiquitin_removed": [
+    "s_id_entityVertex_113595_157"
+  ],
+  "reactions_removed": []
+}
