@@ -114,21 +114,38 @@ def main(argv: list[str]) -> int:
     ap.add_argument("--imports-root", type=Path, default=Path("curation/imports"))
     ap.add_argument("--tsv", type=Path, default=Path("curation/annotations/species_annotations.tsv"))
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument(
+        "--rewrite",
+        action="store_true",
+        help="discard existing rows and regenerate from imports (use after a harmonisation pass)",
+    )
     args = ap.parse_args(argv[1:])
 
-    processed_files = sorted(args.imports_root.rglob("*.processed.xml"))
+    # Prefer harmonised files when present; for any input that has only a
+    # *.processed.xml (no harmonised yet), fall back to the processed.
+    harmonised = {p.name.replace(".harmonised.xml", "") for p in args.imports_root.rglob("*.harmonised.xml")}
+    processed_files: list[Path] = []
+    for p in sorted(args.imports_root.rglob("*.harmonised.xml")):
+        processed_files.append(p)
+    for p in sorted(args.imports_root.rglob("*.processed.xml")):
+        stem = p.name.replace(".processed.xml", "")
+        if stem not in harmonised:
+            processed_files.append(p)
     if not processed_files:
-        print(f"no *.processed.xml under {args.imports_root}", file=sys.stderr)
+        print(f"no *.harmonised.xml or *.processed.xml under {args.imports_root}", file=sys.stderr)
         return 2
 
-    header, existing, existing_ids = read_existing(args.tsv)
-    if header != COLUMNS:
-        print(
-            f"WARN: existing TSV header differs from expected; using expected order "
-            f"({COLUMNS}) and re-aligning rows.",
-            file=sys.stderr,
-        )
-        header = COLUMNS
+    if args.rewrite:
+        header, existing, existing_ids = COLUMNS, [], set()
+    else:
+        header, existing, existing_ids = read_existing(args.tsv)
+        if header != COLUMNS:
+            print(
+                f"WARN: existing TSV header differs from expected; using expected order "
+                f"({COLUMNS}) and re-aligning rows.",
+                file=sys.stderr,
+            )
+            header = COLUMNS
 
     added = 0
     seen_in_this_run: set[str] = set()
