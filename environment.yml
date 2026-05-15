@@ -1,0 +1,32 @@
+name: sscmim
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+
+dependencies:
+  - python=3.11
+  - pip
+  # Core scientific stack
+  - numpy>=1.26
+  - pandas>=2.2
+  - pyarrow
+  - scipy
+  - scikit-learn
+  - networkx>=3.2
+  - matplotlib
+  - seaborn
+  # Single-cell
+  - anndata>=0.10
+  - scanpy>=1.10
+  - leidenalg
+  - python-igraph
+  - umap-learn
+  # SBML / disease-map tooling
+  - python-libsbml=5.20.4
+  # Notebook / dev
+  - jupyterlab
+  - ipykernel
+  - pip:
+      - casq
+      - pybiopax

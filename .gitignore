@@ -1,0 +1,95 @@
+# --- OS junk ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Editors / IDEs ---
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+.venv/
+venv/
+env/
+ENV/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+*.egg-info/
+build/
+dist/
+
+# --- R ---
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+
+# --- Jupyter ---
+.jupyter/
+.ipynb_checkpoints
+
+# --- CellDesigner backups / autosaves ---
+*.xml.bak
+*.xml~
+celldesigner.log
+
+# --- Large data files (should not be committed) ---
+# Single-cell / bulk transcriptomics
+*.h5ad
+*.h5
+*.loom
+*.mtx
+*.mtx.gz
+*.rds
+# GEO archives
+*GSE*.tar
+*GSE*.tar.gz
+GSE*/
+# FASTQ
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+# BAM / CRAM
+*.bam
+*.bai
+*.cram
+
+# Keep small derived/processed outputs in the repo when needed, but never raw counts.
+# Override on a case-by-case basis with `git add -f`.
+
+# --- MINERVA local instance data ---
+minerva/local/
+minerva/cache/
+
+# --- Cytoscape session backups ---
+*.cys.bak
+
+# --- LaTeX intermediates (if any manuscripts compile to PDF here) ---
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+
+# --- Secrets / local config ---
+.env
+.env.local
+*.key
+*.pem
+secrets.yaml

@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use this resource, please cite it as below."
+title: "SSc-MIM: Skin Fibrosis Molecular Interaction Map in Diffuse Cutaneous Systemic Sclerosis"
+abstract: >-
+  First module of a curated, SBGN-compliant Molecular Interaction Map (MIM)
+  for systemic sclerosis (SSc), built in CellDesigner and deployed on the
+  MINERVA Platform. Four sub-modules cover IFN-I signalling, TGF-beta /
+  fibroblast-to-myofibroblast transition, endothelial-to-mesenchymal
+  transition and vasculopathy, and IL-6 / IL-4 / IL-13 / B-cell crosstalk.
+  Paired with a single-cell transcriptomic overlay from SSc skin biopsies
+  for translational stratification and drug-target prioritisation.
+type: software
+version: "0.0.1"
+date-released: "2026-05-15"
+license:
+  - CC-BY-4.0
+  - MIT
+repository-code: "https://github.com/REPLACE_ME/ssc-mim"
+url: "https://github.com/REPLACE_ME/ssc-mim"
+keywords:
+  - systemic sclerosis
+  - scleroderma
+  - disease map
+  - molecular interaction map
+  - SBGN
+  - CellDesigner
+  - MINERVA
+  - fibrosis
+  - TGF-beta
+  - interferon
+  - EndoMT
+  - single-cell transcriptomics
+authors:
+  - family-names: "REPLACE_ME"
+    given-names: "Lead Curator"
+    affiliation: "REPLACE_ME"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
