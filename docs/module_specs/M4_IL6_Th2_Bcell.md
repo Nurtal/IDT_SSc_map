@@ -20,7 +20,7 @@ Adaptive-immune and Th2-cytokine arm of SSc skin disease. Anchored on validated 
 | Symbol | Type | Compartment | Role | Source |
 |--------|------|-------------|------|--------|
 | IL6, IL6R, IL6ST (gp130) | macromolecule | extracellular / plasma_membrane | ligand / receptor | Reactome |
-| JAK1, JAK2, JAK3, TYK2 | macromolecule | cytosol | kinase | Reactome |
+| JAK2, JAK3 | macromolecule | cytosol | kinase | Reactome |
 | STAT3 | macromolecule | cytosol / nucleus | TF | Reactome |
 | SOCS3, PIAS3 | macromolecule | cytosol / nucleus | negative regulator | Reactome |
 | IL4, IL4R, IL13, IL13RA1 | macromolecule | extracellular / plasma_membrane | ligand / receptor | manual + RA-map |
@@ -34,6 +34,10 @@ Adaptive-immune and Th2-cytokine arm of SSc skin disease. Anchored on validated 
 | TNFRSF17 (BCMA), BAFF (TNFSF13B), APRIL (TNFSF13) | macromolecule | extracellular / plasma_membrane | survival signals | manual |
 | autoAb: anti-TOP1, anti-POLR3A, anti-CENP-A/B | macromolecule | extracellular | output | manual |
 | NF-κB family (RELA, RELB, NFKB1, NFKB2, REL, NFKBIA, IKBKB) | macromolecule | cytosol / nucleus | TF | Reactome + SYSCID |
+
+### Shared with other modules (resolves to home module on integration)
+
+- **JAK1, TYK2:** home = M1 (canonical IFN-I pathway). Both are recruited downstream of gp130 / IL-6R and IL-4Rα/IL-13Rα1 in this module.
 
 ## 3. Sink anchors
 

@@ -33,9 +33,14 @@ SSc-specific bridge between vasculopathy and fibrosis. Captures:
 | NOTCH1, NOTCH3, JAG1, DLL4, RBPJ | macromolecule | plasma_membrane / nucleus | Notch pathway | manual |
 | SNAI1, SNAI2, ZEB1, ZEB2, TWIST1 | macromolecule | nucleus | EMT/EndMT TFs | manual |
 | CDH2 (N-cadherin) | macromolecule | plasma_membrane | mesenchymal marker | manual |
-| ACTA2 (αSMA), FAP, S100A4 (FSP1) | macromolecule | cytosol / plasma_membrane | mesenchymal markers | manual |
+| FAP, S100A4 (FSP1) | macromolecule | plasma_membrane / cytosol | mesenchymal markers | manual |
 | ANGPT1, ANGPT2 | macromolecule | extracellular | ligand | manual |
-| PTGS2 (COX-2), TXA2 axis (TBXA2R) | macromolecule | various | vasoconstrictor pathway | manual |
+| PTGS2 (COX-2) | macromolecule | ER | enzyme (prostanoid synthesis) | manual |
+| TBXA2R | macromolecule | plasma_membrane | receptor (vasoconstrictor / platelet) | manual |
+
+### Shared with other modules (resolves to home module on integration)
+
+- **ACTA2 (αSMA):** home = M2 (myofibroblast marker). Referenced here as the convergent output of EndoMT.
 
 ## 3. Sink anchors
 

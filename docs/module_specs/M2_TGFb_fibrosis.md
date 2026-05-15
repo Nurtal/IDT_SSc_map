@@ -42,7 +42,7 @@ Includes:
 | COL1A1, COL1A2, COL3A1, COL5A1, COL5A2 | macromolecule | extracellular / ECM | ECM | manual |
 | FN1 (EDA isoform) | macromolecule | ECM | ECM | manual |
 | POSTN, COMP, TNC | macromolecule | ECM | matricellular | manual (POSTN: PMID 22186371; COMP: PMID 22197582) |
-| CTGF / CCN2 | macromolecule | extracellular / nucleus output | matricellular + signalling | manual (PMID 16007098 SSc skin) |
+| CTGF / CCN2 | macromolecule | extracellular / ECM | matricellular + signalling | manual (PMID 16007098 SSc skin) |
 | LOX, LOXL2 | macromolecule | ECM | cross-linker | manual |
 | FRA-2 (FOSL2) | macromolecule | nucleus | SSc-relevant TF | manual (Tsk1, Fra2-Tg models; PMID 19638503) |
 | TBX2 | macromolecule | nucleus | SSc-relevant TF | manual |

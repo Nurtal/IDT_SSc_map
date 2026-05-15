@@ -1,0 +1,42 @@
+name: lint
+
+on:
+  push:
+    paths:
+      - "docs/module_specs/**.md"
+      - "curation/pubmed_corpus.bib"
+      - "scripts/check_module_specs.py"
+      - "scripts/check_bib.py"
+      - ".github/workflows/lint.yml"
+  pull_request:
+    paths:
+      - "docs/module_specs/**.md"
+      - "curation/pubmed_corpus.bib"
+      - "scripts/check_module_specs.py"
+      - "scripts/check_bib.py"
+      - ".github/workflows/lint.yml"
+
+jobs:
+  specs-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Lint module specs
+        run: python scripts/check_module_specs.py docs/module_specs
+
+  bib-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Lint pubmed corpus (informational until Phase 2)
+        run: python scripts/check_bib.py curation/pubmed_corpus.bib
