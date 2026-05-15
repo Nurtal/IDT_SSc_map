@@ -1,0 +1,40 @@
+{
+  "input": "curation/imports/M4/pilot_R-HSA-1059683/R-HSA-1059683.celldesigner.xml",
+  "output": "curation/imports/M4/pilot_R-HSA-1059683/R-HSA-1059683.celldesigner.processed.xml",
+  "summary": {
+    "species_in": 64,
+    "species_out": 64,
+    "species_renamed": 64,
+    "species_collapsed_cofactor": 0,
+    "species_removed_ubiquitin": 0,
+    "reactions_in": 34,
+    "reactions_out": 34,
+    "reactions_removed_orphan": 0,
+    "rdf_descriptions_dropped": 0
+  },
+  "renames_sample": {
+    "s_id_entityVertex_1067638_15": "IL6_x_IL6R__cyto",
+    "s_id_entityVertex_1067653_11": "IL6ST_minus_2__def",
+    "s_id_entityVertex_1067654_19": "IL6_x_IL6RA_x_IL6RB_x_JAKs__cyto",
+    "s_id_entityVertex_1067656_3": "JAK1_space_JAK2_space_TYK2__cyto",
+    "s_id_entityVertex_1067661_8": "IL6R_minus_2__def",
+    "s_id_entityVertex_1067674_12": "IL6_x_IL6R_minus_2_x_IL6ST_minus_2__def",
+    "s_id_entityVertex_1067687_9": "IL6_x_IL6R_minus_2__def",
+    "s_id_entityVertex_1067690_5": "IL6ST_x_JAK1_space_JAK2_space_TYK2__cyto",
+    "s_id_entityVertex_1067691_17": "IL6_x_sIL6R_x_IL6RB_x_JAKs__cyto",
+    "s_id_entityVertex_1112515_41": "IL6_space_receptor_space_hexamer_x_Activated_space_JAKs__cyto",
+    "s_id_entityVertex_1112523_36": "IL6_space_receptor_space_trimer_x_JAKs__cyto",
+    "s_id_entityVertex_1112524_54": "Tyrosine_space_phosphorylated_space_IL6_space_receptor_space_hexamer_x_Activated_space_JAKs_x_Tyrosine_space_phosphorylated_space_STAT1_STAT3__cyto",
+    "s_id_entityVertex_1112537_67": "p_minus_Y701_minus_STAT1_space_dimer_p_minus_Y705_minus_STAT3_space_dimer_p_minus_Y701_minus_STAT1_x_p_minus_Y705_minus_STAT3__cyto",
+    "s_id_entityVertex_1112559_48": "STAT1_space_STAT3__cyto",
+    "s_id_entityVertex_1112571_63": "p_minus_Y701_minus_STAT1_space_p_minus_Y705_minus_STAT3__cyto",
+    "s_id_entityVertex_1112574_69": "STAT1_slash_3_space_homo_space_and_space_heterodimers__nuc",
+    "s_id_entityVertex_1112576_49": "Tyrosine_space_phosphorylated_space_IL6_space_receptor_space_hexamer_x_Activated_space_JAKs_x_STAT1_STAT3__cyto",
+    "s_id_entityVertex_1112588_37": "IL6_space_receptor_space_hexamer_x_JAKs__cyto",
+    "s_id_entityVertex_1112594_46": "Tyrosine_space_phosphorylated_space_IL6_space_receptor_space_hexamer_x_Activated_space_JAKs__cyto",
+    "s_id_entityVertex_1112718_55": "Tyrosine_space_phosphorylated_space_IL6_space_receptor_space_hexamer_x_Activated_space_JAKs_x_SOCS3__cyto"
+  },
+  "cofactor_collapses": [],
+  "ubiquitin_removed": [],
+  "reactions_removed": []
+}

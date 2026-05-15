@@ -1,0 +1,40 @@
+{
+  "input": "curation/imports/M1/pilot_R-HSA-909733/R-HSA-909733.celldesigner.xml",
+  "output": "curation/imports/M1/pilot_R-HSA-909733/R-HSA-909733.celldesigner.processed.xml",
+  "summary": {
+    "species_in": 83,
+    "species_out": 83,
+    "species_renamed": 83,
+    "species_collapsed_cofactor": 0,
+    "species_removed_ubiquitin": 0,
+    "reactions_in": 25,
+    "reactions_out": 25,
+    "reactions_removed_orphan": 0,
+    "rdf_descriptions_dropped": 0
+  },
+  "renames_sample": {
+    "s_id_entityVertex_1015671_172": "ISG20__nuc",
+    "s_id_entityVertex_1015673_174": "GBP2__cyto",
+    "s_id_entityVertex_1015674_175": "IFIT2__cyto",
+    "s_id_entityVertex_1015677_176": "IFI27__mito",
+    "s_id_entityVertex_1015680_181": "XAF1__cyto",
+    "s_id_entityVertex_1015682_182": "IFITM2__cyto",
+    "s_id_entityVertex_1015684_183": "RNASEL__cyto",
+    "s_id_entityVertex_1015687_186": "IP6K2__nuc",
+    "s_id_entityVertex_1015688_187": "IFITM3__cyto",
+    "s_id_entityVertex_1015693_173": "Mx_space_GTPases__cyto",
+    "s_id_entityVertex_1015695_184": "IRF_space_1_minus_9__cyto",
+    "s_id_entityVertex_1015696_188": "OAS_space_proteins__cyto",
+    "s_id_entityVertex_1015697_161": "ISGF3_space_bound_space_to_space_ISRE_space_promotor_space_elements__nuc",
+    "s_id_entityVertex_1031703_270": "EGR1__cyto",
+    "s_id_entityVertex_113592_12": "ATP__cyto",
+    "s_id_entityVertex_162563_158": "PTPN11__cyto",
+    "s_id_entityVertex_168699_1761": "EIF2AK2__cyto",
+    "s_id_entityVertex_174336_190": "PSMB8__nuc",
+    "s_id_entityVertex_180612_657": "KPNA1__cyto",
+    "s_id_entityVertex_180714_1739": "KPNB1__nuc"
+  },
+  "cofactor_collapses": [],
+  "ubiquitin_removed": [],
+  "reactions_removed": []
+}

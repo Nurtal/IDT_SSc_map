@@ -1,0 +1,40 @@
+{
+  "input": "curation/imports/M2/pilot_R-HSA-186797/R-HSA-186797.celldesigner.xml",
+  "output": "curation/imports/M2/pilot_R-HSA-186797/R-HSA-186797.celldesigner.processed.xml",
+  "summary": {
+    "species_in": 76,
+    "species_out": 76,
+    "species_renamed": 76,
+    "species_collapsed_cofactor": 0,
+    "species_removed_ubiquitin": 0,
+    "reactions_in": 31,
+    "reactions_out": 31,
+    "reactions_removed_orphan": 0,
+    "rdf_descriptions_dropped": 0
+  },
+  "renames_sample": {
+    "s_id_entityVertex_109783_134": "p21_space_RAS_x_GTP__cyto",
+    "s_id_entityVertex_109796_132": "p21_space_RAS_x_GDP__cyto",
+    "s_id_entityVertex_109797_126": "GRB2_minus_1_x_SOS1__cyto",
+    "s_id_entityVertex_113592_111": "ATP__cyto",
+    "s_id_entityVertex_1524184_315": "PDGF_x_p_minus_PDGFR_space_dimer_x_p_minus_PLCgamma__cyto",
+    "s_id_entityVertex_157049_10": "FURIN__golgi",
+    "s_id_entityVertex_162563_116": "PTPN11__cyto",
+    "s_id_entityVertex_167679_317": "p_minus_4Y_minus_PLCG1__cyto",
+    "s_id_entityVertex_167682_323": "PLCG1__cyto",
+    "s_id_entityVertex_179838_93": "PI_3_4_5_P3__cyto",
+    "s_id_entityVertex_179856_91": "PI_4_5_P2__cyto",
+    "s_id_entityVertex_184206_423": "active_space_PDGF_minus_BB_space_dimer__def",
+    "s_id_entityVertex_186766_35": "PDGF_x_PDGF_space_receptor_space_dimer__cyto",
+    "s_id_entityVertex_186789_81": "PDGF_x_Phospho_minus_PDGF_space_receptor_space_dimer_x_PI3K__cyto",
+    "s_id_entityVertex_186792_34": "PDGFRA_space_PDGFRB__cyto",
+    "s_id_entityVertex_186794_601": "PDGFRA__cyto",
+    "s_id_entityVertex_186795_86": "PDGF_x_Phospho_minus_PDGF_space_receptor_space_dimer_x_PLC_minus_gamma__cyto",
+    "s_id_entityVertex_186811_79": "PDGF_x_Phospho_minus_PDGF_space_receptor_space_dimer__cyto",
+    "s_id_entityVertex_186827_127": "PDGF_x_Phospho_minus_PDGF_space_receptor_space_dimer_x_Grb2_x_Sos1__cyto",
+    "s_id_entityVertex_186830_180": "Phospho_minus_beta_space_receptor_space_homodimer_x_GAP__cyto"
+  },
+  "cofactor_collapses": [],
+  "ubiquitin_removed": [],
+  "reactions_removed": []
+}
