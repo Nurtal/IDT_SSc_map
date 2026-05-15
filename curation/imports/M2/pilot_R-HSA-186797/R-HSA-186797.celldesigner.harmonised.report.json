@@ -1,0 +1,169 @@
+{
+  "input": "curation/imports/M2/pilot_R-HSA-186797/R-HSA-186797.celldesigner.processed.xml",
+  "output": "curation/imports/M2/pilot_R-HSA-186797/R-HSA-186797.celldesigner.harmonised.xml",
+  "compartment_remaps": [
+    {
+      "id": "s_id_compartmentVertex_17957_4",
+      "from": "endoplasmic_space_reticulum_space_lumen",
+      "to": "ER"
+    },
+    {
+      "id": "s_id_compartmentVertex_17963_45",
+      "from": "Golgi_space_lumen",
+      "to": "Golgi"
+    },
+    {
+      "id": "default",
+      "from": "default",
+      "to": "extracellular"
+    }
+  ],
+  "species_renamed": 57,
+  "celldesigner_labels_decoded": 60,
+  "flag_counts": {
+    "renamed_only": 57
+  },
+  "transforms_sample": [
+    {
+      "from_id": "p21_space_RAS_x_GTP__cyto",
+      "to_id": "p21_RAS_GTP__cyto",
+      "decoded_name": "p21 RAS:GTP",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "p21_space_RAS_x_GDP__cyto",
+      "to_id": "p21_RAS_GDP__cyto",
+      "decoded_name": "p21 RAS:GDP",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "GRB2_minus_1_x_SOS1__cyto",
+      "to_id": "GRB2_1_SOS1__cyto",
+      "decoded_name": "GRB2-1:SOS1",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "PDGF_x_p_minus_PDGFR_space_dimer_x_p_minus_PLCgamma__cyto",
+      "to_id": "PDGF_p_PDGFR_dimer_p_PLCgamma__cyto",
+      "decoded_name": "PDGF:p-PDGFR dimer:p-PLCgamma",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "p_minus_4Y_minus_PLCG1__cyto",
+      "to_id": "p_4Y_PLCG1__cyto",
+      "decoded_name": "p-4Y-PLCG1",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "active_space_PDGF_minus_BB_space_dimer__def",
+      "to_id": "active_PDGF_BB_dimer__ext",
+      "decoded_name": "active PDGF-BB dimer",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "PDGF_x_PDGF_space_receptor_space_dimer__cyto",
+      "to_id": "PDGF_PDGF_receptor_dimer__cyto",
+      "decoded_name": "PDGF:PDGF receptor dimer",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "PDGF_x_Phospho_minus_PDGF_space_receptor_space_dimer_x_PI3K__cyto",
+      "to_id": "PDGF_Phospho_PDGF_receptor_dimer_PI3K__cyto",
+      "decoded_name": "PDGF:Phospho-PDGF receptor dimer:PI3K",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "PDGFRA_space_PDGFRB__cyto",
+      "to_id": "PDGFRA_PDGFRB__cyto",
+      "decoded_name": "PDGFRA, PDGFRB",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "PDGF_x_Phospho_minus_PDGF_space_receptor_space_dimer_x_PLC_minus_gamma__cyto",
+      "to_id": "PDGF_Phospho_PDGF_receptor_dimer_PLC_gamma__cyto",
+      "decoded_name": "PDGF:Phospho-PDGF receptor dimer:PLC-gamma",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "PDGF_x_Phospho_minus_PDGF_space_receptor_space_dimer__cyto",
+      "to_id": "PDGF_Phospho_PDGF_receptor_dimer__cyto",
+      "decoded_name": "PDGF:Phospho-PDGF receptor dimer",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "PDGF_x_Phospho_minus_PDGF_space_receptor_space_dimer_x_Grb2_x_Sos1__cyto",
+      "to_id": "PDGF_Phospho_PDGF_receptor_dimer_Grb2_Sos1__cyto",
+      "decoded_name": "PDGF:Phospho-PDGF receptor dimer:Grb2:Sos1",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "Phospho_minus_beta_space_receptor_space_homodimer_x_GAP__cyto",
+      "to_id": "Phospho_beta_receptor_homodimer_GAP__cyto",
+      "decoded_name": "Phospho-beta receptor homodimer:GAP",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "PDGF_x_Phospho_minus_PDGF_space_receptor_space_dimer_x_MyrG_minus_SRC__cyto",
+      "to_id": "PDGF_Phospho_PDGF_receptor_dimer_MyrG_SRC__cyto",
+      "decoded_name": "PDGF:Phospho-PDGF receptor dimer:MyrG-SRC",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "PDGF_x_Phospho_minus_PDGF_space_receptor_space_dimer_x_SHP2__cyto",
+      "to_id": "PDGF_Phospho_PDGF_receptor_dimer_SHP2__cyto",
+      "decoded_name": "PDGF:Phospho-PDGF receptor dimer:SHP2",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "proPDGF_minus_BB_space_dimer__golgi",
+      "to_id": "proPDGF_BB_dimer__golgi",
+      "decoded_name": "proPDGF-BB dimer",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "proPDGF_minus_AA_space_dimer__golgi",
+      "to_id": "proPDGF_AA_dimer__golgi",
+      "decoded_name": "proPDGF-AA dimer",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "proPDGF_minus_AB_space_dimer__golgi",
+      "to_id": "proPDGF_AB_dimer__golgi",
+      "decoded_name": "proPDGF-AB dimer",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "STAT_space_family_space_members__cyto",
+      "to_id": "STAT_family_members__cyto",
+      "decoded_name": "STAT family members",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "PDGF_space_A_slash_B_space_heterodimer__def",
+      "to_id": "PDGF_A_B_heterodimer__ext",
+      "decoded_name": "PDGF A/B heterodimer",
+      "flag": "",
+      "note": ""
+    }
+  ],
+  "all_flagged": []
+}

@@ -1,0 +1,43 @@
+{
+  "input": "curation/imports/M3/pilot_R-HSA-1980143/R-HSA-1980143.celldesigner.xml",
+  "output": "curation/imports/M3/pilot_R-HSA-1980143/R-HSA-1980143.celldesigner.processed.xml",
+  "summary": {
+    "species_in": 79,
+    "species_out": 77,
+    "species_renamed": 77,
+    "species_collapsed_cofactor": 0,
+    "species_removed_ubiquitin": 2,
+    "reactions_in": 39,
+    "reactions_out": 39,
+    "reactions_removed_orphan": 0,
+    "rdf_descriptions_dropped": 0
+  },
+  "renames_sample": {
+    "s_id_entityVertex_113582_2588": "ADP__nuc",
+    "s_id_entityVertex_1234135_628": "HIF1A__nuc",
+    "s_id_entityVertex_157008_1782": "JAG1_x_NOTCH1__cyto",
+    "s_id_entityVertex_157027_1171": "NOTCH1__cyto",
+    "s_id_entityVertex_157089_1073": "DLL1__cyto",
+    "s_id_entityVertex_157098_912": "JAG1__cyto",
+    "s_id_entityVertex_157120_1083": "JAG2__cyto",
+    "s_id_entityVertex_157140_1783": "JAG2_x_NOTCH1__cyto",
+    "s_id_entityVertex_157200_13": "NEXT1__cyto",
+    "s_id_entityVertex_157343_19": "gamma_minus_secretase_space_complex__cyto",
+    "s_id_entityVertex_157634_18": "NICD1__cyto",
+    "s_id_entityVertex_157643_1191": "DLL_slash_JAG__cyto",
+    "s_id_entityVertex_157655_1788": "DLL_slash_JAG_x_NOTCH1__cyto",
+    "s_id_entityVertex_157656_1786": "NOTCH1_1721_minus_1753__cyto",
+    "s_id_entityVertex_157939_21": "NICD1__nuc",
+    "s_id_entityVertex_158437_895": "DLL4__cyto",
+    "s_id_entityVertex_1604444_130": "p_minus_NICD1__nuc",
+    "s_id_entityVertex_1604447_1092": "DLK1__cyto",
+    "s_id_entityVertex_1604453_345": "DTX_x_ITCH__cyto",
+    "s_id_entityVertex_1604454_312": "DTX__cyto"
+  },
+  "cofactor_collapses": [],
+  "ubiquitin_removed": [
+    "s_id_entityVertex_113595_146",
+    "s_id_entityVertex_68524_30"
+  ],
+  "reactions_removed": []
+}

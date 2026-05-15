@@ -1,0 +1,180 @@
+{
+  "input": "curation/imports/M4/pilot_R-HSA-1059683/R-HSA-1059683.celldesigner.processed.xml",
+  "output": "curation/imports/M4/pilot_R-HSA-1059683/R-HSA-1059683.celldesigner.harmonised.xml",
+  "compartment_remaps": [
+    {
+      "id": "s_id_compartmentVertex_7660_81",
+      "from": "nucleoplasm",
+      "to": "nucleus"
+    },
+    {
+      "id": "default",
+      "from": "default",
+      "to": "extracellular"
+    }
+  ],
+  "species_renamed": 52,
+  "celldesigner_labels_decoded": 28,
+  "flag_counts": {
+    "renamed_only": 50,
+    "isoform": 2
+  },
+  "transforms_sample": [
+    {
+      "from_id": "IL6_x_IL6R__cyto",
+      "to_id": "IL6_IL6R__cyto",
+      "decoded_name": "IL6:IL6R",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "IL6ST_minus_2__def",
+      "to_id": "IL6ST_iso2__ext",
+      "decoded_name": "IL6ST-2",
+      "flag": "isoform",
+      "note": "isoform 2 of IL6ST"
+    },
+    {
+      "from_id": "IL6_x_IL6RA_x_IL6RB_x_JAKs__cyto",
+      "to_id": "IL6_IL6RA_IL6RB_JAKs__cyto",
+      "decoded_name": "IL6:IL6RA:IL6RB:JAKs",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "JAK1_space_JAK2_space_TYK2__cyto",
+      "to_id": "JAK1_JAK2_TYK2__cyto",
+      "decoded_name": "JAK1, JAK2, (TYK2)",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "IL6R_minus_2__def",
+      "to_id": "IL6R_iso2__ext",
+      "decoded_name": "IL6R-2",
+      "flag": "isoform",
+      "note": "isoform 2 of IL6R"
+    },
+    {
+      "from_id": "IL6_x_IL6R_minus_2_x_IL6ST_minus_2__def",
+      "to_id": "IL6_IL6R_2_IL6ST_2__ext",
+      "decoded_name": "IL6:IL6R-2:IL6ST-2",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "IL6_x_IL6R_minus_2__def",
+      "to_id": "IL6_IL6R_2__ext",
+      "decoded_name": "IL6:IL6R-2",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "IL6ST_x_JAK1_space_JAK2_space_TYK2__cyto",
+      "to_id": "IL6ST_JAK1_JAK2_TYK2__cyto",
+      "decoded_name": "IL6ST:JAK1, JAK2, (TYK2)",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "IL6_x_sIL6R_x_IL6RB_x_JAKs__cyto",
+      "to_id": "IL6_sIL6R_IL6RB_JAKs__cyto",
+      "decoded_name": "IL6:sIL6R:IL6RB:JAKs",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "IL6_space_receptor_space_hexamer_x_Activated_space_JAKs__cyto",
+      "to_id": "IL6_receptor_hexamer_Activated_JAKs__cyto",
+      "decoded_name": "IL6 receptor hexamer:Activated JAKs",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "IL6_space_receptor_space_trimer_x_JAKs__cyto",
+      "to_id": "IL6_receptor_trimer_JAKs__cyto",
+      "decoded_name": "IL6 receptor trimer:JAKs",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "Tyrosine_space_phosphorylated_space_IL6_space_receptor_space_hexamer_x_Activated_space_JAKs_x_Tyrosine_space_phosphorylated_space_STAT1_STAT3__cyto",
+      "to_id": "Tyrosine_phosphorylated_IL6_receptor_hexamer_Activated_JAKs_Tyrosine_phosphorylated_STAT1_STAT3__cyto",
+      "decoded_name": "Tyrosine phosphorylated IL6 receptor hexamer:Activated JAKs:Tyrosine phosphorylated STAT1,STAT3",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "p_minus_Y701_minus_STAT1_space_dimer_p_minus_Y705_minus_STAT3_space_dimer_p_minus_Y701_minus_STAT1_x_p_minus_Y705_minus_STAT3__cyto",
+      "to_id": "p_Y701_STAT1_dimer_p_Y705_STAT3_dimer_p_Y701_STAT1_p_Y705_STAT3__cyto",
+      "decoded_name": "p-Y701-STAT1 dimer,p-Y705-STAT3 dimer,p-Y701-STAT1:p-Y705-STAT3",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "STAT1_space_STAT3__cyto",
+      "to_id": "STAT1_STAT3__cyto",
+      "decoded_name": "STAT1, STAT3",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "p_minus_Y701_minus_STAT1_space_p_minus_Y705_minus_STAT3__cyto",
+      "to_id": "p_Y701_STAT1_p_Y705_STAT3__cyto",
+      "decoded_name": "p-Y701-STAT1, p-Y705-STAT3",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "STAT1_slash_3_space_homo_space_and_space_heterodimers__nuc",
+      "to_id": "STAT1_3_homo_and_heterodimers__nuc",
+      "decoded_name": "STAT1/3 homo and heterodimers",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "Tyrosine_space_phosphorylated_space_IL6_space_receptor_space_hexamer_x_Activated_space_JAKs_x_STAT1_STAT3__cyto",
+      "to_id": "Tyrosine_phosphorylated_IL6_receptor_hexamer_Activated_JAKs_STAT1_STAT3__cyto",
+      "decoded_name": "Tyrosine phosphorylated IL6 receptor hexamer:Activated JAKs:STAT1,STAT3",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "IL6_space_receptor_space_hexamer_x_JAKs__cyto",
+      "to_id": "IL6_receptor_hexamer_JAKs__cyto",
+      "decoded_name": "IL6 receptor hexamer:JAKs",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "Tyrosine_space_phosphorylated_space_IL6_space_receptor_space_hexamer_x_Activated_space_JAKs__cyto",
+      "to_id": "Tyrosine_phosphorylated_IL6_receptor_hexamer_Activated_JAKs__cyto",
+      "decoded_name": "Tyrosine phosphorylated IL6 receptor hexamer:Activated JAKs",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "Tyrosine_space_phosphorylated_space_IL6_space_receptor_space_hexamer_x_Activated_space_JAKs_x_SOCS3__cyto",
+      "to_id": "Tyrosine_phosphorylated_IL6_receptor_hexamer_Activated_JAKs_SOCS3__cyto",
+      "decoded_name": "Tyrosine phosphorylated IL6 receptor hexamer:Activated JAKs:SOCS3",
+      "flag": "",
+      "note": ""
+    }
+  ],
+  "all_flagged": [
+    {
+      "from_id": "IL6ST_minus_2__def",
+      "to_id": "IL6ST_iso2__ext",
+      "decoded_name": "IL6ST-2",
+      "flag": "isoform",
+      "note": "isoform 2 of IL6ST"
+    },
+    {
+      "from_id": "IL6R_minus_2__def",
+      "to_id": "IL6R_iso2__ext",
+      "decoded_name": "IL6R-2",
+      "flag": "isoform",
+      "note": "isoform 2 of IL6R"
+    }
+  ]
+}

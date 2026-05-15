@@ -1,0 +1,206 @@
+{
+  "input": "curation/imports/M2/pilot_R-HSA-2173789/R-HSA-2173789.celldesigner.processed.xml",
+  "output": "curation/imports/M2/pilot_R-HSA-2173789/R-HSA-2173789.celldesigner.harmonised.xml",
+  "compartment_remaps": [
+    {
+      "id": "s_id_compartmentVertex_17941_2",
+      "from": "early_space_endosome",
+      "to": "endosome"
+    },
+    {
+      "id": "s_id_compartmentVertex_17963_25",
+      "from": "Golgi_space_lumen",
+      "to": "Golgi"
+    },
+    {
+      "id": "s_id_compartmentVertex_7660_26",
+      "from": "nucleoplasm",
+      "to": "nucleus"
+    },
+    {
+      "id": "default",
+      "from": "default",
+      "to": "extracellular"
+    }
+  ],
+  "species_renamed": 68,
+  "celldesigner_labels_decoded": 50,
+  "flag_counts": {
+    "renamed_only": 64,
+    "homodimer": 1,
+    "isoform": 1,
+    "slash_pair_to_split": 2
+  },
+  "transforms_sample": [
+    {
+      "from_id": "TGFB1_x_TGFBR2_x_TGFBR1__cyto",
+      "to_id": "TGFB1_TGFBR2_TGFBR1__cyto",
+      "decoded_name": "TGFB1:TGFBR2:TGFBR1",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "TGFB1_x_TGFBR2_x_p_minus_TGFBR1__cyto",
+      "to_id": "TGFB1_TGFBR2_p_TGFBR1__cyto",
+      "decoded_name": "TGFB1:TGFBR2:p-TGFBR1",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "Dimeric_space_TGFB1__def",
+      "to_id": "TGFB1_dimer__ext",
+      "decoded_name": "Dimeric TGFB1",
+      "flag": "homodimer",
+      "note": "homodimer of TGFB1"
+    },
+    {
+      "from_id": "Dimeric_space_TGFB1_x_TGFBR2_space_homodimer__cyto",
+      "to_id": "Dimeric_TGFB1_TGFBR2_homodimer__cyto",
+      "decoded_name": "Dimeric TGFB1:TGFBR2 homodimer",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "TGFB1_x_p_minus_TGFBR_x_ZFYVE9__endo",
+      "to_id": "TGFB1_p_TGFBR_ZFYVE9__endo",
+      "decoded_name": "TGFB1:p-TGFBR:ZFYVE9",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "p_minus_2S_minus_SMAD2_3_x_SMAD4__cyto",
+      "to_id": "p_2S_SMAD2_3_SMAD4__cyto",
+      "decoded_name": "p-2S-SMAD2,3:SMAD4",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "TGFB1_x_p_minus_TGFBR_x_ZFYVE9_x_p_minus_2S_minus_SMAD2_3__endo",
+      "to_id": "TGFB1_p_TGFBR_ZFYVE9_p_2S_SMAD2_3__endo",
+      "decoded_name": "TGFB1:p-TGFBR:ZFYVE9:p-2S-SMAD2,3",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "p_minus_2S_minus_SMAD2_3__cyto",
+      "to_id": "p_2S_SMAD2_3__cyto",
+      "decoded_name": "p-2S-SMAD2,3",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "Pre_minus_TGFB1_space_complex__golgi",
+      "to_id": "Pre_TGFB1_complex__golgi",
+      "decoded_name": "Pre-TGFB1 complex",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "TGFB1_x_p_minus_TGFBR_x_ZFYVE9_x_SMAD2_slash_3__endo",
+      "to_id": "TGFB1_p_TGFBR_ZFYVE9_SMAD2_3__endo",
+      "decoded_name": "TGFB1:p-TGFBR:ZFYVE9:SMAD2/3",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "TGFB1_x_space_p_minus_TGFBR_x_space_I_minus_SMAD7__cyto",
+      "to_id": "TGFB1_p_TGFBR_I_SMAD7__cyto",
+      "decoded_name": "TGFB1: p-TGFBR: I-SMAD7",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "TGFB1_x_space_TGFBR2_x_space_p_minus_TGFBR1_x_space_BAMBI_x_space_SMAD7__cyto",
+      "to_id": "TGFB1_TGFBR2_p_TGFBR1_BAMBI_SMAD7__cyto",
+      "decoded_name": "TGFB1: TGFBR2: p-TGFBR1: BAMBI: SMAD7",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "ZFYVE9_minus_1__endo",
+      "to_id": "ZFYVE9_iso1__endo",
+      "decoded_name": "ZFYVE9-1",
+      "flag": "isoform",
+      "note": "isoform 1 of ZFYVE9"
+    },
+    {
+      "from_id": "TGFB1_x_p_minus_TGFBR_x_STRAP__cyto",
+      "to_id": "TGFB1_p_TGFBR_STRAP__cyto",
+      "decoded_name": "TGFB1:p-TGFBR:STRAP",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "TGFB1_x_space_p_minus_TGFBR_x_space_STRAP_x_space_SMAD7__cyto",
+      "to_id": "TGFB1_p_TGFBR_STRAP_SMAD7__cyto",
+      "decoded_name": "TGFB1: p-TGFBR: STRAP: SMAD7",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "Tight_space_Junction_space_Complex_x_TGFBR1_x_PARD6A_x_RHOA__cyto",
+      "to_id": "Tight_Junction_Complex_TGFBR1_PARD6A_RHOA__cyto",
+      "decoded_name": "Tight Junction Complex:TGFBR1:PARD6A:RHOA",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "Tight_space_Junction_space_Complex_x_PARD6A_x_RHOA__cyto",
+      "to_id": "Tight_Junction_Complex_PARD6A_RHOA__cyto",
+      "decoded_name": "Tight Junction Complex:PARD6A:RHOA",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "Tight_space_Junction_space_Complex_x_TGFB1_x_TGFBR2_x_TGFBR1_x_PARD6A_x_RHOA__cyto",
+      "to_id": "Tight_Junction_Complex_TGFB1_TGFBR2_TGFBR1_PARD6A_RHOA__cyto",
+      "decoded_name": "Tight Junction Complex:TGFB1:TGFBR2:TGFBR1:PARD6A:RHOA",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "Tight_space_Junction_space_Complex_x_TGFB1_x_TGFBR2_x_p_minus_TGFBR1_x_p_minus_PARD6A_x_RHOA__cyto",
+      "to_id": "Tight_Junction_Complex_TGFB1_TGFBR2_p_TGFBR1_p_PARD6A_RHOA__cyto",
+      "decoded_name": "Tight Junction Complex:TGFB1:TGFBR2:p-TGFBR1:p-PARD6A:RHOA",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "Fibrillin_minus_1__def",
+      "to_id": "Fibrillin_1__ext",
+      "decoded_name": "Fibrillin-1",
+      "flag": "",
+      "note": ""
+    }
+  ],
+  "all_flagged": [
+    {
+      "from_id": "Dimeric_space_TGFB1__def",
+      "to_id": "TGFB1_dimer__ext",
+      "decoded_name": "Dimeric TGFB1",
+      "flag": "homodimer",
+      "note": "homodimer of TGFB1"
+    },
+    {
+      "from_id": "ZFYVE9_minus_1__endo",
+      "to_id": "ZFYVE9_iso1__endo",
+      "decoded_name": "ZFYVE9-1",
+      "flag": "isoform",
+      "note": "isoform 1 of ZFYVE9"
+    },
+    {
+      "from_id": "SMURF_slash_NEDD4L__cyto",
+      "to_id": "SMURF_NEDD4L__cyto",
+      "decoded_name": "SMURF/NEDD4L",
+      "flag": "slash_pair_to_split",
+      "note": "split into SMURF + NEDD4L"
+    },
+    {
+      "from_id": "UCHL5_slash_USP15__cyto",
+      "to_id": "UCHL5_USP15__cyto",
+      "decoded_name": "UCHL5/USP15",
+      "flag": "slash_pair_to_split",
+      "note": "split into UCHL5 + USP15"
+    }
+  ]
+}

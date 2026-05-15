@@ -1,309 +1,386 @@
 species_id	hgnc_symbol	uniprot	ensembl	chebi	compartment	module	taxonomy	notes
-ISG20__nuc	ISG20				nucleoplasm	M1	9606	imported from pilot_R-HSA-909733; raw name: ISG20
+ISG20__nuc	ISG20				nucleus	M1	9606	imported from pilot_R-HSA-909733; raw name: ISG20
 GBP2__cyto	GBP2				cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: GBP2
 IFIT2__cyto	IFIT2				cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: IFIT2
 IFI27__mito	IFI27				mitochondrion	M1	9606	imported from pilot_R-HSA-909733; raw name: IFI27
 XAF1__cyto	XAF1				cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: XAF1
 IFITM2__cyto	IFITM2				cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: IFITM2
 RNASEL__cyto	RNASEL				cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: RNASEL
-IP6K2__nuc	IP6K2				nucleoplasm	M1	9606	imported from pilot_R-HSA-909733; raw name: IP6K2
+IP6K2__nuc	IP6K2				nucleus	M1	9606	imported from pilot_R-HSA-909733; raw name: IP6K2
 IFITM3__cyto	IFITM3				cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: IFITM3
-Mx_space_GTPases__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: Mx_space_GTPases
-IRF_space_1_minus_9__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: IRF_space_1_minus_9
-OAS_space_proteins__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: OAS_space_proteins
-ISGF3_space_bound_space_to_space_ISRE_space_promotor_space_elements__nuc					nucleoplasm	M1	9606	imported from pilot_R-HSA-909733; raw name: ISGF3_space_bound_space_to_space_ISRE_space_promotor_space_elements
+MX_family__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: Mx GTPases
+IRF_family__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: IRF 1-9
+OAS_family__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: OAS proteins
+ISGF3_bound_to_ISRE_promotor_elements__nuc					nucleus	M1	9606	imported from pilot_R-HSA-909733; raw name: ISGF3 bound to ISRE promotor elements
 EGR1__cyto	EGR1				cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: EGR1
 ATP__cyto	ATP				cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: ATP
 PTPN11__cyto	PTPN11				cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: PTPN11
 EIF2AK2__cyto	EIF2AK2				cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: EIF2AK2
-PSMB8__nuc	PSMB8				nucleoplasm	M1	9606	imported from pilot_R-HSA-909733; raw name: PSMB8
+PSMB8__nuc	PSMB8				nucleus	M1	9606	imported from pilot_R-HSA-909733; raw name: PSMB8
 KPNA1__cyto	KPNA1				cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: KPNA1
-KPNB1__nuc	KPNB1				nucleoplasm	M1	9606	imported from pilot_R-HSA-909733; raw name: KPNB1
+KPNB1__nuc	KPNB1				nucleus	M1	9606	imported from pilot_R-HSA-909733; raw name: KPNB1
 KPNB1__cyto	KPNB1				cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: KPNB1
-KPNA1__nuc	KPNA1				nucleoplasm	M1	9606	imported from pilot_R-HSA-909733; raw name: KPNA1
+KPNA1__nuc	KPNA1				nucleus	M1	9606	imported from pilot_R-HSA-909733; raw name: KPNA1
 PTPN6__cyto	PTPN6				cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: PTPN6
 IFITM1__cyto	IFITM1				cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: IFITM1
 PTPN1__cyto	PTPN1				cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: PTPN1
 H2O__cyto	H2O				cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: H2O
 ADP__cyto	ADP				cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: ADP
 Pi__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: Pi
-STAT1_minus_1__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: STAT1_minus_1
+STAT1_iso1__cyto	STAT1-1				cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: STAT1-1
 STAT1__cyto	STAT1				cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: STAT1
 PTPN6_PTPN11__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: PTPN6,PTPN11
 ABCE1__mito	ABCE1				mitochondrion	M1	9606	imported from pilot_R-HSA-909733; raw name: ABCE1
-ABCE1_x_RNASEL_space_dimer__mito					mitochondrion	M1	9606	imported from pilot_R-HSA-909733; raw name: ABCE1:RNASEL_space_dimer
-RNASEL_space_dimer__mito					mitochondrion	M1	9606	imported from pilot_R-HSA-909733; raw name: RNASEL_space_dimer
-ADAR__nuc	ADAR				nucleoplasm	M1	9606	imported from pilot_R-HSA-909733; raw name: ADAR
-BST2__extracel	BST2				extracellular_space_exosome	M1	9606	imported from pilot_R-HSA-909733; raw name: BST2
-SAMHD1__nuc	SAMHD1				nucleoplasm	M1	9606	imported from pilot_R-HSA-909733; raw name: SAMHD1
-RSAD2__endoplas	RSAD2				endoplasmic_space_reticulum_space_lumen	M1	9606	imported from pilot_R-HSA-909733; raw name: RSAD2
-SOCS_minus_1_space_and_space_SOCS_minus_3__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: SOCS_minus_1_space_and_space_SOCS_minus_3
-IFNAR2_minus_2__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: IFNAR2_minus_2
+ABCE1_RNASEL_dimer__mito					mitochondrion	M1	9606	imported from pilot_R-HSA-909733; raw name: ABCE1:RNASEL dimer
+RNASEL_dimer__mito					mitochondrion	M1	9606	imported from pilot_R-HSA-909733; raw name: RNASEL dimer
+ADAR__nuc	ADAR				nucleus	M1	9606	imported from pilot_R-HSA-909733; raw name: ADAR
+BST2__ext	BST2				extracellular	M1	9606	imported from pilot_R-HSA-909733; raw name: BST2
+SAMHD1__nuc	SAMHD1				nucleus	M1	9606	imported from pilot_R-HSA-909733; raw name: SAMHD1
+RSAD2__er	RSAD2				ER	M1	9606	imported from pilot_R-HSA-909733; raw name: RSAD2
+SOCS_family__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: SOCS-1 and SOCS-3
+IFNAR2_iso2__cyto	IFNAR2-2				cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: IFNAR2-2
 IRF9__cyto	IRF9				cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: IRF9
 STAT2__cyto	STAT2				cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: STAT2
-Type_space_I_space_IFN_minus_regulated_space_genes_space_with_space_ISRE_space_promoter_space_elements__nuc					nucleoplasm	M1	9606	imported from pilot_R-HSA-909733; raw name: Type_space_I_space_IFN_minus_regulated_space_genes_space_with_space_ISRE_space_promoter_space_elements
-IFN_space_alpha_slash_beta_space_IFNA_slash_B__def					default	M1	9606	imported from pilot_R-HSA-909733; raw name: IFN_space_alpha_slash_beta_space_(IFNA_slash_B)
-IFNA_slash_B_x_IFNAR2_x_p_minus_JAK1_x_STAT2_x_p_minus_IFNAR1_x_p_minus_TYK2_x_STAT2__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: IFNA_slash_B:IFNAR2:p_minus_JAK1:STAT2:p_minus_IFNAR1:p_minus_TYK2:STAT2
-IFNA_slash_B_x_IFNAR2_x_p_minus_JAK1_x_STAT2_x_p_minus_IFNAR1_x_p_minus_TYK2_x_p_minus_STAT2__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: IFNA_slash_B:IFNAR2:p_minus_JAK1:STAT2:p_minus_IFNAR1:p_minus_TYK2:p_minus_STAT2
+ISG_signature__nuc					nucleus	M1	9606	imported from pilot_R-HSA-909733; raw name: Type I IFN-regulated genes with ISRE promoter elements
+IFN_alpha_beta_IFNA_B__ext					extracellular	M1	9606	imported from pilot_R-HSA-909733; raw name: IFN alpha/beta (IFNA/B)
+IFNA_B_IFNAR2_p_JAK1_STAT2_p_IFNAR1_p_TYK2_STAT2__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: IFNA/B:IFNAR2:p-JAK1:STAT2:p-IFNAR1:p-TYK2:STAT2
+IFNA_B_IFNAR2_p_JAK1_STAT2_p_IFNAR1_p_TYK2_p_STAT2__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: IFNA/B:IFNAR2:p-JAK1:STAT2:p-IFNAR1:p-TYK2:p-STAT2
 ISGF3__cyto	ISGF3				cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: ISGF3
-p_minus_STAT2_x_p_minus_STAT1__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: p_minus_STAT2:p_minus_STAT1
-IFNA_slash_B_x_IFNAR2_x_JAK1_x_STAT2_x_IFNAR1_x_TYK2__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: IFNA_slash_B:IFNAR2:JAK1:STAT2:IFNAR1:TYK2
-IFNA_slash_B_x_IFNAR2_x_p_minus_JAK1_x_STAT2_x_p_minus_IFNAR1_x_p_minus_TYK2__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: IFNA_slash_B:IFNAR2:p_minus_JAK1:STAT2:p_minus_IFNAR1:p_minus_TYK2
-IFNA_slash_B_x_IFNAR2_x_p_minus_JAK1_x_STAT2_x_IFNAR1_x_p_minus_TYK2__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: IFNA_slash_B:IFNAR2:p_minus_JAK1:STAT2:IFNAR1:p_minus_TYK2
-IFNAR1_x_TYK2__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: IFNAR1:TYK2
-IFNA_slash_B_x_IFNAR2_x_p_minus_JAK1_x_STAT2_x_p_minus_IFNAR1_x_p_minus_TYK2_x_p_minus_STAT2_x_p_minus_STAT1__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: IFNA_slash_B:IFNAR2:p_minus_JAK1:STAT2:p_minus_IFNAR1:p_minus_TYK2:p_minus_STAT2:p_minus_STAT1
+p_STAT2_p_STAT1__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: p-STAT2:p-STAT1
+IFNA_B_IFNAR2_JAK1_STAT2_IFNAR1_TYK2__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: IFNA/B:IFNAR2:JAK1:STAT2:IFNAR1:TYK2
+IFNA_B_IFNAR2_p_JAK1_STAT2_p_IFNAR1_p_TYK2__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: IFNA/B:IFNAR2:p-JAK1:STAT2:p-IFNAR1:p-TYK2
+IFNA_B_IFNAR2_p_JAK1_STAT2_IFNAR1_p_TYK2__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: IFNA/B:IFNAR2:p-JAK1:STAT2:IFNAR1:p-TYK2
+IFNAR1_TYK2__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: IFNAR1:TYK2
+IFNA_B_IFNAR2_p_JAK1_STAT2_p_IFNAR1_p_TYK2_p_STAT2_p_STAT1__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: IFNA/B:IFNAR2:p-JAK1:STAT2:p-IFNAR1:p-TYK2:p-STAT2:p-STAT1
 USP18__cyto	USP18				cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: USP18
-p_minus_TYK2_x_p_minus_IFNAR1_x_SOCS_minus_1_slash_SOCS_minus_3_x_IFNA_slash_B_x_IFNAR2_x_p_minus_JAK1_x_STAT2__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: p_minus_TYK2:p_minus_IFNAR1:SOCS_minus_1_slash_SOCS_minus_3:IFNA_slash_B:IFNAR2:p_minus_JAK1:STAT2
-IFNAR2c_x_UBP43__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: IFNAR2c:UBP43
-p_minus_Y701_minus_STAT1_minus_1_space_dimer__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: p_minus_Y701_minus_STAT1_minus_1_space_dimer
-p_minus_Y701_minus_STAT1_space_dimer__nuc					nucleoplasm	M1	9606	imported from pilot_R-HSA-909733; raw name: p_minus_Y701_minus_STAT1_space_dimer
-ISGF3__nuc	ISGF3				nucleoplasm	M1	9606	imported from pilot_R-HSA-909733; raw name: ISGF3
-IFNAR2_x_JAK1_x_STAT2__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: IFNAR2:JAK1:STAT2
-IFNA_slash_B_x_IFNAR2_x_JAK1_x_STAT2__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: IFNA_slash_B:IFNAR2:JAK1:STAT2
+p_TYK2_p_IFNAR1_SOCS_1_SOCS_3_IFNA_B_IFNAR2_p_JAK1_STAT2__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: p-TYK2:p-IFNAR1:SOCS-1/SOCS-3:IFNA/B:IFNAR2:p-JAK1:STAT2
+IFNAR2c_UBP43__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: IFNAR2c:UBP43
+p_Y701_STAT1_1_dimer__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: p-Y701-STAT1-1 dimer
+p_Y701_STAT1_dimer__nuc					nucleus	M1	9606	imported from pilot_R-HSA-909733; raw name: p-Y701-STAT1 dimer
+ISGF3__nuc	ISGF3				nucleus	M1	9606	imported from pilot_R-HSA-909733; raw name: ISGF3
+IFNAR2_JAK1_STAT2__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: IFNAR2:JAK1:STAT2
+IFNA_B_IFNAR2_JAK1_STAT2__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: IFNA/B:IFNAR2:JAK1:STAT2
 ISG15__cyto	ISG15				cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: ISG15
 IFIT1__cyto	IFIT1				cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: IFIT1
 IFI6__cyto	IFI6				cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: IFI6
 IFIT3__cyto	IFIT3				cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: IFIT3
 IFI35__cyto	IFI35				cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: IFI35
-TYK2_space_inhibitors__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: TYK2_space_inhibitors
-IFNAR1_x_TYK2_x_TYK2_space_inhibitors__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: IFNAR1:TYK2:TYK2_space_inhibitors
-IFNAR2_x_JAK1_x_STAT2_x_JAK1_2_space_inhibitors__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: IFNAR2:JAK1:STAT2:JAK1,2_space_inhibitors
-JAK1_2_space_inhibitors__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: JAK1,2_space_inhibitors
+TYK2_inhibitors__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: TYK2 inhibitors
+IFNAR1_TYK2_TYK2_inhibitors__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: IFNAR1:TYK2:TYK2 inhibitors
+IFNAR2_JAK1_STAT2_JAK1_2_inhibitors__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: IFNAR2:JAK1:STAT2:JAK1,2 inhibitors
+JAK1_2_inhibitors__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: JAK1,2 inhibitors
 IFIT5__cyto	IFIT5				cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: IFIT5
-IFNAR2_x_JAK1_x_STAT2_x_type_space_1_space_interferon_space_analogs__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: IFNAR2:JAK1:STAT2:type_space_1_space_interferon_space_analogs
-type_space_1_space_interferon_space_analogs__def					default	M1	9606	imported from pilot_R-HSA-909733; raw name: type_space_1_space_interferon_space_analogs
-p_minus_STAT1_space_dimer_space_ISGF3__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: p_minus_STAT1_space_dimer,_space_ISGF3
-ISGF3_x_KPNA1_x_KPNB1__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: ISGF3:KPNA1:KPNB1
-STAT1_STAT2_x_N__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: STAT1,STAT2:N
-p_minus_STAT1_space_dimer_x_KPNA1_x_KPNB1__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: p_minus_STAT1_space_dimer:KPNA1:KPNB1
-p_minus_STAT1_space_dimer_x_KPNA1__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: p_minus_STAT1_space_dimer:KPNA1
-p_minus_Y701_minus_STAT1_x_KPNA1_x_KPNB1__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: p_minus_Y701_minus_STAT1:KPNA1:KPNB1
-Class_space_I_space_MHC_space_heavy_space_chain_space_MHC_space_HC__endoplas					endoplasmic_space_reticulum_space_lumen	M1	9606	imported from pilot_R-HSA-909733; raw name: Class_space_I_space_MHC_space_heavy_space_chain_space_(MHC_space_HC)
-multiubiquitinated_space_STAT2__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: multiubiquitinated_space_STAT2
-IFNA_slash_B_x_IFNAR2_x_p_minus_JAK1_x_STAT2_x_IFNAR1_x_TYK2__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: IFNA_slash_B:IFNAR2:p_minus_JAK1:STAT2:IFNAR1:TYK2
-IFNA_slash_B_x_IFNAR2_x_p_minus_JAK1_x_STAT2_x_p_minus_IFNAR1_x_p_minus_TYK2_x_p_minus_STAT2_x_STAT1__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: IFNA_slash_B:IFNAR2:p_minus_JAK1:STAT2:p_minus_IFNAR1:p_minus_TYK2:p_minus_STAT2:STAT1
-p21_space_RAS_x_GTP__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: p21_space_RAS:GTP
-p21_space_RAS_x_GDP__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: p21_space_RAS:GDP
-GRB2_minus_1_x_SOS1__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: GRB2_minus_1:SOS1
-PDGF_x_p_minus_PDGFR_space_dimer_x_p_minus_PLCgamma__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: PDGF:p_minus_PDGFR_space_dimer:p_minus_PLCgamma
-FURIN__golgi	FURIN				Golgi_space_lumen	M2	9606	imported from pilot_R-HSA-186797; raw name: FURIN
-p_minus_4Y_minus_PLCG1__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: p_minus_4Y_minus_PLCG1
+IFNAR2_JAK1_STAT2_type_1_interferon_analogs__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: IFNAR2:JAK1:STAT2:type 1 interferon analogs
+type_1_interferon_analogs__ext					extracellular	M1	9606	imported from pilot_R-HSA-909733; raw name: type 1 interferon analogs
+p_STAT1_dimer_ISGF3__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: p-STAT1 dimer, ISGF3
+ISGF3_KPNA1_KPNB1__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: ISGF3:KPNA1:KPNB1
+STAT1_STAT2_N__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: STAT1,STAT2:N
+p_STAT1_dimer_KPNA1_KPNB1__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: p-STAT1 dimer:KPNA1:KPNB1
+p_STAT1_dimer_KPNA1__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: p-STAT1 dimer:KPNA1
+p_Y701_STAT1_KPNA1_KPNB1__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: p-Y701-STAT1:KPNA1:KPNB1
+Class_I_MHC_heavy_chain_MHC_HC__er					ER	M1	9606	imported from pilot_R-HSA-909733; raw name: Class I MHC heavy chain (MHC HC)
+multiubiquitinated_STAT2__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: multiubiquitinated STAT2
+IFNA_B_IFNAR2_p_JAK1_STAT2_IFNAR1_TYK2__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: IFNA/B:IFNAR2:p-JAK1:STAT2:IFNAR1:TYK2
+IFNA_B_IFNAR2_p_JAK1_STAT2_p_IFNAR1_p_TYK2_p_STAT2_STAT1__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: IFNA/B:IFNAR2:p-JAK1:STAT2:p-IFNAR1:p-TYK2:p-STAT2:STAT1
+p21_RAS_GTP__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: p21 RAS:GTP
+p21_RAS_GDP__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: p21 RAS:GDP
+GRB2_1_SOS1__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: GRB2-1:SOS1
+PDGF_p_PDGFR_dimer_p_PLCgamma__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: PDGF:p-PDGFR dimer:p-PLCgamma
+FURIN__golgi	FURIN				Golgi	M2	9606	imported from pilot_R-HSA-186797; raw name: FURIN
+p_4Y_PLCG1__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: p-4Y-PLCG1
 PLCG1__cyto	PLCG1				cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: PLCG1
 PI_3_4_5_P3__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: PI(3,4,5)P3
 PI_4_5_P2__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: PI(4,5)P2
-active_space_PDGF_minus_BB_space_dimer__def					default	M2	9606	imported from pilot_R-HSA-186797; raw name: active_space_PDGF_minus_BB_space_dimer
-PDGF_x_PDGF_space_receptor_space_dimer__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: PDGF:PDGF_space_receptor_space_dimer
-PDGF_x_Phospho_minus_PDGF_space_receptor_space_dimer_x_PI3K__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: PDGF:Phospho_minus_PDGF_space_receptor_space_dimer:PI3K
-PDGFRA_space_PDGFRB__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: PDGFRA,_space_PDGFRB
+active_PDGF_BB_dimer__ext					extracellular	M2	9606	imported from pilot_R-HSA-186797; raw name: active PDGF-BB dimer
+PDGF_PDGF_receptor_dimer__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: PDGF:PDGF receptor dimer
+PDGF_Phospho_PDGF_receptor_dimer_PI3K__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: PDGF:Phospho-PDGF receptor dimer:PI3K
+PDGFRA_PDGFRB__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: PDGFRA, PDGFRB
 PDGFRA__cyto	PDGFRA				cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: PDGFRA
-PDGF_x_Phospho_minus_PDGF_space_receptor_space_dimer_x_PLC_minus_gamma__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: PDGF:Phospho_minus_PDGF_space_receptor_space_dimer:PLC_minus_gamma
-PDGF_x_Phospho_minus_PDGF_space_receptor_space_dimer__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: PDGF:Phospho_minus_PDGF_space_receptor_space_dimer
-PDGF_x_Phospho_minus_PDGF_space_receptor_space_dimer_x_Grb2_x_Sos1__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: PDGF:Phospho_minus_PDGF_space_receptor_space_dimer:Grb2:Sos1
-Phospho_minus_beta_space_receptor_space_homodimer_x_GAP__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: Phospho_minus_beta_space_receptor_space_homodimer:GAP
-PDGF_x_Phospho_minus_PDGF_space_receptor_space_dimer_x_MyrG_minus_SRC__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: PDGF:Phospho_minus_PDGF_space_receptor_space_dimer:MyrG_minus_SRC
+PDGF_Phospho_PDGF_receptor_dimer_PLC_gamma__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: PDGF:Phospho-PDGF receptor dimer:PLC-gamma
+PDGF_Phospho_PDGF_receptor_dimer__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: PDGF:Phospho-PDGF receptor dimer
+PDGF_Phospho_PDGF_receptor_dimer_Grb2_Sos1__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: PDGF:Phospho-PDGF receptor dimer:Grb2:Sos1
+Phospho_beta_receptor_homodimer_GAP__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: Phospho-beta receptor homodimer:GAP
+PDGF_Phospho_PDGF_receptor_dimer_MyrG_SRC__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: PDGF:Phospho-PDGF receptor dimer:MyrG-SRC
 RASA1__cyto	RASA1				cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: RASA1
-PDGF_x_Phospho_minus_PDGF_space_receptor_space_dimer_x_SHP2__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: PDGF:Phospho_minus_PDGF_space_receptor_space_dimer:SHP2
+PDGF_Phospho_PDGF_receptor_dimer_SHP2__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: PDGF:Phospho-PDGF receptor dimer:SHP2
 BCAR1__cyto	BCAR1				cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: BCAR1
 GRB7__cyto	GRB7				cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: GRB7
 GDP__cyto	GDP				cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: GDP
 GTP__cyto	GTP				cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: GTP
-proPDGF_minus_BB_space_dimer__golgi					Golgi_space_lumen	M2	9606	imported from pilot_R-HSA-186797; raw name: proPDGF_minus_BB_space_dimer
-proPDGF_minus_AA_space_dimer__golgi					Golgi_space_lumen	M2	9606	imported from pilot_R-HSA-186797; raw name: proPDGF_minus_AA_space_dimer
-proPDGF_minus_AB_space_dimer__golgi					Golgi_space_lumen	M2	9606	imported from pilot_R-HSA-186797; raw name: proPDGF_minus_AB_space_dimer
-STAT_space_family_space_members__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: STAT_space_family_space_members
-PDGF_space_A_slash_B_space_heterodimer__def					default	M2	9606	imported from pilot_R-HSA-186797; raw name: PDGF_space_A_slash_B_space_heterodimer
-Active_space_PDGF_space_dimers_space_AA_space_AB_space_BB__def					default	M2	9606	imported from pilot_R-HSA-186797; raw name: Active_space_PDGF_space_dimers_space_(AA,_space_AB,_space_BB)
-active_space_PDGF_minus_AA_space_dimer__def					default	M2	9606	imported from pilot_R-HSA-186797; raw name: active_space_PDGF_minus_AA_space_dimer
-PDGF_x_phospho_minus_PDGF_space_receptor_space_dimer_x_STAT__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: PDGF:phospho_minus_PDGF_space_receptor_space_dimer:STAT
-PDGF_x_Phospho_minus_PDGF_space_receptor_space_dimer_x_MyrG_minus_p_minus_Y419_minus_SRC__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: PDGF:Phospho_minus_PDGF_space_receptor_space_dimer:MyrG_minus_p_minus_Y419_minus_SRC
-PDGF_space_precursor_space_dimers_space_AA_space_BB_space_A_slash_B_space_CC_space_DD__golgi					Golgi_space_lumen	M2	9606	imported from pilot_R-HSA-186797; raw name: PDGF_space_precursor_space_dimers_space_(AA,_space_BB,_space_A_slash_B,_space_CC,_space_DD)
-PDGF_space_A_space_and_space_B_space_chains_space_with_space_retention_space_motif__def					default	M2	9606	imported from pilot_R-HSA-186797; raw name: PDGF_space_A_space_and_space_B_space_chains_space_with_space_retention_space_motif
-PDGF_space_precursor_space_dimers_space_space_AA_space_BB_space_A_slash_B_space_CC_space_DD__endoplas					endoplasmic_space_reticulum_space_lumen	M2	9606	imported from pilot_R-HSA-186797; raw name: PDGF_space_precursor_space_dimers_space__space_(AA,_space_BB,_space_A_slash_B,_space_CC,_space_DD)
-serine_minus_type_space_endopeptidases_space_involved_space_in_space_novel_space_PDGF_space_processing__def					default	M2	9606	imported from pilot_R-HSA-186797; raw name: serine_minus_type_space_endopeptidases_space_involved_space_in_space_novel_space_PDGF_space_processing
-Active_space_PDGF_space_dimers_space_CC_space_DD__def					default	M2	9606	imported from pilot_R-HSA-186797; raw name: Active_space_PDGF_space_dimers_space_(CC,_space_DD)
-Novel_space_PDGF_space_precursor_space_dimers_space_CC_space_DD__golgi					Golgi_space_lumen	M2	9606	imported from pilot_R-HSA-186797; raw name: Novel_space_PDGF_space_precursor_space_dimers_space_(CC,_space_DD)
-CRK_space_CRKL__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: CRK,_space_CRKL
-Extracellular_space_matrix_space_ligands__def					default	M2	9606	imported from pilot_R-HSA-186797; raw name: Extracellular_space_matrix_space_ligands
-Novel_space_PDGF_space_precursor_space_dimers_space_CC_space_DD__def					default	M2	9606	imported from pilot_R-HSA-186797; raw name: Novel_space_PDGF_space_precursor_space_dimers_space_(CC,_space_DD)
+proPDGF_BB_dimer__golgi					Golgi	M2	9606	imported from pilot_R-HSA-186797; raw name: proPDGF-BB dimer
+proPDGF_AA_dimer__golgi					Golgi	M2	9606	imported from pilot_R-HSA-186797; raw name: proPDGF-AA dimer
+proPDGF_AB_dimer__golgi					Golgi	M2	9606	imported from pilot_R-HSA-186797; raw name: proPDGF-AB dimer
+STAT_family_members__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: STAT family members
+PDGF_A_B_heterodimer__ext					extracellular	M2	9606	imported from pilot_R-HSA-186797; raw name: PDGF A/B heterodimer
+Active_PDGF_dimers_AA_AB_BB__ext					extracellular	M2	9606	imported from pilot_R-HSA-186797; raw name: Active PDGF dimers (AA, AB, BB)
+active_PDGF_AA_dimer__ext					extracellular	M2	9606	imported from pilot_R-HSA-186797; raw name: active PDGF-AA dimer
+PDGF_phospho_PDGF_receptor_dimer_STAT__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: PDGF:phospho-PDGF receptor dimer:STAT
+PDGF_Phospho_PDGF_receptor_dimer_MyrG_p_Y419_SRC__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: PDGF:Phospho-PDGF receptor dimer:MyrG-p-Y419-SRC
+PDGF_precursor_dimers_AA_BB_A_B_CC_DD__golgi					Golgi	M2	9606	imported from pilot_R-HSA-186797; raw name: PDGF precursor dimers (AA, BB, A/B, CC, DD)
+PDGF_A_and_B_chains_with_retention_motif__ext					extracellular	M2	9606	imported from pilot_R-HSA-186797; raw name: PDGF A and B chains with retention motif
+PDGF_precursor_dimers_AA_BB_A_B_CC_DD__er					ER	M2	9606	imported from pilot_R-HSA-186797; raw name: PDGF precursor dimers  (AA, BB, A/B, CC, DD)
+serine_type_endopeptidases_involved_in_novel_PDGF_processing__ext					extracellular	M2	9606	imported from pilot_R-HSA-186797; raw name: serine-type endopeptidases involved in novel PDGF processing
+Active_PDGF_dimers_CC_DD__ext					extracellular	M2	9606	imported from pilot_R-HSA-186797; raw name: Active PDGF dimers (CC, DD)
+Novel_PDGF_precursor_dimers_CC_DD__golgi					Golgi	M2	9606	imported from pilot_R-HSA-186797; raw name: Novel PDGF precursor dimers (CC, DD)
+CRK_CRKL__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: CRK, CRKL
+Extracellular_matrix_ligands__ext					extracellular	M2	9606	imported from pilot_R-HSA-186797; raw name: Extracellular matrix ligands
+Novel_PDGF_precursor_dimers_CC_DD__ext					extracellular	M2	9606	imported from pilot_R-HSA-186797; raw name: Novel PDGF precursor dimers (CC, DD)
 NCK1_NCK2__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: NCK1,NCK2
-PDGF_space_A_space_and_space_B_space_chains_x_ECM_space_complex__def					default	M2	9606	imported from pilot_R-HSA-186797; raw name: PDGF_space_A_space_and_space_B_space_chains:ECM_space_complex
-PDGF_x_Phospho_minus_PDGFR_space_receptor_space_dimer_x_Nck__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: PDGF:Phospho_minus_PDGFR_space_receptor_space_dimer:Nck
-PDGF_x_Phospho_minus_PDGF_space_receptor_space_dimer_x_Crk__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: PDGF:Phospho_minus_PDGF_space_receptor_space_dimer:Crk
-PDGF_x_Phospho_minus_PDGF_space_receptor_space_dimer_x_Grb7__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: PDGF:Phospho_minus_PDGF_space_receptor_space_dimer:Grb7
-PDGF_x_Phospho_minus_PDGF_space_receptor_space_dimer_x_Crk_x_p130Cas_x_C3G__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: PDGF:Phospho_minus_PDGF_space_receptor_space_dimer:Crk:p130Cas:C3G
-Cleaved_space_PDGF_minus_B_space_peptides__golgi					Golgi_space_lumen	M2	9606	imported from pilot_R-HSA-186797; raw name: Cleaved_space_PDGF_minus_B_space_peptides
-Cleaved_space_novel_space_PDGF_space_fragments__def					default	M2	9606	imported from pilot_R-HSA-186797; raw name: Cleaved_space_novel_space_PDGF_space_fragments
-Phospho_space_PDGF_space_alpha_space_receptor_x_PDGF_space_dimers__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: Phospho_space_PDGF_space_alpha_space_receptor:PDGF_space_dimers
-Phospho_space_PDGF_space_beta_space_receptor_x_space_PDGF_space_chain_space_B_space_homodimer__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: Phospho_space_PDGF_space_beta_space_receptor:_space_PDGF_space_chain_space_B_space_homodimer
-Phospho_space_PDGF_space_alpha_minus_beta_space_dimer_x_PDGF_space_AB_space_or_space_BB_space_dimers__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: Phospho_space_PDGF_space_alpha_minus_beta_space_dimer:PDGF_space_AB_space_or_space_BB_space_dimers
-PDGF_space_alpha_slash_beta_x_PDGF_space_AB_space_and_space_BB_space_dimers__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: PDGF_space_alpha_slash_beta:PDGF_space_AB_space_and_space_BB_space_dimers
-PDGF_space_beta_space_receptor_x_PDGF_space_chain_space_B_space_homodimer__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: PDGF_space_beta_space_receptor:PDGF_space_chain_space_B_space_homodimer
-PDGF_space_alpha_space_receptor_x_space_PDGF_space_dimers__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: PDGF_space_alpha_space_receptor:_space_PDGF_space_dimers
+PDGF_A_and_B_chains_ECM_complex__ext					extracellular	M2	9606	imported from pilot_R-HSA-186797; raw name: PDGF A and B chains:ECM complex
+PDGF_Phospho_PDGFR_receptor_dimer_Nck__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: PDGF:Phospho-PDGFR receptor dimer:Nck
+PDGF_Phospho_PDGF_receptor_dimer_Crk__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: PDGF:Phospho-PDGF receptor dimer:Crk
+PDGF_Phospho_PDGF_receptor_dimer_Grb7__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: PDGF:Phospho-PDGF receptor dimer:Grb7
+PDGF_Phospho_PDGF_receptor_dimer_Crk_p130Cas_C3G__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: PDGF:Phospho-PDGF receptor dimer:Crk:p130Cas:C3G
+Cleaved_PDGF_B_peptides__golgi					Golgi	M2	9606	imported from pilot_R-HSA-186797; raw name: Cleaved PDGF-B peptides
+Cleaved_novel_PDGF_fragments__ext					extracellular	M2	9606	imported from pilot_R-HSA-186797; raw name: Cleaved novel PDGF fragments
+Phospho_PDGF_alpha_receptor_PDGF_dimers__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: Phospho PDGF alpha receptor:PDGF dimers
+Phospho_PDGF_beta_receptor_PDGF_chain_B_homodimer__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: Phospho PDGF beta receptor: PDGF chain B homodimer
+Phospho_PDGF_alpha_beta_dimer_PDGF_AB_or_BB_dimers__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: Phospho PDGF alpha-beta dimer:PDGF AB or BB dimers
+PDGF_alpha_beta_PDGF_AB_and_BB_dimers__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: PDGF alpha/beta:PDGF AB and BB dimers
+PDGF_beta_receptor_PDGF_chain_B_homodimer__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: PDGF beta receptor:PDGF chain B homodimer
+PDGF_alpha_receptor_PDGF_dimers__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: PDGF alpha receptor: PDGF dimers
 PTPN12__cyto	PTPN12				cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: PTPN12
 PI3K__cyto	PI3K				cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: PI3K
-p_minus_PDGFRB_space_homo_space_and_space_heterodimers__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: p_minus_PDGFRB_space_homo_space_and_space_heterodimers
-p_minus_PDGFRB_space_homo_space_and_space_heterodimers_space_dephosphorylated_space_at_space_Y1021__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: p_minus_PDGFRB_space_homo_space_and_space_heterodimers_space_dephosphorylated_space_at_space_Y1021
-N_minus_ter_space_PDGFA_minus_2_space_fragment__golgi					Golgi_space_lumen	M2	9606	imported from pilot_R-HSA-186797; raw name: N_minus_ter_space_PDGFA_minus_2_space_fragment
-N_minus_ter_space_PDGF_minus_A_space_fragment__golgi					Golgi_space_lumen	M2	9606	imported from pilot_R-HSA-186797; raw name: N_minus_ter_space_PDGF_minus_A_space_fragment
-MyrG_minus_SRC__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: MyrG_minus_SRC
+p_PDGFRB_homo_and_heterodimers__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: p-PDGFRB homo and heterodimers
+p_PDGFRB_homo_and_heterodimers_dephosphorylated_at_Y1021__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: p-PDGFRB homo and heterodimers dephosphorylated at Y1021
+N_ter_PDGFA_2_fragment__golgi					Golgi	M2	9606	imported from pilot_R-HSA-186797; raw name: N-ter PDGFA-2 fragment
+N_ter_PDGF_A_fragment__golgi					Golgi	M2	9606	imported from pilot_R-HSA-186797; raw name: N-ter PDGF-A fragment
+MyrG_SRC__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: MyrG-SRC
 RAPGEF1__cyto	RAPGEF1				cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: RAPGEF1
-olaratumab__def					default	M2	9606	imported from pilot_R-HSA-186797; raw name: olaratumab
-PDGFRA_x_olaratumab__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: PDGFRA:olaratumab
-type_space_I_space_PDGFR_minus_binding_space_tyrosine_space_kinase_space_inhibitors__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: type_space_I_space_PDGFR_minus_binding_space_tyrosine_space_kinase_space_inhibitors
-type_space_II_space_PDGFR_minus_binding_space_tyrosine_space_kinase_space_inhibitors__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: type_space_II_space_PDGFR_minus_binding_space_tyrosine_space_kinase_space_inhibitors
-PDGFR_x_type_space_I_space_PDGFR_minus_binding_space_TKIs__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: PDGFR:type_space_I_space_PDGFR_minus_binding_space_TKIs
-PDGFR_x_type_space_II_space_PDGFR_minus_binding_space_TKIs__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: PDGFR:type_space_II_space_PDGFR_minus_binding_space_TKIs
+olaratumab__ext					extracellular	M2	9606	imported from pilot_R-HSA-186797; raw name: olaratumab
+PDGFRA_olaratumab__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: PDGFRA:olaratumab
+type_I_PDGFR_binding_tyrosine_kinase_inhibitors__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: type I PDGFR-binding tyrosine kinase inhibitors
+type_II_PDGFR_binding_tyrosine_kinase_inhibitors__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: type II PDGFR-binding tyrosine kinase inhibitors
+PDGFR_type_I_PDGFR_binding_TKIs__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: PDGFR:type I PDGFR-binding TKIs
+PDGFR_type_II_PDGFR_binding_TKIs__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: PDGFR:type II PDGFR-binding TKIs
 CBL__cyto	CBL				cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: CBL
-ATP__endo	ATP				early_space_endosome	M2	9606	imported from pilot_R-HSA-2173789; raw name: ATP
-XPO1__nuc	XPO1				nucleoplasm	M2	9606	imported from pilot_R-HSA-2173789; raw name: XPO1
+ATP__endo	ATP				endosome	M2	9606	imported from pilot_R-HSA-2173789; raw name: ATP
+XPO1__nuc	XPO1				nucleus	M2	9606	imported from pilot_R-HSA-2173789; raw name: XPO1
 XPO1__cyto	XPO1				cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: XPO1
-TGFB1_x_TGFBR2_x_TGFBR1__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: TGFB1:TGFBR2:TGFBR1
-TGFB1_x_TGFBR2_x_p_minus_TGFBR1__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: TGFB1:TGFBR2:p_minus_TGFBR1
+TGFB1_TGFBR2_TGFBR1__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: TGFB1:TGFBR2:TGFBR1
+TGFB1_TGFBR2_p_TGFBR1__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: TGFB1:TGFBR2:p-TGFBR1
 TGFBR2__cyto	TGFBR2				cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: TGFBR2
-Dimeric_space_TGFB1__def					default	M2	9606	imported from pilot_R-HSA-2173789; raw name: Dimeric_space_TGFB1
+TGFB1_dimer__ext					extracellular	M2	9606	imported from pilot_R-HSA-2173789; raw name: Dimeric TGFB1
 SMAD3__cyto	SMAD3				cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: SMAD3
 SMAD4__cyto	SMAD4				cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: SMAD4
-Dimeric_space_TGFB1_x_TGFBR2_space_homodimer__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: Dimeric_space_TGFB1:TGFBR2_space_homodimer
+Dimeric_TGFB1_TGFBR2_homodimer__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: Dimeric TGFB1:TGFBR2 homodimer
 SMAD2_3__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: SMAD2,3
-TGFB1_x_p_minus_TGFBR_x_ZFYVE9__endo					early_space_endosome	M2	9606	imported from pilot_R-HSA-2173789; raw name: TGFB1:p_minus_TGFBR:ZFYVE9
-p_minus_2S_minus_SMAD2_3_x_SMAD4__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: p_minus_2S_minus_SMAD2,3:SMAD4
-TGFB1_x_p_minus_TGFBR_x_ZFYVE9_x_p_minus_2S_minus_SMAD2_3__endo					early_space_endosome	M2	9606	imported from pilot_R-HSA-2173789; raw name: TGFB1:p_minus_TGFBR:ZFYVE9:p_minus_2S_minus_SMAD2,3
-p_minus_2S_minus_SMAD2_3__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: p_minus_2S_minus_SMAD2,3
-Pre_minus_TGFB1_space_complex__golgi					Golgi_space_lumen	M2	9606	imported from pilot_R-HSA-2173789; raw name: Pre_minus_TGFB1_space_complex
-TGFB1_x_p_minus_TGFBR_x_ZFYVE9_x_SMAD2_slash_3__endo					early_space_endosome	M2	9606	imported from pilot_R-HSA-2173789; raw name: TGFB1:p_minus_TGFBR:ZFYVE9:SMAD2_slash_3
-TGFB1_x_space_p_minus_TGFBR_x_space_I_minus_SMAD7__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: TGFB1:_space_p_minus_TGFBR:_space_I_minus_SMAD7
+TGFB1_p_TGFBR_ZFYVE9__endo					endosome	M2	9606	imported from pilot_R-HSA-2173789; raw name: TGFB1:p-TGFBR:ZFYVE9
+p_2S_SMAD2_3_SMAD4__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: p-2S-SMAD2,3:SMAD4
+TGFB1_p_TGFBR_ZFYVE9_p_2S_SMAD2_3__endo					endosome	M2	9606	imported from pilot_R-HSA-2173789; raw name: TGFB1:p-TGFBR:ZFYVE9:p-2S-SMAD2,3
+p_2S_SMAD2_3__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: p-2S-SMAD2,3
+Pre_TGFB1_complex__golgi					Golgi	M2	9606	imported from pilot_R-HSA-2173789; raw name: Pre-TGFB1 complex
+TGFB1_p_TGFBR_ZFYVE9_SMAD2_3__endo					endosome	M2	9606	imported from pilot_R-HSA-2173789; raw name: TGFB1:p-TGFBR:ZFYVE9:SMAD2/3
+TGFB1_p_TGFBR_I_SMAD7__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: TGFB1: p-TGFBR: I-SMAD7
 SMAD7__cyto	SMAD7				cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: SMAD7
 BAMBI__cyto	BAMBI				cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: BAMBI
-TGFB1_x_space_TGFBR2_x_space_p_minus_TGFBR1_x_space_BAMBI_x_space_SMAD7__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: TGFB1:_space_TGFBR2:_space_p_minus_TGFBR1:_space_BAMBI:_space_SMAD7
+TGFB1_TGFBR2_p_TGFBR1_BAMBI_SMAD7__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: TGFB1: TGFBR2: p-TGFBR1: BAMBI: SMAD7
 SMURF2__cyto	SMURF2				cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: SMURF2
-SMAD7__nuc	SMAD7				nucleoplasm	M2	9606	imported from pilot_R-HSA-2173789; raw name: SMAD7
-SMURF2__nuc	SMURF2				nucleoplasm	M2	9606	imported from pilot_R-HSA-2173789; raw name: SMURF2
+SMAD7__nuc	SMAD7				nucleus	M2	9606	imported from pilot_R-HSA-2173789; raw name: SMAD7
+SMURF2__nuc	SMURF2				nucleus	M2	9606	imported from pilot_R-HSA-2173789; raw name: SMURF2
 FKBP1A__cyto	FKBP1A				cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: FKBP1A
-ZFYVE9_minus_1__endo					early_space_endosome	M2	9606	imported from pilot_R-HSA-2173789; raw name: ZFYVE9_minus_1
+ZFYVE9_iso1__endo	ZFYVE9-1				endosome	M2	9606	imported from pilot_R-HSA-2173789; raw name: ZFYVE9-1
 STRAP__cyto	STRAP				cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: STRAP
-TGFB1_x_p_minus_TGFBR_x_STRAP__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: TGFB1:p_minus_TGFBR:STRAP
-TGFB1_x_space_p_minus_TGFBR_x_space_STRAP_x_space_SMAD7__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: TGFB1:_space_p_minus_TGFBR:_space_STRAP:_space_SMAD7
-Tight_space_Junction_space_Complex_x_TGFBR1_x_PARD6A_x_RHOA__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: Tight_space_Junction_space_Complex:TGFBR1:PARD6A:RHOA
-Tight_space_Junction_space_Complex_x_PARD6A_x_RHOA__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: Tight_space_Junction_space_Complex:PARD6A:RHOA
-Tight_space_Junction_space_Complex_x_TGFB1_x_TGFBR2_x_TGFBR1_x_PARD6A_x_RHOA__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: Tight_space_Junction_space_Complex:TGFB1:TGFBR2:TGFBR1:PARD6A:RHOA
-Tight_space_Junction_space_Complex_x_TGFB1_x_TGFBR2_x_p_minus_TGFBR1_x_p_minus_PARD6A_x_RHOA__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: Tight_space_Junction_space_Complex:TGFB1:TGFBR2:p_minus_TGFBR1:p_minus_PARD6A:RHOA
-Fibrillin_minus_1__def					default	M2	9606	imported from pilot_R-HSA-2173789; raw name: Fibrillin_minus_1
-Tight_space_Junction_space_Complex_x_TGFB1_x_TGFBR2_x_p_minus_TGFBR1_x_p_minus_PARD6A_x_RHOA_x_SMURF1__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: Tight_space_Junction_space_Complex:TGFB1:TGFBR2:p_minus_TGFBR1:p_minus_PARD6A:RHOA:SMURF1
-Tight_space_Junction_space_Complex_x_TGFB1_x_TGFBR2_x_p_minus_TGFBR1_x_p_minus_PARD6A_x_Ub_minus_RHOA_x_SMURF1__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: Tight_space_Junction_space_Complex:TGFB1:TGFBR2:p_minus_TGFBR1:p_minus_PARD6A:Ub_minus_RHOA:SMURF1
-LTBP4__def	LTBP4				default	M2	9606	imported from pilot_R-HSA-2173789; raw name: LTBP4
-GADD34_x_PP1__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: GADD34:PP1
-SMAD7_x_SMURF2__nuc					nucleoplasm	M2	9606	imported from pilot_R-HSA-2173789; raw name: SMAD7:SMURF2
-TGFB1_x_TGFBR2_x_TGFBR1__endo					early_space_endosome	M2	9606	imported from pilot_R-HSA-2173789; raw name: TGFB1:TGFBR2:TGFBR1
-SMAD7_x_SMURF2__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: SMAD7:SMURF2
-TGFB1_x_p_minus_TGFBR_x_I_minus_SMAD7_x_GADD34_x_PP1_x_ZFYVE9__endo					early_space_endosome	M2	9606	imported from pilot_R-HSA-2173789; raw name: TGFB1:p_minus_TGFBR:I_minus_SMAD7:GADD34:PP1:ZFYVE9
-SMAD7_x_SMURF1__nuc					nucleoplasm	M2	9606	imported from pilot_R-HSA-2173789; raw name: SMAD7:SMURF1
-SMAD7_x_SMURF1_x_XPO1__nuc					nucleoplasm	M2	9606	imported from pilot_R-HSA-2173789; raw name: SMAD7:SMURF1:XPO1
-SMAD7_x_SMURF1__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: SMAD7:SMURF1
-TGFB1_x_TGFBR2_x_p_minus_TGFBR1_x_SMAD7_x_SMURF_slash_NEDD4L__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: TGFB1:TGFBR2:p_minus_TGFBR1:SMAD7:SMURF_slash_NEDD4L
-SMAD7_x_SMURF_slash_NEDD4L__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: SMAD7:SMURF_slash_NEDD4L
-TGFB1_x_TGFBR2_x_Ub_minus_p_minus_TGFBR1_x_Ub_minus_SMAD7__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: TGFB1:TGFBR2:Ub_minus_p_minus_TGFBR1:Ub_minus_SMAD7
-SMURF_slash_NEDD4L__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: SMURF_slash_NEDD4L
-SMAD7_x_NEDD4L__nuc					nucleoplasm	M2	9606	imported from pilot_R-HSA-2173789; raw name: SMAD7:NEDD4L
-SMAD7_x_NEDD4L__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: SMAD7:NEDD4L
-NEDD4L__nuc	NEDD4L				nucleoplasm	M2	9606	imported from pilot_R-HSA-2173789; raw name: NEDD4L
-Ub_minus_SMAD2__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: Ub_minus_SMAD2
-SMAD2_x_SMURF2__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: SMAD2:SMURF2
-TGFB1_x_TGFBR2_x_Ub_minus_p_minus_TGFBR1_x_Ub_minus_SMAD7_x_UCHL5_slash_USP15__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: TGFB1:TGFBR2:Ub_minus_p_minus_TGFBR1:Ub_minus_SMAD7:UCHL5_slash_USP15
-TGFB1_x_TGFBR2_x_p_minus_TGFBR1_x_Ub_minus_SMAD7__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: TGFB1:TGFBR2:p_minus_TGFBR1:Ub_minus_SMAD7
-UCHL5_slash_USP15__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: UCHL5_slash_USP15
+TGFB1_p_TGFBR_STRAP__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: TGFB1:p-TGFBR:STRAP
+TGFB1_p_TGFBR_STRAP_SMAD7__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: TGFB1: p-TGFBR: STRAP: SMAD7
+Tight_Junction_Complex_TGFBR1_PARD6A_RHOA__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: Tight Junction Complex:TGFBR1:PARD6A:RHOA
+Tight_Junction_Complex_PARD6A_RHOA__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: Tight Junction Complex:PARD6A:RHOA
+Tight_Junction_Complex_TGFB1_TGFBR2_TGFBR1_PARD6A_RHOA__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: Tight Junction Complex:TGFB1:TGFBR2:TGFBR1:PARD6A:RHOA
+Tight_Junction_Complex_TGFB1_TGFBR2_p_TGFBR1_p_PARD6A_RHOA__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: Tight Junction Complex:TGFB1:TGFBR2:p-TGFBR1:p-PARD6A:RHOA
+Fibrillin_1__ext					extracellular	M2	9606	imported from pilot_R-HSA-2173789; raw name: Fibrillin-1
+Tight_Junction_Complex_TGFB1_TGFBR2_p_TGFBR1_p_PARD6A_RHOA_SMURF1__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: Tight Junction Complex:TGFB1:TGFBR2:p-TGFBR1:p-PARD6A:RHOA:SMURF1
+Tight_Junction_Complex_TGFB1_TGFBR2_p_TGFBR1_p_PARD6A_Ub_RHOA_SMURF1__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: Tight Junction Complex:TGFB1:TGFBR2:p-TGFBR1:p-PARD6A:Ub-RHOA:SMURF1
+LTBP4__ext	LTBP4				extracellular	M2	9606	imported from pilot_R-HSA-2173789; raw name: LTBP4
+GADD34_PP1__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: GADD34:PP1
+SMAD7_SMURF2__nuc					nucleus	M2	9606	imported from pilot_R-HSA-2173789; raw name: SMAD7:SMURF2
+TGFB1_TGFBR2_TGFBR1__endo					endosome	M2	9606	imported from pilot_R-HSA-2173789; raw name: TGFB1:TGFBR2:TGFBR1
+SMAD7_SMURF2__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: SMAD7:SMURF2
+TGFB1_p_TGFBR_I_SMAD7_GADD34_PP1_ZFYVE9__endo					endosome	M2	9606	imported from pilot_R-HSA-2173789; raw name: TGFB1:p-TGFBR:I-SMAD7:GADD34:PP1:ZFYVE9
+SMAD7_SMURF1__nuc					nucleus	M2	9606	imported from pilot_R-HSA-2173789; raw name: SMAD7:SMURF1
+SMAD7_SMURF1_XPO1__nuc					nucleus	M2	9606	imported from pilot_R-HSA-2173789; raw name: SMAD7:SMURF1:XPO1
+SMAD7_SMURF1__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: SMAD7:SMURF1
+TGFB1_TGFBR2_p_TGFBR1_SMAD7_SMURF_NEDD4L__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: TGFB1:TGFBR2:p-TGFBR1:SMAD7:SMURF/NEDD4L
+SMAD7_SMURF_NEDD4L__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: SMAD7:SMURF/NEDD4L
+TGFB1_TGFBR2_Ub_p_TGFBR1_Ub_SMAD7__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: TGFB1:TGFBR2:Ub-p-TGFBR1:Ub-SMAD7
+SMURF_NEDD4L__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: SMURF/NEDD4L
+SMAD7_NEDD4L__nuc					nucleus	M2	9606	imported from pilot_R-HSA-2173789; raw name: SMAD7:NEDD4L
+SMAD7_NEDD4L__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: SMAD7:NEDD4L
+NEDD4L__nuc	NEDD4L				nucleus	M2	9606	imported from pilot_R-HSA-2173789; raw name: NEDD4L
+Ub_SMAD2__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: Ub-SMAD2
+SMAD2_SMURF2__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: SMAD2:SMURF2
+TGFB1_TGFBR2_Ub_p_TGFBR1_Ub_SMAD7_UCHL5_USP15__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: TGFB1:TGFBR2:Ub-p-TGFBR1:Ub-SMAD7:UCHL5/USP15
+TGFB1_TGFBR2_p_TGFBR1_Ub_SMAD7__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: TGFB1:TGFBR2:p-TGFBR1:Ub-SMAD7
+UCHL5_USP15__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: UCHL5/USP15
 PMEPA1__cyto	PMEPA1				cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: PMEPA1
-TGFBR1_x_FKBP1A__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: TGFBR1:FKBP1A
-SMAD2_slash_3_x_PMEPA1__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: SMAD2_slash_3:PMEPA1
-p_minus_2S_minus_SMAD2_slash_3_x_PMEPA1__endo					early_space_endosome	M2	9606	imported from pilot_R-HSA-2173789; raw name: p_minus_2S_minus_SMAD2_slash_3:PMEPA1
-PMEPA1__endo	PMEPA1				early_space_endosome	M2	9606	imported from pilot_R-HSA-2173789; raw name: PMEPA1
-SMAD3_x_STUB1__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: SMAD3:STUB1
-Ub_minus_SMAD3__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: Ub_minus_SMAD3
-p_minus_2S_minus_SMAD2_slash_3_x_MTMR4__endo					early_space_endosome	M2	9606	imported from pilot_R-HSA-2173789; raw name: p_minus_2S_minus_SMAD2_slash_3:MTMR4
-MTMR4__endo	MTMR4				early_space_endosome	M2	9606	imported from pilot_R-HSA-2173789; raw name: MTMR4
-TGFB1_x_LAP1__def					default	M2	9606	imported from pilot_R-HSA-2173789; raw name: TGFB1:LAP1
-TGFB3_x_LAP3__def					default	M2	9606	imported from pilot_R-HSA-2173789; raw name: TGFB3:LAP3
-LTBP1_LTBP3_x_TGFB_x_LAP__def					default	M2	9606	imported from pilot_R-HSA-2173789; raw name: LTBP1,LTBP3:TGFB:LAP
-LTBP4_x_TGFB1_x_LAP1__def					default	M2	9606	imported from pilot_R-HSA-2173789; raw name: LTBP4:TGFB1:LAP1
-TGFB_x_LAP__def					default	M2	9606	imported from pilot_R-HSA-2173789; raw name: TGFB:LAP
-LTBP1_space_LTBP3__def					default	M2	9606	imported from pilot_R-HSA-2173789; raw name: LTBP1,_space_LTBP3
-TGF_minus_beta_minus_3_x_LAP3_x_LAP3_minus_binding_space_integrins__def					default	M2	9606	imported from pilot_R-HSA-2173789; raw name: TGF_minus_beta_minus_3:LAP3:LAP3_minus_binding_space_integrins
-LTBPs__def					default	M2	9606	imported from pilot_R-HSA-2173789; raw name: LTBPs
-LAP1_space_binding_minus_integrins__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: LAP1_space_binding_minus_integrins
-LTBPs_x_Fibrillin_minus_1__def					default	M2	9606	imported from pilot_R-HSA-2173789; raw name: LTBPs:Fibrillin_minus_1
-LTBP1_x_TGFB1_x_LAP1_x_LAP1_minus_binding_space_integrins__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: LTBP1:TGFB1:LAP1:LAP1_minus_binding_space_integrins
-LAP3_minus_binding_space_integrins__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: LAP3_minus_binding_space_integrins
-H2O__endo	H2O				early_space_endosome	M2	9606	imported from pilot_R-HSA-2173789; raw name: H2O
-ADP__endo	ADP				early_space_endosome	M2	9606	imported from pilot_R-HSA-2173789; raw name: ADP
-Pi__endo					early_space_endosome	M2	9606	imported from pilot_R-HSA-2173789; raw name: Pi
-SMURF1__nuc	SMURF1				nucleoplasm	M2	9606	imported from pilot_R-HSA-2173789; raw name: SMURF1
+TGFBR1_FKBP1A__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: TGFBR1:FKBP1A
+SMAD2_3_PMEPA1__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: SMAD2/3:PMEPA1
+p_2S_SMAD2_3_PMEPA1__endo					endosome	M2	9606	imported from pilot_R-HSA-2173789; raw name: p-2S-SMAD2/3:PMEPA1
+PMEPA1__endo	PMEPA1				endosome	M2	9606	imported from pilot_R-HSA-2173789; raw name: PMEPA1
+SMAD3_STUB1__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: SMAD3:STUB1
+Ub_SMAD3__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: Ub-SMAD3
+p_2S_SMAD2_3_MTMR4__endo					endosome	M2	9606	imported from pilot_R-HSA-2173789; raw name: p-2S-SMAD2/3:MTMR4
+MTMR4__endo	MTMR4				endosome	M2	9606	imported from pilot_R-HSA-2173789; raw name: MTMR4
+TGFB1_LAP1__ext					extracellular	M2	9606	imported from pilot_R-HSA-2173789; raw name: TGFB1:LAP1
+TGFB3_LAP3__ext					extracellular	M2	9606	imported from pilot_R-HSA-2173789; raw name: TGFB3:LAP3
+LTBP1_LTBP3_TGFB_LAP__ext					extracellular	M2	9606	imported from pilot_R-HSA-2173789; raw name: LTBP1,LTBP3:TGFB:LAP
+LTBP4_TGFB1_LAP1__ext					extracellular	M2	9606	imported from pilot_R-HSA-2173789; raw name: LTBP4:TGFB1:LAP1
+TGFB_LAP__ext					extracellular	M2	9606	imported from pilot_R-HSA-2173789; raw name: TGFB:LAP
+LTBP1_LTBP3__ext					extracellular	M2	9606	imported from pilot_R-HSA-2173789; raw name: LTBP1, LTBP3
+TGF_beta_3_LAP3_LAP3_binding_integrins__ext					extracellular	M2	9606	imported from pilot_R-HSA-2173789; raw name: TGF-beta-3:LAP3:LAP3-binding integrins
+LTBPs__ext					extracellular	M2	9606	imported from pilot_R-HSA-2173789; raw name: LTBPs
+LAP1_binding_integrins__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: LAP1 binding-integrins
+LTBPs_Fibrillin_1__ext					extracellular	M2	9606	imported from pilot_R-HSA-2173789; raw name: LTBPs:Fibrillin-1
+LTBP1_TGFB1_LAP1_LAP1_binding_integrins__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: LTBP1:TGFB1:LAP1:LAP1-binding integrins
+LAP3_binding_integrins__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: LAP3-binding integrins
+H2O__endo	H2O				endosome	M2	9606	imported from pilot_R-HSA-2173789; raw name: H2O
+ADP__endo	ADP				endosome	M2	9606	imported from pilot_R-HSA-2173789; raw name: ADP
+Pi__endo					endosome	M2	9606	imported from pilot_R-HSA-2173789; raw name: Pi
+SMURF1__nuc	SMURF1				nucleus	M2	9606	imported from pilot_R-HSA-2173789; raw name: SMURF1
 SMAD2__cyto	SMAD2				cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: SMAD2
-NEDD8_minus_K556_K567_minus_TGFBR2__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: NEDD8_minus_K556,K567_minus_TGFBR2
-TGFBR2_x_CBL__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: TGFBR2:CBL
-NEDD8_minus_AcM_minus_UBE2M__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: NEDD8_minus_AcM_minus_UBE2M
-AcM_minus_UBE2M__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: AcM_minus_UBE2M
-TGF_minus_beta_minus_1_x_LAP1__golgi					Golgi_space_lumen	M2	9606	imported from pilot_R-HSA-2173789; raw name: TGF_minus_beta_minus_1:LAP1
-LTBP1_x_TGFB1_x_LAP1__def					default	M2	9606	imported from pilot_R-HSA-2173789; raw name: LTBP1:TGFB1:LAP1
+NEDD8_K556_K567_TGFBR2__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: NEDD8-K556,K567-TGFBR2
+TGFBR2_CBL__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: TGFBR2:CBL
+NEDD8_AcM_UBE2M__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: NEDD8-AcM-UBE2M
+AcM_UBE2M__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: AcM-UBE2M
+TGF_beta_1_LAP1__golgi					Golgi	M2	9606	imported from pilot_R-HSA-2173789; raw name: TGF-beta-1:LAP1
+LTBP1_TGFB1_LAP1__ext					extracellular	M2	9606	imported from pilot_R-HSA-2173789; raw name: LTBP1:TGFB1:LAP1
 STUB1__cyto	STUB1				cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: STUB1
 SMURF1__cyto	SMURF1				cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: SMURF1
-TGFBR3_1_minus_783_x_TGFB1_TGFB2__def					default	M2	9606	imported from pilot_R-HSA-2173789; raw name: TGFBR3(1_minus_783):TGFB1,TGFB2
-TGFB1_TGFB2_x_TGFBR3_x_TGFBR2__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: TGFB1,TGFB2:TGFBR3:TGFBR2
-IL6_x_IL6R__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: IL6:IL6R
-IL6ST_minus_2__def					default	M4	9606	imported from pilot_R-HSA-1059683; raw name: IL6ST_minus_2
-IL6_x_IL6RA_x_IL6RB_x_JAKs__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: IL6:IL6RA:IL6RB:JAKs
-JAK1_space_JAK2_space_TYK2__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: JAK1,_space_JAK2,_space_(TYK2)
-IL6R_minus_2__def					default	M4	9606	imported from pilot_R-HSA-1059683; raw name: IL6R_minus_2
-IL6_x_IL6R_minus_2_x_IL6ST_minus_2__def					default	M4	9606	imported from pilot_R-HSA-1059683; raw name: IL6:IL6R_minus_2:IL6ST_minus_2
-IL6_x_IL6R_minus_2__def					default	M4	9606	imported from pilot_R-HSA-1059683; raw name: IL6:IL6R_minus_2
-IL6ST_x_JAK1_space_JAK2_space_TYK2__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: IL6ST:JAK1,_space_JAK2,_space_(TYK2)
-IL6_x_sIL6R_x_IL6RB_x_JAKs__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: IL6:sIL6R:IL6RB:JAKs
-IL6_space_receptor_space_hexamer_x_Activated_space_JAKs__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: IL6_space_receptor_space_hexamer:Activated_space_JAKs
-IL6_space_receptor_space_trimer_x_JAKs__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: IL6_space_receptor_space_trimer:JAKs
-Tyrosine_space_phosphorylated_space_IL6_space_receptor_space_hexamer_x_Activated_space_JAKs_x_Tyrosine_space_phosphorylated_space_STAT1_STAT3__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: Tyrosine_space_phosphorylated_space_IL6_space_receptor_space_hexamer:Activated_space_JAKs:Tyrosine_space_phosphorylated_space_STAT1,STAT3
-p_minus_Y701_minus_STAT1_space_dimer_p_minus_Y705_minus_STAT3_space_dimer_p_minus_Y701_minus_STAT1_x_p_minus_Y705_minus_STAT3__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: p_minus_Y701_minus_STAT1_space_dimer,p_minus_Y705_minus_STAT3_space_dimer,p_minus_Y701_minus_STAT1:p_minus_Y705_minus_STAT3
-STAT1_space_STAT3__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: STAT1,_space_STAT3
-p_minus_Y701_minus_STAT1_space_p_minus_Y705_minus_STAT3__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: p_minus_Y701_minus_STAT1,_space_p_minus_Y705_minus_STAT3
-STAT1_slash_3_space_homo_space_and_space_heterodimers__nuc					nucleoplasm	M4	9606	imported from pilot_R-HSA-1059683; raw name: STAT1_slash_3_space_homo_space_and_space_heterodimers
-Tyrosine_space_phosphorylated_space_IL6_space_receptor_space_hexamer_x_Activated_space_JAKs_x_STAT1_STAT3__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: Tyrosine_space_phosphorylated_space_IL6_space_receptor_space_hexamer:Activated_space_JAKs:STAT1,STAT3
-IL6_space_receptor_space_hexamer_x_JAKs__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: IL6_space_receptor_space_hexamer:JAKs
-Tyrosine_space_phosphorylated_space_IL6_space_receptor_space_hexamer_x_Activated_space_JAKs__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: Tyrosine_space_phosphorylated_space_IL6_space_receptor_space_hexamer:Activated_space_JAKs
-Tyrosine_space_phosphorylated_space_IL6_space_receptor_space_hexamer_x_Activated_space_JAKs_x_SOCS3__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: Tyrosine_space_phosphorylated_space_IL6_space_receptor_space_hexamer:Activated_space_JAKs:SOCS3
-Tyrosine_space_phosphorylated_space_IL6_space_receptor_space_hexamer_x_Activated_space_JAKs_x_PTPN11_x_CBL__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: Tyrosine_space_phosphorylated_space_IL6_space_receptor_space_hexamer:Activated_space_JAKs:PTPN11:CBL
-IL6_x_Tyrosine_space_phosphorylated_space_hexameric_space_IL_minus_6_space_receptor_x_Activated_space_JAKs_x_p_minus_Y546_Y584_minus_PTPN11__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: IL6:Tyrosine_space_phosphorylated_space_hexameric_space_IL_minus_6_space_receptor:Activated_space_JAKs:p_minus_Y546,Y584_minus_PTPN11
-Tyrosine_space_phosphorylated_space_IL6_space_receptor_space_hexamer_x_Activated_space_JAKs_x_PTPN11__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: Tyrosine_space_phosphorylated_space_IL6_space_receptor_space_hexamer:Activated_space_JAKs:PTPN11
-Tyrosine_space_phosphorylated_space_IL6_space_receptor_space_hexamer_x_Activated_space_JAKs_x_Tyrosine_slash_serine_space_phosphorylated_space_STAT1_slash_3__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: Tyrosine_space_phosphorylated_space_IL6_space_receptor_space_hexamer:Activated_space_JAKs:Tyrosine_slash_serine_space_phosphorylated_space_STAT1_slash_3
+TGFBR3_1_783_TGFB1_TGFB2__ext					extracellular	M2	9606	imported from pilot_R-HSA-2173789; raw name: TGFBR3(1-783):TGFB1,TGFB2
+TGFB1_TGFB2_TGFBR3_TGFBR2__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: TGFB1,TGFB2:TGFBR3:TGFBR2
+ADP__nuc	ADP				nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: ADP
+HIF1A__nuc	HIF1A				nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: HIF1A
+JAG1_NOTCH1__cyto					cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: JAG1:NOTCH1
+NOTCH1__cyto	NOTCH1				cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: NOTCH1
+DLL1__cyto	DLL1				cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: DLL1
+JAG1__cyto	JAG1				cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: JAG1
+JAG2__cyto	JAG2				cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: JAG2
+JAG2_NOTCH1__cyto					cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: JAG2:NOTCH1
+NEXT1__cyto	NEXT1				cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: NEXT1
+gamma_secretase_complex__cyto					cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: gamma-secretase complex
+NICD1__cyto	NICD1				cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: NICD1
+DLL_JAG__cyto					cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: DLL/JAG
+DLL_JAG_NOTCH1__cyto					cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: DLL/JAG:NOTCH1
+NOTCH1_1721_1753__cyto					cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: NOTCH1(1721-1753)
+NICD1__nuc	NICD1				nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: NICD1
+DLL4__cyto	DLL4				cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: DLL4
+pNICD1__nuc					nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: p-NICD1
+DLK1__cyto	DLK1				cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: DLK1
+DTX_ITCH__cyto					cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: DTX:ITCH
+DTX__cyto	DTX				cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: DTX
+NOTCH1_NUMB_ITCH__cyto					cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: NOTCH1:NUMB:ITCH
+NICD1_RBPJ_SNW1__nuc					nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: NICD1:RBPJ:SNW1
+NOTCH1_Coactivator_Complex__nuc					nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: NOTCH1 Coactivator Complex
+NOTCH1_Coactivator_Complex_CDK8_CCNC__nuc					nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: NOTCH1 Coactivator Complex:CDK8:CCNC
+CDK8_CCNC__nuc					nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: CDK8:CCNC
+p_NICD1_FBXW7_SKP1_CUL1_RBX1__nuc					nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: p-NICD1:FBXW7:SKP1:CUL1:RBX1
+FBXW7_SKP1_CUL1_RBX1__nuc					nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: FBXW7:SKP1:CUL1:RBX1
+DNER__cyto	DNER				cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: DNER
+HES5__nuc	HES5				nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: HES5
+NOTCH1_DTX__cyto					cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: NOTCH1:DTX
+ADAM10_17_Zn2_plus__cyto					cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: ADAM10/17:Zn2_plus_
+Ub_p_NICD1__nuc					nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: Ub-p-NICD1
+MYC__nuc	MYC				nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: MYC
+ARRB__cyto	ARRB				cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: ARRB
+RBPJ_SNW1__nuc					nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: RBPJ:SNW1
+HES1_TLE__nuc					nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: HES1:TLE
+HEY__nuc	HEY				nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: HEY
+MIB_NEURL__cyto					cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: MIB/NEURL
+NCOR_HDAC_TBL1__nuc					nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: NCOR:HDAC:TBL1
+NICD1_DTX__cyto					cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: NICD1:DTX
+NICD1_HIF1A__nuc					nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: NICD1:HIF1A
+NOTCH1_DTX_ARRB__cyto					cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: NOTCH1:DTX:ARRB
+Ub_DTX_ITCH__cyto					cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: Ub-DTX:ITCH
+Ub_DLL_JAG_NOTCH1__cyto					cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: Ub-DLL/JAG:NOTCH1
+Ub_DLL_JAG_NOTCH1_fragment__cyto					cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: Ub-DLL/JAG:NOTCH1 fragment
+Ub_NOTCH1_DTX_ARRB__cyto					cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: Ub-NOTCH1:DTX:ARRB
+Ub_NOTCH1_NUMB_ITCH__cyto					cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: Ub-NOTCH1:NUMB:ITCH
+DNER_NOTCH1_DTX__cyto					cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: DNER:NOTCH1:DTX
+NOTCH1_Fringe_modified_NOTCH1__cyto					cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: NOTCH1/Fringe-modified NOTCH1
+DLL1_NOTCH1__cyto					cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: DLL1:NOTCH1
+DLL4_NOTCH1__cyto					cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: DLL4:NOTCH1
+NOTCH1_DLK1__cyto					cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: NOTCH1:DLK1
+CREBBP__nuc	CREBBP				nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: CREBBP
+NOTCH1_DLL_JAG__cyto					cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: NOTCH1:DLL/JAG
+HES1__nuc	HES1				nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: HES1
+MAML__nuc	MAML				nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: MAML
+TLE__nuc	TLE				nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: TLE
+MYC_gene__nuc					nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: MYC gene
+HES1_gene__nuc					nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: HES1 gene
+HES5_gene__nuc					nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: HES5 gene
+ATP__nuc	ATP				nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: ATP
+RBPJ_NCOR_corepressor_complex__nuc					nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: RBPJ:NCOR corepressor complex
+PCAF__nuc	PCAF				nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: PCAF
+CNTN1__cyto	CNTN1				cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: CNTN1
+CNTN1_NOTCH1_DTX__cyto					cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: CNTN1:NOTCH1:DTX
+EP300__nuc	EP300				nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: EP300
+HEY_Genes__nuc					nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: HEY Genes
+NOTCH1_Coactivator_Complex_HES1_Gene__nuc					nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: NOTCH1 Coactivator Complex:HES1 Gene
+NOTCH1_Coactivator_Complex_MYC_Gene__nuc					nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: NOTCH1 Coactivator Complex:MYC Gene
+NOTCH1_Coactivator_Complex_HES5_Gene__nuc					nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: NOTCH1 Coactivator Complex:HES5 Gene
+NOTCH1_Coactivator_Complex_HEY_Genes__nuc					nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: NOTCH1 Coactivator Complex:HEY Genes
+NUMB__cyto	NUMB				cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: NUMB
+Ubiquitin_ligase__cyto					cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: Ubiquitin ligase
+NBEA__cyto	NBEA				cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: NBEA
+NBEA__nuc	NBEA				nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: NBEA
+NICD1_NBEA__nuc					nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: NICD1:NBEA
+ITCH__cyto	ITCH				cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: ITCH
+IL6_IL6R__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: IL6:IL6R
+IL6ST_iso2__ext	IL6ST-2				extracellular	M4	9606	imported from pilot_R-HSA-1059683; raw name: IL6ST-2
+IL6_IL6RA_IL6RB_JAKs__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: IL6:IL6RA:IL6RB:JAKs
+JAK1_JAK2_TYK2__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: JAK1, JAK2, (TYK2)
+IL6R_iso2__ext	IL6R-2				extracellular	M4	9606	imported from pilot_R-HSA-1059683; raw name: IL6R-2
+IL6_IL6R_2_IL6ST_2__ext					extracellular	M4	9606	imported from pilot_R-HSA-1059683; raw name: IL6:IL6R-2:IL6ST-2
+IL6_IL6R_2__ext					extracellular	M4	9606	imported from pilot_R-HSA-1059683; raw name: IL6:IL6R-2
+IL6ST_JAK1_JAK2_TYK2__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: IL6ST:JAK1, JAK2, (TYK2)
+IL6_sIL6R_IL6RB_JAKs__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: IL6:sIL6R:IL6RB:JAKs
+IL6_receptor_hexamer_Activated_JAKs__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: IL6 receptor hexamer:Activated JAKs
+IL6_receptor_trimer_JAKs__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: IL6 receptor trimer:JAKs
+Tyrosine_phosphorylated_IL6_receptor_hexamer_Activated_JAKs_Tyrosine_phosphorylated_STAT1_STAT3__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: Tyrosine phosphorylated IL6 receptor hexamer:Activated JAKs:Tyrosine phosphorylated STAT1,STAT3
+p_Y701_STAT1_dimer_p_Y705_STAT3_dimer_p_Y701_STAT1_p_Y705_STAT3__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: p-Y701-STAT1 dimer,p-Y705-STAT3 dimer,p-Y701-STAT1:p-Y705-STAT3
+STAT1_STAT3__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: STAT1, STAT3
+p_Y701_STAT1_p_Y705_STAT3__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: p-Y701-STAT1, p-Y705-STAT3
+STAT1_3_homo_and_heterodimers__nuc					nucleus	M4	9606	imported from pilot_R-HSA-1059683; raw name: STAT1/3 homo and heterodimers
+Tyrosine_phosphorylated_IL6_receptor_hexamer_Activated_JAKs_STAT1_STAT3__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: Tyrosine phosphorylated IL6 receptor hexamer:Activated JAKs:STAT1,STAT3
+IL6_receptor_hexamer_JAKs__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: IL6 receptor hexamer:JAKs
+Tyrosine_phosphorylated_IL6_receptor_hexamer_Activated_JAKs__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: Tyrosine phosphorylated IL6 receptor hexamer:Activated JAKs
+Tyrosine_phosphorylated_IL6_receptor_hexamer_Activated_JAKs_SOCS3__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: Tyrosine phosphorylated IL6 receptor hexamer:Activated JAKs:SOCS3
+Tyrosine_phosphorylated_IL6_receptor_hexamer_Activated_JAKs_PTPN11_CBL__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: Tyrosine phosphorylated IL6 receptor hexamer:Activated JAKs:PTPN11:CBL
+IL6_Tyrosine_phosphorylated_hexameric_IL_6_receptor_Activated_JAKs_p_Y546_Y584_PTPN11__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: IL6:Tyrosine phosphorylated hexameric IL-6 receptor:Activated JAKs:p-Y546,Y584-PTPN11
+Tyrosine_phosphorylated_IL6_receptor_hexamer_Activated_JAKs_PTPN11__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: Tyrosine phosphorylated IL6 receptor hexamer:Activated JAKs:PTPN11
+Tyrosine_phosphorylated_IL6_receptor_hexamer_Activated_JAKs_Tyrosine_serine_phosphorylated_STAT1_3__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: Tyrosine phosphorylated IL6 receptor hexamer:Activated JAKs:Tyrosine/serine phosphorylated STAT1/3
 IL6R__cyto	IL6R				cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: IL6R
-IL11__def	IL11				default	M4	9606	imported from pilot_R-HSA-1059683; raw name: IL11
-IL6__def	IL6				default	M4	9606	imported from pilot_R-HSA-1059683; raw name: IL6
+IL11__ext	IL11				extracellular	M4	9606	imported from pilot_R-HSA-1059683; raw name: IL11
+IL6__ext	IL6				extracellular	M4	9606	imported from pilot_R-HSA-1059683; raw name: IL6
 IL6ST__cyto	IL6ST				cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: IL6ST
-IL31_x_IL31RA_x_JAK1_x_OSMR_x_JAK1__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: IL31:IL31RA:JAK1:OSMR:JAK1
+IL31_IL31RA_JAK1_OSMR_JAK1__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: IL31:IL31RA:JAK1:OSMR:JAK1
 OSMR__cyto	OSMR				cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: OSMR
-IL11RA_x_IL11__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: IL11RA:IL11
+IL11RA_IL11__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: IL11RA:IL11
 IL11RA__cyto	IL11RA				cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: IL11RA
-IL6RA_x_IL6_x_IL6RB_x_JAKs__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: IL6RA:IL6:IL6RB:JAKs
+IL6RA_IL6_IL6RB_JAKs__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: IL6RA:IL6:IL6RB:JAKs
 CRLF1__cyto	CRLF1				cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: CRLF1
-CLCF1__def	CLCF1				default	M4	9606	imported from pilot_R-HSA-1059683; raw name: CLCF1
+CLCF1__ext	CLCF1				extracellular	M4	9606	imported from pilot_R-HSA-1059683; raw name: CLCF1
 LIFR__cyto	LIFR				cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: LIFR
-LIF__def	LIF				default	M4	9606	imported from pilot_R-HSA-1059683; raw name: LIF
-CTF1__def	CTF1				default	M4	9606	imported from pilot_R-HSA-1059683; raw name: CTF1
+LIF__ext	LIF				extracellular	M4	9606	imported from pilot_R-HSA-1059683; raw name: LIF
+CTF1__ext	CTF1				extracellular	M4	9606	imported from pilot_R-HSA-1059683; raw name: CTF1
 CNTFR__cyto	CNTFR				cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: CNTFR
-OSM__def	OSM				default	M4	9606	imported from pilot_R-HSA-1059683; raw name: OSM
-CNTF__def	CNTF				default	M4	9606	imported from pilot_R-HSA-1059683; raw name: CNTF
-CRLF1_x_CLCF1__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: CRLF1:CLCF1
-CTF1_x_LIFR_x_JAKs__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: CTF1:LIFR:JAKs
-CNTF_x_CNTFR_CRLF1_x_CLCF1_x_CNTFR_x_gp130_x_JAKs_x_LIFR_x_JAKs__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: CNTF:CNTFR,CRLF1:CLCF1:CNTFR:gp130:JAKs:LIFR:JAKs
-LIF_OSM_space_receptor_space_complex_x_gp130__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: LIF,OSM_space_receptor_space_complex:gp130
-OSM_x_OSMR_LIFR__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: OSM:OSMR,LIFR
-CNTFR_x_CRLF1_x_CLCF1__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: CNTFR:CRLF1:CLCF1
-CNTF_x_CNTFR__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: CNTF:CNTFR
-LIFR_x_JAKs_OSMR_x_JAKs__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: LIFR:JAKs,OSMR:JAKs
-LIF_x_LIFR_x_JAKs__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: LIF:LIFR:JAKs
-CNTF_x_CNTFR_CRLF1_x_CLCF1_x_CNTFR_x_IL6ST_x_JAK1_space_JAK2_space_TYK2__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: CNTF:CNTFR,CRLF1:CLCF1:CNTFR:IL6ST:JAK1,_space_JAK2,_space_(TYK2)
-CNTF_x_CNTFR_CRLF1_x_CLCF1_x_CNTFR__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: CNTF:CNTFR,CRLF1:CLCF1:CNTFR
-LIF_OSM_CTF1_space_receptor_space_complex__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: LIF,OSM,CTF1_space_receptor_space_complex
-JAKs_x_LIFR__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: JAKs:LIFR
-JAKs_x_OSMR__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: JAKs:OSMR
+OSM__ext	OSM				extracellular	M4	9606	imported from pilot_R-HSA-1059683; raw name: OSM
+CNTF__ext	CNTF				extracellular	M4	9606	imported from pilot_R-HSA-1059683; raw name: CNTF
+CRLF1_CLCF1__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: CRLF1:CLCF1
+CTF1_LIFR_JAKs__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: CTF1:LIFR:JAKs
+CNTF_CNTFR_CRLF1_CLCF1_CNTFR_gp130_JAKs_LIFR_JAKs__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: CNTF:CNTFR,CRLF1:CLCF1:CNTFR:gp130:JAKs:LIFR:JAKs
+LIF_OSM_receptor_complex_gp130__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: LIF,OSM receptor complex:gp130
+OSM_OSMR_LIFR__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: OSM:OSMR,LIFR
+CNTFR_CRLF1_CLCF1__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: CNTFR:CRLF1:CLCF1
+CNTF_CNTFR__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: CNTF:CNTFR
+LIFR_JAKs_OSMR_JAKs__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: LIFR:JAKs,OSMR:JAKs
+LIF_LIFR_JAKs__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: LIF:LIFR:JAKs
+CNTF_CNTFR_CRLF1_CLCF1_CNTFR_IL6ST_JAK1_JAK2_TYK2__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: CNTF:CNTFR,CRLF1:CLCF1:CNTFR:IL6ST:JAK1, JAK2, (TYK2)
+CNTF_CNTFR_CRLF1_CLCF1_CNTFR__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: CNTF:CNTFR,CRLF1:CLCF1:CNTFR
+LIF_OSM_CTF1_receptor_complex__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: LIF,OSM,CTF1 receptor complex
+JAKs_LIFR__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: JAKs:LIFR
+JAKs_OSMR__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: JAKs:OSMR
 SOCS3__cyto	SOCS3				cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: SOCS3
-IL31_x_IL31RA_x_JAK1__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: IL31:IL31RA:JAK1
-OSMR_x_JAK1__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: OSMR:JAK1
-IL6R_x_IL6R_space_inhibitors__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: IL6R:IL6R_space_inhibitors
-IL6R_space_inhibitors__def					default	M4	9606	imported from pilot_R-HSA-1059683; raw name: IL6R_space_inhibitors
+IL31_IL31RA_JAK1__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: IL31:IL31RA:JAK1
+OSMR_JAK1__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: OSMR:JAK1
+IL6R_IL6R_inhibitors__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: IL6R:IL6R inhibitors
+IL6R_inhibitors__ext					extracellular	M4	9606	imported from pilot_R-HSA-1059683; raw name: IL6R inhibitors

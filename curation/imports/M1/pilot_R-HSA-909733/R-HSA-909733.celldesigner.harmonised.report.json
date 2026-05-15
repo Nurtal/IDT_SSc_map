@@ -1,0 +1,227 @@
+{
+  "input": "curation/imports/M1/pilot_R-HSA-909733/R-HSA-909733.celldesigner.processed.xml",
+  "output": "curation/imports/M1/pilot_R-HSA-909733/R-HSA-909733.celldesigner.harmonised.xml",
+  "compartment_remaps": [
+    {
+      "id": "s_id_compartmentVertex_17957_240",
+      "from": "endoplasmic_space_reticulum_space_lumen",
+      "to": "ER"
+    },
+    {
+      "id": "s_id_compartmentVertex_383505_422",
+      "from": "extracellular_space_exosome",
+      "to": "extracellular"
+    },
+    {
+      "id": "s_id_compartmentVertex_7660_76",
+      "from": "nucleoplasm",
+      "to": "nucleus"
+    },
+    {
+      "id": "default",
+      "from": "default",
+      "to": "extracellular"
+    }
+  ],
+  "species_renamed": 43,
+  "celldesigner_labels_decoded": 40,
+  "flag_counts": {
+    "family_to_expand": 4,
+    "renamed_only": 36,
+    "isoform": 2,
+    "gene_set_placeholder": 1
+  },
+  "transforms_sample": [
+    {
+      "from_id": "Mx_space_GTPases__cyto",
+      "to_id": "MX_family__cyto",
+      "decoded_name": "Mx GTPases",
+      "flag": "family_to_expand",
+      "note": "MX1,MX2"
+    },
+    {
+      "from_id": "IRF_space_1_minus_9__cyto",
+      "to_id": "IRF_family__cyto",
+      "decoded_name": "IRF 1-9",
+      "flag": "family_to_expand",
+      "note": "IRF1,IRF2,IRF3,IRF4,IRF5,IRF6,IRF7,IRF8,IRF9"
+    },
+    {
+      "from_id": "OAS_space_proteins__cyto",
+      "to_id": "OAS_family__cyto",
+      "decoded_name": "OAS proteins",
+      "flag": "family_to_expand",
+      "note": "OAS1,OAS2,OAS3"
+    },
+    {
+      "from_id": "ISGF3_space_bound_space_to_space_ISRE_space_promotor_space_elements__nuc",
+      "to_id": "ISGF3_bound_to_ISRE_promotor_elements__nuc",
+      "decoded_name": "ISGF3 bound to ISRE promotor elements",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "STAT1_minus_1__cyto",
+      "to_id": "STAT1_iso1__cyto",
+      "decoded_name": "STAT1-1",
+      "flag": "isoform",
+      "note": "isoform 1 of STAT1"
+    },
+    {
+      "from_id": "ABCE1_x_RNASEL_space_dimer__mito",
+      "to_id": "ABCE1_RNASEL_dimer__mito",
+      "decoded_name": "ABCE1:RNASEL dimer",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "RNASEL_space_dimer__mito",
+      "to_id": "RNASEL_dimer__mito",
+      "decoded_name": "RNASEL dimer",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "BST2__extracel",
+      "to_id": "BST2__ext",
+      "decoded_name": "BST2",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "RSAD2__endoplas",
+      "to_id": "RSAD2__er",
+      "decoded_name": "RSAD2",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "SOCS_minus_1_space_and_space_SOCS_minus_3__cyto",
+      "to_id": "SOCS_family__cyto",
+      "decoded_name": "SOCS-1 and SOCS-3",
+      "flag": "family_to_expand",
+      "note": "SOCS1,SOCS3"
+    },
+    {
+      "from_id": "IFNAR2_minus_2__cyto",
+      "to_id": "IFNAR2_iso2__cyto",
+      "decoded_name": "IFNAR2-2",
+      "flag": "isoform",
+      "note": "isoform 2 of IFNAR2"
+    },
+    {
+      "from_id": "Type_space_I_space_IFN_minus_regulated_space_genes_space_with_space_ISRE_space_promoter_space_elements__nuc",
+      "to_id": "ISG_signature__nuc",
+      "decoded_name": "Type I IFN-regulated genes with ISRE promoter elements",
+      "flag": "gene_set_placeholder",
+      "note": "Type I IFN-regulated genes with ISRE promoter elements"
+    },
+    {
+      "from_id": "IFN_space_alpha_slash_beta_space_IFNA_slash_B__def",
+      "to_id": "IFN_alpha_beta_IFNA_B__ext",
+      "decoded_name": "IFN alpha/beta (IFNA/B)",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "IFNA_slash_B_x_IFNAR2_x_p_minus_JAK1_x_STAT2_x_p_minus_IFNAR1_x_p_minus_TYK2_x_STAT2__cyto",
+      "to_id": "IFNA_B_IFNAR2_p_JAK1_STAT2_p_IFNAR1_p_TYK2_STAT2__cyto",
+      "decoded_name": "IFNA/B:IFNAR2:p-JAK1:STAT2:p-IFNAR1:p-TYK2:STAT2",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "IFNA_slash_B_x_IFNAR2_x_p_minus_JAK1_x_STAT2_x_p_minus_IFNAR1_x_p_minus_TYK2_x_p_minus_STAT2__cyto",
+      "to_id": "IFNA_B_IFNAR2_p_JAK1_STAT2_p_IFNAR1_p_TYK2_p_STAT2__cyto",
+      "decoded_name": "IFNA/B:IFNAR2:p-JAK1:STAT2:p-IFNAR1:p-TYK2:p-STAT2",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "p_minus_STAT2_x_p_minus_STAT1__cyto",
+      "to_id": "p_STAT2_p_STAT1__cyto",
+      "decoded_name": "p-STAT2:p-STAT1",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "IFNA_slash_B_x_IFNAR2_x_JAK1_x_STAT2_x_IFNAR1_x_TYK2__cyto",
+      "to_id": "IFNA_B_IFNAR2_JAK1_STAT2_IFNAR1_TYK2__cyto",
+      "decoded_name": "IFNA/B:IFNAR2:JAK1:STAT2:IFNAR1:TYK2",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "IFNA_slash_B_x_IFNAR2_x_p_minus_JAK1_x_STAT2_x_p_minus_IFNAR1_x_p_minus_TYK2__cyto",
+      "to_id": "IFNA_B_IFNAR2_p_JAK1_STAT2_p_IFNAR1_p_TYK2__cyto",
+      "decoded_name": "IFNA/B:IFNAR2:p-JAK1:STAT2:p-IFNAR1:p-TYK2",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "IFNA_slash_B_x_IFNAR2_x_p_minus_JAK1_x_STAT2_x_IFNAR1_x_p_minus_TYK2__cyto",
+      "to_id": "IFNA_B_IFNAR2_p_JAK1_STAT2_IFNAR1_p_TYK2__cyto",
+      "decoded_name": "IFNA/B:IFNAR2:p-JAK1:STAT2:IFNAR1:p-TYK2",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "IFNAR1_x_TYK2__cyto",
+      "to_id": "IFNAR1_TYK2__cyto",
+      "decoded_name": "IFNAR1:TYK2",
+      "flag": "",
+      "note": ""
+    }
+  ],
+  "all_flagged": [
+    {
+      "from_id": "Mx_space_GTPases__cyto",
+      "to_id": "MX_family__cyto",
+      "decoded_name": "Mx GTPases",
+      "flag": "family_to_expand",
+      "note": "MX1,MX2"
+    },
+    {
+      "from_id": "IRF_space_1_minus_9__cyto",
+      "to_id": "IRF_family__cyto",
+      "decoded_name": "IRF 1-9",
+      "flag": "family_to_expand",
+      "note": "IRF1,IRF2,IRF3,IRF4,IRF5,IRF6,IRF7,IRF8,IRF9"
+    },
+    {
+      "from_id": "OAS_space_proteins__cyto",
+      "to_id": "OAS_family__cyto",
+      "decoded_name": "OAS proteins",
+      "flag": "family_to_expand",
+      "note": "OAS1,OAS2,OAS3"
+    },
+    {
+      "from_id": "STAT1_minus_1__cyto",
+      "to_id": "STAT1_iso1__cyto",
+      "decoded_name": "STAT1-1",
+      "flag": "isoform",
+      "note": "isoform 1 of STAT1"
+    },
+    {
+      "from_id": "SOCS_minus_1_space_and_space_SOCS_minus_3__cyto",
+      "to_id": "SOCS_family__cyto",
+      "decoded_name": "SOCS-1 and SOCS-3",
+      "flag": "family_to_expand",
+      "note": "SOCS1,SOCS3"
+    },
+    {
+      "from_id": "IFNAR2_minus_2__cyto",
+      "to_id": "IFNAR2_iso2__cyto",
+      "decoded_name": "IFNAR2-2",
+      "flag": "isoform",
+      "note": "isoform 2 of IFNAR2"
+    },
+    {
+      "from_id": "Type_space_I_space_IFN_minus_regulated_space_genes_space_with_space_ISRE_space_promoter_space_elements__nuc",
+      "to_id": "ISG_signature__nuc",
+      "decoded_name": "Type I IFN-regulated genes with ISRE promoter elements",
+      "flag": "gene_set_placeholder",
+      "note": "Type I IFN-regulated genes with ISRE promoter elements"
+    }
+  ]
+}

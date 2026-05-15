@@ -1,0 +1,188 @@
+{
+  "input": "curation/imports/M3/pilot_R-HSA-1980143/R-HSA-1980143.celldesigner.processed.xml",
+  "output": "curation/imports/M3/pilot_R-HSA-1980143/R-HSA-1980143.celldesigner.harmonised.xml",
+  "compartment_remaps": [
+    {
+      "id": "s_id_compartmentVertex_7660_22",
+      "from": "nucleoplasm",
+      "to": "nucleus"
+    },
+    {
+      "id": "default",
+      "from": "default",
+      "to": "extracellular"
+    }
+  ],
+  "species_renamed": 48,
+  "celldesigner_labels_decoded": 30,
+  "flag_counts": {
+    "renamed_only": 45,
+    "slash_pair_to_split": 2,
+    "phospho_state": 1
+  },
+  "transforms_sample": [
+    {
+      "from_id": "JAG1_x_NOTCH1__cyto",
+      "to_id": "JAG1_NOTCH1__cyto",
+      "decoded_name": "JAG1:NOTCH1",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "JAG2_x_NOTCH1__cyto",
+      "to_id": "JAG2_NOTCH1__cyto",
+      "decoded_name": "JAG2:NOTCH1",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "gamma_minus_secretase_space_complex__cyto",
+      "to_id": "gamma_secretase_complex__cyto",
+      "decoded_name": "gamma-secretase complex",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "DLL_slash_JAG__cyto",
+      "to_id": "DLL_JAG__cyto",
+      "decoded_name": "DLL/JAG",
+      "flag": "slash_pair_to_split",
+      "note": "split into DLL + JAG"
+    },
+    {
+      "from_id": "DLL_slash_JAG_x_NOTCH1__cyto",
+      "to_id": "DLL_JAG_NOTCH1__cyto",
+      "decoded_name": "DLL/JAG:NOTCH1",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "NOTCH1_1721_minus_1753__cyto",
+      "to_id": "NOTCH1_1721_1753__cyto",
+      "decoded_name": "NOTCH1(1721-1753)",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "p_minus_NICD1__nuc",
+      "to_id": "pNICD1__nuc",
+      "decoded_name": "p-NICD1",
+      "flag": "phospho_state",
+      "note": "phospho-NICD1; promote to state variable"
+    },
+    {
+      "from_id": "DTX_x_ITCH__cyto",
+      "to_id": "DTX_ITCH__cyto",
+      "decoded_name": "DTX:ITCH",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "NOTCH1_x_NUMB_x_ITCH__cyto",
+      "to_id": "NOTCH1_NUMB_ITCH__cyto",
+      "decoded_name": "NOTCH1:NUMB:ITCH",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "NICD1_x_RBPJ_x_SNW1__nuc",
+      "to_id": "NICD1_RBPJ_SNW1__nuc",
+      "decoded_name": "NICD1:RBPJ:SNW1",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "NOTCH1_space_Coactivator_space_Complex__nuc",
+      "to_id": "NOTCH1_Coactivator_Complex__nuc",
+      "decoded_name": "NOTCH1 Coactivator Complex",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "NOTCH1_space_Coactivator_space_Complex_x_CDK8_x_CCNC__nuc",
+      "to_id": "NOTCH1_Coactivator_Complex_CDK8_CCNC__nuc",
+      "decoded_name": "NOTCH1 Coactivator Complex:CDK8:CCNC",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "CDK8_x_CCNC__nuc",
+      "to_id": "CDK8_CCNC__nuc",
+      "decoded_name": "CDK8:CCNC",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "p_minus_NICD1_x_FBXW7_x_SKP1_x_CUL1_x_RBX1__nuc",
+      "to_id": "p_NICD1_FBXW7_SKP1_CUL1_RBX1__nuc",
+      "decoded_name": "p-NICD1:FBXW7:SKP1:CUL1:RBX1",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "FBXW7_x_SKP1_x_CUL1_x_RBX1__nuc",
+      "to_id": "FBXW7_SKP1_CUL1_RBX1__nuc",
+      "decoded_name": "FBXW7:SKP1:CUL1:RBX1",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "NOTCH1_x_DTX__cyto",
+      "to_id": "NOTCH1_DTX__cyto",
+      "decoded_name": "NOTCH1:DTX",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "ADAM10_slash_17_x_Zn2_plus__cyto",
+      "to_id": "ADAM10_17_Zn2_plus__cyto",
+      "decoded_name": "ADAM10/17:Zn2_plus_",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "Ub_minus_p_minus_NICD1__nuc",
+      "to_id": "Ub_p_NICD1__nuc",
+      "decoded_name": "Ub-p-NICD1",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "RBPJ_x_SNW1__nuc",
+      "to_id": "RBPJ_SNW1__nuc",
+      "decoded_name": "RBPJ:SNW1",
+      "flag": "",
+      "note": ""
+    },
+    {
+      "from_id": "HES1_x_TLE__nuc",
+      "to_id": "HES1_TLE__nuc",
+      "decoded_name": "HES1:TLE",
+      "flag": "",
+      "note": ""
+    }
+  ],
+  "all_flagged": [
+    {
+      "from_id": "DLL_slash_JAG__cyto",
+      "to_id": "DLL_JAG__cyto",
+      "decoded_name": "DLL/JAG",
+      "flag": "slash_pair_to_split",
+      "note": "split into DLL + JAG"
+    },
+    {
+      "from_id": "p_minus_NICD1__nuc",
+      "to_id": "pNICD1__nuc",
+      "decoded_name": "p-NICD1",
+      "flag": "phospho_state",
+      "note": "phospho-NICD1; promote to state variable"
+    },
+    {
+      "from_id": "MIB_slash_NEURL__cyto",
+      "to_id": "MIB_NEURL__cyto",
+      "decoded_name": "MIB/NEURL",
+      "flag": "slash_pair_to_split",
+      "note": "split into MIB + NEURL"
+    }
+  ]
+}
