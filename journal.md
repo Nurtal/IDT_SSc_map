@@ -284,6 +284,89 @@ Will split into four commits for traceability:
 3. `feat(imports): M1 IFN-I + M2 PDGF + M4 IL-6 Reactome imports (post-processed)`
 4. `feat(annotations): seed species_annotations.tsv from imports; scripts-smoke CI; doc updates`
 
+### 17:50 — Harmonisation script
+
+Surveyed unrecognised species in the seeded TSV (217/308 lacked auto-HGNC). Pattern counts:
+
+| Count | Pattern | Example |
+|-------|---------|---------|
+| 139 | complex (`_x_`) | `ABCE1_x_RNASEL_space_dimer__mito` |
+| 113 | `_space_` token (Reactome name with a space) | `Mx_space_GTPases__cyto` |
+| 43 | phospho (`p_minus_`) | `p_minus_STAT2:p_minus_STAT1` |
+| 32 | `default` compartment | `IFN_alpha_beta_IFNA_B__def` |
+| 26 | slash-grouping (`_slash_`) | `IFNA_slash_B` |
+| 25 | isoform (`X_minus_N`) | `IRF_space_1_minus_9__cyto` |
+
+Two insights this surfaced:
+1. `_space_` is **CellDesigner's escape encoding** for ` `, not a sanitiser artefact (similarly `_slash_` for `/`, `_minus_` for `-`, `_x_` for `:`). The MINERVA conversion preserves this encoding. Decoding back is straightforward.
+2. The encoded "p-X" and "X-N" patterns are real Reactome biology (phospho-forms and isoforms) that need explicit handling.
+
+Wrote `scripts/harmonise_imports.py` (stdlib only) that:
+
+- Decodes CellDesigner-escaped text on the `name` attribute and on `<celldesigner:name>` text (so the CellDesigner canvas displays human-readable labels).
+- Remaps Reactome compartments to our fixed vocabulary (`default` → `extracellular`, `nucleoplasm` → `nucleus`, `early_space_endosome` → `endosome`, `Golgi_space_lumen` → `Golgi`, `endoplasmic_space_reticulum_space_lumen` → `ER`).
+- Recomputes species IDs deterministically based on the decoded name, with six pattern classifications, each flagged in the JSON report: `family_to_expand`, `gene_set_placeholder`, `phospho_state`, `isoform`, `homodimer`, `slash_pair_to_split`.
+- Crucially, **does only identifier-level work** — no structural splits. Splitting `MX_family` into MX1 + MX2 (and fanning the reactions) is left to the CellDesigner curator and is flagged. Same for `ISG_signature`, `pSTAT2`, etc.
+
+### 18:15 — Iteration: decoding the CellDesigner annotation labels too
+
+First run had 524 leftover encoding tokens. They were in `<celldesigner:name>` element text (the canvas display labels) — separate from the structural `name=` attribute. CellDesigner shows this text on the glyph. Extended the harmoniser to walk `celldesigner:name` text and `celldesigner:protein name=` and decode them. After fix: **0 leftover encoding tokens** across all four harmonised files.
+
+### 18:30 — Applied to all imports
+
+| Module | species_renamed | flags |
+|--------|-----------------|-------|
+| M1 (IFN-α/β) | 43 | 4 family_to_expand, 2 isoform, 1 gene_set_placeholder |
+| M2 (TGF-β) | 68 | 1 homodimer, 1 isoform, 2 slash_pair_to_split |
+| M2 (PDGF) | 57 | (clean) |
+| M4 (IL-6) | 52 | 2 isoform |
+
+Species counts unchanged (no structural changes by design): 99, 76, 64 respectively. Reactions unchanged: 46, 31, 34.
+
+### 19:00 — WikiPathways EndMT — the ROADMAP was wrong about the WP ID
+
+ROADMAP cites `WP_3942 EndMT` as the M3 scaffold. Fetched it successfully (81 kB GPML + 19 kB datanodes TSV)… and discovered the pathway name is "**PPAR signaling**" — not EndMT. The ROADMAP draft used a guessed WP ID.
+
+Tried a few plausible WP IDs (`WP4474`, `WP4655`, `WP5045`, `WP5057`, `WP4787`) via the asset endpoint — all returned HTTP 403. Tried the WikiPathways search webservice (`webservice.wikipathways.org`) — 404. Tried `classic.wikipathways.org` and `www.wikipathways.org/api/` — 403 / 404. The WikiPathways public API surface has been reorganised; programmatic lookup of "EndMT" from the search interface needs a manual-browser step that's outside what I can do here.
+
+**Fallback used:** Reactome `R-HSA-1980143` — *Signaling by NOTCH1*. 79 species, 39 reactions, with HIF1A, JAG1, JAG2, DLL1, NOTCH1 — all relevant to EndoMT. Fetched, post-processed (→ 77 species, 2 ubiquitin removed), harmonised (48 renames; 1 phospho_state, 2 slash_pair_to_split flags).
+
+**Conclusion:** M3 stays "manual-heavy" as the ROADMAP foresaw. Notch1 gives M3 a Reactome anchor for the Notch-driven EndMT axis but the rest (endothelin, NO/sGC/cGMP, VE-cadherin loss, SNAI/ZEB) is still manual. Documented in `docs/import_pilot.md` and as an open follow-up item for the lead curator (browse WikiPathways directly).
+
+### 19:30 — Updated import_pilot.md and re-seeded annotations
+
+Re-seeded `species_annotations.tsv` from harmonised files (preferring `*.harmonised.xml` over `*.processed.xml`). New volumetric:
+
+| Module | species |
+|--------|---------|
+| M1 | 83 |
+| M2 | 165 (TGF-β + PDGF) |
+| M3 | 77 (Notch1 + manual to follow) |
+| M4 | 60 |
+| **Total unique** | **385** |
+
+Already above the 200–300 species target band for the post-curation map — cross-module dedupe during Phase 3 integration will reduce this, and SSc-specific manual additions will pad each module. The volumetric story is healthy.
+
+Auto-HGNC fill rate is 125 / 385 = 32 % — limited because most unrecognised entries are protein complexes (`X_Y_Z`) which need component-level annotation rather than a single HGNC symbol.
+
+### 19:40 — Makefile extensions
+
+Added targets:
+- `harmonise` — runs post-process + harmonise on every `*.celldesigner.xml` under `curation/imports/`.
+- `seed` — regenerates `species_annotations.tsv` from imports.
+- `m3-fetch` — fetches Notch1 (R-HSA-1980143) for M3.
+
+Also fixed the awk regex in `help` to accept digits in target names (it was filtering out `m3-fetch`).
+
+### 20:00 — Batch 4 ready
+
+Commit plan:
+
+1. `feat(scripts): import harmonisation pass (decode + classify + rename)`
+2. `feat(imports): apply harmoniser to M1+M2+M4; M3 Notch1 fallback for EndoMT scaffold`
+3. `chore: Makefile harmonise/seed/m3-fetch targets; help regex fix`
+4. `docs(import_pilot): harmonisation outcome + WikiPathways EndMT gotcha`
+
 ### 15:00 — Notebook stubs for the omics overlay
 
 Six JSON-skeleton notebooks under `analysis/overlay/tabib_scRNAseq/`:
