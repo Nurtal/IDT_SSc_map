@@ -1,0 +1,194 @@
+{
+  "integrated_xml": "curation/celldesigner/SSc_MIM_integrated.xml",
+  "bipartite_graph": {
+    "n_species": 385,
+    "n_reactions": 175,
+    "n_edges": 622
+  },
+  "species_projection": {
+    "n_nodes": 385,
+    "n_edges": 513,
+    "n_weakly_connected_components": 23,
+    "avg_in_degree": 1.3324675324675326,
+    "avg_out_degree": 1.3324675324675326
+  },
+  "communities": {
+    "count": 31,
+    "sizes": [
+      51,
+      31,
+      29,
+      29,
+      28,
+      26,
+      22,
+      22,
+      21,
+      18,
+      15,
+      13,
+      8,
+      7,
+      7,
+      6,
+      5,
+      5,
+      5,
+      4,
+      4,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      2
+    ]
+  },
+  "community_module_contingency": {
+    "comm0__M1": 17,
+    "comm0__M1,M2,M4": 2,
+    "comm0__M2": 17,
+    "comm0__M4": 15,
+    "comm1__M4": 31,
+    "comm2__M1": 29,
+    "comm3__M2": 29,
+    "comm4__M3": 28,
+    "comm5__M3": 26,
+    "comm6__M2": 22,
+    "comm7__M1": 8,
+    "comm7__M1,M2": 2,
+    "comm7__M1,M2,M4": 1,
+    "comm7__M2": 11,
+    "comm8__M2": 19,
+    "comm8__M2,M4": 1,
+    "comm8__M4": 1,
+    "comm9__M3": 18,
+    "comm10__M2": 15,
+    "comm11__M2": 13,
+    "comm12__M2": 8,
+    "comm13__M1": 7,
+    "comm14__M4": 7,
+    "comm15__M1": 6,
+    "comm16__M1": 5,
+    "comm17__M2": 5,
+    "comm18__M3": 5,
+    "comm19__M2": 4,
+    "comm20__M2": 4,
+    "comm21__M1": 3,
+    "comm22__M1": 3,
+    "comm23__M2": 3,
+    "comm24__M2": 3,
+    "comm25__M2": 3,
+    "comm26__M2": 3,
+    "comm27__M2": 3,
+    "comm28__M4": 3,
+    "comm29__M4": 3,
+    "comm30__M2": 2
+  },
+  "top_hubs": [
+    {
+      "species": "ISGF3_bound_to_ISRE_promotor_elements__nuc",
+      "module": "M1",
+      "hub_score": 9.569
+    },
+    {
+      "species": "ISG_signature__nuc",
+      "module": "M1",
+      "hub_score": 8.8327
+    },
+    {
+      "species": "PDGF_Phospho_PDGF_receptor_dimer__cyto",
+      "module": "M2",
+      "hub_score": 7.9077
+    },
+    {
+      "species": "TGFB1_TGFBR2_p_TGFBR1__cyto",
+      "module": "M2",
+      "hub_score": 6.7143
+    },
+    {
+      "species": "IFNA_B_IFNAR2_JAK1_STAT2_IFNAR1_TYK2__cyto",
+      "module": "M1",
+      "hub_score": 6.1355
+    },
+    {
+      "species": "NOTCH1_Coactivator_Complex__nuc",
+      "module": "M3",
+      "hub_score": 5.5318
+    },
+    {
+      "species": "IFNA_B_IFNAR2_p_JAK1_STAT2_p_IFNAR1_p_TYK2_p_STAT2_p_STAT1__cyto",
+      "module": "M1",
+      "hub_score": 3.8539
+    },
+    {
+      "species": "NICD1__nuc",
+      "module": "M3",
+      "hub_score": 3.7783
+    },
+    {
+      "species": "IFNA_B_IFNAR2_p_JAK1_STAT2_IFNAR1_p_TYK2__cyto",
+      "module": "M1",
+      "hub_score": 3.428
+    },
+    {
+      "species": "NOTCH1_Coactivator_Complex_CDK8_CCNC__nuc",
+      "module": "M3",
+      "hub_score": 3.1961
+    },
+    {
+      "species": "TGFB1_TGFBR2_TGFBR1__cyto",
+      "module": "M2",
+      "hub_score": 3.0956
+    },
+    {
+      "species": "NOTCH1_DTX__cyto",
+      "module": "M3",
+      "hub_score": 3.0132
+    },
+    {
+      "species": "Dimeric_TGFB1_TGFBR2_homodimer__cyto",
+      "module": "M2",
+      "hub_score": 2.9262
+    },
+    {
+      "species": "NICD1__cyto",
+      "module": "M3",
+      "hub_score": 2.8611
+    },
+    {
+      "species": "TGFB1_p_TGFBR_ZFYVE9_SMAD2_3__endo",
+      "module": "M2",
+      "hub_score": 2.6199
+    },
+    {
+      "species": "NICD1_RBPJ_SNW1__nuc",
+      "module": "M3",
+      "hub_score": 2.5956
+    },
+    {
+      "species": "gamma_secretase_complex__cyto",
+      "module": "M3",
+      "hub_score": 2.5133
+    },
+    {
+      "species": "IFNA_B_IFNAR2_JAK1_STAT2__cyto",
+      "module": "M1",
+      "hub_score": 2.4835
+    },
+    {
+      "species": "NOTCH1__cyto",
+      "module": "M3",
+      "hub_score": 2.479
+    },
+    {
+      "species": "NICD1_DTX__cyto",
+      "module": "M3",
+      "hub_score": 2.4275
+    }
+  ]
+}
