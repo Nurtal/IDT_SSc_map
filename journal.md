@@ -634,6 +634,86 @@ When the user runs `make release --tag v1.0 --push` (after filling placeholders 
 3. `docs: deprioritise MINERVA notes; downgrade R3 + R8; add R10 + R11`
 4. `chore(abstract): conclusion rewritten for Zenodo/GitHub; regenerate manuscript`
 
+### 21:00 — Curator mode: build v1.0 end-to-end
+
+User direction: *"focus soumission ACR, essaie de répondre seul aux questions de curations, travaille à une roadmap spécifique pour ça, présenter un livrable concret de bout en bout."* Translation: act as the curator-stand-in, build v1.0, document choices, keep reversible.
+
+Three docs pin the curation strategy:
+
+- **`docs/curation_plan.md`** — granularity rules, three-tier ECO citation policy (ECO:0000314 strong / 0000270 moderate / 0000305 inference with explicit "co-author upgrade" markers), reaction-density targets per module, v1.0 success metrics.
+- **`docs/curation_decisions.md`** — explicit answers to Q1 (4-module scope **holds** — no reshape, M3-Notch emphasis upweighted, complement deferred to v1.1), Q2 (per-module add/remove/promote with rationale), Q3 (**ACR-only**, methods paper to 2027).
+- **`curation/ssc_curated_reactions.tsv`** — source-of-truth: 67 SSc-specific reactions. M1 12, M2 22 (heaviest, fills the ECM-sink gap), M3 13, M4 11, crosstalk 8, sink-feeding 1. PMID coverage: 27 strong (ECO:0000314), 10 moderate (ECO:0000270), 2 physical interaction (ECO:0000353), 28 curator inference (ECO:0000305 with explicit "co-author upgrade" notes).
+
+`scripts/wire_ssc_tier1.py` reads the TSV + the 88 stubs + the integrated map, adds the 88 stub species + 45 auto-created species (sink phenotypes + phospho-states + new conceptual species like dsDNA / cGAMP / TGFB1 standalone) + the 67 reactions. Also updates `species_annotations.tsv` (133 new rows) and `reaction_evidence.tsv` (67 new rows).
+
+### 21:30 — TSV parsing pitfall
+
+Built the TSV by hand. First load: 4 rows had a PMID in the ECO column + 1 row had only 10 columns. Cause: I'd written 3 tabs (= 2 empty cells) between products and pmid in rows where modifiers were empty, instead of 2 tabs (= 1 empty cell). Fixed five rows. Now: 67 rows × 11 columns clean.
+
+### 21:45 — Wire result
+
+```
+integrated map before:  385 species, 175 reactions
+integrated map after:   518 species, 242 reactions, 20 compartments
+  - stubs wired:        88
+  - reactions added:    67
+  - species auto-created: 45  (sink phenotypes, phospho-states, new concepts)
+species_annotations.tsv: 385 → 518 rows
+reaction_evidence.tsv:   159 → 226 rows
+```
+
+### 22:00 — Re-running the AUTO lane on the curated map
+
+`make preflight` advisories down to 1 (dangling fraction, expected). All blocking checks green.
+
+**Network analysis** — top hubs now reflect SSc biology:
+
+| Rank | Species | Module | Hub score |
+|------|---------|--------|-----------|
+| 1 | SMAD3:SMAD4 (nuclear) | M2 | 11.10 |
+| 2 | NICD1 (cytosol) | M3 | 9.31 |
+| 3 | ISGF3 | M1 | 9.28 |
+| 4 | ISG_signature | M1 | 9.23 |
+| 5 | fibroblast_proFibrotic | M2 | 9.05 |
+| 6 | TGFB1 (extracellular) | M2 | 8.96 |
+| 7 | TGFB1:TGFBR2:TGFBR1 (Reactome complex) | M2 | 8.20 |
+| 8 | SNAI2 (nuclear) | ssc_tier1 | 6.70 |
+
+Compare to the previous Reactome-only run where the top 5 were all multi-protein Reactome complexes. The fibrosis story is now visible in the hub list.
+
+**Sink connectivity** — every anchor group now has nodes:
+
+| Sink | Before | After |
+|------|--------|-------|
+| M1 ISG_signature | 9 | **10** |
+| M2 ECM/myofibroblast | **0** | **7** ← unlocked by curation |
+| M3 vascular remodelling | 12 | **12** |
+| M4 Th2/autoAb output | 8 | **10** |
+
+Dangling fraction: 126 / 385 = 33% → 124 / 518 = **24%**. The numerator is roughly stable but the denominator grew, and the 88 newly-added stubs still need their full reactions wired to reach a sink — 37 of the 88 are dangling (those need their downstream-most reactions added in v1.1).
+
+**0 species violate the >6 sink-distance rule** — the scoping invariant holds.
+
+### 22:15 — Re-rendered figures + abstract
+
+- `figures/F3_druggable_targets.svg/png` — re-rendered from the curated map. Hub subnetwork now shows SMAD3/TGFB1/fibroblast nodes prominently with their M2 colour, distinct from the IFN cluster.
+- `manuscript/ACR2026_late_breaking_abstract.md` — Results section auto-updated to "518 species across 20 compartments, 242 reactions… 65 detected communities".
+
+Also fixed `draft_abstract.py` to read live totals directly from `SSc_MIM_integrated.xml` rather than the stale `SSc_MIM_integrated.report.json` (which is captured pre-wire).
+
+### 22:30 — Makefile integration
+
+Two new targets:
+- `make wire` — apply the curated TSV to the integrated map.
+- `make auto` updated to include `ssc-stubs → wire` between `crosstalk` and `network` so the full pipeline now reaches v1.0 state.
+
+### 22:45 — Commit plan (this batch)
+
+1. `feat(curation): curation plan + decisions + reactions TSV (67 SSc-specific reactions)`
+2. `feat(curation): wire SSc Tier-1 into integrated map; 518 species / 242 reactions`
+3. `feat(analyses): re-run network + sink + figures + abstract on curated map`
+4. `docs: ROADMAP curation sub-plan + STATUS refresh`
+
 ### 15:00 — Notebook stubs for the omics overlay
 
 Six JSON-skeleton notebooks under `analysis/overlay/tabib_scRNAseq/`:

@@ -95,12 +95,15 @@ figures:  ## Render preview figures F2 / F3 (uses .venv if matplotlib not in PYT
 abstract:  ## Draft the ACR abstract scaffold from analysis outputs.
 	$(PYTHON) scripts/draft_abstract.py
 
+wire:  ## Apply SSc-specific Tier-1 curation to the integrated map.
+	$(PYTHON) scripts/wire_ssc_tier1.py
+
 release:  ## Pre-flight a v1.x release (checks + CHANGELOG; doesn't tag).
 	$(PYTHON) scripts/release_prep.py
 
 lint: specs-check bib-check  ## Run all repo-content linters (no SBML files needed).
 
-auto:  lint validate harmonise seed integrate pmids crosstalk network sink-check preflight ssc-stubs figures abstract  ## Run the entire AUTO lane end-to-end.
+auto:  lint validate harmonise seed integrate pmids crosstalk ssc-stubs wire network sink-check preflight figures abstract  ## Run the entire AUTO lane end-to-end.
 	@echo ">> Full AUTO pipeline complete."
 
 all: lint validate  ## Lint + validate SBML (compatibility alias).

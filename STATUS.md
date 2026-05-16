@@ -5,11 +5,14 @@
 
 ## Headline
 
-- **11 commits** on `main`, pushed to GitHub.
-- **5 Reactome imports** fetched, post-processed, harmonised. **0 encoding-token leftovers** across all five files.
-- **385 unique species, 175 reactions** scaffolded across M1, M2, M3, M4.
+- **Curation v1.0 done** — 88 SSc Tier-1 stubs wired + 67 SSc-specific reactions across 4 modules + crosstalk. Top hubs now reflect SSc biology.
+- **Integrated map:** 518 species, 242 reactions, 20 compartments. **`make preflight` reports 0 blocking failures**.
+- **Co-author locked** (médecine interne, ARD-SSc collaboration). All curation choices documented + reversible via `curation/ssc_curated_reactions.tsv`.
+- **30+ commits** on `main`, pushed to GitHub.
+- **5 Reactome imports** fetched, post-processed, harmonised.
+- **355 PMIDs** mined + auto-filled via NCBI E-utils; **198 / 226 reactions PubMed-cited**.
 - Reactome pilot succeeded live; harmonisation classifier produced JSON reports flagging every transform.
-- **All Phase 0 + Phase 1 items + the import phase of Phase 2 are complete or done early.**
+- **All Phase 0 + Phase 1 + Phase 2 + Phase 3-AUTO complete.**
 
 ## What's done (with commit refs)
 
@@ -30,11 +33,17 @@
 
 | Artifact | Count | Notes |
 |----------|-------|-------|
+| `curation/celldesigner/SSc_MIM_integrated.xml` | 518 species / 242 reactions / 20 compartments | curated v1.0; passes `make preflight` |
 | `curation/imports/*/*/*.harmonised.xml` | 5 | M1 + M2×2 + M3 + M4 |
-| `curation/annotations/species_annotations.tsv` | 385 rows | Auto-HGNC fill 32% (complexes need component-level annotation) |
-| `curation/annotations/reaction_evidence.tsv` | 0 rows | MI2CAST annotation pending |
-| `curation/pubmed_corpus.bib` | 6 BibTeX entries | 3 with `pmid={TODO}` |
-| `scripts/*.py` | 7 | reactome_pilot, post_process_reactome, harmonise_imports, seed_species_from_imports, check_module_specs, check_bib, wikipathways_fetch, validate_sbml |
+| `curation/ssc_curated_reactions.tsv` | 67 reactions | source-of-truth for SSc-specific layer |
+| `curation/celldesigner/ssc_additions_template/*.xml` | 88 stubs | all wired into integrated map |
+| `curation/annotations/species_annotations.tsv` | 518 rows | full coverage of the integrated map |
+| `curation/annotations/reaction_evidence.tsv` | 226 rows | 198 with PMID (88%) |
+| `curation/pubmed_corpus.bib` | 361 BibTeX entries | 358 fully filled; 3 seed TODOs |
+| `analysis/network/` | 5 files | centrality, hubs, communities, sink_connectivity, summary |
+| `figures/` | F2 + F3 (SVG + 300dpi PNG) | F2 placeholder; F3 from real network |
+| `manuscript/ACR2026_late_breaking_abstract.md` | 1 file | 300-word IMRAD scaffold with live numerics |
+| `scripts/*.py` | 14 | reactome_pilot, post_process, harmonise, seed_species, integrate, extract_pmids, network, sink_check, crosstalk, bib_lookup, preflight, ssc_stubs, wire_ssc, draft_abstract, render_figures, release_prep, etc. |
 | `.github/workflows/` | 3 | validate_sbml, lint, scripts-smoke |
 
 ## Delivery target — pivoted 2026-05-16

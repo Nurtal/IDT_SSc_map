@@ -32,6 +32,24 @@
 
 ---
 
+## Curation v1.0 sub-plan (2026-05-16)
+
+Per user direction, the lead curator acts as stand-in for the co-author's biological calls until the post-hoc review. Three documents pin this down:
+
+- **[docs/curation_plan.md](docs/curation_plan.md)** — strategy (granularity, citation policy with three ECO tiers, reaction-density targets, success metrics).
+- **[docs/curation_decisions.md](docs/curation_decisions.md)** — answers to brief's Q1 (scope holds), Q2 (per-module Tier-1 add/remove/promote with rationale), Q3 (ACR-only ambition; methods paper deferred to 2027).
+- **[curation/ssc_curated_reactions.tsv](curation/ssc_curated_reactions.tsv)** — source-of-truth: 67 SSc-specific reactions across M1 (12) + M2 (22) + M3 (13) + M4 (11) + crosstalk (8) + sink-feeding (1). Each row has mechanism + PMID + ECO code.
+
+`scripts/wire_ssc_tier1.py` applies the TSV to the integrated map. Result on first run:
+- 88 stub species + 45 auto-created species + 67 reactions added
+- Integrated map: **518 species, 242 reactions, 20 compartments** (up from 385/175/17)
+- Top hubs now reflect SSc biology: SMAD3:SMAD4 (#1), fibroblast_proFibrotic (#5), TGFB1 (#6), SNAI2 (#8) — vs the previous Reactome-complex dominance
+- Sink anchors detected: M1 ISG (10), M2 ECM/myofibroblast (**7**, was 0), M3 vascular (12), M4 Th2/autoAb (10)
+- Dangling fraction: **24%** (was 33%); 0 species violate the >6 rule
+- 198 / 226 reaction_evidence rows have a PMID
+
+Reversibility: every reaction is one row in the TSV. Co-author overrides at review by editing the TSV and running `make wire` + the AUTO lane.
+
 ## Completed (with commit references)
 
 | Phase | Item | Commit | Lane |
@@ -50,6 +68,7 @@
 | 2.w9-10 | **350/350 PMIDs filled** via NCBI E-utils (title, authors, journal, year, DOI) | `bb6fc36` | 🟢 |
 | Tooling | MINERVA preflight checklist (repurposed as v1.0 readiness check) | `26e0854` | 🟢 |
 | 2.w6-8 | SSc Tier-1 species stubs auto-generated per module (88 stubs) | `b1d2352` | 🟡 |
+| 2.w6-8 | **SSc Tier-1 curation v1.0** — 88 stubs wired + 67 SSc-specific reactions; integrated map 518/242 | (this batch) | 🟡→🟢 |
 | 4.w17 | F2 + F3 preview figures rendered | `7cbea7a` | 🟢 |
 | 4 | Whitfield bulk overlay notebook stubs | `13e337a` | 🟢 |
 | 5 | ACR abstract scaffold from analyses | `13e337a` | 🟢 |
