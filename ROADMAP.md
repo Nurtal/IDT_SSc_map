@@ -1,21 +1,34 @@
 # ROADMAP — SSc-MIM (Skin Fibrosis Molecular Interaction Map)
 
-> **Revised on 2026-05-16.** Phase 0 + Phase 1 + the *import* half of Phase 2 are complete, weeks ahead of the original calendar. This rewrite reorganises the remaining work into **three execution lanes** so as much as possible runs without human intervention.
+> **Revised on 2026-05-16 (pivot).** Primary delivery is **a functional, robust map hosted on GitHub + Zenodo (citable DOI)**, before ACR submission. MINERVA Luxembourg deployment is moved to a **post-publication stretch goal**. Co-author is locked (médecine interne, ARD-published SSc collaboration).
 
 - **Window:** 15 May 2026 → 22 September 2026 (18 weeks).
-- **Primary target:** ACR Convergence 2026 late-breaking abstract (deadline 22 Sep 2026, 12:00 ET).
+- **Primary target:** ACR Convergence 2026 late-breaking abstract (deadline 22 Sep 2026, 12:00 ET) supported by a citable Zenodo DOI for the v1.0 map.
 - **Backup:** methodological paper for *Frontiers in Bioinformatics* / *npj Systems Biology and Applications*.
 - **Authoritative status:** [STATUS.md](STATUS.md) (snapshot) and the git log (history). This file describes intent and remaining work.
 
 ## Execution lanes
 
-Every remaining task is tagged one of:
+- 🟢 **AUTO** — fully scripted. Runs via `make`, no human in the loop.
+- 🟡 **ASSIST** — script generates a scaffold; the curator + co-author fill the biology.
+- 🔴 **HUMAN** — irreducible: scope sign-off, CellDesigner GUI, ACR submission, git-tag push.
 
-- 🟢 **AUTO** — fully scripted. Runs in CI or via `make`, produces a reproducible artifact, no human in the loop.
-- 🟡 **ASSIST** — script generates a scaffold (XML stub, TSV with TODO rows, markdown checklist). A human fills the biology; the script keeps the scaffold honest.
-- 🔴 **HUMAN** — cannot be replaced by code: kickoff meetings, biological sign-off, CellDesigner GUI work, MINERVA account, ACR portal submission.
+---
 
-The point of this revision: keep the project moving on the 🟢 lane while the 🔴 lane is unblocked.
+## Pivot — what changed on 2026-05-16
+
+| Before | After |
+|--------|-------|
+| MINERVA deployment in Phase 3 (week 14) on critical path | MINERVA = stretch goal, Phase 6 (post-publication) |
+| "Need rheumatologist co-author" was the principal blocker | Co-author **locked** — médecine interne, prior ARD-SSc publication |
+| Public URL via MINERVA was the abstract's anchor | Zenodo DOI is the abstract's anchor; MINERVA optional |
+| 7 external blockers on the handover queue | 3 (CellDesigner GUI, CITATION.cff fill, GitHub→Zenodo webhook toggle) |
+
+**Why this works:**
+- The map content (SBML + annotations + figures + scripts) is the scientific deliverable. Hosting is a rendering of it. GitHub + a Zenodo DOI gives a stable, citable URL with no curator-role gatekeeping.
+- The dual licence (CC-BY 4.0 for content, MIT for code) is already configured.
+- ACR reviewers care about the resource + the translational story, not the hosting platform. "Available on GitHub (link) / archived on Zenodo (DOI)" is unambiguous.
+- MINERVA stays a strong "v2.0 follow-up" line for the methodological paper.
 
 ---
 
@@ -23,149 +36,144 @@ The point of this revision: keep the project moving on the 🟢 lane while the �
 
 | Phase | Item | Commit | Lane |
 |-------|------|--------|------|
-| 0 | Repo bootstrap, LICENSE (CC-BY + MIT), CITATION.cff, .gitignore, CONTRIBUTING, issue templates, SBML CI + libSBML validator | `4dcf004` | 🟢 |
-| 1.w1 | Curation guidelines (Mazein 2023-adapted), MI2CAST checklist, scoping notes, risks, four module specs with Tier-1 entity tables | `4dcf004` | 🟢 |
+| 0 | Repo bootstrap (LICENSE dual, CITATION.cff, .gitignore, CONTRIBUTING, issue templates, SBML CI + libSBML validator) | `4dcf004` | 🟢 |
+| 1.w1 | Curation guidelines (Mazein 2023), MI2CAST checklist, scoping notes, risks, four module specs with Tier-1 tables | `4dcf004` | 🟢 |
 | 1.w1 | Reactome → CellDesigner conversion pilot (live, R-HSA-2173789 TGF-β) | `bfdaea7` | 🟢 |
-| 1.w1 | Linters (`check_module_specs`, `check_bib`); caught and fixed 3 real Tier-1 spec bugs | `a23c8bd` | 🟢 |
+| 1.w1 | Linters; caught and fixed 3 real Tier-1 spec bugs | `a23c8bd` | 🟢 |
 | 1.w3 | Omics dataset decision (Tabib scRNAseq primary, Whitfield bulk reserve) | `f2354f9` | 🟡 |
-| 2.w4-5 | M1 IFN-α/β import + post-process + harmonise — 83 species, 25 reactions | `dd5da1d`, `392bb15` | 🟢 |
-| 2.w6-7 | M2 TGF-β SMADs + PDGF — 175 species, 77 reactions | `dd5da1d`, `392bb15` | 🟢 |
-| 2.w8-9 | M3 Notch1 (EndMT scaffold; rest manual per design) — 77 species, 39 reactions | `392bb15` | 🟢 |
-| 2.w10-11 | M4 IL-6 — 64 species, 34 reactions | `dd5da1d`, `392bb15` | 🟢 |
-| Tooling | Reactome post-processor, harmoniser (decode + classify + rename), species seeder, Makefile, scripts-smoke CI | `cf92a46`, `876deaa`, `1304100`, `b7226eb` | 🟢 |
+| 2.w4-11 | Reactome imports + post-process + harmonise for M1, M2 (×2), M3 (Notch1), M4 — **399 raw species, 175 reactions** | `dd5da1d`, `392bb15` | 🟢 |
+| 3.w12 | Integration of 5 harmonised XMLs → **`SSc_MIM_integrated.xml`** (385 species, 175 reactions, 14 cross-module dedupes) | `f49d930` | 🟢 |
+| 3.w12 | Auto-generated crosstalk matrix from module specs (14 edges) | `88345fb` | 🟢 |
+| 3.w14 | Network analysis — centrality + top-20 hubs + 31 communities | `739c2fa` | 🟢 |
+| 3.w14 | Sink-node connectivity audit (0 violate the >6 rule; 126 dangling → curator backlog) | `f420cb4` | 🟢 |
+| 2.w9-10 | **355 PMIDs mined** from Reactome SBML; 159 reaction_evidence rows seeded (158 with citation) | `2490917` | 🟢 |
+| 2.w9-10 | **350/350 PMIDs filled** via NCBI E-utils (title, authors, journal, year, DOI) | `bb6fc36` | 🟢 |
+| Tooling | MINERVA preflight checklist (repurposed as v1.0 readiness check) | `26e0854` | 🟢 |
+| 2.w6-8 | SSc Tier-1 species stubs auto-generated per module (88 stubs) | `b1d2352` | 🟡 |
+| 4.w17 | F2 + F3 preview figures rendered | `7cbea7a` | 🟢 |
+| 4 | Whitfield bulk overlay notebook stubs | `13e337a` | 🟢 |
+| 5 | ACR abstract scaffold from analyses | `13e337a` | 🟢 |
+| ROADMAP pivot | This rewrite + co-author lock + Zenodo target | (this batch) | 🟢 |
+| Bundle | `.zenodo.json` + `scripts/release_prep.py` + `make release` | (this batch) | 🟢 |
 
-**Volumetric checkpoint (post-import, pre-curation):** 399 raw species, 175 reactions across 5 pathways → 385 unique after cross-import dedupe. Comfortable headroom for the 200–300 / 300–450 target range.
+**Volumetric checkpoint:** 385 unique species, 175 reactions, 17 compartments, 355 PMIDs across 5 imports + integrated map. Comfortable headroom relative to the 200–300 / 300–450 target band.
+
+---
+
+## v1.0 release definition
+
+A clean GitHub release tagged `v1.0` (auto-DOI'd via the Zenodo↔GitHub webhook), containing:
+
+1. **`curation/celldesigner/SSc_MIM_integrated.xml`** — the integrated map. SBML L2v4, CellDesigner-openable, MI2CAST-annotated, passes `validate_sbml` and `minerva_preflight` (no blocking failures).
+2. **`curation/celldesigner/ssc_additions_template/*.xml`** — 88 SSc Tier-1 species stubs (whether or not they've been wired into the integrated map by `v1.0`).
+3. **`curation/annotations/`** — species_annotations.tsv (385 rows), reaction_evidence.tsv (≥159 rows with PMIDs), pubmed_corpus.bib (361 entries; 358 fully filled).
+4. **`analysis/network/`** — centrality.tsv, hubs.tsv, communities.tsv, sink_connectivity.tsv, summary.json.
+5. **`figures/`** — F2 + F3 (final or preview), F1 placeholder until a render exists.
+6. **`docs/`** — scoping notes, curation guidelines, MI2CAST checklist, module specs, crosstalk matrix, omics decision, risk register, import pilot notes.
+7. **`scripts/`** — all 13 automation scripts and the `Makefile` so a fresh clone reproduces everything via `make auto`.
+8. **`STATUS.md`** + **`ROADMAP.md`** + **`README.md`** + **`CITATION.cff`** (with REPLACE_ME placeholders filled) + **`.zenodo.json`** for the metadata Zenodo reads on tag.
+
+**Release acceptance criteria:**
+
+- `make auto` runs end-to-end clean on a fresh clone.
+- `make preflight` returns 0 (no blocking failures); advisories acceptable.
+- `git status` clean.
+- `CITATION.cff` and `.zenodo.json` have no `REPLACE_ME` strings.
+- Sink connectivity dangling fraction has dropped from 33 % (today) — target ≤ 15 % after the SSc Tier-1 wiring round.
 
 ---
 
 ## What's left
 
-### Phase 2 (curation) — remaining work
+### Phase 2 (curation) — remaining
 
-The per-module workflow runs days 1–14. Days 1–5 (import / harmonisation) are done for every module. Days 6–14 split as follows:
+| Day | Step | Lane | Status |
+|-----|------|------|--------|
+| 6–8 | **SSc-specific Tier-1 wiring in CellDesigner** | 🟡 + 🔴 | 88 stubs auto-generated; co-author wires the reactions |
+| 9–10 | **MI2CAST annotation review** | 🟡 | 159 rows pre-filled; co-author validates ECO codes + PMID relevance |
+| 11–12 | **Quality pass** | 🟢 | `make preflight`, `make sink-check`; one-shot, runs in seconds |
+| 13–14 | **Buffer / write-up** of the as-built module | 🟡 | |
 
-| Day | Step | Lane |
-|-----|------|------|
-| 6–8 | **SSc-specific Tier-1 augmentation** — add CXCL4/PF4, POSTN, COMP, CTGF/CCN2, FRA-2, TBX2, endothelin axis, etc. | 🟡 ASSIST |
-| 9–10 | **MI2CAST annotation** — PMID + ECO code per reaction | 🟡 ASSIST |
-| 11–12 | **Quality pass** — libSBML, sink connectivity, dangling species, citation completeness | 🟢 AUTO |
-| 13–14 | **Buffer / write-up** of the as-built module | 🟡 ASSIST |
-
-#### 🟢 AUTO automation queue (Phase 2 polish)
-
-These ship in this batch and the next; no human input required:
-
-1. ✅ **Extract PMIDs from BioPAX.** `scripts/extract_pmids_from_biopax.py` walks the four `*.owl` files, mines `bp:xref` / `bp:PublicationXref`, seeds `pubmed_corpus.bib` and pre-fills `reaction_evidence.tsv` with one row per Reactome reaction.
-2. ✅ **Sink-node connectivity check.** `scripts/sink_connectivity.py` enforces the "every Tier-1 species → sink in ≤ 6 steps" rule from scoping notes.
-3. ✅ **Cross-module dedupe report.** Already part of the seeder + integrator.
-4. **Cofactor cleanup at integration.** Re-run cofactor collapse across modules (ATP-cyto from M1 = ATP-cyto from M2 once integrated).
-5. **Validate-on-CI for all harmonised XMLs.** Already wired; just needs the harmonised paths added.
-
-#### 🟡 ASSIST automation queue (Phase 2 — curator-driven)
-
-1. **`scripts/ssc_additions_template.py`** — read `docs/module_specs/M*.md` Tier-1 tables, emit a starter CellDesigner XML fragment per module with each SSc-specific Tier-1 species as a placeholder node (id, name, compartment from the table; empty reactions). Curator wires the biology in CellDesigner; script does the bookkeeping.
-2. **`scripts/mi2cast_starter_rows.py`** — for each reaction in each harmonised XML, emit a draft row in `reaction_evidence.tsv` (reaction_id, type from SBO if present, participants list from the SBML reactants/products, empty mechanism / pmid / evidence_code / module / notes). Reduces the curator's MI2CAST fill from "write 175 rows" to "fill in PMID + mechanism + ECO".
-3. **`scripts/bib_lookup.py`** — given a PMID, fetch the canonical citation via NCBI E-utilities and append a `pubmed_corpus.bib` entry. Idempotent. The curator pastes PMIDs into a queue file; the script does the BibTeX bookkeeping.
-
-#### 🔴 HUMAN blockers (Phase 2)
-
-- SSc-specific reaction biology — the curator decides "in SSc skin, CXCL4 drives Th2 chemotaxis with PMID X showing this in dermal biopsies".
-- ECO code assignment for each reaction.
-- Final Tier-1 sign-off by the rheumatologist.
-
-### Phase 3 (integration + deployment) — weeks 12–14
+### Phase 3 (integration + Zenodo release) — replaces MINERVA-centric Phase 3
 
 | Step | Lane | Status |
 |------|------|--------|
-| Inter-module crosstalk inventory | 🟡 ASSIST | Scaffolded from module specs (this batch); curator confirms |
-| Integrate 5 harmonised XMLs → `SSc_MIM_integrated.xml` | 🟢 AUTO | This batch (`scripts/integrate_modules.py`) |
-| Cross-module species dedupe + cofactor collapse | 🟢 AUTO | Bundled with integration |
-| One round of expert review | 🔴 HUMAN | Locked into rheumatologist's calendar |
-| MINERVA upload + colour palette + semantic zoom | 🔴 HUMAN | Needs curator account; we hand off a deployment-ready file |
-| Cytoscape-style network analysis | 🟢 AUTO | This batch (`scripts/network_analysis.py`) — pure networkx, no GUI |
-| Sink-node connectivity & dangling species | 🟢 AUTO | This batch (`scripts/sink_connectivity.py`) |
-| CaSQ Boolean inference (optional) | 🟢 AUTO | Already in `environment.yml`; wire to `make boolean` next batch |
+| Integrate the 5 harmonised XMLs | 🟢 | ✅ done |
+| Cross-module species dedupe | 🟢 | ✅ done (14 dedupes) |
+| Crosstalk inventory | 🟡 | scaffolded (14 edges); co-author validates each |
+| One round of co-author review | 🔴 | kickoff meeting + 2 follow-ups |
+| Network analysis + sink connectivity | 🟢 | ✅ done |
+| **Zenodo release prep** | 🟢 | this batch (`scripts/release_prep.py`) |
+| **`v1.0` git tag** | 🔴 | one command; user-driven |
+| Zenodo DOI propagation | 🟢 | webhook-driven, 1–2 days |
 
-#### 🟢 AUTO automation queue (Phase 3)
-
-1. ✅ **Integration.** `scripts/integrate_modules.py` (this batch) — merge the five harmonised XMLs into `curation/celldesigner/SSc_MIM_integrated.xml`. Deduplicate species by id with explicit dedupe report. Resolve shared-species "homes" from the Tier-1 spec annotations (ACTA2→M2, JAK1/TYK2→M1).
-2. ✅ **Network analysis.** `scripts/network_analysis.py` (this batch) — networkx-based: degree, betweenness, closeness, PageRank on species nodes; Louvain communities vs hand-defined modules; top-20 hubs.
-3. ✅ **Sink connectivity.** `scripts/sink_connectivity.py` (this batch) — shortest path from every species to the four sinks; flag length > 6.
-4. **CaSQ + GINsim sanity simulation.** Next batch. `make boolean` runs `casq` on the integrated map → SBML-qual; run one perturbation (TGF-β ON → ECM_deposition reachable).
-5. **MINERVA-readiness check.** Next batch. `scripts/minerva_preflight.py` — verify unique IDs, every species annotated, every reaction PMID-tagged; emit a green/red checklist.
-
-### Phase 4 (translational use case + figures) — weeks 15–17
+### Phase 4 (translational use case + figures) — unchanged
 
 | Step | Lane | Status |
 |------|------|--------|
-| Download + QC + cluster Tabib scRNAseq (GSE138669) | 🟢 AUTO | Notebook stubs in place; needs data download | 
-| Per-cluster DEG (SSc vs HC) | 🟢 AUTO | Stub `03_deg.ipynb` |
-| Project DEGs onto MIM species | 🟢 AUTO | Stub `04_projection.ipynb` |
-| Per-donor module activation scores | 🟢 AUTO | Stub `05_scoring.ipynb` |
-| Druggable hub prioritisation (DGIdb + Open Targets) | 🟢 AUTO | Stub `06_drug_targets.ipynb` |
-| Whitfield bulk overlay (complementary) | 🟢 AUTO | Stub notebook to be added |
-| Figure F2 — overlay heatmap | 🟢 AUTO | Generated from `05_scoring.ipynb` |
-| Figure F3 — druggable targets sub-network + table | 🟢 AUTO | Generated from network + drug-target join |
-| Figure F1 — global MIM screenshot from MINERVA | 🔴 HUMAN | Requires the deployed MINERVA URL |
-| Composite clinical-readable layout | 🟡 ASSIST | Script renders panels; human places labels |
+| Download + QC + cluster Tabib scRNAseq | 🟢 | notebook stubs in place |
+| Per-cluster DEG (SSc vs HC) | 🟢 | stub `03_deg.ipynb` |
+| Project DEGs onto MIM | 🟢 | stub `04_projection.ipynb` |
+| Per-donor module scores | 🟢 | stub `05_scoring.ipynb` |
+| Druggable hub prioritisation (DGIdb + Open Targets) | 🟢 | stub `06_drug_targets.ipynb` |
+| Whitfield bulk overlay (complementary) | 🟢 | stub `01–03_*.ipynb` |
+| Figure F2 — overlay heatmap | 🟢 | placeholder rendered; real data lands here |
+| Figure F3 — druggable subnetwork | 🟢 | preview rendered |
+| Figure F1 — composite global view | 🟡 | render from integrated SBML (no MINERVA needed) |
 
-#### 🟢 AUTO automation queue (Phase 4)
-
-1. **`scripts/fetch_tabib.py`** — pull GSE138669 from GEO (large; may need user-side compute). Writes a manifest and a checksum.
-2. **`scripts/build_overlay.py`** — load AnnData → DEG per cluster → MIM projection → MINERVA-format TSV. Pure batch.
-3. **`scripts/druggable_hubs.py`** — query DGIdb + Open Targets for the top-20 hubs from the network analysis; produce `analysis/overlay/druggable_hubs.tsv`.
-4. **`scripts/render_figures.py`** — matplotlib + networkx — produces F2 (heatmap of per-donor module scores) and F3 (hub subnetwork + drug-target table). F1 stays human (MINERVA screenshot).
-
-### Phase 5 (writing + submission) — week 18+
+### Phase 5 (writing + ACR submission)
 
 | Step | Lane | Status |
 |------|------|--------|
-| ACR abstract draft (300 words + figs) | 🟡 ASSIST | Script outline from STATUS + module specs |
-| Co-author iteration | 🔴 HUMAN | |
-| ACR portal submission | 🔴 HUMAN | |
-| Manuscript draft for *Frontiers in Bioinformatics* / *npj Sys Biol* | 🟡 ASSIST | Outline scaffolded; sections written by lead curator |
+| ACR abstract scaffold | 🟢 | ✅ generated with real numerics; co-author + lead curator polish |
+| Co-author iteration | 🔴 | |
+| ACR portal submission | 🔴 | by 22 Sep 12:00 ET |
+| Full manuscript draft for Frontiers in Bioinformatics / npj Sys Biol Appl | 🟡 | abstract → outline → expansion |
 
-#### 🟡 ASSIST automation queue (Phase 5)
+### Phase 6 — post-publication / stretch (no longer blocking)
 
-1. **`scripts/draft_abstract.py`** — from `STATUS.md` + module spec headers + analysis hub table, emit an ACR-style 300-word abstract scaffold (Background / Methods / Results / Conclusion) with placeholders for numerical results. Lead curator edits for voice and final framing.
+| Step | Lane | Status |
+|------|------|--------|
+| MINERVA Luxembourg curator role request | 🔴 | optional |
+| MINERVA deployment with semantic zoom + overlays | 🔴 | optional |
+| WikiPathways EndMT correct ID lookup | 🔴 | optional |
+| BioModels deposit | 🟢 | optional, auto-bundled by Zenodo |
+| v1.x corrections / extensions (lung, GI, vascular peripheries) | 🟡 + 🔴 | optional |
 
 ---
 
 ## Revised milestone calendar
 
-The original calendar treated weeks 4–11 as "module curation". With imports done, the curator's focus shifts entirely to **biology-side work** while the 🟢 lane keeps producing artifacts. Dates below reflect what's now realistic:
-
 | # | Milestone | Original date | Revised | Lane | Status |
 |---|-----------|---------------|---------|------|--------|
 | M0 | Stack + repo skeleton | 14 May | 15 May | 🟢 | ✅ |
-| M1 | Scope locked, clinical co-author signed on | 5 Jun | unchanged | 🔴 | ⏸ |
-| M2 | Module M1 (IFN-I) imported | 19 Jun | **15 May** | 🟢 | ✅ |
-| M3 | Module M2 (TGF-β) imported | 3 Jul | **15 May** | 🟢 | ✅ |
-| M4 | **Go/no-go #1** — M1+M2 done? | 24 Jul | n/a — imports completed in week 1 | 🟢 | ✅ skipped |
-| M5 | Modules M3 + M4 imported | 31 Jul | **15 May** | 🟢 | ✅ |
-| M5.5 | Integrated MIM (auto-merged) | n/a | **16 May** | 🟢 | this batch |
-| M5.6 | Network analysis + sink connectivity | week 14 | **16 May** | 🟢 | this batch |
-| M6 | Integrated MIM with SSc-specific crosstalk | 14 Aug | unchanged (needs curator + expert) | 🟡 + 🔴 | scaffolded |
-| M7 | **Go/no-go #2** — Expert validation? | 21 Aug | unchanged | 🔴 | ⏸ |
-| M8 | MINERVA deployment | 21 Aug | unchanged | 🔴 | ⏸ |
-| M9 | Omics overlay computed, figures drafted | 11 Sep | unchanged for figures; **AUTO can run as soon as the integrated map is signed off** | 🟢 + 🔴 | partial |
-| M10 | Abstract submitted to ACR 2026 | ≤22 Sep 2026, 12:00 ET | unchanged | 🔴 | ⏸ |
-| M11 | Full manuscript draft circulated | 30 Nov | unchanged | 🟡 + 🔴 | ⏸ |
+| M1 | Scope locked, **co-author signed on** | 5 Jun | **16 May** | 🔴 | ✅ **locked** |
+| M2–M5 | Module imports | 19 Jun – 31 Jul | **15 May** | 🟢 | ✅ |
+| M5.5 | Integrated MIM (auto-merged) | n/a | **16 May** | 🟢 | ✅ |
+| M5.6 | Network analysis + sink connectivity | week 14 | **16 May** | 🟢 | ✅ |
+| M6 | Integrated MIM with SSc-specific crosstalk (88 stubs wired) | 14 Aug | **15 Jul** (target) | 🟡 + 🔴 | scaffolded |
+| M7 | Co-author review round | 21 Aug | **31 Jul** (target) | 🔴 | scheduled |
+| **M8 (new)** | **v1.0 release on GitHub + Zenodo DOI** | n/a | **31 Aug** (target) | 🟢 + 🔴 | ready when M6/M7 land |
+| ~~M8old~~ | ~~MINERVA deployment~~ | ~~21 Aug~~ | **moved to Phase 6 (post-pub)** | 🔴 | optional |
+| M9 | Omics overlay computed, figures drafted | 11 Sep | **7 Sep** | 🟢 | partial |
+| M10 | Abstract submitted to ACR | ≤22 Sep 12:00 ET | unchanged | 🔴 | scheduled |
+| M11 | Full manuscript draft circulated | 30 Nov | unchanged | 🟡 + 🔴 | scheduled |
+| M12 (new) | MINERVA deployment (optional) | n/a | post-Nov 2026 | 🔴 | stretch |
 
-**Take-away:** the calendar's bottleneck shifted from "can the curator finish in time?" to "when does the rheumatologist sign off?" The 🟢 lane keeps producing artifacts and the curator can attack biology-only work without waiting.
+**Take-away:** the calendar's binding constraint has shifted from "rheumatologist availability" (resolved) to "co-author bandwidth in July–August for the Tier-1 wiring + review". That is now the principal scheduling watch-point.
 
 ---
 
 ## Go / no-go gates — updated
 
-| Gate | Original date | Revised | Question | If yes | If no |
-|------|---------------|---------|----------|--------|-------|
-| G1 | 24 Jul 2026 | **n/a — auto-completed** | M1 + M2 imports + harmonised? | (gate skipped; imports done in week 1) | (not reachable) |
-| G2 | 21 Aug 2026 | unchanged | Expert review completed and integrated? | Submit with full-confidence framing | Submit with "validation in progress" caveat |
-| G3 | 18 Sep 2026 | unchanged | Abstract co-author sign-off achieved? | Submit on/before 21 Sep | Push to EULAR 2027 |
-| **G1.5 (new)** | **End of week 4 — 12 Jun 2026** | new gate | Has the rheumatologist signed off on the four-module scope and the Tier-1 lists? | Curator launches Phase 2 day-6+ biology work | Re-scope; consider dropping M3 or merging M3 into M2 |
-
-The new G1.5 gate replaces G1 since the original G1 (about curator pace) is no longer the binding constraint.
+| Gate | Date | Question | If yes | If no |
+|------|------|----------|--------|-------|
+| ~~G1~~ | ~~24 Jul~~ | (auto-skipped — imports done in week 1) | | |
+| G1.5 | **already passed** | Co-author signed on the scope? | (proceed) | (n/a — done) |
+| G2 | 31 Jul 2026 | Co-author review of integrated map (with SSc Tier-1 wired) complete? | proceed to v1.0 tag | tag v0.9; review can iterate post-tag |
+| **G3 (new)** | **24 Aug 2026** | `make preflight` clean + working tree green? | `git tag v1.0 && git push --tags` — Zenodo mints DOI | fix and retry |
+| G4 | 11 Sep 2026 | Omics overlay produces a clinically-readable F2? | proceed to abstract polish | submit with figure caveat |
+| G5 | 18 Sep 2026 | Abstract co-author sign-off? | submit ≤ 21 Sep | push to EULAR 2027 |
 
 ---
 
@@ -173,50 +181,54 @@ The new G1.5 gate replaces G1 since the original G1 (about curator pace) is no l
 
 | Risk | Original level | New level | Why |
 |------|----------------|-----------|-----|
-| R1 — Curation slower than planned | high | **medium-low** | Imports + harmonisation done in week 1; biology-only work remaining |
-| R2 — Reactome → CellDesigner incompatibilities | medium | **low** | Conversion verified live on 5 pathways |
-| R3 — Late expert validation | medium | **medium (binding constraint)** | Now the principal scheduling risk |
-| R4 — "Wow factor" for ACR clinician reviewer | medium | unchanged | Mitigated by automation of F2 + F3 figures |
-| R5 — Still "preliminary" at submission | low–medium | **low** | Late-breaking track tolerates it; overlay AUTO-runs |
-| R6 — Reproducibility regression | medium | **low** | `environment.yml` pinned, CI green |
+| R1 — Curation slower than planned | high | **medium-low** | Imports + harmonisation done; only SSc Tier-1 wiring remains |
+| R2 — Reactome → CellDesigner incompatibilities | medium | **low** | Verified on 5 pathways |
+| R3 — Late expert validation | medium | **low** | Co-author locked; calendar booking is the only thing left |
+| R4 — "Wow factor" for ACR clinician reviewer | medium | unchanged | Mitigated by F2 + F3 + Zenodo DOI |
+| R5 — Still "preliminary" at submission | low–medium | **low** | Late-breaking track tolerates it; overlay auto-runs |
+| R6 — Reproducibility regression | medium | **low** | environment.yml pinned, CI green, `make auto` end-to-end |
 | R7 — Data licensing / GEO availability | low | unchanged | |
-| R8 — Tooling drift on MINERVA | low | unchanged | Mirror to Zenodo planned |
-| **R9 (new) — Automation drift from biology** | n/a | **medium** | Script-generated scaffolds can ossify wrong choices. Mitigation: every transform produces a JSON report; nothing is destructive; curator can override. |
+| ~~R8 — Tooling drift on MINERVA~~ | ~~low~~ | **closed for v1.0** | MINERVA off the critical path |
+| R9 — Automation drift from biology | medium | unchanged | JSON reports + co-author review catch this |
+| **R10 (new) — Zenodo DOI propagation delay** | n/a | **low** | Webhook-driven, 1–2 days after tag; mitigation: tag ≥ 1 week before ACR deadline (target 24 Aug for a 22 Sep submission) |
+| **R11 (new) — Co-author bandwidth in July–August** | n/a | **medium (binding constraint)** | Book the kickoff + 2 review sessions on the calendar now; share STATUS.md as the brief |
 
 ---
 
-## Open external blockers (handover queue)
+## Open external items (handover queue, after pivot)
 
-These are the **only** items that prevent further automated progress. They live with the user:
+These are the **only** things between the project and the v1.0 release:
 
-1. **Rheumatologist kickoff + co-authorship lock** (single most important).
-2. **MINERVA Luxembourg curator role** request.
-3. **Bibliography sprint** (~150 PMIDs to feed `pubmed_corpus.bib`).
-4. **CellDesigner GUI** open of each `*.harmonised.xml` for visual round-trip and SSc-specific augmentation.
-5. **WikiPathways EndMT pathway ID** lookup (the original WP_3942 is PPAR signalling).
-6. **`CITATION.cff` `REPLACE_ME` placeholders** — author / ORCID / repo URL.
-7. **ACR portal account** + figure-format check (limits change annually).
+1. **Co-author kickoff** — 1 h walkthrough of STATUS + F2/F3 preview + the 88 SSc Tier-1 stubs. Book ASAP.
+2. **CellDesigner GUI work** — open `SSc_MIM_integrated.xml` + the 4 `ssc_additions_template/*.xml`; visual round-trip; wire the stubs into the integrated map; save as `SSc_MIM_integrated.xml` (or v0.9 file then promote). Estimated 2–3 days of curator time.
+3. **CITATION.cff** + **`.zenodo.json`** REPLACE_ME placeholders — user has the metadata (name, ORCID, repo URL, co-author entry).
+4. **GitHub → Zenodo webhook** — one-time toggle on `zenodo.org` (link account, enable the repo). Free, no curator role needed.
+5. **Three seed BibTeX TODOs** — Aghakhani 2020 (CaSQ), Singh 2020 (RA-map), Tabib 2021 (skin scRNAseq) — manual PMID lookup. 5 minutes per entry on PubMed.
+6. **`git tag v1.0 && git push --tags`** — one command, user-driven, when the co-author signs off.
 
-The 🟢 + 🟡 lanes proceed independently of these.
+Items removed from this queue by the pivot:
+- ~~MINERVA Luxembourg curator role~~ — post-publication
+- ~~WikiPathways EndMT correct ID~~ — nice-to-have, not blocking
+- ~~ACR portal account~~ — Phase 5 only, not on the curation path
 
 ---
 
 ## How to drive the project from here
 
 ```bash
-# Run everything that doesn't need a human
-make lint                              # specs + bib linters
-make validate                          # libSBML on every harmonised XML
-make harmonise                         # re-runs the post-process + harmonise pipeline
-make seed                              # regenerates species_annotations.tsv
-make integrate     # this batch        # builds SSc_MIM_integrated.xml + dedupe report
-make network       # this batch        # centrality + communities + hubs
-make sink-check    # this batch        # sink-node connectivity report
-make pmids         # this batch        # mines BioPAX -> bib + reaction_evidence.tsv
+# Everything autonomous, fresh-clone friendly
+make auto                              # full AUTO lane in one go
+make preflight                         # v1.0 readiness gate
+make release                           # CHANGELOG + tag command preview
+
+# Per-step targets (see `make help` for the full list)
+make integrate pmids crosstalk network sink-check abstract figures
 ```
 
-The intent is that a fresh clone + `make all` reaches the same state without manual steps.
+`make auto` is idempotent: re-running it reproduces a deterministic state from `curation/imports/*/*/*.harmonised.xml` onwards.
+
+The v1.0 release is one `git tag` away once the co-author signs off — every other step is automated.
 
 ---
 
-*Last revised: 2026-05-16, after the import + harmonisation phase landed.*
+*Last revised: 2026-05-16, post-pivot (GitHub + Zenodo as primary delivery; MINERVA moved post-publication).*

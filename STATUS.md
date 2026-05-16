@@ -37,22 +37,37 @@
 | `scripts/*.py` | 7 | reactome_pilot, post_process_reactome, harmonise_imports, seed_species_from_imports, check_module_specs, check_bib, wikipathways_fetch, validate_sbml |
 | `.github/workflows/` | 3 | validate_sbml, lint, scripts-smoke |
 
+## Delivery target — pivoted 2026-05-16
+
+**Primary v1.0 delivery: GitHub repo + Zenodo DOI release**, *before* ACR submission. MINERVA deployment is now a post-publication stretch goal — the map content is the deliverable, hosting is one rendering of it.
+
+The pivot resolved two original blockers in one move:
+- "Rheumatologist co-author" is locked → an existing collaborator (médecine interne, ARD-published on SSc with the lead curator).
+- "MINERVA Luxembourg curator role" is no longer on the critical path.
+
 ## What's left
 
-See [ROADMAP.md](ROADMAP.md) for the new automation-first plan. Summary:
+See [ROADMAP.md](ROADMAP.md) for the new GitHub+Zenodo-first plan. Summary:
 
-- 🟢 **Fully automatable** (next batch): integration, network analysis, sink-node connectivity, PMID extraction from BioPAX, crosstalk scaffold.
-- 🟡 **Automation-assisted** (script generates scaffold; curator fills): SSc-specific Tier-1 additions, MI2CAST reaction annotation, manuscript outline.
-- 🔴 **Human-only** (script cannot replace): rheumatologist kickoff & expert review, CellDesigner GUI visual round-trip, MINERVA account provisioning, ACR portal submission, biological sign-off on every Phase 2 day-6+ reaction.
+- 🟢 **Fully automatable**: integration, network analysis, sink connectivity, PMID extraction, crosstalk scaffold, bib lookup, preflight, SSc stubs, figures, abstract draft, Zenodo bundle prep — **all shipped**.
+- 🟡 **Automation-assisted** (script generates scaffold; curator + co-author fill): SSc Tier-1 wiring in CellDesigner, MI2CAST reaction annotation review, manuscript polish.
+- 🔴 **Human-only** (irreducible): co-author scope sign-off & biological validation, CellDesigner GUI work, ACR portal submission, the `v1.0` git-tag push.
 
-## Open external blockers (need user action)
+## Open external items (handover queue)
 
-1. **Kickoff meeting** with SSc rheumatologist — needed for co-authorship lock + scope sign-off (Phase 1 / week 1).
-2. **MINERVA Luxembourg curator role** — request access; needed for Phase 3 week 14.
-3. **Bibliography sprint** — ~50 reviews + ~100 primary papers; requires expert filtering.
-4. **CellDesigner GUI** — open `*.harmonised.xml` to verify visual round-trip.
-5. **WikiPathways EndMT pathway ID** — the WP_3942 cited in the original ROADMAP is "PPAR signaling"; the real EndMT WP ID needs a manual browse on `wikipathways.org`.
-6. **`CITATION.cff` `REPLACE_ME` placeholders** — author / ORCID / repository URL.
+1. ✅ ~~Co-author~~ — médecine interne collaborator, ARD-published SSc, **locked**.
+2. **Co-author kickoff** — schedule 1-hour kickoff + 2 review sessions; brief is auto-generatable.
+3. **CellDesigner GUI** — open `*.harmonised.xml` and `SSc_MIM_integrated.xml` for visual round-trip; wire the 88 SSc Tier-1 stubs (`curation/celldesigner/ssc_additions_template/`).
+4. **`CITATION.cff` `REPLACE_ME` placeholders** — author / ORCID / repository URL / co-author entry (the user has the metadata in hand).
+5. **GitHub → Zenodo webhook** — one-time toggle in Zenodo to mint a DOI on `git tag v1.0`.
+6. **3 seed BibTeX TODOs** — Aghakhani 2020 (CaSQ), Singh 2020 (RA-map), Tabib 2021 (skin scRNAseq) — need manual PMID lookup.
+7. **Bibliography sprint** — mostly auto-completed (350/350 mined PMIDs filled by `bib_lookup.py`); remaining is the 3 seeds above.
+
+## Post-publication / stretch (no longer blocking)
+
+- MINERVA Luxembourg curator role + deployment.
+- WikiPathways EndMT correct ID (WP_3942 was PPAR; pure nice-to-have).
+- ACR portal account + figure-format check.
 
 ## Working assumptions for the automated branch
 
