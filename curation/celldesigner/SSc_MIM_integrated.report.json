@@ -1,0 +1,113 @@
+{
+  "output": "curation/celldesigner/SSc_MIM_integrated.xml",
+  "inputs": [
+    "curation/imports/M1/pilot_R-HSA-909733/R-HSA-909733.celldesigner.harmonised.xml",
+    "curation/imports/M2/pilot_R-HSA-186797/R-HSA-186797.celldesigner.harmonised.xml",
+    "curation/imports/M2/pilot_R-HSA-2173789/R-HSA-2173789.celldesigner.harmonised.xml",
+    "curation/imports/M3/pilot_R-HSA-1980143/R-HSA-1980143.celldesigner.harmonised.xml",
+    "curation/imports/M4/pilot_R-HSA-1059683/R-HSA-1059683.celldesigner.harmonised.xml"
+  ],
+  "totals": {
+    "compartments": 17,
+    "species": 385,
+    "reactions": 175
+  },
+  "per_module": {
+    "M1": {
+      "species_added": 83,
+      "species_deduped": 0,
+      "reactions_added": 25,
+      "compartments_added": 6
+    },
+    "M2": {
+      "species_added": 165,
+      "species_deduped": 10,
+      "reactions_added": 77,
+      "compartments_added": 7
+    },
+    "M3": {
+      "species_added": 77,
+      "species_deduped": 0,
+      "reactions_added": 39,
+      "compartments_added": 2
+    },
+    "M4": {
+      "species_added": 60,
+      "species_deduped": 4,
+      "reactions_added": 34,
+      "compartments_added": 2
+    }
+  },
+  "dedupes": [
+    {
+      "species_id": "ATP__cyto",
+      "module": "M2",
+      "via_file": "R-HSA-186797.celldesigner.harmonised.xml"
+    },
+    {
+      "species_id": "PTPN11__cyto",
+      "module": "M2",
+      "via_file": "R-HSA-186797.celldesigner.harmonised.xml"
+    },
+    {
+      "species_id": "H2O__cyto",
+      "module": "M2",
+      "via_file": "R-HSA-186797.celldesigner.harmonised.xml"
+    },
+    {
+      "species_id": "ADP__cyto",
+      "module": "M2",
+      "via_file": "R-HSA-186797.celldesigner.harmonised.xml"
+    },
+    {
+      "species_id": "Pi__cyto",
+      "module": "M2",
+      "via_file": "R-HSA-186797.celldesigner.harmonised.xml"
+    },
+    {
+      "species_id": "ATP__cyto",
+      "module": "M2",
+      "via_file": "R-HSA-2173789.celldesigner.harmonised.xml"
+    },
+    {
+      "species_id": "FURIN__golgi",
+      "module": "M2",
+      "via_file": "R-HSA-2173789.celldesigner.harmonised.xml"
+    },
+    {
+      "species_id": "H2O__cyto",
+      "module": "M2",
+      "via_file": "R-HSA-2173789.celldesigner.harmonised.xml"
+    },
+    {
+      "species_id": "ADP__cyto",
+      "module": "M2",
+      "via_file": "R-HSA-2173789.celldesigner.harmonised.xml"
+    },
+    {
+      "species_id": "Pi__cyto",
+      "module": "M2",
+      "via_file": "R-HSA-2173789.celldesigner.harmonised.xml"
+    },
+    {
+      "species_id": "CBL__cyto",
+      "module": "M4",
+      "via_file": "R-HSA-1059683.celldesigner.harmonised.xml"
+    },
+    {
+      "species_id": "ATP__cyto",
+      "module": "M4",
+      "via_file": "R-HSA-1059683.celldesigner.harmonised.xml"
+    },
+    {
+      "species_id": "PTPN11__cyto",
+      "module": "M4",
+      "via_file": "R-HSA-1059683.celldesigner.harmonised.xml"
+    },
+    {
+      "species_id": "ADP__cyto",
+      "module": "M4",
+      "via_file": "R-HSA-1059683.celldesigner.harmonised.xml"
+    }
+  ]
+}
