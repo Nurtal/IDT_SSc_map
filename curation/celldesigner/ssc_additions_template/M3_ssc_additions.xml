@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level2/version4" level="2" version="4">
+  <model id="M3_ssc_additions" name="SSc-specific Tier-1 additions for M3">
+    <listOfCompartments>
+      <compartment id="ER" name="ER"/>
+      <compartment id="cytosol" name="cytosol"/>
+      <compartment id="extracellular" name="extracellular"/>
+      <compartment id="nucleus" name="nucleus"/>
+      <compartment id="plasma_membrane" name="plasma_membrane"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="EDN1__ext" name="EDN1" compartment="extracellular">
+      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M3</p><p>role=ligand</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      </species>
+      <species id="EDNRA__pm" name="EDNRA" compartment="plasma_membrane">
+      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M3</p><p>role=receptor</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      </species>
+      <species id="EDNRB__pm" name="EDNRB" compartment="plasma_membrane">
+      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M3</p><p>role=receptor</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      </species>
+      <species id="NOS3__pm" name="NOS3" compartment="plasma_membrane">
+      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M3</p><p>role=enzyme</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      </species>
+      <species id="NO__ext" name="NO" compartment="extracellular">
+      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M3</p><p>role=signal molecule</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      </species>
+      <species id="PDE5A__cyto" name="PDE5A" compartment="cytosol">
+      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M3</p><p>role=enzyme</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      </species>
+      <species id="ARNT__cyto" name="ARNT" compartment="cytosol">
+      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M3</p><p>role=TF</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      </species>
+      <species id="VEGFA__ext" name="VEGFA" compartment="extracellular">
+      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M3</p><p>role=ligand / receptor</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      </species>
+      <species id="KDR__ext" name="KDR" compartment="extracellular">
+      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M3</p><p>role=ligand / receptor</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      </species>
+      <species id="CDH5__pm" name="CDH5" compartment="plasma_membrane">
+      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M3</p><p>role=EC identity markers</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      </species>
+      <species id="CD31__pm" name="CD31" compartment="plasma_membrane">
+      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M3</p><p>role=EC identity markers</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      </species>
+      <species id="VWF__pm" name="VWF" compartment="plasma_membrane">
+      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M3</p><p>role=EC identity markers</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      </species>
+      <species id="TEK__pm" name="TEK" compartment="plasma_membrane">
+      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M3</p><p>role=EC identity markers</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      </species>
+      <species id="NOTCH3__pm" name="NOTCH3" compartment="plasma_membrane">
+      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M3</p><p>role=Notch pathway</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      </species>
+      <species id="RBPJ__pm" name="RBPJ" compartment="plasma_membrane">
+      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M3</p><p>role=Notch pathway</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      </species>
+      <species id="SNAI1__nuc" name="SNAI1" compartment="nucleus">
+      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M3</p><p>role=EMT/EndMT TFs</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      </species>
+      <species id="SNAI2__nuc" name="SNAI2" compartment="nucleus">
+      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M3</p><p>role=EMT/EndMT TFs</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      </species>
+      <species id="ZEB1__nuc" name="ZEB1" compartment="nucleus">
+      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M3</p><p>role=EMT/EndMT TFs</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      </species>
+      <species id="ZEB2__nuc" name="ZEB2" compartment="nucleus">
+      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M3</p><p>role=EMT/EndMT TFs</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      </species>
+      <species id="TWIST1__nuc" name="TWIST1" compartment="nucleus">
+      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M3</p><p>role=EMT/EndMT TFs</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      </species>
+      <species id="CDH2__pm" name="CDH2" compartment="plasma_membrane">
+      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M3</p><p>role=mesenchymal marker</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      </species>
+      <species id="FAP__pm" name="FAP" compartment="plasma_membrane">
+      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M3</p><p>role=mesenchymal markers</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      </species>
+      <species id="FSP1__pm" name="FSP1" compartment="plasma_membrane">
+      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M3</p><p>role=mesenchymal markers</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      </species>
+      <species id="ANGPT1__ext" name="ANGPT1" compartment="extracellular">
+      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M3</p><p>role=ligand</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      </species>
+      <species id="ANGPT2__ext" name="ANGPT2" compartment="extracellular">
+      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M3</p><p>role=ligand</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      </species>
+      <species id="COX-2__er" name="COX-2" compartment="ER">
+      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M3</p><p>role=enzyme (prostanoid synthesis)</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      </species>
+      <species id="TBXA2R__pm" name="TBXA2R" compartment="plasma_membrane">
+      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M3</p><p>role=receptor (vasoconstrictor / platelet)</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      </species>
+    </listOfSpecies>
+  </model>
+</sbml>

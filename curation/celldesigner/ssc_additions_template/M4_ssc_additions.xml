@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level2/version4" level="2" version="4">
+  <model id="M4_ssc_additions" name="SSc-specific Tier-1 additions for M4">
+    <listOfCompartments>
+      <compartment id="cytosol" name="cytosol"/>
+      <compartment id="extracellular" name="extracellular"/>
+      <compartment id="nucleus" name="nucleus"/>
+      <compartment id="plasma_membrane" name="plasma_membrane"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="IL4__ext" name="IL4" compartment="extracellular">
+      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M4</p><p>role=ligand / receptor</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      </species>
+      <species id="IL4R__ext" name="IL4R" compartment="extracellular">
+      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M4</p><p>role=ligand / receptor</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      </species>
+      <species id="IL13__ext" name="IL13" compartment="extracellular">
+      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M4</p><p>role=ligand / receptor</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      </species>
+      <species id="IL13RA1__ext" name="IL13RA1" compartment="extracellular">
+      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M4</p><p>role=ligand / receptor</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      </species>
+      <species id="GATA3__nuc" name="GATA3" compartment="nucleus">
+      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M4</p><p>role=T-cell lineage TF</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      </species>
+      <species id="TBX21__nuc" name="TBX21" compartment="nucleus">
+      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M4</p><p>role=T-cell lineage TF</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      </species>
+      <species id="FOXP3__nuc" name="FOXP3" compartment="nucleus">
+      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M4</p><p>role=T-cell lineage TF</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      </species>
+      <species id="RORC__nuc" name="RORC" compartment="nucleus">
+      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M4</p><p>role=T-cell lineage TF</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      </species>
+      <species id="MS4A1__pm" name="MS4A1" compartment="plasma_membrane">
+      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M4</p><p>role=B-cell surface marker</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      </species>
+      <species id="CD19__pm" name="CD19" compartment="plasma_membrane">
+      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M4</p><p>role=BCR complex</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      </species>
+      <species id="CD22__pm" name="CD22" compartment="plasma_membrane">
+      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M4</p><p>role=BCR complex</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      </species>
+      <species id="CD79A__pm" name="CD79A" compartment="plasma_membrane">
+      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M4</p><p>role=BCR complex</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      </species>
+      <species id="CD79B__pm" name="CD79B" compartment="plasma_membrane">
+      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M4</p><p>role=BCR complex</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      </species>
+      <species id="BLK__cyto" name="BLK" compartment="cytosol">
+      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M4</p><p>role=BCR kinases</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      </species>
+      <species id="SYK__cyto" name="SYK" compartment="cytosol">
+      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M4</p><p>role=BCR kinases</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      </species>
+      <species id="BTK__cyto" name="BTK" compartment="cytosol">
+      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M4</p><p>role=BCR kinases</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      </species>
+      <species id="LYN__cyto" name="LYN" compartment="cytosol">
+      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M4</p><p>role=BCR kinases</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      </species>
+      <species id="CD40__pm" name="CD40" compartment="plasma_membrane">
+      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M4</p><p>role=costim</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      </species>
+      <species id="CD154__pm" name="CD154" compartment="plasma_membrane">
+      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M4</p><p>role=costim</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      </species>
+      <species id="BLIMP1__nuc" name="BLIMP1" compartment="nucleus">
+      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M4</p><p>role=plasma cell TF</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      </species>
+      <species id="XBP1__nuc" name="XBP1" compartment="nucleus">
+      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M4</p><p>role=plasma cell TF</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      </species>
+      <species id="IRF4__nuc" name="IRF4" compartment="nucleus">
+      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M4</p><p>role=plasma cell TF</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      </species>
+      <species id="BCMA__ext" name="BCMA" compartment="extracellular">
+      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M4</p><p>role=survival signals</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      </species>
+      <species id="TNFSF13B__ext" name="TNFSF13B" compartment="extracellular">
+      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M4</p><p>role=survival signals</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      </species>
+      <species id="TNFSF13__ext" name="TNFSF13" compartment="extracellular">
+      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M4</p><p>role=survival signals</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      </species>
+    </listOfSpecies>
+  </model>
+</sbml>
