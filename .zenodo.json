@@ -1,0 +1,75 @@
+{
+  "title": "SSc-MIM: Skin Fibrosis Molecular Interaction Map in Diffuse Cutaneous Systemic Sclerosis",
+  "description": "First module of a curated, SBGN-compliant Molecular Interaction Map (MIM) for systemic sclerosis (SSc), built in CellDesigner and paired with a single-cell transcriptomic overlay from SSc skin biopsies (Tabib 2021, GSE138669). Four sub-modules cover IFN-I signalling, TGF-beta / fibroblast-to-myofibroblast transition, endothelial-to-mesenchymal transition and vasculopathy, and IL-6 / IL-4 / IL-13 / B-cell crosstalk. Contains 385 species and 175 reactions across 17 compartments, with 158/159 reactions PubMed-cited (355 unique PMIDs) and MI2CAST-annotated. Map content is licensed under CC-BY 4.0; analysis code under MIT.",
+  "upload_type": "dataset",
+  "access_right": "open",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "systemic sclerosis",
+    "scleroderma",
+    "disease map",
+    "molecular interaction map",
+    "SBGN",
+    "CellDesigner",
+    "fibrosis",
+    "TGF-beta",
+    "interferon",
+    "EndoMT",
+    "single-cell transcriptomics",
+    "MI2CAST",
+    "Disease Maps Project"
+  ],
+  "communities": [
+    {"identifier": "diseasemaps"}
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://reactome.org/PathwayBrowser/#/R-HSA-909733",
+      "relation": "isDerivedFrom",
+      "resource_type": "other",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://reactome.org/PathwayBrowser/#/R-HSA-2173789",
+      "relation": "isDerivedFrom",
+      "resource_type": "other",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://reactome.org/PathwayBrowser/#/R-HSA-186797",
+      "relation": "isDerivedFrom",
+      "resource_type": "other",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://reactome.org/PathwayBrowser/#/R-HSA-1980143",
+      "relation": "isDerivedFrom",
+      "resource_type": "other",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://reactome.org/PathwayBrowser/#/R-HSA-1059683",
+      "relation": "isDerivedFrom",
+      "resource_type": "other",
+      "scheme": "url"
+    }
+  ],
+  "creators": [
+    {
+      "name": "REPLACE_ME, Lead curator",
+      "affiliation": "REPLACE_ME",
+      "orcid": "0000-0000-0000-0000"
+    },
+    {
+      "name": "REPLACE_ME, Co-author (internal medicine, SSc)",
+      "affiliation": "REPLACE_ME",
+      "orcid": "0000-0000-0000-0000"
+    }
+  ],
+  "references": [
+    "Mazein A, Ostaszewski M, Kuperstein I, et al. Systems medicine disease maps: community-driven comprehensive representation of disease mechanisms. npj Syst Biol Appl 2018;4:21. PMID 30564456.",
+    "Mazein A, et al. A guide for developing comprehensive systems biology maps of disease mechanisms. Front Bioinform 2023. PMID 38064118.",
+    "Tabib T, et al. SFRP2/DPP4 and FMO1/LSP1 define major fibroblast populations in human skin (and SSc). Nat Commun 2021."
+  ],
+  "notes": "Map content (curation/, docs/, figures/) is released under CC-BY 4.0. Analysis code (scripts/, analysis/, .github/) is released under the MIT License. See LICENSE for full terms. The CellDesigner XML is SBML L2v4 with CellDesigner annotations; it opens in CellDesigner v4.4+ and any MINERVA Platform instance."
+}
