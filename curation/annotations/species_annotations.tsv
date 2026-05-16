@@ -384,3 +384,136 @@ IL31_IL31RA_JAK1__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; ra
 OSMR_JAK1__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: OSMR:JAK1
 IL6R_IL6R_inhibitors__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: IL6R:IL6R inhibitors
 IL6R_inhibitors__ext					extracellular	M4	9606	imported from pilot_R-HSA-1059683; raw name: IL6R inhibitors
+IRF7__cyto	IRF7				cytosol	ssc_tier1	9606	wired by wire_ssc_tier1.py
+MB21D1__cyto	MB21D1				cytosol	ssc_tier1	9606	wired by wire_ssc_tier1.py
+TMEM173__cyto	TMEM173				cytosol	ssc_tier1	9606	wired by wire_ssc_tier1.py
+DDX58__cyto	DDX58				cytosol	ssc_tier1	9606	wired by wire_ssc_tier1.py
+MAVS__cyto	MAVS				cytosol	ssc_tier1	9606	wired by wire_ssc_tier1.py
+TLR3__endo	TLR3				endosome	ssc_tier1	9606	wired by wire_ssc_tier1.py
+TLR7__endo	TLR7				endosome	ssc_tier1	9606	wired by wire_ssc_tier1.py
+TLR8__endo	TLR8				endosome	ssc_tier1	9606	wired by wire_ssc_tier1.py
+TLR9__endo	TLR9				endosome	ssc_tier1	9606	wired by wire_ssc_tier1.py
+TICAM1__cyto	TICAM1				cytosol	ssc_tier1	9606	wired by wire_ssc_tier1.py
+TBK1__cyto	TBK1				cytosol	ssc_tier1	9606	wired by wire_ssc_tier1.py
+IKBKE__cyto	IKBKE				cytosol	ssc_tier1	9606	wired by wire_ssc_tier1.py
+SOCS1__cyto	SOCS1				cytosol	ssc_tier1	9606	wired by wire_ssc_tier1.py
+PTPN2__cyto	PTPN2				cytosol	ssc_tier1	9606	wired by wire_ssc_tier1.py
+LAP__ecm	LAP				ECM	ssc_tier1	9606	wired by wire_ssc_tier1.py
+LTBP1__ecm	LTBP1				ECM	ssc_tier1	9606	wired by wire_ssc_tier1.py
+THBS1__ecm	THBS1				ECM	ssc_tier1	9606	wired by wire_ssc_tier1.py
+RHOA__cyto	RHOA				cytosol	ssc_tier1	9606	wired by wire_ssc_tier1.py
+ROCK1__cyto	ROCK1				cytosol	ssc_tier1	9606	wired by wire_ssc_tier1.py
+ROCK2__cyto	ROCK2				cytosol	ssc_tier1	9606	wired by wire_ssc_tier1.py
+YAP1__cyto	YAP1				cytosol	ssc_tier1	9606	wired by wire_ssc_tier1.py
+TAZ__cyto	TAZ				cytosol	ssc_tier1	9606	wired by wire_ssc_tier1.py
+ACTA2__cyto	ACTA2				cytosol	ssc_tier1	9606	wired by wire_ssc_tier1.py
+COL1A1__ext	COL1A1				extracellular	ssc_tier1	9606	wired by wire_ssc_tier1.py
+COL1A2__ext	COL1A2				extracellular	ssc_tier1	9606	wired by wire_ssc_tier1.py
+COL3A1__ext	COL3A1				extracellular	ssc_tier1	9606	wired by wire_ssc_tier1.py
+COL5A1__ext	COL5A1				extracellular	ssc_tier1	9606	wired by wire_ssc_tier1.py
+COL5A2__ext	COL5A2				extracellular	ssc_tier1	9606	wired by wire_ssc_tier1.py
+FN1__ecm	FN1				ECM	ssc_tier1	9606	wired by wire_ssc_tier1.py
+POSTN__ecm	POSTN				ECM	ssc_tier1	9606	wired by wire_ssc_tier1.py
+COMP__ecm	COMP				ECM	ssc_tier1	9606	wired by wire_ssc_tier1.py
+TNC__ecm	TNC				ECM	ssc_tier1	9606	wired by wire_ssc_tier1.py
+LOX__ecm	LOX				ECM	ssc_tier1	9606	wired by wire_ssc_tier1.py
+LOXL2__ecm	LOXL2				ECM	ssc_tier1	9606	wired by wire_ssc_tier1.py
+FOSL2__nuc	FOSL2				nucleus	ssc_tier1	9606	wired by wire_ssc_tier1.py
+TBX2__nuc	TBX2				nucleus	ssc_tier1	9606	wired by wire_ssc_tier1.py
+EDN1__ext	EDN1				extracellular	ssc_tier1	9606	wired by wire_ssc_tier1.py
+EDNRA__pm	EDNRA				plasma_membrane	ssc_tier1	9606	wired by wire_ssc_tier1.py
+EDNRB__pm	EDNRB				plasma_membrane	ssc_tier1	9606	wired by wire_ssc_tier1.py
+NOS3__pm	NOS3				plasma_membrane	ssc_tier1	9606	wired by wire_ssc_tier1.py
+NO__ext	NO				extracellular	ssc_tier1	9606	wired by wire_ssc_tier1.py
+PDE5A__cyto	PDE5A				cytosol	ssc_tier1	9606	wired by wire_ssc_tier1.py
+ARNT__cyto	ARNT				cytosol	ssc_tier1	9606	wired by wire_ssc_tier1.py
+VEGFA__ext	VEGFA				extracellular	ssc_tier1	9606	wired by wire_ssc_tier1.py
+KDR__ext	KDR				extracellular	ssc_tier1	9606	wired by wire_ssc_tier1.py
+CDH5__pm	CDH5				plasma_membrane	ssc_tier1	9606	wired by wire_ssc_tier1.py
+CD31__pm	CD31				plasma_membrane	ssc_tier1	9606	wired by wire_ssc_tier1.py
+VWF__pm	VWF				plasma_membrane	ssc_tier1	9606	wired by wire_ssc_tier1.py
+TEK__pm	TEK				plasma_membrane	ssc_tier1	9606	wired by wire_ssc_tier1.py
+NOTCH3__pm	NOTCH3				plasma_membrane	ssc_tier1	9606	wired by wire_ssc_tier1.py
+RBPJ__pm	RBPJ				plasma_membrane	ssc_tier1	9606	wired by wire_ssc_tier1.py
+SNAI1__nuc	SNAI1				nucleus	ssc_tier1	9606	wired by wire_ssc_tier1.py
+SNAI2__nuc	SNAI2				nucleus	ssc_tier1	9606	wired by wire_ssc_tier1.py
+ZEB1__nuc	ZEB1				nucleus	ssc_tier1	9606	wired by wire_ssc_tier1.py
+ZEB2__nuc	ZEB2				nucleus	ssc_tier1	9606	wired by wire_ssc_tier1.py
+TWIST1__nuc	TWIST1				nucleus	ssc_tier1	9606	wired by wire_ssc_tier1.py
+CDH2__pm	CDH2				plasma_membrane	ssc_tier1	9606	wired by wire_ssc_tier1.py
+FAP__pm	FAP				plasma_membrane	ssc_tier1	9606	wired by wire_ssc_tier1.py
+FSP1__pm	FSP1				plasma_membrane	ssc_tier1	9606	wired by wire_ssc_tier1.py
+ANGPT1__ext	ANGPT1				extracellular	ssc_tier1	9606	wired by wire_ssc_tier1.py
+ANGPT2__ext	ANGPT2				extracellular	ssc_tier1	9606	wired by wire_ssc_tier1.py
+COX-2__er	COX-2				ER	ssc_tier1	9606	wired by wire_ssc_tier1.py
+TBXA2R__pm	TBXA2R				plasma_membrane	ssc_tier1	9606	wired by wire_ssc_tier1.py
+IL4__ext	IL4				extracellular	ssc_tier1	9606	wired by wire_ssc_tier1.py
+IL4R__ext	IL4R				extracellular	ssc_tier1	9606	wired by wire_ssc_tier1.py
+IL13__ext	IL13				extracellular	ssc_tier1	9606	wired by wire_ssc_tier1.py
+IL13RA1__ext	IL13RA1				extracellular	ssc_tier1	9606	wired by wire_ssc_tier1.py
+GATA3__nuc	GATA3				nucleus	ssc_tier1	9606	wired by wire_ssc_tier1.py
+TBX21__nuc	TBX21				nucleus	ssc_tier1	9606	wired by wire_ssc_tier1.py
+FOXP3__nuc	FOXP3				nucleus	ssc_tier1	9606	wired by wire_ssc_tier1.py
+RORC__nuc	RORC				nucleus	ssc_tier1	9606	wired by wire_ssc_tier1.py
+MS4A1__pm	MS4A1				plasma_membrane	ssc_tier1	9606	wired by wire_ssc_tier1.py
+CD19__pm	CD19				plasma_membrane	ssc_tier1	9606	wired by wire_ssc_tier1.py
+CD22__pm	CD22				plasma_membrane	ssc_tier1	9606	wired by wire_ssc_tier1.py
+CD79A__pm	CD79A				plasma_membrane	ssc_tier1	9606	wired by wire_ssc_tier1.py
+CD79B__pm	CD79B				plasma_membrane	ssc_tier1	9606	wired by wire_ssc_tier1.py
+BLK__cyto	BLK				cytosol	ssc_tier1	9606	wired by wire_ssc_tier1.py
+SYK__cyto	SYK				cytosol	ssc_tier1	9606	wired by wire_ssc_tier1.py
+BTK__cyto	BTK				cytosol	ssc_tier1	9606	wired by wire_ssc_tier1.py
+LYN__cyto	LYN				cytosol	ssc_tier1	9606	wired by wire_ssc_tier1.py
+CD40__pm	CD40				plasma_membrane	ssc_tier1	9606	wired by wire_ssc_tier1.py
+CD154__pm	CD154				plasma_membrane	ssc_tier1	9606	wired by wire_ssc_tier1.py
+BLIMP1__nuc	BLIMP1				nucleus	ssc_tier1	9606	wired by wire_ssc_tier1.py
+XBP1__nuc	XBP1				nucleus	ssc_tier1	9606	wired by wire_ssc_tier1.py
+IRF4__nuc	IRF4				nucleus	ssc_tier1	9606	wired by wire_ssc_tier1.py
+BCMA__ext	BCMA				extracellular	ssc_tier1	9606	wired by wire_ssc_tier1.py
+TNFSF13B__ext	TNFSF13B				extracellular	ssc_tier1	9606	wired by wire_ssc_tier1.py
+TNFSF13__ext	TNFSF13				extracellular	ssc_tier1	9606	wired by wire_ssc_tier1.py
+dsDNA__cyto					cytosol	M1	9606	wired by wire_ssc_tier1.py
+cGAMP__cyto					cytosol	M1	9606	wired by wire_ssc_tier1.py
+TMEM173_active__er					ER	M1	9606	wired by wire_ssc_tier1.py
+IRF3_p__nuc					nucleus	M1	9606	wired by wire_ssc_tier1.py
+IFNB1__ext	IFNB1				extracellular	M1	9606	wired by wire_ssc_tier1.py
+IRF7_p__nuc					nucleus	M1	9606	wired by wire_ssc_tier1.py
+IFNA1__ext	IFNA1				extracellular	M1	9606	wired by wire_ssc_tier1.py
+DDX58_MAVS__mito					mitochondrion	M1	9606	wired by wire_ssc_tier1.py
+CXCL4__ext	CXCL4				extracellular	M1	9606	wired by wire_ssc_tier1.py
+pDC_activated__cell					cell	M1	9606	wired by wire_ssc_tier1.py
+phenotype_ISG_signature__cell					cell	M1	9606	wired by wire_ssc_tier1.py
+TGFB1__ext	TGFB1				extracellular	M2	9606	wired by wire_ssc_tier1.py
+SMAD3_p__cyto					cytosol	M2	9606	wired by wire_ssc_tier1.py
+SMAD3p_SMAD4__nuc					nucleus	M2	9606	wired by wire_ssc_tier1.py
+CTGF__ext	CTGF				extracellular	M2	9606	wired by wire_ssc_tier1.py
+fibroblast_proFibrotic__cell					cell	M2	9606	wired by wire_ssc_tier1.py
+stiffened_ECM__ecm					ECM	M2	9606	wired by wire_ssc_tier1.py
+YAP1_TAZ_active__nuc					nucleus	M2	9606	wired by wire_ssc_tier1.py
+FOSL2_TBX2__nuc					nucleus	M2	9606	wired by wire_ssc_tier1.py
+PDGFA__ext	PDGFA				extracellular	M2	9606	wired by wire_ssc_tier1.py
+PDGFB__ext	PDGFB				extracellular	M2	9606	wired by wire_ssc_tier1.py
+PDGFRB__pm	PDGFRB				plasma_membrane	M2	9606	wired by wire_ssc_tier1.py
+phenotype_myofibroblast_activation__cell					cell	M2	9606	wired by wire_ssc_tier1.py
+phenotype_ECM_deposition__ecm					ECM	M2	9606	wired by wire_ssc_tier1.py
+EDN1_EDNRA_complex__pm					plasma_membrane	M3	9606	wired by wire_ssc_tier1.py
+vasoconstriction__cell					cell	M3	9606	wired by wire_ssc_tier1.py
+cGMP__cyto					cytosol	M3	9606	wired by wire_ssc_tier1.py
+GMP__cyto	GMP				cytosol	M3	9606	wired by wire_ssc_tier1.py
+HIF1A_active__nuc					nucleus	M3	9606	wired by wire_ssc_tier1.py
+VEGFA_KDR_complex__pm					plasma_membrane	M3	9606	wired by wire_ssc_tier1.py
+CDH5_repressed__pm					plasma_membrane	M3	9606	wired by wire_ssc_tier1.py
+phenotype_vascular_remodelling__cell					cell	M3	9606	wired by wire_ssc_tier1.py
+IL4_IL4R_complex__pm					plasma_membrane	M4	9606	wired by wire_ssc_tier1.py
+IL13_complex__pm					plasma_membrane	M4	9606	wired by wire_ssc_tier1.py
+STAT6_p__cyto					cytosol	M4	9606	wired by wire_ssc_tier1.py
+JAK1__cyto	JAK1				cytosol	M4	9606	wired by wire_ssc_tier1.py
+JAK2__cyto	JAK2				cytosol	M4	9606	wired by wire_ssc_tier1.py
+STAT6_p_dimer__nuc					nucleus	M4	9606	wired by wire_ssc_tier1.py
+Th2_cell__cell					cell	M4	9606	wired by wire_ssc_tier1.py
+BCR_activated__cell					cell	M4	9606	wired by wire_ssc_tier1.py
+rituximab_bound_Bcell__pm					plasma_membrane	M4	9606	wired by wire_ssc_tier1.py
+BAFF_BCMA_complex__pm					plasma_membrane	M4	9606	wired by wire_ssc_tier1.py
+phenotype_autoAb_production__ext					extracellular	M4	9606	wired by wire_ssc_tier1.py
+STAT3__cyto	STAT3				cytosol	crosstalk	9606	wired by wire_ssc_tier1.py
+STAT6__cyto	STAT6				cytosol	crosstalk	9606	wired by wire_ssc_tier1.py
