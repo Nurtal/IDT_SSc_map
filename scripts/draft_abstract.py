@@ -173,6 +173,21 @@ def main(argv: list[str]) -> int:
     integ = json.loads(args.integrate_report.read_text())
     netw = json.loads(args.network_summary.read_text()) if args.network_summary.exists() else {}
 
+    # Trust the actual integrated XML for current totals (the integrate report
+    # is captured before any post-integration curation passes such as
+    # wire_ssc_tier1, which is the source-of-truth for v1.0 numerics).
+    from xml.etree import ElementTree as ET
+    SBML_NS = "http://www.sbml.org/sbml/level2/version4"
+    integrated_xml = Path("curation/celldesigner/SSc_MIM_integrated.xml")
+    if integrated_xml.exists():
+        t = ET.parse(integrated_xml)
+        n_species = len(t.findall(f".//{{{SBML_NS}}}species"))
+        n_reactions = len(t.findall(f".//{{{SBML_NS}}}reaction"))
+        n_compartments = len(t.findall(f".//{{{SBML_NS}}}compartment"))
+        integ["totals"]["species"] = n_species
+        integ["totals"]["reactions"] = n_reactions
+        integ["totals"]["compartments"] = n_compartments
+
     # Count unique PMIDs from reaction_evidence.tsv
     pmids: set[str] = set()
     n_cross_module = 0
