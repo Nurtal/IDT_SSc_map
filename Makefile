@@ -74,9 +74,33 @@ crosstalk:  ## Regenerate docs/crosstalk_matrix.md from module specs.
 phase3:  integrate pmids crosstalk network sink-check  ## Run the whole Phase 3 automation pipeline.
 	@echo ">> Phase 3 AUTO lane complete."
 
+bib-lookup:  ## Fill BibTeX entries via NCBI E-utils (needs network).
+	$(PYTHON) scripts/bib_lookup.py
+
+preflight:  ## MINERVA-readiness checklist for the integrated map.
+	$(PYTHON) scripts/minerva_preflight.py
+
+ssc-stubs:  ## Generate SSc-specific Tier-1 species stubs per module.
+	$(PYTHON) scripts/ssc_additions_template.py
+
+figures:  ## Render preview figures F2 / F3 (uses .venv if matplotlib not in PYTHON).
+	@if $(PYTHON) -c "import matplotlib" 2>/dev/null; then \
+	  $(PYTHON) scripts/render_figures.py; \
+	elif [ -x .venv/bin/python ]; then \
+	  .venv/bin/python scripts/render_figures.py; \
+	else \
+	  echo "matplotlib not installed in PYTHON or .venv; run: $(PYTHON) -m pip install matplotlib"; exit 2; \
+	fi
+
+abstract:  ## Draft the ACR abstract scaffold from analysis outputs.
+	$(PYTHON) scripts/draft_abstract.py
+
 lint: specs-check bib-check  ## Run all repo-content linters (no SBML files needed).
 
-all: lint validate  ## Lint everything and validate SBML.
+auto:  lint validate harmonise seed integrate pmids crosstalk network sink-check preflight ssc-stubs figures abstract  ## Run the entire AUTO lane end-to-end.
+	@echo ">> Full AUTO pipeline complete."
+
+all: lint validate  ## Lint + validate SBML (compatibility alias).
 
 clean:  ## Remove transient files (Python caches, notebook checkpoints).
 	@find . -type d -name '__pycache__' -prune -exec rm -rf {} +

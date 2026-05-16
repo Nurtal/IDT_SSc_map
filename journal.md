@@ -467,6 +467,105 @@ Added targets: `integrate`, `pmids`, `network`, `sink-check`, `crosstalk`, and t
 6. `feat(scripts): auto-generate crosstalk matrix from module specs`
 7. `chore: Makefile phase3 pipeline target`
 
+### 14:30 — Bibliography via NCBI E-utils
+
+`scripts/bib_lookup.py`: stdlib-only NCBI E-utils efetch client. Iterates over BibTeX entries whose `title = {TODO}` (basically every Reactome-mined PMID), batches in groups of 200, fetches PubMed XML, extracts title / authors / journal / year / DOI, rewrites the entry in place. Polite rate-limiting (~3 req/s without an API key); honours `NCBI_API_KEY` if set.
+
+Live result: **350 / 350 PMIDs fetched** in two batches (200 + 150), in well under 2 minutes. Example:
+
+```bibtex
+@article{Reactome_pmid_1314164,
+  author  = {Kashishian A and Kazlauskas A and Cooper JA},
+  title   = {Phosphorylation sites in the PDGF receptor with different specificities for binding GAP and PI3 kinase in vivo.},
+  journal = {EMBO J},
+  year    = {1992},
+  pmid    = {1314164},
+  doi     = {10.1002/j.1460-2075.1992.tb05182.x}
+}
+```
+
+`scripts/check_bib.py` now reports only **3 remaining `TODO` PMIDs** — the three pre-seeded entries (Aghakhani / CaSQ, Singh / RA-map, Tabib / scRNAseq) whose `pmid = {TODO}` was an actual TODO from the seed file rather than a fetchable PMID. These need a manual lookup from the lead curator.
+
+### 15:00 — MINERVA preflight
+
+`scripts/minerva_preflight.py` produces the green/red checklist before the (human) MINERVA upload step. Result on the current integrated map:
+
+```
+[ ok ] XML parses                          949 kB
+[ ok ] Unique species ids                  385
+[ ok ] Unique reaction ids                 175
+[ ok ] Species annotation coverage         385/385
+[ ok ] reaction_evidence.tsv PMID coverage 158/159
+[ ok ] Sink connectivity <= max_path       0 / 385 violate the >6 rule
+[warn] Dangling fraction                   126/385 cannot reach any sink (SSc Tier-1 still to wire)
+[ ok ] Every species has a display name
+       (info) cross-module species:        6
+```
+
+One advisory (dangling fraction), no blocking failures. The map is **uploadable to MINERVA** today; the dangling fraction is the explicit curator backlog and will drop substantially once the SSc-specific Tier-1 species (88 stubs auto-generated; see below) are wired into the integrated XML.
+
+### 15:30 — SSc-specific Tier-1 stubs
+
+`scripts/ssc_additions_template.py` parses every module spec's Tier-1 table, filters to rows tagged `Source = manual`, splits multi-symbol cells (`cGAS (MB21D1), STING1 (TMEM173)` → `MB21D1`, `TMEM173`), filters out entities already in `species_annotations.tsv`, and writes one SBML L2v4 stub per module under `curation/celldesigner/ssc_additions_template/`. Each stub is CellDesigner-importable.
+
+Result: **88 SSc Tier-1 stubs across the four modules.**
+
+| Module | Stubs | Sample |
+|--------|-------|--------|
+| M1 | 14 | IRF7, MB21D1, TMEM173 (STING), DDX58 (RIG-I), TLR3/7/8/9, TICAM1, TBK1, IKBKE, SOCS1, PTPN2 |
+| M2 | 22 | (TGF-β latent activation + matricellular + mechanotransduction layers) |
+| M3 | 27 | (endothelin axis + NO/sGC/cGMP + Notch ligands + EndoMT markers) |
+| M4 | 25 | (Th2 cytokines + BCR/CD20 + plasma cell + BAFF/APRIL) |
+
+`REPORT.md` lists every stub per module with role + compartment, for the curator's check-off.
+
+### 16:00 — Preview figures F2 + F3
+
+`scripts/render_figures.py` (needs matplotlib; auto-falls-back to `.venv/bin/python`).
+
+- **F3 preview** — top-20 hub subnetwork + 1-hop neighbours, spring layout, node size ∝ hub_score, colour by module. Real data: the 385 species + 1140 species-projection edges from the integrated map. Saved as both SVG (237 kB) and 300-dpi PNG (1.3 MB).
+- **F2 placeholder** — per-donor × per-module activation-score heatmap with mock z-scores, watermarked "PLACEHOLDER". Layout and axes match the planned final figure so a reviewer at the kickoff meeting can see what the eventual output will look like. Replaced by real data once Phase 4 overlay runs.
+
+### 16:15 — Whitfield bulk overlay notebook stubs
+
+`analysis/overlay/whitfield_bulk/01_load_geo.ipynb`, `02_intrinsic_subsets.ipynb`, `03_project.ipynb` — JSON-skeleton notebooks for the reserve / complementary overlay path: GSE58095 + GSE45485 → intrinsic-subset assignment (Milano 2008 / Pendergrass 2012 signatures) → projection onto the MIM as a subset × module heatmap. Mirrors the Tabib scRNAseq stubs.
+
+### 16:30 — ACR abstract scaffold
+
+`scripts/draft_abstract.py` reads three JSON / TSV artifacts (`SSc_MIM_integrated.report.json`, `analysis/network/summary.json`, `reaction_evidence.tsv`) and writes `manuscript/ACR2026_late_breaking_abstract.md` as a 300-word IMRAD scaffold with **real volumetrics filled in**:
+
+```
+385 species, 175 reactions, 17 compartments
+355 unique PMIDs (auto-mined; 158/159 reactions have a citation)
+14 cross-module species (cofactor + signalling collapse)
+31 detected communities vs 4 hand-defined modules
+Top hubs: ISGF3, ISG_signature, PDGF·PDGFRα/β dimer, TGFB1:TGFBR2:p-TGFBR1, …
+```
+
+The Results section preserves explicit `[TO BE FILLED:` markers for the four numerical results that depend on the Phase 4 overlay (per-cluster DEG counts, per-donor module scores, mRSS correlations, drug shortlist size). The curator regenerates the scaffold via `make abstract` after each analysis update; placeholders are auto-replaceable downstream.
+
+### 16:45 — `make auto` = full AUTO lane
+
+Wired all new targets into the Makefile. The new flagship target:
+
+```bash
+make auto
+```
+
+Runs lint → validate → harmonise → seed → integrate → pmids → crosstalk → network → sink-check → preflight → ssc-stubs → figures → abstract in one go. A fresh clone + `make auto` reaches a deterministic state from raw imports to abstract scaffold.
+
+### 17:00 — Batch 6 ready to commit
+
+Commit plan:
+
+1. `feat(bib): NCBI E-utils PMID metadata fill (350/350)`
+2. `feat(preflight): MINERVA-readiness checklist`
+3. `feat(assist): SSc Tier-1 species stubs per module (88 stubs)`
+4. `feat(figures): preview F2 + F3 renderers`
+5. `feat(overlay): Whitfield bulk notebook stubs`
+6. `feat(manuscript): auto-drafted ACR abstract scaffold from analyses`
+7. `chore: make auto = full AUTO lane`
+
 ### 15:00 — Notebook stubs for the omics overlay
 
 Six JSON-skeleton notebooks under `analysis/overlay/tabib_scRNAseq/`:
