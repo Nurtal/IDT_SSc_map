@@ -56,6 +56,24 @@ seed:  ## Re-seed curation/annotations/species_annotations.tsv from imports.
 m3-fetch:  ## Fetch Notch1 signaling (R-HSA-1980143) for M3.
 	$(PYTHON) scripts/reactome_pilot.py --pathway R-HSA-1980143 --module M3
 
+integrate:  ## Merge harmonised XMLs into SSc_MIM_integrated.xml.
+	$(PYTHON) scripts/integrate_modules.py
+
+pmids:  ## Mine PMIDs from Reactome SBML; seed bib + reaction_evidence.tsv.
+	$(PYTHON) scripts/extract_pmids_from_biopax.py
+
+network:  ## Run network analysis (centrality + hubs + communities). Needs networkx.
+	$(PYTHON) scripts/network_analysis.py
+
+sink-check:  ## Sink-node connectivity audit on the integrated map.
+	$(PYTHON) scripts/sink_connectivity.py
+
+crosstalk:  ## Regenerate docs/crosstalk_matrix.md from module specs.
+	$(PYTHON) scripts/generate_crosstalk_scaffold.py
+
+phase3:  integrate pmids crosstalk network sink-check  ## Run the whole Phase 3 automation pipeline.
+	@echo ">> Phase 3 AUTO lane complete."
+
 lint: specs-check bib-check  ## Run all repo-content linters (no SBML files needed).
 
 all: lint validate  ## Lint everything and validate SBML.

@@ -367,6 +367,106 @@ Commit plan:
 3. `chore: Makefile harmonise/seed/m3-fetch targets; help regex fix`
 4. `docs(import_pilot): harmonisation outcome + WikiPathways EndMT gotcha`
 
+---
+
+## 2026-05-16 — Automation-first rewrite + Phase 3 pipeline
+
+User direction: "*il va falloir que tu automatise le plus possible toutes les tâches à venir, fait un point sur ce qui a été fait, update la roadmap en conséquence*". This day's work:
+
+- Snapshot ([STATUS.md](STATUS.md)) of what's done with commit refs.
+- ROADMAP rewritten around three execution lanes (AUTO / ASSIST / HUMAN).
+- Phase 3 week-12-and-14 work brought forward — integration, network analysis, sink connectivity, PMID extraction, crosstalk scaffold — all automated.
+
+### 09:30 — STATUS snapshot
+
+Wrote `STATUS.md`: completion table per phase with commit refs; inventory (385 unique species, 175 reactions, 5 imports, 6 bib entries — pre-extraction); explicit external blockers (rheumatologist meeting, MINERVA account, CellDesigner GUI verification, bibliography sprint, CITATION.cff placeholders).
+
+### 09:50 — ROADMAP rewritten
+
+Heavy rewrite of `ROADMAP.md`. Every remaining task tagged 🟢 AUTO / 🟡 ASSIST / 🔴 HUMAN. New **automation queue** sections per phase. Original Go/no-go G1 marked "auto-skipped" because the import-pace question it tested is no longer the binding constraint; new gate G1.5 (scope sign-off at end of week 4) added as the actual binding constraint. Risk register updated: R1 (curation pace) downgraded high → medium-low; R2 (import compatibility) medium → low; R3 (expert validation) becomes the dominant scheduling risk; new R9 (automation drift from biology) added with the "every transform produces a JSON report, nothing is destructive, curator can override" mitigation.
+
+### 10:30 — Integration
+
+`scripts/integrate_modules.py` merges the 5 harmonised XMLs into `curation/celldesigner/SSc_MIM_integrated.xml`. Walks listOfCompartments/Species/Reactions, dedupes by id, tags each species' SBML notes with `module=<comma-list>` so downstream tools (network analysis, MINERVA) can colour by source module.
+
+Results: **385 species, 175 reactions, 17 compartments, 14 cross-module dedupes**. The cross-module species are exactly what you'd expect — ATP, ADP, H2O, Pi, FURIN, CBL, PTPN11 — universal cofactors and a few shared signaling components correctly collapsed to one node.
+
+Two small bugs caught and fixed during iteration:
+- Module-notes annotation initially appended a fresh `<html>/<body>` each time because my `find()` was non-recursive — body lives two levels under notes. Fixed by `notes.iter()`.
+- Verified that the resulting `module=M1,M2,M4` annotation on ATP__cyto is correct (3 imports contributed).
+
+### 11:00 — PMID mining from Reactome SBML
+
+`scripts/extract_pmids_from_biopax.py`. Surprise: the `.owl` files are actually SBML L3v1 (the BioPAX URL 404'd at fetch time; the script's fallback to `/exporter/sbml/` kicked in). The PMIDs are there though, encoded as `<rdf:li rdf:resource="https://identifiers.org/pubmed:NNNN" />` inside `<bqbiol:isDescribedBy>` blocks attached to species and reactions.
+
+Mined **355 unique PMIDs** across the five Reactome imports. Pre-filled `curation/annotations/reaction_evidence.tsv` with **159 rows** (one per Reactome reaction), populated with: reaction id (prefixed by module), mechanism (Reactome's reaction name), participants list, PMIDs (semicolon-separated), evidence code `ECO:0000305` (curator-inference, pending real PMID read), module tag. **158/159 reactions have at least one PMID.**
+
+Also appended 355 BibTeX stub entries to `pubmed_corpus.bib` (with `pmid` + TODO body — `scripts/bib_lookup.py` (future) will fetch title/journal/year from NCBI E-utils).
+
+This is one of the biggest single lifts of the project so far: it pre-fills Phase 2 days 9–10 (MI2CAST annotation) from "write 175 rows from scratch" to "review 175 auto-filled rows".
+
+**Caveat:** The reaction IDs in the Reactome SBML L3 export (`reaction_<stableID>`) don't match the IDs in the CellDesigner export (`reactionVertex_<n>`) — same biology, different ID schemes from different Reactome export paths. The curator needs a mapping pass. The row text (mechanism + participants list with HGNC symbols) makes this trivial by hand; an automated mapping pass is on the queue.
+
+### 11:30 — Network analysis
+
+`scripts/network_analysis.py` (needs networkx, installed in `.venv`). Bipartite graph (species ↔ reaction), undirected species projection: **385 nodes, 1140 edges in the species-only graph** (513 directed in the directed projection). Computes degree / betweenness / closeness / PageRank; hub score = z(degree) + z(betweenness); top-20 hubs excluding common cofactors; greedy modularity communities (31 communities detected vs the 4 hand-defined modules — sub-structure is real).
+
+**Top 5 non-cofactor hubs:**
+
+```
+1. ISGF3_bound_to_ISRE_promotor_elements__nuc   M1  score=9.57  deg=29
+2. ISG_signature__nuc                            M1  score=8.83  deg=28
+3. PDGF_Phospho_PDGF_receptor_dimer__cyto        M2  score=7.91  deg=10
+4. TGFB1_TGFBR2_p_TGFBR1__cyto                   M2  score=6.71  deg=7
+5. IFNA_B_IFNAR2_JAK1_STAT2_IFNAR1_TYK2__cyto    M1  score=6.14  deg=9
+```
+
+These are mostly multi-protein complexes — biologically the central hubs of each signalling cascade. The drug-target prioritisation step in Phase 4 will want to drill down to the individual subunits within these complexes.
+
+### 12:00 — Sink-node connectivity audit
+
+`scripts/sink_connectivity.py` enforces the scoping-notes rule "every Tier-1 species reaches a sink in ≤ 6 steps". For each of the 385 species, computes shortest path to the nearest of four sink-anchor sets (ISG_signature / ECM-myofibroblast / vascular_remodelling / Th2-autoAb).
+
+Results:
+
+| Sink anchor | nodes detected |
+|-------------|----------------|
+| M1 ISG_signature | 9 |
+| M2 ECM_myofibroblast | **0** |
+| M3 vascular_remodelling | 12 |
+| M4 Th2_autoAb_output | 8 |
+
+**Findings:**
+
+- **0 species violate the >6 rule** — i.e., every species that reaches a sink does so in ≤ 6 steps. ROADMAP constraint satisfied for the connected portion.
+- **126 dangling species** (33%) — no path to any sink:
+  - M1: 11 / 78 dangling (14%)
+  - M2: 66 / 164 dangling (40%) — high because the M2 ECM sinks (ACTA2, COL1A1, FN1, POSTN, COMP, CTGF) are SSc-specific Tier-1 placeholders not yet imported. These are the curator's explicit next-week task.
+  - M3: 5 / 77 dangling (6%)
+  - M4: 44 / 60 dangling (73%) — IL-6R signalling internal states that terminate at intermediate complexes; needs the M4 transcriptional outputs (STAT3-target gene transcription nodes) to be wired in.
+
+The 0-detected M2 sink and the 73% M4 dangling rate point to the same root cause: the **sink anchors are the SSc-specific Tier-1 additions the curator still needs to add** (Phase 2 days 6–8). Once those land, dangling will drop substantially.
+
+### 12:30 — Crosstalk matrix scaffold
+
+`scripts/generate_crosstalk_scaffold.py` parses the "Crosstalk edges" prose in each module spec and emits `docs/crosstalk_matrix.md` as a single table. Two parsing iterations:
+- First run: 0 edges from M1 / M2 (each uses a different prose style). Regex DIRECTED_RE was too strict.
+- Second run after extending the parser: M1 implicit "→ Mx: text" → 3 edges, M2 "**In:** Mx → text" → 4 edges. **14 unique edges across the four modules**, each tagged `declared`. Some redundancies (M2↔M3 appears twice with different phrasings) — the curator dedupes by hand.
+
+### 13:00 — Makefile updates
+
+Added targets: `integrate`, `pmids`, `network`, `sink-check`, `crosstalk`, and the meta-target `phase3` which runs the whole Phase 3 AUTO lane in sequence. `make phase3` is now the end-to-end pipeline from harmonised imports to integrated map + analyses.
+
+### 13:15 — Commit plan
+
+1. `feat(roadmap): rewrite around automation lanes; add STATUS.md`
+2. `feat(scripts): integration of harmonised modules`
+3. `feat(annotations): mine 355 PMIDs + seed 159 reaction_evidence rows`
+4. `feat(scripts): network analysis (centrality, hubs, communities)`
+5. `feat(scripts): sink-node connectivity audit`
+6. `feat(scripts): auto-generate crosstalk matrix from module specs`
+7. `chore: Makefile phase3 pipeline target`
+
 ### 15:00 — Notebook stubs for the omics overlay
 
 Six JSON-skeleton notebooks under `analysis/overlay/tabib_scRNAseq/`:
