@@ -1,0 +1,85 @@
+{
+  "integrated_xml": "curation/celldesigner/SSc_MIM_integrated.xml",
+  "total_species": 385,
+  "max_path_threshold": 6,
+  "n_dangling": 126,
+  "n_far_from_sink": 0,
+  "sinks_detected_per_anchor": {
+    "M1_ISG_signature": 9,
+    "M2_ECM_myofibroblast": 0,
+    "M3_vascular_remodelling": 12,
+    "M4_Th2_autoAb_output": 8
+  },
+  "distance_distribution_per_module": {
+    "M1": {
+      "n": 78,
+      "median": 1,
+      "max": 5,
+      "dangling": 11
+    },
+    "M3": {
+      "n": 77,
+      "median": 1.0,
+      "max": 6,
+      "dangling": 5
+    },
+    "M1,M2,M4": {
+      "n": 3,
+      "median": 1,
+      "max": 2,
+      "dangling": 0
+    },
+    "M2": {
+      "n": 164,
+      "median": 4.0,
+      "max": 6,
+      "dangling": 66
+    },
+    "M2,M4": {
+      "n": 1,
+      "median": 3,
+      "max": 3,
+      "dangling": 0
+    },
+    "M4": {
+      "n": 60,
+      "median": 1.0,
+      "max": 3,
+      "dangling": 44
+    },
+    "M1,M2": {
+      "n": 2,
+      "median": 3.0,
+      "max": 3,
+      "dangling": 0
+    }
+  },
+  "dangling_sample": [
+    "ABCE1_RNASEL_dimer__mito",
+    "ABCE1__mito",
+    "Active_PDGF_dimers_AA_AB_BB__ext",
+    "Active_PDGF_dimers_CC_DD__ext",
+    "CLCF1__ext",
+    "CNTFR_CRLF1_CLCF1__cyto",
+    "CNTFR__cyto",
+    "CNTF_CNTFR_CRLF1_CLCF1_CNTFR_IL6ST_JAK1_JAK2_TYK2__cyto",
+    "CNTF_CNTFR_CRLF1_CLCF1_CNTFR__cyto",
+    "CNTF_CNTFR_CRLF1_CLCF1_CNTFR_gp130_JAKs_LIFR_JAKs__cyto",
+    "CNTF_CNTFR__cyto",
+    "CNTF__ext",
+    "CRLF1_CLCF1__cyto",
+    "CRLF1__cyto",
+    "CTF1_LIFR_JAKs__cyto",
+    "CTF1__ext",
+    "Cleaved_PDGF_B_peptides__golgi",
+    "Cleaved_novel_PDGF_fragments__ext",
+    "DLL1_NOTCH1__cyto",
+    "DLL1__cyto",
+    "DLL4_NOTCH1__cyto",
+    "DLL4__cyto",
+    "Extracellular_matrix_ligands__ext",
+    "FURIN__golgi",
+    "Fibrillin_1__ext"
+  ],
+  "far_from_sink_sample": []
+}
