@@ -1,1 +1,160 @@
 reaction_id	type	participants	mechanism	pmid	evidence_code	context_biotype	context_assay	module	crosstalk_modules	notes
+M1_reaction_997311	TODO	species_29356;species_909705;species_997300;species_29372	Dephosphorylation of TYK2 by PTP1B	11694501	ECO:0000305			M1		auto-imported from R-HSA-909733.owl
+M1_reaction_1015702	TODO	species_9034125;species_168699;species_1015684;species_174336;species_5624198;species_1015677;species_9684472;species_1015673;species_1015688;species_1015680;species_199523;species_1015693;species_1015682;species_947487;species_983117;species_1015696;species_947492;species_1015695;species_937341;species_5624199;species_5624196;species_1015671;species_936552;species_1031703;species_947491;species_53939;species_1015674;species_1015687	Expression of IFN-induced genes	14769151;9861020;11404376;11092454;12029096;11337497;9096384;16009940;15047845;6162102;2211721;6548414;1730654;30485383;23121362;688397;12766484	ECO:0000305			M1		auto-imported from R-HSA-909733.owl
+M1_reaction_912685	TODO	species_912325;species_877333;species_912690	UBP43 binds IFNAR2 and prevents JAK1 interaction	16710296	ECO:0000305			M1		auto-imported from R-HSA-909733.owl
+M1_reaction_997314	TODO	species_29356;species_997300;species_909703;species_29372	Dephosphorylation of JAK1 by SHP1	8943354;18508557	ECO:0000305			M1		auto-imported from R-HSA-909733.owl
+M1_reaction_909725	TODO	species_909702;species_879183;species_909698	Interaction of IRF9 with p-STAT2:p-STAT1	7537377;9242679;8621447	ECO:0000305			M1		auto-imported from R-HSA-909733.owl
+M1_reaction_9678737	TODO	species_9678619;species_909708;species_9678695	IFNAR1:TYK2 binds TYK2 inhibitors	23061660;24417533;32032529;32113509	ECO:0000305			M1		auto-imported from R-HSA-909733.owl
+M1_reaction_9710963	TODO	species_180733;species_9757478;species_9757476	p-STAT1dimer:KPNA1 binds KPNB1	20643137;17596301;33097660;18845677;21029754;22520844;11927559;34097873;12048190;7604027;10353244	ECO:0000305			M1		auto-imported from R-HSA-909733.owl
+M1_reaction_909732	TODO	species_909696;species_113592;species_909697;species_29370	Phosphorylation of STAT2	16987978;10542297;8197134	ECO:0000305			M1		auto-imported from R-HSA-909733.owl
+M1_reaction_913529	TODO	species_9757480;species_188865;species_180714;species_913526	Translocation of p-STAT1:p-STAT1 dimer to nucleus	7510216	ECO:0000305			M1		auto-imported from R-HSA-909733.owl
+M1_reaction_909718	TODO	species_380745;species_113592;species_913524;species_29370	Formation of p-STAT1 homodimer	7510216;17351669	ECO:0000305			M1		auto-imported from R-HSA-909733.owl
+M1_reaction_9678935	TODO	species_918193;species_9678984;species_9678951	IFNAR2:JAK1:STAT2 binds JAK1,2 inhibitors	20363976;20130243;24417533;32511913;32032529;32278797	ECO:0000305			M1		auto-imported from R-HSA-909733.owl
+M1_reaction_909730	TODO	species_909705;species_113592;species_29370;species_909704	Phosphorylation of INFAR1 by TYK2	8605876;7526154	ECO:0000305			M1		auto-imported from R-HSA-909733.owl
+M1_reaction_912680	TODO	species_909703;species_877267;species_912681	Inhibition of JAK kinase activity by SOCS1/3		TODO			M1		auto-imported from R-HSA-909733.owl
+M1_reaction_909726	TODO	species_909697;species_380755;species_113592;species_909711;species_29370	Phosphorylation of STAT1	10982844;8232552;32953130;16214811	ECO:0000305			M1		auto-imported from R-HSA-909733.owl
+M1_reaction_909719	TODO	species_882029;species_909704;species_909696	Recruitment of STAT2 to p-IFNAR1	8605876;17251292	ECO:0000305			M1		auto-imported from R-HSA-909733.owl
+M1_reaction_1015699	TODO	species_9034125;species_913527;species_1015697	ISGF3 binds the ISRE promoter elements in IFN-stimulated genes	9861020;12766484;18575461;7540766	ECO:0000305			M1		auto-imported from R-HSA-909733.owl
+M1_reaction_5223305	TODO	species_5216010;species_5357403;species_5223322	ABCE1 binds RNASEL, inhibiting it	9660177;9847332;11585831	ECO:0000305			M1		auto-imported from R-HSA-909733.owl
+M1_reaction_9696179	TODO	species_918193;species_9696187;species_9696161	IFNAR2:JAK1:STAT2 binds type 1 interferon analogs	18035202;11377645;25371710;32862111;33189161;32661006;32574262;33193462;33396578;33117408;32758689;32416070;32661059	ECO:0000305			M1		auto-imported from R-HSA-909733.owl
+M1_reaction_9710959	TODO	species_180612;species_9710957;species_9757478	p-STAT1 dimer binds KPNA1	20643137;22520844;11927559;12048190;10353244	ECO:0000305			M1		auto-imported from R-HSA-909733.owl
+M1_reaction_909721	TODO	species_9710965;species_188865;species_180714;species_913527	Translocation of ISGF3 complex to nucleus	17351669	ECO:0000305			M1		auto-imported from R-HSA-909733.owl
+M1_reaction_909729	TODO	species_909703;species_113592;species_909705;species_29370	Activation of JAK kinases	9334213;8702790;11100472	ECO:0000305			M1		auto-imported from R-HSA-909733.owl
+M1_reaction_997309	TODO	species_29356;species_909711;species_997304;species_29372	Dephosphorylation of STAT1 by SHP2	10022928;18508557	ECO:0000305			M1		auto-imported from R-HSA-909733.owl
+M1_reaction_909724	TODO	species_909708;species_918195;species_909703	Recruitment of IFNAR1	16171819;15449939;15312780;17969444	ECO:0000305			M1		auto-imported from R-HSA-909733.owl
+M1_reaction_909720	TODO	species_918193;species_909690;species_918195	IFN alpha/beta binds to IFNAR2	12842042;10395669;15312780;15778442;9334213;17969444;9121453;11786546;8156998	ECO:0000305			M1		auto-imported from R-HSA-909733.owl
+M1_reaction_909722	TODO	species_909711;species_909702;species_909704	Release of p-STAT2:p-STAT1 dimer	8621447;17351669	ECO:0000305			M1		auto-imported from R-HSA-909733.owl
+M2_reaction_186778	TODO	species_162563;species_186811;species_186839	SHP2 binds to the active receptor	7691811;9739761	ECO:0000305			M2		auto-imported from R-HSA-186797.owl
+M2_reaction_382055	TODO	species_204819;species_186811;species_381956	Grb7 binds to the active PDGF receptor	8940081;10508235;9739761	ECO:0000305			M2		auto-imported from R-HSA-186797.owl
+M2_reaction_382053	TODO	species_381936;species_381926	Translocation of PDGF from ER to Golgi	1639841;15207811	ECO:0000305			M2		auto-imported from R-HSA-186797.owl
+M2_reaction_8864036	TODO	species_29356;species_8864037;species_8864045;species_29372	PTPN12 dephosphorylates PDGFRB at Y1021	21376233	ECO:0000305			M2		auto-imported from R-HSA-186797.owl
+M2_reaction_382056	TODO	species_381945;species_186811;species_381955	Crk binds to the active PDGF receptor	9546424;10508235;9739761	ECO:0000305			M2		auto-imported from R-HSA-186797.owl
+M2_reaction_8865276	TODO	species_380751;species_380759;species_8865269;species_389066	PDGF-AB clevage by Furin	1639841;15207811;10508235;2842868;16007151;12463163	ECO:0000305			M2		auto-imported from R-HSA-186797.owl
+M2_reaction_186826	TODO	species_109797;species_186811;species_186827	GRB2:SOS1 complex binds to the active receptor	7935391;9739761;8388543	ECO:0000305			M2		auto-imported from R-HSA-186797.owl
+M2_reaction_9674093	TODO	species_9674075;species_389079;species_9674082	PDGFRs bind type I TKI	23583652;28435517;25597754;25328409;29093181;29964125;29408302	ECO:0000305			M2		auto-imported from R-HSA-186797.owl
+M2_reaction_186786	TODO	species_389078;species_113592;species_389074;species_29370	Autophosphorylation of PDGF beta receptors	9739761	ECO:0000305			M2		auto-imported from R-HSA-186797.owl
+M2_reaction_186780	TODO	species_74693;species_186811;species_186789	PI3-kinase binds to the active receptor	2466336;9739761;1374684	ECO:0000305			M2		auto-imported from R-HSA-186797.owl
+M2_reaction_1524186	TODO	species_186795;species_113592;species_1524184;species_29370	Phosphorylation of PLCgamma by PDGFR	2472219;10579907	ECO:0000305			M2		auto-imported from R-HSA-186797.owl
+M2_reaction_186798	TODO	species_186833;species_389074;species_186830	GAP binds to PDGF-beta receptors only	1375321;1314164;9739761	ECO:0000305			M2		auto-imported from R-HSA-186797.owl
+M2_reaction_389083	TODO	species_113592;species_389079;species_389073;species_29370	Autophosphorylation of PDGF alpha receptors	9739761;30389923;29093181;19564526;29408302;29964125;29137923	ECO:0000305			M2		auto-imported from R-HSA-186797.owl
+M2_reaction_382052	TODO	species_381955;species_913472;species_201625;species_381957	p130Cas and C3G bind PDGFR bound Crk	9546424;9739761	ECO:0000305			M2		auto-imported from R-HSA-186797.owl
+M2_reaction_186773	TODO	species_186792;species_380760;species_186766	PDGF dimer binds two receptors simultaneously	9739761;29408302;23583652;28435517;25597754;25328409;15615512;16436588;17943726;21251937;18559524;29263244;12369853;16474853;12538485;17367763;22933705;16331269;20813817;17604334	ECO:0000305			M2		auto-imported from R-HSA-186797.owl
+M2_reaction_382057	TODO	species_381942;species_381947	Release of novel PDGFs as latent factors	15207811	ECO:0000305			M2		auto-imported from R-HSA-186797.owl
+M2_reaction_186819	TODO	species_8876922;species_186811;species_186831	SH2 domain of Src binds to the active receptor	7685273;9488729;10508235;9739761	ECO:0000305			M2		auto-imported from R-HSA-186797.owl
+M2_reaction_380780	TODO	species_113592;species_186831;species_380768;species_29370	Activation of Src	8647855;9739761	ECO:0000305			M2		auto-imported from R-HSA-186797.owl
+M2_reaction_186785	TODO	species_380749;species_8865271;species_380761	PDGF-AA clevage by Furin	1639841;15207811;10508235;2842868;16007151;12463163	ECO:0000305			M2		auto-imported from R-HSA-186797.owl
+M2_reaction_8865275	TODO	species_380748;species_184206;species_389066	PDGF-BB clevage by Furin	1639841;15207811;10508235;2842868;16007151;12463163	ECO:0000305			M2		auto-imported from R-HSA-186797.owl
+M2_reaction_389086	TODO	species_389077;species_113592;species_29370;species_389076	Autophosphorylation of PDGF alpha/beta receptors	9739761	ECO:0000305			M2		auto-imported from R-HSA-186797.owl
+M2_reaction_382054	TODO	species_381946;species_381934;species_381952	PDGF binds to extracellular matrix proteins	10508235;8900172;1311092;9334164;1639841	ECO:0000305			M2		auto-imported from R-HSA-186797.owl
+M2_reaction_380782	TODO	species_380756;species_186811;species_380766	STAT binds to the active receptor	9739761;9484840;8657151	ECO:0000305			M2		auto-imported from R-HSA-186797.owl
+M2_reaction_9674095	TODO	species_9674079;species_186792;species_9674086	PDGFRs bind type II TKI	15615512;16436588;17943726;21251937;18559524;29263244;12369853;16474853;12538485;17367763;29408302;29137923;31085175	ECO:0000305			M2		auto-imported from R-HSA-186797.owl
+M2_reaction_1524182	TODO	species_1524184;species_167679;species_186811	Activated PLC gamma dissociates from the PDGF receptor	10579907	ECO:0000305			M2		auto-imported from R-HSA-186797.owl
+M2_reaction_382061	TODO	species_381947;species_389070;species_381939	Extracellular processing of novel PDGFs	15207811	ECO:0000305			M2		auto-imported from R-HSA-186797.owl
+M2_reaction_186800	TODO	species_179856;species_113592;species_29370;species_179838	PI3K catalyses the phosphorylation of PIP2 to PIP3	9739761;2466336	ECO:0000305			M2		auto-imported from R-HSA-186797.owl
+M2_reaction_9674015	TODO	species_9674007;species_186794;species_9674011	Olaratumab binds PDGFRA	15767546;22933705;16331269;20813817;17604334	ECO:0000305			M2		auto-imported from R-HSA-186797.owl
+M2_reaction_382058	TODO	species_381949;species_186811;species_381954	Nck binds to the active PDGF receptor	10508235;9739761;7692233	ECO:0000305			M2		auto-imported from R-HSA-186797.owl
+M2_reaction_186834	TODO	species_29438;species_109796;species_109783;species_29420	SOS-mediated nucleotide exchange on RAS (PDGF receptor:GRB2:SOS)	8388543;9739761	ECO:0000305			M2		auto-imported from R-HSA-186797.owl
+M2_reaction_186765	TODO	species_167682;species_186811;species_186795	PLC-gamma binds to the active receptor	1396585;9739761;8443409	ECO:0000305			M2		auto-imported from R-HSA-186797.owl
+M2_reaction_2176417	TODO	species_2176418;species_2176419	SMAD7:NEDD4L complex translocates to the cytosol	15496141	ECO:0000305			M2		auto-imported from R-HSA-2173789.owl
+M2_reaction_2187375	TODO	species_170855;species_975970;species_2187365	SMAD3 binds STUB1 (CHIP)	14701756;15781469	ECO:0000305			M2		auto-imported from R-HSA-2173789.owl
+M2_reaction_170835	TODO	species_170841;species_171172;species_206180;species_171266	An anchoring protein, ZFYVE9 (SARA), recruits SMAD2/3	9865696	ECO:0000305			M2		auto-imported from R-HSA-2173789.owl
+M2_reaction_178208	TODO	species_178197;species_178202;species_2167870	SMAD7 binds to SMURF2	11163210;16061177	ECO:0000305			M2		auto-imported from R-HSA-2173789.owl
+M2_reaction_2169046	TODO	species_2169047	Degradation of TGF-beta receptor complex	11163210;11278251;15496141	ECO:0000305			M2		auto-imported from R-HSA-2173789.owl
+M2_reaction_170850	TODO	species_171180;species_171173;species_171182	Phosphorylated SMAD2/3 dissociates from TGFBR	8980228;9311995;9346966;15350224	ECO:0000305			M2		auto-imported from R-HSA-2173789.owl
+M2_reaction_2127562	TODO	species_2127556;species_170841;species_2127564	STRAP binds phosphorylated TGF-beta receptor complex	9856985	ECO:0000305			M2		auto-imported from R-HSA-2173789.owl
+M2_reaction_178178	TODO	species_2167884;species_29356;species_2167873;species_2162158;species_206180;species_173478;species_29372	PP1 dephosphorylates TGFBR1	14718519	ECO:0000305			M2		auto-imported from R-HSA-2173789.owl
+M2_reaction_2179293	TODO	species_2169047;species_2179332;species_2179287	UCHL5 binds SMAD7 in complex with ubiquitinated TGFBR1	16027725;22344298	ECO:0000305			M2		auto-imported from R-HSA-2173789.owl
+M2_reaction_2176445	TODO	species_3006353;species_173537;species_2176457	SMURF2 binds SMAD2	11158580	ECO:0000305			M2		auto-imported from R-HSA-2173789.owl
+M2_reaction_2176452	TODO	species_2176443	Degradation of ubiquitinated SMAD2	11158580;22045334	ECO:0000305			M2		auto-imported from R-HSA-2173789.owl
+M2_reaction_2328033	TODO	species_2159874;species_2396175;species_2396177	Fibrillin-1 binds latent TGF-beta	10646116;15307633;19349279;12429738;8756760;18585707;19513754	ECO:0000305			M2		auto-imported from R-HSA-2173789.owl
+M2_reaction_2167924	TODO	species_2167913;species_165529;species_2167923	SMAD7:SMURF1 complex binds XPO1 (CRM1)	12519765	ECO:0000305			M2		auto-imported from R-HSA-2173789.owl
+M2_reaction_2179291	TODO	species_2179287;species_29356;species_2179332;species_2179328;species_113595	UCHL5, USP15 deubiquitinate TGFBR1	16027725;22344298	ECO:0000305			M2		auto-imported from R-HSA-2173789.owl
+M2_reaction_177107	TODO	species_9736811;species_2395236	Secretion and activation of the latent large complex of TGF-beta-1	15564041;12482908	ECO:0000305			M2		auto-imported from R-HSA-2173789.owl
+M2_reaction_178218	TODO	species_170841;species_2169026;species_2169025	SMAD7:SMURF complex binds to phosphorylated TGFBR1	11163210;11278251;15496141	ECO:0000305			M2		auto-imported from R-HSA-2173789.owl
+M2_reaction_2187405	TODO	species_2187404;species_171182;species_2187399	MTMR4 binds phosphorylated SMAD2/3	20061380	ECO:0000305			M2		auto-imported from R-HSA-2173789.owl
+M2_reaction_170868	TODO	species_113592;species_171266;species_29370;species_171180	Activated type I receptor phosphorylates SMAD2/3 directly	11100470	ECO:0000305			M2		auto-imported from R-HSA-2173789.owl
+M2_reaction_4332235	TODO	species_170842;species_112199;species_4332229	CBL binds TGFBR2	23290524	ECO:0000305			M2		auto-imported from R-HSA-2173789.owl
+M2_reaction_2187368	TODO	species_113595;species_2187365;species_975970;species_2187371	STUB1 (CHIP) ubiquitinates SMAD3	15781469;14701756	ECO:0000305			M2		auto-imported from R-HSA-2173789.owl
+M2_reaction_2167876	TODO	species_2167870;species_2167883	SMAD7:SMURF2 complex translocates to the cytosol	11163210	ECO:0000305			M2		auto-imported from R-HSA-2173789.owl
+M2_reaction_2395364	TODO	species_2395236;species_2161309;species_2395326	LTBP4 binds TGF-Beta-1	12429738;15307633;19349279;21900405;8756760;18585707;10646116;10930463;19513754	ECO:0000305			M2		auto-imported from R-HSA-2173789.owl
+M2_reaction_2176416	TODO	species_2176420;species_178197;species_2176418	NEDD4L ubiquitin ligase binds SMAD7	15496141	ECO:0000305			M2		auto-imported from R-HSA-2173789.owl
+M2_reaction_173483	TODO	species_170841;species_173484;species_173478;species_173509	BAMBI interferes with the interaction of type I receptor with type II receptor	10519551;19758997	ECO:0000305			M2		auto-imported from R-HSA-2173789.owl
+M2_reaction_178215	TODO	species_2167923;species_2167927;species_165539	SMAD7:SMURF1 complex is exported to the cytosol	12519765;12151385	ECO:0000305			M2		auto-imported from R-HSA-2173789.owl
+M2_reaction_2169050	TODO	species_113595;species_2169025;species_2169047;species_2176415	SMURFs/NEDD4L ubiquitinate phosphorylated TGFBR1 and SMAD7	11163210;11278251;15496141	ECO:0000305			M2		auto-imported from R-HSA-2173789.owl
+M2_reaction_2187355	TODO	species_171182;species_2187347;species_2187343	PMEPA1 sequesters phosphorylated SMAD2/3	20129061	ECO:0000305			M2		auto-imported from R-HSA-2173789.owl
+M2_reaction_170861	TODO	species_170852;species_170842;species_170865	Dimeric TGF-beta-1 binds to the receptor	7693660;1333888;8242743;19720988;8391934;8106553	ECO:0000305			M2		auto-imported from R-HSA-2173789.owl
+M2_reaction_2167917	TODO	species_178197;species_3004548;species_2167913	SMAD7 binds to SMURF1	12519765;20937913;11278251	ECO:0000305			M2		auto-imported from R-HSA-2173789.owl
+M2_reaction_170843	TODO	species_113592;species_170840;species_170841;species_29370	TGFBR2 phosphorylates TGFBR1	8047140;8947046;18469808	ECO:0000305			M2		auto-imported from R-HSA-2173789.owl
+M2_reaction_2395328	TODO	species_2395372;species_2395330;species_2395250	LTBP1, LTBP3 bind TGF-Beta	10930463;15307633;19349279;12429738;21900405;8756760;21175431;18585707;10646116;19513754	ECO:0000305			M2		auto-imported from R-HSA-2173789.owl
+M2_reaction_2128994	TODO	species_2127564;species_173478;species_2128993	STRAP stabilizes interaction of activated TGF-beta receptor complex with SMAD7	10757800	ECO:0000305			M2		auto-imported from R-HSA-2173789.owl
+M2_reaction_170844	TODO	species_171260;species_9736811	Latent TGF-beta-1 is cleaved by FURIN	7737999;12482908;11141505;11390472	ECO:0000305			M2		auto-imported from R-HSA-2173789.owl
+M2_reaction_173542	TODO	species_2176457;species_113595;species_2176443;species_173537	SMURF2 ubiquitinates SMAD2	11158580	ECO:0000305			M2		auto-imported from R-HSA-2173789.owl
+M2_reaction_2396029	TODO	species_2395241;species_2396408;species_2396121	Latent TGF-beta-3 binds integrins	12358597;21646718	ECO:0000305			M2		auto-imported from R-HSA-2173789.owl
+M2_reaction_2187401	TODO	species_2187399;species_29356;species_2187404;species_171172;species_29372	MTMR4 dephosphorylates SMAD2/3	20061380	ECO:0000305			M2		auto-imported from R-HSA-2173789.owl
+M2_reaction_170847	TODO	species_171182;species_170862;species_171175	Phosphorylated SMAD2 and SMAD3 form a complex with SMAD4	9311995;9670020;11779505;15350224;11779503;17272273	ECO:0000305			M2		auto-imported from R-HSA-2173789.owl
+M2_reaction_170846	TODO	species_2187279;species_170865;species_170840;species_2026007	TGFBR2 recruits TGFBR1	1333888;7693660;8242743;9233797;20625381;11323414;8391934	ECO:0000305			M2		auto-imported from R-HSA-2173789.owl
+M2_reaction_4332236	TODO	species_4332229;species_4419896;species_4332222;species_112199;species_8951627	CBL neddylates TGFBR2	23290524	ECO:0000305			M2		auto-imported from R-HSA-2173789.owl
+M2_reaction_2395320	TODO	species_9737594;species_2396176;species_2396201	Latent TGF-beta-1 binds integrins	9725916;10025398;12358597;11970960;12415008;16877343	ECO:0000305			M2		auto-imported from R-HSA-2173789.owl
+M2_reaction_173512	TODO	species_170841;species_173478;species_173476	I-SMAD competes with SMAD2/3 for type I receptor (TGFBR1)	9335507;9215638	ECO:0000305			M2		auto-imported from R-HSA-2173789.owl
+M2_reaction_2187358	TODO	species_171172;species_2186792;species_2187341	PMEPA1 sequesters unphosphorylated SMAD2/3	20129061	ECO:0000305			M2		auto-imported from R-HSA-2173789.owl
+M2_reaction_178189	TODO	species_2162158;species_173476;species_206180;species_2167884	SMAD7 recruits GADD34:PP1 to phosphorylated TGFBR	14718519	ECO:0000305			M2		auto-imported from R-HSA-2173789.owl
+M2_reaction_2187382	TODO	species_2187371	Degradation of ubiquitinated SMAD3	15781469;14701756	ECO:0000305			M2		auto-imported from R-HSA-2173789.owl
+M3_reaction_1980109	TODO	species_373658;species_1911468	Cleavage of CNTN1:NOTCH1 complex releases NICD1	14567914	ECO:0000305			M3		auto-imported from R-HSA-1980143.owl
+M3_reaction_4396347	TODO	species_2197548;species_1604462;species_4396364	NOTCH1 Coactivator Complex binds HES1 promoter	7566092	ECO:0000305			M3		auto-imported from R-HSA-1980143.owl
+M3_reaction_1852623	TODO	species_1604468;species_68524;species_1852621;species_1604469	Ubiquitination of NICD1 by FBWX7	15546612;11461910;11585921;18094723	ECO:0000305			M3		auto-imported from R-HSA-1980143.owl
+M3_reaction_1980122	TODO	species_157027;species_1604454;species_1852570	DTX binds NOTCH1	9590294;11226752;19000840	ECO:0000305			M3		auto-imported from R-HSA-1980143.owl
+M3_reaction_1912386	TODO	species_113595;species_1604458;species_1911544	Ubiquitination of NOTCH1 by ITCH in the absence of ligand	18628966;19567869	ECO:0000305			M3		auto-imported from R-HSA-1980143.owl
+M3_reaction_1912385	TODO	species_1604469;species_1604444;species_1604468	Phosphorylated NICD1 binds FBXW7	11461910;15546612;18094723;11585921	ECO:0000305			M3		auto-imported from R-HSA-1980143.owl
+M3_reaction_157926	TODO	species_157634;species_157939	NICD1 traffics to nucleus	9651681;9604939	ECO:0000305			M3		auto-imported from R-HSA-1980143.owl
+M3_reaction_1980074	TODO	species_157655;species_113595;species_1911537	Ubiquitination of DLL/JAG ligands upon binding to NOTCH1	18043734;15824097;12530964;15829515;15760269;16093323;11740940;18077452;17003037	ECO:0000305			M3		auto-imported from R-HSA-1980143.owl
+M3_reaction_1912398	TODO	species_1852570;species_1604557;species_1911551	NOTCH1 binds DNER	15965470	ECO:0000305			M3		auto-imported from R-HSA-1980143.owl
+M3_reaction_373706	TODO	species_1852570;species_373622;species_373658	Contactin-1 (CNTN1) binds NOTCH1	14567914	ECO:0000305			M3		auto-imported from R-HSA-1980143.owl
+M3_reaction_1980118	TODO	species_1911487;species_113595;species_1911542	ARRB mediates NOTCH1 ubiquitination	16284625	ECO:0000305			M3		auto-imported from R-HSA-1980143.owl
+M3_reaction_1912357	TODO	species_1604453;species_113595;species_1911536	ITCH ubiquitinates DTX	17028573	ECO:0000305			M3		auto-imported from R-HSA-1980143.owl
+M3_reaction_9667638	TODO	species_9667627;species_9667634	NBEA translocates to the nucleus	26999814	ECO:0000305			M3		auto-imported from R-HSA-1980143.owl
+M3_reaction_1980042	TODO	species_157027;species_157098;species_157008	NOTCH1 binds JAG1	19524514;9462510	ECO:0000305			M3		auto-imported from R-HSA-1980143.owl
+M3_reaction_1980138	TODO	species_157643;species_157027;species_1980055	NOTCH1 binds DLL/JAG ligand in cis	20418862;18660822	ECO:0000305			M3		auto-imported from R-HSA-1980143.owl
+M3_reaction_1980047	TODO	species_2197548;species_210825	NOTCH1 stimulates HES1 transcription	7566092	ECO:0000305			M3		auto-imported from R-HSA-1980143.owl
+M3_reaction_4396379	TODO	species_2197557;species_1604462;species_4396377	NOTCH1 Coactivator Complex binds HES5 promoter	20972443	ECO:0000305			M3		auto-imported from R-HSA-1980143.owl
+M3_reaction_1912391	TODO	species_1604463;species_29358;species_350078;species_113582;species_212357;species_1604465;species_193545;species_381325;species_1911412;species_1604444	NICD1 is phosphorylated by CDK8	15546612	ECO:0000305			M3		auto-imported from R-HSA-1980143.owl
+M3_reaction_1912388	TODO	species_157939;species_350052;species_1911465;species_1604460	NICD1 displaces co-repressor complex from RBPJ (CSL)	9694793;10713164;18374649;14980219;7588063	ECO:0000305			M3		auto-imported from R-HSA-1980143.owl
+M3_reaction_1980067	TODO	species_2127254;species_188379	NOTCH1 stimulates MYC transcription	17114293	ECO:0000305			M3		auto-imported from R-HSA-1980143.owl
+M3_reaction_157632	TODO	species_1911537;species_157200;species_1911540	Complex of NOTCH1 with its ligand is cleaved to produce NEXT1	19726682;10882063;12354787;9244301;17401372	ECO:0000305			M3		auto-imported from R-HSA-1980143.owl
+M3_reaction_157353	TODO	species_157200;species_157656;species_157634	NEXT1 is cleaved to produce NICD1	12209127;10206645;9620803;10879540;19151708	ECO:0000305			M3		auto-imported from R-HSA-1980143.owl
+M3_reaction_1980065	TODO	species_4396360;species_1911450	NOTCH1 stimulates HEY transcription	15107403;11044625;10964718;20972443	ECO:0000305			M3		auto-imported from R-HSA-1980143.owl
+M3_reaction_1980039	TODO	species_157089;species_1911555;species_1911557	NOTCH1 binds DLL1	18296446;9819428;15574878	ECO:0000305			M3		auto-imported from R-HSA-1980143.owl
+M3_reaction_1980128	TODO	species_157027;species_443595;species_975995;species_1604458	NOTCH1 associates with negative regulators NUMB and ITCH	19567869;8313469	ECO:0000305			M3		auto-imported from R-HSA-1980143.owl
+M3_reaction_1912359	TODO	species_212370;species_210825;species_1911448	HES1 binds TLE	8687460;8649374;8001118	ECO:0000305			M3		auto-imported from R-HSA-1980143.owl
+M3_reaction_1912394	TODO	species_350078;species_212357;species_193545;species_381325;species_1604460;species_1604462	NICD1 in complex with RBPJ (CSL) recruits MAML	12050117;12391150;16530044	ECO:0000305			M3		auto-imported from R-HSA-1980143.owl
+M3_reaction_1980123	TODO	species_1852570;species_1911410;species_1911487	DTX recruits beta-arrestin (ARRB) to NOTCH	16284625;22162134	ECO:0000305			M3		auto-imported from R-HSA-1980143.owl
+M3_reaction_1912396	TODO	species_157939;species_1234135;species_1911469	NICD1 binds HIF1A	16256737	ECO:0000305			M3		auto-imported from R-HSA-1980143.owl
+M3_reaction_4396371	TODO	species_1604462;species_2127254;species_4396374	NOTCH1 Coactivator Complex binds MYC promoter	17114293	ECO:0000305			M3		auto-imported from R-HSA-1980143.owl
+M3_reaction_9667657	TODO	species_157939;species_9667634;species_9667653	NBEA binds NICD1	26999814;19799767;28620760;21505516;22608692;23153818	ECO:0000305			M3		auto-imported from R-HSA-1980143.owl
+M3_reaction_1980125	TODO	species_1604454;species_975995;species_1604453	ITCH binds DTX	17028573	ECO:0000305			M3		auto-imported from R-HSA-1980143.owl
+M3_reaction_1980112	TODO	species_1911551;species_1911468	Cleavage of DNER:NOTCH1 complex releases NICD1	15965470	ECO:0000305			M3		auto-imported from R-HSA-1980143.owl
+M3_reaction_1980130	TODO	species_157027;species_1604447;species_1911561	NOTCH1 binds DLK1	15652348;18237417;18700817	ECO:0000305			M3		auto-imported from R-HSA-1980143.owl
+M3_reaction_4396382	TODO	species_4396360;species_1604462;species_4396384	NOTCH1 Coactivator Complex binds promoters of HEY genes	10964718;20972443	ECO:0000305			M3		auto-imported from R-HSA-1980143.owl
+M3_reaction_1980041	TODO	species_158437;species_1911555;species_1911559	NOTCH1 binds DLL4	19524514;18824585;18824583	ECO:0000305			M3		auto-imported from R-HSA-1980143.owl
+M3_reaction_1980078	TODO	species_2197557;species_1606739	NOTCH1 stimulates HES5 transcription	20972443	ECO:0000305			M3		auto-imported from R-HSA-1980143.owl
+M3_reaction_1980044	TODO	species_157027;species_157120;species_157140	NOTCH1 binds JAG2	9315665;11006133	ECO:0000305			M3		auto-imported from R-HSA-1980143.owl
+M3_reaction_1912393	TODO	species_1604465;species_1604462;species_1604463	MAML in complex with NICD1 recruits CDK8	15546612	ECO:0000305			M3		auto-imported from R-HSA-1980143.owl
+M4_reaction_1112604	TODO	species_1112524;species_1112571;species_1112594	Phosphorylated STATs are released	8140422	ECO:0000305			M4		auto-imported from R-HSA-1059683.owl
+M4_reaction_1112587	TODO	species_1112537;species_1112574	STAT1 and STAT3 dimers translocate to the nucleus	7701321;16868551	ECO:0000305			M4		auto-imported from R-HSA-1059683.owl
+M4_reaction_1067676	TODO	species_1067687;species_1067653;species_1067674	IL6:IL6R-2 binds IL6ST-2	11121117	ECO:0000305			M4		auto-imported from R-HSA-1059683.owl
+M4_reaction_1067659	TODO	species_1112523;species_1112588	Assembly of hexameric IL-6 receptor	12829785;15895091;10494829;20554759;16741736	ECO:0000305			M4		auto-imported from R-HSA-1059683.owl
+M4_reaction_1067640	TODO	species_1067661;species_447100;species_1067687	IL6 binds IL6R-2	2788034;16707558	ECO:0000305			M4		auto-imported from R-HSA-1059683.owl
+M4_reaction_1112565	TODO	species_1112559;species_1112594;species_1112576	Tyrosine phosphorylated IL6ST binds STAT1,STAT3	8662591;8662795	ECO:0000305			M4		auto-imported from R-HSA-1059683.owl
+M4_reaction_1112708	TODO	species_162563;species_1112594;species_1112758	PTPN11 binds p-Y759-IL6ST	7871433;9285712;19050043;9794795;14611646;10409724;8934572;17993263;9632795;12403768	ECO:0000305			M4		auto-imported from R-HSA-1059683.owl
+M4_reaction_1112727	TODO	species_113592;species_1112524;species_1112759;species_29370	Serine phosphorylation of STATs	10851062;14673173;9153303;9343414;10446219;11429693;19797267	ECO:0000305			M4		auto-imported from R-HSA-1059683.owl
+M4_reaction_9681294	TODO	species_9715042;species_197824;species_9681293	IL6R binds IL6R inhibitors	12483717;32306778;33314148;31992476;32234467;32243501;32350134;33081825;32797372;33579777;32253759;33550688;33167776	ECO:0000305			M4		auto-imported from R-HSA-1059683.owl
+M4_reaction_1112602	TODO	species_1112576;species_113592;species_29370;species_1112524	Tyrosine phosphorylation of STAT1, STAT3 by IL6 receptor	8662795;7510216;8140422;7512451;8626374	ECO:0000305			M4		auto-imported from R-HSA-1059683.owl
+M4_reaction_1067646	TODO	species_448453;species_1067656;species_1067690	JAK1,JAK2,(TYK2) bind IL6ST	8272873;11468294;12773095;8134389;7537214;10861237;11557047;9590172	ECO:0000305			M4		auto-imported from R-HSA-1059683.owl
+M4_reaction_1112538	TODO	species_1112571;species_1112537	Phosphorylated STAT1, STAT3 form dimers	8140422;9630226;16868551	ECO:0000305			M4		auto-imported from R-HSA-1059683.owl
+M4_reaction_1112690	TODO	species_1112758;species_112199;species_1112744	PTPN11 binds CBL	18519587	ECO:0000305			M4		auto-imported from R-HSA-1059683.owl
+M4_reaction_1067651	TODO	species_1067687;species_1067690;species_1067691	IL6:IL6R-2 binds IL6ST:JAK1, JAK2, (TYK2)	2788034;2261637;16707558	ECO:0000305			M4		auto-imported from R-HSA-1059683.owl
+M4_reaction_1112703	TODO	species_1112758;species_113592;species_29370;species_1112753	PTPN11 is phosphorylated	9794795;10409724;11684012;9285712	ECO:0000305			M4		auto-imported from R-HSA-1059683.owl
+M4_reaction_1112514	TODO	species_1112588;species_113592;species_29370;species_1112515	JAK activation	8272873;9382798;8134389;7531704;11742534;11287676;18178840;8986719	ECO:0000305			M4		auto-imported from R-HSA-1059683.owl
+M4_reaction_1067688	TODO	species_1067690;species_1067638;species_1067654	IL6:IL6R binds IL6ST:JAK1,JAK2,(TYK2)	2788034	ECO:0000305			M4		auto-imported from R-HSA-1059683.owl
+M4_reaction_1067667	TODO	species_197824;species_447100;species_1067638	IL6 binds IL6R	2788034	ECO:0000305			M4		auto-imported from R-HSA-1059683.owl
+M4_reaction_1112510	TODO	species_113592;species_1112515;species_29370;species_1112594	IL6ST is tyrosine phosphorylated	7812050;16868551;7871433;8662591	ECO:0000305			M4		auto-imported from R-HSA-1059683.owl
+M4_reaction_1112755	TODO	species_873794;species_1112594;species_1112718	SOCS3 binds IL6ST	10777583;10064597;11527983;9419338;9789053;12754505;12403768;9889194	ECO:0000305			M4		auto-imported from R-HSA-1059683.owl
