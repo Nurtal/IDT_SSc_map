@@ -1,33 +1,33 @@
 {
   "integrated_xml": "curation/celldesigner/SSc_MIM_integrated.xml",
-  "total_species": 518,
+  "total_species": 526,
   "max_path_threshold": 6,
-  "n_dangling": 124,
+  "n_dangling": 94,
   "n_far_from_sink": 0,
   "sinks_detected_per_anchor": {
     "M1_ISG_signature": 10,
-    "M2_ECM_myofibroblast": 7,
-    "M3_vascular_remodelling": 12,
-    "M4_Th2_autoAb_output": 10
+    "M2_ECM_myofibroblast": 9,
+    "M3_vascular_remodelling": 13,
+    "M4_Th2_autoAb_output": 11
   },
   "distance_distribution_per_module": {
     "M1": {
-      "n": 89,
+      "n": 90,
       "median": 2.0,
       "max": 6,
-      "dangling": 11
+      "dangling": 12
     },
     "ssc_tier1": {
       "n": 88,
       "median": 2,
       "max": 6,
-      "dangling": 37
+      "dangling": 7
     },
     "M3": {
-      "n": 85,
-      "median": 2.0,
+      "n": 90,
+      "median": 1.0,
       "max": 6,
-      "dangling": 5
+      "dangling": 6
     },
     "M1,M2,M4": {
       "n": 3,
@@ -42,10 +42,10 @@
       "dangling": 54
     },
     "M4": {
-      "n": 71,
+      "n": 73,
       "median": 3.0,
       "max": 6,
-      "dangling": 17
+      "dangling": 15
     },
     "M2,M4": {
       "n": 1,
@@ -69,29 +69,29 @@
   "dangling_sample": [
     "ABCE1_RNASEL_dimer__mito",
     "ABCE1__mito",
-    "ANGPT1__ext",
-    "ANGPT2__ext",
-    "ARNT__cyto",
     "Active_PDGF_dimers_CC_DD__ext",
+    "BAFF_BCMA__pm",
     "BAFF_BCMA_complex__pm",
     "BCMA__ext",
-    "BLIMP1__nuc",
-    "CD154__pm",
-    "CD19__pm",
-    "CD22__pm",
-    "CD31__pm",
-    "CD40__pm",
     "CLCF1__ext",
     "CNTFR_CRLF1_CLCF1__cyto",
     "CNTFR__cyto",
     "CNTF_CNTFR__cyto",
     "CNTF__ext",
-    "COL1A2__ext",
-    "COL5A1__ext",
-    "COL5A2__ext",
     "COX-2__er",
     "CRLF1_CLCF1__cyto",
-    "CRLF1__cyto"
+    "CRLF1__cyto",
+    "Cleaved_PDGF_B_peptides__golgi",
+    "Cleaved_novel_PDGF_fragments__ext",
+    "DLL1_NOTCH1__cyto",
+    "DLL1__cyto",
+    "DLL4_NOTCH1__cyto",
+    "DLL4__cyto",
+    "Extracellular_matrix_ligands__ext",
+    "FURIN__golgi",
+    "Fibrillin_1__ext",
+    "IFNAR2_iso2__cyto",
+    "IFNAR2c_UBP43__cyto"
   ],
   "far_from_sink_sample": []
 }

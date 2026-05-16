@@ -1,0 +1,7 @@
+{
+  "input": "curation/celldesigner/SSc_MIM_integrated.xml",
+  "output": "analysis/boolean/ssc_mim.sbml-qual",
+  "qualitative_species": 83,
+  "transitions": 54,
+  "note": "Load in GINsim / BioLQM / MaBoSS / bonesis for perturbation simulation."
+}

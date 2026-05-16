@@ -98,12 +98,29 @@ abstract:  ## Draft the ACR abstract scaffold from analysis outputs.
 wire:  ## Apply SSc-specific Tier-1 curation to the integrated map.
 	$(PYTHON) scripts/wire_ssc_tier1.py
 
+druggable:  ## Cross-reference top hubs with DGIdb (drug-target prioritisation).
+	$(PYTHON) scripts/druggable_hubs.py
+
+tabib-probe:  ## Check what's available on GEO for Tabib 2021 (GSE138669).
+	$(PYTHON) scripts/fetch_tabib.py --probe
+
+tabib-fetch:  ## Download the Tabib GSE138669 raw counts (594 MB).
+	$(PYTHON) scripts/fetch_tabib.py --untar
+
+overlay:  ## Build scRNAseq overlay (real if data present, synthetic-grounded otherwise).
+	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/build_overlay.py; \
+	else $(PYTHON) scripts/build_overlay.py; fi
+
+boolean:  ## CaSQ Boolean inference -> SBML-qual for GINsim/BioLQM/MaBoSS.
+	@if [ -x .venv/bin/python ]; then PATH=".venv/bin:$$PATH" $(PYTHON) scripts/boolean_inference.py; \
+	else $(PYTHON) scripts/boolean_inference.py; fi
+
 release:  ## Pre-flight a v1.x release (checks + CHANGELOG; doesn't tag).
 	$(PYTHON) scripts/release_prep.py
 
 lint: specs-check bib-check  ## Run all repo-content linters (no SBML files needed).
 
-auto:  lint validate harmonise seed integrate pmids crosstalk ssc-stubs wire network sink-check preflight figures abstract  ## Run the entire AUTO lane end-to-end.
+auto:  lint validate harmonise seed integrate pmids crosstalk ssc-stubs wire network sink-check druggable overlay boolean preflight figures abstract  ## Run the entire AUTO lane end-to-end.
 	@echo ">> Full AUTO pipeline complete."
 
 all: lint validate  ## Lint + validate SBML (compatibility alias).

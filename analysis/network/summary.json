@@ -1,30 +1,31 @@
 {
   "integrated_xml": "curation/celldesigner/SSc_MIM_integrated.xml",
   "bipartite_graph": {
-    "n_species": 518,
-    "n_reactions": 242,
-    "n_edges": 831
+    "n_species": 526,
+    "n_reactions": 260,
+    "n_edges": 899
   },
   "species_projection": {
-    "n_nodes": 518,
-    "n_edges": 660,
-    "n_weakly_connected_components": 51,
-    "avg_in_degree": 1.274131274131274,
-    "avg_out_degree": 1.274131274131274
+    "n_nodes": 526,
+    "n_edges": 713,
+    "n_weakly_connected_components": 22,
+    "avg_in_degree": 1.355513307984791,
+    "avg_out_degree": 1.355513307984791
   },
   "communities": {
-    "count": 65,
+    "count": 38,
     "sizes": [
-      63,
-      42,
-      34,
+      66,
+      52,
+      37,
       34,
       30,
       30,
       28,
-      27,
-      25,
-      24,
+      26,
+      23,
+      22,
+      22,
       21,
       15,
       13,
@@ -34,7 +35,8 @@
       7,
       7,
       6,
-      6,
+      5,
+      5,
       5,
       5,
       5,
@@ -49,224 +51,169 @@
       3,
       3,
       3,
-      2,
-      2,
-      2,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1
+      3,
+      2
     ]
   },
   "community_module_contingency": {
     "comm0__M1": 25,
     "comm0__M1,M2": 2,
     "comm0__M1,M2,M4": 3,
-    "comm0__M2": 18,
+    "comm0__M2": 21,
     "comm0__M4": 15,
     "comm1__M2": 12,
     "comm1__M3": 2,
     "comm1__M4": 2,
     "comm1__crosstalk": 2,
-    "comm1__ssc_tier1": 24,
-    "comm2__M2": 34,
-    "comm3__M3": 34,
+    "comm1__ssc_tier1": 34,
+    "comm2__M3": 35,
+    "comm2__ssc_tier1": 2,
+    "comm3__M2": 34,
     "comm4__M4": 30,
     "comm5__M1": 30,
     "comm6__M3": 28,
-    "comm7__M1": 10,
-    "comm7__M4": 1,
-    "comm7__ssc_tier1": 16,
-    "comm8__M2": 25,
-    "comm9__M3": 16,
-    "comm9__ssc_tier1": 8,
-    "comm10__M2": 19,
-    "comm10__M2,M4": 1,
-    "comm10__M4": 1,
-    "comm11__M2": 15,
-    "comm12__M2": 13,
-    "comm13__M2": 8,
-    "comm14__M4": 5,
-    "comm14__ssc_tier1": 3,
-    "comm15__M1": 7,
-    "comm16__M2": 7,
-    "comm17__M4": 7,
-    "comm18__M1": 6,
-    "comm19__M4": 1,
-    "comm19__ssc_tier1": 5,
+    "comm7__M3": 17,
+    "comm7__ssc_tier1": 9,
+    "comm8__M4": 5,
+    "comm8__ssc_tier1": 18,
+    "comm9__M2": 22,
+    "comm10__M1": 10,
+    "comm10__ssc_tier1": 12,
+    "comm11__M2": 19,
+    "comm11__M2,M4": 1,
+    "comm11__M4": 1,
+    "comm12__M2": 15,
+    "comm13__M2": 13,
+    "comm14__M2": 8,
+    "comm15__M4": 5,
+    "comm15__ssc_tier1": 3,
+    "comm16__M1": 7,
+    "comm17__M2": 7,
+    "comm18__M4": 7,
+    "comm19__M1": 6,
     "comm20__M1": 5,
     "comm21__M2": 5,
     "comm22__M3": 5,
-    "comm23__M2": 4,
-    "comm24__M1": 3,
-    "comm25__M1": 3,
-    "comm26__M2": 3,
-    "comm27__M2": 3,
+    "comm23__M3": 2,
+    "comm23__ssc_tier1": 3,
+    "comm24__M4": 2,
+    "comm24__ssc_tier1": 3,
+    "comm25__M2": 4,
+    "comm26__M1": 3,
+    "comm27__M1": 3,
     "comm28__M2": 3,
     "comm29__M2": 3,
     "comm30__M2": 3,
-    "comm31__M4": 3,
-    "comm32__M4": 3,
-    "comm33__M4": 1,
-    "comm33__ssc_tier1": 2,
-    "comm34__M2": 2,
-    "comm35__M4": 1,
-    "comm35__ssc_tier1": 1,
-    "comm36__M4": 1,
-    "comm36__ssc_tier1": 1,
-    "comm37__ssc_tier1": 1,
-    "comm38__ssc_tier1": 1,
-    "comm39__ssc_tier1": 1,
-    "comm40__ssc_tier1": 1,
-    "comm41__ssc_tier1": 1,
-    "comm42__ssc_tier1": 1,
-    "comm43__ssc_tier1": 1,
-    "comm44__ssc_tier1": 1,
-    "comm45__ssc_tier1": 1,
-    "comm46__ssc_tier1": 1,
-    "comm47__ssc_tier1": 1,
-    "comm48__ssc_tier1": 1,
-    "comm49__ssc_tier1": 1,
-    "comm50__ssc_tier1": 1,
-    "comm51__ssc_tier1": 1,
-    "comm52__ssc_tier1": 1,
-    "comm53__ssc_tier1": 1,
-    "comm54__ssc_tier1": 1,
-    "comm55__ssc_tier1": 1,
-    "comm56__ssc_tier1": 1,
-    "comm57__ssc_tier1": 1,
-    "comm58__ssc_tier1": 1,
-    "comm59__ssc_tier1": 1,
-    "comm60__ssc_tier1": 1,
-    "comm61__ssc_tier1": 1,
-    "comm62__ssc_tier1": 1,
-    "comm63__ssc_tier1": 1,
-    "comm64__ssc_tier1": 1
+    "comm31__M2": 3,
+    "comm32__M2": 3,
+    "comm33__M4": 3,
+    "comm34__M4": 3,
+    "comm35__M1": 1,
+    "comm35__ssc_tier1": 2,
+    "comm36__M3": 1,
+    "comm36__ssc_tier1": 2,
+    "comm37__M2": 2
   },
   "top_hubs": [
     {
       "species": "SMAD3p_SMAD4__nuc",
       "module": "M2",
-      "hub_score": 11.1019
-    },
-    {
-      "species": "NICD1__cyto",
-      "module": "M3",
-      "hub_score": 9.3053
-    },
-    {
-      "species": "ISGF3_bound_to_ISRE_promotor_elements__nuc",
-      "module": "M1",
-      "hub_score": 9.2811
-    },
-    {
-      "species": "ISG_signature__nuc",
-      "module": "M1",
-      "hub_score": 9.2324
+      "hub_score": 13.4192
     },
     {
       "species": "fibroblast_proFibrotic__cell",
       "module": "M2",
-      "hub_score": 9.0482
+      "hub_score": 9.9723
+    },
+    {
+      "species": "NICD1__cyto",
+      "module": "M3",
+      "hub_score": 9.4582
     },
     {
       "species": "TGFB1__ext",
       "module": "M2",
-      "hub_score": 8.9575
+      "hub_score": 9.0897
+    },
+    {
+      "species": "ISGF3_bound_to_ISRE_promotor_elements__nuc",
+      "module": "M1",
+      "hub_score": 8.9461
+    },
+    {
+      "species": "ISG_signature__nuc",
+      "module": "M1",
+      "hub_score": 8.9055
     },
     {
       "species": "TGFB1_TGFBR2_TGFBR1__cyto",
       "module": "M2",
-      "hub_score": 8.2046
-    },
-    {
-      "species": "SNAI2__nuc",
-      "module": "ssc_tier1",
-      "hub_score": 6.6994
+      "hub_score": 8.0918
     },
     {
       "species": "TGFB1_TGFBR2_p_TGFBR1__cyto",
       "module": "M2",
-      "hub_score": 6.6704
+      "hub_score": 6.3355
     },
     {
       "species": "NICD1__nuc",
       "module": "M3",
-      "hub_score": 6.2234
+      "hub_score": 5.9531
+    },
+    {
+      "species": "BCR_activated__cell",
+      "module": "M4",
+      "hub_score": 5.6897
+    },
+    {
+      "species": "SNAI2__nuc",
+      "module": "ssc_tier1",
+      "hub_score": 5.6727
     },
     {
       "species": "NOTCH1_Coactivator_Complex__nuc",
       "module": "M3",
-      "hub_score": 5.5379
-    },
-    {
-      "species": "PDGF_Phospho_PDGF_receptor_dimer__cyto",
-      "module": "M2",
-      "hub_score": 4.4859
-    },
-    {
-      "species": "COL1A1__ext",
-      "module": "ssc_tier1",
-      "hub_score": 4.455
-    },
-    {
-      "species": "IL6__ext",
-      "module": "M4",
-      "hub_score": 3.7395
-    },
-    {
-      "species": "IFNA_B_IFNAR2_JAK1_STAT2_IFNAR1_TYK2__cyto",
-      "module": "M1",
-      "hub_score": 3.6764
-    },
-    {
-      "species": "SMAD3_p__cyto",
-      "module": "M2",
-      "hub_score": 3.5835
+      "hub_score": 5.1758
     },
     {
       "species": "CDH5_repressed__pm",
       "module": "M3",
-      "hub_score": 3.4848
+      "hub_score": 4.8728
+    },
+    {
+      "species": "COL1A1__ext",
+      "module": "ssc_tier1",
+      "hub_score": 4.6292
+    },
+    {
+      "species": "PDGF_Phospho_PDGF_receptor_dimer__cyto",
+      "module": "M2",
+      "hub_score": 4.1967
+    },
+    {
+      "species": "IL6__ext",
+      "module": "M4",
+      "hub_score": 3.4467
+    },
+    {
+      "species": "IFNA_B_IFNAR2_JAK1_STAT2_IFNAR1_TYK2__cyto",
+      "module": "M1",
+      "hub_score": 3.4344
+    },
+    {
+      "species": "SMAD3_p__cyto",
+      "module": "M2",
+      "hub_score": 3.353
+    },
+    {
+      "species": "YAP1_TAZ_active__nuc",
+      "module": "M2",
+      "hub_score": 3.2274
     },
     {
       "species": "NOTCH1_Coactivator_Complex_CDK8_CCNC__nuc",
       "module": "M3",
-      "hub_score": 3.1991
-    },
-    {
-      "species": "IL6ST_JAK1_JAK2_TYK2__cyto",
-      "module": "M4",
-      "hub_score": 3.1882
-    },
-    {
-      "species": "NICD1_RBPJ_SNW1__nuc",
-      "module": "M3",
-      "hub_score": 3.1024
+      "hub_score": 3.0028
     }
   ]
 }

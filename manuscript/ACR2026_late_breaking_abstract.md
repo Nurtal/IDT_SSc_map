@@ -45,12 +45,12 @@ per-patient module-activation scoring and drug-target prioritisation
 
 ## Results
 
-The integrated map contains **518 species** across **20
-compartments**, with **242 reactions** annotated against **386
+The integrated map contains **526 species** across **20
+compartments**, with **260 reactions** annotated against **386
 unique PMIDs**. 14 species are shared across modules.
 Network analysis identified hub species enriched for canonical signalling
-complexes (SMAD3p_SMAD4 (M2), NICD1 (M3), ISGF3_bound_to_ISRE_promotor_ele… (M1)); greedy modularity detected
-**65 sub-modular communities**, recapitulating the four
+complexes (SMAD3p_SMAD4 (M2), fibroblast_proFibrotic (M2), NICD1 (M3), ISGF3_bound_to_ISRE_promotor_ele… (M1)); greedy modularity detected
+**38 sub-modular communities**, recapitulating the four
 hand-defined axes plus finer structure within each.
 
 Sink-node connectivity confirmed every connected species reaches a

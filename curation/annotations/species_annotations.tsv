@@ -517,3 +517,11 @@ BAFF_BCMA_complex__pm					plasma_membrane	M4	9606	wired by wire_ssc_tier1.py
 phenotype_autoAb_production__ext					extracellular	M4	9606	wired by wire_ssc_tier1.py
 STAT3__cyto	STAT3				cytosol	crosstalk	9606	wired by wire_ssc_tier1.py
 STAT6__cyto	STAT6				cytosol	crosstalk	9606	wired by wire_ssc_tier1.py
+ANGPT1_TEK_complex__pm					plasma_membrane	M3	9606	wired by wire_ssc_tier1.py
+ANGPT2_TEK_complex__pm					plasma_membrane	M3	9606	wired by wire_ssc_tier1.py
+TBXA2R_signal__pm					plasma_membrane	M3	9606	wired by wire_ssc_tier1.py
+HIF1A_ARNT__nuc					nucleus	M3	9606	wired by wire_ssc_tier1.py
+BAFF_BCMA__pm					plasma_membrane	M4	9606	wired by wire_ssc_tier1.py
+Th_lineage_committed__cell					cell	M4	9606	wired by wire_ssc_tier1.py
+JAK1_inhibited__cyto					cytosol	M1	9606	wired by wire_ssc_tier1.py
+NOTCH3_JAG1_complex__pm					plasma_membrane	M3	9606	wired by wire_ssc_tier1.py

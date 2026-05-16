@@ -66,3 +66,21 @@ ssc_crosstalk_005	crosstalk	transcription	IL-13/STAT6 → ECM transcription in f
 ssc_crosstalk_006	crosstalk	state_change	TGF-β1 from M2 drives EndMT in M3 endothelial cells (M2→M3)	TGFB1__ext;SMAD3p_SMAD4__nuc	SNAI1__nuc;CDH5_repressed__pm		17656708	ECO:0000270	canonical EndMT initiator	-
 ssc_crosstalk_007	crosstalk	state_change	EndMT-derived perivascular fibroblasts join myofibroblast pool (M3→M2)	CDH2__pm;FAP__pm	phenotype_myofibroblast_activation__cell			ECO:0000305	conceptual bridge; explains perivascular fibrosis distribution	-
 ssc_crosstalk_008	crosstalk	activation	TGF-β1 → CTGF autocrine amplifier loop within M2	TGFB1__ext	CTGF__ext;fibroblast_proFibrotic__cell		16007098	ECO:0000314	autocrine fibroblast amplifier	-
+ssc_M2_023	M2	transcription	SMAD3:SMAD4 induces COL1A2, COL5A1, COL5A2, TNC transcription (extended ECM battery)	SMAD3p_SMAD4__nuc	COL1A2__ext;COL5A1__ext;COL5A2__ext;TNC__ecm	SMAD3p_SMAD4__nuc		ECO:0000305	completes the ECM transcription panel	co-author upgrade
+ssc_M2_024	M2	transcription	YAP1 / TAZ co-activates mechanosensitive ECM genes including COL5A1 + TNC	YAP1_TAZ_active__nuc	COL5A1__ext;TNC__ecm;COL1A1__ext	YAP1_TAZ_active__nuc		ECO:0000305	mechanotransduction-driven ECM contribution	-
+ssc_M2_025	M2	state_change	TAZ enters the YAP1/TAZ active nuclear complex	TAZ__cyto;YAP1__cyto	YAP1_TAZ_active__nuc			ECO:0000305	YAP/TAZ shuttling under mechanical signal	-
+ssc_M3_015	M3	binding	ANGPT1 binds TEK on endothelial cells, stabilises quiescent vasculature	ANGPT1__ext;TEK__pm	ANGPT1_TEK_complex__pm			ECO:0000305	vascular stabilisation; reduced in SSc skin	-
+ssc_M3_016	M3	binding	ANGPT2 competes with ANGPT1 at TEK, destabilises endothelium	ANGPT2__ext;TEK__pm	ANGPT2_TEK_complex__pm			ECO:0000305	Tie2 antagonism; elevated in SSc plasma	-
+ssc_M3_017	M3	transcription	SNAI1/2 + TGF-β induces TWIST1 transcription (third EMT-master TF)	SMAD3p_SMAD4__nuc;SNAI1__nuc	TWIST1__nuc	SMAD3p_SMAD4__nuc;SNAI1__nuc		ECO:0000305	completes the EndMT TF triplet	-
+ssc_M3_018	M3	transcription	SNAI1/2 represses CDH5 + PECAM1 + VWF + TEK transcription (loss of endothelial identity)	CDH5__pm;CD31__pm;VWF__pm;TEK__pm	CDH5_repressed__pm	SNAI1__nuc;SNAI2__nuc		ECO:0000305	canonical EndMT loss-of-identity panel	-
+ssc_M3_019	M3	catalysis	COX-2 (PTGS2) produces thromboxane TXA2, signals via TBXA2R for vasoconstriction	COX-2__er	TBXA2R_signal__pm	TBXA2R__pm		ECO:0000305	COX-2/TXA2 axis; SSc digital ischaemia	-
+ssc_M3_020	M3	transcription	HIF1A under hypoxia partners with ARNT in nucleus	HIF1A_active__nuc;ARNT__cyto	HIF1A_ARNT__nuc			ECO:0000305	HIF1A complex assembly	-
+ssc_M3_021	M3	transcription	SMAD3 + Notch (NICD1) cooperatively induces ZEB2	SMAD3p_SMAD4__nuc;NICD1__cyto	ZEB2__nuc	SMAD3p_SMAD4__nuc;NICD1__cyto		ECO:0000305	parallel EndMT TF to SNAI/ZEB1	-
+ssc_M4_012	M4	binding	BAFF (TNFSF13B) + APRIL (TNFSF13) bind BCMA on plasma cells	TNFSF13B__ext;TNFSF13__ext;BCMA__ext	BAFF_BCMA__pm			ECO:0000305	survival signal; belimumab target	-
+ssc_M4_013	M4	transcription	GATA3, TBX21, FOXP3, RORC drive Th2 / Th1 / Treg / Th17 lineage commitment respectively	GATA3__nuc;TBX21__nuc;FOXP3__nuc;RORC__nuc	Th_lineage_committed__cell			ECO:0000305	T-helper lineage anchors	-
+ssc_M4_014	M4	activation	Activated B cell BCR + CD40-CD40L → CD22 modulation and IRF4 induction	BCR_activated__cell;CD22__pm;CD40__pm;CD154__pm	IRF4__nuc;XBP1__nuc;BLIMP1__nuc;CD19__pm;MS4A1__pm			ECO:0000305	full B-cell activation surface	-
+ssc_M4_015	M4	contributes	Th1 IFN-γ + Th2 IL-4/IL-13 + Th17 IL-17 + Treg balance shapes the autoAb output	Th_lineage_committed__cell	phenotype_autoAb_production__ext			ECO:0000305	Th balance drives chronicity in SSc	-
+ssc_M1_013	M1	binding	IRF7 cytosolic phospho-form translocates to nucleus	IRF7__cyto	IRF7_p__nuc			ECO:0000305	IRF7 activation closes the loop	-
+ssc_M1_014	M1	degradation	SOCS1 + PTPN2 inhibit JAK1 to dampen IFN signalling	SOCS1__cyto;PTPN2__cyto	JAK1_inhibited__cyto			ECO:0000305	IFN negative feedback	-
+ssc_M3_022	M3	binding	NOTCH3 receptor on smooth-muscle/pericyte engaged by ligands (cross-Notch with M3 vasculopathy)	NOTCH3__pm;JAG1__cyto	NOTCH3_JAG1_complex__pm	RBPJ__pm		ECO:0000305	NOTCH3 mutations cause CADASIL; pericyte axis in SSc	-
+ssc_M1_015	M1	activation	TLR8 endosomal ssRNA sensing → MyD88 → IRF7	TLR8__endo	IRF7_p__nuc			ECO:0000305	TLR8 covers ssRNA sensing branch	-

@@ -46,13 +46,16 @@ XHTML_NS = "http://www.w3.org/1999/xhtml"
 
 SINK_PATTERNS: dict[str, list[str]] = {
     "M1_ISG_signature": ["ISG_signature__", "IFI44", "ISG15__", "IFIT1__", "IFIT3__",
-                          "OAS_family__", "MX_family__", "RSAD2__", "IFI27__", "IFI6__"],
+                          "OAS_family__", "MX_family__", "RSAD2__", "IFI27__", "IFI6__",
+                          "phenotype_ISG_signature"],
     "M2_ECM_myofibroblast": ["ACTA2__", "COL1A1__", "COL3A1__", "FN1__", "POSTN__",
-                              "COMP__", "CTGF__", "CCN2__"],
+                              "COMP__", "CTGF__", "CCN2__",
+                              "phenotype_myofibroblast_activation", "phenotype_ECM_deposition"],
     "M3_vascular_remodelling": ["HIF1A__nuc", "NOTCH1_Coactivator_Complex_",
-                                  "NICD1__"],
+                                  "NICD1__", "phenotype_vascular_remodelling"],
     "M4_Th2_autoAb_output": ["STAT3__", "STAT6__",
-                              "p_Y705_STAT3", "p_Y701_STAT1", "STAT1_STAT3__"],
+                              "p_Y705_STAT3", "p_Y701_STAT1", "STAT1_STAT3__",
+                              "phenotype_autoAb_production"],
 }
 
 
