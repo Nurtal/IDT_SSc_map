@@ -222,6 +222,97 @@ def render_f2_placeholder(out_svg: Path, out_png: Path) -> None:
     print(f"  [ok] {out_png}")
 
 
+def render_f1_global(integrated: Path, out_svg: Path, out_png: Path) -> None:
+    """Full-map view: every species + reaction, coloured by module, sinks highlighted."""
+    tree = ET.parse(integrated)
+    root = tree.getroot()
+    ns = {"s": SBML_NS}
+
+    # Build the bipartite graph compressed to species ~ species (one
+    # edge for each pair that shares a reaction).
+    g: nx.Graph = nx.Graph()
+    species_modules: dict[str, str] = {}
+    xhtml = "http://www.w3.org/1999/xhtml"
+    for sp in root.iter(f"{{{SBML_NS}}}species"):
+        sid = sp.get("id") or ""
+        mod = "?"
+        for p in sp.iter(f"{{{xhtml}}}p"):
+            if (p.text or "").startswith("module="):
+                mod = primary_module(p.text.split("=", 1)[1])
+                break
+        species_modules[sid] = mod
+        g.add_node(sid, module=mod)
+
+    for rxn in root.iter(f"{{{SBML_NS}}}reaction"):
+        parts: set[str] = set()
+        for lt in ("listOfReactants", "listOfProducts", "listOfModifiers"):
+            ll = rxn.find(f"{{{SBML_NS}}}{lt}")
+            if ll is None:
+                continue
+            for sr in ll:
+                sid = sr.get("species") or ""
+                if sid:
+                    parts.add(sid)
+        plist = list(parts)
+        for i in range(len(plist)):
+            for j in range(i + 1, len(plist)):
+                g.add_edge(plist[i], plist[j])
+
+    # Drop dangling singletons for clarity
+    iso = [n for n in g.nodes() if g.degree(n) == 0]
+    g.remove_nodes_from(iso)
+
+    pos = nx.spring_layout(g, seed=42, k=0.30, iterations=120)
+
+    fig, ax = plt.subplots(figsize=(13, 10), dpi=100)
+    ax.set_title(
+        "F1 — SSc-MIM (global view)\n"
+        f"  {g.number_of_nodes()} species · {g.number_of_edges()} edges · coloured by module · sinks highlighted",
+        loc="left",
+        fontsize=11,
+    )
+    nx.draw_networkx_edges(g, pos, ax=ax, alpha=0.18, width=0.4)
+
+    # Plot nodes by module so the legend is clean
+    is_sink = lambda n: n.startswith("phenotype_")
+    for mod in ["M1", "M2", "M3", "M4", "?", "ssc_tier1", "M1,M2", "M1,M2,M4", "M2,M4", "crosstalk"]:
+        nodes = [n for n in g.nodes() if g.nodes[n].get("module") == mod and not is_sink(n)]
+        if not nodes:
+            continue
+        xs = [pos[n][0] for n in nodes]
+        ys = [pos[n][1] for n in nodes]
+        c = MODULE_COLOURS.get(primary_module(mod), "#999")
+        ax.scatter(xs, ys, c=c, s=14, alpha=0.65, edgecolor="white", linewidth=0.3, zorder=2)
+
+    # Sinks — larger diamonds, on top
+    sinks = [n for n in g.nodes() if is_sink(n)]
+    sx = [pos[n][0] for n in sinks]
+    sy = [pos[n][1] for n in sinks]
+    ax.scatter(sx, sy, marker="D", s=180, c="#222", edgecolor="white", linewidth=0.8, zorder=4, label="sink phenotype")
+    for n in sinks:
+        x, y = pos[n]
+        label = n.replace("phenotype_", "").replace("__cell", "").replace("__ext", "").replace("__ecm", "").replace("_", " ")
+        ax.annotate(label, (x, y), textcoords="offset points", xytext=(0, 12),
+                    ha="center", fontsize=8, weight="bold", color="#000",
+                    bbox=dict(boxstyle="round,pad=0.2", fc="white", ec="black", alpha=0.85, lw=0.5))
+
+    legend = [
+        Patch(color=MODULE_COLOURS["M1"], label="M1 IFN-I"),
+        Patch(color=MODULE_COLOURS["M2"], label="M2 TGF-β / fibrosis"),
+        Patch(color=MODULE_COLOURS["M3"], label="M3 EndoMT / vasculopathy"),
+        Patch(color=MODULE_COLOURS["M4"], label="M4 IL-6 / Th2 / B-cell"),
+        Patch(color="#222", label="sink phenotype"),
+    ]
+    ax.legend(handles=legend, loc="lower left", fontsize=8, frameon=True)
+    ax.set_axis_off()
+    plt.tight_layout()
+    fig.savefig(out_svg, format="svg")
+    fig.savefig(out_png, format="png", dpi=300)
+    plt.close(fig)
+    print(f"  [ok] {out_svg}")
+    print(f"  [ok] {out_png}")
+
+
 def main(argv: list[str]) -> int:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--hubs", type=Path, default=Path("analysis/network/hubs.tsv"))
@@ -234,6 +325,12 @@ def main(argv: list[str]) -> int:
     args = ap.parse_args(argv[1:])
 
     args.out_dir.mkdir(parents=True, exist_ok=True)
+    print(f"rendering F1 (global MIM) …")
+    render_f1_global(
+        args.integrated,
+        args.out_dir / "F1_global_MIM.svg",
+        args.out_dir / "F1_global_MIM.png",
+    )
     print(f"rendering F3 (hub subnetwork) …")
     render_f3(
         args.hubs,
