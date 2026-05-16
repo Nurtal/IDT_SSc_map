@@ -27,14 +27,14 @@
 
 ## R3 — Late expert validation
 
-- **Likelihood:** medium.
-- **Impact:** at gate G2 (21 Aug) — abstract framed as "preliminary, validation in progress".
-- **Trigger:** rheumatologist availability not locked, or review sessions slip past 14 Aug.
+- **Likelihood:** ~~medium~~ → **low** (2026-05-16, after pivot).
+- **Impact:** at gate G2 (31 Jul, revised) — abstract framed as "preliminary, validation in progress".
+- **Status:** **co-author locked** (médecine interne, ARD-published SSc collaboration). Risk reduces to a scheduling-bandwidth question (R11).
 - **Mitigation:**
-  - Lock the rheumatologist at project start (Phase 1 / week 1) with a signed co-authorship commitment.
-  - Book three 1-hour sessions on the calendar in week 1 itself.
+  - Co-authorship is locked at project start.
+  - Book the kickoff + two review sessions on the co-author's calendar as soon as the brief is sent.
   - Send the review package 7 days before each session.
-- **Owner:** lead curator + rheumatologist.
+- **Owner:** lead curator + co-author.
 
 ## R4 — Lack of "wow factor" for an ACR clinician reviewer
 
@@ -78,12 +78,28 @@
   - Avoid scripts that rely on undocumented metadata field names.
 - **Owner:** bioinformatician.
 
-## R8 — Tooling drift on MINERVA
+## ~~R8 — Tooling drift on MINERVA~~  *(closed 2026-05-16 — MINERVA off the critical path)*
+
+- **Status:** closed for v1.0. MINERVA deployment is now a post-publication stretch goal (see ROADMAP § Phase 6); the v1.0 anchor is the Zenodo DOI, not a MINERVA URL.
+- **Re-open trigger:** if MINERVA deployment is pursued post-publication, re-instate this risk and mirror to Zenodo regardless.
+
+## R10 — Zenodo DOI propagation delay  *(new 2026-05-16)*
 
 - **Likelihood:** low.
-- **Impact:** the public URL referenced in the abstract breaks.
-- **Trigger:** MINERVA Luxembourg instance upgrade or local deployment migration.
+- **Impact:** abstract submitted without a final DOI in the references.
+- **Trigger:** GitHub→Zenodo webhook fires on `git tag`; DOI normally minted within 1–2 minutes, but worst case is several hours to a day.
 - **Mitigation:**
-  - Use a versioned project URL.
-  - Mirror the integrated XML on Zenodo with a citable DOI before submission.
+  - Tag the `v1.0` release at least **1 week before** the ACR deadline — target **24 Aug 2026** for a 22 Sep submission.
+  - Pre-confirm the GitHub→Zenodo integration on the repo before the first tag.
 - **Owner:** lead curator.
+
+## R11 — Co-author bandwidth in July–August  *(new 2026-05-16 — binding constraint)*
+
+- **Likelihood:** medium.
+- **Impact:** SSc Tier-1 wiring + first review round slip past 31 Jul → delayed v1.0 tag → tighter ACR window.
+- **Trigger:** vacation / hospital schedule of the co-author over the European summer.
+- **Mitigation:**
+  - Book the kickoff + 2 review sessions on the calendar **now**, before the summer schedule fills up.
+  - Send the 1-page brief (auto-generatable from STATUS.md) ≥ 1 week before the kickoff.
+  - Frame the review as a 1-h walk-through of pre-curated material, not a co-curation session — the SSc Tier-1 stubs (`curation/celldesigner/ssc_additions_template/`) and pre-filled `reaction_evidence.tsv` mean the co-author validates rather than authors.
+- **Owner:** lead curator + co-author.

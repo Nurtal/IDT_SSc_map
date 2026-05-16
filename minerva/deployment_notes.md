@@ -1,16 +1,18 @@
 # MINERVA deployment notes
 
-> [[ROADMAP]] § Phase 3, week 14.
-> Target instance: MINERVA at the University of Luxembourg (LCSB).
-> Status: **not yet deployed**.
+> **Status (2026-05-16, after pivot): post-publication / stretch goal.**
+> The v1.0 delivery target is now **GitHub + Zenodo DOI** (see ROADMAP.md). MINERVA hosting is no longer on the critical path; it is documented here as a Phase 6 opportunity once v1.0 lands.
+>
+> Target instance (if pursued): MINERVA at the University of Luxembourg (LCSB).
+> Local Docker-based MINERVA is a viable alternative — the platform is open source.
 
-## Pre-flight (one-time)
+## Pre-flight (one-time) — **POST-v1.0**
 
-1. Request curator access on the Luxembourg MINERVA instance (`https://minerva.uni.lu/`).
-2. Confirm the integrated XML (`curation/celldesigner/SSc_MIM_integrated.xml`) passes the local `validate_sbml` script and the CI workflow.
-3. Verify that all species in the integrated map have HGNC + UniProt annotations, and that PMIDs are correctly listed in `reaction_evidence.tsv` (post-Phase-2 QA).
+1. Request curator access on the Luxembourg MINERVA instance (`https://minerva.uni.lu/`) **or** spin up a local Docker MINERVA instance (`docker pull lcsb/minerva-platform`).
+2. Confirm the integrated XML (`curation/celldesigner/SSc_MIM_integrated.xml`) passes `make preflight` (already enforced as a v1.0 gate).
+3. Reference the Zenodo DOI in the deployed project description for permanence.
 
-## Deployment steps (target: week 14)
+## Deployment steps (target: post-publication, optional)
 
 ```text
 [ ] 1. Login to MINERVA admin panel.

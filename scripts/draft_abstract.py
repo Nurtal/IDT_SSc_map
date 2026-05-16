@@ -92,9 +92,10 @@ PDGFR / FGFR / VEGFR).
 The first SBGN-compliant Molecular Interaction Map for systemic sclerosis
 provides a mechanistic, interoperable scaffold for disease-mechanism
 exploration, patient stratification by transcriptomic subset, and
-hypothesis-driven drug repurposing. The resource is publicly hosted on
-MINERVA with semantic zoom and overlay capability and is open to
-community contribution under CC-BY 4.0 / MIT.
+hypothesis-driven drug repurposing. The resource is **publicly archived
+on Zenodo (DOI [TO BE FILLED on release])** and developed openly on
+GitHub under a dual CC-BY 4.0 (map content) / MIT (code) licence,
+opening community contribution and reuse.
 
 ---
 
@@ -115,7 +116,7 @@ community contribution under CC-BY 4.0 / MIT.
 
 | ID | File | Status |
 |----|------|--------|
-| F1 | `figures/F1_global_MIM.svg`           | needs MINERVA screenshot (human) |
+| F1 | `figures/F1_global_MIM.svg`           | render directly from the integrated SBML (no MINERVA needed) |
 | F2 | `figures/F2_overlay_by_subtype.svg`   | placeholder rendered; real data lands Phase 4 |
 | F3 | `figures/F3_druggable_targets.svg`    | preview rendered from network analysis |
 """

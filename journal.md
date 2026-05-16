@@ -566,6 +566,74 @@ Commit plan:
 6. `feat(manuscript): auto-drafted ACR abstract scaffold from analyses`
 7. `chore: make auto = full AUTO lane`
 
+### 18:30 — Pivot — co-author locked, MINERVA → post-pub, Zenodo → primary
+
+User clarification this evening: existing co-author from médecine interne, prior ARD-SSc publication. → **Two original blockers resolved in one move:**
+
+1. "Rheumatologist co-author lock" — done (clinician with SSc experience + literature credibility + ACR creds; specialty title is internal medicine, which is the *more* common SSc specialty in France).
+2. "MINERVA Luxembourg curator role" — no longer on the critical path.
+
+User direction: **deliver v1.0 on GitHub + Zenodo first**, MINERVA is a stretch goal post-publication.
+
+### 18:45 — Why the pivot makes sense
+
+- The map content (SBML + annotations + figures + scripts) IS the scientific deliverable. Hosting is one rendering of it.
+- GitHub + a Zenodo DOI gives a stable, citable URL with no curator-role gatekeeping.
+- ACR reviewers care about the resource + the translational story, not the hosting platform. "Available on GitHub (link), archived on Zenodo (DOI)" reads cleanly in an abstract.
+- MINERVA stays a strong "v2.0 follow-up" line for the methodological paper — better-positioned with a DOI'd v1.0 already cited.
+- Risk R8 (MINERVA tooling drift) closes for v1.0; R10 (Zenodo DOI propagation, 1–2 min after tag, worst case 1 day) replaces it.
+
+### 19:00 — STATUS.md update
+
+Reflect the pivot:
+- ✅ co-author marked as locked.
+- Handover queue collapses from 7 items to 4: kickoff scheduling, CellDesigner GUI work, CITATION.cff + .zenodo.json placeholder fill, GitHub→Zenodo webhook toggle, 3 seed BibTeX TODOs, `git tag v1.0` push. (MINERVA, WikiPathways EndMT, ACR portal account moved to post-publication.)
+
+### 19:15 — ROADMAP rewrite
+
+Substantive rewrite of `ROADMAP.md`:
+
+- New "Pivot" section documenting the before/after of the 2026-05-16 decision.
+- New **v1.0 release definition** section listing exactly what ships in the release bundle and the acceptance criteria.
+- **Milestone calendar revised:** original M8 (MINERVA deployment) demoted to M12 (optional, post-Nov 2026); new M8 = "v1.0 release on GitHub + Zenodo DOI" with target date 31 Aug.
+- **New Phase 6** (post-publication / stretch) section captures MINERVA, WikiPathways EndMT, BioModels deposit, peripheral module extensions.
+- **Go/no-go gates** revised: G1 stays auto-skipped, G1.5 already passed (co-author locked), new G3 = `make preflight` + clean tree before tagging.
+- **Risk register** updated: R3 medium → low; R8 closed; R10 (Zenodo propagation) and R11 (co-author bandwidth July–Aug) added.
+
+### 19:30 — Zenodo deposit bundle
+
+Two new files:
+
+- **`.zenodo.json`** — Zenodo reads this on every tagged GitHub release (when the GitHub↔Zenodo integration is enabled). Metadata: title, description (with real volumetrics), keywords, CC-BY-4.0 licence, `diseasemaps` community membership, related identifiers pointing to the five source Reactome pathways, two creator slots with REPLACE_ME placeholders for the user + co-author.
+- **`scripts/release_prep.py`** — pre-release sanity check. Verifies (a) branch = main, (b) working tree clean, (c) `CITATION.cff` and `.zenodo.json` have no REPLACE_ME / 0000-… placeholders, (d) `make preflight` passes, (e) writes / overwrites `CHANGELOG.md` from `git log`. Non-destructive by default; `--tag VERSION --push` actually creates and pushes the tag.
+
+Smoke-tested: correctly flags the current dirty tree + 11 REPLACE_ME placeholders (5 in CITATION.cff, 6 in .zenodo.json). Once the user fills those, `make release` is one command.
+
+### 19:45 — Supporting updates
+
+- `minerva/deployment_notes.md` — re-labelled as post-publication stretch; preserves the deployment plan in case the user pursues it later. Adds the Docker self-host alternative.
+- `scripts/draft_abstract.py` — conclusion section rewritten: "publicly archived on Zenodo (DOI) and developed on GitHub" instead of "publicly hosted on MINERVA". F1 marker also updated (no MINERVA screenshot dependency).
+- `manuscript/ACR2026_late_breaking_abstract.md` regenerated with the new conclusion.
+- `docs/risks.md` — R3 downgraded, R8 closed, R10 and R11 added.
+
+### 20:00 — `make release` is the new one-shot
+
+```bash
+$ make release
+# branch + tree + placeholders + preflight check
+# writes CHANGELOG.md
+# prints the `git tag` command to run when ready
+```
+
+When the user runs `make release --tag v1.0 --push` (after filling placeholders + the co-author's CellDesigner round), the Zenodo webhook mints a DOI within 1–2 minutes.
+
+### 20:15 — Commit plan
+
+1. `docs: pivot — STATUS + ROADMAP rewrite around GitHub+Zenodo v1.0 delivery`
+2. `feat(release): .zenodo.json + scripts/release_prep.py + make release`
+3. `docs: deprioritise MINERVA notes; downgrade R3 + R8; add R10 + R11`
+4. `chore(abstract): conclusion rewritten for Zenodo/GitHub; regenerate manuscript`
+
 ### 15:00 — Notebook stubs for the omics overlay
 
 Six JSON-skeleton notebooks under `analysis/overlay/tabib_scRNAseq/`:
