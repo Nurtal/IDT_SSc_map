@@ -1,0 +1,71 @@
+cluster	hgnc	species_id	module	log2fc
+B_lymphocyte	BLIMP1	BLIMP1__nuc	ssc_tier1	1.026
+B_lymphocyte	CD19	CD19__pm	ssc_tier1	1.255
+B_lymphocyte	IRF4	IRF4__nuc	ssc_tier1	1.109
+B_lymphocyte	IRF7	IRF7__cyto	ssc_tier1	0.695
+B_lymphocyte	ISG15	ISG15__cyto	M1	0.625
+B_lymphocyte	MS4A1	MS4A1__pm	ssc_tier1	1.092
+T_lymphocyte	GATA3	GATA3__nuc	ssc_tier1	0.837
+T_lymphocyte	IFI44			1.062
+T_lymphocyte	IFIT1	IFIT1__cyto	M1	0.743
+T_lymphocyte	IFIT3	IFIT3__cyto	M1	0.721
+T_lymphocyte	IRF7	IRF7__cyto	ssc_tier1	0.987
+T_lymphocyte	ISG15	ISG15__cyto	M1	1.020
+T_lymphocyte	MX1			0.783
+T_lymphocyte	OAS1			1.025
+T_lymphocyte	STAT1	STAT1__cyto	M1	1.060
+T_lymphocyte	TBX21	TBX21__nuc	ssc_tier1	1.484
+endothelial_lymphatic	ANGPT2	ANGPT2__ext	ssc_tier1	0.827
+endothelial_lymphatic	CDH5	CDH5__pm	ssc_tier1	-0.677
+endothelial_lymphatic	HIF1A	HIF1A__nuc	M3	0.878
+endothelial_lymphatic	PECAM1			-0.536
+endothelial_lymphatic	VEGFA	VEGFA__ext	ssc_tier1	0.649
+endothelial_vascular	ANGPT2	ANGPT2__ext	ssc_tier1	0.521
+endothelial_vascular	CDH2	CDH2__pm	ssc_tier1	0.622
+endothelial_vascular	CDH5	CDH5__pm	ssc_tier1	-0.525
+endothelial_vascular	EDN1	EDN1__ext	ssc_tier1	0.840
+endothelial_vascular	FAP	FAP__pm	ssc_tier1	0.748
+endothelial_vascular	FSP1	FSP1__pm	ssc_tier1	0.671
+endothelial_vascular	HIF1A	HIF1A__nuc	M3	1.042
+endothelial_vascular	PECAM1			-0.567
+endothelial_vascular	SNAI1	SNAI1__nuc	ssc_tier1	0.962
+endothelial_vascular	SNAI2	SNAI2__nuc	ssc_tier1	1.096
+endothelial_vascular	TEK	TEK__pm	ssc_tier1	-0.531
+endothelial_vascular	TWIST1	TWIST1__nuc	ssc_tier1	0.400
+endothelial_vascular	VEGFA	VEGFA__ext	ssc_tier1	0.994
+endothelial_vascular	VWF	VWF__pm	ssc_tier1	-0.944
+fibroblast_SFRP2_progenitor	COL1A1	COL1A1__ext	ssc_tier1	0.868
+fibroblast_SFRP2_progenitor	COL3A1	COL3A1__ext	ssc_tier1	0.526
+fibroblast_SFRP2_progenitor	DPP4			0.857
+fibroblast_SFRP2_progenitor	FN1	FN1__ecm	ssc_tier1	0.983
+fibroblast_SFRP2_progenitor	FOSL2	FOSL2__nuc	ssc_tier1	0.929
+fibroblast_SFRP2_progenitor	POSTN	POSTN__ecm	ssc_tier1	0.833
+fibroblast_SFRP2_progenitor	PRSS23			0.872
+fibroblast_SFRP2_progenitor	SFRP2			0.864
+fibroblast_SFRP2_progenitor	TBX2	TBX2__nuc	ssc_tier1	0.846
+fibroblast_SFRP2_progenitor	THBS1	THBS1__ecm	ssc_tier1	1.075
+fibroblast_other	COL1A1	COL1A1__ext	ssc_tier1	0.822
+fibroblast_other	FN1	FN1__ecm	ssc_tier1	1.023
+fibroblast_other	POSTN	POSTN__ecm	ssc_tier1	1.118
+macrophage_dermal	CXCL4	CXCL4__ext	M1	1.257
+macrophage_dermal	IFI27	IFI27__mito	M1	0.908
+macrophage_dermal	IFI44			0.767
+macrophage_dermal	IFIT2	IFIT2__cyto	M1	1.081
+macrophage_dermal	IL6	IL6__ext	M4	0.821
+macrophage_dermal	IRF7	IRF7__cyto	ssc_tier1	0.876
+macrophage_dermal	ISG15	ISG15__cyto	M1	0.544
+macrophage_dermal	MX1			1.138
+macrophage_dermal	OAS1			0.539
+macrophage_dermal	OAS2			0.963
+myofibroblast_FAP_CTHRC1	ACTA2	ACTA2__cyto	ssc_tier1	0.958
+myofibroblast_FAP_CTHRC1	COL1A1	COL1A1__ext	ssc_tier1	0.715
+myofibroblast_FAP_CTHRC1	COL3A1	COL3A1__ext	ssc_tier1	0.646
+myofibroblast_FAP_CTHRC1	COL5A1	COL5A1__ext	ssc_tier1	0.962
+myofibroblast_FAP_CTHRC1	COMP	COMP__ecm	ssc_tier1	0.928
+myofibroblast_FAP_CTHRC1	CTGF	CTGF__ext	M2	1.064
+myofibroblast_FAP_CTHRC1	FAP	FAP__pm	ssc_tier1	1.191
+myofibroblast_FAP_CTHRC1	FN1	FN1__ecm	ssc_tier1	0.537
+myofibroblast_FAP_CTHRC1	LOX	LOX__ecm	ssc_tier1	1.228
+myofibroblast_FAP_CTHRC1	LOXL2	LOXL2__ecm	ssc_tier1	0.910
+myofibroblast_FAP_CTHRC1	POSTN	POSTN__ecm	ssc_tier1	1.033
+myofibroblast_FAP_CTHRC1	TNC	TNC__ecm	ssc_tier1	0.873

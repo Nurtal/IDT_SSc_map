@@ -1,0 +1,7 @@
+species_id	log2fc	color
+BLIMP1__nuc	1.026	#d7191c
+CD19__pm	1.255	#d7191c
+IRF4__nuc	1.109	#d7191c
+IRF7__cyto	0.695	#d7191c
+ISG15__cyto	0.625	#d7191c
+MS4A1__pm	1.092	#d7191c

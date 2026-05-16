@@ -1,0 +1,5 @@
+species_id	log2fc	color
+ANGPT2__ext	0.827	#d7191c
+CDH5__pm	-0.677	#2c7fb8
+HIF1A__nuc	0.878	#d7191c
+VEGFA__ext	0.649	#d7191c
