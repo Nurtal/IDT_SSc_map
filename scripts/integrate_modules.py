@@ -58,6 +58,18 @@ def infer_module(path: Path) -> str:
     return m.group(1) if m else "?"
 
 
+def _insert_notes_before_annotation(sp: ET.Element) -> ET.Element:
+    """Create and insert a <notes> element before any existing <annotation>."""
+    notes = ET.Element(q("notes"))
+    annotation = sp.find(q("annotation"))
+    if annotation is not None:
+        idx = list(sp).index(annotation)
+        sp.insert(idx, notes)
+    else:
+        sp.append(notes)
+    return notes
+
+
 def annotate_species_with_module(sp: ET.Element, module: str) -> None:
     """Append (or merge into) a `module=<list>` line in the species' notes.
 
@@ -68,7 +80,7 @@ def annotate_species_with_module(sp: ET.Element, module: str) -> None:
     """
     notes = sp.find(q("notes"))
     if notes is None:
-        notes = ET.SubElement(sp, q("notes"))
+        notes = _insert_notes_before_annotation(sp)
     html_ns = "http://www.w3.org/1999/xhtml"
     p_tag = f"{{{html_ns}}}p"
 
@@ -90,6 +102,8 @@ def annotate_species_with_module(sp: ET.Element, module: str) -> None:
         break
     if body is None:
         html = ET.SubElement(notes, f"{{{html_ns}}}html")
+        head = ET.SubElement(html, f"{{{html_ns}}}head")
+        ET.SubElement(head, f"{{{html_ns}}}title")
         body = ET.SubElement(html, f"{{{html_ns}}}body")
     new_p = ET.SubElement(body, p_tag)
     new_p.text = f"module={module}"
@@ -209,6 +223,18 @@ def main(argv: list[str]) -> int:
                 base_lor.append(rx)
                 seen_reactions.add(rid)
                 per_module_added[module]["reactions_added"] += 1
+
+    # SBML L2V4 requires <notes> before <annotation> in every element.
+    # Reactome exports have the reversed order; fix it before writing.
+    for el in base_root.iter():
+        notes_el = el.find(q("notes"))
+        annotation_el = el.find(q("annotation"))
+        if notes_el is None or annotation_el is None:
+            continue
+        children = list(el)
+        if children.index(notes_el) > children.index(annotation_el):
+            el.remove(notes_el)
+            el.insert(list(el).index(annotation_el), notes_el)
 
     args.out.parent.mkdir(parents=True, exist_ok=True)
     base_tree.write(args.out, encoding="UTF-8", xml_declaration=True)

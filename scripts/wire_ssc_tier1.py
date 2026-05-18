@@ -136,6 +136,8 @@ def add_species(root: ET.Element, sid: str, name: str, compartment: str, modules
     sp.set("initialAmount", "0")
     nb = ET.SubElement(sp, q("notes"))
     html = ET.SubElement(nb, f"{{{XHTML_NS}}}html")
+    head = ET.SubElement(html, f"{{{XHTML_NS}}}head")
+    ET.SubElement(head, f"{{{XHTML_NS}}}title")
     body = ET.SubElement(html, f"{{{XHTML_NS}}}body")
     p_mod = ET.SubElement(body, f"{{{XHTML_NS}}}p")
     p_mod.text = "module=" + ",".join(sorted(set(modules)))
@@ -173,6 +175,8 @@ def add_reaction(
     # notes block — preserves the curation rationale on the SBML model
     nb = ET.SubElement(rxn, q("notes"))
     html = ET.SubElement(nb, f"{{{XHTML_NS}}}html")
+    head = ET.SubElement(html, f"{{{XHTML_NS}}}head")
+    ET.SubElement(head, f"{{{XHTML_NS}}}title")
     body = ET.SubElement(html, f"{{{XHTML_NS}}}body")
     for k, v in [("module", module), ("mechanism", mechanism), ("pmid", pmid),
                  ("evidence_code", eco), ("ssc_relevance", ssc_relevance),

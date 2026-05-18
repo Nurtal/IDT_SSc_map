@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sbml xmlns="http://www.sbml.org/sbml/level2/version4" level="2" version="4">
+<sbml xmlns="http://www.sbml.org/sbml/level2/version4" xmlns:html="http://www.w3.org/1999/xhtml" level="2" version="4">
   <model id="M2_ssc_additions" name="SSc-specific Tier-1 additions for M2">
     <listOfCompartments>
       <compartment id="ECM" name="ECM"/>
@@ -9,70 +9,70 @@
     </listOfCompartments>
     <listOfSpecies>
       <species id="LAP__ecm" name="LAP" compartment="ECM">
-      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M2</p><p>role=latent form</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      <notes><html:html><html:head><html:title /></html:head><html:body><html:p>module=M2</html:p><html:p>role=latent form</html:p><html:p>tier=1</html:p><html:p>source=manual_SSc_specific</html:p></html:body></html:html></notes>
       </species>
       <species id="LTBP1__ecm" name="LTBP1" compartment="ECM">
-      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M2</p><p>role=sequestrator</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      <notes><html:html><html:head><html:title /></html:head><html:body><html:p>module=M2</html:p><html:p>role=sequestrator</html:p><html:p>tier=1</html:p><html:p>source=manual_SSc_specific</html:p></html:body></html:html></notes>
       </species>
       <species id="THBS1__ecm" name="THBS1" compartment="ECM">
-      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M2</p><p>role=TGF-β activator</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      <notes><html:html><html:head><html:title /></html:head><html:body><html:p>module=M2</html:p><html:p>role=TGF-β activator</html:p><html:p>tier=1</html:p><html:p>source=manual_SSc_specific</html:p></html:body></html:html></notes>
       </species>
       <species id="RHOA__cyto" name="RHOA" compartment="cytosol">
-      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M2</p><p>role=small GTPase / kinase</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      <notes><html:html><html:head><html:title /></html:head><html:body><html:p>module=M2</html:p><html:p>role=small GTPase / kinase</html:p><html:p>tier=1</html:p><html:p>source=manual_SSc_specific</html:p></html:body></html:html></notes>
       </species>
       <species id="ROCK1__cyto" name="ROCK1" compartment="cytosol">
-      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M2</p><p>role=small GTPase / kinase</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      <notes><html:html><html:head><html:title /></html:head><html:body><html:p>module=M2</html:p><html:p>role=small GTPase / kinase</html:p><html:p>tier=1</html:p><html:p>source=manual_SSc_specific</html:p></html:body></html:html></notes>
       </species>
       <species id="ROCK2__cyto" name="ROCK2" compartment="cytosol">
-      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M2</p><p>role=small GTPase / kinase</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      <notes><html:html><html:head><html:title /></html:head><html:body><html:p>module=M2</html:p><html:p>role=small GTPase / kinase</html:p><html:p>tier=1</html:p><html:p>source=manual_SSc_specific</html:p></html:body></html:html></notes>
       </species>
       <species id="YAP1__cyto" name="YAP1" compartment="cytosol">
-      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M2</p><p>role=mechano-TF</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      <notes><html:html><html:head><html:title /></html:head><html:body><html:p>module=M2</html:p><html:p>role=mechano-TF</html:p><html:p>tier=1</html:p><html:p>source=manual_SSc_specific</html:p></html:body></html:html></notes>
       </species>
       <species id="TAZ__cyto" name="TAZ" compartment="cytosol">
-      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M2</p><p>role=mechano-TF</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      <notes><html:html><html:head><html:title /></html:head><html:body><html:p>module=M2</html:p><html:p>role=mechano-TF</html:p><html:p>tier=1</html:p><html:p>source=manual_SSc_specific</html:p></html:body></html:html></notes>
       </species>
       <species id="ACTA2__cyto" name="ACTA2" compartment="cytosol">
-      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M2</p><p>role=myofibroblast marker</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      <notes><html:html><html:head><html:title /></html:head><html:body><html:p>module=M2</html:p><html:p>role=myofibroblast marker</html:p><html:p>tier=1</html:p><html:p>source=manual_SSc_specific</html:p></html:body></html:html></notes>
       </species>
       <species id="COL1A1__ext" name="COL1A1" compartment="extracellular">
-      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M2</p><p>role=ECM</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      <notes><html:html><html:head><html:title /></html:head><html:body><html:p>module=M2</html:p><html:p>role=ECM</html:p><html:p>tier=1</html:p><html:p>source=manual_SSc_specific</html:p></html:body></html:html></notes>
       </species>
       <species id="COL1A2__ext" name="COL1A2" compartment="extracellular">
-      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M2</p><p>role=ECM</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      <notes><html:html><html:head><html:title /></html:head><html:body><html:p>module=M2</html:p><html:p>role=ECM</html:p><html:p>tier=1</html:p><html:p>source=manual_SSc_specific</html:p></html:body></html:html></notes>
       </species>
       <species id="COL3A1__ext" name="COL3A1" compartment="extracellular">
-      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M2</p><p>role=ECM</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      <notes><html:html><html:head><html:title /></html:head><html:body><html:p>module=M2</html:p><html:p>role=ECM</html:p><html:p>tier=1</html:p><html:p>source=manual_SSc_specific</html:p></html:body></html:html></notes>
       </species>
       <species id="COL5A1__ext" name="COL5A1" compartment="extracellular">
-      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M2</p><p>role=ECM</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      <notes><html:html><html:head><html:title /></html:head><html:body><html:p>module=M2</html:p><html:p>role=ECM</html:p><html:p>tier=1</html:p><html:p>source=manual_SSc_specific</html:p></html:body></html:html></notes>
       </species>
       <species id="COL5A2__ext" name="COL5A2" compartment="extracellular">
-      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M2</p><p>role=ECM</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      <notes><html:html><html:head><html:title /></html:head><html:body><html:p>module=M2</html:p><html:p>role=ECM</html:p><html:p>tier=1</html:p><html:p>source=manual_SSc_specific</html:p></html:body></html:html></notes>
       </species>
       <species id="FN1__ecm" name="FN1" compartment="ECM">
-      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M2</p><p>role=ECM</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      <notes><html:html><html:head><html:title /></html:head><html:body><html:p>module=M2</html:p><html:p>role=ECM</html:p><html:p>tier=1</html:p><html:p>source=manual_SSc_specific</html:p></html:body></html:html></notes>
       </species>
       <species id="POSTN__ecm" name="POSTN" compartment="ECM">
-      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M2</p><p>role=matricellular</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      <notes><html:html><html:head><html:title /></html:head><html:body><html:p>module=M2</html:p><html:p>role=matricellular</html:p><html:p>tier=1</html:p><html:p>source=manual_SSc_specific</html:p></html:body></html:html></notes>
       </species>
       <species id="COMP__ecm" name="COMP" compartment="ECM">
-      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M2</p><p>role=matricellular</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      <notes><html:html><html:head><html:title /></html:head><html:body><html:p>module=M2</html:p><html:p>role=matricellular</html:p><html:p>tier=1</html:p><html:p>source=manual_SSc_specific</html:p></html:body></html:html></notes>
       </species>
       <species id="TNC__ecm" name="TNC" compartment="ECM">
-      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M2</p><p>role=matricellular</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      <notes><html:html><html:head><html:title /></html:head><html:body><html:p>module=M2</html:p><html:p>role=matricellular</html:p><html:p>tier=1</html:p><html:p>source=manual_SSc_specific</html:p></html:body></html:html></notes>
       </species>
       <species id="LOX__ecm" name="LOX" compartment="ECM">
-      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M2</p><p>role=cross-linker</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      <notes><html:html><html:head><html:title /></html:head><html:body><html:p>module=M2</html:p><html:p>role=cross-linker</html:p><html:p>tier=1</html:p><html:p>source=manual_SSc_specific</html:p></html:body></html:html></notes>
       </species>
       <species id="LOXL2__ecm" name="LOXL2" compartment="ECM">
-      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M2</p><p>role=cross-linker</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      <notes><html:html><html:head><html:title /></html:head><html:body><html:p>module=M2</html:p><html:p>role=cross-linker</html:p><html:p>tier=1</html:p><html:p>source=manual_SSc_specific</html:p></html:body></html:html></notes>
       </species>
       <species id="FOSL2__nuc" name="FOSL2" compartment="nucleus">
-      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M2</p><p>role=SSc-relevant TF</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      <notes><html:html><html:head><html:title /></html:head><html:body><html:p>module=M2</html:p><html:p>role=SSc-relevant TF</html:p><html:p>tier=1</html:p><html:p>source=manual_SSc_specific</html:p></html:body></html:html></notes>
       </species>
       <species id="TBX2__nuc" name="TBX2" compartment="nucleus">
-      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M2</p><p>role=SSc-relevant TF</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      <notes><html:html><html:head><html:title /></html:head><html:body><html:p>module=M2</html:p><html:p>role=SSc-relevant TF</html:p><html:p>tier=1</html:p><html:p>source=manual_SSc_specific</html:p></html:body></html:html></notes>
       </species>
     </listOfSpecies>
   </model>

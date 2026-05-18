@@ -158,7 +158,8 @@ def existing_hgnc_from_annotations(tsv: Path) -> set[str]:
 def build_sbml(module: str, compartments: list[str], species: list[dict[str, str]]) -> str:
     lines = [
         '<?xml version="1.0" encoding="UTF-8"?>',
-        '<sbml xmlns="http://www.sbml.org/sbml/level2/version4" level="2" version="4">',
+        '<sbml xmlns="http://www.sbml.org/sbml/level2/version4"'
+        ' xmlns:html="http://www.w3.org/1999/xhtml" level="2" version="4">',
         f'  <model id="{module}_ssc_additions" name="SSc-specific Tier-1 additions for {module}">',
         '    <listOfCompartments>',
     ]
@@ -171,9 +172,10 @@ def build_sbml(module: str, compartments: list[str], species: list[dict[str, str
         name = sp["name"]
         comp = sp["compartment"]
         notes = (
-            f'      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body>'
-            f'<p>module={module}</p><p>role={sp.get("role", "")}</p>'
-            f'<p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>'
+            f'      <notes><html:html><html:head><html:title /></html:head><html:body>'
+            f'<html:p>module={module}</html:p><html:p>role={sp.get("role", "")}</html:p>'
+            f'<html:p>tier=1</html:p><html:p>source=manual_SSc_specific</html:p>'
+            f'</html:body></html:html></notes>'
         )
         lines.append(f'      <species id="{sid}" name="{name}" compartment="{comp}">')
         lines.append(notes)

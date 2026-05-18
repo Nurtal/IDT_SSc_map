@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sbml xmlns="http://www.sbml.org/sbml/level2/version4" level="2" version="4">
+<sbml xmlns="http://www.sbml.org/sbml/level2/version4" xmlns:html="http://www.w3.org/1999/xhtml" level="2" version="4">
   <model id="M1_ssc_additions" name="SSc-specific Tier-1 additions for M1">
     <listOfCompartments>
       <compartment id="cytosol" name="cytosol"/>
@@ -7,46 +7,46 @@
     </listOfCompartments>
     <listOfSpecies>
       <species id="IRF7__cyto" name="IRF7" compartment="cytosol">
-      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M1</p><p>role=TF</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      <notes><html:html><html:head><html:title /></html:head><html:body><html:p>module=M1</html:p><html:p>role=TF</html:p><html:p>tier=1</html:p><html:p>source=manual_SSc_specific</html:p></html:body></html:html></notes>
       </species>
       <species id="MB21D1__cyto" name="MB21D1" compartment="cytosol">
-      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M1</p><p>role=sensor</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      <notes><html:html><html:head><html:title /></html:head><html:body><html:p>module=M1</html:p><html:p>role=sensor</html:p><html:p>tier=1</html:p><html:p>source=manual_SSc_specific</html:p></html:body></html:html></notes>
       </species>
       <species id="TMEM173__cyto" name="TMEM173" compartment="cytosol">
-      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M1</p><p>role=sensor</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      <notes><html:html><html:head><html:title /></html:head><html:body><html:p>module=M1</html:p><html:p>role=sensor</html:p><html:p>tier=1</html:p><html:p>source=manual_SSc_specific</html:p></html:body></html:html></notes>
       </species>
       <species id="DDX58__cyto" name="DDX58" compartment="cytosol">
-      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M1</p><p>role=sensor</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      <notes><html:html><html:head><html:title /></html:head><html:body><html:p>module=M1</html:p><html:p>role=sensor</html:p><html:p>tier=1</html:p><html:p>source=manual_SSc_specific</html:p></html:body></html:html></notes>
       </species>
       <species id="MAVS__cyto" name="MAVS" compartment="cytosol">
-      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M1</p><p>role=sensor</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      <notes><html:html><html:head><html:title /></html:head><html:body><html:p>module=M1</html:p><html:p>role=sensor</html:p><html:p>tier=1</html:p><html:p>source=manual_SSc_specific</html:p></html:body></html:html></notes>
       </species>
       <species id="TLR3__endo" name="TLR3" compartment="endosome">
-      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M1</p><p>role=sensor</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      <notes><html:html><html:head><html:title /></html:head><html:body><html:p>module=M1</html:p><html:p>role=sensor</html:p><html:p>tier=1</html:p><html:p>source=manual_SSc_specific</html:p></html:body></html:html></notes>
       </species>
       <species id="TLR7__endo" name="TLR7" compartment="endosome">
-      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M1</p><p>role=sensor</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      <notes><html:html><html:head><html:title /></html:head><html:body><html:p>module=M1</html:p><html:p>role=sensor</html:p><html:p>tier=1</html:p><html:p>source=manual_SSc_specific</html:p></html:body></html:html></notes>
       </species>
       <species id="TLR8__endo" name="TLR8" compartment="endosome">
-      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M1</p><p>role=sensor</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      <notes><html:html><html:head><html:title /></html:head><html:body><html:p>module=M1</html:p><html:p>role=sensor</html:p><html:p>tier=1</html:p><html:p>source=manual_SSc_specific</html:p></html:body></html:html></notes>
       </species>
       <species id="TLR9__endo" name="TLR9" compartment="endosome">
-      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M1</p><p>role=sensor</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      <notes><html:html><html:head><html:title /></html:head><html:body><html:p>module=M1</html:p><html:p>role=sensor</html:p><html:p>tier=1</html:p><html:p>source=manual_SSc_specific</html:p></html:body></html:html></notes>
       </species>
       <species id="TICAM1__cyto" name="TICAM1" compartment="cytosol">
-      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M1</p><p>role=adaptor</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      <notes><html:html><html:head><html:title /></html:head><html:body><html:p>module=M1</html:p><html:p>role=adaptor</html:p><html:p>tier=1</html:p><html:p>source=manual_SSc_specific</html:p></html:body></html:html></notes>
       </species>
       <species id="TBK1__cyto" name="TBK1" compartment="cytosol">
-      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M1</p><p>role=kinase</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      <notes><html:html><html:head><html:title /></html:head><html:body><html:p>module=M1</html:p><html:p>role=kinase</html:p><html:p>tier=1</html:p><html:p>source=manual_SSc_specific</html:p></html:body></html:html></notes>
       </species>
       <species id="IKBKE__cyto" name="IKBKE" compartment="cytosol">
-      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M1</p><p>role=kinase</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      <notes><html:html><html:head><html:title /></html:head><html:body><html:p>module=M1</html:p><html:p>role=kinase</html:p><html:p>tier=1</html:p><html:p>source=manual_SSc_specific</html:p></html:body></html:html></notes>
       </species>
       <species id="SOCS1__cyto" name="SOCS1" compartment="cytosol">
-      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M1</p><p>role=negative regulator</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      <notes><html:html><html:head><html:title /></html:head><html:body><html:p>module=M1</html:p><html:p>role=negative regulator</html:p><html:p>tier=1</html:p><html:p>source=manual_SSc_specific</html:p></html:body></html:html></notes>
       </species>
       <species id="PTPN2__cyto" name="PTPN2" compartment="cytosol">
-      <notes><html xmlns="http://www.w3.org/1999/xhtml"><body><p>module=M1</p><p>role=negative regulator</p><p>tier=1</p><p>source=manual_SSc_specific</p></body></html></notes>
+      <notes><html:html><html:head><html:title /></html:head><html:body><html:p>module=M1</html:p><html:p>role=negative regulator</html:p><html:p>tier=1</html:p><html:p>source=manual_SSc_specific</html:p></html:body></html:html></notes>
       </species>
     </listOfSpecies>
   </model>

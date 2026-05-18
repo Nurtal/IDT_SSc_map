@@ -445,7 +445,7 @@ FAP__pm	FAP				plasma_membrane	ssc_tier1	9606	wired by wire_ssc_tier1.py
 FSP1__pm	FSP1				plasma_membrane	ssc_tier1	9606	wired by wire_ssc_tier1.py
 ANGPT1__ext	ANGPT1				extracellular	ssc_tier1	9606	wired by wire_ssc_tier1.py
 ANGPT2__ext	ANGPT2				extracellular	ssc_tier1	9606	wired by wire_ssc_tier1.py
-COX-2__er	COX-2				ER	ssc_tier1	9606	wired by wire_ssc_tier1.py
+COX_2__er	COX-2				ER	ssc_tier1	9606	wired by wire_ssc_tier1.py
 TBXA2R__pm	TBXA2R				plasma_membrane	ssc_tier1	9606	wired by wire_ssc_tier1.py
 IL4__ext	IL4				extracellular	ssc_tier1	9606	wired by wire_ssc_tier1.py
 IL4R__ext	IL4R				extracellular	ssc_tier1	9606	wired by wire_ssc_tier1.py
