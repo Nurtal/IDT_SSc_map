@@ -962,3 +962,31 @@ Nouvelles espèces capturées par rapport au skin seul :
 
 STATUS.md mis à jour (Phase 4b COMPLETE, couverture 34.1%).
 
+### 18:00 — Correction dénominateur couverture + nettoyage alias HGNC
+
+**Question posée :** 34% de couverture, c'est faiblard ?
+
+**Analyse :** le dénominateur de 211 incluait des entrées structurellement inaccessibles au transcriptomique :
+- 7 petites molécules (ADP, ATP, GDP, GMP, GTP, H2O, NO)
+- 6 isoformes/complexes dont le gène parent est déjà dans le MIM (ISGF3, NICD1, LAP, IL6R-2, IL6ST-2, STAT1-1)
+- 15 alias non-officiels (BCMA, BLIMP1, CD154, CD31, COX-2, FSP1, PCAF, PI3K, IFNAR2-2, ZFYVE9-1, ARRB, DTX, HEY, MAML, TLE)
+
+**Corrections appliquées (`c5cb945`) :**
+- 15 alias remplacés par les symboles HGNC officiels (BCMA→TNFRSF17, FSP1→S100A4, COX-2→PTGS2, etc.)
+- 13 hgnc_symbol vidés avec note explicative (métabolites + collisions isoformes)
+
+**Résultat :** 198 symboles HGNC propres (vs 211), 196/198 (99%) détectables par RNA-seq. Gains directs : +3 hits (PECAM1, PTGS2, S100A4).
+
+**Couverture finale corrigée :**
+
+| Dénominateur | Hits | % |
+|---|---|---|
+| Toutes annotées (ancien) | 72/211 | 34.1% |
+| Détectables RNA-seq (corrigé) | **75/196** | **38.3%** |
+
+Par module : M1 IFN-I 50% · SSc-Tier1 44% · M2 TGF-β 34% · M4 IL-6/B 24% · M3 Notch/EndoMT 17%
+
+M3 volontairement bas : les cellules endothéliales en transition et les péricytes sont absents des 3 datasets — gap documenté dans le manuscrit (Discussion 4.4).
+
+Manuscrit mis à jour (`00017d5`) : abstract, Methods 2.6, Results 3.2, Discussion 4.4.
+
