@@ -13,7 +13,7 @@ IRF_family__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name:
 OAS_family__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: OAS proteins
 ISGF3_bound_to_ISRE_promotor_elements__nuc					nucleus	M1	9606	imported from pilot_R-HSA-909733; raw name: ISGF3 bound to ISRE promotor elements
 EGR1__cyto	EGR1				cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: EGR1
-ATP__cyto	ATP				cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: ATP
+ATP__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: ATP; small molecule; not RNA-seq detectable
 PTPN11__cyto	PTPN11				cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: PTPN11
 EIF2AK2__cyto	EIF2AK2				cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: EIF2AK2
 PSMB8__nuc	PSMB8				nucleus	M1	9606	imported from pilot_R-HSA-909733; raw name: PSMB8
@@ -24,10 +24,10 @@ KPNA1__nuc	KPNA1				nucleus	M1	9606	imported from pilot_R-HSA-909733; raw name: 
 PTPN6__cyto	PTPN6				cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: PTPN6
 IFITM1__cyto	IFITM1				cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: IFITM1
 PTPN1__cyto	PTPN1				cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: PTPN1
-H2O__cyto	H2O				cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: H2O
-ADP__cyto	ADP				cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: ADP
+H2O__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: H2O; small molecule; not RNA-seq detectable
+ADP__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: ADP; small molecule; not RNA-seq detectable
 Pi__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: Pi
-STAT1_iso1__cyto	STAT1-1				cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: STAT1-1
+STAT1_iso1__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: STAT1-1; STAT1 isoform alpha; same locus as STAT1__cyto; not distinguishable by RNA-seq
 STAT1__cyto	STAT1				cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: STAT1
 PTPN6_PTPN11__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: PTPN6,PTPN11
 ABCE1__mito	ABCE1				mitochondrion	M1	9606	imported from pilot_R-HSA-909733; raw name: ABCE1
@@ -38,14 +38,14 @@ BST2__ext	BST2				extracellular	M1	9606	imported from pilot_R-HSA-909733; raw na
 SAMHD1__nuc	SAMHD1				nucleus	M1	9606	imported from pilot_R-HSA-909733; raw name: SAMHD1
 RSAD2__er	RSAD2				ER	M1	9606	imported from pilot_R-HSA-909733; raw name: RSAD2
 SOCS_family__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: SOCS-1 and SOCS-3
-IFNAR2_iso2__cyto	IFNAR2-2				cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: IFNAR2-2
+IFNAR2_iso2__cyto	IFNAR2				cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: IFNAR2-2
 IRF9__cyto	IRF9				cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: IRF9
 STAT2__cyto	STAT2				cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: STAT2
 ISG_signature__nuc					nucleus	M1	9606	imported from pilot_R-HSA-909733; raw name: Type I IFN-regulated genes with ISRE promoter elements
 IFN_alpha_beta_IFNA_B__ext					extracellular	M1	9606	imported from pilot_R-HSA-909733; raw name: IFN alpha/beta (IFNA/B)
 IFNA_B_IFNAR2_p_JAK1_STAT2_p_IFNAR1_p_TYK2_STAT2__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: IFNA/B:IFNAR2:p-JAK1:STAT2:p-IFNAR1:p-TYK2:STAT2
 IFNA_B_IFNAR2_p_JAK1_STAT2_p_IFNAR1_p_TYK2_p_STAT2__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: IFNA/B:IFNAR2:p-JAK1:STAT2:p-IFNAR1:p-TYK2:p-STAT2
-ISGF3__cyto	ISGF3				cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: ISGF3
+ISGF3__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: ISGF3; protein complex (STAT1/STAT2/IRF9); components annotated separately
 p_STAT2_p_STAT1__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: p-STAT2:p-STAT1
 IFNA_B_IFNAR2_JAK1_STAT2_IFNAR1_TYK2__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: IFNA/B:IFNAR2:JAK1:STAT2:IFNAR1:TYK2
 IFNA_B_IFNAR2_p_JAK1_STAT2_p_IFNAR1_p_TYK2__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: IFNA/B:IFNAR2:p-JAK1:STAT2:p-IFNAR1:p-TYK2
@@ -57,7 +57,7 @@ p_TYK2_p_IFNAR1_SOCS_1_SOCS_3_IFNA_B_IFNAR2_p_JAK1_STAT2__cyto					cytosol	M1	96
 IFNAR2c_UBP43__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: IFNAR2c:UBP43
 p_Y701_STAT1_1_dimer__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: p-Y701-STAT1-1 dimer
 p_Y701_STAT1_dimer__nuc					nucleus	M1	9606	imported from pilot_R-HSA-909733; raw name: p-Y701-STAT1 dimer
-ISGF3__nuc	ISGF3				nucleus	M1	9606	imported from pilot_R-HSA-909733; raw name: ISGF3
+ISGF3__nuc					nucleus	M1	9606	imported from pilot_R-HSA-909733; raw name: ISGF3; protein complex (STAT1/STAT2/IRF9); components annotated separately
 IFNAR2_JAK1_STAT2__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: IFNAR2:JAK1:STAT2
 IFNA_B_IFNAR2_JAK1_STAT2__cyto					cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: IFNA/B:IFNAR2:JAK1:STAT2
 ISG15__cyto	ISG15				cytosol	M1	9606	imported from pilot_R-HSA-909733; raw name: ISG15
@@ -105,8 +105,8 @@ RASA1__cyto	RASA1				cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name:
 PDGF_Phospho_PDGF_receptor_dimer_SHP2__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: PDGF:Phospho-PDGF receptor dimer:SHP2
 BCAR1__cyto	BCAR1				cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: BCAR1
 GRB7__cyto	GRB7				cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: GRB7
-GDP__cyto	GDP				cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: GDP
-GTP__cyto	GTP				cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: GTP
+GDP__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: GDP; small molecule; not RNA-seq detectable
+GTP__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: GTP; small molecule; not RNA-seq detectable
 proPDGF_BB_dimer__golgi					Golgi	M2	9606	imported from pilot_R-HSA-186797; raw name: proPDGF-BB dimer
 proPDGF_AA_dimer__golgi					Golgi	M2	9606	imported from pilot_R-HSA-186797; raw name: proPDGF-AA dimer
 proPDGF_AB_dimer__golgi					Golgi	M2	9606	imported from pilot_R-HSA-186797; raw name: proPDGF-AB dimer
@@ -140,7 +140,7 @@ PDGF_alpha_beta_PDGF_AB_and_BB_dimers__cyto					cytosol	M2	9606	imported from pi
 PDGF_beta_receptor_PDGF_chain_B_homodimer__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: PDGF beta receptor:PDGF chain B homodimer
 PDGF_alpha_receptor_PDGF_dimers__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: PDGF alpha receptor: PDGF dimers
 PTPN12__cyto	PTPN12				cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: PTPN12
-PI3K__cyto	PI3K				cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: PI3K
+PI3K__cyto	PIK3CA				cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: PI3K
 p_PDGFRB_homo_and_heterodimers__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: p-PDGFRB homo and heterodimers
 p_PDGFRB_homo_and_heterodimers_dephosphorylated_at_Y1021__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: p-PDGFRB homo and heterodimers dephosphorylated at Y1021
 N_ter_PDGFA_2_fragment__golgi					Golgi	M2	9606	imported from pilot_R-HSA-186797; raw name: N-ter PDGFA-2 fragment
@@ -154,7 +154,7 @@ type_II_PDGFR_binding_tyrosine_kinase_inhibitors__cyto					cytosol	M2	9606	impor
 PDGFR_type_I_PDGFR_binding_TKIs__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: PDGFR:type I PDGFR-binding TKIs
 PDGFR_type_II_PDGFR_binding_TKIs__cyto					cytosol	M2	9606	imported from pilot_R-HSA-186797; raw name: PDGFR:type II PDGFR-binding TKIs
 CBL__cyto	CBL				cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: CBL
-ATP__endo	ATP				endosome	M2	9606	imported from pilot_R-HSA-2173789; raw name: ATP
+ATP__endo					endosome	M2	9606	imported from pilot_R-HSA-2173789; raw name: ATP; small molecule; not RNA-seq detectable
 XPO1__nuc	XPO1				nucleus	M2	9606	imported from pilot_R-HSA-2173789; raw name: XPO1
 XPO1__cyto	XPO1				cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: XPO1
 TGFB1_TGFBR2_TGFBR1__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: TGFB1:TGFBR2:TGFBR1
@@ -179,7 +179,7 @@ SMURF2__cyto	SMURF2				cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw na
 SMAD7__nuc	SMAD7				nucleus	M2	9606	imported from pilot_R-HSA-2173789; raw name: SMAD7
 SMURF2__nuc	SMURF2				nucleus	M2	9606	imported from pilot_R-HSA-2173789; raw name: SMURF2
 FKBP1A__cyto	FKBP1A				cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: FKBP1A
-ZFYVE9_iso1__endo	ZFYVE9-1				endosome	M2	9606	imported from pilot_R-HSA-2173789; raw name: ZFYVE9-1
+ZFYVE9_iso1__endo	ZFYVE9				endosome	M2	9606	imported from pilot_R-HSA-2173789; raw name: ZFYVE9-1
 STRAP__cyto	STRAP				cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: STRAP
 TGFB1_p_TGFBR_STRAP__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: TGFB1:p-TGFBR:STRAP
 TGFB1_p_TGFBR_STRAP_SMAD7__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: TGFB1: p-TGFBR: STRAP: SMAD7
@@ -232,8 +232,8 @@ LAP1_binding_integrins__cyto					cytosol	M2	9606	imported from pilot_R-HSA-21737
 LTBPs_Fibrillin_1__ext					extracellular	M2	9606	imported from pilot_R-HSA-2173789; raw name: LTBPs:Fibrillin-1
 LTBP1_TGFB1_LAP1_LAP1_binding_integrins__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: LTBP1:TGFB1:LAP1:LAP1-binding integrins
 LAP3_binding_integrins__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: LAP3-binding integrins
-H2O__endo	H2O				endosome	M2	9606	imported from pilot_R-HSA-2173789; raw name: H2O
-ADP__endo	ADP				endosome	M2	9606	imported from pilot_R-HSA-2173789; raw name: ADP
+H2O__endo					endosome	M2	9606	imported from pilot_R-HSA-2173789; raw name: H2O; small molecule; not RNA-seq detectable
+ADP__endo					endosome	M2	9606	imported from pilot_R-HSA-2173789; raw name: ADP; small molecule; not RNA-seq detectable
 Pi__endo					endosome	M2	9606	imported from pilot_R-HSA-2173789; raw name: Pi
 SMURF1__nuc	SMURF1				nucleus	M2	9606	imported from pilot_R-HSA-2173789; raw name: SMURF1
 SMAD2__cyto	SMAD2				cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: SMAD2
@@ -247,7 +247,7 @@ STUB1__cyto	STUB1				cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name
 SMURF1__cyto	SMURF1				cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: SMURF1
 TGFBR3_1_783_TGFB1_TGFB2__ext					extracellular	M2	9606	imported from pilot_R-HSA-2173789; raw name: TGFBR3(1-783):TGFB1,TGFB2
 TGFB1_TGFB2_TGFBR3_TGFBR2__cyto					cytosol	M2	9606	imported from pilot_R-HSA-2173789; raw name: TGFB1,TGFB2:TGFBR3:TGFBR2
-ADP__nuc	ADP				nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: ADP
+ADP__nuc					nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: ADP; small molecule; not RNA-seq detectable
 HIF1A__nuc	HIF1A				nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: HIF1A
 JAG1_NOTCH1__cyto					cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: JAG1:NOTCH1
 NOTCH1__cyto	NOTCH1				cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: NOTCH1
@@ -257,16 +257,16 @@ JAG2__cyto	JAG2				cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: 
 JAG2_NOTCH1__cyto					cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: JAG2:NOTCH1
 NEXT1__cyto	NEXT1				cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: NEXT1
 gamma_secretase_complex__cyto					cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: gamma-secretase complex
-NICD1__cyto	NICD1				cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: NICD1
+NICD1__cyto					cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: NICD1; NOTCH1 intracellular domain (proteolytic product); same locus as NOTCH1__cyto
 DLL_JAG__cyto					cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: DLL/JAG
 DLL_JAG_NOTCH1__cyto					cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: DLL/JAG:NOTCH1
 NOTCH1_1721_1753__cyto					cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: NOTCH1(1721-1753)
-NICD1__nuc	NICD1				nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: NICD1
+NICD1__nuc					nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: NICD1; NOTCH1 intracellular domain (proteolytic product); same locus as NOTCH1__cyto
 DLL4__cyto	DLL4				cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: DLL4
 pNICD1__nuc					nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: p-NICD1
 DLK1__cyto	DLK1				cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: DLK1
 DTX_ITCH__cyto					cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: DTX:ITCH
-DTX__cyto	DTX				cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: DTX
+DTX__cyto	DTX1				cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: DTX
 NOTCH1_NUMB_ITCH__cyto					cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: NOTCH1:NUMB:ITCH
 NICD1_RBPJ_SNW1__nuc					nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: NICD1:RBPJ:SNW1
 NOTCH1_Coactivator_Complex__nuc					nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: NOTCH1 Coactivator Complex
@@ -280,10 +280,10 @@ NOTCH1_DTX__cyto					cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name
 ADAM10_17_Zn2_plus__cyto					cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: ADAM10/17:Zn2_plus_
 Ub_p_NICD1__nuc					nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: Ub-p-NICD1
 MYC__nuc	MYC				nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: MYC
-ARRB__cyto	ARRB				cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: ARRB
+ARRB__cyto	ARRB1				cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: ARRB
 RBPJ_SNW1__nuc					nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: RBPJ:SNW1
 HES1_TLE__nuc					nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: HES1:TLE
-HEY__nuc	HEY				nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: HEY
+HEY__nuc	HEY1				nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: HEY
 MIB_NEURL__cyto					cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: MIB/NEURL
 NCOR_HDAC_TBL1__nuc					nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: NCOR:HDAC:TBL1
 NICD1_DTX__cyto					cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: NICD1:DTX
@@ -302,14 +302,14 @@ NOTCH1_DLK1__cyto					cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw nam
 CREBBP__nuc	CREBBP				nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: CREBBP
 NOTCH1_DLL_JAG__cyto					cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: NOTCH1:DLL/JAG
 HES1__nuc	HES1				nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: HES1
-MAML__nuc	MAML				nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: MAML
-TLE__nuc	TLE				nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: TLE
+MAML__nuc	MAML1				nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: MAML
+TLE__nuc	TLE1				nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: TLE
 MYC_gene__nuc					nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: MYC gene
 HES1_gene__nuc					nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: HES1 gene
 HES5_gene__nuc					nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: HES5 gene
-ATP__nuc	ATP				nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: ATP
+ATP__nuc					nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: ATP; small molecule; not RNA-seq detectable
 RBPJ_NCOR_corepressor_complex__nuc					nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: RBPJ:NCOR corepressor complex
-PCAF__nuc	PCAF				nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: PCAF
+PCAF__nuc	KAT2B				nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: PCAF
 CNTN1__cyto	CNTN1				cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: CNTN1
 CNTN1_NOTCH1_DTX__cyto					cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: CNTN1:NOTCH1:DTX
 EP300__nuc	EP300				nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: EP300
@@ -325,10 +325,10 @@ NBEA__nuc	NBEA				nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: N
 NICD1_NBEA__nuc					nucleus	M3	9606	imported from pilot_R-HSA-1980143; raw name: NICD1:NBEA
 ITCH__cyto	ITCH				cytosol	M3	9606	imported from pilot_R-HSA-1980143; raw name: ITCH
 IL6_IL6R__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: IL6:IL6R
-IL6ST_iso2__ext	IL6ST-2				extracellular	M4	9606	imported from pilot_R-HSA-1059683; raw name: IL6ST-2
+IL6ST_iso2__ext					extracellular	M4	9606	imported from pilot_R-HSA-1059683; raw name: IL6ST-2; gp130 isoform 2; same locus as IL6ST__cyto; not distinguishable by RNA-seq
 IL6_IL6RA_IL6RB_JAKs__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: IL6:IL6RA:IL6RB:JAKs
 JAK1_JAK2_TYK2__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: JAK1, JAK2, (TYK2)
-IL6R_iso2__ext	IL6R-2				extracellular	M4	9606	imported from pilot_R-HSA-1059683; raw name: IL6R-2
+IL6R_iso2__ext					extracellular	M4	9606	imported from pilot_R-HSA-1059683; raw name: IL6R-2; sIL-6R soluble isoform; same locus as IL6R__cyto; not distinguishable by RNA-seq
 IL6_IL6R_2_IL6ST_2__ext					extracellular	M4	9606	imported from pilot_R-HSA-1059683; raw name: IL6:IL6R-2:IL6ST-2
 IL6_IL6R_2__ext					extracellular	M4	9606	imported from pilot_R-HSA-1059683; raw name: IL6:IL6R-2
 IL6ST_JAK1_JAK2_TYK2__cyto					cytosol	M4	9606	imported from pilot_R-HSA-1059683; raw name: IL6ST:JAK1, JAK2, (TYK2)
@@ -398,7 +398,7 @@ TBK1__cyto	TBK1				cytosol	ssc_tier1	9606	wired by wire_ssc_tier1.py
 IKBKE__cyto	IKBKE				cytosol	ssc_tier1	9606	wired by wire_ssc_tier1.py
 SOCS1__cyto	SOCS1				cytosol	ssc_tier1	9606	wired by wire_ssc_tier1.py
 PTPN2__cyto	PTPN2				cytosol	ssc_tier1	9606	wired by wire_ssc_tier1.py
-LAP__ecm	LAP				ECM	ssc_tier1	9606	wired by wire_ssc_tier1.py
+LAP__ecm					ECM	ssc_tier1	9606	wired by wire_ssc_tier1.py; TGF-beta1 latency-associated peptide; same locus as TGFB1__ext
 LTBP1__ecm	LTBP1				ECM	ssc_tier1	9606	wired by wire_ssc_tier1.py
 THBS1__ecm	THBS1				ECM	ssc_tier1	9606	wired by wire_ssc_tier1.py
 RHOA__cyto	RHOA				cytosol	ssc_tier1	9606	wired by wire_ssc_tier1.py
@@ -424,13 +424,13 @@ EDN1__ext	EDN1				extracellular	ssc_tier1	9606	wired by wire_ssc_tier1.py
 EDNRA__pm	EDNRA				plasma_membrane	ssc_tier1	9606	wired by wire_ssc_tier1.py
 EDNRB__pm	EDNRB				plasma_membrane	ssc_tier1	9606	wired by wire_ssc_tier1.py
 NOS3__pm	NOS3				plasma_membrane	ssc_tier1	9606	wired by wire_ssc_tier1.py
-NO__ext	NO				extracellular	ssc_tier1	9606	wired by wire_ssc_tier1.py
+NO__ext					extracellular	ssc_tier1	9606	wired by wire_ssc_tier1.py; small molecule; not RNA-seq detectable
 PDE5A__cyto	PDE5A				cytosol	ssc_tier1	9606	wired by wire_ssc_tier1.py
 ARNT__cyto	ARNT				cytosol	ssc_tier1	9606	wired by wire_ssc_tier1.py
 VEGFA__ext	VEGFA				extracellular	ssc_tier1	9606	wired by wire_ssc_tier1.py
 KDR__ext	KDR				extracellular	ssc_tier1	9606	wired by wire_ssc_tier1.py
 CDH5__pm	CDH5				plasma_membrane	ssc_tier1	9606	wired by wire_ssc_tier1.py
-CD31__pm	CD31				plasma_membrane	ssc_tier1	9606	wired by wire_ssc_tier1.py
+CD31__pm	PECAM1				plasma_membrane	ssc_tier1	9606	wired by wire_ssc_tier1.py
 VWF__pm	VWF				plasma_membrane	ssc_tier1	9606	wired by wire_ssc_tier1.py
 TEK__pm	TEK				plasma_membrane	ssc_tier1	9606	wired by wire_ssc_tier1.py
 NOTCH3__pm	NOTCH3				plasma_membrane	ssc_tier1	9606	wired by wire_ssc_tier1.py
@@ -442,10 +442,10 @@ ZEB2__nuc	ZEB2				nucleus	ssc_tier1	9606	wired by wire_ssc_tier1.py
 TWIST1__nuc	TWIST1				nucleus	ssc_tier1	9606	wired by wire_ssc_tier1.py
 CDH2__pm	CDH2				plasma_membrane	ssc_tier1	9606	wired by wire_ssc_tier1.py
 FAP__pm	FAP				plasma_membrane	ssc_tier1	9606	wired by wire_ssc_tier1.py
-FSP1__pm	FSP1				plasma_membrane	ssc_tier1	9606	wired by wire_ssc_tier1.py
+FSP1__pm	S100A4				plasma_membrane	ssc_tier1	9606	wired by wire_ssc_tier1.py
 ANGPT1__ext	ANGPT1				extracellular	ssc_tier1	9606	wired by wire_ssc_tier1.py
 ANGPT2__ext	ANGPT2				extracellular	ssc_tier1	9606	wired by wire_ssc_tier1.py
-COX_2__er	COX-2				ER	ssc_tier1	9606	wired by wire_ssc_tier1.py
+COX_2__er	PTGS2				ER	ssc_tier1	9606	wired by wire_ssc_tier1.py
 TBXA2R__pm	TBXA2R				plasma_membrane	ssc_tier1	9606	wired by wire_ssc_tier1.py
 IL4__ext	IL4				extracellular	ssc_tier1	9606	wired by wire_ssc_tier1.py
 IL4R__ext	IL4R				extracellular	ssc_tier1	9606	wired by wire_ssc_tier1.py
@@ -465,11 +465,11 @@ SYK__cyto	SYK				cytosol	ssc_tier1	9606	wired by wire_ssc_tier1.py
 BTK__cyto	BTK				cytosol	ssc_tier1	9606	wired by wire_ssc_tier1.py
 LYN__cyto	LYN				cytosol	ssc_tier1	9606	wired by wire_ssc_tier1.py
 CD40__pm	CD40				plasma_membrane	ssc_tier1	9606	wired by wire_ssc_tier1.py
-CD154__pm	CD154				plasma_membrane	ssc_tier1	9606	wired by wire_ssc_tier1.py
-BLIMP1__nuc	BLIMP1				nucleus	ssc_tier1	9606	wired by wire_ssc_tier1.py
+CD154__pm	CD40LG				plasma_membrane	ssc_tier1	9606	wired by wire_ssc_tier1.py
+BLIMP1__nuc	PRDM1				nucleus	ssc_tier1	9606	wired by wire_ssc_tier1.py
 XBP1__nuc	XBP1				nucleus	ssc_tier1	9606	wired by wire_ssc_tier1.py
 IRF4__nuc	IRF4				nucleus	ssc_tier1	9606	wired by wire_ssc_tier1.py
-BCMA__ext	BCMA				extracellular	ssc_tier1	9606	wired by wire_ssc_tier1.py
+BCMA__ext	TNFRSF17				extracellular	ssc_tier1	9606	wired by wire_ssc_tier1.py
 TNFSF13B__ext	TNFSF13B				extracellular	ssc_tier1	9606	wired by wire_ssc_tier1.py
 TNFSF13__ext	TNFSF13				extracellular	ssc_tier1	9606	wired by wire_ssc_tier1.py
 dsDNA__cyto					cytosol	M1	9606	wired by wire_ssc_tier1.py
@@ -499,7 +499,7 @@ phenotype_ECM_deposition__ecm					ECM	M2	9606	wired by wire_ssc_tier1.py
 EDN1_EDNRA_complex__pm					plasma_membrane	M3	9606	wired by wire_ssc_tier1.py
 vasoconstriction__cell					cell	M3	9606	wired by wire_ssc_tier1.py
 cGMP__cyto					cytosol	M3	9606	wired by wire_ssc_tier1.py
-GMP__cyto	GMP				cytosol	M3	9606	wired by wire_ssc_tier1.py
+GMP__cyto					cytosol	M3	9606	wired by wire_ssc_tier1.py; small molecule; not RNA-seq detectable
 HIF1A_active__nuc					nucleus	M3	9606	wired by wire_ssc_tier1.py
 VEGFA_KDR_complex__pm					plasma_membrane	M3	9606	wired by wire_ssc_tier1.py
 CDH5_repressed__pm					plasma_membrane	M3	9606	wired by wire_ssc_tier1.py
