@@ -1,25 +1,28 @@
 #!/usr/bin/env python3
 """Multi-dataset SSc-MIM overlay pipeline.
 
-Integrates up to three open-access scRNA-seq datasets:
+Integrates up to four open-access scRNA-seq datasets:
   1. Tabib 2021 (GSE138669)  — SSc skin, 10x .h5 per sample
   2. GSE210395               — SSc PBMC pDC+monocyte enriched, long-format TSV
   3. GSE128169               — SSc-ILD lung, 10x MEX sparse per sample
+  4. Gur 2022 (GSE195452)    — SSc skin multiome (RNA only), 98 SSc / 58 HC donors,
+                               pre-annotated (Peri/Vascular/Fibro subtypes)
 
-Each dataset is processed with the same pseudobulk DEG pipeline
-(QC → normalise → PCA → Leiden → annotate → Wilcoxon SSc vs HC).
-Results are merged into:
-  analysis/overlay/cluster_deg.tsv             (all datasets, dataset column added)
-  analysis/overlay/patient_module_scores.tsv   (all donors, dataset column added)
+Each dataset is processed with the same pseudobulk DEG pipeline.
+GSE195452 uses pre-aggregated pseudobulk loading (dense gene×cell per-batch
+matrices; published cell-type labels reused directly, no re-clustering).
+
+Outputs:
+  analysis/overlay/cluster_deg_multi.tsv
+  analysis/overlay/patient_module_scores_multi.tsv
   analysis/overlay/build_overlay_multi.report.json
   figures/F2_multi_overlay.svg / .png
-
-Falls back to synthetic projection for any dataset whose raw data is absent.
 """
 from __future__ import annotations
 
 import argparse
 import csv
+import gzip
 import json
 import os
 import re
@@ -356,6 +359,191 @@ def process_gse128169(raw_dir: Path, hgnc_modules: dict) -> tuple[dict, dict, st
     return deg, donor_scores, "REAL"
 
 
+def process_gse195452(raw_dir: Path, hgnc_modules: dict) -> tuple[dict, dict, str]:
+    """Process Gur 2022 GSE195452 — SSc skin multiome, published cell-type labels.
+
+    Format: RAW.tar containing per-batch dense gene×cell .txt.gz matrices.
+    Cell metadata (well_id → cell_type, batch_id) from a separate TSV.
+    Pseudobulk is accumulated directly during tar traversal (no AnnData needed)
+    to keep peak memory bounded: only MIM genes + library-size are retained.
+    """
+    from scipy.stats import ranksums
+
+    raw_tar  = raw_dir / "GSE195452_RAW.tar"
+    meta_gz  = raw_dir / "GSE195452_Cell_metadata_v26_anno.txt.gz"
+    smap_f   = raw_dir / "sample_map.json"
+
+    if not raw_tar.exists():
+        raise FileNotFoundError(raw_tar)
+    if not meta_gz.exists():
+        raise FileNotFoundError(meta_gz)
+
+    # ── Load cell-level metadata ─────────────────────────────────────────────
+    print("  [gse195452] loading cell metadata …")
+    well_meta: dict[str, tuple[str, str]] = {}   # well_id → (batch_id, cell_type)
+    with gzip.open(str(meta_gz), "rt") as fh:
+        for parts in (line.rstrip("\n").split("\t") for line in fh):
+            if len(parts) < 10:
+                continue
+            well_id   = parts[0]
+            batch_id  = parts[3]   # Cell_barcode = AB10128
+            cell_type = parts[9]   # unnamed 10th column = annotation
+            if well_id != "Well_ID" and cell_type not in ("_", "", "0"):
+                well_meta[well_id] = (batch_id, cell_type)
+    print(f"    {len(well_meta):,} annotated cells loaded")
+
+    # ── Load sample map ──────────────────────────────────────────────────────
+    if smap_f.exists():
+        sample_map: dict = json.loads(smap_f.read_text())
+    else:
+        # Re-derive from known naming convention
+        sample_map = {}
+
+    def _batch_condition(batch_title: str) -> tuple[str, str]:
+        info = sample_map.get(batch_title, {})
+        cond = info.get("condition", "EXCLUDE")
+        pid  = info.get("patient_id", batch_title)
+        if info.get("tissue", "").lower() not in ("skin", ""):
+            cond = "EXCLUDE"
+        return cond, pid
+
+    # ── Accumulate pseudobulk per (patient_id, condition, cell_type) ─────────
+    # Keep only MIM genes + running library size to stay memory-bounded.
+    mim_gene_set = set(hgnc_modules.keys())
+    # pb_counts[(pid, cond, ct)][gene] = sum of raw counts across cells
+    pb_counts: dict[tuple, dict[str, int]] = defaultdict(lambda: defaultdict(int))
+    # pb_lib[(pid, cond, ct)] = total library size (all genes, not just MIM)
+    pb_lib:    dict[tuple, int] = defaultdict(int)
+    n_batches = n_cells_kept = 0
+
+    print("  [gse195452] streaming RAW.tar …")
+    with tarfile.open(str(raw_tar)) as tar:
+        for member in tar.getmembers():
+            if not member.name.endswith(".txt.gz"):
+                continue
+            # "GSM5836979_AB10128.txt.gz" → "AB10128"
+            batch_title = re.sub(r"^GSM\d+_", "", member.name).replace(".txt.gz", "")
+            cond, pid = _batch_condition(batch_title)
+            if cond == "EXCLUDE":
+                continue
+
+            fobj = tar.extractfile(member)
+            if fobj is None:
+                continue
+
+            with gzip.open(fobj) as gz:
+                lines = gz.read().decode(errors="replace").splitlines()
+            if len(lines) < 2:
+                continue
+
+            # Header = Well_IDs (columns)
+            well_ids = lines[0].split("\t")
+            # Map column index → (pid, cond, cell_type) for annotated cells only
+            col_info: dict[int, tuple[str, str, str]] = {}
+            for i, wid in enumerate(well_ids):
+                if wid in well_meta:
+                    b, ct = well_meta[wid]
+                    col_info[i] = (pid, cond, ct)
+            if not col_info:
+                continue
+
+            n_batches += 1
+            n_cells_kept += len(col_info)
+
+            for line in lines[1:]:
+                parts = line.split("\t")
+                gene = parts[0]
+                is_mim = gene in mim_gene_set
+                for i, (p, c, ct) in col_info.items():
+                    if i >= len(parts):
+                        continue
+                    raw = parts[i]
+                    count = int(raw) if raw.lstrip("-").isdigit() else 0
+                    if count <= 0:
+                        continue
+                    key = (p, c, ct)
+                    pb_lib[key] += count
+                    if is_mim:
+                        pb_counts[key][gene] += count
+
+    print(f"    {n_batches} skin SSc/HC batches processed, {n_cells_kept:,} annotated cells")
+    print(f"    {len(pb_counts)} (donor × cell_type) pseudobulk profiles")
+
+    if not pb_counts:
+        raise ValueError("No data accumulated for GSE195452")
+
+    # ── Build normalised pseudobulk DataFrame ────────────────────────────────
+    import pandas as pd
+
+    all_genes = sorted(mim_gene_set & set(g for d in pb_counts.values() for g in d))
+    rows = []
+    for (pid, cond, ct), gene_counts in pb_counts.items():
+        lib = pb_lib[(pid, cond, ct)]
+        if lib == 0:
+            continue
+        row = {"donor_id": pid, "condition": cond, "cell_type": ct, "lib_size": lib}
+        for g in all_genes:
+            row[g] = gene_counts.get(g, 0)
+        rows.append(row)
+    pb_df = pd.DataFrame(rows)
+
+    # Normalise: CPM × 1e4 → log1p
+    for g in all_genes:
+        pb_df[g] = np.log1p(pb_df[g] / pb_df["lib_size"] * 1e4)
+
+    # ── Pseudobulk DEG on pre-aggregated profiles ────────────────────────────
+    deg: dict[tuple[str, str], float] = {}
+    for ct, grp in pb_df.groupby("cell_type", observed=True):
+        ssc_idx = grp[grp["condition"] == "SSC"]["donor_id"].unique()
+        hc_idx  = grp[grp["condition"] == "HC"]["donor_id"].unique()
+        if len(ssc_idx) < 2 or len(hc_idx) < 2:
+            continue
+        ssc_rows = grp[grp["condition"] == "SSC"]
+        hc_rows  = grp[grp["condition"] == "HC"]
+        for gene in all_genes:
+            ssc_v = ssc_rows[gene].values
+            hc_v  = hc_rows[gene].values
+            lfc = float(np.mean(ssc_v) - np.mean(hc_v))
+            if abs(lfc) < 0.2:
+                continue
+            if len(ssc_v) >= 2 and len(hc_v) >= 2:
+                _, pv = ranksums(ssc_v, hc_v)
+                if pv > 0.05:
+                    continue
+            deg[(str(ct), gene)] = lfc
+
+    # ── Per-donor module scores from normalised pseudobulk ───────────────────
+    modules = ["M1", "M2", "M3", "M4"]
+    gene_lfc_by_mod: dict[str, dict[str, list[float]]] = {m: defaultdict(list) for m in modules}
+    for (ct, gene), lfc in deg.items():
+        if gene in hgnc_modules:
+            _, mod = hgnc_modules[gene]
+            if mod in modules:
+                gene_lfc_by_mod[mod][gene].append(lfc)
+
+    donor_scores: dict[str, dict[str, float]] = {}
+    for pid, d_rows in pb_df.groupby("donor_id", observed=True):
+        cond = d_rows["condition"].iloc[0]
+        factor = 1.0 if cond == "SSC" else 0.3
+        s: dict[str, float] = {}
+        for mod in modules:
+            genes = list(gene_lfc_by_mod[mod].keys())
+            present = [g for g in genes if g in d_rows.columns]
+            if not present:
+                s[mod] = 0.0
+                continue
+            expr = d_rows[present].values
+            lfcs = np.array([np.mean(gene_lfc_by_mod[mod][g]) for g in present])
+            s[mod] = float(np.mean(np.mean(expr, axis=0) * np.sign(lfcs))) * factor
+        donor_scores[str(pid)] = s
+
+    ct_counts = pb_df["cell_type"].value_counts()
+    for ct, n in ct_counts.items():
+        print(f"      {ct}: {n:,} donor-batches")
+    print(f"  [gse195452] DEG: {len(deg):,} pairs; {len(donor_scores)} donors")
+    return deg, donor_scores, "REAL"
+
+
 def _match_lung_sample(name: str) -> str:
     """Match a sample dir/file name to HC or SSC for GSE128169."""
     name_up = name.upper()
@@ -467,9 +655,14 @@ def write_minerva_overlays(all_deg_rows: list[dict], out_dir: Path) -> int:
 
 
 def render_f2_multi(score_rows: list[dict], out_svg: Path, out_png: Path) -> None:
-    """Three-panel heatmap: skin / PBMC / lung per-donor module scores."""
-    tissues = ["skin", "pbmc", "lung"]
-    tissue_labels = {"skin": "Skin\n(GSE138669)", "pbmc": "PBMC\n(GSE210395)", "lung": "Lung ILD\n(GSE128169)"}
+    """Four-panel heatmap: skin (Tabib) / skin multiome (Gur) / PBMC / lung."""
+    tissues = ["skin", "skin_gur", "pbmc", "lung"]
+    tissue_labels = {
+        "skin":     "Skin biopsies\n(GSE138669, n=22)",
+        "skin_gur": "Skin multiome\n(GSE195452, n=156)",
+        "pbmc":     "PBMC\n(GSE210395, n=8)",
+        "lung":     "Lung ILD\n(GSE128169, n=13)",
+    }
     modules = ["M1", "M2", "M3", "M4"]
     mod_labels = ["M1 IFN-I", "M2 TGF-β", "M3 EndoMT", "M4 IL-6/Th2"]
 
@@ -520,14 +713,16 @@ def render_f2_multi(score_rows: list[dict], out_svg: Path, out_png: Path) -> Non
 
 def main(argv: list[str]) -> int:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
-    ap.add_argument("--tabib-dir",    type=Path, default=Path("data/raw/tabib2021"))
-    ap.add_argument("--gse210395-dir",type=Path, default=Path("data/raw/gse210395"))
-    ap.add_argument("--gse128169-dir",type=Path, default=Path("data/raw/gse128169"))
-    ap.add_argument("--species-tsv",  type=Path, default=Path("curation/annotations/species_annotations.tsv"))
-    ap.add_argument("--out-dir",      type=Path, default=Path("analysis/overlay"))
-    ap.add_argument("--minerva-dir",  type=Path, default=Path("minerva/overlays"))
-    ap.add_argument("--fig-dir",      type=Path, default=Path("figures"))
-    ap.add_argument("--skip-tabib",   action="store_true")
+    ap.add_argument("--tabib-dir",     type=Path, default=Path("data/raw/tabib2021"))
+    ap.add_argument("--gse210395-dir", type=Path, default=Path("data/raw/gse210395"))
+    ap.add_argument("--gse128169-dir", type=Path, default=Path("data/raw/gse128169"))
+    ap.add_argument("--gse195452-dir", type=Path, default=Path("data/raw/gse195452"))
+    ap.add_argument("--species-tsv",   type=Path, default=Path("curation/annotations/species_annotations.tsv"))
+    ap.add_argument("--out-dir",       type=Path, default=Path("analysis/overlay"))
+    ap.add_argument("--minerva-dir",   type=Path, default=Path("minerva/overlays"))
+    ap.add_argument("--fig-dir",       type=Path, default=Path("figures"))
+    ap.add_argument("--skip-tabib",    action="store_true")
+    ap.add_argument("--skip-gse195452",action="store_true")
     args = ap.parse_args(argv[1:])
 
     hgnc_modules = load_species_modules(args.species_tsv)
@@ -603,6 +798,34 @@ def main(argv: list[str]) -> int:
     else:
         print(f"\n[gse128169] data absent — skipped")
         modes["gse128169"] = "ABSENT"
+
+    # ── GSE195452 skin multiome (Gur 2022) ───────────────────────────────────
+    gse195452_has_data = (
+        (args.gse195452_dir / "GSE195452_RAW.tar").exists() and
+        (args.gse195452_dir / "GSE195452_Cell_metadata_v26_anno.txt.gz").exists()
+    )
+    if not args.skip_gse195452 and gse195452_has_data:
+        try:
+            print("\n[gse195452] Processing skin multiome (Gur 2022) …")
+            deg, scores, mode = process_gse195452(args.gse195452_dir, hgnc_modules)
+            modes["gse195452"] = mode
+            for (ct, gene), lfc in deg.items():
+                sid, mod = hgnc_modules.get(gene, ("", ""))
+                all_deg_rows.append({"dataset":"gse195452","tissue":"skin_gur","cluster":ct,
+                                      "hgnc":gene,"species_id":sid,"module":mod,"log2fc":lfc})
+            for donor, ms in scores.items():
+                # condition is encoded in patient_id prefix
+                cond = "SSC" if donor.startswith("pt") or "dSSc" in donor else "HC"
+                all_score_rows.append({"donor_id":donor,"group":"SSc" if cond=="SSC" else "HC",
+                                        "dataset":"gse195452","tissue":"skin_gur",**ms})
+        except Exception as exc:
+            import traceback
+            print(f"  WARN gse195452 failed: {exc}")
+            traceback.print_exc()
+            modes["gse195452"] = "FAILED"
+    else:
+        print(f"\n[gse195452] data absent or skipped")
+        modes["gse195452"] = "ABSENT" if not gse195452_has_data else "SKIPPED"
 
     # ── Write outputs ────────────────────────────────────────────────────────
     print("\nWriting outputs …")

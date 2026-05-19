@@ -1,0 +1,8 @@
+species_id	log2fc	color
+FSP1__pm	-0.213	#2c7fb8
+IFI6__cyto	0.268	#d7191c
+IFITM2__cyto	0.260	#d7191c
+IFITM3__cyto	0.305	#d7191c
+IFNAR2_iso2__cyto	0.202	#d7191c
+XAF1__cyto	0.211	#d7191c
+XBP1__nuc	0.298	#d7191c

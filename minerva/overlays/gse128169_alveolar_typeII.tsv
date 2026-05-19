@@ -1,4 +1,5 @@
 species_id	log2fc	color
+FSP1__pm	-0.716	#2c7fb8
 IL6__ext	-0.232	#2c7fb8
 ISG20__nuc	-0.270	#2c7fb8
 MYC__nuc	-0.218	#2c7fb8

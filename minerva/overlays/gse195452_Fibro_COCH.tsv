@@ -1,0 +1,16 @@
+species_id	log2fc	color
+ACTA2__cyto	0.442	#d7191c
+COL5A2__ext	0.368	#d7191c
+COMP__ecm	0.319	#d7191c
+CTGF__ext	0.363	#d7191c
+EDNRA__pm	0.227	#d7191c
+EGR1__cyto	0.429	#d7191c
+FSP1__pm	-0.280	#2c7fb8
+IFI27__mito	0.321	#d7191c
+IFI6__cyto	0.391	#d7191c
+IFITM1__cyto	0.383	#d7191c
+IFITM3__cyto	0.373	#d7191c
+NOTCH3__pm	0.245	#d7191c
+OSMR__cyto	0.220	#d7191c
+SOCS3__cyto	0.226	#d7191c
+STAT1__cyto	0.222	#d7191c

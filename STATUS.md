@@ -6,12 +6,12 @@
 ## Headline  *(updated 2026-05-19)*
 
 - **Integrated map:** 526 species, 260 reactions, 20 compartments. **SBML validation: 0 errors (5 files clean). `make preflight`: 1 advisory only (dangling 17.9%), 0 blocking failures.**
-- **Phase 4b COMPLETE** — Multi-dataset overlay: 3 tissues (skin/PBMC/lung), 43 donors, 3 990 DEG entries. **MIM coverage: 75/196 detectable species = 38.3%** (Gate G4b ≥30% met). Per module: M1 50%, SSc-Tier1 44%, M2 34%, M4 24%, M3 17%. 18 MINERVA overlays, F2_multi 3-panel heatmap generated.
+- **Phase 4c COMPLETE** — Multi-dataset overlay: 4 datasets (skin Tabib/skin Gur/PBMC/lung), 197 donors, 4 338 DEG entries. **MIM coverage: 98/196 detectable species = 50.0%** (Gate G4b ≥30% well exceeded). Per module: M1 65%, SSc-Tier1 51%, M2 53%, M4 35%, M3 21%. 58 MINERVA overlays, F2_multi 4-panel heatmap generated. +26 new species vs Phase 4b (ROCK1/2, PECAM1, SMAD2, TGFBR2, NUMB, EDNRA, S100A4, …).
 - **Annotations nettoyées** — 15 alias HGNC non-officiels corrigés (BCMA→TNFRSF17, FSP1→S100A4, etc.), 13 entrées non-transcriptomiques vidées (métabolites, isoformes en doublon). 198 symboles HGNC propres, 196/198 (99%) détectables par RNA-seq.
 - **Phase 4 COMPLETE (real data)** — Tabib 2021 scanpy pipeline: 64 211 cells, 1 058 DEG entries; REAL per-donor module scores (M1 IFN: SSc 0.342±0.095 vs HC 0.070±0.016; M2 fibrosis: 0.232±0.061 vs 0.044±0.007).
 - **Phase 5 partial** — Full IMRAD manuscript draft à `manuscript/SSc_MIM_manuscript_draft.md` (~5 500 mots, Frontiers Bioinformatics, chiffres multi-datasets à jour).
 - **Lead-author metadata filled** — `CITATION.cff` + `.zenodo.json` (Nathan Foulquier, ORCID 0000-0003-4620-2794, LBAI U1227 Inserm CDC CHU Brest). Co-author slot still REPLACE_ME.
-- **All Phase 0 + 1 + 2 + 3-AUTO + 4 + 4b complete.** Binding constraint = co-author kickoff + CellDesigner GUI work + .zenodo.json co-author fill.
+- **All Phase 0 + 1 + 2 + 3-AUTO + 4 + 4b + 4c complete.** Binding constraint = co-author kickoff + CellDesigner GUI work + .zenodo.json co-author fill.
 
 ## What's done (with commit refs)
 
@@ -34,6 +34,7 @@
 | 4 | **Figures F1/F2/F3** — SVG + 300 dpi PNG for all three main figures | earlier |
 | 4b | **Multi-dataset overlay** — GSE210395 PBMC + GSE128169 lung ILD; 43 donors, 3 990 DEG rows, 72 MIM hits; F2_multi 3-panel heatmap; 18 MINERVA overlays | `4136481` |
 | 4b | **HGNC alias fix** — 15 alias corrigés, 13 métabolites/isoformes vidés; couverture corrigée 75/196 = 38.3% | `c5cb945` |
+| 4c | **GSE195452 skin multiome** (Gur 2022) — 154 donors, 508 batches, 100 538 cells annotées; +26 espèces; couverture 98/196 = 50.0%; 58 MINERVA overlays; F2_multi → 4 panels | HEAD |
 | 5 | **IMRAD manuscript draft** — ~5 500 mots, Frontiers Bioinformatics, mis à jour avec stats multi-datasets + dénominateur corrigé | `00017d5` |
 
 ## Inventory
@@ -48,9 +49,9 @@
 | `curation/annotations/reaction_evidence.tsv` | 244 rows | 198 with PMID (81%) |
 | `curation/pubmed_corpus.bib` | 361 BibTeX entries | 358 fully filled; 3 seed TODOs |
 | `analysis/network/` | 5 files | 38 communities, top-20 hubs, SMAD3–SMAD4 #1 (score 13.42) |
-| `analysis/overlay/` | cluster_deg.tsv (1 058 entries) + cluster_deg_multi.tsv (3 990 entries), patient scores (22 + 43 donors) | skin only + multi-dataset (all REAL) |
-| `minerva/overlays/` | 18 cluster TSVs (6 skin + 6 PBMC + 6 lung) | ready for MINERVA import |
-| `figures/` | F1 + F2 + F3 + F2_multi (SVG + 300dpi PNG) | F2_multi = 3-panel skin/PBMC/lung |
+| `analysis/overlay/` | cluster_deg.tsv (1 058 entries) + cluster_deg_multi.tsv (4 338 entries), patient scores (22 + 197 donors) | skin only + multi-dataset 4 datasets (all REAL) |
+| `minerva/overlays/` | 58 cluster TSVs (6 skin + 52 Gur/PBMC/lung) | ready for MINERVA import |
+| `figures/` | F1 + F2 + F3 + F2_multi (SVG + 300dpi PNG) | F2_multi = 4-panel skin/skin-Gur/PBMC/lung |
 | `manuscript/ACR2026_late_breaking_abstract.md` | 1 file | 300-word scaffold |
 | `manuscript/SSc_MIM_manuscript_draft.md` | 1 file | ~5 100-word IMRAD draft (Frontiers Bioinformatics) |
 | `scripts/*.py` | 16 | + fetch_tabib.py, build_overlay.py (real pipeline) |
@@ -68,7 +69,7 @@ The pivot resolved two original blockers in one move:
 
 See [ROADMAP.md](ROADMAP.md) for the new GitHub+Zenodo-first plan. Summary:
 
-- ✅ 🟢 **Phase 0–4b AUTO lanes: COMPLETE.** Integration, validation, SBML QC, network analysis, real scRNA-seq overlay 3 tissus, HGNC annotations nettoyées, DGIdb drug prioritisation, all figures, manuscript draft. **MIM coverage: 75/196 détectables = 38.3% (M1 50% / M2 34% / M3 17% / M4 24% / Tier1 44%).**
+- ✅ 🟢 **Phase 0–4c AUTO lanes: COMPLETE.** Integration, validation, SBML QC, network analysis, real scRNA-seq overlay 4 datasets (skin Tabib+Gur/PBMC/lung), HGNC annotations nettoyées, DGIdb drug prioritisation, all figures, manuscript draft. **MIM coverage: 98/196 détectables = 50.0% (M1 65% / M2 53% / M3 21% / M4 35% / Tier1 51%).**
 - 🟡 **Automation-assisted, remaining**: manuscript polish + co-author review of curation decisions.
 - 🔴 **Human-only blockers (binding)**:
   1. Co-author kickoff + CellDesigner GUI wiring

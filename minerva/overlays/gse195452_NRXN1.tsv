@@ -1,0 +1,8 @@
+species_id	log2fc	color
+COL5A2__ext	0.411	#d7191c
+CTGF__ext	0.629	#d7191c
+FN1__ecm	0.567	#d7191c
+FOSL2__nuc	0.264	#d7191c
+FSP1__pm	-0.632	#2c7fb8
+IFITM2__cyto	0.434	#d7191c
+TGFBR2__cyto	0.483	#d7191c

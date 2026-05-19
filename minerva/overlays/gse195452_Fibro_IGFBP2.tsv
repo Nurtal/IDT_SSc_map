@@ -1,0 +1,8 @@
+species_id	log2fc	color
+CTGF__ext	0.305	#d7191c
+FSP1__pm	-0.414	#2c7fb8
+HES1__nuc	0.377	#d7191c
+IFI27__mito	0.626	#d7191c
+OSMR__cyto	0.224	#d7191c
+POSTN__ecm	0.724	#d7191c
+ZEB2__nuc	0.273	#d7191c

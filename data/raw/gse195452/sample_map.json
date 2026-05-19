@@ -1,0 +1,4364 @@
+{
+  "AB10128": {
+    "tissue": "skin",
+    "patient_id": "Ctrl051",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB10129": {
+    "tissue": "skin",
+    "patient_id": "Ctrl051",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB10130": {
+    "tissue": "skin",
+    "patient_id": "Ctrl052",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB10131": {
+    "tissue": "skin",
+    "patient_id": "Ctrl052",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB10132": {
+    "tissue": "skin",
+    "patient_id": "Ctrl053",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB10133": {
+    "tissue": "skin",
+    "patient_id": "Ctrl053",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB10134": {
+    "tissue": "skin",
+    "patient_id": "Ctrl053",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB10135": {
+    "tissue": "blood",
+    "patient_id": "pt03029",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB10136": {
+    "tissue": "skin",
+    "patient_id": "pt03029",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB10137": {
+    "tissue": "lung",
+    "patient_id": "-",
+    "condition": "EXCLUDE",
+    "marker": "CD90+"
+  },
+  "AB10138": {
+    "tissue": "skin",
+    "patient_id": "Ctrl051",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB10139": {
+    "tissue": "skin",
+    "patient_id": "Ctrl051",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB10140": {
+    "tissue": "skin",
+    "patient_id": "Ctrl053",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB10141": {
+    "tissue": "skin",
+    "patient_id": "pt03029",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB10142": {
+    "tissue": "skin",
+    "patient_id": "pt03029",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB10143": {
+    "tissue": "skin",
+    "patient_id": "pt01033",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB10144": {
+    "tissue": "skin",
+    "patient_id": "pt01033",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB10145": {
+    "tissue": "skin",
+    "patient_id": "GVHD_Li001",
+    "condition": "EXCLUDE",
+    "marker": "CD90+"
+  },
+  "AB10146": {
+    "tissue": "skin",
+    "patient_id": "GVHD_Li001",
+    "condition": "EXCLUDE",
+    "marker": "CD90+"
+  },
+  "AB10147": {
+    "tissue": "lung",
+    "patient_id": "-",
+    "condition": "EXCLUDE",
+    "marker": "CD90+"
+  },
+  "AB10148": {
+    "tissue": "lung",
+    "patient_id": "-",
+    "condition": "EXCLUDE",
+    "marker": "CD90+"
+  },
+  "AB10149": {
+    "tissue": "blood",
+    "patient_id": "pt03029",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB10150": {
+    "tissue": "blood",
+    "patient_id": "Ctrl008",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB10151": {
+    "tissue": "blood",
+    "patient_id": "Ctrl008",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB10152": {
+    "tissue": "blood",
+    "patient_id": "Ctrl008",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB10153": {
+    "tissue": "blood",
+    "patient_id": "Ctrl051",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB10154": {
+    "tissue": "skin",
+    "patient_id": "pt01033",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB10155": {
+    "tissue": "skin",
+    "patient_id": "pt01033",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB10156": {
+    "tissue": "skin",
+    "patient_id": "pt01033",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB10157": {
+    "tissue": "skin",
+    "patient_id": "pt01033",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB10158": {
+    "tissue": "skin",
+    "patient_id": "pt03029",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB10159": {
+    "tissue": "skin",
+    "patient_id": "GVHD_pt002",
+    "condition": "EXCLUDE",
+    "marker": "CD90+"
+  },
+  "AB10160": {
+    "tissue": "skin",
+    "patient_id": "GVHD_pt002",
+    "condition": "EXCLUDE",
+    "marker": "CD90+"
+  },
+  "AB10161": {
+    "tissue": "skin",
+    "patient_id": "GVHD_pt002",
+    "condition": "EXCLUDE",
+    "marker": "CD45+"
+  },
+  "AB10162": {
+    "tissue": "skin",
+    "patient_id": "GVHD_Li001",
+    "condition": "EXCLUDE",
+    "marker": "CD90+"
+  },
+  "AB10163": {
+    "tissue": "skin",
+    "patient_id": "Ctrl052",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB10164": {
+    "tissue": "skin",
+    "patient_id": "Ctrl054",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB10165": {
+    "tissue": "lung",
+    "patient_id": "-",
+    "condition": "EXCLUDE",
+    "marker": "CD90+"
+  },
+  "AB10166": {
+    "tissue": "blood",
+    "patient_id": "pt03029",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB10167": {
+    "tissue": "lung",
+    "patient_id": "-",
+    "condition": "EXCLUDE",
+    "marker": "CD90+"
+  },
+  "AB10168": {
+    "tissue": "skin",
+    "patient_id": "Ctrl053",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB10169": {
+    "tissue": "skin",
+    "patient_id": "pt03029",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB10170": {
+    "tissue": "blood",
+    "patient_id": "Ctrl009",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB11334": {
+    "tissue": "skin",
+    "patient_id": "GVHD_pt001",
+    "condition": "EXCLUDE",
+    "marker": "CD90+"
+  },
+  "AB11335": {
+    "tissue": "skin",
+    "patient_id": "pt03030",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB11336": {
+    "tissue": "skin",
+    "patient_id": "pt03031",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB11337": {
+    "tissue": "skin",
+    "patient_id": "pt03031",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB11338": {
+    "tissue": "skin",
+    "patient_id": "GVHD_pt003",
+    "condition": "EXCLUDE",
+    "marker": "CD90+"
+  },
+  "AB11339": {
+    "tissue": "skin",
+    "patient_id": "pt03031",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB11421": {
+    "tissue": "skin",
+    "patient_id": "GVHD_pt003",
+    "condition": "EXCLUDE",
+    "marker": "CD90+"
+  },
+  "AB11422": {
+    "tissue": "skin",
+    "patient_id": "GVHD_pt003",
+    "condition": "EXCLUDE",
+    "marker": "CD90+"
+  },
+  "AB11423": {
+    "tissue": "skin",
+    "patient_id": "GVHD_pt003",
+    "condition": "EXCLUDE",
+    "marker": "CD45+"
+  },
+  "AB11424": {
+    "tissue": "skin",
+    "patient_id": "GVHD_pt001",
+    "condition": "EXCLUDE",
+    "marker": "CD90+"
+  },
+  "AB11425": {
+    "tissue": "skin",
+    "patient_id": "GVHD_pt001",
+    "condition": "EXCLUDE",
+    "marker": "CD90+"
+  },
+  "AB11426": {
+    "tissue": "skin",
+    "patient_id": "GVHD_pt001",
+    "condition": "EXCLUDE",
+    "marker": "CD45+"
+  },
+  "AB11427": {
+    "tissue": "skin",
+    "patient_id": "pt03030",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB11428": {
+    "tissue": "skin",
+    "patient_id": "pt03030",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB11429": {
+    "tissue": "skin",
+    "patient_id": "pt03030",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB11870": {
+    "tissue": "blood",
+    "patient_id": "Ctrl052",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB11871": {
+    "tissue": "skin",
+    "patient_id": "GVHD_pt004",
+    "condition": "EXCLUDE",
+    "marker": "CD90+"
+  },
+  "AB11872": {
+    "tissue": "skin",
+    "patient_id": "GVHD_pt002",
+    "condition": "EXCLUDE",
+    "marker": "CD90+"
+  },
+  "AB11873": {
+    "tissue": "skin",
+    "patient_id": "Ctrl052",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB11874": {
+    "tissue": "skin",
+    "patient_id": "pt03031",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB11875": {
+    "tissue": "skin",
+    "patient_id": "pt01033",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB11876": {
+    "tissue": "skin",
+    "patient_id": "GVHD_pt004",
+    "condition": "EXCLUDE",
+    "marker": "CD45+"
+  },
+  "AB11877": {
+    "tissue": "skin",
+    "patient_id": "pt03032",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB11878": {
+    "tissue": "skin",
+    "patient_id": "pt03030",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB11879": {
+    "tissue": "blood",
+    "patient_id": "Ctrl051",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB11880": {
+    "tissue": "skin",
+    "patient_id": "pt01033",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB11881": {
+    "tissue": "skin",
+    "patient_id": "pt03032",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB11882": {
+    "tissue": "skin",
+    "patient_id": "pt01033",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB11883": {
+    "tissue": "blood",
+    "patient_id": "Ctrl052",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB11884": {
+    "tissue": "skin",
+    "patient_id": "pt03031",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB11885": {
+    "tissue": "skin",
+    "patient_id": "pt01033",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB12595": {
+    "tissue": "skin",
+    "patient_id": "GVHD_pt004",
+    "condition": "EXCLUDE",
+    "marker": "CD90+"
+  },
+  "AB12596": {
+    "tissue": "skin",
+    "patient_id": "Ctrl051",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB12597": {
+    "tissue": "skin",
+    "patient_id": "Ctrl052",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB12598": {
+    "tissue": "skin",
+    "patient_id": "GVHD_pt002",
+    "condition": "EXCLUDE",
+    "marker": "CD45+"
+  },
+  "AB12599": {
+    "tissue": "skin",
+    "patient_id": "pt01033",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB13307": {
+    "tissue": "skin",
+    "patient_id": "pt01048",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB13308": {
+    "tissue": "skin",
+    "patient_id": "pt01048",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB13309": {
+    "tissue": "skin",
+    "patient_id": "pt01047",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB13310": {
+    "tissue": "skin",
+    "patient_id": "pt01048",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB13311": {
+    "tissue": "skin",
+    "patient_id": "pt01047",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB13312": {
+    "tissue": "skin",
+    "patient_id": "pt01048",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB13313": {
+    "tissue": "skin",
+    "patient_id": "pt01047",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB13314": {
+    "tissue": "skin",
+    "patient_id": "pt01048",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB13315": {
+    "tissue": "skin",
+    "patient_id": "pt01047",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB13316": {
+    "tissue": "skin",
+    "patient_id": "pt01047",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB13317": {
+    "tissue": "skin",
+    "patient_id": "pt01048",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB13318": {
+    "tissue": "skin",
+    "patient_id": "Hip",
+    "condition": "EXCLUDE",
+    "marker": "CD90+"
+  },
+  "AB13319": {
+    "tissue": "skin",
+    "patient_id": "Ctrl055",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB13320": {
+    "tissue": "skin",
+    "patient_id": "Hip",
+    "condition": "EXCLUDE",
+    "marker": "CD90+LGR5+"
+  },
+  "AB13321": {
+    "tissue": "skin",
+    "patient_id": "Hip",
+    "condition": "EXCLUDE",
+    "marker": "CD90+LGR5+"
+  },
+  "AB13329": {
+    "tissue": "skin",
+    "patient_id": "Hip",
+    "condition": "EXCLUDE",
+    "marker": "CD31+"
+  },
+  "AB13330": {
+    "tissue": "skin",
+    "patient_id": "Ctrl055",
+    "condition": "HC",
+    "marker": "B2M+"
+  },
+  "AB13331": {
+    "tissue": "skin",
+    "patient_id": "Hip",
+    "condition": "EXCLUDE",
+    "marker": "CD90+"
+  },
+  "AB13332": {
+    "tissue": "skin",
+    "patient_id": "Ctrl055",
+    "condition": "HC",
+    "marker": "B2M+"
+  },
+  "AB13333": {
+    "tissue": "skin",
+    "patient_id": "Hip",
+    "condition": "EXCLUDE",
+    "marker": "CD31+"
+  },
+  "AB13334": {
+    "tissue": "skin",
+    "patient_id": "Ctrl055",
+    "condition": "HC",
+    "marker": "CD90+LGR5+"
+  },
+  "AB13335": {
+    "tissue": "skin",
+    "patient_id": "Ctrl055",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB13336": {
+    "tissue": "skin",
+    "patient_id": "GVHD_pt005",
+    "condition": "EXCLUDE",
+    "marker": "CD45+"
+  },
+  "AB13337": {
+    "tissue": "skin",
+    "patient_id": "GVHD_pt006",
+    "condition": "EXCLUDE",
+    "marker": "CD90+"
+  },
+  "AB13338": {
+    "tissue": "skin",
+    "patient_id": "GVHD_pt006",
+    "condition": "EXCLUDE",
+    "marker": "CD90+"
+  },
+  "AB13339": {
+    "tissue": "skin",
+    "patient_id": "GVHD_pt005",
+    "condition": "EXCLUDE",
+    "marker": "CD90+"
+  },
+  "AB13340": {
+    "tissue": "skin",
+    "patient_id": "GVHD_pt007",
+    "condition": "EXCLUDE",
+    "marker": "CD90+"
+  },
+  "AB13341": {
+    "tissue": "skin",
+    "patient_id": "pt01053",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB13342": {
+    "tissue": "skin",
+    "patient_id": "GVHD_pt006",
+    "condition": "EXCLUDE",
+    "marker": "CD90+"
+  },
+  "AB13343": {
+    "tissue": "skin",
+    "patient_id": "GVHD_pt005",
+    "condition": "EXCLUDE",
+    "marker": "CD90+"
+  },
+  "AB13430": {
+    "tissue": "skin",
+    "patient_id": "pt03034",
+    "condition": "SSC",
+    "marker": "CD90-CD45-"
+  },
+  "AB13431": {
+    "tissue": "skin",
+    "patient_id": "pt03034",
+    "condition": "SSC",
+    "marker": "Peri_Vas"
+  },
+  "AB13432": {
+    "tissue": "skin",
+    "patient_id": "pt03034",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB13433": {
+    "tissue": "skin",
+    "patient_id": "pt03034",
+    "condition": "SSC",
+    "marker": "Peri_Vas"
+  },
+  "AB13434": {
+    "tissue": "skin",
+    "patient_id": "pt03034",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB13435": {
+    "tissue": "skin",
+    "patient_id": "pt03034",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB13436": {
+    "tissue": "skin",
+    "patient_id": "Ctrl056",
+    "condition": "HC",
+    "marker": "CD90-CD45-"
+  },
+  "AB13437": {
+    "tissue": "skin",
+    "patient_id": "Ctrl056",
+    "condition": "HC",
+    "marker": "CD90-CD45-"
+  },
+  "AB13438": {
+    "tissue": "skin",
+    "patient_id": "pt03032",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB13439": {
+    "tissue": "skin",
+    "patient_id": "pt03032",
+    "condition": "SSC",
+    "marker": "Peri_Vas"
+  },
+  "AB13440": {
+    "tissue": "skin",
+    "patient_id": "pt03032",
+    "condition": "SSC",
+    "marker": "Peri_Vas"
+  },
+  "AB13441": {
+    "tissue": "skin",
+    "patient_id": "pt03032",
+    "condition": "SSC",
+    "marker": "CD90-CD45-"
+  },
+  "AB13442": {
+    "tissue": "skin",
+    "patient_id": "pt03033",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB13443": {
+    "tissue": "skin",
+    "patient_id": "Morphea_pt001",
+    "condition": "EXCLUDE",
+    "marker": "CD90+"
+  },
+  "AB13444": {
+    "tissue": "skin",
+    "patient_id": "pt03032",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB13445": {
+    "tissue": "skin",
+    "patient_id": "Ctrl056",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB13446": {
+    "tissue": "skin",
+    "patient_id": "Ctrl057",
+    "condition": "HC",
+    "marker": "Peri_Vas"
+  },
+  "AB13447": {
+    "tissue": "skin",
+    "patient_id": "pt03033",
+    "condition": "SSC",
+    "marker": "Peri_Vas"
+  },
+  "AB13448": {
+    "tissue": "skin",
+    "patient_id": "pt03032",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB13449": {
+    "tissue": "skin",
+    "patient_id": "Ctrl057",
+    "condition": "HC",
+    "marker": "CD90-CD45-"
+  },
+  "AB13450": {
+    "tissue": "skin",
+    "patient_id": "Ctrl057",
+    "condition": "HC",
+    "marker": "CD90-CD45-"
+  },
+  "AB13451": {
+    "tissue": "skin",
+    "patient_id": "pt03033",
+    "condition": "SSC",
+    "marker": "Peri_Vas"
+  },
+  "AB13452": {
+    "tissue": "skin",
+    "patient_id": "Ctrl057",
+    "condition": "HC",
+    "marker": "Peri_Vas"
+  },
+  "AB13453": {
+    "tissue": "skin",
+    "patient_id": "Ctrl056",
+    "condition": "HC",
+    "marker": "Peri_Vas"
+  },
+  "AB13454": {
+    "tissue": "skin",
+    "patient_id": "pt03033",
+    "condition": "SSC",
+    "marker": "CD90-CD45-"
+  },
+  "AB13455": {
+    "tissue": "skin",
+    "patient_id": "Ctrl056",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB13775": {
+    "tissue": "skin",
+    "patient_id": "Ctrl060",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB13776": {
+    "tissue": "skin",
+    "patient_id": "Ctrl060",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB13777": {
+    "tissue": "skin",
+    "patient_id": "Ctrl060",
+    "condition": "HC",
+    "marker": "Peri_Vas"
+  },
+  "AB13778": {
+    "tissue": "skin",
+    "patient_id": "Ctrl060",
+    "condition": "HC",
+    "marker": "Peri_Vas"
+  },
+  "AB13779": {
+    "tissue": "skin",
+    "patient_id": "Ctrl060",
+    "condition": "HC",
+    "marker": "CD90+LGR5+DPP4+"
+  },
+  "AB13780": {
+    "tissue": "skin",
+    "patient_id": "Ctrl003",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB13781": {
+    "tissue": "skin",
+    "patient_id": "Ctrl003",
+    "condition": "HC",
+    "marker": "CD90+LGR5+DPP4+"
+  },
+  "AB13782": {
+    "tissue": "skin",
+    "patient_id": "pt01050",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB13783": {
+    "tissue": "skin",
+    "patient_id": "pt01050",
+    "condition": "SSC",
+    "marker": "Peri_Vas"
+  },
+  "AB13784": {
+    "tissue": "skin",
+    "patient_id": "pt01050",
+    "condition": "SSC",
+    "marker": "Peri_Vas"
+  },
+  "AB13785": {
+    "tissue": "skin",
+    "patient_id": "pt01050",
+    "condition": "SSC",
+    "marker": "CD90+LGR5+DPP4+"
+  },
+  "AB13786": {
+    "tissue": "skin",
+    "patient_id": "pt01049",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB13787": {
+    "tissue": "skin",
+    "patient_id": "pt01052",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB13788": {
+    "tissue": "skin",
+    "patient_id": "pt01052",
+    "condition": "SSC",
+    "marker": "Peri_Vas"
+  },
+  "AB13789": {
+    "tissue": "skin",
+    "patient_id": "pt01049",
+    "condition": "SSC",
+    "marker": "Peri_Vas"
+  },
+  "AB13790": {
+    "tissue": "skin",
+    "patient_id": "pt01050",
+    "condition": "SSC",
+    "marker": "Peri_Vas"
+  },
+  "AB13791": {
+    "tissue": "skin",
+    "patient_id": "pt01050",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB13792": {
+    "tissue": "skin",
+    "patient_id": "pt01051",
+    "condition": "SSC",
+    "marker": "CD90+LGR5+DPP4+"
+  },
+  "AB13793": {
+    "tissue": "skin",
+    "patient_id": "Ctrl024",
+    "condition": "HC",
+    "marker": "Peri_Vas"
+  },
+  "AB13794": {
+    "tissue": "skin",
+    "patient_id": "Ctrl024",
+    "condition": "HC",
+    "marker": "Peri_Vas"
+  },
+  "AB13795": {
+    "tissue": "skin",
+    "patient_id": "Ctrl025",
+    "condition": "HC",
+    "marker": "Peri_Vas"
+  },
+  "AB13796": {
+    "tissue": "skin",
+    "patient_id": "Ctrl025",
+    "condition": "HC",
+    "marker": "CD90-CD45-"
+  },
+  "AB13797": {
+    "tissue": "skin",
+    "patient_id": "Ctrl003",
+    "condition": "HC",
+    "marker": "Peri_Vas"
+  },
+  "AB13798": {
+    "tissue": "skin",
+    "patient_id": "Ctrl003",
+    "condition": "HC",
+    "marker": "Peri_Vas"
+  },
+  "AB13799": {
+    "tissue": "skin",
+    "patient_id": "Ctrl034",
+    "condition": "HC",
+    "marker": "Peri_Vas"
+  },
+  "AB13800": {
+    "tissue": "skin",
+    "patient_id": "pt01050",
+    "condition": "SSC",
+    "marker": "CD90-CD45-"
+  },
+  "AB13801": {
+    "tissue": "skin",
+    "patient_id": "pt01051",
+    "condition": "SSC",
+    "marker": "CD90+LGR5+DPP4+"
+  },
+  "AB13808": {
+    "tissue": "skin",
+    "patient_id": "pt01051",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB13809": {
+    "tissue": "skin",
+    "patient_id": "pt01051",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB13810": {
+    "tissue": "skin",
+    "patient_id": "pt01051",
+    "condition": "SSC",
+    "marker": "Peri_Vas"
+  },
+  "AB13811": {
+    "tissue": "skin",
+    "patient_id": "pt01049",
+    "condition": "SSC",
+    "marker": "Peri_Vas"
+  },
+  "AB13812": {
+    "tissue": "skin",
+    "patient_id": "Ctrl_pool",
+    "condition": "HC",
+    "marker": "CD90+LGR5+DPP4+"
+  },
+  "AB13813": {
+    "tissue": "skin",
+    "patient_id": "pt01049",
+    "condition": "SSC",
+    "marker": "CD90-CD45-"
+  },
+  "AB13814": {
+    "tissue": "skin",
+    "patient_id": "pt01049",
+    "condition": "SSC",
+    "marker": "CD90+LGR5+DPP4+"
+  },
+  "AB13815": {
+    "tissue": "skin",
+    "patient_id": "pt01052",
+    "condition": "SSC",
+    "marker": "Peri_Vas"
+  },
+  "AB13816": {
+    "tissue": "skin",
+    "patient_id": "Ctrl003",
+    "condition": "HC",
+    "marker": "CD90+LGR5+DPP4+"
+  },
+  "AB13817": {
+    "tissue": "skin",
+    "patient_id": "Ctrl034",
+    "condition": "HC",
+    "marker": "Peri_Vas"
+  },
+  "AB13818": {
+    "tissue": "skin",
+    "patient_id": "Ctrl_pool",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB13819": {
+    "tissue": "skin",
+    "patient_id": "Ctrl024",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB13820": {
+    "tissue": "skin",
+    "patient_id": "Ctrl_pool",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB13821": {
+    "tissue": "skin",
+    "patient_id": "Ctrl025",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB13822": {
+    "tissue": "skin",
+    "patient_id": "Ctrl025",
+    "condition": "HC",
+    "marker": "Peri_Vas"
+  },
+  "AB13823": {
+    "tissue": "skin",
+    "patient_id": "Ctrl034",
+    "condition": "HC",
+    "marker": "Peri_Vas"
+  },
+  "AB13824": {
+    "tissue": "skin",
+    "patient_id": "pt01050",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB13825": {
+    "tissue": "skin",
+    "patient_id": "pt01050",
+    "condition": "SSC",
+    "marker": "CD90-CD45-"
+  },
+  "AB13826": {
+    "tissue": "skin",
+    "patient_id": "pt01050",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB13827": {
+    "tissue": "skin",
+    "patient_id": "pt01050",
+    "condition": "SSC",
+    "marker": "CD90+LGR5+DPP4+"
+  },
+  "AB13828": {
+    "tissue": "skin",
+    "patient_id": "pt01050",
+    "condition": "SSC",
+    "marker": "Peri_Vas"
+  },
+  "AB13829": {
+    "tissue": "skin",
+    "patient_id": "pt01051",
+    "condition": "SSC",
+    "marker": "Peri_Vas"
+  },
+  "AB13830": {
+    "tissue": "skin",
+    "patient_id": "pt01052",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB13831": {
+    "tissue": "skin",
+    "patient_id": "pt01052",
+    "condition": "SSC",
+    "marker": "CD90+LGR5+DPP4+"
+  },
+  "AB13832": {
+    "tissue": "skin",
+    "patient_id": "pt01054",
+    "condition": "SSC",
+    "marker": "Peri_Vas"
+  },
+  "AB13833": {
+    "tissue": "skin",
+    "patient_id": "pt01054",
+    "condition": "SSC",
+    "marker": "CD90-CD45-"
+  },
+  "AB13834": {
+    "tissue": "skin",
+    "patient_id": "pt01051",
+    "condition": "SSC",
+    "marker": "Peri_Vas"
+  },
+  "AB13835": {
+    "tissue": "skin",
+    "patient_id": "pt01051",
+    "condition": "SSC",
+    "marker": "Peri_Vas"
+  },
+  "AB13836": {
+    "tissue": "skin",
+    "patient_id": "pt01051",
+    "condition": "SSC",
+    "marker": "CD90-CD45-"
+  },
+  "AB13837": {
+    "tissue": "skin",
+    "patient_id": "pt01051",
+    "condition": "SSC",
+    "marker": "CD90-CD45-"
+  },
+  "AB13838": {
+    "tissue": "skin",
+    "patient_id": "pt01054",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB13839": {
+    "tissue": "skin",
+    "patient_id": "pt01054",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB13840": {
+    "tissue": "skin",
+    "patient_id": "pt01054",
+    "condition": "SSC",
+    "marker": "Peri_Vas"
+  },
+  "AB13841": {
+    "tissue": "skin",
+    "patient_id": "pt01054",
+    "condition": "SSC",
+    "marker": "Peri_Vas"
+  },
+  "AB13842": {
+    "tissue": "skin",
+    "patient_id": "pt01054",
+    "condition": "SSC",
+    "marker": "Peri_Vas"
+  },
+  "AB13843": {
+    "tissue": "skin",
+    "patient_id": "pt01054",
+    "condition": "SSC",
+    "marker": "CD90+LGR5+DPP4+"
+  },
+  "AB13853": {
+    "tissue": "skin",
+    "patient_id": "Morphea_pt001",
+    "condition": "EXCLUDE",
+    "marker": "CD90+"
+  },
+  "AB13855": {
+    "tissue": "skin",
+    "patient_id": "Control",
+    "condition": "HC",
+    "marker": "CD90-CD45-"
+  },
+  "AB13858": {
+    "tissue": "skin",
+    "patient_id": "Ctrl_pool",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB14116": {
+    "tissue": "skin",
+    "patient_id": "pt01020",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB14117": {
+    "tissue": "skin",
+    "patient_id": "pt01020",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB14118": {
+    "tissue": "skin",
+    "patient_id": "pt01020",
+    "condition": "SSC",
+    "marker": "Peri_Vas"
+  },
+  "AB14119": {
+    "tissue": "skin",
+    "patient_id": "pt01020",
+    "condition": "SSC",
+    "marker": "Peri_Vas"
+  },
+  "AB14120": {
+    "tissue": "skin",
+    "patient_id": "pt01020",
+    "condition": "SSC",
+    "marker": "Peri_Vas"
+  },
+  "AB14121": {
+    "tissue": "skin",
+    "patient_id": "pt01020",
+    "condition": "SSC",
+    "marker": "CD90-CD45-"
+  },
+  "AB14126": {
+    "tissue": "skin",
+    "patient_id": "Morphea_pt002",
+    "condition": "EXCLUDE",
+    "marker": "CD90+"
+  },
+  "AB14127": {
+    "tissue": "skin",
+    "patient_id": "Morphea_pt002",
+    "condition": "EXCLUDE",
+    "marker": "CD90+"
+  },
+  "AB14135": {
+    "tissue": "skin",
+    "patient_id": "GVHD_pt008",
+    "condition": "EXCLUDE",
+    "marker": "CD90+"
+  },
+  "AB14136": {
+    "tissue": "skin",
+    "patient_id": "GVHD_pt008",
+    "condition": "EXCLUDE",
+    "marker": "CD90+"
+  },
+  "AB14137": {
+    "tissue": "skin",
+    "patient_id": "GVHD_pt008",
+    "condition": "EXCLUDE",
+    "marker": "CD45+"
+  },
+  "AB14138": {
+    "tissue": "skin",
+    "patient_id": "Morphea_pt003",
+    "condition": "EXCLUDE",
+    "marker": "CD90+"
+  },
+  "AB14139": {
+    "tissue": "skin",
+    "patient_id": "Morphea_pt003",
+    "condition": "EXCLUDE",
+    "marker": "CD90+"
+  },
+  "AB14256": {
+    "tissue": "skin",
+    "patient_id": "pt03034",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB14257": {
+    "tissue": "skin",
+    "patient_id": "pt03035",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB14258": {
+    "tissue": "skin",
+    "patient_id": "pt03035",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB14259": {
+    "tissue": "skin",
+    "patient_id": "pt03035",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB14260": {
+    "tissue": "skin",
+    "patient_id": "pt03035",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB14261": {
+    "tissue": "skin",
+    "patient_id": "Morphea_pt003",
+    "condition": "EXCLUDE",
+    "marker": "CD90+"
+  },
+  "AB14262": {
+    "tissue": "skin",
+    "patient_id": "Morphea_pt003",
+    "condition": "EXCLUDE",
+    "marker": "CD90+"
+  },
+  "AB14263": {
+    "tissue": "skin",
+    "patient_id": "Morphea_pt004",
+    "condition": "EXCLUDE",
+    "marker": "CD90+"
+  },
+  "AB14264": {
+    "tissue": "skin",
+    "patient_id": "Morphea_pt004",
+    "condition": "EXCLUDE",
+    "marker": "CD90+"
+  },
+  "AB14265": {
+    "tissue": "skin",
+    "patient_id": "GVHD_pt008",
+    "condition": "EXCLUDE",
+    "marker": "CD90+"
+  },
+  "AB6688": {
+    "tissue": "blood",
+    "patient_id": "Ctrl015",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB6689": {
+    "tissue": "blood",
+    "patient_id": "Ctrl015",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB6692": {
+    "tissue": "blood",
+    "patient_id": "Ctrl016",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB6693": {
+    "tissue": "blood",
+    "patient_id": "Ctrl016",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB6694": {
+    "tissue": "blood",
+    "patient_id": "Ctrl016",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB6695": {
+    "tissue": "blood",
+    "patient_id": "Ctrl016",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB6696": {
+    "tissue": "blood",
+    "patient_id": "Ctrl014",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB6697": {
+    "tissue": "blood",
+    "patient_id": "Ctrl014",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB6701": {
+    "tissue": "skin",
+    "patient_id": "Ctrl003",
+    "condition": "HC",
+    "marker": "CD45+CD90+"
+  },
+  "AB6837": {
+    "tissue": "blood",
+    "patient_id": "Ctrl014",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB6838": {
+    "tissue": "blood",
+    "patient_id": "Ctrl014",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB6843": {
+    "tissue": "skin",
+    "patient_id": "pt01003",
+    "condition": "SSC",
+    "marker": "CD45+CD90+"
+  },
+  "AB6847": {
+    "tissue": "skin",
+    "patient_id": "pt01005",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB6848": {
+    "tissue": "skin",
+    "patient_id": "pt01005",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB6849": {
+    "tissue": "skin",
+    "patient_id": "pt01004",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB6850": {
+    "tissue": "skin",
+    "patient_id": "pt01004",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB6851": {
+    "tissue": "blood",
+    "patient_id": "pt01005",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB6852": {
+    "tissue": "blood",
+    "patient_id": "pt01005",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB6853": {
+    "tissue": "blood",
+    "patient_id": "pt01005",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB6854": {
+    "tissue": "blood",
+    "patient_id": "pt01004",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB6855": {
+    "tissue": "blood",
+    "patient_id": "pt01004",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB6856": {
+    "tissue": "blood",
+    "patient_id": "pt01004",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB6857": {
+    "tissue": "blood",
+    "patient_id": "pt01014",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB6858": {
+    "tissue": "blood",
+    "patient_id": "pt01006",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB6859": {
+    "tissue": "blood",
+    "patient_id": "pt01006",
+    "condition": "SSC",
+    "marker": "NONB/T"
+  },
+  "AB6860": {
+    "tissue": "blood",
+    "patient_id": "pt01006",
+    "condition": "SSC",
+    "marker": "CD14+CD16+"
+  },
+  "AB6861": {
+    "tissue": "skin",
+    "patient_id": "pt01006",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB6862": {
+    "tissue": "skin",
+    "patient_id": "pt01006",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB6863": {
+    "tissue": "blood",
+    "patient_id": "pt02002",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB6864": {
+    "tissue": "blood",
+    "patient_id": "pt02002",
+    "condition": "SSC",
+    "marker": "CD14+CD16+"
+  },
+  "AB6865": {
+    "tissue": "skin",
+    "patient_id": "pt02002",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB6866": {
+    "tissue": "blood",
+    "patient_id": "pt01015",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB6867": {
+    "tissue": "blood",
+    "patient_id": "pt01015",
+    "condition": "SSC",
+    "marker": "NONB/T"
+  },
+  "AB6868": {
+    "tissue": "blood",
+    "patient_id": "pt03007",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB6907": {
+    "tissue": "skin",
+    "patient_id": "pt02001",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB6908": {
+    "tissue": "skin",
+    "patient_id": "pt02001",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB6909": {
+    "tissue": "blood",
+    "patient_id": "pt02001",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB6910": {
+    "tissue": "blood",
+    "patient_id": "pt02001",
+    "condition": "SSC",
+    "marker": "CD14+CD16+"
+  },
+  "AB6911": {
+    "tissue": "skin",
+    "patient_id": "pt01007",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB6912": {
+    "tissue": "skin",
+    "patient_id": "pt01007",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB6913": {
+    "tissue": "skin",
+    "patient_id": "Ctrl002",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB6914": {
+    "tissue": "skin",
+    "patient_id": "Ctrl002",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB6915": {
+    "tissue": "skin",
+    "patient_id": "Ctrl003",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB6916": {
+    "tissue": "skin",
+    "patient_id": "Ctrl003",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB6917": {
+    "tissue": "blood",
+    "patient_id": "pt01007",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7060": {
+    "tissue": "skin",
+    "patient_id": "Ctrl004",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB7061": {
+    "tissue": "skin",
+    "patient_id": "Ctrl004",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB7062": {
+    "tissue": "skin",
+    "patient_id": "Ctrl004",
+    "condition": "HC",
+    "marker": "CD45+CD90+"
+  },
+  "AB7063": {
+    "tissue": "skin",
+    "patient_id": "Ctrl005",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB7064": {
+    "tissue": "skin",
+    "patient_id": "Ctrl005",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB7065": {
+    "tissue": "skin",
+    "patient_id": "Ctrl005",
+    "condition": "HC",
+    "marker": "CD45+CD90+"
+  },
+  "AB7066": {
+    "tissue": "skin",
+    "patient_id": "pt01006",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7067": {
+    "tissue": "skin",
+    "patient_id": "Ctrl006",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB7068": {
+    "tissue": "skin",
+    "patient_id": "Ctrl006",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB7069": {
+    "tissue": "skin",
+    "patient_id": "Ctrl006",
+    "condition": "HC",
+    "marker": "CD45+CD90+"
+  },
+  "AB7072": {
+    "tissue": "skin",
+    "patient_id": "Ctrl007",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB7073": {
+    "tissue": "skin",
+    "patient_id": "Ctrl007",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB7074": {
+    "tissue": "skin",
+    "patient_id": "pt01001",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7075": {
+    "tissue": "skin",
+    "patient_id": "pt01001",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7076": {
+    "tissue": "skin",
+    "patient_id": "pt01001",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7077": {
+    "tissue": "skin",
+    "patient_id": "pt01002",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7078": {
+    "tissue": "skin",
+    "patient_id": "pt01002",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7079": {
+    "tissue": "skin",
+    "patient_id": "pt01009",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7080": {
+    "tissue": "skin",
+    "patient_id": "pt01009",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7081": {
+    "tissue": "skin",
+    "patient_id": "pt01008",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7082": {
+    "tissue": "skin",
+    "patient_id": "pt02003",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7083": {
+    "tissue": "skin",
+    "patient_id": "pt02003",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7172": {
+    "tissue": "skin",
+    "patient_id": "pt03001",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7173": {
+    "tissue": "skin",
+    "patient_id": "pt01011",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7174": {
+    "tissue": "skin",
+    "patient_id": "pt01011",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7175": {
+    "tissue": "skin",
+    "patient_id": "pt01011",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7176": {
+    "tissue": "skin",
+    "patient_id": "pt01012",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7177": {
+    "tissue": "skin",
+    "patient_id": "pt01010",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7178": {
+    "tissue": "skin",
+    "patient_id": "pt01011",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7179": {
+    "tissue": "skin",
+    "patient_id": "pt02004",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7180": {
+    "tissue": "skin",
+    "patient_id": "pt02004",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7181": {
+    "tissue": "skin",
+    "patient_id": "Ctrl008",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB7182": {
+    "tissue": "skin",
+    "patient_id": "Ctrl008",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB7183": {
+    "tissue": "skin",
+    "patient_id": "Ctrl008",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB7184": {
+    "tissue": "skin",
+    "patient_id": "pt01009",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7185": {
+    "tissue": "blood",
+    "patient_id": "pt01010",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7186": {
+    "tissue": "blood",
+    "patient_id": "pt01010",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7187": {
+    "tissue": "blood",
+    "patient_id": "pt01011",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7188": {
+    "tissue": "blood",
+    "patient_id": "pt01011",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7189": {
+    "tissue": "blood",
+    "patient_id": "Ctrl003",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB7190": {
+    "tissue": "blood",
+    "patient_id": "Ctrl003",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB7191": {
+    "tissue": "blood",
+    "patient_id": "Ctrl003",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB7192": {
+    "tissue": "blood",
+    "patient_id": "pt02004",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7193": {
+    "tissue": "blood",
+    "patient_id": "pt01012",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7194": {
+    "tissue": "blood",
+    "patient_id": "pt01012",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7195": {
+    "tissue": "blood",
+    "patient_id": "pt01001",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7196": {
+    "tissue": "blood",
+    "patient_id": "pt01002",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7197": {
+    "tissue": "blood",
+    "patient_id": "pt01009",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7211": {
+    "tissue": "skin",
+    "patient_id": "pt03002",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7212": {
+    "tissue": "skin",
+    "patient_id": "pt02006",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7213": {
+    "tissue": "skin",
+    "patient_id": "pt02006",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7214": {
+    "tissue": "skin",
+    "patient_id": "pt01013",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7215": {
+    "tissue": "skin",
+    "patient_id": "pt02005",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7216": {
+    "tissue": "skin",
+    "patient_id": "pt02005",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7217": {
+    "tissue": "skin",
+    "patient_id": "Ctrl001",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB7218": {
+    "tissue": "skin",
+    "patient_id": "Ctrl001",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB7219": {
+    "tissue": "skin",
+    "patient_id": "Ctrl001",
+    "condition": "HC",
+    "marker": "CD45+CD90+"
+  },
+  "AB7266": {
+    "tissue": "skin",
+    "patient_id": "pt03003",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7267": {
+    "tissue": "skin",
+    "patient_id": "pt03003",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7268": {
+    "tissue": "skin",
+    "patient_id": "pt03003",
+    "condition": "SSC",
+    "marker": "CD45+CD90+"
+  },
+  "AB7269": {
+    "tissue": "skin",
+    "patient_id": "pt03004",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7270": {
+    "tissue": "skin",
+    "patient_id": "pt03004",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7271": {
+    "tissue": "skin",
+    "patient_id": "pt02007",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7272": {
+    "tissue": "skin",
+    "patient_id": "pt02007",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7273": {
+    "tissue": "skin",
+    "patient_id": "pt01006",
+    "condition": "SSC",
+    "marker": "CD45+CD90+"
+  },
+  "AB7274": {
+    "tissue": "skin",
+    "patient_id": "Ctrl013",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB7275": {
+    "tissue": "skin",
+    "patient_id": "Ctrl013",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB7276": {
+    "tissue": "skin",
+    "patient_id": "Ctrl011",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB7277": {
+    "tissue": "skin",
+    "patient_id": "Ctrl011",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB7278": {
+    "tissue": "skin",
+    "patient_id": "Ctrl012",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB7279": {
+    "tissue": "skin",
+    "patient_id": "Ctrl012",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB7280": {
+    "tissue": "skin",
+    "patient_id": "Ctrl009",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB7281": {
+    "tissue": "skin",
+    "patient_id": "Ctrl009",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB7282": {
+    "tissue": "skin",
+    "patient_id": "pt03001",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7283": {
+    "tissue": "skin",
+    "patient_id": "pt03002",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7339": {
+    "tissue": "skin",
+    "patient_id": "Ctrl010",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB7340": {
+    "tissue": "skin",
+    "patient_id": "Ctrl010",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB7341": {
+    "tissue": "skin",
+    "patient_id": "Ctrl010",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB7342": {
+    "tissue": "skin",
+    "patient_id": "pt02007",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7343": {
+    "tissue": "skin",
+    "patient_id": "pt03005",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7344": {
+    "tissue": "skin",
+    "patient_id": "pt03005",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7345": {
+    "tissue": "skin",
+    "patient_id": "pt01018",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7346": {
+    "tissue": "skin",
+    "patient_id": "pt01016",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7347": {
+    "tissue": "skin",
+    "patient_id": "pt03006",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7348": {
+    "tissue": "skin",
+    "patient_id": "pt01017",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7352": {
+    "tissue": "blood",
+    "patient_id": "pt03002",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7353": {
+    "tissue": "blood",
+    "patient_id": "pt03002",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7354": {
+    "tissue": "blood",
+    "patient_id": "pt03003",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7355": {
+    "tissue": "blood",
+    "patient_id": "pt03003",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7356": {
+    "tissue": "blood",
+    "patient_id": "Ctrl010",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB7357": {
+    "tissue": "blood",
+    "patient_id": "Ctrl010",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB7358": {
+    "tissue": "blood",
+    "patient_id": "pt03006",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7359": {
+    "tissue": "blood",
+    "patient_id": "pt02006",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7360": {
+    "tissue": "blood",
+    "patient_id": "pt03005",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7361": {
+    "tissue": "blood",
+    "patient_id": "pt03003",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7446": {
+    "tissue": "skin",
+    "patient_id": "pt03009",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7447": {
+    "tissue": "skin",
+    "patient_id": "pt03009",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7448": {
+    "tissue": "skin",
+    "patient_id": "pt03009",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7449": {
+    "tissue": "skin",
+    "patient_id": "Ctrl017",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB7450": {
+    "tissue": "skin",
+    "patient_id": "pt03010",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7451": {
+    "tissue": "skin",
+    "patient_id": "pt03010",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7452": {
+    "tissue": "skin",
+    "patient_id": "Ctrl017",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB7453": {
+    "tissue": "skin",
+    "patient_id": "Ctrl017",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB7454": {
+    "tissue": "skin",
+    "patient_id": "pt03011",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7455": {
+    "tissue": "skin",
+    "patient_id": "pt03011",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7456": {
+    "tissue": "skin",
+    "patient_id": "pt03011",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7457": {
+    "tissue": "skin",
+    "patient_id": "pt03012",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7458": {
+    "tissue": "skin",
+    "patient_id": "pt03012",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7459": {
+    "tissue": "skin",
+    "patient_id": "pt03012",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7460": {
+    "tissue": "skin",
+    "patient_id": "pt03010",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7461": {
+    "tissue": "blood",
+    "patient_id": "pt03010",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7462": {
+    "tissue": "skin",
+    "patient_id": "Ctrl018",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB7463": {
+    "tissue": "skin",
+    "patient_id": "Ctrl018",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB7464": {
+    "tissue": "skin",
+    "patient_id": "pt03013",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7465": {
+    "tissue": "skin",
+    "patient_id": "pt03013",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7466": {
+    "tissue": "skin",
+    "patient_id": "pt01019",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7467": {
+    "tissue": "skin",
+    "patient_id": "pt02008",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7468": {
+    "tissue": "skin",
+    "patient_id": "pt02008",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7469": {
+    "tissue": "skin",
+    "patient_id": "pt01019",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7491": {
+    "tissue": "skin",
+    "patient_id": "pt03014",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7492": {
+    "tissue": "skin",
+    "patient_id": "pt03014",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7493": {
+    "tissue": "skin",
+    "patient_id": "pt03014",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7494": {
+    "tissue": "skin",
+    "patient_id": "Ctrl019",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB7495": {
+    "tissue": "skin",
+    "patient_id": "Ctrl019",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB7496": {
+    "tissue": "skin",
+    "patient_id": "Ctrl019",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB7497": {
+    "tissue": "skin",
+    "patient_id": "pt03015",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7498": {
+    "tissue": "skin",
+    "patient_id": "pt03015",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7558": {
+    "tissue": "skin",
+    "patient_id": "pt01020",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7559": {
+    "tissue": "skin",
+    "patient_id": "pt01020",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7560": {
+    "tissue": "skin",
+    "patient_id": "pt01020",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7561": {
+    "tissue": "skin",
+    "patient_id": "pt03016",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7562": {
+    "tissue": "skin",
+    "patient_id": "pt03016",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7623": {
+    "tissue": "skin",
+    "patient_id": "-",
+    "condition": "EXCLUDE",
+    "marker": "CD90+"
+  },
+  "AB7624": {
+    "tissue": "skin",
+    "patient_id": "-",
+    "condition": "EXCLUDE",
+    "marker": "CD90+"
+  },
+  "AB7625": {
+    "tissue": "skin",
+    "patient_id": "-",
+    "condition": "EXCLUDE",
+    "marker": "CD45+"
+  },
+  "AB7627": {
+    "tissue": "skin",
+    "patient_id": "pt03013",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7628": {
+    "tissue": "skin",
+    "patient_id": "pt01019",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7629": {
+    "tissue": "skin",
+    "patient_id": "pt02008",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7693": {
+    "tissue": "skin",
+    "patient_id": "pt01021",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7694": {
+    "tissue": "skin",
+    "patient_id": "pt01021",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7695": {
+    "tissue": "skin",
+    "patient_id": "pt01021",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7696": {
+    "tissue": "skin",
+    "patient_id": "pt01021",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7697": {
+    "tissue": "skin",
+    "patient_id": "Ctrl014",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB7698": {
+    "tissue": "skin",
+    "patient_id": "Ctrl014",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB7699": {
+    "tissue": "skin",
+    "patient_id": "Ctrl014",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB7700": {
+    "tissue": "skin",
+    "patient_id": "Ctrl014",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB7701": {
+    "tissue": "skin",
+    "patient_id": "pt01022",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7702": {
+    "tissue": "skin",
+    "patient_id": "pt01022",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7703": {
+    "tissue": "skin",
+    "patient_id": "pt01022",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7704": {
+    "tissue": "skin",
+    "patient_id": "pt01022",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7705": {
+    "tissue": "skin",
+    "patient_id": "pt01022",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7706": {
+    "tissue": "blood",
+    "patient_id": "Ctrl005",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB7707": {
+    "tissue": "blood",
+    "patient_id": "Ctrl008",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB7708": {
+    "tissue": "blood",
+    "patient_id": "Ctrl008",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB7741": {
+    "tissue": "skin",
+    "patient_id": "pt01023",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7742": {
+    "tissue": "skin",
+    "patient_id": "pt01023",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7743": {
+    "tissue": "skin",
+    "patient_id": "pt01023",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7744": {
+    "tissue": "skin",
+    "patient_id": "pt01023",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7745": {
+    "tissue": "skin",
+    "patient_id": "pt02009",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7746": {
+    "tissue": "skin",
+    "patient_id": "pt03017",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7747": {
+    "tissue": "skin",
+    "patient_id": "pt01024",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7748": {
+    "tissue": "skin",
+    "patient_id": "pt01024",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7749": {
+    "tissue": "skin",
+    "patient_id": "pt01025",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7750": {
+    "tissue": "skin",
+    "patient_id": "pt02010",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7751": {
+    "tissue": "skin",
+    "patient_id": "pt02010",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7752": {
+    "tissue": "skin",
+    "patient_id": "pt02010",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7753": {
+    "tissue": "skin",
+    "patient_id": "pt02009",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7754": {
+    "tissue": "skin",
+    "patient_id": "pt01025",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7755": {
+    "tissue": "skin",
+    "patient_id": "pt01024",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7756": {
+    "tissue": "blood",
+    "patient_id": "pt01025",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7757": {
+    "tissue": "skin",
+    "patient_id": "pt01026",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7758": {
+    "tissue": "skin",
+    "patient_id": "pt01026",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7759": {
+    "tissue": "skin",
+    "patient_id": "pt01026",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7760": {
+    "tissue": "skin",
+    "patient_id": "pt01027",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7761": {
+    "tissue": "skin",
+    "patient_id": "pt01027",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7762": {
+    "tissue": "skin",
+    "patient_id": "pt01027",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7763": {
+    "tissue": "blood",
+    "patient_id": "pt01026",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7764": {
+    "tissue": "skin",
+    "patient_id": "pt03017",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7765": {
+    "tissue": "blood",
+    "patient_id": "pt01022",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7766": {
+    "tissue": "blood",
+    "patient_id": "Ctrl014",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB7767": {
+    "tissue": "blood",
+    "patient_id": "Ctrl007",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB7768": {
+    "tissue": "blood",
+    "patient_id": "pt01025",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7769": {
+    "tissue": "blood",
+    "patient_id": "pt01023",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7770": {
+    "tissue": "blood",
+    "patient_id": "pt01024",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7844": {
+    "tissue": "skin",
+    "patient_id": "pt01028",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7845": {
+    "tissue": "skin",
+    "patient_id": "pt01028",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7846": {
+    "tissue": "skin",
+    "patient_id": "pt01028",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7847": {
+    "tissue": "skin",
+    "patient_id": "pt01028",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7848": {
+    "tissue": "skin",
+    "patient_id": "pt01029",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7849": {
+    "tissue": "skin",
+    "patient_id": "pt01029",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7850": {
+    "tissue": "skin",
+    "patient_id": "pt01029",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7851": {
+    "tissue": "skin",
+    "patient_id": "pt01029",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7852": {
+    "tissue": "skin",
+    "patient_id": "pt01030",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7853": {
+    "tissue": "skin",
+    "patient_id": "pt01030",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7854": {
+    "tissue": "skin",
+    "patient_id": "pt01030",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7855": {
+    "tissue": "skin",
+    "patient_id": "Ctrl020",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB7856": {
+    "tissue": "skin",
+    "patient_id": "Ctrl020",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB7857": {
+    "tissue": "skin",
+    "patient_id": "Ctrl020",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB7858": {
+    "tissue": "skin",
+    "patient_id": "pt03018",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7859": {
+    "tissue": "skin",
+    "patient_id": "pt03018",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7860": {
+    "tissue": "skin",
+    "patient_id": "pt03018",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7861": {
+    "tissue": "skin",
+    "patient_id": "pt03018",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB7865": {
+    "tissue": "blood",
+    "patient_id": "pt01028",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7866": {
+    "tissue": "blood",
+    "patient_id": "pt01028",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7867": {
+    "tissue": "blood",
+    "patient_id": "pt01022",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7868": {
+    "tissue": "blood",
+    "patient_id": "Ctrl007",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB7869": {
+    "tissue": "blood",
+    "patient_id": "Ctrl005",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB7870": {
+    "tissue": "blood",
+    "patient_id": "pt01021",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7871": {
+    "tissue": "blood",
+    "patient_id": "pt01023",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7872": {
+    "tissue": "blood",
+    "patient_id": "pt01020",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7873": {
+    "tissue": "blood",
+    "patient_id": "pt03016",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7874": {
+    "tissue": "blood",
+    "patient_id": "pt01020",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7875": {
+    "tissue": "blood",
+    "patient_id": "pt01019",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7876": {
+    "tissue": "blood",
+    "patient_id": "pt02006",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7877": {
+    "tissue": "blood",
+    "patient_id": "pt01029",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7878": {
+    "tissue": "blood",
+    "patient_id": "pt01030",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7893": {
+    "tissue": "blood",
+    "patient_id": "pt01021",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7894": {
+    "tissue": "blood",
+    "patient_id": "pt02003",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB7895": {
+    "tissue": "blood",
+    "patient_id": "Ctrl020",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB7896": {
+    "tissue": "blood",
+    "patient_id": "Ctrl020",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB8007": {
+    "tissue": "skin",
+    "patient_id": "pt01033",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8008": {
+    "tissue": "skin",
+    "patient_id": "pt01033",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8009": {
+    "tissue": "skin",
+    "patient_id": "pt01033",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8010": {
+    "tissue": "skin",
+    "patient_id": "pt01033",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB8011": {
+    "tissue": "skin",
+    "patient_id": "Ctrl003",
+    "condition": "HC",
+    "marker": "B2M+"
+  },
+  "AB8012": {
+    "tissue": "skin",
+    "patient_id": "Ctrl003",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB8013": {
+    "tissue": "skin",
+    "patient_id": "pt01033",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8014": {
+    "tissue": "skin",
+    "patient_id": "pt01033",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB8015": {
+    "tissue": "skin",
+    "patient_id": "pt01032",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8016": {
+    "tissue": "skin",
+    "patient_id": "pt03019",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8017": {
+    "tissue": "skin",
+    "patient_id": "pt03019",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8018": {
+    "tissue": "skin",
+    "patient_id": "Ctrl021",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB8019": {
+    "tissue": "skin",
+    "patient_id": "Ctrl021",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB8020": {
+    "tissue": "skin",
+    "patient_id": "Ctrl023",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB8021": {
+    "tissue": "skin",
+    "patient_id": "Ctrl021",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB8022": {
+    "tissue": "skin",
+    "patient_id": "Ctrl022",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB8023": {
+    "tissue": "skin",
+    "patient_id": "pt01031",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8024": {
+    "tissue": "skin",
+    "patient_id": "pt01031",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB8025": {
+    "tissue": "skin",
+    "patient_id": "pt01032",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8026": {
+    "tissue": "skin",
+    "patient_id": "pt01032",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8027": {
+    "tissue": "skin",
+    "patient_id": "Ctrl003",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB8028": {
+    "tissue": "skin",
+    "patient_id": "Ctrl003",
+    "condition": "HC",
+    "marker": "B2M+"
+  },
+  "AB8029": {
+    "tissue": "skin",
+    "patient_id": "pt03019",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8030": {
+    "tissue": "skin",
+    "patient_id": "pt01033",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8031": {
+    "tissue": "skin",
+    "patient_id": "pt01031",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8032": {
+    "tissue": "skin",
+    "patient_id": "pt01034",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8033": {
+    "tissue": "skin",
+    "patient_id": "pt01034",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8034": {
+    "tissue": "skin",
+    "patient_id": "pt01035",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8035": {
+    "tissue": "skin",
+    "patient_id": "pt01035",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8036": {
+    "tissue": "skin",
+    "patient_id": "pt01035",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8037": {
+    "tissue": "skin",
+    "patient_id": "pt02001",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8038": {
+    "tissue": "skin",
+    "patient_id": "Ctrl023",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB8039": {
+    "tissue": "skin",
+    "patient_id": "Ctrl022",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB8040": {
+    "tissue": "blood",
+    "patient_id": "Ctrl022",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB8041": {
+    "tissue": "blood",
+    "patient_id": "pt01024",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB8042": {
+    "tissue": "blood",
+    "patient_id": "pt01033",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB8043": {
+    "tissue": "skin",
+    "patient_id": "pt01032",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8044": {
+    "tissue": "skin",
+    "patient_id": "pt01034",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8045": {
+    "tissue": "skin",
+    "patient_id": "pt01034",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB8046": {
+    "tissue": "skin",
+    "patient_id": "pt01035",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB8047": {
+    "tissue": "skin",
+    "patient_id": "pt02001",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8048": {
+    "tissue": "skin",
+    "patient_id": "pt02001",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB8049": {
+    "tissue": "skin",
+    "patient_id": "Ctrl021",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB8050": {
+    "tissue": "skin",
+    "patient_id": "pt03019",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB8051": {
+    "tissue": "skin",
+    "patient_id": "Ctrl023",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB8052": {
+    "tissue": "skin",
+    "patient_id": "Ctrl022",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB8053": {
+    "tissue": "blood",
+    "patient_id": "pt02001",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB8054": {
+    "tissue": "blood",
+    "patient_id": "pt01035",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB8312": {
+    "tissue": "skin",
+    "patient_id": "pt03013",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8313": {
+    "tissue": "blood",
+    "patient_id": "pt03013",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB8314": {
+    "tissue": "skin",
+    "patient_id": "pt01037",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8315": {
+    "tissue": "skin",
+    "patient_id": "Ctrl009",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB8316": {
+    "tissue": "blood",
+    "patient_id": "pt03014",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB8317": {
+    "tissue": "blood",
+    "patient_id": "Ctrl019",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB8318": {
+    "tissue": "blood",
+    "patient_id": "pt02001",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB8319": {
+    "tissue": "skin",
+    "patient_id": "pt03013",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8320": {
+    "tissue": "skin",
+    "patient_id": "pt01036",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8321": {
+    "tissue": "skin",
+    "patient_id": "pt01036",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB8322": {
+    "tissue": "skin",
+    "patient_id": "pt01036",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8323": {
+    "tissue": "skin",
+    "patient_id": "pt01037",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8324": {
+    "tissue": "skin",
+    "patient_id": "Ctrl009",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB8325": {
+    "tissue": "blood",
+    "patient_id": "pt01031",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB8326": {
+    "tissue": "blood",
+    "patient_id": "pt01031",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB8327": {
+    "tissue": "blood",
+    "patient_id": "pt01034",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB8328": {
+    "tissue": "blood",
+    "patient_id": "pt03014",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB8329": {
+    "tissue": "blood",
+    "patient_id": "pt01036",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB8330": {
+    "tissue": "skin",
+    "patient_id": "pt01037",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB8334": {
+    "tissue": "blood",
+    "patient_id": "pt01034",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB8446": {
+    "tissue": "skin",
+    "patient_id": "pt03020",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8447": {
+    "tissue": "skin",
+    "patient_id": "pt03020",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8448": {
+    "tissue": "skin",
+    "patient_id": "pt03020",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8449": {
+    "tissue": "skin",
+    "patient_id": "pt03020",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8450": {
+    "tissue": "skin",
+    "patient_id": "pt03021",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8451": {
+    "tissue": "skin",
+    "patient_id": "pt03021",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8452": {
+    "tissue": "blood",
+    "patient_id": "pt01031",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB8453": {
+    "tissue": "skin",
+    "patient_id": "pt02011",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8454": {
+    "tissue": "skin",
+    "patient_id": "pt02011",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8455": {
+    "tissue": "skin",
+    "patient_id": "pt02011",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB8456": {
+    "tissue": "blood",
+    "patient_id": "pt02011",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB8457": {
+    "tissue": "blood",
+    "patient_id": "pt02011",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB8458": {
+    "tissue": "blood",
+    "patient_id": "pt02011",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB8459": {
+    "tissue": "skin",
+    "patient_id": "Ctrl024",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB8464": {
+    "tissue": "blood",
+    "patient_id": "pt01032",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB8465": {
+    "tissue": "blood",
+    "patient_id": "pt01037",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB8466": {
+    "tissue": "blood",
+    "patient_id": "Ctrl019",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB8467": {
+    "tissue": "blood",
+    "patient_id": "Ctrl025",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB8468": {
+    "tissue": "skin",
+    "patient_id": "pt03022",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8469": {
+    "tissue": "skin",
+    "patient_id": "pt03022",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8470": {
+    "tissue": "blood",
+    "patient_id": "pt03022",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB8471": {
+    "tissue": "blood",
+    "patient_id": "pt03022",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB8472": {
+    "tissue": "blood",
+    "patient_id": "pt01016",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB8473": {
+    "tissue": "blood",
+    "patient_id": "pt01016",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB8474": {
+    "tissue": "blood",
+    "patient_id": "pt03016",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB8475": {
+    "tissue": "blood",
+    "patient_id": "pt02003",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB8476": {
+    "tissue": "blood",
+    "patient_id": "pt03022",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB8477": {
+    "tissue": "blood",
+    "patient_id": "pt03023",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB8478": {
+    "tissue": "blood",
+    "patient_id": "pt01037",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB8479": {
+    "tissue": "blood",
+    "patient_id": "Ctrl019",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB8480": {
+    "tissue": "blood",
+    "patient_id": "Ctrl024",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB8481": {
+    "tissue": "skin",
+    "patient_id": "Ctrl025",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB8482": {
+    "tissue": "blood",
+    "patient_id": "pt03013",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB8483": {
+    "tissue": "skin",
+    "patient_id": "pt03023",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB8484": {
+    "tissue": "blood",
+    "patient_id": "Ctrl024",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB8485": {
+    "tissue": "blood",
+    "patient_id": "pt02001",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB8486": {
+    "tissue": "blood",
+    "patient_id": "pt03023",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB8487": {
+    "tissue": "skin",
+    "patient_id": "Ctrl024",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB8488": {
+    "tissue": "skin",
+    "patient_id": "Ctrl025",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB8489": {
+    "tissue": "blood",
+    "patient_id": "pt03013",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB8490": {
+    "tissue": "blood",
+    "patient_id": "Ctrl023",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB8491": {
+    "tissue": "blood",
+    "patient_id": "pt01036",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB8492": {
+    "tissue": "skin",
+    "patient_id": "pt03023",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8493": {
+    "tissue": "blood",
+    "patient_id": "pt01033",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB8494": {
+    "tissue": "blood",
+    "patient_id": "Ctrl023",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB8495": {
+    "tissue": "skin",
+    "patient_id": "Ctrl025",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB8496": {
+    "tissue": "skin",
+    "patient_id": "Ctrl024",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB8497": {
+    "tissue": "skin",
+    "patient_id": "Ctrl024",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB8667": {
+    "tissue": "skin",
+    "patient_id": "pt01014",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8668": {
+    "tissue": "skin",
+    "patient_id": "pt01038",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8669": {
+    "tissue": "skin",
+    "patient_id": "pt01038",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8670": {
+    "tissue": "skin",
+    "patient_id": "pt01038",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8671": {
+    "tissue": "skin",
+    "patient_id": "pt01038",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB8672": {
+    "tissue": "skin",
+    "patient_id": "Ctrl026",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB8673": {
+    "tissue": "skin",
+    "patient_id": "Ctrl027",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB8674": {
+    "tissue": "skin",
+    "patient_id": "pt03006",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8675": {
+    "tissue": "skin",
+    "patient_id": "pt03006",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8676": {
+    "tissue": "skin",
+    "patient_id": "pt01038",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8677": {
+    "tissue": "skin",
+    "patient_id": "pt03006",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8678": {
+    "tissue": "skin",
+    "patient_id": "Ctrl026",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB8679": {
+    "tissue": "skin",
+    "patient_id": "pt01014",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8680": {
+    "tissue": "skin",
+    "patient_id": "Ctrl027",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB8681": {
+    "tissue": "skin",
+    "patient_id": "pt03006",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB8682": {
+    "tissue": "blood",
+    "patient_id": "pt03006",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB8762": {
+    "tissue": "skin",
+    "patient_id": "Ctrl028",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB8763": {
+    "tissue": "skin",
+    "patient_id": "Ctrl028",
+    "condition": "HC",
+    "marker": "CD90+LGR5+"
+  },
+  "AB8764": {
+    "tissue": "skin",
+    "patient_id": "pt03026",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8765": {
+    "tissue": "skin",
+    "patient_id": "Ctrl029",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB8766": {
+    "tissue": "skin",
+    "patient_id": "pt03024",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8767": {
+    "tissue": "skin",
+    "patient_id": "pt03025",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8768": {
+    "tissue": "skin",
+    "patient_id": "pt03025",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8769": {
+    "tissue": "skin",
+    "patient_id": "Ctrl030",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB8770": {
+    "tissue": "skin",
+    "patient_id": "Ctrl030",
+    "condition": "HC",
+    "marker": "CD90+LGR5+"
+  },
+  "AB8771": {
+    "tissue": "skin",
+    "patient_id": "pt03024",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8772": {
+    "tissue": "skin",
+    "patient_id": "Ctrl029",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB8773": {
+    "tissue": "skin",
+    "patient_id": "Ctrl029",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB8774": {
+    "tissue": "skin",
+    "patient_id": "Ctrl031",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB8775": {
+    "tissue": "skin",
+    "patient_id": "pt03024",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB8776": {
+    "tissue": "skin",
+    "patient_id": "pt01033",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8778": {
+    "tissue": "skin",
+    "patient_id": "Ctrl030",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB8779": {
+    "tissue": "skin",
+    "patient_id": "pt03025",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8780": {
+    "tissue": "skin",
+    "patient_id": "Ctrl031",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB8781": {
+    "tissue": "skin",
+    "patient_id": "pt03026",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8782": {
+    "tissue": "skin",
+    "patient_id": "pt03024",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8783": {
+    "tissue": "skin",
+    "patient_id": "pt01014",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB8784": {
+    "tissue": "skin",
+    "patient_id": "pt03026",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB8785": {
+    "tissue": "skin",
+    "patient_id": "pt03025",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB8909": {
+    "tissue": "skin",
+    "patient_id": "Ctrl003",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB8910": {
+    "tissue": "skin",
+    "patient_id": "Ctrl003",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB8911": {
+    "tissue": "skin",
+    "patient_id": "pt03027",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8912": {
+    "tissue": "skin",
+    "patient_id": "Ctrl032",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB8913": {
+    "tissue": "skin",
+    "patient_id": "Ctrl033",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB8914": {
+    "tissue": "skin",
+    "patient_id": "pt02012",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8915": {
+    "tissue": "skin",
+    "patient_id": "pt03027",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8916": {
+    "tissue": "skin",
+    "patient_id": "pt03027",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8917": {
+    "tissue": "skin",
+    "patient_id": "pt03027",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB8918": {
+    "tissue": "skin",
+    "patient_id": "pt02012",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8919": {
+    "tissue": "skin",
+    "patient_id": "Ctrl034",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB8932": {
+    "tissue": "skin",
+    "patient_id": "pt01039",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8933": {
+    "tissue": "skin",
+    "patient_id": "pt01039",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8934": {
+    "tissue": "skin",
+    "patient_id": "pt01039",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB8935": {
+    "tissue": "skin",
+    "patient_id": "pt03026",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8936": {
+    "tissue": "skin",
+    "patient_id": "pt03006",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8937": {
+    "tissue": "skin",
+    "patient_id": "pt03024",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB8938": {
+    "tissue": "skin",
+    "patient_id": "Ctrl031",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB8939": {
+    "tissue": "blood",
+    "patient_id": "Ctrl031",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB8940": {
+    "tissue": "blood",
+    "patient_id": "pt03006",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB8941": {
+    "tissue": "blood",
+    "patient_id": "pt03025",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB8942": {
+    "tissue": "blood",
+    "patient_id": "Ctrl028",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB8943": {
+    "tissue": "blood",
+    "patient_id": "pt03026",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB8944": {
+    "tissue": "blood",
+    "patient_id": "pt01039",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB8945": {
+    "tissue": "blood",
+    "patient_id": "pt01039",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB9097": {
+    "tissue": "skin",
+    "patient_id": "Ctrl035",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB9098": {
+    "tissue": "skin",
+    "patient_id": "Ctrl036",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB9099": {
+    "tissue": "skin",
+    "patient_id": "pt01042",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB9100": {
+    "tissue": "skin",
+    "patient_id": "pt01042",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB9101": {
+    "tissue": "skin",
+    "patient_id": "pt03005",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB9102": {
+    "tissue": "skin",
+    "patient_id": "pt03005",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB9103": {
+    "tissue": "skin",
+    "patient_id": "pt01043",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB9104": {
+    "tissue": "blood",
+    "patient_id": "pt01043",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB9105": {
+    "tissue": "skin",
+    "patient_id": "Ctrl037",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB9106": {
+    "tissue": "skin",
+    "patient_id": "Ctrl037",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB9107": {
+    "tissue": "skin",
+    "patient_id": "Ctrl038",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB9108": {
+    "tissue": "skin",
+    "patient_id": "Ctrl035",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB9109": {
+    "tissue": "skin",
+    "patient_id": "pt01040",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB9110": {
+    "tissue": "skin",
+    "patient_id": "pt01042",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB9111": {
+    "tissue": "blood",
+    "patient_id": "pt01042",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB9112": {
+    "tissue": "blood",
+    "patient_id": "pt01042",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB9113": {
+    "tissue": "blood",
+    "patient_id": "pt03006",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB9114": {
+    "tissue": "skin",
+    "patient_id": "pt01043",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB9115": {
+    "tissue": "skin",
+    "patient_id": "pt01043",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB9116": {
+    "tissue": "skin",
+    "patient_id": "Ctrl037",
+    "condition": "HC",
+    "marker": "CD45+"
+  },
+  "AB9344": {
+    "tissue": "skin",
+    "patient_id": "pt01044",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB9345": {
+    "tissue": "skin",
+    "patient_id": "pt01045",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB9346": {
+    "tissue": "skin",
+    "patient_id": "pt01046",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB9347": {
+    "tissue": "skin",
+    "patient_id": "pt01046",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB9348": {
+    "tissue": "skin",
+    "patient_id": "Ctrl039",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB9349": {
+    "tissue": "skin",
+    "patient_id": "pt01044",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB9350": {
+    "tissue": "skin",
+    "patient_id": "pt01044",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB9351": {
+    "tissue": "skin",
+    "patient_id": "pt01045",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB9352": {
+    "tissue": "skin",
+    "patient_id": "Ctrl003",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB9353": {
+    "tissue": "skin",
+    "patient_id": "pt01046",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB9354": {
+    "tissue": "skin",
+    "patient_id": "pt01046",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB9355": {
+    "tissue": "skin",
+    "patient_id": "Ctrl042",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB9356": {
+    "tissue": "skin",
+    "patient_id": "Ctrl041",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB9357": {
+    "tissue": "skin",
+    "patient_id": "Ctrl040",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB9358": {
+    "tissue": "blood",
+    "patient_id": "pt01044",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB9359": {
+    "tissue": "blood",
+    "patient_id": "pt01044",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB9360": {
+    "tissue": "blood",
+    "patient_id": "pt01045",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB9361": {
+    "tissue": "blood",
+    "patient_id": "pt01045",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB9362": {
+    "tissue": "skin",
+    "patient_id": "Ctrl043",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB9363": {
+    "tissue": "blood",
+    "patient_id": "pt01046",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB9418": {
+    "tissue": "skin",
+    "patient_id": "pt03028",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB9419": {
+    "tissue": "skin",
+    "patient_id": "pt03028",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "AB9420": {
+    "tissue": "skin",
+    "patient_id": "Ctrl047",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB9421": {
+    "tissue": "skin",
+    "patient_id": "pt03028",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB9422": {
+    "tissue": "skin",
+    "patient_id": "Ctrl046",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB9423": {
+    "tissue": "skin",
+    "patient_id": "Ctrl050",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB9424": {
+    "tissue": "skin",
+    "patient_id": "Ctrl049",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB9428": {
+    "tissue": "skin",
+    "patient_id": "Ctrl048",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB9429": {
+    "tissue": "skin",
+    "patient_id": "Ctrl044",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB9430": {
+    "tissue": "skin",
+    "patient_id": "Ctrl003",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "AB9431": {
+    "tissue": "blood",
+    "patient_id": "pt03024",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB9432": {
+    "tissue": "blood",
+    "patient_id": "pt01046",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB9433": {
+    "tissue": "blood",
+    "patient_id": "pt01040",
+    "condition": "SSC",
+    "marker": "CD45+"
+  },
+  "AB9434": {
+    "tissue": "skin",
+    "patient_id": "Ctrl009",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "Patients_multiome_atac": {
+    "tissue": "skin",
+    "patient_id": "dSSc",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "Patients_multiome_mrna": {
+    "tissue": "skin",
+    "patient_id": "dSSc",
+    "condition": "SSC",
+    "marker": "CD90+"
+  },
+  "Healthy_multiome_atac": {
+    "tissue": "skin",
+    "patient_id": "Ctrl",
+    "condition": "HC",
+    "marker": "CD90+"
+  },
+  "Healthy_multiome_mrna": {
+    "tissue": "skin",
+    "patient_id": "Ctrl",
+    "condition": "HC",
+    "marker": "CD90+"
+  }
+}

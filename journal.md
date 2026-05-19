@@ -990,3 +990,38 @@ M3 volontairement bas : les cellules endothéliales en transition et les péricy
 
 Manuscrit mis à jour (`00017d5`) : abstract, Methods 2.6, Results 3.2, Discussion 4.4.
 
+
+### 17:10 — Intégration GSE195452 (Gur 2022, skin multiome) — Phase 4c
+
+**Objectif :** Fermer le gap M3 EndoMT en intégrant les péricytes et cellules vasculaires du skin multiome Gur 2022.
+
+**Dataset :** GSE195452 (Cell 2022, Gur et al.) — 727 batches/sample dense gene×cell matrices dans un RAW.tar de 879 MB ; métadonnées cellulaires séparées (147 836 cellules annotées). 98 donneurs SSC (préfixe pt01/pt02/pt03), 58 HC (préfixe Ctrl), 49 exclus (GVHD, morphée, hanche, sang). Tissus retenus : skin uniquement.
+
+**Implémentation (`build_overlay_multi.py`) :**
+- `process_gse195452()` : streaming de RAW.tar avec accumulation pseudobulk mémoire-bornée par (patient_id, condition, cell_type). Seuls les gènes MIM + taille de bibliothèque conservés en mémoire → pic mémoire < 5 GB.
+- sample_map.json construit depuis le fichier soft GSE195452 : 567 entrées skin, 349 SSC + 169 HC + 49 EXCLUDE.
+- `render_f2_multi()` étendu à 4 panels (skin/skin_gur/pbmc/lung).
+- Durée d'exécution : ~29 min (principalement streaming du tar + parse Python des matrices denses).
+
+**Types cellulaires Gur récupérés (>100 donor-batches) :**
+Fibro_LGR5, Fibro_MYOC2, Peri_TGFBI, Peri_RGS5, Fibro_PTGDS, Fibro_MYOC1, Fibro_POSTN, Vascular_RBP7, Fibro_COMP, Vascular_ACKR1, Fibro_COCH…
+
+**Résultats pipeline :**
+| Métrique | Phase 4b (3 datasets) | Phase 4c (4 datasets) | Δ |
+|---|---|---|---|
+| Datasets | 3 | 4 | +1 |
+| Donneurs | 43 | **197** | +154 |
+| DEG entries | 3 990 | **4 338** | +348 |
+| MINERVA overlays | 18 | **58** | +40 |
+| Couverture MIM | 75/196 = 38.3% | **98/196 = 50.0%** | **+11.7 pp** |
+| M1 IFN-I | 50% | **65%** | +15 pp |
+| M2 TGF-β | 34% | **53%** | +19 pp |
+| M3 EndoMT | 17% | **21%** | +4 pp |
+| M4 IL-6/B | 24% | **35%** | +11 pp |
+| SSc-Tier1 | 44% | **51%** | +7 pp |
+
+**+26 nouvelles espèces :** ADAR, EDNRA, EIF2AK2, IFIT3, IFNAR2, JAK1, KPNB1, LYN, NUMB, OSMR, PDGFRA, PECAM1, PMEPA1, PRDM1, PTGS2, PTPN12, ROCK1, ROCK2, S100A4, SMAD2, STAT3, STAT6, STRAP, TGFBR2, TNFSF13, XAF1
+
+**Note M3 :** gain modeste (+4 pp) mais biologiquement cohérent — PECAM1 (Vascular clusters), NUMB (Peri_RGS5/Peri_TGFBI, régulateur Notch), ROCK1/ROCK2 récupérés. NICD1 reste structurellement non-détectable (produit protéolytique). La prochaine priorité est un dataset digital ulcer / capillaroscopie.
+
+Manuscrit mis à jour : abstract, Methods 2.6, Results 3.2, Discussion 4.4–4.5. STATUS.md mis à jour Phase 4c.

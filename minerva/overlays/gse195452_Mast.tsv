@@ -1,0 +1,7 @@
+species_id	log2fc	color
+BLIMP1__nuc	0.299	#d7191c
+IFI27__mito	0.308	#d7191c
+IFITM1__cyto	0.783	#d7191c
+IFITM2__cyto	0.580	#d7191c
+IFITM3__cyto	0.466	#d7191c
+ISG15__cyto	0.300	#d7191c

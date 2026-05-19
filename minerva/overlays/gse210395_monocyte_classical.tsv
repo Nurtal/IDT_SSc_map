@@ -1,4 +1,5 @@
 species_id	log2fc	color
+COX_2__er	0.341	#d7191c
 EGR1__cyto	0.687	#d7191c
 FURIN__golgi	-0.211	#2c7fb8
 HIF1A__nuc	-0.602	#2c7fb8
