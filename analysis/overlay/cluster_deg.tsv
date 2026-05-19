@@ -1,71 +1,1059 @@
 cluster	hgnc	species_id	module	log2fc
-B_lymphocyte	BLIMP1	BLIMP1__nuc	ssc_tier1	1.026
-B_lymphocyte	CD19	CD19__pm	ssc_tier1	1.255
-B_lymphocyte	IRF4	IRF4__nuc	ssc_tier1	1.109
-B_lymphocyte	IRF7	IRF7__cyto	ssc_tier1	0.695
-B_lymphocyte	ISG15	ISG15__cyto	M1	0.625
-B_lymphocyte	MS4A1	MS4A1__pm	ssc_tier1	1.092
-T_lymphocyte	GATA3	GATA3__nuc	ssc_tier1	0.837
-T_lymphocyte	IFI44			1.062
-T_lymphocyte	IFIT1	IFIT1__cyto	M1	0.743
-T_lymphocyte	IFIT3	IFIT3__cyto	M1	0.721
-T_lymphocyte	IRF7	IRF7__cyto	ssc_tier1	0.987
-T_lymphocyte	ISG15	ISG15__cyto	M1	1.020
-T_lymphocyte	MX1			0.783
-T_lymphocyte	OAS1			1.025
-T_lymphocyte	STAT1	STAT1__cyto	M1	1.060
-T_lymphocyte	TBX21	TBX21__nuc	ssc_tier1	1.484
-endothelial_lymphatic	ANGPT2	ANGPT2__ext	ssc_tier1	0.827
-endothelial_lymphatic	CDH5	CDH5__pm	ssc_tier1	-0.677
-endothelial_lymphatic	HIF1A	HIF1A__nuc	M3	0.878
-endothelial_lymphatic	PECAM1			-0.536
-endothelial_lymphatic	VEGFA	VEGFA__ext	ssc_tier1	0.649
-endothelial_vascular	ANGPT2	ANGPT2__ext	ssc_tier1	0.521
-endothelial_vascular	CDH2	CDH2__pm	ssc_tier1	0.622
-endothelial_vascular	CDH5	CDH5__pm	ssc_tier1	-0.525
-endothelial_vascular	EDN1	EDN1__ext	ssc_tier1	0.840
-endothelial_vascular	FAP	FAP__pm	ssc_tier1	0.748
-endothelial_vascular	FSP1	FSP1__pm	ssc_tier1	0.671
-endothelial_vascular	HIF1A	HIF1A__nuc	M3	1.042
-endothelial_vascular	PECAM1			-0.567
-endothelial_vascular	SNAI1	SNAI1__nuc	ssc_tier1	0.962
-endothelial_vascular	SNAI2	SNAI2__nuc	ssc_tier1	1.096
-endothelial_vascular	TEK	TEK__pm	ssc_tier1	-0.531
-endothelial_vascular	TWIST1	TWIST1__nuc	ssc_tier1	0.400
-endothelial_vascular	VEGFA	VEGFA__ext	ssc_tier1	0.994
-endothelial_vascular	VWF	VWF__pm	ssc_tier1	-0.944
-fibroblast_SFRP2_progenitor	COL1A1	COL1A1__ext	ssc_tier1	0.868
-fibroblast_SFRP2_progenitor	COL3A1	COL3A1__ext	ssc_tier1	0.526
-fibroblast_SFRP2_progenitor	DPP4			0.857
-fibroblast_SFRP2_progenitor	FN1	FN1__ecm	ssc_tier1	0.983
-fibroblast_SFRP2_progenitor	FOSL2	FOSL2__nuc	ssc_tier1	0.929
-fibroblast_SFRP2_progenitor	POSTN	POSTN__ecm	ssc_tier1	0.833
-fibroblast_SFRP2_progenitor	PRSS23			0.872
-fibroblast_SFRP2_progenitor	SFRP2			0.864
-fibroblast_SFRP2_progenitor	TBX2	TBX2__nuc	ssc_tier1	0.846
-fibroblast_SFRP2_progenitor	THBS1	THBS1__ecm	ssc_tier1	1.075
-fibroblast_other	COL1A1	COL1A1__ext	ssc_tier1	0.822
-fibroblast_other	FN1	FN1__ecm	ssc_tier1	1.023
-fibroblast_other	POSTN	POSTN__ecm	ssc_tier1	1.118
-macrophage_dermal	CXCL4	CXCL4__ext	M1	1.257
-macrophage_dermal	IFI27	IFI27__mito	M1	0.908
-macrophage_dermal	IFI44			0.767
-macrophage_dermal	IFIT2	IFIT2__cyto	M1	1.081
-macrophage_dermal	IL6	IL6__ext	M4	0.821
-macrophage_dermal	IRF7	IRF7__cyto	ssc_tier1	0.876
-macrophage_dermal	ISG15	ISG15__cyto	M1	0.544
-macrophage_dermal	MX1			1.138
-macrophage_dermal	OAS1			0.539
-macrophage_dermal	OAS2			0.963
-myofibroblast_FAP_CTHRC1	ACTA2	ACTA2__cyto	ssc_tier1	0.958
-myofibroblast_FAP_CTHRC1	COL1A1	COL1A1__ext	ssc_tier1	0.715
-myofibroblast_FAP_CTHRC1	COL3A1	COL3A1__ext	ssc_tier1	0.646
-myofibroblast_FAP_CTHRC1	COL5A1	COL5A1__ext	ssc_tier1	0.962
-myofibroblast_FAP_CTHRC1	COMP	COMP__ecm	ssc_tier1	0.928
-myofibroblast_FAP_CTHRC1	CTGF	CTGF__ext	M2	1.064
-myofibroblast_FAP_CTHRC1	FAP	FAP__pm	ssc_tier1	1.191
-myofibroblast_FAP_CTHRC1	FN1	FN1__ecm	ssc_tier1	0.537
-myofibroblast_FAP_CTHRC1	LOX	LOX__ecm	ssc_tier1	1.228
-myofibroblast_FAP_CTHRC1	LOXL2	LOXL2__ecm	ssc_tier1	0.910
-myofibroblast_FAP_CTHRC1	POSTN	POSTN__ecm	ssc_tier1	1.033
-myofibroblast_FAP_CTHRC1	TNC	TNC__ecm	ssc_tier1	0.873
+T_lymphocyte	AC004585.1			0.229
+T_lymphocyte	ACTB			0.639
+T_lymphocyte	ARF5			0.220
+T_lymphocyte	ARID5A			0.236
+T_lymphocyte	ATP5F1B			0.207
+T_lymphocyte	ATP5MD			0.287
+T_lymphocyte	ATP5MPL			0.392
+T_lymphocyte	BRD2			0.272
+T_lymphocyte	CCL20			0.411
+T_lymphocyte	CD4			0.206
+T_lymphocyte	CD7			0.288
+T_lymphocyte	CD74			0.333
+T_lymphocyte	CDKN2D			0.214
+T_lymphocyte	CFL1			0.327
+T_lymphocyte	CLK1			0.209
+T_lymphocyte	CORO1B			0.291
+T_lymphocyte	COX8A			0.263
+T_lymphocyte	CREBRF			0.236
+T_lymphocyte	CSF2			-0.600
+T_lymphocyte	CXCR4			0.305
+T_lymphocyte	CXCR6			-0.433
+T_lymphocyte	DDX6			0.201
+T_lymphocyte	ELMSAN1			0.277
+T_lymphocyte	ENSA			0.220
+T_lymphocyte	FAM107B			0.273
+T_lymphocyte	GADD45A			0.241
+T_lymphocyte	GCH1			0.210
+T_lymphocyte	GNG2			0.280
+T_lymphocyte	GPR183			0.403
+T_lymphocyte	GZMA			0.498
+T_lymphocyte	HLA-DRA			0.300
+T_lymphocyte	HMGA1			0.245
+T_lymphocyte	HMGN2			0.253
+T_lymphocyte	HNRNPC			0.249
+T_lymphocyte	IFI6	IFI6__cyto	M1	0.276
+T_lymphocyte	IFITM1	IFITM1__cyto	M1	0.432
+T_lymphocyte	IFITM2	IFITM2__cyto	M1	0.336
+T_lymphocyte	IRF1			0.223
+T_lymphocyte	ISCA1			0.202
+T_lymphocyte	JAML			-0.314
+T_lymphocyte	LGALS3			-0.556
+T_lymphocyte	LSM5			0.272
+T_lymphocyte	LY6E			0.418
+T_lymphocyte	LYPD3			0.248
+T_lymphocyte	MDM4			0.217
+T_lymphocyte	METTL9			-0.217
+T_lymphocyte	MIF			0.365
+T_lymphocyte	MPZL3			0.246
+T_lymphocyte	MT2A			0.415
+T_lymphocyte	MYADM			0.236
+T_lymphocyte	MZT2B			0.239
+T_lymphocyte	NDUFA3			0.217
+T_lymphocyte	NEAT1			0.234
+T_lymphocyte	NFKBIZ			0.215
+T_lymphocyte	ORMDL3			0.263
+T_lymphocyte	PFDN5			-0.252
+T_lymphocyte	PFN1			0.488
+T_lymphocyte	PHLDA1			-0.327
+T_lymphocyte	PIM2			0.220
+T_lymphocyte	PMAIP1			0.327
+T_lymphocyte	PNRC1			0.202
+T_lymphocyte	POLR2K			0.240
+T_lymphocyte	POMP			0.431
+T_lymphocyte	PSMA1			0.221
+T_lymphocyte	PSME2			0.283
+T_lymphocyte	PTGER2			0.204
+T_lymphocyte	RAB27A			0.264
+T_lymphocyte	RAC2			0.278
+T_lymphocyte	RPS10			-0.263
+T_lymphocyte	RPS27L			0.243
+T_lymphocyte	SEC61G			0.304
+T_lymphocyte	SELENOK			-0.296
+T_lymphocyte	SELL			0.329
+T_lymphocyte	SFN			0.398
+T_lymphocyte	SIAH2			0.332
+T_lymphocyte	SLC25A4			-0.293
+T_lymphocyte	SNRPG			0.312
+T_lymphocyte	SPARC			0.236
+T_lymphocyte	SPTSSA			-0.237
+T_lymphocyte	SRSF10			0.207
+T_lymphocyte	SRSF2			0.307
+T_lymphocyte	SRSF3			0.347
+T_lymphocyte	SRSF6			0.214
+T_lymphocyte	STAT3	STAT3__cyto	crosstalk	0.207
+T_lymphocyte	STT3B			0.231
+T_lymphocyte	SUB1			0.244
+T_lymphocyte	TAGLN2			0.326
+T_lymphocyte	TLE3			0.202
+T_lymphocyte	TMC6			0.208
+T_lymphocyte	UBE2D3			0.242
+T_lymphocyte	UBE2N			0.236
+T_lymphocyte	UBE2S			0.203
+endothelial_vascular	AC023157.3			-0.218
+endothelial_vascular	ACTB			0.637
+endothelial_vascular	ACTG1			0.301
+endothelial_vascular	ACTN1			0.276
+endothelial_vascular	ADAMTS1			-0.298
+endothelial_vascular	ADM5			0.269
+endothelial_vascular	ADRB2			-0.230
+endothelial_vascular	AHNAK			-0.210
+endothelial_vascular	AL583785.1			0.244
+endothelial_vascular	ANGPT2	ANGPT2__ext	ssc_tier1	0.434
+endothelial_vascular	ANKRD12			-0.205
+endothelial_vascular	ANXA2			0.224
+endothelial_vascular	AP2S1			0.256
+endothelial_vascular	ARL4A			0.352
+endothelial_vascular	ARPC4			0.213
+endothelial_vascular	ATP1B3			0.252
+endothelial_vascular	ATP5F1E			0.356
+endothelial_vascular	ATP5MD			0.309
+endothelial_vascular	ATP5MF			0.262
+endothelial_vascular	ATP5MPL			0.338
+endothelial_vascular	BACE2			0.223
+endothelial_vascular	BANF1			0.215
+endothelial_vascular	BEX3			0.216
+endothelial_vascular	BTG1			-0.234
+endothelial_vascular	C1R			0.221
+endothelial_vascular	C1orf54			0.278
+endothelial_vascular	C2orf40			-0.267
+endothelial_vascular	C7			0.223
+endothelial_vascular	CA4			-0.255
+endothelial_vascular	CALR			0.207
+endothelial_vascular	CAVIN2			-0.246
+endothelial_vascular	CBR3			-0.305
+endothelial_vascular	CCL14			0.409
+endothelial_vascular	CCL2			-0.609
+endothelial_vascular	CD44			-0.253
+endothelial_vascular	CD9			-0.355
+endothelial_vascular	CDC42EP5			0.220
+endothelial_vascular	CDKN1A			-0.269
+endothelial_vascular	CFAP36			-0.249
+endothelial_vascular	CFL1			0.281
+endothelial_vascular	CIRBP			-0.349
+endothelial_vascular	CKS2			0.239
+endothelial_vascular	CLDN5			-0.213
+endothelial_vascular	CLEC2B			0.376
+endothelial_vascular	CNBP			-0.281
+endothelial_vascular	CNKSR3			0.225
+endothelial_vascular	COL15A1			0.455
+endothelial_vascular	COL4A1			0.516
+endothelial_vascular	COL4A2			0.539
+endothelial_vascular	COTL1			0.586
+endothelial_vascular	COX6C			0.218
+endothelial_vascular	COX7A2			0.221
+endothelial_vascular	COX7B			0.266
+endothelial_vascular	CRHBP			-0.202
+endothelial_vascular	CRIM1			0.246
+endothelial_vascular	CSRP2			-0.222
+endothelial_vascular	CST3			0.237
+endothelial_vascular	CSTB			0.205
+endothelial_vascular	CTHRC1			0.317
+endothelial_vascular	CTSB			0.214
+endothelial_vascular	CTTN			0.231
+endothelial_vascular	CX3CL1			-0.215
+endothelial_vascular	CYR61			0.272
+endothelial_vascular	CYTL1			0.296
+endothelial_vascular	CYTOR			0.212
+endothelial_vascular	DDIT4			-0.392
+endothelial_vascular	DEPP1			-0.316
+endothelial_vascular	DUSP1			-0.261
+endothelial_vascular	DUSP23			0.270
+endothelial_vascular	EDNRB	EDNRB__pm	ssc_tier1	-0.339
+endothelial_vascular	EHD2			0.237
+endothelial_vascular	ELOB			0.213
+endothelial_vascular	ENG			0.578
+endothelial_vascular	ENO1			0.280
+endothelial_vascular	EPB41L4A-AS1			-0.222
+endothelial_vascular	FAM241A			0.263
+endothelial_vascular	FAM84B			0.202
+endothelial_vascular	FKBP1A	FKBP1A__cyto	M2	0.471
+endothelial_vascular	FSCN1			0.204
+endothelial_vascular	FTL			-0.381
+endothelial_vascular	GADD45B			-0.543
+endothelial_vascular	GADD45G			-0.225
+endothelial_vascular	GAPDH			0.399
+endothelial_vascular	GIMAP1			-0.277
+endothelial_vascular	GIMAP6			-0.237
+endothelial_vascular	GIMAP7			-0.343
+endothelial_vascular	GLUL			-0.352
+endothelial_vascular	GNG5			0.206
+endothelial_vascular	GRN			0.222
+endothelial_vascular	HLA-DMA			-0.251
+endothelial_vascular	HLA-DPA1			-0.407
+endothelial_vascular	HLA-DPB1			-0.443
+endothelial_vascular	HLA-DQA1			-0.437
+endothelial_vascular	HLA-DRA			-0.350
+endothelial_vascular	HLA-E			-0.315
+endothelial_vascular	HSBP1			0.201
+endothelial_vascular	HSPG2			0.475
+endothelial_vascular	HTRA1			0.268
+endothelial_vascular	IFI6	IFI6__cyto	M1	0.338
+endothelial_vascular	IFITM2	IFITM2__cyto	M1	0.292
+endothelial_vascular	IFITM3	IFITM3__cyto	M1	0.401
+endothelial_vascular	IGFBP2			0.348
+endothelial_vascular	IGFBP4			0.348
+endothelial_vascular	INSIG1			-0.261
+endothelial_vascular	ISG15	ISG15__cyto	M1	0.313
+endothelial_vascular	JUNB			-0.352
+endothelial_vascular	KRT10			0.260
+endothelial_vascular	KRT14			0.389
+endothelial_vascular	LAMTOR2			0.202
+endothelial_vascular	LGALS1			0.339
+endothelial_vascular	LGALS3			-0.284
+endothelial_vascular	LGALS9			0.224
+endothelial_vascular	LMCD1			-0.237
+endothelial_vascular	LRG1			-0.221
+endothelial_vascular	LTBP4	LTBP4__ext	M2	-0.223
+endothelial_vascular	LY96			0.205
+endothelial_vascular	MALL			0.204
+endothelial_vascular	MARCKSL1			0.286
+endothelial_vascular	MGP			0.326
+endothelial_vascular	MIF			0.391
+endothelial_vascular	MPZL2			0.226
+endothelial_vascular	MRPL51			0.200
+endothelial_vascular	MT1A			-0.319
+endothelial_vascular	MYL12A			0.277
+endothelial_vascular	MYL12B			0.265
+endothelial_vascular	MYL6			0.227
+endothelial_vascular	MZT2B			0.209
+endothelial_vascular	NAA38			0.292
+endothelial_vascular	NACA			-0.222
+endothelial_vascular	NDUFA1			0.201
+endothelial_vascular	NDUFB2			0.280
+endothelial_vascular	NOP10			0.254
+endothelial_vascular	NOP53			-0.368
+endothelial_vascular	NPC2			0.357
+endothelial_vascular	NR4A1			-0.251
+endothelial_vascular	NRN1			-0.209
+endothelial_vascular	NTHL1			-0.207
+endothelial_vascular	NUCKS1			-0.219
+endothelial_vascular	OST4			0.386
+endothelial_vascular	P4HB			0.242
+endothelial_vascular	PDLIM1			0.282
+endothelial_vascular	PDLIM7			0.213
+endothelial_vascular	PFDN5			-0.209
+endothelial_vascular	PFN1			0.564
+endothelial_vascular	PHLDA1			-0.546
+endothelial_vascular	PIK3IP1			-0.214
+endothelial_vascular	PIM3			0.229
+endothelial_vascular	PKM			0.363
+endothelial_vascular	PLAT			-0.248
+endothelial_vascular	PLVAP			0.424
+endothelial_vascular	PNISR			-0.202
+endothelial_vascular	POLR2L			0.342
+endothelial_vascular	POMP			0.289
+endothelial_vascular	POSTN	POSTN__ecm	ssc_tier1	0.238
+endothelial_vascular	PPA1			-0.215
+endothelial_vascular	PPIA			0.273
+endothelial_vascular	PPIB			0.249
+endothelial_vascular	PRCP			0.403
+endothelial_vascular	PRSS23			0.448
+endothelial_vascular	PTMS			0.230
+endothelial_vascular	RAB11A			0.221
+endothelial_vascular	RAB13			0.227
+endothelial_vascular	RASD1			-0.279
+endothelial_vascular	RGS16			-0.420
+endothelial_vascular	RGS5			-0.454
+endothelial_vascular	RHOJ			0.204
+endothelial_vascular	RILPL2			-0.214
+endothelial_vascular	RPL28			0.301
+endothelial_vascular	RPL5			-0.217
+endothelial_vascular	RPL8			-0.232
+endothelial_vascular	RPS27L			0.263
+endothelial_vascular	S100A11			0.304
+endothelial_vascular	S100A4			-0.338
+endothelial_vascular	SEC61G			0.412
+endothelial_vascular	SEM1			0.239
+endothelial_vascular	SERF2			0.382
+endothelial_vascular	SERPINF1			0.269
+endothelial_vascular	SFN			0.324
+endothelial_vascular	SH3BGRL3			0.277
+endothelial_vascular	SHC1			0.209
+endothelial_vascular	SLC38A2			0.295
+endothelial_vascular	SLIRP			0.224
+endothelial_vascular	SNHG7			-0.260
+endothelial_vascular	SPARC			0.474
+endothelial_vascular	SUB1			0.249
+endothelial_vascular	TAF7			-0.324
+endothelial_vascular	TAGLN2			0.268
+endothelial_vascular	TBCA			0.219
+endothelial_vascular	THBD			-0.222
+endothelial_vascular	THBS1	THBS1__ecm	ssc_tier1	0.293
+endothelial_vascular	TIMP1			0.318
+endothelial_vascular	TIMP3			-0.573
+endothelial_vascular	TM4SF1			-0.369
+endothelial_vascular	TMA7			0.240
+endothelial_vascular	TMEM258			0.277
+endothelial_vascular	TMEM88			0.218
+endothelial_vascular	TMSB10			0.275
+endothelial_vascular	TNMD			-0.210
+endothelial_vascular	TPM3			0.217
+endothelial_vascular	TPM4			0.308
+endothelial_vascular	TSC22D1			-0.435
+endothelial_vascular	TUBB			0.203
+endothelial_vascular	TUBB6			0.224
+endothelial_vascular	TXNIP			-0.341
+endothelial_vascular	UACA			-0.258
+endothelial_vascular	UBL5			0.256
+endothelial_vascular	UBXN1			-0.230
+endothelial_vascular	UQCR11			0.268
+endothelial_vascular	VCAM1			0.301
+endothelial_vascular	VWA1			0.554
+endothelial_vascular	VWF	VWF__pm	ssc_tier1	0.376
+endothelial_vascular	ZBTB16			-0.242
+endothelial_vascular	ZNF385D			0.311
+fibroblast_other	A1BG			0.250
+fibroblast_other	AC068888.1			-0.259
+fibroblast_other	ACKR4			0.226
+fibroblast_other	ADAMTS2			0.208
+fibroblast_other	ADIRF			-0.425
+fibroblast_other	AEBP1			0.426
+fibroblast_other	AHNAK			-0.384
+fibroblast_other	ALDH1A1			-0.476
+fibroblast_other	ALDH2			-0.326
+fibroblast_other	ALDH3A2			-0.201
+fibroblast_other	ANGPTL1			-0.308
+fibroblast_other	ANGPTL2			0.205
+fibroblast_other	ANGPTL5			-0.399
+fibroblast_other	ANKRD12			-0.231
+fibroblast_other	ANTXR1			0.224
+fibroblast_other	ANXA1			-0.340
+fibroblast_other	APELA			0.242
+fibroblast_other	ARF4			0.384
+fibroblast_other	ARF5			0.240
+fibroblast_other	ASIP			-0.324
+fibroblast_other	ATOX1			0.214
+fibroblast_other	ATP5F1E			0.390
+fibroblast_other	ATP5MF			0.301
+fibroblast_other	ATP5MPL			0.295
+fibroblast_other	ATP6V0B			0.215
+fibroblast_other	BASP1			0.292
+fibroblast_other	BGN			0.705
+fibroblast_other	BICC1			0.250
+fibroblast_other	BRI3			0.295
+fibroblast_other	C12orf75			0.359
+fibroblast_other	C1QTNF6			0.273
+fibroblast_other	C1QTNF7			-0.240
+fibroblast_other	C1R			0.436
+fibroblast_other	C1S			0.245
+fibroblast_other	C2orf40			-0.323
+fibroblast_other	C3			0.425
+fibroblast_other	C4orf48			0.248
+fibroblast_other	CALD1			0.320
+fibroblast_other	CALR			0.208
+fibroblast_other	CALU			0.379
+fibroblast_other	CAPS			-0.255
+fibroblast_other	CARHSP1			0.229
+fibroblast_other	CAT			-0.293
+fibroblast_other	CAV1			-0.325
+fibroblast_other	CCDC146			-0.206
+fibroblast_other	CCL19			1.031
+fibroblast_other	CCNI			-0.213
+fibroblast_other	CD34			-0.258
+fibroblast_other	CD47			0.205
+fibroblast_other	CD55			-0.398
+fibroblast_other	CD63			0.219
+fibroblast_other	CD74			0.509
+fibroblast_other	CD9			-0.469
+fibroblast_other	CDH11			0.335
+fibroblast_other	CEBPB			0.271
+fibroblast_other	CERCAM			0.245
+fibroblast_other	CFD			-0.832
+fibroblast_other	CFH			-0.465
+fibroblast_other	CFL1			0.298
+fibroblast_other	CH25H			0.296
+fibroblast_other	CIRBP			-0.304
+fibroblast_other	CKB			-0.373
+fibroblast_other	CLEC2B			0.211
+fibroblast_other	CNBP			-0.276
+fibroblast_other	CNN2			0.283
+fibroblast_other	COL12A1			0.369
+fibroblast_other	COL15A1			0.266
+fibroblast_other	COL1A1	COL1A1__ext	ssc_tier1	0.772
+fibroblast_other	COL1A2	COL1A2__ext	ssc_tier1	0.462
+fibroblast_other	COL3A1	COL3A1__ext	ssc_tier1	0.476
+fibroblast_other	COL4A1			0.203
+fibroblast_other	COL5A1	COL5A1__ext	ssc_tier1	0.299
+fibroblast_other	COL5A2	COL5A2__ext	ssc_tier1	0.572
+fibroblast_other	COL6A1			0.350
+fibroblast_other	COL6A2			0.387
+fibroblast_other	COL6A3			0.755
+fibroblast_other	COL8A1			0.241
+fibroblast_other	COMP	COMP__ecm	ssc_tier1	0.942
+fibroblast_other	COPS8			0.310
+fibroblast_other	COX7B			0.278
+fibroblast_other	CPE			-0.339
+fibroblast_other	CPXM1			0.471
+fibroblast_other	CRYAB			-0.282
+fibroblast_other	CRYL1			-0.226
+fibroblast_other	CTGF	CTGF__ext	M2	0.456
+fibroblast_other	CTHRC1			0.745
+fibroblast_other	CTNNB1			0.261
+fibroblast_other	CTSA			0.258
+fibroblast_other	CTSB			0.601
+fibroblast_other	CTSC			0.663
+fibroblast_other	CTSD			0.260
+fibroblast_other	CTSF			-0.205
+fibroblast_other	CTSH			0.416
+fibroblast_other	CTSK			0.297
+fibroblast_other	CTSZ			0.227
+fibroblast_other	CYBA			0.213
+fibroblast_other	CYTOR			0.419
+fibroblast_other	DCN			-0.354
+fibroblast_other	DDAH2			-0.279
+fibroblast_other	DDIT4			-0.256
+fibroblast_other	DEPP1			0.324
+fibroblast_other	DIO2			0.482
+fibroblast_other	EFEMP1			0.472
+fibroblast_other	EFEMP2			0.300
+fibroblast_other	EIF5			-0.225
+fibroblast_other	ELANE			-0.315
+fibroblast_other	ELN			0.474
+fibroblast_other	EMILIN1			0.254
+fibroblast_other	ENHO			-0.264
+fibroblast_other	EPB41L4A-AS1			-0.332
+fibroblast_other	F13A1			-0.247
+fibroblast_other	FAM180B			-0.266
+fibroblast_other	FBLN1			-0.461
+fibroblast_other	FDCSP			0.231
+fibroblast_other	FGFBP2			-0.446
+fibroblast_other	FGL2			-0.260
+fibroblast_other	FIBIN			-0.222
+fibroblast_other	FILIP1L			-0.249
+fibroblast_other	FKBP10			0.275
+fibroblast_other	FKBP11			0.342
+fibroblast_other	FKBP1A	FKBP1A__cyto	M2	0.267
+fibroblast_other	FMOD			0.201
+fibroblast_other	FSTL1			0.341
+fibroblast_other	GAPDH			0.237
+fibroblast_other	GJA1			0.400
+fibroblast_other	GREM1			0.234
+fibroblast_other	GRN			0.245
+fibroblast_other	GSN			-1.011
+fibroblast_other	GSTM3			-0.312
+fibroblast_other	GSTM5			-0.243
+fibroblast_other	HEXA			0.215
+fibroblast_other	HLA-DRB1			0.287
+fibroblast_other	HPGD			-0.254
+fibroblast_other	HTRA1			0.508
+fibroblast_other	ID1			-0.314
+fibroblast_other	IFI16			0.225
+fibroblast_other	IFI27	IFI27__mito	M1	0.417
+fibroblast_other	IFI6	IFI6__cyto	M1	0.437
+fibroblast_other	IFITM2	IFITM2__cyto	M1	0.279
+fibroblast_other	IFITM3	IFITM3__cyto	M1	0.515
+fibroblast_other	IGFBP4			0.603
+fibroblast_other	IGFBP5			-0.819
+fibroblast_other	IGFBP6			-0.950
+fibroblast_other	IL1R1			0.209
+fibroblast_other	IL32			0.374
+fibroblast_other	IRF1			-0.210
+fibroblast_other	ITGBL1			0.218
+fibroblast_other	ITM2A			-0.347
+fibroblast_other	KDELR2			0.312
+fibroblast_other	KDELR3			0.203
+fibroblast_other	LDHA			0.246
+fibroblast_other	LEPR			-0.258
+fibroblast_other	LGALS3			-0.358
+fibroblast_other	LGALS3BP			0.253
+fibroblast_other	LMCD1			0.227
+fibroblast_other	LOX	LOX__ecm	ssc_tier1	0.254
+fibroblast_other	LOXL1			0.221
+fibroblast_other	LRRC15			0.205
+fibroblast_other	LTBP4	LTBP4__ext	M2	-0.682
+fibroblast_other	LUM			0.516
+fibroblast_other	LY6E			0.383
+fibroblast_other	MAGED1			0.212
+fibroblast_other	MARCKS			0.305
+fibroblast_other	MATN2			-0.321
+fibroblast_other	MDK			0.478
+fibroblast_other	MFAP2			0.244
+fibroblast_other	MIF			0.387
+fibroblast_other	MIR4435-2HG			0.345
+fibroblast_other	MMP11			0.597
+fibroblast_other	MMP14			0.318
+fibroblast_other	MMP23B			0.216
+fibroblast_other	MT-CYB			-0.350
+fibroblast_other	MT-ND1			-0.374
+fibroblast_other	MT2A			0.587
+fibroblast_other	MXRA8			0.317
+fibroblast_other	MYL12A			0.231
+fibroblast_other	MYOC			-0.345
+fibroblast_other	NACA			-0.312
+fibroblast_other	NDRG2			-0.221
+fibroblast_other	NDUFA3			0.232
+fibroblast_other	NELL2			-0.205
+fibroblast_other	NFKBIA			-0.349
+fibroblast_other	NME1			0.207
+fibroblast_other	NME4			0.207
+fibroblast_other	NNMT			0.616
+fibroblast_other	NOP53			-0.359
+fibroblast_other	NOVA1			-0.321
+fibroblast_other	NR4A1			-0.295
+fibroblast_other	NUCB1			0.264
+fibroblast_other	OLFM2			0.235
+fibroblast_other	OSR2			-0.450
+fibroblast_other	OST4			0.405
+fibroblast_other	OSTC			0.297
+fibroblast_other	P4HB			0.261
+fibroblast_other	PCOLCE			0.560
+fibroblast_other	PCOLCE2			-0.405
+fibroblast_other	PDGFRL			-0.363
+fibroblast_other	PDK4			-0.368
+fibroblast_other	PDPN			0.204
+fibroblast_other	PEBP1			-0.226
+fibroblast_other	PFN1			0.499
+fibroblast_other	PIK3R1			-0.289
+fibroblast_other	PLA2G2A			0.762
+fibroblast_other	PLPP3			-0.415
+fibroblast_other	POLR2L			0.465
+fibroblast_other	POMP			0.270
+fibroblast_other	POSTN	POSTN__ecm	ssc_tier1	0.902
+fibroblast_other	PPIB			0.333
+fibroblast_other	PPIC			0.249
+fibroblast_other	PPL			-0.231
+fibroblast_other	PRELP			0.323
+fibroblast_other	PRSS23			1.109
+fibroblast_other	PTK7			0.230
+fibroblast_other	PYCR1			0.266
+fibroblast_other	QPCT			-0.287
+fibroblast_other	RAB13			0.258
+fibroblast_other	RACK1			-0.224
+fibroblast_other	RARRES2			0.286
+fibroblast_other	RCN3			0.308
+fibroblast_other	RND3			0.401
+fibroblast_other	RPL11			-0.210
+fibroblast_other	RPL28			0.268
+fibroblast_other	RPL5			-0.245
+fibroblast_other	RPL6			-0.238
+fibroblast_other	RPL7			-0.221
+fibroblast_other	RPS28			0.319
+fibroblast_other	RPS3A			-0.226
+fibroblast_other	RUNX1			0.281
+fibroblast_other	S100A11			0.319
+fibroblast_other	S100A16			0.214
+fibroblast_other	SAA1			0.750
+fibroblast_other	SAR1A			0.262
+fibroblast_other	SCARA5			-0.335
+fibroblast_other	SEC61G			0.455
+fibroblast_other	SELENOP			-0.326
+fibroblast_other	SERF2			0.431
+fibroblast_other	SERPINE2			0.825
+fibroblast_other	SERPINF1			0.401
+fibroblast_other	SERPINH1			0.435
+fibroblast_other	SGCG			-0.223
+fibroblast_other	SLPI			-0.499
+fibroblast_other	SMDT1			-0.224
+fibroblast_other	SMOC2			0.535
+fibroblast_other	SNRPG			0.215
+fibroblast_other	SOD2			0.376
+fibroblast_other	SPARC			0.764
+fibroblast_other	SPATS2L			0.238
+fibroblast_other	SPON1			0.226
+fibroblast_other	SPTBN1			-0.209
+fibroblast_other	SRPX			0.295
+fibroblast_other	SSPN			-0.324
+fibroblast_other	SSR4			0.215
+fibroblast_other	STAT1	STAT1__cyto	M1	0.238
+fibroblast_other	STC2			0.548
+fibroblast_other	STEAP1			0.352
+fibroblast_other	STMN2			0.551
+fibroblast_other	SUGCT			0.210
+fibroblast_other	SVIL			-0.271
+fibroblast_other	SYTL2			0.204
+fibroblast_other	TAF7			-0.213
+fibroblast_other	THBS1	THBS1__ecm	ssc_tier1	0.565
+fibroblast_other	THY1			0.857
+fibroblast_other	TIMM8B			0.206
+fibroblast_other	TIMP1			0.299
+fibroblast_other	TIMP3			-0.402
+fibroblast_other	TMEM176A			0.393
+fibroblast_other	TMEM176B			0.338
+fibroblast_other	TMEM45A			0.204
+fibroblast_other	TMSB10			0.286
+fibroblast_other	TNC	TNC__ecm	ssc_tier1	0.643
+fibroblast_other	TNFRSF12A			0.353
+fibroblast_other	TNFRSF1A			0.217
+fibroblast_other	TNXB			-0.241
+fibroblast_other	TPM2			0.213
+fibroblast_other	TPM4			0.270
+fibroblast_other	TPPP3			-0.470
+fibroblast_other	TSC22D1			-0.330
+fibroblast_other	TSC22D3			-0.431
+fibroblast_other	TUBA1A			-0.317
+fibroblast_other	TYMP			0.202
+fibroblast_other	UBL5			0.207
+fibroblast_other	UQCRQ			0.256
+fibroblast_other	VMP1			0.212
+fibroblast_other	VSIR			-0.201
+fibroblast_other	WIF1			-1.017
+fibroblast_other	ZBTB16			-0.311
+keratinocyte	ABHD5			0.216
+keratinocyte	ACTB			0.434
+keratinocyte	AMD1			0.265
+keratinocyte	APOE			-0.368
+keratinocyte	AREG			0.545
+keratinocyte	ARL4D			0.227
+keratinocyte	ATP5F1C			-0.205
+keratinocyte	ATP5MC3			-0.201
+keratinocyte	BBC3			0.216
+keratinocyte	BRD2			0.260
+keratinocyte	CA6			-0.590
+keratinocyte	CALR			0.219
+keratinocyte	CDKN1A			0.344
+keratinocyte	CHCHD10			-0.344
+keratinocyte	CIRBP			-0.265
+keratinocyte	CKS2			0.311
+keratinocyte	CLK1			0.200
+keratinocyte	CYSTM1			-0.268
+keratinocyte	DBI			-0.226
+keratinocyte	DCD			-1.346
+keratinocyte	DNAJB1			0.311
+keratinocyte	EMP1			0.318
+keratinocyte	EPHA2			0.222
+keratinocyte	ETFB			-0.265
+keratinocyte	FABP5			0.381
+keratinocyte	FOSB			0.335
+keratinocyte	FRZB			-0.271
+keratinocyte	FSCN1			0.265
+keratinocyte	GJA1			0.278
+keratinocyte	GPX4			-0.312
+keratinocyte	HEXIM1			0.279
+keratinocyte	HLA-A			0.330
+keratinocyte	HLA-B			0.300
+keratinocyte	HNRNPAB			0.212
+keratinocyte	HSPA2			0.241
+keratinocyte	HSPA5			0.342
+keratinocyte	HSPB1			0.254
+keratinocyte	IER2			0.328
+keratinocyte	IFITM2	IFITM2__cyto	M1	0.231
+keratinocyte	IFITM3	IFITM3__cyto	M1	0.336
+keratinocyte	IL1R2			-0.235
+keratinocyte	ISCU			-0.229
+keratinocyte	KLF10			0.225
+keratinocyte	KLF4			0.303
+keratinocyte	KLF5			0.358
+keratinocyte	KPNA2			0.258
+keratinocyte	KRT15			-0.370
+keratinocyte	LDHB			-0.226
+keratinocyte	LMNA			0.207
+keratinocyte	MCL1			0.332
+keratinocyte	MPZL2			0.235
+keratinocyte	MT-ND1			-0.243
+keratinocyte	MYC	MYC__nuc	M3	0.298
+keratinocyte	NACA			-0.244
+keratinocyte	NDUFA4			-0.239
+keratinocyte	NXF1			0.233
+keratinocyte	PA2G4			0.202
+keratinocyte	PARK7			-0.226
+keratinocyte	PDLIM4			-0.226
+keratinocyte	PEBP1			-0.293
+keratinocyte	PFN1			0.307
+keratinocyte	PIP			-1.100
+keratinocyte	PLK2			0.335
+keratinocyte	PLP1			-0.284
+keratinocyte	PPP1R14C			0.224
+keratinocyte	PPP1R15A			0.272
+keratinocyte	PRSS22			0.204
+keratinocyte	RHOB			0.294
+keratinocyte	RNF144B			0.216
+keratinocyte	RPL41			0.220
+keratinocyte	RPS10			-0.328
+keratinocyte	S100A11			0.225
+keratinocyte	SCGB1B2P			-0.933
+keratinocyte	SEC61G			0.234
+keratinocyte	SERPINB5			0.363
+keratinocyte	SERTAD1			0.268
+keratinocyte	SFN			0.797
+keratinocyte	SGK1			0.366
+keratinocyte	SLC25A3			-0.272
+keratinocyte	SLC25A4			-0.203
+keratinocyte	SOX15			0.358
+keratinocyte	TAGLN2			0.268
+keratinocyte	TENT5B			0.239
+keratinocyte	TRIM29			0.306
+keratinocyte	UBC			0.259
+keratinocyte	UBR4			0.233
+keratinocyte	YBX3			0.227
+keratinocyte	YWHAG			0.215
+keratinocyte	YWHAZ			0.309
+keratinocyte	ZFP36L1			0.428
+macrophage_dermal	ACTB			0.680
+macrophage_dermal	ANXA6			0.345
+macrophage_dermal	AREG			0.484
+macrophage_dermal	ARHGDIB			0.270
+macrophage_dermal	ARPC4			0.300
+macrophage_dermal	ATP5MD			0.329
+macrophage_dermal	ATP5MPL			0.354
+macrophage_dermal	ATP6AP1			0.204
+macrophage_dermal	BST2	BST2__ext	M1	0.292
+macrophage_dermal	BTF3			-0.229
+macrophage_dermal	BTG1			-0.272
+macrophage_dermal	C15orf48			-0.278
+macrophage_dermal	C1QB			0.489
+macrophage_dermal	CCL20			0.700
+macrophage_dermal	CCR7			-0.522
+macrophage_dermal	CD52			0.335
+macrophage_dermal	CEBPD			0.366
+macrophage_dermal	CFL1			0.379
+macrophage_dermal	CORO1A			0.292
+macrophage_dermal	COX7B			0.293
+macrophage_dermal	COX7C			0.229
+macrophage_dermal	COX8A			0.259
+macrophage_dermal	CST7			0.283
+macrophage_dermal	CSTA			0.303
+macrophage_dermal	CTSD			0.437
+macrophage_dermal	DAZAP2			0.342
+macrophage_dermal	DYNC1H1			-0.241
+macrophage_dermal	EIF4EBP1			0.238
+macrophage_dermal	EPSTI1			0.210
+macrophage_dermal	FAM107B			0.208
+macrophage_dermal	FCER1G			0.379
+macrophage_dermal	FCGR1A			0.281
+macrophage_dermal	FCN1			0.365
+macrophage_dermal	GADD45G			-0.290
+macrophage_dermal	GAPDH			0.392
+macrophage_dermal	GLIPR2			0.201
+macrophage_dermal	GPSM3			0.265
+macrophage_dermal	GRN			0.235
+macrophage_dermal	GZMB			0.250
+macrophage_dermal	HLA-A			0.272
+macrophage_dermal	HLA-DPB1			-0.259
+macrophage_dermal	IFI27	IFI27__mito	M1	0.662
+macrophage_dermal	IFI6	IFI6__cyto	M1	0.418
+macrophage_dermal	IFITM2	IFITM2__cyto	M1	0.501
+macrophage_dermal	IFITM3	IFITM3__cyto	M1	0.814
+macrophage_dermal	IL7R			-0.292
+macrophage_dermal	IRF7	IRF7__cyto	ssc_tier1	0.240
+macrophage_dermal	ISG15	ISG15__cyto	M1	0.427
+macrophage_dermal	ISG20	ISG20__nuc	M1	-0.304
+macrophage_dermal	ITGB2			0.280
+macrophage_dermal	KRT17			0.273
+macrophage_dermal	LAMTOR2			0.238
+macrophage_dermal	LGALS2			-0.294
+macrophage_dermal	LGALS9			0.226
+macrophage_dermal	LSP1			0.261
+macrophage_dermal	LTB			0.347
+macrophage_dermal	LY96			0.342
+macrophage_dermal	LYZ			0.601
+macrophage_dermal	MAP3K8			0.231
+macrophage_dermal	MAP4K4			-0.272
+macrophage_dermal	MSR1			0.243
+macrophage_dermal	MT2A			0.361
+macrophage_dermal	MTRNR2L1			-0.428
+macrophage_dermal	MXD1			0.281
+macrophage_dermal	MYL6			0.218
+macrophage_dermal	NACA			-0.278
+macrophage_dermal	NEAT1			0.265
+macrophage_dermal	NFKBIZ			0.276
+macrophage_dermal	NOP53			-0.275
+macrophage_dermal	NRP2			-0.337
+macrophage_dermal	NUPR1			0.219
+macrophage_dermal	PFN1			0.439
+macrophage_dermal	PGAM1			0.260
+macrophage_dermal	PIM2			0.224
+macrophage_dermal	PKM			0.342
+macrophage_dermal	PLP2			0.204
+macrophage_dermal	PLTP			0.394
+macrophage_dermal	PPIF			-0.307
+macrophage_dermal	PTGS2			0.328
+macrophage_dermal	PTPN6	PTPN6__cyto	M1	0.225
+macrophage_dermal	RAB5C			0.244
+macrophage_dermal	RAC2			0.297
+macrophage_dermal	RHOA	RHOA__cyto	ssc_tier1	0.256
+macrophage_dermal	RPL10A			-0.275
+macrophage_dermal	RPL11			-0.220
+macrophage_dermal	RPL12			-0.215
+macrophage_dermal	RPL13			-0.281
+macrophage_dermal	RPL19			-0.247
+macrophage_dermal	RPL26			-0.216
+macrophage_dermal	RPL29			-0.238
+macrophage_dermal	RPL3			-0.352
+macrophage_dermal	RPL36A			-0.238
+macrophage_dermal	RPL4			-0.228
+macrophage_dermal	RPL5			-0.280
+macrophage_dermal	RPL6			-0.317
+macrophage_dermal	RPL7			-0.302
+macrophage_dermal	RPS10			-0.341
+macrophage_dermal	RPS18			-0.267
+macrophage_dermal	RPS3A			-0.307
+macrophage_dermal	RPS5			-0.232
+macrophage_dermal	RPS6			-0.309
+macrophage_dermal	S100A11			0.241
+macrophage_dermal	S100A8			0.670
+macrophage_dermal	S100A9			0.784
+macrophage_dermal	SDS			-0.640
+macrophage_dermal	SEPT9			0.214
+macrophage_dermal	SERF2			0.291
+macrophage_dermal	SERPINB2			0.389
+macrophage_dermal	SH3BGRL3			0.412
+macrophage_dermal	SH3BP5			-0.222
+macrophage_dermal	SIAH2			0.259
+macrophage_dermal	SNN			-0.247
+macrophage_dermal	TAPBP			0.217
+macrophage_dermal	TGFB1	TGFB1__ext	M2	0.225
+macrophage_dermal	THBS1	THBS1__ecm	ssc_tier1	0.354
+macrophage_dermal	TMSB10			0.332
+macrophage_dermal	TNFAIP3			0.295
+macrophage_dermal	TNFSF13B	TNFSF13B__ext	ssc_tier1	0.202
+macrophage_dermal	TPI1			0.215
+macrophage_dermal	TPM3			0.239
+macrophage_dermal	TPM4			0.237
+macrophage_dermal	TUBA4A			0.208
+macrophage_dermal	TUBB			0.283
+macrophage_dermal	TYMP			0.297
+macrophage_dermal	TYROBP			0.218
+macrophage_dermal	UBC			0.225
+macrophage_dermal	UBE2J1			0.214
+macrophage_dermal	UBL5			0.233
+macrophage_dermal	UCP2			0.255
+macrophage_dermal	VMP1			0.294
+macrophage_dermal	YPEL5			0.259
+myofibroblast_FAP_CTHRC1	A2M			0.546
+myofibroblast_FAP_CTHRC1	AC020916.1			0.248
+myofibroblast_FAP_CTHRC1	ACTB			0.517
+myofibroblast_FAP_CTHRC1	ACTG1			0.429
+myofibroblast_FAP_CTHRC1	ADAMTS1			-0.247
+myofibroblast_FAP_CTHRC1	ALDH2			-0.332
+myofibroblast_FAP_CTHRC1	ALG13			-0.281
+myofibroblast_FAP_CTHRC1	ANKRD10			0.221
+myofibroblast_FAP_CTHRC1	ANKRD12			-0.204
+myofibroblast_FAP_CTHRC1	ANXA2			0.348
+myofibroblast_FAP_CTHRC1	APOE			0.826
+myofibroblast_FAP_CTHRC1	APOLD1			-0.262
+myofibroblast_FAP_CTHRC1	ARHGAP15			0.259
+myofibroblast_FAP_CTHRC1	ARHGDIA			0.210
+myofibroblast_FAP_CTHRC1	ARHGDIB			0.343
+myofibroblast_FAP_CTHRC1	ASPN			0.214
+myofibroblast_FAP_CTHRC1	ATF3			-0.251
+myofibroblast_FAP_CTHRC1	ATP5F1E			0.253
+myofibroblast_FAP_CTHRC1	ATP5MF			0.229
+myofibroblast_FAP_CTHRC1	AVPR1A			-0.296
+myofibroblast_FAP_CTHRC1	BCAS2			-0.224
+myofibroblast_FAP_CTHRC1	BGN			0.651
+myofibroblast_FAP_CTHRC1	BST2	BST2__ext	M1	0.253
+myofibroblast_FAP_CTHRC1	BTG2			-0.424
+myofibroblast_FAP_CTHRC1	C1QTNF1			0.250
+myofibroblast_FAP_CTHRC1	C1R			0.968
+myofibroblast_FAP_CTHRC1	C1S			0.828
+myofibroblast_FAP_CTHRC1	C7orf50			-0.209
+myofibroblast_FAP_CTHRC1	CALR			0.243
+myofibroblast_FAP_CTHRC1	CALU			0.224
+myofibroblast_FAP_CTHRC1	CAT			-0.233
+myofibroblast_FAP_CTHRC1	CCDC102B			0.237
+myofibroblast_FAP_CTHRC1	CCDC80			0.300
+myofibroblast_FAP_CTHRC1	CCL19			1.203
+myofibroblast_FAP_CTHRC1	CCL2			-0.437
+myofibroblast_FAP_CTHRC1	CCL21			0.935
+myofibroblast_FAP_CTHRC1	CCNH			-0.364
+myofibroblast_FAP_CTHRC1	CD36			0.345
+myofibroblast_FAP_CTHRC1	CD63			0.288
+myofibroblast_FAP_CTHRC1	CDKN1A			-0.246
+myofibroblast_FAP_CTHRC1	CFH			0.642
+myofibroblast_FAP_CTHRC1	CFL1			0.312
+myofibroblast_FAP_CTHRC1	CH25H			-0.350
+myofibroblast_FAP_CTHRC1	CHD1			-0.345
+myofibroblast_FAP_CTHRC1	CHN1			0.389
+myofibroblast_FAP_CTHRC1	CIRBP			-0.350
+myofibroblast_FAP_CTHRC1	CKB			-0.308
+myofibroblast_FAP_CTHRC1	CLIC1			0.218
+myofibroblast_FAP_CTHRC1	CNBP			-0.267
+myofibroblast_FAP_CTHRC1	CNN3			0.459
+myofibroblast_FAP_CTHRC1	COL1A1	COL1A1__ext	ssc_tier1	0.473
+myofibroblast_FAP_CTHRC1	COL1A2	COL1A2__ext	ssc_tier1	0.594
+myofibroblast_FAP_CTHRC1	COL3A1	COL3A1__ext	ssc_tier1	0.580
+myofibroblast_FAP_CTHRC1	COL4A1			0.639
+myofibroblast_FAP_CTHRC1	COL4A2			0.546
+myofibroblast_FAP_CTHRC1	COL6A1			0.340
+myofibroblast_FAP_CTHRC1	COL6A2			0.679
+myofibroblast_FAP_CTHRC1	COL6A3			0.410
+myofibroblast_FAP_CTHRC1	COQ10B			-0.225
+myofibroblast_FAP_CTHRC1	CSRNP1			-0.208
+myofibroblast_FAP_CTHRC1	CSRP2			-0.373
+myofibroblast_FAP_CTHRC1	CST3			0.663
+myofibroblast_FAP_CTHRC1	CTSC			0.546
+myofibroblast_FAP_CTHRC1	CTSV			-0.321
+myofibroblast_FAP_CTHRC1	CYB5R3			0.253
+myofibroblast_FAP_CTHRC1	CYBA			0.319
+myofibroblast_FAP_CTHRC1	CYCS			-0.692
+myofibroblast_FAP_CTHRC1	CYGB			0.213
+myofibroblast_FAP_CTHRC1	CYTOR			0.448
+myofibroblast_FAP_CTHRC1	DAZAP2			0.201
+myofibroblast_FAP_CTHRC1	DCN			0.329
+myofibroblast_FAP_CTHRC1	DEGS1			0.216
+myofibroblast_FAP_CTHRC1	DNAJB9			-0.520
+myofibroblast_FAP_CTHRC1	DNAJC27			-0.233
+myofibroblast_FAP_CTHRC1	DNTTIP2			-0.202
+myofibroblast_FAP_CTHRC1	DPYSL2			0.225
+myofibroblast_FAP_CTHRC1	DSTN			-0.286
+myofibroblast_FAP_CTHRC1	EEF1B2			-0.202
+myofibroblast_FAP_CTHRC1	EGFL6			0.296
+myofibroblast_FAP_CTHRC1	EGR1	EGR1__cyto	M1	0.357
+myofibroblast_FAP_CTHRC1	EHD2			0.250
+myofibroblast_FAP_CTHRC1	EID1			-0.205
+myofibroblast_FAP_CTHRC1	EIF3H			-0.208
+myofibroblast_FAP_CTHRC1	EIF4A3			-0.578
+myofibroblast_FAP_CTHRC1	EIF5			-0.209
+myofibroblast_FAP_CTHRC1	ENO1			0.206
+myofibroblast_FAP_CTHRC1	EPHX1			0.220
+myofibroblast_FAP_CTHRC1	FABP5			0.243
+myofibroblast_FAP_CTHRC1	FAM162B			0.266
+myofibroblast_FAP_CTHRC1	FBLIM1			0.251
+myofibroblast_FAP_CTHRC1	FKBP1A	FKBP1A__cyto	M2	0.249
+myofibroblast_FAP_CTHRC1	FLNA			-0.285
+myofibroblast_FAP_CTHRC1	FLOT1			0.279
+myofibroblast_FAP_CTHRC1	FSTL1			0.302
+myofibroblast_FAP_CTHRC1	GADD45B			-0.458
+myofibroblast_FAP_CTHRC1	GAPDH			0.309
+myofibroblast_FAP_CTHRC1	GGT5			0.325
+myofibroblast_FAP_CTHRC1	GLA			-0.554
+myofibroblast_FAP_CTHRC1	HLA-A			0.404
+myofibroblast_FAP_CTHRC1	HLA-B			0.425
+myofibroblast_FAP_CTHRC1	HLA-C			0.284
+myofibroblast_FAP_CTHRC1	HLA-E			-0.211
+myofibroblast_FAP_CTHRC1	HSBP1			0.230
+myofibroblast_FAP_CTHRC1	HSPD1			-0.240
+myofibroblast_FAP_CTHRC1	ICAM1			0.359
+myofibroblast_FAP_CTHRC1	ID1			-0.220
+myofibroblast_FAP_CTHRC1	IFI16			0.240
+myofibroblast_FAP_CTHRC1	IFI27	IFI27__mito	M1	0.619
+myofibroblast_FAP_CTHRC1	IFI6	IFI6__cyto	M1	0.398
+myofibroblast_FAP_CTHRC1	IFITM1	IFITM1__cyto	M1	0.680
+myofibroblast_FAP_CTHRC1	IFITM2	IFITM2__cyto	M1	0.577
+myofibroblast_FAP_CTHRC1	IFITM3	IFITM3__cyto	M1	0.733
+myofibroblast_FAP_CTHRC1	IGFBP2			0.506
+myofibroblast_FAP_CTHRC1	IGFBP4			0.638
+myofibroblast_FAP_CTHRC1	IL32			0.275
+myofibroblast_FAP_CTHRC1	ISG15	ISG15__cyto	M1	0.295
+myofibroblast_FAP_CTHRC1	ITIH5			-0.227
+myofibroblast_FAP_CTHRC1	KCNAB1			-0.218
+myofibroblast_FAP_CTHRC1	KCNJ8			0.267
+myofibroblast_FAP_CTHRC1	KDELR2			0.228
+myofibroblast_FAP_CTHRC1	LAP3			0.212
+myofibroblast_FAP_CTHRC1	LGALS1			0.200
+myofibroblast_FAP_CTHRC1	LGALS3BP			0.438
+myofibroblast_FAP_CTHRC1	LHFPL6			0.227
+myofibroblast_FAP_CTHRC1	LMOD1			-0.244
+myofibroblast_FAP_CTHRC1	LUM			0.287
+myofibroblast_FAP_CTHRC1	LY6E			0.464
+myofibroblast_FAP_CTHRC1	MAFF			-0.269
+myofibroblast_FAP_CTHRC1	MAP3K7CL			0.248
+myofibroblast_FAP_CTHRC1	MARCKS			0.264
+myofibroblast_FAP_CTHRC1	MFGE8			0.371
+myofibroblast_FAP_CTHRC1	MGP			0.484
+myofibroblast_FAP_CTHRC1	MIF			0.373
+myofibroblast_FAP_CTHRC1	MIR4435-2HG			0.283
+myofibroblast_FAP_CTHRC1	MRPS6			-0.225
+myofibroblast_FAP_CTHRC1	MT1A			-0.616
+myofibroblast_FAP_CTHRC1	MT1M			-0.323
+myofibroblast_FAP_CTHRC1	MVP			0.248
+myofibroblast_FAP_CTHRC1	MYADM			0.274
+myofibroblast_FAP_CTHRC1	MYH11			-0.604
+myofibroblast_FAP_CTHRC1	MYL12A			0.441
+myofibroblast_FAP_CTHRC1	NACA			-0.238
+myofibroblast_FAP_CTHRC1	NDUFA4			-0.328
+myofibroblast_FAP_CTHRC1	NDUFA4L2			0.593
+myofibroblast_FAP_CTHRC1	NEAT1			0.325
+myofibroblast_FAP_CTHRC1	NGFR			0.230
+myofibroblast_FAP_CTHRC1	NNMT			0.629
+myofibroblast_FAP_CTHRC1	NR2F2			0.327
+myofibroblast_FAP_CTHRC1	NRN1			-0.526
+myofibroblast_FAP_CTHRC1	NSRP1			-0.202
+myofibroblast_FAP_CTHRC1	NTRK2			-0.349
+myofibroblast_FAP_CTHRC1	NUCB1			0.251
+myofibroblast_FAP_CTHRC1	OAZ2			0.210
+myofibroblast_FAP_CTHRC1	OST4			0.224
+myofibroblast_FAP_CTHRC1	PCOLCE			0.547
+myofibroblast_FAP_CTHRC1	PDLIM1			0.265
+myofibroblast_FAP_CTHRC1	PEBP1			-0.230
+myofibroblast_FAP_CTHRC1	PFN1			0.367
+myofibroblast_FAP_CTHRC1	PGAM2			-0.202
+myofibroblast_FAP_CTHRC1	PLAU			0.249
+myofibroblast_FAP_CTHRC1	PLCG2			0.233
+myofibroblast_FAP_CTHRC1	PMP22			0.208
+myofibroblast_FAP_CTHRC1	POLR2L			0.298
+myofibroblast_FAP_CTHRC1	POMP			0.225
+myofibroblast_FAP_CTHRC1	POSTN	POSTN__ecm	ssc_tier1	0.259
+myofibroblast_FAP_CTHRC1	PPIB			0.294
+myofibroblast_FAP_CTHRC1	PPP1R12A			-0.229
+myofibroblast_FAP_CTHRC1	PPP1R15B			-0.229
+myofibroblast_FAP_CTHRC1	PROS1			0.241
+myofibroblast_FAP_CTHRC1	PTP4A2			0.209
+myofibroblast_FAP_CTHRC1	PYGB			-0.214
+myofibroblast_FAP_CTHRC1	RAB13			0.269
+myofibroblast_FAP_CTHRC1	RASL11A			-0.206
+myofibroblast_FAP_CTHRC1	RCAN2			-0.225
+myofibroblast_FAP_CTHRC1	RERGL			-0.594
+myofibroblast_FAP_CTHRC1	RGCC			-0.202
+myofibroblast_FAP_CTHRC1	RGS2			-0.211
+myofibroblast_FAP_CTHRC1	RPL14			-0.262
+myofibroblast_FAP_CTHRC1	RPL28			0.331
+myofibroblast_FAP_CTHRC1	RPL5			-0.238
+myofibroblast_FAP_CTHRC1	RPL7			-0.217
+myofibroblast_FAP_CTHRC1	RPS10			-0.358
+myofibroblast_FAP_CTHRC1	S100A10			0.271
+myofibroblast_FAP_CTHRC1	S100A11			0.374
+myofibroblast_FAP_CTHRC1	SEC61G			0.309
+myofibroblast_FAP_CTHRC1	SELENOF			0.215
+myofibroblast_FAP_CTHRC1	SELENOK			-0.400
+myofibroblast_FAP_CTHRC1	SEPHS2			-0.369
+myofibroblast_FAP_CTHRC1	SEPT4			0.221
+myofibroblast_FAP_CTHRC1	SERF2			0.271
+myofibroblast_FAP_CTHRC1	SERPINF1			0.796
+myofibroblast_FAP_CTHRC1	SERPING1			0.625
+myofibroblast_FAP_CTHRC1	SERPINH1			0.333
+myofibroblast_FAP_CTHRC1	SET			0.279
+myofibroblast_FAP_CTHRC1	SH3BGRL3			0.322
+myofibroblast_FAP_CTHRC1	SLC25A4			-0.281
+myofibroblast_FAP_CTHRC1	SLC9A3R2			0.245
+myofibroblast_FAP_CTHRC1	SLCO3A1			0.204
+myofibroblast_FAP_CTHRC1	SLFN11			-0.498
+myofibroblast_FAP_CTHRC1	SMOC2			0.515
+myofibroblast_FAP_CTHRC1	SNAI2	SNAI2__nuc	ssc_tier1	0.226
+myofibroblast_FAP_CTHRC1	SNCG			-0.312
+myofibroblast_FAP_CTHRC1	SOD2			0.585
+myofibroblast_FAP_CTHRC1	SOD3			0.285
+myofibroblast_FAP_CTHRC1	SORBS2			-0.444
+myofibroblast_FAP_CTHRC1	SPARC			0.537
+myofibroblast_FAP_CTHRC1	SPARCL1			0.227
+myofibroblast_FAP_CTHRC1	SRPX			0.211
+myofibroblast_FAP_CTHRC1	STOM			0.264
+myofibroblast_FAP_CTHRC1	TAF7			-0.235
+myofibroblast_FAP_CTHRC1	TAGLN2			0.456
+myofibroblast_FAP_CTHRC1	TCEAL7			-0.337
+myofibroblast_FAP_CTHRC1	TFPI			0.460
+myofibroblast_FAP_CTHRC1	THY1			0.855
+myofibroblast_FAP_CTHRC1	TIMP1			0.692
+myofibroblast_FAP_CTHRC1	TINAGL1			0.225
+myofibroblast_FAP_CTHRC1	TMEM176A			0.289
+myofibroblast_FAP_CTHRC1	TMEM176B			0.316
+myofibroblast_FAP_CTHRC1	TMEM258			0.221
+myofibroblast_FAP_CTHRC1	TMSB10			0.528
+myofibroblast_FAP_CTHRC1	TMSB4X			0.362
+myofibroblast_FAP_CTHRC1	TNFRSF11B			0.277
+myofibroblast_FAP_CTHRC1	TNFRSF12A			0.242
+myofibroblast_FAP_CTHRC1	TNFRSF1A			0.302
+myofibroblast_FAP_CTHRC1	TPM4			0.506
+myofibroblast_FAP_CTHRC1	TSC22D1			-0.280
+myofibroblast_FAP_CTHRC1	TSC22D3			-0.200
+myofibroblast_FAP_CTHRC1	TWISTNB			-0.211
+myofibroblast_FAP_CTHRC1	TYMP			0.275
+myofibroblast_FAP_CTHRC1	UAP1			-0.356
+myofibroblast_FAP_CTHRC1	UGCG			0.297
+myofibroblast_FAP_CTHRC1	VASN			0.216
+myofibroblast_FAP_CTHRC1	VCAM1			0.217
+myofibroblast_FAP_CTHRC1	VMP1			0.377
+myofibroblast_FAP_CTHRC1	VPS37B			-0.233
+myofibroblast_FAP_CTHRC1	WISP2			0.239
+myofibroblast_FAP_CTHRC1	YME1L1			-0.231
+myofibroblast_FAP_CTHRC1	YWHAH			0.274
+myofibroblast_FAP_CTHRC1	YWHAZ			0.259
+myofibroblast_FAP_CTHRC1	ZFP36L1			0.269
+myofibroblast_FAP_CTHRC1	ZFYVE21			-0.259
+myofibroblast_FAP_CTHRC1	ZNF141			-0.289
+myofibroblast_FAP_CTHRC1	ZNF184			-0.219
+myofibroblast_FAP_CTHRC1	ZNF331			-0.406
+myofibroblast_FAP_CTHRC1	ZNRD1			-0.700
+myofibroblast_FAP_CTHRC1	ZYX			0.205

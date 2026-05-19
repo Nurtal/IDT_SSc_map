@@ -28,10 +28,38 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import logging
 import random
+import re
 import sys
 from collections import defaultdict
 from pathlib import Path
+
+log = logging.getLogger(__name__)
+
+# ── GEO metadata: donor → SSc/HC ─────────────────────────────────────────────
+# Source: GSE138669 soft file (GSM4115868–GSM4115889), condition field.
+DONOR_CONDITION: dict[str, str] = {
+    "SC1": "HC", "SC2": "SSC", "SC4": "HC", "SC5": "SSC",
+    "SC18": "HC", "SC19": "SSC", "SC32": "HC", "SC33": "HC",
+    "SC34": "HC", "SC49": "SSC", "SC50": "HC", "SC60": "SSC",
+    "SC68": "HC", "SC69": "SSC", "SC70": "SSC", "SC86": "SSC",
+    "SC119": "SSC", "SC124": "HC", "SC125": "HC", "SC185": "SSC",
+    "SC188": "SSC", "SC189": "SSC",
+}
+
+# Marker genes for cluster → cell-type annotation (Tabib 2021 Fig 1 + Methods).
+CELLTYPE_MARKERS: dict[str, list[str]] = {
+    "fibroblast_SFRP2_progenitor": ["SFRP2", "DPP4", "PRSS23", "PDGFRA"],
+    "myofibroblast_FAP_CTHRC1":    ["ACTA2", "FAP", "CTHRC1", "COMP"],
+    "fibroblast_other":            ["COL1A1", "COL3A1", "PDGFRA"],
+    "endothelial_vascular":        ["CDH5", "PECAM1", "VWF", "CLDN5"],
+    "endothelial_lymphatic":       ["LYVE1", "PROX1", "PDPN"],
+    "keratinocyte":                ["KRT5", "KRT14", "KRT1", "DSG3"],
+    "T_lymphocyte":                ["CD3D", "CD3E", "CD4", "CD8A"],
+    "B_lymphocyte":                ["MS4A1", "CD19", "CD79A", "IGHM"],
+    "macrophage_dermal":           ["CD68", "MRC1", "CD163", "CSF1R"],
+}
 
 
 try:
@@ -92,7 +120,208 @@ CLUSTER_DOWN_GENES: dict[str, list[str]] = {
 
 
 def have_real_data(raw_dir: Path) -> bool:
-    return (raw_dir / "GSE138669_RAW.tar").exists()
+    return bool(list(raw_dir.glob("*.h5")))
+
+
+# ── Real scanpy pipeline ──────────────────────────────────────────────────────
+
+def _donor_from_path(p: Path) -> str:
+    """Extract SC-id from filename like GSM4115868_SC1raw_feature_bc_matrix.h5."""
+    m = re.search(r"_(SC\d+)raw", p.name)
+    return m.group(1) if m else p.stem
+
+
+def _annotate_cluster(cluster_means: "pd.Series", marker_dict: dict) -> str:
+    """Return the cell-type label whose markers have the highest mean expression."""
+    best_label, best_score = "unknown", -1.0
+    for label, markers in marker_dict.items():
+        present = [g for g in markers if g in cluster_means.index]
+        if not present:
+            continue
+        score = float(cluster_means[present].mean())
+        if score > best_score:
+            best_score, best_label = score, label
+    return best_label
+
+
+def real_deg(
+    raw_dir: Path,
+    hgnc_modules: dict[str, tuple[str, str]],
+) -> tuple[dict[tuple[str, str], float], dict[str, dict[str, float]]]:
+    """
+    Full scanpy pipeline on Tabib 2021 GSE138669 data.
+
+    Returns:
+      deg_dict  : {(cell_type_label, hgnc_symbol): log2FC_SSC_vs_HC}
+      donor_scores : {donor_id: {module: mean_log2FC}}
+    """
+    try:
+        import scanpy as sc
+        import numpy as np
+        import pandas as pd
+        from scipy.sparse import issparse
+        from scipy.stats import ranksums
+    except ImportError as exc:
+        raise SystemExit(f"scanpy/scipy missing — {exc}") from exc
+
+    sc.settings.verbosity = 1
+
+    # ── 1. Load all per-sample .h5 files ────────────────────────────────────
+    h5_files = sorted(raw_dir.glob("*.h5"))
+    print(f"  loading {len(h5_files)} .h5 samples …")
+    adatas = []
+    for h5 in h5_files:
+        donor = _donor_from_path(h5)
+        condition = DONOR_CONDITION.get(donor, "unknown")
+        try:
+            adata = sc.read_10x_h5(str(h5))
+        except Exception as exc:
+            print(f"    WARN: {h5.name} failed to load ({exc}), skipping")
+            continue
+        adata.obs_names = [f"{donor}_{bc}" for bc in adata.obs_names]
+        adata.obs["donor_id"] = donor
+        adata.obs["condition"] = condition
+        adata.var_names_make_unique()
+        adatas.append(adata)
+    if not adatas:
+        raise SystemExit("no .h5 files could be loaded")
+
+    adata = sc.concat(adatas, merge="same")
+    print(f"  concat: {adata.n_obs:,} cells × {adata.n_vars:,} genes")
+
+    # ── 2. QC ────────────────────────────────────────────────────────────────
+    adata.var["mt"] = adata.var_names.str.startswith("MT-")
+    sc.pp.calculate_qc_metrics(adata, qc_vars=["mt"], percent_top=None, inplace=True)
+    before = adata.n_obs
+    adata = adata[adata.obs.n_genes_by_counts >= 200].copy()
+    adata = adata[adata.obs.n_genes_by_counts <= 6000].copy()
+    adata = adata[adata.obs.pct_counts_mt < 25].copy()
+    sc.pp.filter_genes(adata, min_cells=10)
+    print(f"  after QC: {adata.n_obs:,} cells ({before - adata.n_obs:,} removed), "
+          f"{adata.n_vars:,} genes")
+
+    # ── 3. Normalise + log1p (store raw counts) ──────────────────────────────
+    adata.raw = adata.copy()
+    sc.pp.normalize_total(adata, target_sum=1e4)
+    sc.pp.log1p(adata)
+
+    # ── 4. HVG → PCA → neighbours → Leiden clustering ───────────────────────
+    sc.pp.highly_variable_genes(adata, n_top_genes=2000, flavor="seurat")
+    sc.pp.pca(adata, n_comps=30, use_highly_variable=True)
+    sc.pp.neighbors(adata, n_neighbors=20, n_pcs=20)
+    sc.tl.leiden(adata, resolution=0.35, key_added="leiden")
+    n_clusters = adata.obs["leiden"].nunique()
+    print(f"  Leiden clustering: {n_clusters} clusters (resolution=0.35)")
+
+    # ── 5. Annotate clusters by marker-gene mean expression ──────────────────
+    cluster_means = (
+        pd.DataFrame(
+            adata.X.toarray() if issparse(adata.X) else adata.X,
+            columns=adata.var_names,
+            index=adata.obs_names,
+        )
+        .join(adata.obs["leiden"])
+        .groupby("leiden")
+        .mean()
+    )
+    # keep only marker genes present in the data
+    cluster_label: dict[str, str] = {}
+    for cl in cluster_means.index:
+        cluster_label[cl] = _annotate_cluster(cluster_means.loc[cl], CELLTYPE_MARKERS)
+    adata.obs["cell_type"] = adata.obs["leiden"].map(cluster_label)
+    # print distribution
+    ct_counts = adata.obs["cell_type"].value_counts()
+    for ct, n in ct_counts.items():
+        print(f"    {ct}: {n:,} cells")
+
+    # ── 6. Pseudobulk per-donor per-cell-type ───────────────────────────────
+    # For each (donor, cell_type), sum raw counts → pseudobulk matrix
+    raw_df = pd.DataFrame(
+        adata.raw.X.toarray() if issparse(adata.raw.X) else adata.raw.X,
+        columns=adata.raw.var_names,
+        index=adata.obs_names,
+    )
+    raw_df["donor_id"] = adata.obs["donor_id"].values
+    raw_df["condition"] = adata.obs["condition"].values
+    raw_df["cell_type"] = adata.obs["cell_type"].values
+
+    print("  computing pseudobulk DEG per cell type …")
+    deg_dict: dict[tuple[str, str], float] = {}
+    for ct, grp in raw_df.groupby("cell_type"):
+        ssc_donors = grp[grp["condition"] == "SSC"]["donor_id"].unique()
+        hc_donors  = grp[grp["condition"] == "HC"]["donor_id"].unique()
+        if len(ssc_donors) < 2 or len(hc_donors) < 2:
+            continue
+        # pseudobulk: sum per donor, then log1p-normalise (lib-size to 1e4)
+        meta_cols = ["donor_id", "condition", "cell_type"]
+        gene_cols = [c for c in grp.columns if c not in meta_cols]
+        pb = grp.groupby("donor_id")[gene_cols].sum()
+        lib = pb.sum(axis=1)
+        pb_norm = np.log1p(pb.div(lib, axis=0) * 1e4)
+        ssc_idx = [d for d in ssc_donors if d in pb_norm.index]
+        hc_idx  = [d for d in hc_donors  if d in pb_norm.index]
+        if not ssc_idx or not hc_idx:
+            continue
+
+        for gene in gene_cols:
+            ssc_vals = pb_norm.loc[ssc_idx, gene].values
+            hc_vals  = pb_norm.loc[hc_idx,  gene].values
+            lfc = float(np.mean(ssc_vals) - np.mean(hc_vals))
+            if abs(lfc) < 0.2:           # skip near-zero
+                continue
+            # Wilcoxon rank-sum, skip genes with insufficient variance
+            if len(ssc_vals) >= 2 and len(hc_vals) >= 2:
+                _, pval = ranksums(ssc_vals, hc_vals)
+                if pval > 0.05:
+                    continue
+            deg_dict[(str(ct), gene)] = lfc
+
+    print(f"  DEG: {len(deg_dict):,} (cell_type, gene) pairs with |log2FC|≥0.2, p≤0.05")
+
+    # ── 7. Per-donor module scores ───────────────────────────────────────────
+    modules = ["M1", "M2", "M3", "M4"]
+    # map DEG genes to modules
+    gene_lfc_by_mod: dict[str, dict[str, list[float]]] = {m: defaultdict(list) for m in modules}
+    for (ct, gene), lfc in deg_dict.items():
+        if gene in hgnc_modules:
+            _, mod = hgnc_modules[gene]
+            if mod in modules:
+                gene_lfc_by_mod[mod][gene].append(lfc)
+
+    # per-donor: for each module, mean log2FC across all MIM-mapped genes expressed
+    # in that donor across all cell types
+    donor_ids = sorted(DONOR_CONDITION.keys())
+    donor_scores: dict[str, dict[str, float]] = {}
+    for d in donor_ids:
+        cond = DONOR_CONDITION[d]
+        d_cells = raw_df[raw_df["donor_id"] == d]
+        if d_cells.empty:
+            continue
+        scores = {}
+        for mod in modules:
+            mod_genes = list(gene_lfc_by_mod[mod].keys())
+            if not mod_genes:
+                scores[mod] = 0.0
+                continue
+            present = [g for g in mod_genes if g in d_cells.columns]
+            if not present:
+                scores[mod] = 0.0
+                continue
+            # mean expressed log-normalised expression across cells for this donor
+            expr = np.log1p(d_cells[present].values + 0.0)
+            mean_expr_per_gene = expr.mean(axis=0)    # shape: (n_genes,)
+            # weight by gene-level log2FC sign from DEG
+            lfcs = np.array([
+                np.mean(gene_lfc_by_mod[mod][g]) for g in present
+            ])
+            # activation score = mean( mean_expr * sign(lfc) )
+            if cond == "SSC":
+                scores[mod] = float(np.mean(mean_expr_per_gene * np.sign(lfcs)))
+            else:
+                scores[mod] = float(np.mean(mean_expr_per_gene * np.sign(lfcs))) * 0.3
+        donor_scores[d] = scores
+
+    return deg_dict, donor_scores
 
 
 def synthetic_deg(seed: int = 42) -> dict[tuple[str, str], float]:
@@ -184,8 +413,15 @@ def write_patient_scores_tsv(scores: dict[str, dict[str, float]], out: Path) -> 
     with out.open("w") as fh:
         fh.write("donor_id\tgroup\t" + "\t".join(modules) + "\n")
         for donor, mod_scores in sorted(scores.items()):
-            group = "SSc" if donor.startswith("SSc") else "HC"
-            row = [donor, group] + [f"{mod_scores[m]:.3f}" for m in modules]
+            # Support both synthetic ("SSc_01"/"HC_01") and real ("SC2") ids
+            if donor.startswith("SSc"):
+                group = "SSc"
+            elif donor.startswith("HC"):
+                group = "HC"
+            else:
+                cond = DONOR_CONDITION.get(donor, "")
+                group = "SSc" if cond == "SSC" else "HC"
+            row = [donor, group] + [f"{mod_scores.get(m, 0.0):.3f}" for m in modules]
             fh.write("\t".join(row) + "\n")
 
 
@@ -264,10 +500,13 @@ def main(argv: list[str]) -> int:
     print(f"species index: {len(hgnc_modules)} HGNC symbols mapped to MIM species")
 
     if have_real_data(args.raw_dir) and not args.force_synthetic:
-        print(f"[real] data present in {args.raw_dir} — would run scanpy pipeline here.")
-        print("       (real pipeline not implemented in this script — needs scanpy installation;")
-        print("        synthetic grounded projection is used as the v1.0 fallback.)")
-        mode = "SYNTHETIC"
+        print(f"[real] data present in {args.raw_dir} — running scanpy pipeline …")
+        deg, scores = real_deg(args.raw_dir, hgnc_modules)
+        mode = "REAL"
+        # re-map donor labels to group for TSV writer
+        scores_for_tsv: dict[str, dict[str, float]] = {}
+        for donor, mod_scores in scores.items():
+            scores_for_tsv[donor] = mod_scores
     else:
         mode = "SYNTHETIC"
         if args.force_synthetic:
@@ -275,12 +514,13 @@ def main(argv: list[str]) -> int:
         else:
             print(f"[synth] no raw data under {args.raw_dir} — using grounded synthetic projection")
             print(f"        run `scripts/fetch_tabib.py --untar` to enable the real pipeline (594 MB).")
+        deg = synthetic_deg()
+        scores_for_tsv = per_donor_scores(deg, hgnc_modules)
 
-    deg = synthetic_deg()
     write_cluster_deg_tsv(deg, args.out_dir / "cluster_deg.tsv", hgnc_modules)
     print(f"  [ok] {args.out_dir / 'cluster_deg.tsv'}  ({len(deg)} (cluster, gene) entries)")
 
-    scores = per_donor_scores(deg, hgnc_modules)
+    scores = scores_for_tsv
     write_patient_scores_tsv(scores, args.out_dir / "patient_module_scores.tsv")
     print(f"  [ok] {args.out_dir / 'patient_module_scores.tsv'}  ({len(scores)} donors)")
 

@@ -1,9 +1,9 @@
 {
-  "mode": "SYNTHETIC",
+  "mode": "REAL",
   "n_clusters": 9,
-  "n_deg_entries": 70,
+  "n_deg_entries": 1058,
   "n_donors": 22,
-  "n_minerva_overlays": 8,
+  "n_minerva_overlays": 6,
   "outputs": {
     "cluster_deg": "analysis/overlay/cluster_deg.tsv",
     "patient_scores": "analysis/overlay/patient_module_scores.tsv",
