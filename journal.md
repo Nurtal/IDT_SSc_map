@@ -911,3 +911,22 @@ Gates en cours :
 
 STATUS.md mis à jour pour refléter l'état actuel (526 sp / 260 rxn, mode=REAL).
 
+### 15:00 — Recherche de jeux de données complémentaires + mise à jour ROADMAP
+
+**Problème identifié** : la couverture DEG de la MIM est de seulement 16% (34/211 espèces HGNC) avec Tabib 2021 seul. Cause : le skin biopsy atlas manque de pDC, B cells, cellules endothéliales, et myofibroblastes pulmonaires.
+
+**Datasets ouverts identifiés (survey systématique GEO + PubMed) :**
+
+| Priorité | Accession | Étude | Tissu | Gap MIM rempli |
+|----------|-----------|-------|-------|----------------|
+| P1 | GSE210395 | SSc PBMC pDC/monocyte (2022) | Sang | axe pDC IFN-I → M1 |
+| P1 | GSE128169 | Morse *ARD* 2019 (PMID 31405848) | Poumon SSc-ILD | myofibroblastes pulmonaires → M2 |
+| P2 | GSE159354 | Vanderploeg *Front Immunol* 2021 (PMID 33679266) | Poumon SSc-ILD+IPF | IFN-I vs IFN-γ divergence |
+| P2 | GSE195452 | Gur *Cell* 2022 (PMID 35381199) | Peau multiome (97 SSc / 56 HC) | LGR5+ ScAF → M2+M3 |
+| P3 | GSE136831 | Adams *Sci Adv* 2020 (PMID 32832599) | Poumon IPF (312k cellules) | HAS2+/ACTA2+ myofibroblastes → M2 |
+| P3 | GSE136103 | Ramachandran *Nature* 2019 (PMID 31748742) | Foie cirrhotique | HSC → myofibroblaste (LOXL2, MMP2) → M2 |
+
+Tous sans restriction d'accès (pas de dbGaP). Gain attendu : 16% → ~30-40% couverture MIM après intégration P1+P2.
+
+**Mise à jour ROADMAP :** Phase 4b créée ; milestone M9b (31 août) ; gate G4b ajouté. Phase 4 marquée ✅ complète. Manuscrit draft marqué disponible.
+

@@ -126,28 +126,64 @@ A clean GitHub release tagged `v1.0` (auto-DOI'd via the Zenodo↔GitHub webhook
 | **`v1.0` git tag** | 🔴 | one command; user-driven |
 | Zenodo DOI propagation | 🟢 | webhook-driven, 1–2 days |
 
-### Phase 4 (translational use case + figures) — unchanged
+### Phase 4 (translational use case + figures) — **COMPLETE 2026-05-19**
 
 | Step | Lane | Status |
 |------|------|--------|
-| Download + QC + cluster Tabib scRNAseq | 🟢 | notebook stubs in place |
-| Per-cluster DEG (SSc vs HC) | 🟢 | stub `03_deg.ipynb` |
-| Project DEGs onto MIM | 🟢 | stub `04_projection.ipynb` |
-| Per-donor module scores | 🟢 | stub `05_scoring.ipynb` |
-| Druggable hub prioritisation (DGIdb + Open Targets) | 🟢 | stub `06_drug_targets.ipynb` |
-| Whitfield bulk overlay (complementary) | 🟢 | stub `01–03_*.ipynb` |
-| Figure F2 — overlay heatmap | 🟢 | placeholder rendered; real data lands here |
-| Figure F3 — druggable subnetwork | 🟢 | preview rendered |
-| Figure F1 — composite global view | 🟡 | render from integrated SBML (no MINERVA needed) |
+| Download + QC + cluster Tabib scRNAseq (GSE138669) | 🟢 | ✅ real pipeline — 64 211 cells, 6 types |
+| Per-cluster pseudobulk DEG (SSc vs HC, Wilcoxon) | 🟢 | ✅ 1 058 entries |
+| Project DEGs onto MIM | 🟢 | ✅ 34 MIM species (16% coverage) |
+| Per-donor module scores | 🟢 | ✅ M1 SSc 0.342 vs HC 0.070; M2 0.232 vs 0.044 |
+| Druggable hub prioritisation (DGIdb) | 🟢 | ✅ 21 SSc-relevant drug–target pairs |
+| Figure F1 — global MIM view | 🟢 | ✅ SVG + PNG |
+| Figure F2 — overlay heatmap | 🟢 | ✅ mode=REAL |
+| Figure F3 — druggable subnetwork | 🟢 | ✅ SVG + PNG |
+
+### Phase 4b — Multi-dataset coverage expansion *(new — 2026-05-19)*
+
+**Goal:** increase MIM gene coverage from the current 16% (34/211 HGNC species) by integrating complementary open-access scRNA-seq datasets. Each dataset is chosen to fill a specific MIM module gap not addressed by the Tabib 2021 skin atlas.
+
+**Coverage gap analysis:**
+
+| MIM module | Current Tabib coverage | Gap cell types |
+|-----------|----------------------|----------------|
+| M1 IFN-I | partial (macrophage/myofibroblast only) | pDC, cDC1/2, monocytes absent |
+| M2 TGF-β/fibrosis | core skin fibroblasts ✅ | lung myofibroblast subtypes, HAS2+ |
+| M3 EndoMT/vasculopathy | SNAI2/ANGPT2/EDNRB detected | LGR5+ ScAF, endothelial subclusters |
+| M4 IL-6/Th2/B-cell | T lymphocyte only; B cell absent | B/plasma cells, pDC absent |
+
+**Priority datasets (all open-access, no dbGaP restriction):**
+
+| Priority | Accession | Study | Tissue | SSc/HC | MIM gap filled |
+|----------|-----------|-------|--------|--------|----------------|
+| 🔴 P1 | **GSE210395** | Unpublished 2022 — SSc pDC + monocyte PBMC | Blood | 4 SSc / 4 HC | **pDC IFN-I axis** (IRF7, IFIT1, MX1, OAS1, SIGLEC1) → M1 |
+| 🔴 P1 | **GSE128169** | Morse et al. *Ann Rheum Dis* 2019 (PMID 31405848) | Lung (SSc-ILD) | 4 SSc-ILD / 4 HC | **Lung myofibroblast** (CXCL12, POSTN, TNC, COMP) + SPP1 Mφ → M2 |
+| 🟡 P2 | **GSE159354** | Vanderploeg et al. *Front Immunol* 2021 (PMID 33679266) | Lung (SSc-ILD + IPF) | 3 SSc-ILD + 4 IPF / 3 HC | IFN-I (SSc) vs IFN-γ (IPF) divergence; aberrant basaloid cells → M1+M2 |
+| 🟡 P2 | **GSE195452** | Gur et al. *Cell* 2022 (PMID 35381199) | Skin multiome | 9 dSSc / 9 HC (sc); 97/56 (bulk) | **LGR5+ ScAF** fibroblast subtype; WNT/BMP dysregulation → M2+M3 |
+| 🟢 P3 | **GSE136831** | Adams et al. *Sci Adv* 2020 (PMID 32832599) — IPF Cell Atlas | Lung (IPF) | 32 IPF / 28 HC | 312k cells; HAS2+/ACTA2+ myofibroblast states; TGF-β effectors → M2 |
+| 🟢 P3 | **GSE136103** | Ramachandran et al. *Nature* 2019 (PMID 31748742) | Liver (cirrhosis) | 5 cirrh / 5 HC | HSC → myofibroblast trajectory (ACTA2, LOXL2, COL1A1, MMP2) → M2 |
+
+**Implementation plan per dataset:**
+
+```
+scripts/fetch_geo.py --accession GSE210395   # generalise fetch_tabib.py
+scripts/build_overlay.py --dataset GSE210395 --tissue pbmc
+make overlay-multi  # aggregate DEG across datasets → merged cluster_deg.tsv
+```
+
+Expected coverage gain: 16% (34) → **~30–40%** (60–80 MIM species) after P1+P2 integration.
+
+**Go-no-go:** P1 datasets (GSE210395, GSE128169) must be integrated before manuscript submission. P2 datasets increase robustness; P3 datasets are post-publication enrichments.
 
 ### Phase 5 (writing + ACR submission)
 
 | Step | Lane | Status |
 |------|------|--------|
-| ACR abstract scaffold | 🟢 | ✅ generated with real numerics; co-author + lead curator polish |
+| ACR abstract scaffold | 🟢 | ✅ generated with real numerics |
+| IMRAD manuscript draft (Frontiers Bioinformatics) | 🟢 | ✅ ~5 100 words, real pipeline stats |
 | Co-author iteration | 🔴 | |
 | ACR portal submission | 🔴 | by 22 Sep 12:00 ET |
-| Full manuscript draft for Frontiers in Bioinformatics / npj Sys Biol Appl | 🟡 | abstract → outline → expansion |
+| Manuscript polish + Phase 4b stats integration | 🟡 | after P1 datasets integrated |
 
 ### Phase 6 — post-publication / stretch (no longer blocking)
 
@@ -155,9 +191,10 @@ A clean GitHub release tagged `v1.0` (auto-DOI'd via the Zenodo↔GitHub webhook
 |------|------|--------|
 | MINERVA Luxembourg curator role request | 🔴 | optional |
 | MINERVA deployment with semantic zoom + overlays | 🔴 | optional |
+| Phase 4b P3 datasets (IPF atlas, liver fibrosis) | 🟢 | optional enrichment |
 | WikiPathways EndMT correct ID lookup | 🔴 | optional |
 | BioModels deposit | 🟢 | optional, auto-bundled by Zenodo |
-| v1.x corrections / extensions (lung, GI, vascular peripheries) | 🟡 + 🔴 | optional |
+| v1.x map extensions (lung module, GI, vascular peripheries) | 🟡 + 🔴 | optional |
 
 ---
 
@@ -174,12 +211,13 @@ A clean GitHub release tagged `v1.0` (auto-DOI'd via the Zenodo↔GitHub webhook
 | M7 | Co-author review round | 21 Aug | **31 Jul** (target) | 🔴 | scheduled |
 | **M8 (new)** | **v1.0 release on GitHub + Zenodo DOI** | n/a | **31 Aug** (target) | 🟢 + 🔴 | ready when M6/M7 land |
 | ~~M8old~~ | ~~MINERVA deployment~~ | ~~21 Aug~~ | **moved to Phase 6 (post-pub)** | 🔴 | optional |
-| M9 | Omics overlay computed, figures drafted | 11 Sep | **7 Sep** | 🟢 | partial |
+| M9 | Omics overlay computed, figures drafted | 11 Sep | **7 Sep** | 🟢 | ✅ Phase 4 complete (Tabib 2021 real pipeline) |
+| **M9b (new)** | **Phase 4b P1 datasets integrated** (GSE210395 + GSE128169) | n/a | **31 Aug** (target) | 🟢 | not started |
 | M10 | Abstract submitted to ACR | ≤22 Sep 12:00 ET | unchanged | 🔴 | scheduled |
-| M11 | Full manuscript draft circulated | 30 Nov | unchanged | 🟡 + 🔴 | scheduled |
+| M11 | Full manuscript draft circulated | 30 Nov | ✅ draft ready | 🟡 + 🔴 | draft done; needs co-author polish |
 | M12 (new) | MINERVA deployment (optional) | n/a | post-Nov 2026 | 🔴 | stretch |
 
-**Take-away:** the calendar's binding constraint has shifted from "rheumatologist availability" (resolved) to "co-author bandwidth in July–August for the Tier-1 wiring + review". That is now the principal scheduling watch-point.
+**Take-away:** Phase 4 complete ahead of schedule. New binding constraints: (1) co-author kickoff + CellDesigner GUI work (July target); (2) Phase 4b P1 dataset integration (GSE210395 + GSE128169) before manuscript submission.
 
 ---
 
@@ -192,6 +230,7 @@ A clean GitHub release tagged `v1.0` (auto-DOI'd via the Zenodo↔GitHub webhook
 | G2 | 31 Jul 2026 | Co-author review of integrated map (with SSc Tier-1 wired) complete? | proceed to v1.0 tag | tag v0.9; review can iterate post-tag |
 | **G3 (new)** | **24 Aug 2026** | `make preflight` clean + working tree green? | `git tag v1.0 && git push --tags` — Zenodo mints DOI | fix and retry |
 | G4 | 11 Sep 2026 | Omics overlay produces a clinically-readable F2? | proceed to abstract polish | submit with figure caveat |
+| **G4b (new)** | **31 Aug 2026** | Phase 4b P1 datasets (GSE210395 + GSE128169) integrated, MIM coverage ≥ 30%? | include multi-dataset overlay in manuscript | submit with Tabib-only stats |
 | G5 | 18 Sep 2026 | Abstract co-author sign-off? | submit ≤ 21 Sep | push to EULAR 2027 |
 
 ---
@@ -250,4 +289,4 @@ The v1.0 release is one `git tag` away once the co-author signs off — every ot
 
 ---
 
-*Last revised: 2026-05-16, post-pivot (GitHub + Zenodo as primary delivery; MINERVA moved post-publication).*
+*Last revised: 2026-05-19 — Phase 4 complete (real Tabib 2021 pipeline); Phase 4b added (multi-dataset coverage expansion, 6 open-access datasets identified); ROADMAP milestones updated.*
