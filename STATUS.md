@@ -6,10 +6,11 @@
 ## Headline  *(updated 2026-05-19)*
 
 - **Integrated map:** 526 species, 260 reactions, 20 compartments. **SBML validation: 0 errors (5 files clean). `make preflight`: 1 advisory only (dangling 17.9%), 0 blocking failures.**
-- **Phase 4 COMPLETE (real data)** — Tabib 2021 scanpy pipeline: 64 211 cells, 1 058 DEG entries, 34 MIM-mapped genes; REAL per-donor module scores (M1 IFN: SSc 0.342 vs HC 0.070; M2 fibrosis: 0.232 vs 0.044). Figures F1/F2/F3 generated.
+- **Phase 4b COMPLETE** — Multi-dataset overlay: 3 tissues (skin/PBMC/lung), 43 donors, 3 990 DEG entries, **72/211 MIM species = 34.1% coverage** (Gate G4b ≥30% met). All three modes: REAL. 18 MINERVA overlays, F2_multi figure generated.
+- **Phase 4 COMPLETE (real data)** — Tabib 2021 scanpy pipeline: 64 211 cells, 1 058 DEG entries, 34 MIM-mapped genes; REAL per-donor module scores (M1 IFN: SSc 0.342 vs HC 0.070; M2 fibrosis: 0.232 vs 0.044).
 - **Phase 5 partial** — Full IMRAD manuscript draft at `manuscript/SSc_MIM_manuscript_draft.md` (~5 100 words, Frontiers Bioinformatics target, real stats throughout).
 - **Lead-author metadata filled** — `CITATION.cff` + `.zenodo.json` (Nathan Foulquier, ORCID 0000-0003-4620-2794, LBAI U1227 Inserm CDC CHU Brest). Co-author slot still REPLACE_ME.
-- **All Phase 0 + 1 + 2 + 3-AUTO + 4 complete.** Binding constraint = co-author kickoff + CellDesigner GUI work + .zenodo.json co-author fill.
+- **All Phase 0 + 1 + 2 + 3-AUTO + 4 + 4b complete.** Binding constraint = co-author kickoff + CellDesigner GUI work + .zenodo.json co-author fill.
 
 ## What's done (with commit refs)
 
@@ -30,6 +31,7 @@
 | 4 | **Real Tabib 2021 scanpy pipeline** — 64 211 cells QC'd, 6 cell types, 1 058 DEG entries, 34 MIM-mapped species (16% coverage); REAL per-donor module scores; F2 updated (mode=REAL) | `572892f` |
 | 4 | **Druggable hub prioritisation** — 21 SSc-relevant drug–target interactions via DGIdb; F3 generated | earlier |
 | 4 | **Figures F1/F2/F3** — SVG + 300 dpi PNG for all three main figures | earlier |
+| 4b | **Multi-dataset overlay** — GSE210395 PBMC + GSE128169 lung ILD; 43 donors, 3 990 DEG rows, 72 MIM hits (34.1%); F2_multi 3-panel heatmap; 18 MINERVA overlays | `4136481` |
 | 5 | **IMRAD manuscript draft** — ~5 100 words, Frontiers Bioinformatics target, all sections complete with real pipeline stats | `4571708` |
 
 ## Inventory
@@ -44,9 +46,9 @@
 | `curation/annotations/reaction_evidence.tsv` | 244 rows | 198 with PMID (81%) |
 | `curation/pubmed_corpus.bib` | 361 BibTeX entries | 358 fully filled; 3 seed TODOs |
 | `analysis/network/` | 5 files | 38 communities, top-20 hubs, SMAD3–SMAD4 #1 (score 13.42) |
-| `analysis/overlay/` | cluster_deg.tsv (1 058 entries), patient_module_scores.tsv (22 donors), report (mode=REAL) | real Tabib 2021 data |
-| `minerva/overlays/` | 6 cluster TSVs | ready for MINERVA import |
-| `figures/` | F1 + F2 + F3 (SVG + 300dpi PNG) | F2 = REAL overlay |
+| `analysis/overlay/` | cluster_deg.tsv (1 058 entries) + cluster_deg_multi.tsv (3 990 entries), patient scores (22 + 43 donors) | skin only + multi-dataset (all REAL) |
+| `minerva/overlays/` | 18 cluster TSVs (6 skin + 6 PBMC + 6 lung) | ready for MINERVA import |
+| `figures/` | F1 + F2 + F3 + F2_multi (SVG + 300dpi PNG) | F2_multi = 3-panel skin/PBMC/lung |
 | `manuscript/ACR2026_late_breaking_abstract.md` | 1 file | 300-word scaffold |
 | `manuscript/SSc_MIM_manuscript_draft.md` | 1 file | ~5 100-word IMRAD draft (Frontiers Bioinformatics) |
 | `scripts/*.py` | 16 | + fetch_tabib.py, build_overlay.py (real pipeline) |
@@ -64,7 +66,7 @@ The pivot resolved two original blockers in one move:
 
 See [ROADMAP.md](ROADMAP.md) for the new GitHub+Zenodo-first plan. Summary:
 
-- ✅ 🟢 **Phase 0–4 AUTO lanes: COMPLETE.** Integration, validation, SBML QC, network analysis, real scRNA-seq overlay (Tabib 2021), DGIdb drug prioritisation, all figures, manuscript draft.
+- ✅ 🟢 **Phase 0–4b AUTO lanes: COMPLETE.** Integration, validation, SBML QC, network analysis, real scRNA-seq overlay (Tabib 2021 + GSE210395 + GSE128169), DGIdb drug prioritisation, all figures, manuscript draft. **MIM coverage: 34.1% (72/211 HGNC species).**
 - 🟡 **Automation-assisted, remaining**: manuscript polish + co-author review of curation decisions.
 - 🔴 **Human-only blockers (binding)**:
   1. Co-author kickoff + CellDesigner GUI wiring

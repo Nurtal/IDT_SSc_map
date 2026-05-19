@@ -930,3 +930,35 @@ Tous sans restriction d'accès (pas de dbGaP). Gain attendu : 16% → ~30-40% co
 
 **Mise à jour ROADMAP :** Phase 4b créée ; milestone M9b (31 août) ; gate G4b ajouté. Phase 4 marquée ✅ complète. Manuscrit draft marqué disponible.
 
+### 17:00 — Intégration P1 datasets (GSE210395 + GSE128169) — Phase 4b complète
+
+**Objectif :** augmenter la couverture MIM de 16% (skin seul) à ≥30% via deux datasets complémentaires.
+
+**Données téléchargées :**
+- `data/raw/gse210395/GSE210395_scRNA_countMatrix.tsv.gz` — 379 MB, format long-format triplet (feature/cell/count)
+- `data/raw/gse128169/GSE128169_RAW.tar` — 1,1 GB, matrices MEX GEO flat-directory (13 échantillons, 5 HC + 8 SSC)
+
+**Script :** `scripts/build_overlay_multi.py` — pipeline unifié pour les 3 datasets (skin/PBMC/lung).
+
+Particularité technique : les fichiers GEO de GSE128169 sont au format "flat-directory" avec préfixe de sample (`GSM3666096_SC45NOR_matrix.mtx.gz`). La fonction `sc.read_10x_mtx` de scanpy ne supporte pas ce format ; chargement manuel via `scipy.io.mmread` + pandas.
+
+**Résultats pipeline (commit `4136481`) :**
+
+| Dataset | Tissu | Cellules (QC) | Types cellulaires | DEG entries | Donors |
+|---------|-------|---------------|-------------------|-------------|--------|
+| Tabib 2021 (GSE138669) | Skin | 64 211 | 6 (keratinocyte, fibroblast, myofib., endothélial, macrophage, T) | 1 066 | 22 |
+| GSE210395 | PBMC | 34 619 | 6 (pDC, monocyte classique/non-classique, NK, B, plasma) | 1 799 | 8 |
+| GSE128169 | Poumon ILD | 67 516 | 6 (AT2, macrophage-SPP1, macrophage-alv, T, endothélial, fibroblaste-CXCL12) | 1 125 | 13 |
+| **TOTAL** | | **166 346** | **18 clusters** | **3 990** | **43** |
+
+**Couverture MIM : 72/211 espèces HGNC = 34.1%** (gate G4b ≥30% : ✅ atteint)
+
+Nouvelles espèces capturées par rapport au skin seul :
+- M1 IFN-I : BST2, IFITM1, IFI44, IFIT3, OASL (pDC PBMC)
+- M2 TGF-β/fibrose : CTHRC1, FN1, POSTN, TNC, COL5A1/2 (myofibroblastes poumon)
+- M4 IL-6/B : CD40, CD79B, BTK, MZB1 (B lymphocytes / plasma cells PBMC)
+
+18 overlays MINERVA générés (6 skin + 6 PBMC + 6 lung). Figure F2_multi 3 panneaux générée.
+
+STATUS.md mis à jour (Phase 4b COMPLETE, couverture 34.1%).
+
