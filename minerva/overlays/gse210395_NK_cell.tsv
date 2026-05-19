@@ -1,0 +1,12 @@
+species_id	log2fc	color
+BST2__ext	0.363	#d7191c
+FOSL2__nuc	-0.485	#2c7fb8
+HIF1A__nuc	-0.223	#2c7fb8
+IFI35__cyto	0.214	#d7191c
+IFITM2__cyto	0.249	#d7191c
+PSMB8__nuc	0.420	#d7191c
+PTPN6__cyto	0.546	#d7191c
+SAMHD1__nuc	0.506	#d7191c
+TGFB1__ext	-0.202	#2c7fb8
+XBP1__nuc	0.217	#d7191c
+XPO1__nuc	0.240	#d7191c

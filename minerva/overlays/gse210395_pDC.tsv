@@ -1,0 +1,6 @@
+species_id	log2fc	color
+IRF4__nuc	-0.548	#2c7fb8
+IRF7__cyto	0.496	#d7191c
+PSMB8__nuc	0.377	#d7191c
+SAMHD1__nuc	0.397	#d7191c
+XPO1__nuc	0.254	#d7191c

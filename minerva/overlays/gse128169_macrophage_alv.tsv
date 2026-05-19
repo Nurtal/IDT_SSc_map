@@ -1,0 +1,5 @@
+species_id	log2fc	color
+FN1__ecm	0.995	#d7191c
+IFI27__mito	0.496	#d7191c
+SAMHD1__nuc	0.343	#d7191c
+XBP1__nuc	-0.291	#2c7fb8

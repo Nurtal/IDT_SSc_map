@@ -1,0 +1,4 @@
+species_id	log2fc	color
+GBP2__cyto	0.227	#d7191c
+SOCS1__cyto	-0.299	#2c7fb8
+XBP1__nuc	-0.313	#2c7fb8

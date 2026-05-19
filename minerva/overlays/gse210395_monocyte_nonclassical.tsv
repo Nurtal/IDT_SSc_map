@@ -1,0 +1,6 @@
+species_id	log2fc	color
+HIF1A__nuc	-0.415	#2c7fb8
+IFI35__cyto	0.243	#d7191c
+PSMB8__nuc	0.341	#d7191c
+PTPN6__cyto	0.416	#d7191c
+SMAD3__cyto	-0.234	#2c7fb8

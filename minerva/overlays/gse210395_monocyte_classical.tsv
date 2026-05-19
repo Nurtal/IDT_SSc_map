@@ -1,0 +1,11 @@
+species_id	log2fc	color
+EGR1__cyto	0.687	#d7191c
+FURIN__golgi	-0.211	#2c7fb8
+HIF1A__nuc	-0.602	#2c7fb8
+IRF4__nuc	-0.205	#2c7fb8
+PSMB8__nuc	0.313	#d7191c
+PTPN6__cyto	0.335	#d7191c
+SAMHD1__nuc	0.228	#d7191c
+SMAD7__cyto	-0.211	#2c7fb8
+XPO1__nuc	0.236	#d7191c
+ZEB2__nuc	0.295	#d7191c
