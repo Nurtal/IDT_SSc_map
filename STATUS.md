@@ -3,16 +3,13 @@
 > Snapshot for orientation. Updated on every batch.
 > Authoritative source for completion state is the git log; this file gives one-screen context.
 
-## Headline
+## Headline  *(updated 2026-05-19)*
 
-- **Curation v1.0 done** — 88 SSc Tier-1 stubs wired + 67 SSc-specific reactions across 4 modules + crosstalk. Top hubs now reflect SSc biology.
-- **Integrated map:** 518 species, 242 reactions, 20 compartments. **`make preflight` reports 0 blocking failures**.
-- **Co-author locked** (médecine interne, ARD-SSc collaboration). All curation choices documented + reversible via `curation/ssc_curated_reactions.tsv`.
-- **30+ commits** on `main`, pushed to GitHub.
-- **5 Reactome imports** fetched, post-processed, harmonised.
-- **355 PMIDs** mined + auto-filled via NCBI E-utils; **198 / 226 reactions PubMed-cited**.
-- Reactome pilot succeeded live; harmonisation classifier produced JSON reports flagging every transform.
-- **All Phase 0 + Phase 1 + Phase 2 + Phase 3-AUTO complete.**
+- **Integrated map:** 526 species, 260 reactions, 20 compartments. **SBML validation: 0 errors (5 files clean). `make preflight`: 1 advisory only (dangling 17.9%), 0 blocking failures.**
+- **Phase 4 COMPLETE (real data)** — Tabib 2021 scanpy pipeline: 64 211 cells, 1 058 DEG entries, 34 MIM-mapped genes; REAL per-donor module scores (M1 IFN: SSc 0.342 vs HC 0.070; M2 fibrosis: 0.232 vs 0.044). Figures F1/F2/F3 generated.
+- **Phase 5 partial** — Full IMRAD manuscript draft at `manuscript/SSc_MIM_manuscript_draft.md` (~5 100 words, Frontiers Bioinformatics target, real stats throughout).
+- **Lead-author metadata filled** — `CITATION.cff` + `.zenodo.json` (Nathan Foulquier, ORCID 0000-0003-4620-2794, LBAI U1227 Inserm CDC CHU Brest). Co-author slot still REPLACE_ME.
+- **All Phase 0 + 1 + 2 + 3-AUTO + 4 complete.** Binding constraint = co-author kickoff + CellDesigner GUI work + .zenodo.json co-author fill.
 
 ## What's done (with commit refs)
 
@@ -28,22 +25,31 @@
 | 2.w8-9 | M3 Notch1 import (EndMT scaffold; rest manual per design) — 77 species, 39 reactions | `392bb15` |
 | 2.w10-11 | M4 IL-6 import + post-process + harmonise (64 species, 34 reactions) | `dd5da1d`, `392bb15` |
 | (tooling) | Post-processor + harmoniser + species seeder + Makefile + scripts-smoke CI | `cf92a46`, `876deaa`, `1304100`, `b7226eb` |
+| QC | **391 SBML L2V4 errors resolved** (notes/annotation ordering, XHTML head, SId hyphens); source-level fixes in 3 generator scripts | `68d4317` |
+| metadata | Lead-author CITATION.cff + .zenodo.json filled (Foulquier, ORCID, LBAI affiliation) | `40da591` |
+| 4 | **Real Tabib 2021 scanpy pipeline** — 64 211 cells QC'd, 6 cell types, 1 058 DEG entries, 34 MIM-mapped species (16% coverage); REAL per-donor module scores; F2 updated (mode=REAL) | `572892f` |
+| 4 | **Druggable hub prioritisation** — 21 SSc-relevant drug–target interactions via DGIdb; F3 generated | earlier |
+| 4 | **Figures F1/F2/F3** — SVG + 300 dpi PNG for all three main figures | earlier |
+| 5 | **IMRAD manuscript draft** — ~5 100 words, Frontiers Bioinformatics target, all sections complete with real pipeline stats | `4571708` |
 
 ## Inventory
 
 | Artifact | Count | Notes |
 |----------|-------|-------|
-| `curation/celldesigner/SSc_MIM_integrated.xml` | 518 species / 242 reactions / 20 compartments | curated v1.0; passes `make preflight` |
+| `curation/celldesigner/SSc_MIM_integrated.xml` | **526 species / 260 reactions / 20 compartments** | SBML validated 0 errors; preflight 1 advisory |
 | `curation/imports/*/*/*.harmonised.xml` | 5 | M1 + M2×2 + M3 + M4 |
-| `curation/ssc_curated_reactions.tsv` | 67 reactions | source-of-truth for SSc-specific layer |
+| `curation/ssc_curated_reactions.tsv` | 85 reactions | source-of-truth for SSc-specific layer |
 | `curation/celldesigner/ssc_additions_template/*.xml` | 88 stubs | all wired into integrated map |
-| `curation/annotations/species_annotations.tsv` | 518 rows | full coverage of the integrated map |
-| `curation/annotations/reaction_evidence.tsv` | 226 rows | 198 with PMID (88%) |
+| `curation/annotations/species_annotations.tsv` | 526 rows | full coverage of the integrated map |
+| `curation/annotations/reaction_evidence.tsv` | 244 rows | 198 with PMID (81%) |
 | `curation/pubmed_corpus.bib` | 361 BibTeX entries | 358 fully filled; 3 seed TODOs |
-| `analysis/network/` | 5 files | centrality, hubs, communities, sink_connectivity, summary |
-| `figures/` | F2 + F3 (SVG + 300dpi PNG) | F2 placeholder; F3 from real network |
-| `manuscript/ACR2026_late_breaking_abstract.md` | 1 file | 300-word IMRAD scaffold with live numerics |
-| `scripts/*.py` | 14 | reactome_pilot, post_process, harmonise, seed_species, integrate, extract_pmids, network, sink_check, crosstalk, bib_lookup, preflight, ssc_stubs, wire_ssc, draft_abstract, render_figures, release_prep, etc. |
+| `analysis/network/` | 5 files | 38 communities, top-20 hubs, SMAD3–SMAD4 #1 (score 13.42) |
+| `analysis/overlay/` | cluster_deg.tsv (1 058 entries), patient_module_scores.tsv (22 donors), report (mode=REAL) | real Tabib 2021 data |
+| `minerva/overlays/` | 6 cluster TSVs | ready for MINERVA import |
+| `figures/` | F1 + F2 + F3 (SVG + 300dpi PNG) | F2 = REAL overlay |
+| `manuscript/ACR2026_late_breaking_abstract.md` | 1 file | 300-word scaffold |
+| `manuscript/SSc_MIM_manuscript_draft.md` | 1 file | ~5 100-word IMRAD draft (Frontiers Bioinformatics) |
+| `scripts/*.py` | 16 | + fetch_tabib.py, build_overlay.py (real pipeline) |
 | `.github/workflows/` | 3 | validate_sbml, lint, scripts-smoke |
 
 ## Delivery target — pivoted 2026-05-16
@@ -58,15 +64,23 @@ The pivot resolved two original blockers in one move:
 
 See [ROADMAP.md](ROADMAP.md) for the new GitHub+Zenodo-first plan. Summary:
 
-- 🟢 **Fully automatable**: integration, network analysis, sink connectivity, PMID extraction, crosstalk scaffold, bib lookup, preflight, SSc stubs, figures, abstract draft, Zenodo bundle prep — **all shipped**.
-- 🟡 **Automation-assisted** (script generates scaffold; curator + co-author fill): SSc Tier-1 wiring in CellDesigner, MI2CAST reaction annotation review, manuscript polish.
-- 🔴 **Human-only** (irreducible): co-author scope sign-off & biological validation, CellDesigner GUI work, ACR portal submission, the `v1.0` git-tag push.
+- ✅ 🟢 **Phase 0–4 AUTO lanes: COMPLETE.** Integration, validation, SBML QC, network analysis, real scRNA-seq overlay (Tabib 2021), DGIdb drug prioritisation, all figures, manuscript draft.
+- 🟡 **Automation-assisted, remaining**: manuscript polish + co-author review of curation decisions.
+- 🔴 **Human-only blockers (binding)**:
+  1. Co-author kickoff + CellDesigner GUI wiring
+  2. `.zenodo.json` co-author slot (2× REPLACE_ME)
+  3. GitHub → Zenodo webhook toggle (one-time)
+  4. `git tag v1.0 && git push --tags`
 
-## Open external items (handover queue)
+## Open external items (handover queue — updated 2026-05-19)
 
-1. ✅ ~~Co-author~~ — médecine interne collaborator, ARD-published SSc, **locked**.
-2. **Co-author kickoff** — schedule 1-hour kickoff + 2 review sessions; brief is auto-generatable.
-3. **CellDesigner GUI** — open `*.harmonised.xml` and `SSc_MIM_integrated.xml` for visual round-trip; wire the 88 SSc Tier-1 stubs (`curation/celldesigner/ssc_additions_template/`).
+1. ✅ ~~Co-author~~ — locked.
+2. **Co-author kickoff** — 1 h walkthrough of STATUS + F2/F3 + 85 SSc reactions; share `manuscript/SSc_MIM_manuscript_draft.md` as the brief.
+3. **CellDesigner GUI** — visual round-trip + wire 88 stubs into `SSc_MIM_integrated.xml`.
+4. **`.zenodo.json` co-author entry** — replace 2× REPLACE_ME (name, affiliation, ORCID).
+5. **GitHub → Zenodo webhook** — one-time toggle at zenodo.org.
+6. **3 seed BibTeX TODOs** — Aghakhani 2020 (CaSQ), Singh 2020 (RA-map), Tabib 2021.
+7. **`git tag v1.0 && git push --tags`** — after G3 gate (24 Aug target).
 4. **`CITATION.cff` `REPLACE_ME` placeholders** — author / ORCID / repository URL / co-author entry (the user has the metadata in hand).
 5. **GitHub → Zenodo webhook** — one-time toggle in Zenodo to mint a DOI on `git tag v1.0`.
 6. **3 seed BibTeX TODOs** — Aghakhani 2020 (CaSQ), Singh 2020 (RA-map), Tabib 2021 (skin scRNAseq) — need manual PMID lookup.

@@ -860,3 +860,54 @@ Generated `manuscript/SSc_MIM_manuscript_draft.md` — a full IMRAD scientific m
 - Figures F1–F3 already generated as SVG under `figures/`; need journal-format PNG exports
 - Pre-submission check against Frontiers author guidelines (word limit, figure count)
 
+---
+
+## 2026-05-19 — Real Tabib 2021 pipeline + ROADMAP check
+
+### 10:30 — Vrai pipeline scanpy
+
+Téléchargement des données GEO (GSE138669_RAW.tar, 594 MB) + extraction des 22 fichiers `.h5`. Installation de scanpy 1.12 + h5py 3.16 dans le venv.
+
+Implémentation du vrai pipeline dans `scripts/build_overlay.py` (`real_deg()`) :
+- Métadonnées SSc/HC récupérées depuis le soft file GEO (SC2/SC5/SC19/SC49/SC60/SC69/SC70/SC86/SC119/SC185/SC188/SC189 = SSC ; reste = HC)
+- QC : 16 220 160 → 64 211 cellules (min_genes 200, max_genes 6000, pct_mt < 25%)
+- Normalisation 10 000 cppc, log1p, HVG top 2000, PCA 30 composantes, kNN k=20, Leiden 0.35
+- Annotation : 6 types (keratinocyte 29 535, fibroblast 13 046, myofibroblast 8 790, endothelial 6 930, T lymphocyte 2 987, macrophage 2 923)
+- DEG pseudobulk Wilcoxon (12 SSC vs 10 HC) : 1 058 paires (|log2FC| ≥ 0.2, p ≤ 0.05)
+- 34 espèces MIM mappées (16% des 211 gènes annotés HGNC)
+- Scores par module : M1 SSc 0.342±0.095 / HC 0.070±0.016 ; M2 SSc 0.232±0.061 / HC 0.044±0.007
+- Top IFN : IFITM3, IFITM1, IFI27, IRF7, ISG15 (macrophages + myofibroblastes)
+- Top fibrose : COL1A1, COMP, POSTN, TNC (fibroblastes)
+- Commit `572892f`
+
+### 11:30 — Manuscrit mis à jour avec les vrais chiffres
+
+4 sections corrigées : Abstract, Methods 2.6, Results 3.2, Discussion 4.4. Les chiffres synthétiques (60% coverage, 97 DEG) remplacés par les valeurs réelles. Commit `4571708`.
+
+### 14:00 — Bilan ROADMAP
+
+État au 2026-05-19 :
+
+| Phase | État |
+|-------|------|
+| 0 Bootstrap | ✅ |
+| 1 Curation docs | ✅ |
+| 2 Imports + SSc Tier-1 (85 réactions) | ✅ |
+| 3-AUTO Integration + réseau + Zenodo prep | ✅ |
+| 4 Overlay réel + DGIdb + figures F1/F2/F3 | ✅ **complété cette session** |
+| 5 Manuscrit draft | ✅ (draft complet ~5 100 mots) |
+| 5 ACR abstract | ✅ scaffold avec vrais chiffres |
+| Co-author kickoff | 🔴 EN ATTENTE |
+| CellDesigner GUI + wiring | 🔴 EN ATTENTE |
+| .zenodo.json co-author REPLACE_ME | 🔴 EN ATTENTE |
+| Zenodo webhook | 🔴 EN ATTENTE |
+| v1.0 tag | 🔴 EN ATTENTE |
+
+Gates en cours :
+- G2 (31 jul) : co-author review → **bloquant**
+- G3 (24 août) : `make preflight` clean → 1 advisory seulement (dangling 17.9%, target ≤15%)
+- G4 (11 sep) : F2 real data → **✅ passé**
+- G5 (18 sep) : abstract sign-off co-auteur → en attente
+
+STATUS.md mis à jour pour refléter l'état actuel (526 sp / 260 rxn, mode=REAL).
+
