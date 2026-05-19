@@ -828,3 +828,35 @@ make preflight →  1 advisory (dangling fraction unchanged)
 
 **Commit `68d4317`** — `fix(sbml): resolve all 391 SBML L2V4 validation errors`.
 
+---
+
+## 2026-05-19 — Manuscript draft
+
+### 10:30 — First IMRAD manuscript draft generated
+
+Generated `manuscript/SSc_MIM_manuscript_draft.md` — a full IMRAD scientific manuscript draft (~4 800 words) targeting Frontiers in Bioinformatics (or npj Systems Biology and Applications).
+
+**Structure:**
+- Title, affiliations, ORCID (Nathan Foulquier, LBAI U1227 Inserm CDC CHU Brest)
+- Abstract (flowing prose, no section labels): 246 words
+- Introduction: disease context, mechanistic complexity, gap statement, Disease Maps Project rationale
+- Materials and Methods (9 subsections, 2.1–2.9): module definition, Reactome import, SSc Tier-1 curation, MI2CAST annotation, SBML validation pipeline, scRNA-seq overlay (Tabib 2021, GSE138669), network analysis (NetworkX, Louvain), DGIdb drug prioritisation, software/reproducibility statement
+- Results (3 subsections): Table 1 (module statistics), Figure 1 placeholder (global MIM), scRNA-seq overlay with coverage metrics, Table 2 (top-20 hubs + drugs), Figure 2 and Figure 3 placeholders
+- Discussion (4 subsections): Disease Maps ecosystem context, TGF-β/IFN axis, Notch/EndoMT, stratification by subtype; limitations section
+- Conclusion, Data Availability, Author Contributions, Funding, Acknowledgements
+- 26 references (Vancouver-style, PMID-cited)
+
+**Key quantitative claims used:**
+- 526 species, 260 reactions, 17 compartments, 85 SSc-curated reactions
+- 355 unique PMIDs (from `.zenodo.json`)
+- 38 network communities; top hub SMAD3p_SMAD4 (13.42)
+- 21 SSc-relevant drug–target interactions (DGIdb)
+- 60% scRNA-seq map coverage (Tabib 2021)
+
+**Pending before submission:**
+- Co-author metadata (REPLACE_ME placeholder in `.zenodo.json` / `CITATION.cff`)
+- Funding statement
+- Validation of scRNA-seq coverage fraction against updated overlay output
+- Figures F1–F3 already generated as SVG under `figures/`; need journal-format PNG exports
+- Pre-submission check against Frontiers author guidelines (word limit, figure count)
+
