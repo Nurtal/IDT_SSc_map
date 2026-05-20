@@ -1025,3 +1025,92 @@ Fibro_LGR5, Fibro_MYOC2, Peri_TGFBI, Peri_RGS5, Fibro_PTGDS, Fibro_MYOC1, Fibro_
 **Note M3 :** gain modeste (+4 pp) mais biologiquement cohérent — PECAM1 (Vascular clusters), NUMB (Peri_RGS5/Peri_TGFBI, régulateur Notch), ROCK1/ROCK2 récupérés. NICD1 reste structurellement non-détectable (produit protéolytique). La prochaine priorité est un dataset digital ulcer / capillaroscopie.
 
 Manuscrit mis à jour : abstract, Methods 2.6, Results 3.2, Discussion 4.4–4.5. STATUS.md mis à jour Phase 4c.
+
+
+## 2026-05-20 — Simulated peer-review run pour npj-SBA + démarrage révision
+
+### 09:00 — Run de reviewing simulé (`reviewing/`)
+
+Avant submission à *npj Systems Biology and Applications*, run de peer-review interne avec trois personæ orthogonales pour stress-tester le manuscrit v0.1 (`SSc_MIM_manuscript_draft.md`).
+
+**Reviewers simulés (`reviewing/R*.md`) :**
+
+- **R1 — Systems biology / disease maps** : 5 points majeurs (novelty quantifiée vs Reactome/Mahoney/Taroni, hub-score robustness, hypergeometric crosstalk, CaSQ Boolean readiness, MINERVA/BioModels deposit) + 10 mineurs (dangling fraction, ECO distribution, compartment count 17 vs 20, etc.).
+- **R2 — scRNA-seq + clinical SSc** : 7 points majeurs (mixed-effects DEG + FDR, AUCell sans double-dipping, M3 within-vascular subset, drug table vs trial outcomes — focuSSced negative, fresolimumab abandon, RECITAL, brontictuzumab GI tox, CellTypist harmonisation, mRSS correlation, HC demographic matching). Calibration clinique forte.
+- **R3 — Reproducibility / FAIR** : 6 majeurs (Docker container, Zenodo input mirror, CI for figures, MIRIAM SBML, SBGN round-trip, RO-Crate manifest) + FAIR self-assessment.
+
+**Décision éditoriale (`reviewing/editor_decision.md`) : Major Revision.** 25 items essentiels E1–E25 regroupés en 5 thèmes (statistique, validation externe, FAIR, modules, Boolean). Convergence des trois reviewers.
+
+**Livrables (`reviewing/`) :**
+- `README.md` — index du run
+- `R1_systems_biology.md` / `R2_scRNAseq_clinical.md` / `R3_reproducibility.md`
+- `editor_decision.md` — checklist E1–E25 priorisée must/should/nice-to-have
+- `revision_plan.md` — mapping E item → fichiers touchés + effort
+- `REVISION_ROADMAP.md` — sprint-structured playbook (5 tracks T1–T5, 7 sprints S0–S7, 10 risques RR1–RR10, 9 gates go/no-go, 19 semaines wall-clock, target submission 2026-09-30)
+
+Commit `e638a4d`, push origin/main.
+
+### 11:00 — Sprint S0 — Pre-sprint setup
+
+**Actions exécutées (S0.1–S0.4) :**
+
+- **S0.1** — Branche `revision/v1.1` créée off `main@e638a4d`.
+- **S0.2** — Baseline figé dans `analysis/baseline_v1.0/` (5 artefacts + SHA256SUMS + README) : `cluster_deg_multi.tsv` (4 338 entries), `patient_module_scores_multi.tsv` (197 donneurs), `network_summary.json` (38 communities, top-20 hubs), `hubs.tsv`, `druggable_hubs.tsv`. Permet diff-vs-baseline reporting pendant les sprints suivants.
+- **S0.3** — Tag annoté `v1.0-pre-review` sur `e638a4d` (= snapshot pré-révision : 526 species / 260 reactions / 50% MIM coverage).
+- **S0.4** — `reviewing/PROGRESS.md` créé — dashboard one-screen : sprint tracker S0–WR avec gates ☐, table E1–E25 (must/should/nice) avec status + owner + sprint, risk watch RR1–RR5, headline numbers à rafraîchir à chaque sprint gate, change log.
+- **S0.5** — Brief co-author `docs/standups/2026-05-20_revision_kickoff.md` : agenda 60 min (5 thèmes, décisions D1–D7 à recorder, créneaux à locker pour S5 / WR-1 / WR-2, top 3 risques RR1–RR3). Pre-read prioritisé.
+
+**S0 gate restant :** kickoff co-author humain (sign-off scope + descope explicite de E10 [CaSQ Boolean] et E18 partiel [Mahoney/Taroni novelty comparison]).
+
+Commit `afa6196` sur `revision/v1.1`, push branch + tag.
+
+### 14:00 — Sprint S1 — Mixed-effects DEG + BH-FDR (E1)
+
+**Objectif :** remplacer le Wilcoxon raw + filtre `p ≤ 0.05` du v1.0 par un pipeline statistiquement défendable (NB GLM + multiple-testing correction), addressing R2-M1.
+
+**S1.1 — `scripts/deg_mixed_effects.py` (~370 lignes) :**
+
+- Trois backends pluggables avec détection auto (preference order) :
+  - **pydeseq2** (préféré) — DESeq2 en Python, NB GLM avec design `~ condition`. Référence : Muzellec et al. *Bioinformatics* 2023.
+  - **statsmodels NB** (fallback) — `NegativeBinomial(y, X, offset=log(libsize))` avec dispersion data-estimated. Pratique : recovery 10/10 sur synthétique vs 0/10 avec `GLM(family=NB(alpha=1.0))` initial.
+  - **scipy Welch's t-test** (last resort) — sur `log1p(CPM × 1e4)`, équivalent au v1.0 mais avec p-value reportée pour FDR aval.
+- BH-FDR appliqué deux fois : **per-dataset** (primaire, moins conservatif, recommandé par R2) et **per-cluster** (diagnostic).
+- Output schema enrichi : `pvalue`, `padj_dataset`, `padj_cluster`, `n_donors_ssc`, `n_donors_hc`, `mean_count_ssc`, `mean_count_hc`, `backend`.
+- API library + CLI (`--in pseudobulk.tsv --out deg.tsv --backend auto`).
+
+**S1.2 — `scripts/tests/test_deg_mixed_effects.py` :** smoke suite synthétique (8 donneurs × 50 gènes × 2 cell types, 10 DE plantés ×3 en fib SSC). Résultats :
+- `detect_backend()` → statsmodels (pydeseq2 pas installé)
+- scipy_welch : 8/10 plantés recovered à FDR ≤ 0.05 dans fib, 1 faux positif dans endo
+- statsmodels NB : 10/10 plantés recovered
+- BH monotone en ranking, padj ∈ [0,1]
+- I/O round-trip TSV preserve le schéma
+
+**S1.3 — refactor `scripts/build_overlay_multi.py` :**
+- `_pseudobulk_deg()` dispatch via `DEG_BACKEND` (env `SSC_DEG_BACKEND` ou CLI `--deg-backend`).
+- `mixed-v11` (default) : agrège raw_df → (donor × cell_type) raw counts, appelle `deg_mixed_effects.pseudobulk_deg`, applique FDR, filtre à `padj_dataset ≤ q` (default 0.05) ET `|lfc| ≥ 0.2`, collecte les rows complets dans `DEG_ROWS_V11`.
+- `wilcoxon-v10` : pathway legacy conservé pour sensitivity comparison.
+- 4 call sites updated (tabib2021/gse210395/gse128169 via `_pseudobulk_deg`, gse195452 via inline branch).
+- Nouveau writer `write_cluster_deg_v11()` → `cluster_deg_multi_v11.tsv` avec full stats.
+- `report.json` enrichi avec `fdr_summary` (per-dataset n_tested / n_sig genes).
+
+**S1.4 — Makefile + env :**
+- `make deg-test` → smoke suite
+- `make overlay-multi` → pipeline complet
+- `environment.yml` : ajout `statsmodels>=0.14` (conda) + `pydeseq2>=0.4.10` (pip)
+
+**Sanity check :** `make overlay-multi` tourne end-to-end sans données (les 4 datasets sont skipped, le dispatch v1.1 fonctionne, report.json reflète `deg_backend: mixed-v11`). Outputs vides clobbered restaurés via `git checkout --`.
+
+**S1 gate bloquant :** la re-run sur données réelles nécessite (i) `make tabib-fetch` (~594 MB) + équivalents pour GSE195452/210395/128169, (ii) l'env conda `sscmim` active (scanpy + leidenalg + pydeseq2). Code complet, prêt à exécuter.
+
+Commit `0176635` sur `revision/v1.1` (838 insertions, 26 deletions, 6 fichiers), push origin.
+
+### Bilan 2026-05-20
+
+| Sprint | Status | Code | Gate |
+|--------|--------|------|------|
+| Reviewing run | 🟢 | 6 fichiers `reviewing/` | n/a |
+| S0 | 🟢 done (code) | branch + baseline + tag + brief | ☐ kickoff co-author |
+| S1 | 🟡 in progress | E1 code complete + tests green | ☐ re-run real data |
+
+Prochaine étape : exécuter la kickoff co-author (S0 gate), puis `make tabib-fetch` + activer `sscmim` env pour produire `coverage_v1.1.json` avant d'enchaîner S2 (E2 AUCell + E3 hub robustness + E4 community hypergeometric).
+
