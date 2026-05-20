@@ -119,6 +119,17 @@ deg-test:  ## Smoke-test scripts/deg_mixed_effects.py (no data needed).
 	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/tests/test_deg_mixed_effects.py; \
 	else $(PYTHON) scripts/tests/test_deg_mixed_effects.py; fi
 
+aucell-test:  ## Smoke-test scripts/score_aucell.py (no data needed).
+	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/tests/test_score_aucell.py; \
+	else $(PYTHON) scripts/tests/test_score_aucell.py; fi
+
+aucell:  ## Score donors with AUCell + Z-score (needs a pseudobulk TSV).
+	@if [ ! -f analysis/overlay/pseudobulk_multi.tsv ]; then \
+	  echo "Missing analysis/overlay/pseudobulk_multi.tsv. Run 'make overlay-multi' first."; exit 2; \
+	fi
+	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/score_aucell.py --pseudobulk analysis/overlay/pseudobulk_multi.tsv; \
+	else $(PYTHON) scripts/score_aucell.py --pseudobulk analysis/overlay/pseudobulk_multi.tsv; fi
+
 boolean:  ## CaSQ Boolean inference -> SBML-qual for GINsim/BioLQM/MaBoSS.
 	@if [ -x .venv/bin/python ]; then PATH=".venv/bin:$$PATH" $(PYTHON) scripts/boolean_inference.py; \
 	else $(PYTHON) scripts/boolean_inference.py; fi

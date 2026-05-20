@@ -16,7 +16,7 @@
 |--------|--------|--------|--------------|-------|
 | S0 | 2026-05-21 → 2026-05-27 | 🟢 done (code) | ☐ kickoff still pending | Branch + baseline + tag + brief |
 | S1 | 2026-05-28 → 2026-06-10 | 🟡 in progress | ☐ | scripts/deg_mixed_effects.py + tests + overlay refactor done; **actual re-run on real data blocked on `make tabib-fetch` + scanpy env** |
-| S2 | 2026-06-11 → 2026-06-24 | ⏳ pending | ☐ | T1.b — AUCell + hub robustness + community enrichment (E2, E3, E4) |
+| S2 | 2026-06-11 → 2026-06-24 | 🟡 mostly done | 🔴 see gate notes | E3/E4 executed on real artefacts; E2 code+tests; hub_score top-20 shares **only 4/20 with PageRank, 0/20 with eigenvector** → gate requires narrative pivot |
 | S3 | 2026-06-25 → 2026-07-08 | ⏳ pending | ☐ | T2.a — mRSS correlation + demographics (E7, E12) |
 | S4 | 2026-07-09 → 2026-07-22 | ⏳ pending | ☐ | T2.b — M3 subset + CellTypist (E8, E9) |
 | S5 | 2026-07-23 → 2026-08-05 | ⏳ pending | ☐ | T2.c — drug table + crosstalk (E5, E6) |
@@ -33,9 +33,9 @@ Legend: 🟢 done · 🟡 in progress · ⏳ pending · 🔴 blocked · ⚪ desc
 | ID | Theme | Description | Sprint | Status | Owner | Notes |
 |----|-------|-------------|--------|--------|-------|-------|
 | E1 | A-stats | Mixed-effects DEG + BH-FDR | S1 | 🟡 code complete | curator | `deg_mixed_effects.py` + tests green; integration into `build_overlay_multi.py` done; **`make overlay-multi` re-run on real data pending** (needs `make tabib-fetch` + scanpy env) |
-| E2 | A-stats | AUCell / sign-blinded module score | S2 | ⏳ | curator | |
-| E3 | A-stats | Hub-score robustness (eigenvector, PageRank) | S2 | ⏳ | curator | |
-| E4 | A-stats | Hypergeometric community–module enrichment | S2 | ⏳ | curator | |
+| E2 | A-stats | AUCell / sign-blinded module score | S2 | 🟡 code complete | curator | `score_aucell.py` (AUCell + Tabib Z-score) + tests green (M1/M2 directionality recovered); execution waits on pseudobulk TSV from `make overlay-multi` |
+| E3 | A-stats | Hub-score robustness (eigenvector, PageRank) | S2 | 🟢 executed | curator | `analysis/network/hub_overlap.tsv`, `figures/F_supp_hub_robustness.{svg,png}`. **Jaccard₂₀ vs PageRank = 0.18 (4/20); vs eigenvector = 0.00.** Gate target was ≥ 15/20 — *fails*. Decision deferred to co-author: keep deg+btw hub_score as "mechanistic chokepoints" framing, or pivot §3.3 narrative to PageRank-primary. |
+| E4 | A-stats | Hypergeometric community–module enrichment | S2 | 🟢 executed | curator | `analysis/network/community_enrichment.tsv`: **32 significant tests at q<0.05 across 28/38 communities**. Largest 6 communities each carry one module overwhelmingly (fold enrichment 2.97–7.21, padj << 0.001). Gate (≥6) cleared. |
 | E5 | A-stats | Crosstalk supplementary table (8 reactions) | S5 | ⏳ | curator | quick win |
 | E6 | B-validation | Recalibrate Table 2 with SSc trial outcomes | S5 | ⏳ | curator + co-author | book co-author session for S5 |
 | E7 | B-validation | mRSS correlation (Tabib, Gur) | S3 | ⏳ | curator | start Tabib-lab email on S3 day 1 |
@@ -99,8 +99,12 @@ Legend: 🟢 done · 🟡 in progress · ⏳ pending · 🔴 blocked · ⚪ desc
 | M2 coverage | 53 % (17/32) | TBD | TBD | — |
 | M3 coverage | 21 % (5/24) | TBD | TBD | — |
 | M4 coverage | 35 % (6/17) | TBD | TBD | — |
-| Top hub | SMAD3p_SMAD4 (13.42) | — | TBD (PageRank/eigenvector) | — |
-| Significant communities (q<0.05) | not reported | — | TBD | — |
+| Top hub (hub_score) | SMAD3p_SMAD4 (13.42) | — | unchanged | — |
+| Top hub (PageRank) | not reported | — | **phenotype_myofibroblast_activation** (S2) | — |
+| Top hub (eigenvector) | not reported | — | **JAK1_inhibited / LTBP1_TGFB1 complex** (S2) | — |
+| Top-20 Jaccard hub_score↔PageRank | — | — | **0.18 (4/20)** (S2) | — |
+| Top-20 Jaccard hub_score↔eigenvector | — | — | **0.00 (0/20)** (S2) | — |
+| Significant communities (q<0.05) | not reported | — | **32 tests / 28 communities** (S2) | — |
 | Skin SSc/HC M1 score | 0.342 vs 0.070 (sign-weighted) | — | TBD (AUCell) | — |
 | ρ(M1, mRSS) | not measured | — | — | TBD (S3) |
 
@@ -109,6 +113,35 @@ Legend: 🟢 done · 🟡 in progress · ⏳ pending · 🔴 blocked · ⚪ desc
 - **2026-05-20** — S0 started. Branch `revision/v1.1` created
   off `main`@`e638a4d`. Tag `v1.0-pre-review` set. Baseline
   frozen in `analysis/baseline_v1.0/`. Kickoff brief drafted.
+- **2026-05-20** — S2 partial. E3 (hub robustness) and E4
+  (community enrichment) executed end-to-end on real artefacts:
+  - `scripts/network_analysis.py` extended with eigenvector
+    centrality (per-component to handle 22 weakly-connected
+    components), hub_overlap.tsv (top-20 under each of
+    hub_score/degree/betweenness/PageRank/eigenvector), Jaccard +
+    Spearman ρ.
+  - **Hub robustness — gate failure:** Jaccard₂₀(hub_score, PageRank)
+    = 0.18 (4/20); Jaccard₂₀(hub_score, eigenvector) = 0.00.
+    Spearman ρ over all eligible species: degree +0.94, betweenness
+    +0.95, PageRank +0.62, eigenvector −0.02. Decision required from
+    co-author: pivot manuscript §3.3 narrative or report all metrics.
+  - Community–module hypergeometric: **32 sig at q<0.05 across 28/38
+    communities**; largest 6 communities each ≥ 5× enrichment for a
+    single module. Supersedes the qualitative "six largest
+    communities" claim in §3.3 with numerics.
+  - Supplementary figure `figures/F_supp_hub_robustness.{svg,png}`
+    (3-panel scatter, top-20 highlighted in red).
+  - `summary.json` extended with `community_enrichment` and
+    `hub_robustness` blocks.
+  E2 (AUCell): `scripts/score_aucell.py` (AUCell + Tabib Z-score),
+  tests `test_score_aucell.py` 4/4 green — AUCell M1 SSc-HC Δ=+0.95
+  on synthetic, M2 reverse correctly recovered, Z-score directional
+  too. Loader reads real `species_annotations.tsv` correctly:
+  M1=37, M2=32, M3=24, M4=17, ssc_tier1=86 HGNC symbols.
+  Execution on real data waits on pseudobulk TSV from
+  `make overlay-multi`.
+  Makefile: `make aucell-test`, `make aucell`.
+
 - **2026-05-20** — S1.1–S1.4 done (code). New module
   `scripts/deg_mixed_effects.py` with three backends (pydeseq2 →
   statsmodels NB → scipy Welch) + BH-FDR (per-dataset primary,

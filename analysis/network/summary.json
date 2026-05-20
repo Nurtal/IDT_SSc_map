@@ -114,6 +114,62 @@
     "comm36__ssc_tier1": 2,
     "comm37__M2": 2
   },
+  "community_enrichment": {
+    "n_tests": 53,
+    "n_significant_at_q05": 32,
+    "n_communities_significant": 28,
+    "significant_communities": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      25,
+      26,
+      27,
+      33,
+      34
+    ]
+  },
+  "hub_robustness": {
+    "metrics": [
+      "hub_score",
+      "degree",
+      "betweenness",
+      "pagerank",
+      "eigenvector"
+    ],
+    "jaccard_top20_vs_hub_score": {
+      "degree": 0.538,
+      "betweenness": 0.538,
+      "pagerank": 0.176,
+      "eigenvector": 0.0
+    },
+    "spearman_all_eligible_vs_hub_score": {
+      "degree": 0.941,
+      "betweenness": 0.953,
+      "pagerank": 0.618,
+      "eigenvector": -0.021
+    }
+  },
   "top_hubs": [
     {
       "species": "SMAD3p_SMAD4__nuc",

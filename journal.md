@@ -1114,3 +1114,76 @@ Commit `0176635` sur `revision/v1.1` (838 insertions, 26 deletions, 6 fichiers),
 
 Prochaine étape : exécuter la kickoff co-author (S0 gate), puis `make tabib-fetch` + activer `sscmim` env pour produire `coverage_v1.1.json` avant d'enchaîner S2 (E2 AUCell + E3 hub robustness + E4 community hypergeometric).
 
+### 16:30 — Sprint S2 — E3 (hub robustness) + E4 (community enrichment) + E2 (AUCell code)
+
+**Stratégie :** S2.3 et S2.4 opèrent sur le graphe existant (analysis/network/ artefacts du v1.0), donc exécutables immédiatement sans data scRNA-seq. S2.1/S2.2 (AUCell + Z-score) nécessitent les pseudobulks réels — code complet, run bloqué comme S1.
+
+**S2.3 — Hub robustness (E3, `scripts/network_analysis.py`) :**
+
+- Ajout de l'eigenvector centrality (per-component pour gérer les 22 weakly-connected components ; `eigenvector_centrality_numpy` puis fallback iterative).
+- Nouveau bloc qui calcule top-20 sous chaque metric (hub_score, degree, betweenness, pagerank, eigenvector), Jaccard₂₀ pairwise, Spearman ρ sur tous les eligible species.
+- Output : `analysis/network/hub_overlap.tsv` (20 lignes × 5 metrics + module label par metric).
+
+**Résultats E3 — gate fail :**
+
+| vs hub_score | Jaccard₂₀ | ρ (all) |
+|--------------|-----------|---------|
+| degree | 0.54 (11/20) | +0.94 |
+| betweenness | 0.54 | +0.95 |
+| pagerank | **0.18 (4/20)** | +0.62 |
+| eigenvector | **0.00 (0/20)** | −0.02 |
+
+Le hub_score (deg+btw z-sum) est cohérent avec ses constituants directs mais **diverge fortement** des metrics indépendants. Top-1 par metric :
+- hub_score : SMAD3p_SMAD4 (M2)
+- pagerank : phenotype_myofibroblast_activation (M2) — convergence sink
+- eigenvector : JAK1_inhibited / LTBP1_TGFB1 complex — espèces denses dans sous-graphes ECM/IFN
+
+Gate S2 roadmap : "Top-20 partage ≥ 15/20 avec PageRank ou eigenvector". **Échec.** Décision déférée au co-author :
+- Option A : conserver deg+btw comme "mechanistic chokepoints", justifier le choix dans §2.7, rapporter PageRank/eigenvector en supplement (recommandé).
+- Option B : pivoter §3.3 narrative vers PageRank-primary → cascade dans Table 2 drug priorities → cohérent avec critère "convergence importance".
+
+**S2.4 — Community–module hypergeometric (E4) :**
+
+- Pour chaque (community, module) : `scipy.stats.hypergeom.sf(x-1, N=526, K=|module|, n=|community|)`, BH-FDR cross all 38×5 tests.
+- Output : `analysis/network/community_enrichment.tsv`.
+
+**Résultats E4 — gate clear :** 32 tests significatifs à q<0.05 sur 28/38 communities (gate ≥6 amplement dépassé). Les 6 plus grosses communities portent chacune un module dominant :
+- comm 4 (n=30) ⇒ M4 : 30/30 module genes, fold 7.21, padj 2.14e-27
+- comm 2 (n=37) ⇒ M3 : 35/37, fold 5.53, padj 3.04e-26
+- comm 5 (n=30) ⇒ M1 : 30/30, fold 5.84, padj 1.72e-24
+- comm 6 (n=28) ⇒ M3 : 28/28, fold 5.84, padj 8.44e-23
+- comm 3 (n=34) ⇒ M2 : 34/34, fold 2.97, padj 8.78e-17
+- comm 1 (n=52) ⇒ ssc_tier1 : 34/52, fold 3.91, padj 3.50e-16
+
+→ La structure modulaire curée est récapitulée de manière non-biaisée par la topologie. Le claim §3.3 "six largest enriched for single modules" est désormais soutenu par des p-values exactes.
+
+**Supplementary figure :** `figures/F_supp_hub_robustness.{svg,png}` — scatter 3-panels hub_score vs (degree | PageRank | eigenvector), top-20 hub_score en rouge. Visualise concrètement le défaut de robustness avec PageRank/eigenvector.
+
+**`summary.json` étendu :** `community_enrichment` (n_tests/n_significant/sig_communities), `hub_robustness` (jaccard + spearman par metric).
+
+**S2.1/S2.2 — AUCell + Tabib Z-score (E2, `scripts/score_aucell.py` ~290 lignes) :**
+
+- AUCell canonique (Aibar 2017) : rank-based gene-set recovery curve AUC normalisée à [0,1]. T = 5% de n_genes par défaut.
+- Tabib-style Z-score : mean((expr - μ)/σ) sur le gene set. Triangulation.
+- Loader des module gene sets depuis `species_annotations.tsv` (gère les modules joints "M1,M2").
+- API library + CLI (`--pseudobulk pb.tsv --species-tsv ... --out-aucell ... --out-zscore ...`).
+
+**Smoke test (`scripts/tests/test_score_aucell.py`, 4/4 green) :**
+- Directionality AUCell : M1 planté en SSc (×4) → Δ=+0.95 ; M2 planté en HC → Δ=−0.99 ; M3 neg-ctrl → Δ=0.
+- Directionality Z-score : M1 SSc +2.77 / HC −0.22 ; M2 inverse.
+- Loader sur le vrai `species_annotations.tsv` : récupère M1=37, M2=32, M3=24, M4=17, ssc_tier1=86 (cohérent avec manuscrit §2.6).
+- CLI round-trip TSV.
+
+Makefile : `make aucell-test` et `make aucell`. Exécution sur données réelles waits sur le pseudobulk dumpé par `make overlay-multi` (même blocker que S1).
+
+**Bilan S2 :**
+
+| Item | Status | Output |
+|------|--------|--------|
+| E2 AUCell | 🟡 code + tests | `score_aucell.py`, `tests/test_score_aucell.py` |
+| E3 hub robustness | 🟢 executed | `hub_overlap.tsv`, `F_supp_hub_robustness.{svg,png}` — **gate failed, decision needed** |
+| E4 community enrichment | 🟢 executed | `community_enrichment.tsv` — gate cleared (32 sig / 28 communities) |
+
+Next : co-author decision sur E3 framing (Option A vs B), puis enchaîner S3 (mRSS correlation + demographics) qui est indépendant des blockers data.
+
+
