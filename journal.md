@@ -1186,4 +1186,31 @@ Makefile : `make aucell-test` et `make aucell`. Exécution sur données réelles
 
 Next : co-author decision sur E3 framing (Option A vs B), puis enchaîner S3 (mRSS correlation + demographics) qui est indépendant des blockers data.
 
+### 18:00 — Décision E3 : Option A locked
+
+User décide Option A : conserver `hub_score = z(deg) + z(btw)` comme metric "mechanistic chokepoint", reporter PageRank + eigenvector en supplément.
+
+**Mise à jour manuscrit (`SSc_MIM_manuscript_draft.md`) :**
+
+- **§2.7 Network Analysis** — réécrit. Trois changements :
+  1. Correction de la formule : l'ancienne description ("geometric mean of betweenness centrality and degree, normalised to the 99th percentile") ne correspondait **pas** au code (`z_deg + z_btw`). Reviewer R1-M3 avait raison de pointer le mismatch.
+  2. Justification explicite du choix : "mechanistic chokepoint topology — species that simultaneously act as local information hubs (high degree) and bridges across otherwise distant subnetworks (high betweenness)".
+  3. Ajout de la robustness analysis avec les numerics : Jaccard₂₀(hub_score, degree) = 0.54 ; vs btw 0.54 ; vs PageRank 0.18 ; vs eigenvector 0.00. ρ Spearman sur tous les eligible : +0.94 / +0.95 / +0.62 / −0.02. Explanation biologique de ce que PageRank et eigenvector priorisent (sinks vs complex assemblies) — chaque metric répond à une question différente, le chokepoint framing est le bon choix pour l'aval druggability §2.8.
+  4. Bloc community detection avec mention explicite des hypergeometric tests + BH-correction sur 38×5 = 190 tests.
+
+- **§3.3 Results — Network Topology** — réécrit aussi :
+  1. Paragraphe communities mis à jour avec les vraies numerics : **32 enrichments significatifs à q<0.05 sur 28/38 communities**. Les 6 plus grandes communities listées explicitement avec n / module / fold / padj : comm 4 → M4 (30/30, 7.21×, q=2e-27), comm 2 → M3 (35/37, 5.5×, q=3e-26), comm 5 → M1 (30/30, 5.8×, q=2e-24), comm 6 → M3, comm 3 → M2, comm 1 → ssc_tier1.
+  2. Paragraphe hubs amendé : la chokepoint framing est répétée, les numerics de robustness intégrés ("recapitulates 11/20 of degree top-20 … 4/20 with PageRank, 0/20 with eigenvector"), explication biologique de la divergence avec PageRank/eigenvector.
+
+- **Caption Supplementary Figure S1** ajoutée après Figure 3 : référence à `F_supp_hub_robustness.svg` + companion `hub_overlap.tsv`.
+
+**Bilan révision §2.7 + §3.3 :** trois critiques R1 maintenant addressed dans le draft :
+- R1-M2 (hypergeometric tests pour community-module enrichment) ✅
+- R1-M3 (hub_score robustness avec metric alternative) ✅ (Option A justifie le choix avec data)
+- R1-m6 (ECO distribution histogram) — pas encore
+- R1-m3 (compartment count reconciliation) — pas encore
+
+Next : S3 (mRSS correlation + demographics) qui est indépendant des blockers data — exploite les GEO series_matrix.txt déjà disponibles.
+
+
 

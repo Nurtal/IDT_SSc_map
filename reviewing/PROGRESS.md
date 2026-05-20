@@ -16,7 +16,7 @@
 |--------|--------|--------|--------------|-------|
 | S0 | 2026-05-21 → 2026-05-27 | 🟢 done (code) | ☐ kickoff still pending | Branch + baseline + tag + brief |
 | S1 | 2026-05-28 → 2026-06-10 | 🟡 in progress | ☐ | scripts/deg_mixed_effects.py + tests + overlay refactor done; **actual re-run on real data blocked on `make tabib-fetch` + scanpy env** |
-| S2 | 2026-06-11 → 2026-06-24 | 🟡 mostly done | 🔴 see gate notes | E3/E4 executed on real artefacts; E2 code+tests; hub_score top-20 shares **only 4/20 with PageRank, 0/20 with eigenvector** → gate requires narrative pivot |
+| S2 | 2026-06-11 → 2026-06-24 | 🟢 done (S2.1 code only) | ☑ Option A locked | E3/E4 executed + manuscript §2.7/§3.3 updated; chokepoint framing for hub_score with PageRank/eigenvector as Supplementary Figure S1; E2 AUCell code+tests green, data run pending |
 | S3 | 2026-06-25 → 2026-07-08 | ⏳ pending | ☐ | T2.a — mRSS correlation + demographics (E7, E12) |
 | S4 | 2026-07-09 → 2026-07-22 | ⏳ pending | ☐ | T2.b — M3 subset + CellTypist (E8, E9) |
 | S5 | 2026-07-23 → 2026-08-05 | ⏳ pending | ☐ | T2.c — drug table + crosstalk (E5, E6) |
@@ -34,7 +34,7 @@ Legend: 🟢 done · 🟡 in progress · ⏳ pending · 🔴 blocked · ⚪ desc
 |----|-------|-------------|--------|--------|-------|-------|
 | E1 | A-stats | Mixed-effects DEG + BH-FDR | S1 | 🟡 code complete | curator | `deg_mixed_effects.py` + tests green; integration into `build_overlay_multi.py` done; **`make overlay-multi` re-run on real data pending** (needs `make tabib-fetch` + scanpy env) |
 | E2 | A-stats | AUCell / sign-blinded module score | S2 | 🟡 code complete | curator | `score_aucell.py` (AUCell + Tabib Z-score) + tests green (M1/M2 directionality recovered); execution waits on pseudobulk TSV from `make overlay-multi` |
-| E3 | A-stats | Hub-score robustness (eigenvector, PageRank) | S2 | 🟢 executed | curator | `analysis/network/hub_overlap.tsv`, `figures/F_supp_hub_robustness.{svg,png}`. **Jaccard₂₀ vs PageRank = 0.18 (4/20); vs eigenvector = 0.00.** Gate target was ≥ 15/20 — *fails*. Decision deferred to co-author: keep deg+btw hub_score as "mechanistic chokepoints" framing, or pivot §3.3 narrative to PageRank-primary. |
+| E3 | A-stats | Hub-score robustness (eigenvector, PageRank) | S2 | 🟢 done | curator | `analysis/network/hub_overlap.tsv`, `figures/F_supp_hub_robustness.{svg,png}`. Jaccard₂₀ vs PageRank = 0.18, vs eigenvector = 0.00 (gate ≥15/20 not met). **Decision (2026-05-20, Option A):** retain `hub_score = z(deg) + z(btw)` as the *mechanistic chokepoint* metric (rationale: most directly aligned with druggable-intervention prioritisation §2.8); report PageRank + eigenvector as Supplementary Figure S1 with explicit explanation of what each metric prioritises. Manuscript §2.7 and §3.3 updated. |
 | E4 | A-stats | Hypergeometric community–module enrichment | S2 | 🟢 executed | curator | `analysis/network/community_enrichment.tsv`: **32 significant tests at q<0.05 across 28/38 communities**. Largest 6 communities each carry one module overwhelmingly (fold enrichment 2.97–7.21, padj << 0.001). Gate (≥6) cleared. |
 | E5 | A-stats | Crosstalk supplementary table (8 reactions) | S5 | ⏳ | curator | quick win |
 | E6 | B-validation | Recalibrate Table 2 with SSc trial outcomes | S5 | ⏳ | curator + co-author | book co-author session for S5 |
@@ -113,6 +113,19 @@ Legend: 🟢 done · 🟡 in progress · ⏳ pending · 🔴 blocked · ⚪ desc
 - **2026-05-20** — S0 started. Branch `revision/v1.1` created
   off `main`@`e638a4d`. Tag `v1.0-pre-review` set. Baseline
   frozen in `analysis/baseline_v1.0/`. Kickoff brief drafted.
+- **2026-05-20 (later)** — **Option A locked for E3.** Hub score
+  formulation kept as `z(deg) + z(btw)` (mechanistic chokepoint),
+  PageRank + eigenvector relegated to Supplementary Figure S1.
+  Manuscript §2.7 rewritten: corrected the formula description
+  (was "geometric mean … 99th percentile" — incorrect vs code),
+  added the three-metric robustness paragraph, framed each metric's
+  biological question. §3.3 hub paragraph updated with the
+  robustness numerics (Jaccard 0.54 / 0.54 / 0.18 / 0.00; ρ +0.94 /
+  +0.95 / +0.62 / −0.02). §3.3 community paragraph rewritten with
+  the exact hypergeometric numbers (32 sig / 28 communities; six
+  largest each fold 2.97–7.21 at q < 10⁻¹⁶). Added a Supplementary
+  Figure S1 caption.
+
 - **2026-05-20** — S2 partial. E3 (hub robustness) and E4
   (community enrichment) executed end-to-end on real artefacts:
   - `scripts/network_analysis.py` extended with eigenvector
