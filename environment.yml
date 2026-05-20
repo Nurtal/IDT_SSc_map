@@ -27,6 +27,10 @@ dependencies:
   # Notebook / dev
   - jupyterlab
   - ipykernel
+  # Stats: NB GLM (statsmodels) for the v1.1 pseudobulk DEG fallback;
+  # pydeseq2 is the preferred backend, installed via pip below
+  - statsmodels>=0.14
   - pip:
       - casq
       - pybiopax
+      - pydeseq2>=0.4.10  # E1: pseudobulk DEG backend (preferred over statsmodels NB)

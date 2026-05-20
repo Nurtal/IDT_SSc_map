@@ -132,9 +132,85 @@ def load_species_modules(tsv: Path) -> dict[str, tuple[str, str]]:
     return out
 
 
+# DEG backend: 'mixed-v11' (NB GLM via deg_mixed_effects + BH-FDR, default for
+# revision v1.1) or 'wilcoxon-v10' (legacy raw-Wilcoxon, kept as sensitivity
+# check). Override via --deg-backend or SSC_DEG_BACKEND env var.
+DEG_BACKEND: str = os.environ.get("SSC_DEG_BACKEND", "mixed-v11")
+DEG_FDR_Q: float = float(os.environ.get("SSC_DEG_FDR_Q", "0.05"))
+
+# Collector for v1.1 full-stat DEG rows (cleared at the start of main())
+DEG_ROWS_V11: list = []
+
+
+def _pseudobulk_deg_v11(raw_df: "pd.DataFrame", meta_cols: list[str],
+                       hgnc_modules: dict, *,
+                       dataset: str, tissue: str,
+                       q: float = 0.05) -> dict[tuple[str, str], float]:
+    """v1.1 — mixed-effects-style pseudobulk DEG with BH-FDR.
+
+    Aggregates cells to (donor, cell_type) raw-count rows, runs
+    deg_mixed_effects.pseudobulk_deg (pydeseq2 / statsmodels NB / scipy
+    Welch fallback), applies BH-FDR per dataset, filters at padj ≤ q
+    and |lfc| ≥ 0.2, and appends full-stat rows to DEG_ROWS_V11.
+
+    Returns the same legacy {(cluster, gene): lfc} shape as the v1.0
+    function for backwards compatibility with _donor_scores().
+    """
+    import pandas as pd
+    from deg_mixed_effects import pseudobulk_deg, apply_fdr
+
+    gene_cols = [c for c in raw_df.columns if c not in meta_cols]
+    pb_rows = []
+    for (donor, ct), grp in raw_df.groupby(["donor_id", "cell_type"], observed=True):
+        cond = str(grp["condition"].iloc[0])
+        row = {"donor_id": str(donor), "cell_type": str(ct), "condition": cond,
+               "dataset": dataset, "tissue": tissue}
+        for g in gene_cols:
+            row[g] = float(grp[g].sum())
+        pb_rows.append(row)
+    pb_df = pd.DataFrame(pb_rows)
+    if pb_df.empty:
+        return {}
+
+    deg_rows = pseudobulk_deg(
+        pb_df, gene_cols=gene_cols,
+        group_col="condition", donor_col="donor_id", cell_type_col="cell_type",
+        dataset=dataset, tissue=tissue, backend="auto",
+    )
+    apply_fdr(deg_rows)
+
+    sig = [r for r in deg_rows
+           if not np.isnan(r.padj_dataset)
+           and r.padj_dataset <= q
+           and abs(r.log2fc) >= 0.2]
+
+    # Attach species_id / module for downstream MINERVA overlays
+    for r in deg_rows:
+        sid, mod = hgnc_modules.get(r.hgnc, ("", ""))
+        r.dataset_meta_species_id = sid  # type: ignore[attr-defined]
+        r.dataset_meta_module     = mod  # type: ignore[attr-defined]
+    DEG_ROWS_V11.extend(deg_rows)
+
+    return {(r.cluster, r.hgnc): r.log2fc for r in sig}
+
+
 def _pseudobulk_deg(raw_df: "pd.DataFrame", meta_cols: list[str],
-                    hgnc_modules: dict) -> dict[tuple[str, str], float]:
-    """Return {(cell_type, gene): log2FC} for SSC vs HC pseudobulk."""
+                    hgnc_modules: dict,
+                    *, dataset: str = "?", tissue: str = "?") -> dict[tuple[str, str], float]:
+    """Pseudobulk DEG — dispatches on DEG_BACKEND.
+
+    v1.1 (default): NB GLM + BH-FDR via deg_mixed_effects.
+    v1.0 legacy: raw Wilcoxon, no FDR — kept for sensitivity comparison.
+    """
+    if DEG_BACKEND == "mixed-v11":
+        return _pseudobulk_deg_v11(raw_df, meta_cols, hgnc_modules,
+                                   dataset=dataset, tissue=tissue, q=DEG_FDR_Q)
+    return _pseudobulk_deg_wilcoxon_v10(raw_df, meta_cols, hgnc_modules)
+
+
+def _pseudobulk_deg_wilcoxon_v10(raw_df: "pd.DataFrame", meta_cols: list[str],
+                                 hgnc_modules: dict) -> dict[tuple[str, str], float]:
+    """v1.0 legacy — raw Wilcoxon, no FDR (kept for sensitivity check)."""
     from scipy.stats import ranksums
     deg: dict[tuple[str, str], float] = {}
     gene_cols = [c for c in raw_df.columns if c not in meta_cols]
@@ -224,7 +300,8 @@ def process_tabib(raw_dir: Path, hgnc_modules: dict) -> tuple[dict, dict, str]:
     adata = sc.concat(adatas, merge="same")
     adata = _qc_norm_cluster(adata, SKIN_MARKERS, res=0.35)
     raw_df = _adata_to_raw_df(adata)
-    deg = _pseudobulk_deg(raw_df, ["donor_id","condition","cell_type"], hgnc_modules)
+    deg = _pseudobulk_deg(raw_df, ["donor_id","condition","cell_type"], hgnc_modules,
+                          dataset="tabib2021", tissue="skin")
     donor_scores = _donor_scores(deg, hgnc_modules, raw_df)
     print(f"  [tabib2021] DEG: {len(deg):,} pairs; {len(donor_scores)} donors")
     return deg, donor_scores, "REAL"
@@ -280,7 +357,8 @@ def process_gse210395(raw_dir: Path, hgnc_modules: dict) -> tuple[dict, dict, st
 
     adata = _qc_norm_cluster(adata, PBMC_MARKERS, res=0.5)
     raw_df = _adata_to_raw_df(adata)
-    deg = _pseudobulk_deg(raw_df, ["donor_id","condition","cell_type"], hgnc_modules)
+    deg = _pseudobulk_deg(raw_df, ["donor_id","condition","cell_type"], hgnc_modules,
+                          dataset="gse210395", tissue="pbmc")
     donor_scores = _donor_scores(deg, hgnc_modules, raw_df)
     print(f"  [gse210395] DEG: {len(deg):,} pairs; {len(donor_scores)} donors")
     return deg, donor_scores, "REAL"
@@ -353,7 +431,8 @@ def process_gse128169(raw_dir: Path, hgnc_modules: dict) -> tuple[dict, dict, st
     adata = sc.concat(adatas, merge="same")
     adata = _qc_norm_cluster(adata, LUNG_MARKERS, res=0.4)
     raw_df = _adata_to_raw_df(adata)
-    deg = _pseudobulk_deg(raw_df, ["donor_id","condition","cell_type"], hgnc_modules)
+    deg = _pseudobulk_deg(raw_df, ["donor_id","condition","cell_type"], hgnc_modules,
+                          dataset="gse128169", tissue="lung")
     donor_scores = _donor_scores(deg, hgnc_modules, raw_df)
     print(f"  [gse128169] DEG: {len(deg):,} pairs; {len(donor_scores)} donors")
     return deg, donor_scores, "REAL"
@@ -486,31 +565,51 @@ def process_gse195452(raw_dir: Path, hgnc_modules: dict) -> tuple[dict, dict, st
             row[g] = gene_counts.get(g, 0)
         rows.append(row)
     pb_df = pd.DataFrame(rows)
+    pb_raw = pb_df.copy()  # keep raw counts for v11 NB GLM
 
-    # Normalise: CPM × 1e4 → log1p
+    # Normalise: CPM × 1e4 → log1p (used downstream by _donor_scores)
     for g in all_genes:
         pb_df[g] = np.log1p(pb_df[g] / pb_df["lib_size"] * 1e4)
 
     # ── Pseudobulk DEG on pre-aggregated profiles ────────────────────────────
-    deg: dict[tuple[str, str], float] = {}
-    for ct, grp in pb_df.groupby("cell_type", observed=True):
-        ssc_idx = grp[grp["condition"] == "SSC"]["donor_id"].unique()
-        hc_idx  = grp[grp["condition"] == "HC"]["donor_id"].unique()
-        if len(ssc_idx) < 2 or len(hc_idx) < 2:
-            continue
-        ssc_rows = grp[grp["condition"] == "SSC"]
-        hc_rows  = grp[grp["condition"] == "HC"]
-        for gene in all_genes:
-            ssc_v = ssc_rows[gene].values
-            hc_v  = hc_rows[gene].values
-            lfc = float(np.mean(ssc_v) - np.mean(hc_v))
-            if abs(lfc) < 0.2:
+    if DEG_BACKEND == "mixed-v11":
+        from deg_mixed_effects import pseudobulk_deg, apply_fdr
+        deg_rows = pseudobulk_deg(
+            pb_raw, gene_cols=list(all_genes),
+            group_col="condition", donor_col="donor_id", cell_type_col="cell_type",
+            dataset="gse195452", tissue="skin_gur", backend="auto",
+        )
+        apply_fdr(deg_rows)
+        sig = [r for r in deg_rows
+               if not np.isnan(r.padj_dataset)
+               and r.padj_dataset <= DEG_FDR_Q
+               and abs(r.log2fc) >= 0.2]
+        for r in deg_rows:
+            sid, mod = hgnc_modules.get(r.hgnc, ("", ""))
+            r.dataset_meta_species_id = sid  # type: ignore[attr-defined]
+            r.dataset_meta_module     = mod  # type: ignore[attr-defined]
+        DEG_ROWS_V11.extend(deg_rows)
+        deg = {(r.cluster, r.hgnc): r.log2fc for r in sig}
+    else:
+        deg: dict[tuple[str, str], float] = {}
+        for ct, grp in pb_df.groupby("cell_type", observed=True):
+            ssc_idx = grp[grp["condition"] == "SSC"]["donor_id"].unique()
+            hc_idx  = grp[grp["condition"] == "HC"]["donor_id"].unique()
+            if len(ssc_idx) < 2 or len(hc_idx) < 2:
                 continue
-            if len(ssc_v) >= 2 and len(hc_v) >= 2:
-                _, pv = ranksums(ssc_v, hc_v)
-                if pv > 0.05:
+            ssc_rows = grp[grp["condition"] == "SSC"]
+            hc_rows  = grp[grp["condition"] == "HC"]
+            for gene in all_genes:
+                ssc_v = ssc_rows[gene].values
+                hc_v  = hc_rows[gene].values
+                lfc = float(np.mean(ssc_v) - np.mean(hc_v))
+                if abs(lfc) < 0.2:
                     continue
-            deg[(str(ct), gene)] = lfc
+                if len(ssc_v) >= 2 and len(hc_v) >= 2:
+                    _, pv = ranksums(ssc_v, hc_v)
+                    if pv > 0.05:
+                        continue
+                deg[(str(ct), gene)] = lfc
 
     # ── Per-donor module scores from normalised pseudobulk ───────────────────
     modules = ["M1", "M2", "M3", "M4"]
@@ -711,6 +810,36 @@ def render_f2_multi(score_rows: list[dict], out_svg: Path, out_png: Path) -> Non
 
 # ── Main ───────────────────────────────────────────────────────────────────────
 
+def write_cluster_deg_v11(rows: list, hgnc_modules: dict, out: Path) -> int:
+    """Write the v1.1 full-stat DEG TSV with FDR-adjusted columns.
+
+    Schema: dataset, tissue, cluster, hgnc, species_id, module, log2fc,
+    pvalue, padj_dataset, padj_cluster, n_donors_ssc, n_donors_hc,
+    mean_count_ssc, mean_count_hc, backend.
+    """
+    out.parent.mkdir(parents=True, exist_ok=True)
+    cols = ["dataset","tissue","cluster","hgnc","species_id","module",
+            "log2fc","pvalue","padj_dataset","padj_cluster",
+            "n_donors_ssc","n_donors_hc","mean_count_ssc","mean_count_hc","backend"]
+    n = 0
+    with out.open("w") as fh:
+        fh.write("\t".join(cols) + "\n")
+        for r in rows:
+            sid, mod = hgnc_modules.get(r.hgnc, ("",""))
+            fh.write("\t".join([
+                r.dataset, r.tissue, r.cluster, r.hgnc, sid, mod,
+                f"{r.log2fc:.4f}",
+                f"{r.pvalue:.4g}",
+                f"{r.padj_dataset:.4g}" if not np.isnan(r.padj_dataset) else "",
+                f"{r.padj_cluster:.4g}" if not np.isnan(r.padj_cluster) else "",
+                str(r.n_donors_ssc), str(r.n_donors_hc),
+                f"{r.mean_count_ssc:.3f}", f"{r.mean_count_hc:.3f}",
+                r.backend,
+            ]) + "\n")
+            n += 1
+    return n
+
+
 def main(argv: list[str]) -> int:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--tabib-dir",     type=Path, default=Path("data/raw/tabib2021"))
@@ -723,7 +852,22 @@ def main(argv: list[str]) -> int:
     ap.add_argument("--fig-dir",       type=Path, default=Path("figures"))
     ap.add_argument("--skip-tabib",    action="store_true")
     ap.add_argument("--skip-gse195452",action="store_true")
+    ap.add_argument("--deg-backend",   choices=["mixed-v11","wilcoxon-v10"],
+                    default=None,
+                    help="DEG backend; default mixed-v11 (NB GLM + BH-FDR). "
+                         "v1.0 Wilcoxon kept for sensitivity comparison.")
+    ap.add_argument("--fdr-q",         type=float, default=None,
+                    help="FDR threshold for the mixed-v11 backend (default 0.05)")
     args = ap.parse_args(argv[1:])
+
+    # Apply CLI overrides to module-level globals (used by _pseudobulk_deg)
+    global DEG_BACKEND, DEG_FDR_Q, DEG_ROWS_V11
+    if args.deg_backend:
+        DEG_BACKEND = args.deg_backend
+    if args.fdr_q is not None:
+        DEG_FDR_Q = args.fdr_q
+    DEG_ROWS_V11 = []
+    print(f"DEG backend: {DEG_BACKEND} (FDR q ≤ {DEG_FDR_Q})")
 
     hgnc_modules = load_species_modules(args.species_tsv)
     print(f"MIM species index: {len(hgnc_modules)} HGNC symbols")
@@ -833,6 +977,14 @@ def main(argv: list[str]) -> int:
     write_cluster_deg(all_deg_rows, out_deg)
     print(f"  [ok] {out_deg}  ({len(all_deg_rows):,} rows)")
 
+    # v1.1: write full-stat DEG TSV when the mixed-effects backend ran
+    if DEG_BACKEND == "mixed-v11" and DEG_ROWS_V11:
+        out_v11 = args.out_dir / "cluster_deg_multi_v11.tsv"
+        n_v11 = write_cluster_deg_v11(DEG_ROWS_V11, hgnc_modules, out_v11)
+        sig_v11 = sum(1 for r in DEG_ROWS_V11
+                      if not np.isnan(r.padj_dataset) and r.padj_dataset <= DEG_FDR_Q)
+        print(f"  [ok] {out_v11}  ({n_v11:,} rows, {sig_v11:,} significant at q ≤ {DEG_FDR_Q})")
+
     out_scores = args.out_dir / "patient_module_scores_multi.tsv"
     write_patient_scores(all_score_rows, out_scores)
     print(f"  [ok] {out_scores}  ({len(all_score_rows)} donors)")
@@ -854,15 +1006,41 @@ def main(argv: list[str]) -> int:
           f"({100*len(mim_hit)/len(mim_genes):.1f}%)")
     print(f"Module-mapped: {len(mapped_genes)} unique HGNC genes")
 
+    # v1.1 per-dataset FDR coverage
+    fdr_summary = None
+    if DEG_BACKEND == "mixed-v11" and DEG_ROWS_V11:
+        from collections import defaultdict as _dd
+        per_ds_sig: dict[str, set[str]] = _dd(set)
+        per_ds_tested: dict[str, set[str]] = _dd(set)
+        for r in DEG_ROWS_V11:
+            per_ds_tested[r.dataset].add(r.hgnc)
+            if not np.isnan(r.padj_dataset) and r.padj_dataset <= DEG_FDR_Q:
+                per_ds_sig[r.dataset].add(r.hgnc)
+        fdr_summary = {
+            "backend": DEG_BACKEND,
+            "fdr_q": DEG_FDR_Q,
+            "per_dataset": {ds: {"n_unique_genes_tested": len(per_ds_tested[ds]),
+                                 "n_unique_genes_sig": len(per_ds_sig[ds])}
+                             for ds in sorted(per_ds_tested)},
+            "n_total_tests": len(DEG_ROWS_V11),
+            "n_total_sig": sum(1 for r in DEG_ROWS_V11
+                               if not np.isnan(r.padj_dataset) and r.padj_dataset <= DEG_FDR_Q),
+        }
+
     report = {
         "modes": modes,
+        "deg_backend": DEG_BACKEND,
+        "deg_fdr_q": DEG_FDR_Q,
         "n_deg_entries": len(all_deg_rows),
         "n_donors": len(all_score_rows),
         "n_minerva_overlays": n_ov,
         "mim_coverage_pct": round(100 * len(mim_hit) / max(1, len(mim_genes)), 1),
         "mim_hit_genes": sorted(mim_hit),
+        "fdr_summary": fdr_summary,
         "outputs": {
             "cluster_deg_multi": str(out_deg),
+            "cluster_deg_multi_v11": str(args.out_dir / "cluster_deg_multi_v11.tsv")
+                if DEG_BACKEND == "mixed-v11" else None,
             "patient_scores_multi": str(out_scores),
             "f2_multi": str(args.fig_dir / "F2_multi_overlay.svg"),
         }

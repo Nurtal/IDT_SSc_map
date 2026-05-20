@@ -111,6 +111,14 @@ overlay:  ## Build scRNAseq overlay (real if data present, synthetic-grounded ot
 	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/build_overlay.py; \
 	else $(PYTHON) scripts/build_overlay.py; fi
 
+overlay-multi:  ## Multi-dataset overlay; v1.1 mixed-effects DEG + BH-FDR (--deg-backend wilcoxon-v10 for legacy).
+	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/build_overlay_multi.py; \
+	else $(PYTHON) scripts/build_overlay_multi.py; fi
+
+deg-test:  ## Smoke-test scripts/deg_mixed_effects.py (no data needed).
+	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/tests/test_deg_mixed_effects.py; \
+	else $(PYTHON) scripts/tests/test_deg_mixed_effects.py; fi
+
 boolean:  ## CaSQ Boolean inference -> SBML-qual for GINsim/BioLQM/MaBoSS.
 	@if [ -x .venv/bin/python ]; then PATH=".venv/bin:$$PATH" $(PYTHON) scripts/boolean_inference.py; \
 	else $(PYTHON) scripts/boolean_inference.py; fi

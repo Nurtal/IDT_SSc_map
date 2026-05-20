@@ -14,8 +14,8 @@
 
 | Sprint | Window | Status | Gate cleared | Notes |
 |--------|--------|--------|--------------|-------|
-| S0 | 2026-05-21 → 2026-05-27 | 🟡 in progress | ☐ | Branch + baseline + tag done; awaiting co-author kickoff |
-| S1 | 2026-05-28 → 2026-06-10 | ⏳ pending | ☐ | T1.a — DEG re-analysis (E1) |
+| S0 | 2026-05-21 → 2026-05-27 | 🟢 done (code) | ☐ kickoff still pending | Branch + baseline + tag + brief |
+| S1 | 2026-05-28 → 2026-06-10 | 🟡 in progress | ☐ | scripts/deg_mixed_effects.py + tests + overlay refactor done; **actual re-run on real data blocked on `make tabib-fetch` + scanpy env** |
 | S2 | 2026-06-11 → 2026-06-24 | ⏳ pending | ☐ | T1.b — AUCell + hub robustness + community enrichment (E2, E3, E4) |
 | S3 | 2026-06-25 → 2026-07-08 | ⏳ pending | ☐ | T2.a — mRSS correlation + demographics (E7, E12) |
 | S4 | 2026-07-09 → 2026-07-22 | ⏳ pending | ☐ | T2.b — M3 subset + CellTypist (E8, E9) |
@@ -32,7 +32,7 @@ Legend: 🟢 done · 🟡 in progress · ⏳ pending · 🔴 blocked · ⚪ desc
 
 | ID | Theme | Description | Sprint | Status | Owner | Notes |
 |----|-------|-------------|--------|--------|-------|-------|
-| E1 | A-stats | Mixed-effects DEG + BH-FDR | S1 | ⏳ | curator | baseline frozen in `analysis/baseline_v1.0/` |
+| E1 | A-stats | Mixed-effects DEG + BH-FDR | S1 | 🟡 code complete | curator | `deg_mixed_effects.py` + tests green; integration into `build_overlay_multi.py` done; **`make overlay-multi` re-run on real data pending** (needs `make tabib-fetch` + scanpy env) |
 | E2 | A-stats | AUCell / sign-blinded module score | S2 | ⏳ | curator | |
 | E3 | A-stats | Hub-score robustness (eigenvector, PageRank) | S2 | ⏳ | curator | |
 | E4 | A-stats | Hypergeometric community–module enrichment | S2 | ⏳ | curator | |
@@ -109,6 +109,20 @@ Legend: 🟢 done · 🟡 in progress · ⏳ pending · 🔴 blocked · ⚪ desc
 - **2026-05-20** — S0 started. Branch `revision/v1.1` created
   off `main`@`e638a4d`. Tag `v1.0-pre-review` set. Baseline
   frozen in `analysis/baseline_v1.0/`. Kickoff brief drafted.
+- **2026-05-20** — S1.1–S1.4 done (code). New module
+  `scripts/deg_mixed_effects.py` with three backends (pydeseq2 →
+  statsmodels NB → scipy Welch) + BH-FDR (per-dataset primary,
+  per-cluster diagnostic). Smoke test
+  `scripts/tests/test_deg_mixed_effects.py` (4/4 green:
+  statsmodels recovers 10/10 planted, scipy 8/10).
+  `build_overlay_multi.py` refactored with `--deg-backend` flag
+  (default `mixed-v11`), writes `cluster_deg_multi_v11.tsv` with
+  pvalue / padj_dataset / padj_cluster / n_donors / mean_count
+  / backend columns; report.json carries `fdr_summary`.
+  Makefile: `make deg-test` and `make overlay-multi`.
+  `environment.yml` adds `statsmodels` and `pydeseq2`.
+  **Blocker for S1 gate**: real-data re-run needs
+  `make tabib-fetch` (594 MB) + scanpy env (`sscmim` conda env).
 
 ---
 
