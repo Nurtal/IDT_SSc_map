@@ -130,6 +130,22 @@ aucell:  ## Score donors with AUCell + Z-score (needs a pseudobulk TSV).
 	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/score_aucell.py --pseudobulk analysis/overlay/pseudobulk_multi.tsv; \
 	else $(PYTHON) scripts/score_aucell.py --pseudobulk analysis/overlay/pseudobulk_multi.tsv; fi
 
+clinical-fetch:  ## Pull GEO series_matrix.txt for the 4 datasets; emit donor_metadata.tsv.
+	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/fetch_clinical_metadata.py; \
+	else $(PYTHON) scripts/fetch_clinical_metadata.py; fi
+
+clinical-correl:  ## Spearman ρ between AUCell scores and clinical vars (gap-aware).
+	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/clinical_correlation.py; \
+	else $(PYTHON) scripts/clinical_correlation.py; fi
+
+demographic-match:  ## Propensity matching SSc vs HC on age/sex (gap-aware).
+	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/demographic_match.py; \
+	else $(PYTHON) scripts/demographic_match.py; fi
+
+clinical-test:  ## Smoke-test clinical_correlation.py and demographic_match.py.
+	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/tests/test_clinical_correlation.py; \
+	else $(PYTHON) scripts/tests/test_clinical_correlation.py; fi
+
 boolean:  ## CaSQ Boolean inference -> SBML-qual for GINsim/BioLQM/MaBoSS.
 	@if [ -x .venv/bin/python ]; then PATH=".venv/bin:$$PATH" $(PYTHON) scripts/boolean_inference.py; \
 	else $(PYTHON) scripts/boolean_inference.py; fi

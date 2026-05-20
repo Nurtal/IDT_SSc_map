@@ -1212,5 +1212,93 @@ User décide Option A : conserver `hub_score = z(deg) + z(btw)` comme metric "me
 
 Next : S3 (mRSS correlation + demographics) qui est indépendant des blockers data — exploite les GEO series_matrix.txt déjà disponibles.
 
+### 20:00 — Sprint S3 — Clinical metadata gap formellement documenté (E7, E12)
+
+**Stratégie :** S3 attaquait E7 (mRSS correlation) + E12 (demographic matching). Réviseur R2 demande Spearman ρ(M1, mRSS) sur les donneurs Tabib + matching age/sex sur les HC. Pré-requis : pull GEO series_matrix.txt pour les 4 datasets et vérifier ce qui est annoté.
+
+**S3.1 — `scripts/fetch_clinical_metadata.py` (~270 lignes) :**
+
+- Pulls les 4 GEO series_matrix.txt.gz via HTTPS (NCBI FTP), parse systématiquement tous les `!Sample_characteristics_ch1`.
+- Normalise en snake_case + coalesce aux canonical keys : mRSS, age, sex, disease_duration_months, ana_specificity, subtype, condition.
+- Output `analysis/clinical/donor_metadata.tsv` (donor × variable) + `metadata_gap.json` machine-readable.
+- Tourne en ~30s sur les 4 datasets ; ~13 kB total cached.
+
+**Résultat — RR2 confirmé en dur :**
+
+| Dataset | Samples | Available fields (GEO) |
+|---------|---------|------------------------|
+| Tabib 2021 / GSE138669 | 22 | tissue, chemistry, condition |
+| Gur 2022 / GSE195452 (2 platforms) | 727 | tissue, selection_marker (CD90+), patient_id |
+| pDC PBMC / GSE210395 | 8 | condition, tissue, cell_type |
+| Morse 2019 / GSE128169 | 16 | subject_status, tissue, chemistry |
+| **TOTAL** | **773** | — |
+
+**Canonical clinical fields — global presence :**
+
+| field | n_with / n_total | fraction |
+|-------|------------------|----------|
+| mRSS | 0 / 773 | 0.000 |
+| disease_duration_months | 0 / 773 | 0.000 |
+| age | 0 / 773 | 0.000 |
+| sex | 0 / 773 | 0.000 |
+| ana_specificity | 0 / 773 | 0.000 |
+| subtype (dcSSc/lcSSc) | 0 / 773 | 0.000 |
+
+**Zéro samples** sur 773 portent une variable clinique numérique. Le roadmap fallback (disease duration as proxy) **également absent**. Les 4 deposits publics GEO ne contiennent que les variables techniques + le label condition.
+
+**S3.2 — `scripts/clinical_correlation.py` (~230 lignes) :**
+
+- Spearman ρ via Pearson on ranks + bootstrap CI 1000-iter via `numpy.random.default_rng`.
+- Driver `analyse()` qui join AUCell scores ↔ donor_metadata sur (dataset, donor_id↔sample_title), détecte les variables cliniques numériques disponibles, fait Spearman pour chaque (module, var).
+- **Gap-mode** : si pas de variable clinique numérique disponible, émet un banner row "gap reason: no_numeric_clinical_var" plutôt que tomber silencieusement.
+- Optional supplementary scatter figure F_supp_module_clinical_scatter.svg quand des données existent.
+
+**S3.3 — `scripts/demographic_match.py` (~200 lignes) :**
+
+- Logistic propensity model P(SSc | age + sex) via sklearn (fallback Euclidean si sklearn absent).
+- 1:1 nearest-neighbour matching avec calliper 0.2σ logit, sans remplacement.
+- Output `demographics_summary.tsv` + `sensitivity_matched_hc.tsv`.
+- Gap-mode aussi.
+
+**S3.4 — `scripts/tests/test_clinical_correlation.py` (4/4 green) :**
+
+- Spearman strong+ recover ρ=+0.90, CI95 exclut zéro.
+- Spearman null : ρ=+0.06, CI95 spans zéro.
+- Planted M1↔mRSS pipeline : recovered ρ=+0.76.
+- Gap banner emitted quand no numeric var.
+- Propensity match : 9/10 pairs récupérées sur synthetic 10 SSc + 10 HC.
+
+**S3.5 — exécution sur données réelles :**
+
+- `make clinical-fetch` → 773 donor-rows, 0 numeric clinical vars.
+- `make clinical-correl` → gap banner ("scores_absent" — AUCell pas encore exécuté ; même si AUCell tournait, would output "no_numeric_clinical_var").
+- `make demographic-match` → gap banner ("no_age_sex_available").
+
+**Document formel `analysis/clinical/CLINICAL_METADATA_GAP.md` :**
+
+- TL;DR + tableau de présence + comparaison roadmap vs reality + scripts built + manuscript treatment + how-to-close-the-gap (Tabib lab email, Gur supplementary Table S1, Bhattacharyya/Whitfield bulk cohorts).
+
+**Manuscrit mis à jour (`SSc_MIM_manuscript_draft.md`) :**
+
+- **§4.4 fin de paragraphe** : ajout d'un disclaimer explicite : "stratification framing remains hypothesis-generating; direct testing requires per-donor clinical metadata (mRSS, disease duration, age, sex, ANA) that is not present in the public GEO deposits ... The analytical infrastructure (`clinical_correlation.py`, `demographic_match.py`) is in place and validated on synthetic data, and will execute as soon as cohort metadata becomes available either by direct request or by integration of a named clinical cohort (PRESS, EUSTAR, ESCISIT)."
+- **§4.5 quatrième limitation paragraph** : "Fourth, and most consequentially for the translational claims in §4.4, the integrated transcriptomic datasets are public GEO deposits whose series_matrix.txt.gz annotations do not carry per-donor clinical metadata: of 773 donor-samples we systematically parsed across the four accessions, zero carried mRSS, disease duration, age, sex, or autoantibody specificity."
+
+**Makefile :** `make clinical-fetch`, `make clinical-correl`, `make demographic-match`, `make clinical-test`.
+
+**Bilan S3 :**
+
+| Item | Status | Output |
+|------|--------|--------|
+| S3.1 fetch_clinical_metadata | 🟢 executed | donor_metadata.tsv (773×20), metadata_gap.json |
+| S3.2 clinical_correlation | 🟢 code+tests, gap banner active | scripts/clinical_correlation.py, gap TSV |
+| S3.3 demographic_match | 🟢 code+tests, gap banner active | scripts/demographic_match.py, gap TSV |
+| S3.4 smoke tests | 🟢 4/4 green | tests/test_clinical_correlation.py |
+| S3.5 real data run | 🟢 gap formally documented | CLINICAL_METADATA_GAP.md, manuscript §4.4/§4.5 |
+
+**Réviseur R2-C1 (mRSS connection) addressed honestly** : on documente le gap structurel public GEO plutôt que de le contourner par un proxy faible. C'est la bonne réponse pour npj-SBA — claims softened, infrastructure prête, plan de validation v2.0 explicite.
+
+**Next** : S4 (M3 within-vascular subset + CellTypist harmonisation), qui nécessite Gur 2022 expression data — même blocker que S1/S2/E2 (besoin de scanpy env + données raw).
+
+
 
 

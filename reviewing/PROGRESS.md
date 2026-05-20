@@ -17,7 +17,7 @@
 | S0 | 2026-05-21 → 2026-05-27 | 🟢 done (code) | ☐ kickoff still pending | Branch + baseline + tag + brief |
 | S1 | 2026-05-28 → 2026-06-10 | 🟡 in progress | ☐ | scripts/deg_mixed_effects.py + tests + overlay refactor done; **actual re-run on real data blocked on `make tabib-fetch` + scanpy env** |
 | S2 | 2026-06-11 → 2026-06-24 | 🟢 done (S2.1 code only) | ☑ Option A locked | E3/E4 executed + manuscript §2.7/§3.3 updated; chokepoint framing for hub_score with PageRank/eigenvector as Supplementary Figure S1; E2 AUCell code+tests green, data run pending |
-| S3 | 2026-06-25 → 2026-07-08 | ⏳ pending | ☐ | T2.a — mRSS correlation + demographics (E7, E12) |
+| S3 | 2026-06-25 → 2026-07-08 | 🟢 done (with documented gap) | ☑ RR2 confirmed | All 4 GEO series_matrix files parsed (773 samples); **0 with mRSS/age/sex/disease duration/ANA**. Gap formalised in `CLINICAL_METADATA_GAP.md`; manuscript §4.4 + §4.5 updated honestly. Scripts (correl + match) built and tested for when external metadata arrives. |
 | S4 | 2026-07-09 → 2026-07-22 | ⏳ pending | ☐ | T2.b — M3 subset + CellTypist (E8, E9) |
 | S5 | 2026-07-23 → 2026-08-05 | ⏳ pending | ☐ | T2.c — drug table + crosstalk (E5, E6) |
 | S6 | 2026-08-06 → 2026-08-19 | ⏳ pending | ☐ | T3 — FAIR deposition (E11, E14–E17) |
@@ -38,12 +38,12 @@ Legend: 🟢 done · 🟡 in progress · ⏳ pending · 🔴 blocked · ⚪ desc
 | E4 | A-stats | Hypergeometric community–module enrichment | S2 | 🟢 executed | curator | `analysis/network/community_enrichment.tsv`: **32 significant tests at q<0.05 across 28/38 communities**. Largest 6 communities each carry one module overwhelmingly (fold enrichment 2.97–7.21, padj << 0.001). Gate (≥6) cleared. |
 | E5 | A-stats | Crosstalk supplementary table (8 reactions) | S5 | ⏳ | curator | quick win |
 | E6 | B-validation | Recalibrate Table 2 with SSc trial outcomes | S5 | ⏳ | curator + co-author | book co-author session for S5 |
-| E7 | B-validation | mRSS correlation (Tabib, Gur) | S3 | ⏳ | curator | start Tabib-lab email on S3 day 1 |
+| E7 | B-validation | mRSS correlation (Tabib, Gur) | S3 | 🟡 gap-documented | curator | All 4 GEO series_matrix parsed: 0/773 samples carry mRSS / disease duration / age / sex / ANA. Scripts (`fetch_clinical_metadata.py`, `clinical_correlation.py`) built + tested; Tabib lab request still required. Manuscript §4.4 / §4.5 updated to acknowledge gap explicitly. Document: `analysis/clinical/CLINICAL_METADATA_GAP.md`. |
 | E8 | D-modules | M3 within-vascular-subset analysis | S4 | ⏳ | curator | |
 | E9 | D-modules | CellTypist / Azimuth harmonisation | S4 | ⏳ | curator | |
 | E10 | E-Boolean | CaSQ + perturbation matrix | S7 | ⏳ | curator | **descopable** — decide at S5 gate |
 | E11 | C-FAIR | MINERVA *or* BioModels deposit | S6 | ⏳ | curator | email LCSB on S6 day 1 |
-| E12 | B-validation | HC demographic matching | S3 | ⏳ | curator | |
+| E12 | B-validation | HC demographic matching | S3 | 🟡 gap-documented | curator | `scripts/demographic_match.py` ready (propensity-score 1:1 with calliper); 0/773 GEO samples carry age+sex so executes as a gap banner today. Will run when external metadata arrives. |
 | E13 | A-stats | Methods completeness (dangling %, ECO dist, compartment count) | S7 | ⏳ | curator | quick win |
 
 ### Should do (improvement — not strictly blocking)
@@ -84,7 +84,7 @@ Legend: 🟢 done · 🟡 in progress · ⏳ pending · 🔴 blocked · ⚪ desc
 | ID | Risk | State | Action |
 |----|------|-------|--------|
 | RR1 | FDR re-analysis tanks M3/M4 coverage | open | monitor at S1 gate |
-| RR2 | mRSS absent from GEO | open | email Tabib lab on S3 day 1 |
+| RR2 | mRSS absent from GEO | **confirmed (2026-05-20)** | All 4 GEO series_matrix files inspected, 0/773 samples carry mRSS / age / sex / disease duration / ANA. Manuscript §4.4 + §4.5 + CLINICAL_METADATA_GAP.md acknowledge. Email-to-Tabib-lab still outstanding. |
 | RR3 | MINERVA grant slow | open | run BioModels in parallel from S6 |
 | RR4 | CaSQ inference fails | open | E10 already flagged descopable |
 | RR5 | Co-author bandwidth | open | book S5 + WR sessions in S0 |
@@ -106,13 +106,34 @@ Legend: 🟢 done · 🟡 in progress · ⏳ pending · 🔴 blocked · ⚪ desc
 | Top-20 Jaccard hub_score↔eigenvector | — | — | **0.00 (0/20)** (S2) | — |
 | Significant communities (q<0.05) | not reported | — | **32 tests / 28 communities** (S2) | — |
 | Skin SSc/HC M1 score | 0.342 vs 0.070 (sign-weighted) | — | TBD (AUCell) | — |
-| ρ(M1, mRSS) | not measured | — | — | TBD (S3) |
+| ρ(M1, mRSS) | not measured | — | — | **gap — 0/773 samples** (S3) |
 
 ## Change log
 
 - **2026-05-20** — S0 started. Branch `revision/v1.1` created
   off `main`@`e638a4d`. Tag `v1.0-pre-review` set. Baseline
   frozen in `analysis/baseline_v1.0/`. Kickoff brief drafted.
+- **2026-05-20 (S3)** — **Clinical metadata gap formally documented
+  (RR2 confirmed).** `scripts/fetch_clinical_metadata.py` pulled all
+  four GEO `series_matrix.txt.gz` files (Tabib 22 / Gur 727 / PBMC
+  8 / lung 16 = 773 samples). Parsed every
+  `!Sample_characteristics_ch1` field; canonical-field harvest:
+  mRSS 0/773, age 0/773, sex 0/773, disease duration 0/773, ANA
+  specificity 0/773, dcSSc/lcSSc subtype 0/773. Only `condition`
+  (SSc/HC) is carried by Tabib + PBMC + lung; Gur carries
+  `patient_id` (Ctrl* vs pt*) only. Output:
+  `analysis/clinical/donor_metadata.tsv` (773 × 20),
+  `analysis/clinical/metadata_gap.json`. `clinical_correlation.py`
+  and `demographic_match.py` built with a "gap-only banner" mode
+  and 4/4 smoke tests green (Spearman recovers planted ρ +0.76
+  for M1↔mRSS, bootstrap CI excludes zero; propensity match
+  recovers 9/10 same-sex 1:1 pairs on synthetic). Manuscript §4.4
+  re-framed to "hypothesis-generating" + §4.5 carries a fourth
+  limitation paragraph naming the public-GEO clinical gap.
+  Document: `analysis/clinical/CLINICAL_METADATA_GAP.md`.
+  Makefile: `make clinical-fetch / clinical-correl /
+  demographic-match / clinical-test`.
+
 - **2026-05-20 (later)** — **Option A locked for E3.** Hub score
   formulation kept as `z(deg) + z(btw)` (mechanistic chokepoint),
   PageRank + eigenvector relegated to Supplementary Figure S1.
