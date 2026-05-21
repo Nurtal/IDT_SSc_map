@@ -139,6 +139,11 @@ f1-quadrant:  ## E19 — render F1_global_MIM_quadrant.{svg,png} with module qua
 	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/render_f1_quadrant.py; \
 	else $(PYTHON) scripts/render_f1_quadrant.py; fi
 
+biomodels:  ## E11 — inject MIRIAM CVTerm annotations; emit BioModels-ready SBML.
+	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/inject_miriam.py; \
+	else $(PYTHON) scripts/inject_miriam.py; fi
+	@$(PYTHON) scripts/validate_sbml.py curation/celldesigner/SSc_MIM_integrated.biomodels.xml || true
+
 aucell-test:  ## Smoke-test scripts/score_aucell.py (no data needed).
 	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/tests/test_score_aucell.py; \
 	else $(PYTHON) scripts/tests/test_score_aucell.py; fi
