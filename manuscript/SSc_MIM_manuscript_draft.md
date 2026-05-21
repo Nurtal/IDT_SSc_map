@@ -115,7 +115,7 @@ The integrated SSc-MIM encompasses 526 molecular species and 260 reactions distr
 
 The global SBGN map (Figure 1) reveals a highly interconnected network with a biologically intuitive topology: the IFN module (M1) and the B-cell/cytokine module (M4) are positioned as upstream inducers converging onto the central fibrotic hub of M2, which in turn supplies activated myofibroblast signals that feed back through Notch and endothelin circuits in M3. Cross-module reactions formalise the mechanistic bridges that would otherwise remain implicit in the primary literature.
 
-**[Figure 1: Global view of SSc-MIM in SBGN Process Description notation. Four modules are colour-coded (M1 cyan, M2 orange, M3 green, M4 purple). Cross-module reactions are shown as dashed arcs. Generated as `figures/F1_global_MIM.svg`.]**
+**[Figure 1 (revised, v1.1): Global view of SSc-MIM in a quadrant layout. The four modules occupy fixed quadrants — M1 (IFN-I/cGAS-STING) top-left, M2 (TGF-β/fibroblast→myofibroblast) top-right, M3 (EndoMT/vasculopathy) bottom-right, M4 (IL-6/Th2/B-cell) bottom-left — with the four phenotype sinks (myofibroblast activation, ECM deposition, vascular remodelling, ISG signature) centred. SSc Tier-1 species coupling to multiple modules are placed in a thin ring around the sinks. Within-quadrant edges are rendered as faint straight lines; inter-module ("crosstalk") edges are rendered as curved arcs to keep the module boundaries visually crisp. Generated as `figures/F1_global_MIM_quadrant.svg` via `make f1-quadrant` (R1-figures, E19). The original spring-layout version is preserved at `figures/F1_global_MIM.svg` for back-compatibility with the v1.0 release.]**
 
 ### 3.2 Multi-Tissue Single-Cell Transcriptomic Overlay and Cell-Type Stratification
 
