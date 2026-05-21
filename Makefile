@@ -119,6 +119,10 @@ deg-test:  ## Smoke-test scripts/deg_mixed_effects.py (no data needed).
 	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/tests/test_deg_mixed_effects.py; \
 	else $(PYTHON) scripts/tests/test_deg_mixed_effects.py; fi
 
+pytest:  ## Run the full pytest suite (12 tests under scripts/tests/, no data needed).
+	@if [ -x .venv/bin/python ]; then .venv/bin/python -m pytest -q; \
+	else $(PYTHON) -m pytest -q; fi
+
 aucell-test:  ## Smoke-test scripts/score_aucell.py (no data needed).
 	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/tests/test_score_aucell.py; \
 	else $(PYTHON) scripts/tests/test_score_aucell.py; fi
