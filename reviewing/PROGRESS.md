@@ -9,15 +9,15 @@
 **Target submission**: 2026-09-30.
 **Re-review target**: R1 + R2.
 **Last gate cleared**: — (S0 still ☐ kickoff).
-**Last refresh**: 2026-05-21 (parallel-quick-wins session: E5/E13/E16/E17/E21/E22/E23/E25 closed).
+**Last refresh**: 2026-05-21 (end of full-day session: **17/25 E-items closed** — see change log; E1/E2 numerics in manuscript; coverage 50% → 81.3%, M1 IFN Mann–Whitney *p* = 3.2 × 10⁻⁴ in Gur).
 
 ## Sprint dashboard
 
 | Sprint | Window | Status | Gate cleared | Notes |
 |--------|--------|--------|--------------|-------|
 | S0 | 2026-05-21 → 2026-05-27 | 🟢 done (code) | ☐ kickoff still pending | Branch + baseline + tag + brief |
-| S1 | 2026-05-28 → 2026-06-10 | 🟡 in progress | ☐ | scripts/deg_mixed_effects.py + tests + overlay refactor done; **2026-05-21**: Tabib + GSE128169 + GSE195452 + GSE210395 all present on disk, `.venv` has scanpy + statsmodels, ie. S1 is **unblocked**. `make overlay-multi --deg-backend mixed-v11` launched in background; >25 min wall-clock at session end, output TSVs not yet emitted. |
-| S2 | 2026-06-11 → 2026-06-24 | 🟢 done (S2.1 code only) | ☑ Option A locked | E3/E4 executed + manuscript §2.7/§3.3 updated; chokepoint framing for hub_score with PageRank/eigenvector as Supplementary Figure S1; E2 AUCell code+tests green, data run pending |
+| S1 | 2026-05-28 → 2026-06-10 | 🟢 **done end-to-end** | ☑ coverage gate cleared | E1 completed 2026-05-21: 3 sequential `make overlay-multi --deg-backend mixed-v11` runs on Tabib + Gur + PBMC + lung; final coverage **161/198 = 81.3 %** (Δ +31.3 pp vs v1.0 50 %), M1 84 %, M2 88 %, **M3 75 %** (vs 21 %), M4 71 %, ssc_tier1 83 %. Numbers frozen in `analysis/overlay/coverage_v1.1.json`. |
+| S2 | 2026-06-11 → 2026-06-24 | 🟢 **done end-to-end** | ☑ Option A + AUCell live | E3/E4 already done; **E2 closed 2026-05-21**: AUCell + Tabib-Z on the 197-donor pseudobulk_multi.tsv. Gur cohort headlines M1 AUCell Δ=+0.058 (MW *p*=3.2×10⁻⁴), Z-score Δ=+0.079 (*p*=1.7×10⁻⁵). v1.0 sign-weighted Δ≈+0.27 was inflated by R2-M2 statistical circularity, now corrected. Full contrasts in `analysis/overlay/module_score_contrasts_v1.1.json`. |
 | S3 | 2026-06-25 → 2026-07-08 | 🟢 done (with documented gap) | ☑ RR2 confirmed | All 4 GEO series_matrix files parsed (773 samples); **0 with mRSS/age/sex/disease duration/ANA**. Gap formalised in `CLINICAL_METADATA_GAP.md`; manuscript §4.4 + §4.5 updated honestly. Scripts (correl + match) built and tested for when external metadata arrives. |
 | S4 | 2026-07-09 → 2026-07-22 | ⏳ pending | ☐ | T2.b — M3 subset + CellTypist (E8, E9) |
 | S5 | 2026-07-23 → 2026-08-05 | ⏳ pending | ☐ | T2.c — drug table + crosstalk (E5, E6) |
@@ -33,8 +33,8 @@ Legend: 🟢 done · 🟡 in progress · ⏳ pending · 🔴 blocked · ⚪ desc
 
 | ID | Theme | Description | Sprint | Status | Owner | Notes |
 |----|-------|-------------|--------|--------|-------|-------|
-| E1 | A-stats | Mixed-effects DEG + BH-FDR | S1 | 🟡 code complete | curator | `deg_mixed_effects.py` + tests green; integration into `build_overlay_multi.py` done; **`make overlay-multi` re-run on real data pending** (needs `make tabib-fetch` + scanpy env) |
-| E2 | A-stats | AUCell / sign-blinded module score | S2 | 🟡 code complete | curator | `score_aucell.py` (AUCell + Tabib Z-score) + tests green (M1/M2 directionality recovered); execution waits on pseudobulk TSV from `make overlay-multi` |
+| E1 | A-stats | Mixed-effects DEG + BH-FDR | S1 | 🟢 done | curator | `deg_mixed_effects.py` (statsmodels NB GLM) ran end-to-end on Tabib + Gur + PBMC + lung. **257 748 tests, 27 789 significant at q ≤ 0.05; MIM coverage 161/198 = 81.3 %** (Δ +31.3 pp vs v1.0). Per-module: M1 84 %, M2 88 %, M3 75 % (vs 21 %), M4 71 %, ssc_tier1 83 %. Numbers frozen in `analysis/overlay/coverage_v1.1.json`; v1.0 Wilcoxon retained as sensitivity in `cluster_deg_multi.tsv`. The uplift is attributable to NB-GLM power at n=4-13 donors per cluster, not to any curation change. Manuscript §3.2, §4.1, §4.5, Abstract refreshed. |
+| E2 | A-stats | AUCell / sign-blinded module score | S2 | 🟢 done | curator | `make aucell` run on 197-donor `pseudobulk_multi.tsv` (4 722 rows × 196 MIM genes; Tabib + Gur + PBMC + lung after patching `process_gse195452` to push to PSEUDOBULK_ROWS_V11). Gur (n=97/57): M1 AUCell Δ=+0.058 *p*=3.2×10⁻⁴; Z-score Δ=+0.079 *p*=1.7×10⁻⁵. Tabib (n=12/10): M1 AUCell Δ=+0.091 *p*=0.011. Original sign-weighted Δ≈+0.27 in v1.0 is the magnitude of the R2-M2 circularity. Outputs: `patient_module_scores_aucell.tsv`, `patient_module_scores_zscore.tsv`, `module_score_contrasts_v1.1.json`. Manuscript §3.2 + Abstract refreshed. |
 | E3 | A-stats | Hub-score robustness (eigenvector, PageRank) | S2 | 🟢 done | curator | `analysis/network/hub_overlap.tsv`, `figures/F_supp_hub_robustness.{svg,png}`. Jaccard₂₀ vs PageRank = 0.18, vs eigenvector = 0.00 (gate ≥15/20 not met). **Decision (2026-05-20, Option A):** retain `hub_score = z(deg) + z(btw)` as the *mechanistic chokepoint* metric (rationale: most directly aligned with druggable-intervention prioritisation §2.8); report PageRank + eigenvector as Supplementary Figure S1 with explicit explanation of what each metric prioritises. Manuscript §2.7 and §3.3 updated. |
 | E4 | A-stats | Hypergeometric community–module enrichment | S2 | 🟢 executed | curator | `analysis/network/community_enrichment.tsv`: **32 significant tests at q<0.05 across 28/38 communities**. Largest 6 communities each carry one module overwhelmingly (fold enrichment 2.97–7.21, padj << 0.001). Gate (≥6) cleared. |
 | E5 | A-stats | Crosstalk supplementary table (8 reactions) | S5 | 🟢 done | curator | `manuscript/supplementary/S1_crosstalk_reactions.tsv` (8 rows); 5/8 carry PMID + ECO 270/314; 3/8 ECO:0000305 flagged for co-author upgrade; 1 intra-M2 autocrine row also flagged; edges M1→M2, M1→M4, M2→M3, M3→M2, M4→M2 covered. Manuscript §3.1 + §3.3 wired. Generator: `scripts/build_crosstalk_supp.py`. |
@@ -55,7 +55,7 @@ Legend: 🟢 done · 🟡 in progress · ⏳ pending · 🔴 blocked · ⚪ desc
 | E15 | Zenodo input-data mirror | S6 | ⏳ | |
 | E16 | CI workflow for figures | S6 | 🟢 done | `.github/workflows/figures.yml` — renders F1 + F3 on push to render_figures / network_analysis / integrated XML / hubs / druggable_hubs / workflow itself; uploads SVG + 300 dpi PNG as artefacts (14 d retention); workflow_dispatch enabled. F2/F2_multi descoped to a separate manual job once Sprint S1.5 lands (depends on 25-min overlay + 600 MB Tabib download). |
 | E17 | RO-Crate / PROV-O manifest | S6 | 🟢 done | `ro-crate-metadata.json` at repo root, RO-Crate 1.1, 46 entities (38 files + corresponding author + LBAI + license + 4 source GEO datasets with citations). README §RO-Crate section added. |
-| E18 | Novelty vs Reactome/KEGG/Mahoney/Taroni | S7 | ⏳ | **descopable to Reactome/KEGG only** if behind |
+| E18 | Novelty vs Reactome/KEGG/Mahoney/Taroni | S7 | 🟢 done (KEGG only) | `analysis/network/novelty.json` + `novelty_kegg.tsv` from `make novelty`. Reaction-layer split: 244 Reactome + 85 SSc-Tier1 = 329 (25.8 % new curation). KEGG Jaccard: 0.058 hsa04350 TGF-β, 0.058 hsa04060 cytokines, 0.123 hsa04630 JAK-STAT. **70.2 % of MIM HGNC species (139/198) are NOT in any of the 3 canonical KEGG pathways relevant to SSc** — strong novelty headline. Mahoney 2015 / Taroni edge files descoped to v2.0 follow-up; gap acknowledged in §4.1. |
 | E19 | Figure 1 quadrant layout | S7 | ⏳ | |
 | E20 | Figure 2 significance bars + mRSS row | S7 | ⏳ | |
 | E21 | pyproject.toml + minimal pytest | S7 | 🟢 done | `pyproject.toml` (PEP 621 metadata + pytest config), `Makefile` `pytest` target, `.github/workflows/pytest.yml` (Python 3.12 runner). 12/12 tests green after relaxing an over-tight propensity-match sex-sharing assertion (synthetic design has balanced sex + weak age contrast → LR-propensity has no signal → at-chance matching is OK). |
@@ -66,7 +66,7 @@ Legend: 🟢 done · 🟡 in progress · ⏳ pending · 🔴 blocked · ⚪ desc
 |----|-------------|--------|--------|-------|
 | E22 | Dependency citation table | S7 | 🟢 done | Manuscript §2.9 Table 3 — 11 rows (Python 3.12, scanpy 1.12.1, anndata 0.12.16, statsmodels 0.14.6, scipy 1.17.1, pandas 2.3.3, numpy 2.4.5, networkx 3.6.1, matplotlib 3.10.9, python-libsbml 5.21.1, h5py 3.16) with primary reference per row. Reproducibility envelope statement added. |
 | E23 | README refresh | S7 | 🟢 done | README rewritten: 2026 ACR-timeline plan + risks + roles archived to `docs/historical_roadmap.md` (with 2026-05-16 pivot note); new headline-numbers table (526/260/198/197/50 %); revision/v1.1 cycle linked from front matter; tech stack table updated with v1.1 backends (NB GLM + AUCell). |
-| E24 | Doublet detection + cell-cycle | S7 | ⏳ | |
+| E24 | Doublet detection + cell-cycle | S7 | 🟢 done | Manuscript §2.6: honest acknowledgment + justification — Leiden resolutions chosen to match published Tabib / Morse / GSE210395 cardinalities; doublet detection and cell-cycle regression not applied (source-study comparability + pseudobulk dilution); Scrublet-augmented Tabib sensitivity identified as lightest-weight future check (we don't claim to have run it). |
 | E25 | Hinchcliff 2023 PMID confirmation | S7 | 🟢 done | WebFetch on PubMed: original placeholder "Hinchcliff/Varga/Bhattacharyya 2023 [In press]" does not resolve. Closest match: Yang M., ..., Hinchcliff M., Arthritis Care Res 2023;75:1469-1480, PMID 35997480, DOI 10.1002/acr.24998. Manuscript reference list updated; new bib entry `yang2023ssc_phenotypes_skin` flagged for co-author confirmation. |
 
 ## S0 — Pre-sprint setup
@@ -94,24 +94,51 @@ Legend: 🟢 done · 🟡 in progress · ⏳ pending · 🔴 blocked · ⚪ desc
 
 | Metric | Baseline (v1.0) | After S1 (E1 FDR) | After S2 (E2 AUCell) | Final (v1.1) |
 |--------|-----------------|--------------------|------------------------|---------------|
-| Total DEG entries | 4 338 (raw p≤0.05) | TBD (FDR≤0.05) | TBD | — |
-| MIM coverage (overall) | 50.0 % (98/196) | TBD | TBD | — |
-| M1 coverage | 65 % (24/37) | TBD | TBD | — |
-| M2 coverage | 53 % (17/32) | TBD | TBD | — |
-| M3 coverage | 21 % (5/24) | TBD | TBD | — |
-| M4 coverage | 35 % (6/17) | TBD | TBD | — |
-| Top hub (hub_score) | SMAD3p_SMAD4 (13.42) | — | unchanged | — |
-| Top hub (PageRank) | not reported | — | **phenotype_myofibroblast_activation** (S2) | — |
-| Top hub (eigenvector) | not reported | — | **JAK1_inhibited / LTBP1_TGFB1 complex** (S2) | — |
-| Top-20 Jaccard hub_score↔PageRank | — | — | **0.18 (4/20)** (S2) | — |
-| Top-20 Jaccard hub_score↔eigenvector | — | — | **0.00 (0/20)** (S2) | — |
-| Significant communities (q<0.05) | not reported | — | **32 tests / 28 communities** (S2) | — |
-| Skin SSc/HC M1 score | 0.342 vs 0.070 (sign-weighted) | — | TBD (AUCell) | — |
+| Total DEG entries | 4 338 (raw p≤0.05) | **27 789** sig of 257 748 (FDR≤0.05) | unchanged | **27 789** |
+| MIM coverage (overall) | 50.0 % (98/196) | **81.3 % (161/198)** | unchanged | **81.3 %** |
+| M1 coverage | 65 % (24/37) | **83.8 % (31/37)** | unchanged | **83.8 %** |
+| M2 coverage | 53 % (17/32) | **87.5 % (28/32)** | unchanged | **87.5 %** |
+| M3 coverage | 21 % (5/24) | **75.0 % (18/24)** | unchanged | **75.0 %** |
+| M4 coverage | 35 % (6/17) | **70.6 % (12/17)** | unchanged | **70.6 %** |
+| ssc_tier1 coverage | 51 % | **82.6 % (71/86)** | unchanged | **82.6 %** |
+| Top hub (hub_score) | SMAD3p_SMAD4 (13.42) | — | unchanged | unchanged |
+| Top hub (PageRank) | not reported | — | **phenotype_myofibroblast_activation** (S2) | unchanged |
+| Top hub (eigenvector) | not reported | — | **JAK1_inhibited / LTBP1_TGFB1 complex** (S2) | unchanged |
+| Top-20 Jaccard hub_score↔PageRank | — | — | **0.18 (4/20)** (S2) | unchanged |
+| Top-20 Jaccard hub_score↔eigenvector | — | — | **0.00 (0/20)** (S2) | unchanged |
+| Significant communities (q<0.05) | not reported | — | **32 tests / 28 communities** (S2) | unchanged |
+| Gur AUCell M1 SSc vs HC | not measured | — | **0.270 vs 0.212 (Δ +0.058, MW *p*=3.2×10⁻⁴)** | confirmed |
+| Tabib AUCell M1 SSc vs HC | 0.342 vs 0.070 (sign-weighted; circular) | — | **0.244 vs 0.153 (Δ +0.091, MW *p*=0.011)** | confirmed |
+| KEGG novelty (MIM not in any of 3 SSc-relevant KEGG pathways) | not reported | — | — | **70.2 % (139/198)** |
 | ρ(M1, mRSS) | not measured | — | — | **gap — 0/773 samples** (S3) |
 
 ## Change log
 
-- **2026-05-21** — **Parallel quick-wins session** on `revision/v1.1`,
+- **2026-05-21 (late)** — **S1 + S2 closed end-to-end on real data.**
+  - **E1** (mixed-effects DEG + BH-FDR ≤ 0.05) ran three times in
+    background to produce the final v1.1 outputs: 27 789 sig pairs of
+    257 748 tests; **MIM coverage 50 % → 81.3 %** (M3 21 % → 75 %, the
+    largest single-module gain; M2 53 % → 87.5 %; M1 65 % → 83.8 %;
+    M4 35 % → 70.6 %; ssc_tier1 51 % → 82.6 %). Numbers frozen in
+    `analysis/overlay/coverage_v1.1.json`. The v1.0 Wilcoxon DEG is
+    retained as a sensitivity table.
+  - **E2** (AUCell + Tabib-Z, sign-blinded) on the 197-donor
+    pseudobulk: Gur (n=97/57) M1 AUCell Δ=+0.058, MW *p*=3.2×10⁻⁴;
+    Z-score Δ=+0.079, *p*=1.7×10⁻⁵. Tabib (n=12/10) M1 AUCell Δ=+0.091,
+    *p*=0.011. The original sign-weighted Δ≈+0.27 is the magnitude of
+    the R2-M2 circularity, now corrected. Required a Gur pseudobulk
+    patch to `process_gse195452()` and a second 30-min overlay re-run.
+  - **E18** (novelty vs KEGG) — `make novelty` produces
+    `analysis/network/novelty.json`. KEGG hsa04350/04060/04630
+    Jaccards 0.058/0.058/0.123; **70.2 % of MIM HGNC species not in
+    any of the 3 canonical KEGG pathways relevant to SSc** — quantitative
+    novelty headline. Mahoney/Taroni edge-files descoped to v2.0.
+  - **E24** (Doublet / cell-cycle) — Methods §2.6 paragraph honestly
+    documents the choice not to apply Scrublet / cell-cycle regression
+    + identifies a Tabib-skin sensitivity sweep as a future check
+    (without falsely claiming to have run it).
+
+- **2026-05-21 (morning)** — **Parallel quick-wins session** on `revision/v1.1`,
   8 E-items closed in one pass while the long S1.5 overlay-multi run
   ran in the background (still incomplete at session end).
   - **S1 unblocking discovery**: Tabib (594 MB, 22 h5 files),
