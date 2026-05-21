@@ -585,6 +585,25 @@ def process_gse195452(raw_dir: Path, hgnc_modules: dict) -> tuple[dict, dict, st
     pb_df = pd.DataFrame(rows)
     pb_raw = pb_df.copy()  # keep raw counts for v11 NB GLM
 
+    # v1.1 — push Gur pseudobulk into the AUCell-facing buffer so that
+    # `make aucell` sees all four datasets (Tabib/PBMC/lung paths use
+    # `_pseudobulk_deg_v11`, which already appends; the Gur path is
+    # different so we duplicate the contract here).
+    if DEG_BACKEND == "mixed-v11":
+        for _, r in pb_raw.iterrows():
+            row_out = {
+                "donor_id":  str(r["donor_id"]),
+                "cell_type": str(r["cell_type"]),
+                "condition": str(r["condition"]),
+                "group":     "SSc" if str(r["condition"]).upper().startswith("SSC") else "HC",
+                "dataset":   "gse195452",
+                "tissue":    "skin_gur",
+                "lib_size":  float(r["lib_size"]),
+            }
+            for g in all_genes:
+                row_out[g] = float(r[g])
+            PSEUDOBULK_ROWS_V11.append(row_out)
+
     # Normalise: CPM × 1e4 → log1p (used downstream by _donor_scores)
     for g in all_genes:
         pb_df[g] = np.log1p(pb_df[g] / pb_df["lib_size"] * 1e4)
