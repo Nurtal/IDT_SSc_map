@@ -214,6 +214,10 @@ This repository follows the Disease Maps Project conventions.
 - **Expert review** — use the `expert_review` template; reviewers are credited as co-authors when contribution thresholds defined in `CONTRIBUTING.md` are met.
 - **Pull requests** — must include updated MI2CAST annotations for every new or modified species / reaction. Automated SBML validation, spec-lint, and scripts-smoke tests run on every push (`.github/workflows/`).
 
+## RO-Crate
+
+The repository ships an [RO-Crate 1.1](https://w3id.org/ro/crate/1.1) provenance manifest at the root (`ro-crate-metadata.json`) describing every curated artefact, derived analysis output, figure, and pipeline script — plus the four source GEO datasets and the corresponding author. This is the structured-metadata answer to R3-M6 and is intended to be the canonical entry point for FAIR-aware tooling (e.g. ELIXIR data catalogues, WorkflowHub).
+
 ## Releases and DOIs
 
 - **v1.0-pre-review** (2026-05-20) — frozen baseline for the simulated peer-review run; numbers reproduced in `analysis/baseline_v1.0/`.
