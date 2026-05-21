@@ -131,6 +131,10 @@ m3-vascular:  ## E8 — M3 panel × Gur vascular/pericyte clusters; F5 supplemen
 	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/m3_vascular_subset.py; \
 	else $(PYTHON) scripts/m3_vascular_subset.py; fi
 
+f2-aucell:  ## E20 — render F2_multi_overlay_aucell.{svg,png} with MW sig bars.
+	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/render_f2_aucell.py; \
+	else $(PYTHON) scripts/render_f2_aucell.py; fi
+
 aucell-test:  ## Smoke-test scripts/score_aucell.py (no data needed).
 	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/tests/test_score_aucell.py; \
 	else $(PYTHON) scripts/tests/test_score_aucell.py; fi
