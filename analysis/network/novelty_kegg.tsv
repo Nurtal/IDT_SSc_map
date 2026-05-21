@@ -1,0 +1,4 @@
+kegg_pathway	label	module_hint	kegg_size	mim_size	intersect	mim_only	kegg_only	jaccard
+hsa04350_TGFb	TGF-β signalling	M2	110	198	17	181	93	0.0584
+hsa04060_cytokine	Cytokine-cytokine receptor interaction	M4	298	198	27	171	271	0.0576
+hsa04630_jakstat	JAK-STAT signalling	M1+M4	167	198	40	158	127	0.1231

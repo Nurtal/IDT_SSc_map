@@ -123,6 +123,10 @@ pytest:  ## Run the full pytest suite (12 tests under scripts/tests/, no data ne
 	@if [ -x .venv/bin/python ]; then .venv/bin/python -m pytest -q; \
 	else $(PYTHON) -m pytest -q; fi
 
+novelty:  ## E18 — MIM vs Reactome/KEGG Jaccard; refresh analysis/network/novelty*.
+	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/compute_novelty.py; \
+	else $(PYTHON) scripts/compute_novelty.py; fi
+
 aucell-test:  ## Smoke-test scripts/score_aucell.py (no data needed).
 	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/tests/test_score_aucell.py; \
 	else $(PYTHON) scripts/tests/test_score_aucell.py; fi
