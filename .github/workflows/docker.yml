@@ -1,0 +1,74 @@
+name: docker
+
+# Builds the SSc-MIM container image and publishes it to GitHub
+# Container Registry (GHCR) on every `vX.Y` tag push. The published
+# digest is then cited in the manuscript Methods §2.9 reproducibility
+# envelope (E14 / R3-M1).
+#
+# The image is the sscmim conda environment.yml on top of micromamba,
+# with the full repository tree copied into /workspace. See Dockerfile
+# for layer-by-layer rationale.
+
+on:
+  push:
+    tags:
+      - "v*.*"
+      - "v*.*-rc*"
+  workflow_dispatch: {}
+
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: ${{ github.repository }}
+
+jobs:
+  build_and_push:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Log in to GHCR
+        uses: docker/login-action@v3
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Extract metadata (tags, labels)
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+          tags: |
+            type=ref,event=tag
+            type=sha,format=short
+
+      - name: Set up Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build and push
+        id: build
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          push: true
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+      - name: Echo digest
+        run: |
+          echo "::notice::Image digest = ${{ steps.build.outputs.digest }}"
+          echo "${{ steps.build.outputs.digest }}" > image.digest
+          cat image.digest
+
+      - name: Upload digest artefact
+        uses: actions/upload-artifact@v4
+        with:
+          name: image-digest-${{ github.ref_name }}
+          path: image.digest
+          retention-days: 90
