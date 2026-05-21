@@ -141,6 +141,11 @@ DEG_FDR_Q: float = float(os.environ.get("SSC_DEG_FDR_Q", "0.05"))
 # Collector for v1.1 full-stat DEG rows (cleared at the start of main())
 DEG_ROWS_V11: list = []
 
+# Collector for per-(donor, cell_type) pseudobulk rows restricted to MIM
+# gene columns (cleared at the start of main()). Consumed by AUCell
+# (`make aucell`) — schema matches scripts/score_aucell.read_pseudobulk_tsv.
+PSEUDOBULK_ROWS_V11: list = []
+
 
 def _pseudobulk_deg_v11(raw_df: "pd.DataFrame", meta_cols: list[str],
                        hgnc_modules: dict, *,
@@ -161,6 +166,9 @@ def _pseudobulk_deg_v11(raw_df: "pd.DataFrame", meta_cols: list[str],
 
     gene_cols = [c for c in raw_df.columns if c not in meta_cols]
     pb_rows = []
+    mim_gene_set = {g for (sid, _mod), genes in [] for g in genes}  # placeholder, real set below
+    # MIM gene set comes from hgnc_modules keys (HGNC symbol → (species_id, module))
+    mim_gene_set = set(hgnc_modules.keys())
     for (donor, ct), grp in raw_df.groupby(["donor_id", "cell_type"], observed=True):
         cond = str(grp["condition"].iloc[0])
         row = {"donor_id": str(donor), "cell_type": str(ct), "condition": cond,
@@ -168,6 +176,16 @@ def _pseudobulk_deg_v11(raw_df: "pd.DataFrame", meta_cols: list[str],
         for g in gene_cols:
             row[g] = float(grp[g].sum())
         pb_rows.append(row)
+        # Also stash a MIM-only copy for AUCell. We keep all gene_cols
+        # in the DEG-facing pb_df (the GLM uses them all) but only the
+        # MIM-annotated subset for scoring.
+        mim_row = {k: row[k] for k in ("donor_id", "cell_type", "condition", "dataset", "tissue")}
+        mim_row["group"] = "SSc" if cond in ("SSc", "ssc") else "HC"
+        mim_row["lib_size"] = float(sum(row[g] for g in gene_cols))
+        for g in gene_cols:
+            if g in mim_gene_set:
+                mim_row[g] = row[g]
+        PSEUDOBULK_ROWS_V11.append(mim_row)
     pb_df = pd.DataFrame(pb_rows)
     if pb_df.empty:
         return {}
@@ -861,12 +879,13 @@ def main(argv: list[str]) -> int:
     args = ap.parse_args(argv[1:])
 
     # Apply CLI overrides to module-level globals (used by _pseudobulk_deg)
-    global DEG_BACKEND, DEG_FDR_Q, DEG_ROWS_V11
+    global DEG_BACKEND, DEG_FDR_Q, DEG_ROWS_V11, PSEUDOBULK_ROWS_V11
     if args.deg_backend:
         DEG_BACKEND = args.deg_backend
     if args.fdr_q is not None:
         DEG_FDR_Q = args.fdr_q
     DEG_ROWS_V11 = []
+    PSEUDOBULK_ROWS_V11 = []
     print(f"DEG backend: {DEG_BACKEND} (FDR q ≤ {DEG_FDR_Q})")
 
     hgnc_modules = load_species_modules(args.species_tsv)
@@ -988,6 +1007,20 @@ def main(argv: list[str]) -> int:
     out_scores = args.out_dir / "patient_module_scores_multi.tsv"
     write_patient_scores(all_score_rows, out_scores)
     print(f"  [ok] {out_scores}  ({len(all_score_rows)} donors)")
+
+    # v1.1: write per-(donor, cell_type) MIM-restricted pseudobulk so that
+    # `make aucell` can consume it directly (E2).
+    if DEG_BACKEND == "mixed-v11" and PSEUDOBULK_ROWS_V11:
+        import pandas as pd
+        out_pb = args.out_dir / "pseudobulk_multi.tsv"
+        pb_df = pd.DataFrame(PSEUDOBULK_ROWS_V11).fillna(0.0)
+        meta_first = ["donor_id", "cell_type", "condition", "group",
+                      "dataset", "tissue", "lib_size"]
+        gene_cols = [c for c in pb_df.columns if c not in meta_first]
+        pb_df = pb_df[meta_first + sorted(gene_cols)]
+        pb_df.to_csv(out_pb, sep="\t", index=False)
+        print(f"  [ok] {out_pb}  ({len(pb_df):,} donor-cell-type rows × "
+              f"{len(gene_cols)} MIM genes)")
 
     n_ov = write_minerva_overlays(all_deg_rows, args.minerva_dir)
     print(f"  [ok] {args.minerva_dir}/ ({n_ov} cluster overlays)")

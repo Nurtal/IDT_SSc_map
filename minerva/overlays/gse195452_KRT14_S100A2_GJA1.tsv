@@ -1,6 +1,4 @@
 species_id	log2fc	color
-CTGF__ext	0.566	#d7191c
-IFITM3__cyto	0.686	#d7191c
-LTBP4__ext	-0.343	#2c7fb8
-RBPJ__pm	-0.611	#2c7fb8
-TGFBR2__cyto	0.495	#d7191c
+CTGF__ext	1.892	#d7191c
+LTBP4__ext	-3.411	#2c7fb8
+OSMR__cyto	1.518	#d7191c
