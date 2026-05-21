@@ -127,6 +127,10 @@ novelty:  ## E18 — MIM vs Reactome/KEGG Jaccard; refresh analysis/network/nove
 	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/compute_novelty.py; \
 	else $(PYTHON) scripts/compute_novelty.py; fi
 
+m3-vascular:  ## E8 — M3 panel × Gur vascular/pericyte clusters; F5 supplementary.
+	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/m3_vascular_subset.py; \
+	else $(PYTHON) scripts/m3_vascular_subset.py; fi
+
 aucell-test:  ## Smoke-test scripts/score_aucell.py (no data needed).
 	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/tests/test_score_aucell.py; \
 	else $(PYTHON) scripts/tests/test_score_aucell.py; fi
