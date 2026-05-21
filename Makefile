@@ -144,6 +144,12 @@ biomodels:  ## E11 — inject MIRIAM CVTerm annotations; emit BioModels-ready SB
 	else $(PYTHON) scripts/inject_miriam.py; fi
 	@$(PYTHON) scripts/validate_sbml.py curation/celldesigner/SSc_MIM_integrated.biomodels.xml || true
 
+casq:  ## E10 — CaSQ Boolean inference (SBGN-PD → SBML-qual) + structural summary.
+	@if [ -x .venv/bin/python ]; then .venv/bin/python -m casq -c -s curation/celldesigner/SSc_MIM_integrated.xml analysis/boolean/SSc_MIM_integrated.sbml-qual.xml; \
+	else $(PYTHON) -m casq -c -s curation/celldesigner/SSc_MIM_integrated.xml analysis/boolean/SSc_MIM_integrated.sbml-qual.xml; fi
+	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/summarise_casq.py; \
+	else $(PYTHON) scripts/summarise_casq.py; fi
+
 aucell-test:  ## Smoke-test scripts/score_aucell.py (no data needed).
 	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/tests/test_score_aucell.py; \
 	else $(PYTHON) scripts/tests/test_score_aucell.py; fi

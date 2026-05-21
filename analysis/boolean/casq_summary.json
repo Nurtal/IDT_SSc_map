@@ -1,0 +1,54 @@
+{
+  "casq_version": "1.4.4",
+  "source": "analysis/boolean/SSc_MIM_integrated.bnet",
+  "n_boolean_nodes": 83,
+  "n_regulatory_transitions": 98,
+  "n_constant_nodes_self_rule": 25,
+  "n_free_nodes_zero_indegree": 25,
+  "n_regulated_nodes": 58,
+  "top_5_in_degree": [
+    {
+      "node": "ADP_simple_molecule",
+      "in_degree": 6
+    },
+    {
+      "node": "Pi_simple_molecule",
+      "in_degree": 6
+    },
+    {
+      "node": "IFNA/B:IFNAR2:p-JAK1:STAT2:p-IFNAR1:p-TYK2:p-STAT2:p-STAT1_complex",
+      "in_degree": 6
+    },
+    {
+      "node": "IFNA/B:IFNAR2:JAK1:STAT2:IFNAR1:TYK2_complex",
+      "in_degree": 4
+    },
+    {
+      "node": "p-Y701-STAT1-1_space_dimer_complex",
+      "in_degree": 4
+    }
+  ],
+  "top_5_out_degree": [
+    {
+      "node": "ISGF3_space_bound_space_to_space_ISRE_space_promotor_space_elements_complex",
+      "out_degree": 27
+    },
+    {
+      "node": "JAK1",
+      "out_degree": 17
+    },
+    {
+      "node": "STAT2",
+      "out_degree": 16
+    },
+    {
+      "node": "STAT1",
+      "out_degree": 8
+    },
+    {
+      "node": "ATP_simple_molecule",
+      "out_degree": 6
+    }
+  ],
+  "deferred_to_v2.0": "Full perturbation-matrix simulation on the top-5 SSc-MIM hubs (NICD1, SMAD3p_SMAD4, fibroblast_proFibrotic, TGFB1, ISGF3) via MaBoSS or GINsim is descoped from this revision (editor's E10 / roadmap T5) and reserved for a v2.0 Boolean modelling paper. The SBML-qual emitted here is the input substrate for that future work."
+}
