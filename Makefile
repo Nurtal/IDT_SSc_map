@@ -154,6 +154,10 @@ celltypist:  ## E9 — CellTypist Adult_Human_Skin on Tabib + κ vs marker label
 	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/run_celltypist.py; \
 	else $(PYTHON) scripts/run_celltypist.py; fi
 
+manuscript-pdf:  ## Compile manuscript/SSc_MIM_manuscript_draft.md → PDF with figures.
+	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/build_manuscript_pdf.py; \
+	else $(PYTHON) scripts/build_manuscript_pdf.py; fi
+
 aucell-test:  ## Smoke-test scripts/score_aucell.py (no data needed).
 	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/tests/test_score_aucell.py; \
 	else $(PYTHON) scripts/tests/test_score_aucell.py; fi
