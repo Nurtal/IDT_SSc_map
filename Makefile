@@ -111,6 +111,76 @@ overlay:  ## Build scRNAseq overlay (real if data present, synthetic-grounded ot
 	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/build_overlay.py; \
 	else $(PYTHON) scripts/build_overlay.py; fi
 
+overlay-multi:  ## Multi-dataset overlay; v1.1 mixed-effects DEG + BH-FDR (--deg-backend wilcoxon-v10 for legacy).
+	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/build_overlay_multi.py; \
+	else $(PYTHON) scripts/build_overlay_multi.py; fi
+
+deg-test:  ## Smoke-test scripts/deg_mixed_effects.py (no data needed).
+	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/tests/test_deg_mixed_effects.py; \
+	else $(PYTHON) scripts/tests/test_deg_mixed_effects.py; fi
+
+pytest:  ## Run the full pytest suite (12 tests under scripts/tests/, no data needed).
+	@if [ -x .venv/bin/python ]; then .venv/bin/python -m pytest -q; \
+	else $(PYTHON) -m pytest -q; fi
+
+novelty:  ## E18 — MIM vs Reactome/KEGG Jaccard; refresh analysis/network/novelty*.
+	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/compute_novelty.py; \
+	else $(PYTHON) scripts/compute_novelty.py; fi
+
+m3-vascular:  ## E8 — M3 panel × Gur vascular/pericyte clusters; F5 supplementary.
+	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/m3_vascular_subset.py; \
+	else $(PYTHON) scripts/m3_vascular_subset.py; fi
+
+f2-aucell:  ## E20 — render F2_multi_overlay_aucell.{svg,png} with MW sig bars.
+	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/render_f2_aucell.py; \
+	else $(PYTHON) scripts/render_f2_aucell.py; fi
+
+f1-quadrant:  ## E19 — render F1_global_MIM_quadrant.{svg,png} with module quadrants + sinks centred.
+	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/render_f1_quadrant.py; \
+	else $(PYTHON) scripts/render_f1_quadrant.py; fi
+
+biomodels:  ## E11 — inject MIRIAM CVTerm annotations; emit BioModels-ready SBML.
+	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/inject_miriam.py; \
+	else $(PYTHON) scripts/inject_miriam.py; fi
+	@$(PYTHON) scripts/validate_sbml.py curation/celldesigner/SSc_MIM_integrated.biomodels.xml || true
+
+casq:  ## E10 — CaSQ Boolean inference (SBGN-PD → SBML-qual) + structural summary.
+	@if [ -x .venv/bin/python ]; then .venv/bin/python -m casq -c -s curation/celldesigner/SSc_MIM_integrated.xml analysis/boolean/SSc_MIM_integrated.sbml-qual.xml; \
+	else $(PYTHON) -m casq -c -s curation/celldesigner/SSc_MIM_integrated.xml analysis/boolean/SSc_MIM_integrated.sbml-qual.xml; fi
+	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/summarise_casq.py; \
+	else $(PYTHON) scripts/summarise_casq.py; fi
+
+celltypist:  ## E9 — CellTypist Adult_Human_Skin on Tabib + κ vs marker labels.
+	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/run_celltypist.py; \
+	else $(PYTHON) scripts/run_celltypist.py; fi
+
+aucell-test:  ## Smoke-test scripts/score_aucell.py (no data needed).
+	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/tests/test_score_aucell.py; \
+	else $(PYTHON) scripts/tests/test_score_aucell.py; fi
+
+aucell:  ## Score donors with AUCell + Z-score (needs a pseudobulk TSV).
+	@if [ ! -f analysis/overlay/pseudobulk_multi.tsv ]; then \
+	  echo "Missing analysis/overlay/pseudobulk_multi.tsv. Run 'make overlay-multi' first."; exit 2; \
+	fi
+	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/score_aucell.py --pseudobulk analysis/overlay/pseudobulk_multi.tsv; \
+	else $(PYTHON) scripts/score_aucell.py --pseudobulk analysis/overlay/pseudobulk_multi.tsv; fi
+
+clinical-fetch:  ## Pull GEO series_matrix.txt for the 4 datasets; emit donor_metadata.tsv.
+	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/fetch_clinical_metadata.py; \
+	else $(PYTHON) scripts/fetch_clinical_metadata.py; fi
+
+clinical-correl:  ## Spearman ρ between AUCell scores and clinical vars (gap-aware).
+	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/clinical_correlation.py; \
+	else $(PYTHON) scripts/clinical_correlation.py; fi
+
+demographic-match:  ## Propensity matching SSc vs HC on age/sex (gap-aware).
+	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/demographic_match.py; \
+	else $(PYTHON) scripts/demographic_match.py; fi
+
+clinical-test:  ## Smoke-test clinical_correlation.py and demographic_match.py.
+	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/tests/test_clinical_correlation.py; \
+	else $(PYTHON) scripts/tests/test_clinical_correlation.py; fi
+
 boolean:  ## CaSQ Boolean inference -> SBML-qual for GINsim/BioLQM/MaBoSS.
 	@if [ -x .venv/bin/python ]; then PATH=".venv/bin:$$PATH" $(PYTHON) scripts/boolean_inference.py; \
 	else $(PYTHON) scripts/boolean_inference.py; fi

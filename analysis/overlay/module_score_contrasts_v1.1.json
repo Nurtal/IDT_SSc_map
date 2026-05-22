@@ -1,0 +1,365 @@
+{
+  "metric_primary": "AUCell (top 5% rank per donor)",
+  "metric_secondary": "Tabib-style sign-blinded Z-score",
+  "n_donors_total": 197,
+  "n_ssc_total": 121,
+  "n_hc_total": 76,
+  "datasets": {
+    "gse128169": {
+      "n_ssc": 8,
+      "n_hc": 5,
+      "tissue": "lung",
+      "aucell": {
+        "M1": {
+          "ssc_mean": 0.3722125,
+          "ssc_sd": 0.10131386081310466,
+          "hc_mean": 0.32,
+          "hc_sd": 0.14622872494828093,
+          "delta_ssc_minus_hc": 0.052212499999999995,
+          "mann_whitney_p_two_sided": 0.46298
+        },
+        "M2": {
+          "ssc_mean": 0.0638625,
+          "ssc_sd": 0.04189735543989791,
+          "hc_mean": 0.1289,
+          "hc_sd": 0.0289912917959859,
+          "delta_ssc_minus_hc": -0.06503749999999998,
+          "mann_whitney_p_two_sided": 0.02619
+        },
+        "M3": {
+          "ssc_mean": 0.00555,
+          "ssc_sd": 0.010276603107475323,
+          "hc_mean": 0.0,
+          "hc_sd": 0.0,
+          "delta_ssc_minus_hc": 0.00555,
+          "mann_whitney_p_two_sided": 0.29327
+        },
+        "M4": {
+          "ssc_mean": 0.066675,
+          "ssc_sd": 0.07789877589355487,
+          "hc_mean": 0.06666000000000001,
+          "hc_sd": 0.04714046032868156,
+          "delta_ssc_minus_hc": 1.4999999999987246e-05,
+          "mann_whitney_p_two_sided": 0.70939
+        },
+        "ssc_tier1": {
+          "ssc_mean": 0.4916625,
+          "ssc_sd": 0.13721631449753238,
+          "hc_mean": 0.4844399999999999,
+          "hc_sd": 0.12009081147198564,
+          "delta_ssc_minus_hc": 0.007222500000000076,
+          "mann_whitney_p_two_sided": 0.94141
+        }
+      },
+      "zscore": {
+        "M1": {
+          "ssc_mean": 0.5213,
+          "ssc_sd": 0.05750018633510181,
+          "hc_mean": 0.5693,
+          "hc_sd": 0.07539486056754799,
+          "delta_ssc_minus_hc": -0.04800000000000004,
+          "mann_whitney_p_two_sided": 0.35431
+        },
+        "M2": {
+          "ssc_mean": 0.1073625,
+          "ssc_sd": 0.07857629481683936,
+          "hc_mean": 0.10706,
+          "hc_sd": 0.033645475178692305,
+          "delta_ssc_minus_hc": 0.0003024999999999972,
+          "mann_whitney_p_two_sided": 0.6216
+        },
+        "M3": {
+          "ssc_mean": -0.3566125,
+          "ssc_sd": 0.1190844410791891,
+          "hc_mean": -0.2923,
+          "hc_sd": 0.03679531220142043,
+          "delta_ssc_minus_hc": -0.0643125,
+          "mann_whitney_p_two_sided": 0.43512
+        },
+        "M4": {
+          "ssc_mean": -0.232925,
+          "ssc_sd": 0.09530721378783455,
+          "hc_mean": -0.18394,
+          "hc_sd": 0.046007314635827204,
+          "delta_ssc_minus_hc": -0.048985,
+          "mann_whitney_p_two_sided": 0.43512
+        },
+        "ssc_tier1": {
+          "ssc_mean": -0.1351,
+          "ssc_sd": 0.07278736154031139,
+          "hc_mean": -0.1832,
+          "hc_sd": 0.011572812968332291,
+          "delta_ssc_minus_hc": 0.048100000000000004,
+          "mann_whitney_p_two_sided": 0.5237
+        }
+      }
+    },
+    "gse195452": {
+      "n_ssc": 97,
+      "n_hc": 57,
+      "tissue": "skin_gur",
+      "aucell": {
+        "M1": {
+          "ssc_mean": 0.26987525773195875,
+          "ssc_sd": 0.10092506711967035,
+          "hc_mean": 0.21208070175438595,
+          "hc_sd": 0.0635606893297278,
+          "delta_ssc_minus_hc": 0.0577945559775728,
+          "mann_whitney_p_two_sided": 0.00032
+        },
+        "M2": {
+          "ssc_mean": 0.010306185567010311,
+          "ssc_sd": 0.032083695282913924,
+          "hc_mean": 0.0027280701754385964,
+          "hc_sd": 0.013325053663600933,
+          "delta_ssc_minus_hc": 0.007578115391571714,
+          "mann_whitney_p_two_sided": 0.07705
+        },
+        "M3": {
+          "ssc_mean": 0.0,
+          "ssc_sd": 0.0,
+          "hc_mean": 0.003119298245614035,
+          "hc_sd": 0.017028069668685412,
+          "delta_ssc_minus_hc": -0.003119298245614035,
+          "mann_whitney_p_two_sided": 0.06557
+        },
+        "M4": {
+          "ssc_mean": 0.00045773195876288664,
+          "ssc_sd": 0.004508136973193269,
+          "hc_mean": 0.001949122807017544,
+          "hc_sd": 0.01052522688603463,
+          "delta_ssc_minus_hc": -0.0014913908482546573,
+          "mann_whitney_p_two_sided": 0.2843
+        },
+        "ssc_tier1": {
+          "ssc_mean": 0.7193567010309277,
+          "ssc_sd": 0.12036916557963162,
+          "hc_mean": 0.780122807017544,
+          "hc_sd": 0.0742589124462124,
+          "delta_ssc_minus_hc": -0.06076610598661625,
+          "mann_whitney_p_two_sided": 0.00043
+        }
+      },
+      "zscore": {
+        "M1": {
+          "ssc_mean": 0.3061030927835051,
+          "ssc_sd": 0.11894999864579678,
+          "hc_mean": 0.2272859649122807,
+          "hc_sd": 0.07474539746603726,
+          "delta_ssc_minus_hc": 0.07881712787122441,
+          "mann_whitney_p_two_sided": 2e-05
+        },
+        "M2": {
+          "ssc_mean": 0.007096907216494847,
+          "ssc_sd": 0.07550378778247961,
+          "hc_mean": 0.0496,
+          "hc_sd": 0.07526891551535164,
+          "delta_ssc_minus_hc": -0.04250309278350515,
+          "mann_whitney_p_two_sided": 0.00044
+        },
+        "M3": {
+          "ssc_mean": -0.3817113402061856,
+          "ssc_sd": 0.09110815788149895,
+          "hc_mean": -0.3232456140350877,
+          "hc_sd": 0.10723448284379863,
+          "delta_ssc_minus_hc": -0.058465726171097854,
+          "mann_whitney_p_two_sided": 0.00046
+        },
+        "M4": {
+          "ssc_mean": -0.26706907216494846,
+          "ssc_sd": 0.08854416666371547,
+          "hc_mean": -0.25030877192982454,
+          "hc_sd": 0.09259917517509414,
+          "delta_ssc_minus_hc": -0.016760300235123926,
+          "mann_whitney_p_two_sided": 0.31593
+        },
+        "ssc_tier1": {
+          "ssc_mean": 0.012003092783505157,
+          "ssc_sd": 0.047778090458232544,
+          "hc_mean": 0.006457894736842107,
+          "hc_sd": 0.049383256804625374,
+          "delta_ssc_minus_hc": 0.00554519804666305,
+          "mann_whitney_p_two_sided": 0.77754
+        }
+      }
+    },
+    "gse210395": {
+      "n_ssc": 4,
+      "n_hc": 4,
+      "tissue": "pbmc",
+      "aucell": {
+        "M1": {
+          "ssc_mean": 0.349975,
+          "ssc_sd": 0.04927415651231385,
+          "hc_mean": 0.283325,
+          "hc_sd": 0.22544998521475518,
+          "delta_ssc_minus_hc": 0.06664999999999999,
+          "mann_whitney_p_two_sided": 0.30942
+        },
+        "M2": {
+          "ssc_mean": 0.00555,
+          "ssc_sd": 0.0111,
+          "hc_mean": 0.038875,
+          "hc_sd": 0.05250240470683225,
+          "delta_ssc_minus_hc": -0.033325,
+          "mann_whitney_p_two_sided": 0.40835
+        },
+        "M3": {
+          "ssc_mean": 0.0,
+          "ssc_sd": 0.0,
+          "hc_mean": 0.0,
+          "hc_sd": 0.0,
+          "delta_ssc_minus_hc": 0.0,
+          "mann_whitney_p_two_sided": 1.0
+        },
+        "M4": {
+          "ssc_mean": 0.0,
+          "ssc_sd": 0.0,
+          "hc_mean": 0.00555,
+          "hc_sd": 0.0111,
+          "delta_ssc_minus_hc": -0.00555,
+          "mann_whitney_p_two_sided": 0.45325
+        },
+        "ssc_tier1": {
+          "ssc_mean": 0.644475,
+          "ssc_sd": 0.04444999999999999,
+          "hc_mean": 0.672225,
+          "hc_sd": 0.18537371937071698,
+          "delta_ssc_minus_hc": -0.02774999999999994,
+          "mann_whitney_p_two_sided": 0.30052
+        }
+      },
+      "zscore": {
+        "M1": {
+          "ssc_mean": 0.7270000000000001,
+          "ssc_sd": 0.10239241508367049,
+          "hc_mean": 0.641275,
+          "hc_sd": 0.15608897836383795,
+          "delta_ssc_minus_hc": 0.08572500000000005,
+          "mann_whitney_p_two_sided": 0.48571
+        },
+        "M2": {
+          "ssc_mean": 0.025625000000000002,
+          "ssc_sd": 0.054773434862775104,
+          "hc_mean": 0.06865,
+          "hc_sd": 0.05704761169409285,
+          "delta_ssc_minus_hc": -0.043025,
+          "mann_whitney_p_two_sided": 0.34286
+        },
+        "M3": {
+          "ssc_mean": -0.2791,
+          "ssc_sd": 0.04152726012312073,
+          "hc_mean": -0.24245,
+          "hc_sd": 0.03471834289440286,
+          "delta_ssc_minus_hc": -0.036650000000000016,
+          "mann_whitney_p_two_sided": 0.2
+        },
+        "M4": {
+          "ssc_mean": -0.39962499999999995,
+          "ssc_sd": 0.057700454937547926,
+          "hc_mean": -0.37875000000000003,
+          "hc_sd": 0.03152422349030452,
+          "delta_ssc_minus_hc": -0.02087499999999992,
+          "mann_whitney_p_two_sided": 1.0
+        },
+        "ssc_tier1": {
+          "ssc_mean": -0.184325,
+          "ssc_sd": 0.021430410635356476,
+          "hc_mean": -0.17804999999999999,
+          "hc_sd": 0.031653804405368614,
+          "delta_ssc_minus_hc": -0.006275000000000003,
+          "mann_whitney_p_two_sided": 0.88571
+        }
+      }
+    },
+    "tabib2021": {
+      "n_ssc": 12,
+      "n_hc": 10,
+      "tissue": "skin",
+      "aucell": {
+        "M1": {
+          "ssc_mean": 0.24445833333333333,
+          "ssc_sd": 0.09331481864520703,
+          "hc_mean": 0.15334,
+          "hc_sd": 0.055884269303226604,
+          "delta_ssc_minus_hc": 0.09111833333333333,
+          "mann_whitney_p_two_sided": 0.0105
+        },
+        "M2": {
+          "ssc_mean": 0.0037,
+          "ssc_sd": 0.012817175976009693,
+          "hc_mean": 0.0,
+          "hc_sd": 0.0,
+          "delta_ssc_minus_hc": 0.0037,
+          "mann_whitney_p_two_sided": 0.41131
+        },
+        "M3": {
+          "ssc_mean": 0.14814166666666664,
+          "ssc_sd": 0.11656192625173604,
+          "hc_mean": 0.14444,
+          "hc_sd": 0.09784621948070689,
+          "delta_ssc_minus_hc": 0.003701666666666631,
+          "mann_whitney_p_two_sided": 0.94719
+        },
+        "M4": {
+          "ssc_mean": 0.06111666666666666,
+          "ssc_sd": 0.06223827868228148,
+          "hc_mean": 0.11999,
+          "hc_sd": 0.10328290651302266,
+          "delta_ssc_minus_hc": -0.05887333333333334,
+          "mann_whitney_p_two_sided": 0.13513
+        },
+        "ssc_tier1": {
+          "ssc_mean": 0.5425916666666666,
+          "ssc_sd": 0.18986274208841852,
+          "hc_mean": 0.58224,
+          "hc_sd": 0.17175904440038475,
+          "delta_ssc_minus_hc": -0.039648333333333396,
+          "mann_whitney_p_two_sided": 0.59523
+        }
+      },
+      "zscore": {
+        "M1": {
+          "ssc_mean": 0.2829333333333333,
+          "ssc_sd": 0.073575926563632,
+          "hc_mean": 0.27034,
+          "hc_sd": 0.03483144173492297,
+          "delta_ssc_minus_hc": 0.01259333333333329,
+          "mann_whitney_p_two_sided": 0.71686
+        },
+        "M2": {
+          "ssc_mean": 0.13176666666666667,
+          "ssc_sd": 0.0955407607762099,
+          "hc_mean": 0.13427,
+          "hc_sd": 0.0669788863913265,
+          "delta_ssc_minus_hc": -0.0025033333333333296,
+          "mann_whitney_p_two_sided": 0.66822
+        },
+        "M3": {
+          "ssc_mean": -0.17480833333333334,
+          "ssc_sd": 0.10445882580174252,
+          "hc_mean": -0.16455000000000003,
+          "hc_sd": 0.0887337872515312,
+          "delta_ssc_minus_hc": -0.010258333333333314,
+          "mann_whitney_p_two_sided": 1.0
+        },
+        "M4": {
+          "ssc_mean": -0.24502500000000005,
+          "ssc_sd": 0.08372045611872449,
+          "hc_mean": -0.19113000000000002,
+          "hc_sd": 0.060093927406278835,
+          "delta_ssc_minus_hc": -0.053895000000000026,
+          "mann_whitney_p_two_sided": 0.03211
+        },
+        "ssc_tier1": {
+          "ssc_mean": -0.08854166666666667,
+          "ssc_sd": 0.059104629234685985,
+          "hc_mean": -0.0991,
+          "hc_sd": 0.04710904607633466,
+          "delta_ssc_minus_hc": 0.010558333333333322,
+          "mann_whitney_p_two_sided": 0.71686
+        }
+      }
+    }
+  }
+}

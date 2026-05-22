@@ -1,0 +1,2 @@
+module	clinical_var	n	spearman_rho	ci_lo	ci_hi	note
+-	-	0	NA	NA	NA	gap reason: scores_absent; scores_path=analysis/overlay/patient_module_scores_aucell.tsv; meta_path=analysis/clinical/donor_metadata.tsv

@@ -1,0 +1,43 @@
+{
+  "mim_n_hgnc": 198,
+  "reactome_n_reactions": 244,
+  "ssc_curated_n_reactions": 85,
+  "kegg": {
+    "hsa04350_TGFb": {
+      "kegg_pathway": "hsa04350_TGFb",
+      "label": "TGF-\u03b2 signalling",
+      "module_hint": "M2",
+      "kegg_size": 110,
+      "mim_size": 198,
+      "intersect": 17,
+      "mim_only": 181,
+      "kegg_only": 93,
+      "jaccard": 0.0584
+    },
+    "hsa04060_cytokine": {
+      "kegg_pathway": "hsa04060_cytokine",
+      "label": "Cytokine-cytokine receptor interaction",
+      "module_hint": "M4",
+      "kegg_size": 298,
+      "mim_size": 198,
+      "intersect": 27,
+      "mim_only": 171,
+      "kegg_only": 271,
+      "jaccard": 0.0576
+    },
+    "hsa04630_jakstat": {
+      "kegg_pathway": "hsa04630_jakstat",
+      "label": "JAK-STAT signalling",
+      "module_hint": "M1+M4",
+      "kegg_size": 167,
+      "mim_size": 198,
+      "intersect": 40,
+      "mim_only": 158,
+      "kegg_only": 127,
+      "jaccard": 0.1231
+    }
+  },
+  "mim_genes_not_in_any_kegg": 139,
+  "mim_n_in_kegg_union": 59,
+  "kegg_union_size": 438
+}

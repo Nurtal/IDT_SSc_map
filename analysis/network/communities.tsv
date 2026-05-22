@@ -57,7 +57,7 @@ COL3A1__ext	1	ssc_tier1
 COL5A1__ext	1	ssc_tier1
 COL5A2__ext	1	ssc_tier1
 COMP__ecm	1	ssc_tier1
-COX-2__er	36	ssc_tier1
+COX_2__er	36	ssc_tier1
 CREBBP__nuc	6	M3
 CRK_CRKL__cyto	9	M2
 CRLF1_CLCF1__cyto	18	M4

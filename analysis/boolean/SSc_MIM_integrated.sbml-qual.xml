@@ -1,0 +1,775 @@
+<?xml version='1.0' encoding='utf-8'?>
+<sbml xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" level="3" version="1" layout:required="false" xmlns="http://www.sbml.org/sbml/level3/version1/core" qual:required="true" xmlns:layout="http://www.sbml.org/sbml/level3/version1/layout/version1" xmlns:qual="http://www.sbml.org/sbml/level3/version1/qual/version1"><model id="model_id"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>Created with CaSQ 1.4.4</p></body></html></notes><listOfCompartments><compartment constant="true" id="comp1" /></listOfCompartments><layout:listOfLayouts><layout:layout id="layout1"><layout:dimensions width="2176" height="938" /><layout:listOfAdditionalGraphicalObjects><layout:generalGlyph layout:reference="entityVertex_1015697_161" layout:id="entityVertex_1015697_161_glyph"><layout:boundingBox><layout:position layout:x="1018.0" layout:y="468.0" /><layout:dimensions layout:height="50.0" layout:width="109.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_5223322_426" layout:id="entityVertex_5223322_426_glyph"><layout:boundingBox><layout:position layout:x="1328.0" layout:y="292.0" /><layout:dimensions layout:height="36.0" layout:width="104.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_5357403_425" layout:id="entityVertex_5357403_425_glyph"><layout:boundingBox><layout:position layout:x="1124.0" layout:y="298.0" /><layout:dimensions layout:height="22.0" layout:width="95.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_909696_40" layout:id="entityVertex_909696_40_glyph"><layout:boundingBox><layout:position layout:x="1298.0" layout:y="107.0" /><layout:dimensions layout:height="64.0" layout:width="111.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_909697_44" layout:id="entityVertex_909697_44_glyph"><layout:boundingBox><layout:position layout:x="1568.0" layout:y="108.0" /><layout:dimensions layout:height="64.0" layout:width="113.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_909698_60" layout:id="entityVertex_909698_60_glyph"><layout:boundingBox><layout:position layout:x="821.0" layout:y="378.0" /><layout:dimensions layout:height="22.0" layout:width="44.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_909702_54" layout:id="entityVertex_909702_54_glyph"><layout:boundingBox><layout:position layout:x="959.0" layout:y="301.0" /><layout:dimensions layout:height="23.0" layout:width="119.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_909703_7" layout:id="entityVertex_909703_7_glyph"><layout:boundingBox><layout:position layout:x="566.0" layout:y="116.0" /><layout:dimensions layout:height="36.0" layout:width="129.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_909704_33" layout:id="entityVertex_909704_33_glyph"><layout:boundingBox><layout:position layout:x="1080.0" layout:y="115.0" /><layout:dimensions layout:height="51.0" layout:width="113.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_909705_13" layout:id="entityVertex_909705_13_glyph"><layout:boundingBox><layout:position layout:x="820.0" layout:y="115.0" /><layout:dimensions layout:height="50.0" layout:width="128.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_909708_6" layout:id="entityVertex_909708_6_glyph"><layout:boundingBox><layout:position layout:x="402.0" layout:y="132.0" /><layout:dimensions layout:height="22.0" layout:width="85.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_909711_51" layout:id="entityVertex_909711_51_glyph"><layout:boundingBox><layout:position layout:x="1848.0" layout:y="108.0" /><layout:dimensions layout:height="65.0" layout:width="120.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_912681_86" layout:id="entityVertex_912681_86_glyph"><layout:boundingBox><layout:position layout:x="54.0" layout:y="422.0" /><layout:dimensions layout:height="65.0" layout:width="120.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_912690_95" layout:id="entityVertex_912690_95_glyph"><layout:boundingBox><layout:position layout:x="51.0" layout:y="837.0" /><layout:dimensions layout:height="22.0" layout:width="104.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_913524_66" layout:id="entityVertex_913524_66_glyph"><layout:boundingBox><layout:position layout:x="1476.0" layout:y="363.0" /><layout:dimensions layout:height="36.0" layout:width="110.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_913526_75" layout:id="entityVertex_913526_75_glyph"><layout:boundingBox><layout:position layout:x="854.0" layout:y="443.0" /><layout:dimensions layout:height="36.0" layout:width="98.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_913527_62" layout:id="entityVertex_913527_62_glyph"><layout:boundingBox><layout:position layout:x="894.0" layout:y="498.0" /><layout:dimensions layout:height="22.0" layout:width="44.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_918193_3" layout:id="entityVertex_918193_3_glyph"><layout:boundingBox><layout:position layout:x="90.0" layout:y="127.0" /><layout:dimensions layout:height="22.0" layout:width="124.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_918195_4" layout:id="entityVertex_918195_4_glyph"><layout:boundingBox><layout:position layout:x="256.0" layout:y="120.0" /><layout:dimensions layout:height="36.0" layout:width="129.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_9678695_577" layout:id="entityVertex_9678695_577_glyph"><layout:boundingBox><layout:position layout:x="464.0" layout:y="164.0" /><layout:dimensions layout:height="36.0" layout:width="122.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_9678951_557" layout:id="entityVertex_9678951_557_glyph"><layout:boundingBox><layout:position layout:x="49.0" layout:y="259.0" /><layout:dimensions layout:height="36.0" layout:width="128.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_9696161_651" layout:id="entityVertex_9696161_651_glyph"><layout:boundingBox><layout:position layout:x="0.0" layout:y="162.0" /><layout:dimensions layout:height="50.0" layout:width="128.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_9710965_652" layout:id="entityVertex_9710965_652_glyph"><layout:boundingBox><layout:position layout:x="616.0" layout:y="487.0" /><layout:dimensions layout:height="36.0" layout:width="92.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_9729443_1740" layout:id="entityVertex_9729443_1740_glyph"><layout:boundingBox><layout:position layout:x="1844.0" layout:y="326.0" /><layout:dimensions layout:height="23.0" layout:width="102.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_9757480_1714" layout:id="entityVertex_9757480_1714_glyph"><layout:boundingBox><layout:position layout:x="624.0" layout:y="441.0" /><layout:dimensions layout:height="37.0" layout:width="104.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_9833154_1755" layout:id="entityVertex_9833154_1755_glyph"><layout:boundingBox><layout:position layout:x="1252.0" layout:y="182.0" /><layout:dimensions layout:height="37.0" layout:width="99.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_997300_132" layout:id="entityVertex_997300_132_glyph"><layout:boundingBox><layout:position layout:x="69.0" layout:y="524.0" /><layout:dimensions layout:height="50.0" layout:width="128.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_997304_156" layout:id="entityVertex_997304_156_glyph"><layout:boundingBox><layout:position layout:x="2018.0" layout:y="105.0" /><layout:dimensions layout:height="64.0" layout:width="113.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_1015671_172" layout:id="entityVertex_1015671_172_glyph"><layout:boundingBox><layout:position layout:x="1276.0" layout:y="485.0" /><layout:dimensions layout:height="22.0" layout:width="45.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_1015673_174" layout:id="entityVertex_1015673_174_glyph"><layout:boundingBox><layout:position layout:x="1242.0" layout:y="754.0" /><layout:dimensions layout:height="22.0" layout:width="42.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_1015674_175" layout:id="entityVertex_1015674_175_glyph"><layout:boundingBox><layout:position layout:x="1400.0" layout:y="685.0" /><layout:dimensions layout:height="22.0" layout:width="37.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_1015677_176" layout:id="entityVertex_1015677_176_glyph"><layout:boundingBox><layout:position layout:x="1085.0" layout:y="344.0" /><layout:dimensions layout:height="22.0" layout:width="38.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_1015680_181" layout:id="entityVertex_1015680_181_glyph"><layout:boundingBox><layout:position layout:x="1189.0" layout:y="752.0" /><layout:dimensions layout:height="22.0" layout:width="39.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_1015682_182" layout:id="entityVertex_1015682_182_glyph"><layout:boundingBox><layout:position layout:x="1354.0" layout:y="831.0" /><layout:dimensions layout:height="22.0" layout:width="47.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_1015684_183" layout:id="entityVertex_1015684_183_glyph"><layout:boundingBox><layout:position layout:x="1127.0" layout:y="753.0" /><layout:dimensions layout:height="22.0" layout:width="56.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_1015687_186" layout:id="entityVertex_1015687_186_glyph"><layout:boundingBox><layout:position layout:x="1220.0" layout:y="484.0" /><layout:dimensions layout:height="22.0" layout:width="43.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_1015688_187" layout:id="entityVertex_1015688_187_glyph"><layout:boundingBox><layout:position layout:x="1053.0" layout:y="835.0" /><layout:dimensions layout:height="22.0" layout:width="47.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_1015693_173" layout:id="entityVertex_1015693_173_glyph"><layout:boundingBox><layout:position layout:x="1463.0" layout:y="679.0" /><layout:dimensions layout:height="22.0" layout:width="83.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_1015695_184" layout:id="entityVertex_1015695_184_glyph"><layout:boundingBox><layout:position layout:x="1059.0" layout:y="391.0" /><layout:dimensions layout:height="23.0" layout:width="53.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_1015696_188" layout:id="entityVertex_1015696_188_glyph"><layout:boundingBox><layout:position layout:x="1459.0" layout:y="531.0" /><layout:dimensions layout:height="22.0" layout:width="90.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_1031703_270" layout:id="entityVertex_1031703_270_glyph"><layout:boundingBox><layout:position layout:x="1003.0" layout:y="760.0" /><layout:dimensions layout:height="22.0" layout:width="42.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_113592_12" layout:id="entityVertex_113592_12_glyph"><layout:boundingBox><layout:position layout:x="677.0" layout:y="184.0" /><layout:dimensions layout:height="30.0" layout:width="40.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_162563_158" layout:id="entityVertex_162563_158_glyph"><layout:boundingBox><layout:position layout:x="1959.0" layout:y="258.0" /><layout:dimensions layout:height="22.0" layout:width="57.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_168699_1761" layout:id="entityVertex_168699_1761_glyph"><layout:boundingBox><layout:position layout:x="876.0" layout:y="703.0" /><layout:dimensions layout:height="23.0" layout:width="54.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_174336_190" layout:id="entityVertex_174336_190_glyph"><layout:boundingBox><layout:position layout:x="1152.0" layout:y="524.0" /><layout:dimensions layout:height="22.0" layout:width="51.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_180612_657" layout:id="entityVertex_180612_657_glyph"><layout:boundingBox><layout:position layout:x="352.0" layout:y="719.0" /><layout:dimensions layout:height="22.0" layout:width="49.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_180714_1739" layout:id="entityVertex_180714_1739_glyph"><layout:boundingBox><layout:position layout:x="781.0" layout:y="560.0" /><layout:dimensions layout:height="22.0" layout:width="49.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_180733_660" layout:id="entityVertex_180733_660_glyph"><layout:boundingBox><layout:position layout:x="412.0" layout:y="718.0" /><layout:dimensions layout:height="22.0" layout:width="49.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_188865_1737" layout:id="entityVertex_188865_1737_glyph"><layout:boundingBox><layout:position layout:x="835.0" layout:y="530.0" /><layout:dimensions layout:height="22.0" layout:width="49.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_197938_145" layout:id="entityVertex_197938_145_glyph"><layout:boundingBox><layout:position layout:x="301.0" layout:y="481.0" /><layout:dimensions layout:height="22.0" layout:width="49.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_199523_171" layout:id="entityVertex_199523_171_glyph"><layout:boundingBox><layout:position layout:x="1484.0" layout:y="833.0" /><layout:dimensions layout:height="22.0" layout:width="47.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_210625_133" layout:id="entityVertex_210625_133_glyph"><layout:boundingBox><layout:position layout:x="302.0" layout:y="672.0" /><layout:dimensions layout:height="22.0" layout:width="49.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_29356_130" layout:id="entityVertex_29356_130_glyph"><layout:boundingBox><layout:position layout:x="409.0" layout:y="604.0" /><layout:dimensions layout:height="30.0" layout:width="43.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_29370_14" layout:id="entityVertex_29370_14_glyph"><layout:boundingBox><layout:position layout:x="768.0" layout:y="179.0" /><layout:dimensions layout:height="30.0" layout:width="42.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_29372_131" layout:id="entityVertex_29372_131_glyph"><layout:boundingBox><layout:position layout:x="174.0" layout:y="609.0" /><layout:dimensions layout:height="30.0" layout:width="28.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_380745_65" layout:id="entityVertex_380745_65_glyph"><layout:boundingBox><layout:position layout:x="1683.0" layout:y="379.0" /><layout:dimensions layout:height="23.0" layout:width="62.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_380755_50" layout:id="entityVertex_380755_50_glyph"><layout:boundingBox><layout:position layout:x="1660.0" layout:y="192.0" /><layout:dimensions layout:height="22.0" layout:width="47.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_389744_52" layout:id="entityVertex_389744_52_glyph"><layout:boundingBox><layout:position layout:x="1720.0" layout:y="260.0" /><layout:dimensions layout:height="22.0" layout:width="101.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_5216010_424" layout:id="entityVertex_5216010_424_glyph"><layout:boundingBox><layout:position layout:x="1220.0" layout:y="324.0" /><layout:dimensions layout:height="22.0" layout:width="49.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_53939_177" layout:id="entityVertex_53939_177_glyph"><layout:boundingBox><layout:position layout:x="1342.0" layout:y="486.0" /><layout:dimensions layout:height="22.0" layout:width="42.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_5624196_419" layout:id="entityVertex_5624196_419_glyph"><layout:boundingBox><layout:position layout:x="749.0" layout:y="885.0" /><layout:dimensions layout:height="22.0" layout:width="40.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_5624198_420" layout:id="entityVertex_5624198_420_glyph"><layout:boundingBox><layout:position layout:x="1060.0" layout:y="609.0" /><layout:dimensions layout:height="22.0" layout:width="61.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_5624199_421" layout:id="entityVertex_5624199_421_glyph"><layout:boundingBox><layout:position layout:x="1612.0" layout:y="612.0" /><layout:dimensions layout:height="22.0" layout:width="50.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_877267_128" layout:id="entityVertex_877267_128_glyph"><layout:boundingBox><layout:position layout:x="254.0" layout:y="335.0" /><layout:dimensions layout:height="22.0" layout:width="131.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_877333_127" layout:id="entityVertex_877333_127_glyph"><layout:boundingBox><layout:position layout:x="68.0" layout:y="673.0" /><layout:dimensions layout:height="23.0" layout:width="66.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_879183_59" layout:id="entityVertex_879183_59_glyph"><layout:boundingBox><layout:position layout:x="947.0" layout:y="391.0" /><layout:dimensions layout:height="22.0" layout:width="35.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_882029_39" layout:id="entityVertex_882029_39_glyph"><layout:boundingBox><layout:position layout:x="1175.0" layout:y="181.0" /><layout:dimensions layout:height="22.0" layout:width="47.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_9034125_434" layout:id="entityVertex_9034125_434_glyph"><layout:boundingBox><layout:position layout:x="896.0" layout:y="565.0" /><layout:dimensions layout:height="64.0" layout:width="131.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_909690_2" layout:id="entityVertex_909690_2_glyph"><layout:boundingBox><layout:position layout:x="195.0" layout:y="0.0" /><layout:dimensions layout:height="36.0" layout:width="104.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_912325_93" layout:id="entityVertex_912325_93_glyph"><layout:boundingBox><layout:position layout:x="149.0" layout:y="674.0" /><layout:dimensions layout:height="22.0" layout:width="50.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_936552_180" layout:id="entityVertex_936552_180_glyph"><layout:boundingBox><layout:position layout:x="1460.0" layout:y="496.0" /><layout:dimensions layout:height="22.0" layout:width="45.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_937341_179" layout:id="entityVertex_937341_179_glyph"><layout:boundingBox><layout:position layout:x="941.0" layout:y="728.0" /><layout:dimensions layout:height="22.0" layout:width="37.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_947487_185" layout:id="entityVertex_947487_185_glyph"><layout:boundingBox><layout:position layout:x="987.0" layout:y="834.0" /><layout:dimensions layout:height="22.0" layout:width="30.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_947491_178" layout:id="entityVertex_947491_178_glyph"><layout:boundingBox><layout:position layout:x="1353.0" layout:y="719.0" /><layout:dimensions layout:height="22.0" layout:width="37.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_947492_189" layout:id="entityVertex_947492_189_glyph"><layout:boundingBox><layout:position layout:x="1474.0" layout:y="615.0" /><layout:dimensions layout:height="22.0" layout:width="38.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_9678619_575" layout:id="entityVertex_9678619_575_glyph"><layout:boundingBox><layout:position layout:x="306.0" layout:y="169.0" /><layout:dimensions layout:height="21.0" layout:width="126.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_9678984_556" layout:id="entityVertex_9678984_556_glyph"><layout:boundingBox><layout:position layout:x="178.0" layout:y="219.0" /><layout:dimensions layout:height="24.0" layout:width="122.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_9684472_438" layout:id="entityVertex_9684472_438_glyph"><layout:boundingBox><layout:position layout:x="1281.0" layout:y="720.0" /><layout:dimensions layout:height="22.0" layout:width="37.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_9696187_650" layout:id="entityVertex_9696187_650_glyph"><layout:boundingBox><layout:position layout:x="6.0" layout:y="52.0" /><layout:dimensions layout:height="36.0" layout:width="118.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_9710957_654" layout:id="entityVertex_9710957_654_glyph"><layout:boundingBox><layout:position layout:x="258.0" layout:y="759.0" /><layout:dimensions layout:height="36.0" layout:width="106.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_9757476_1661" layout:id="entityVertex_9757476_1661_glyph"><layout:boundingBox><layout:position layout:x="572.0" layout:y="709.0" /><layout:dimensions layout:height="37.0" layout:width="104.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_9757478_1535" layout:id="entityVertex_9757478_1535_glyph"><layout:boundingBox><layout:position layout:x="448.0" layout:y="758.0" /><layout:dimensions layout:height="36.0" layout:width="102.0" /></layout:boundingBox></layout:generalGlyph><layout:generalGlyph layout:reference="entityVertex_983117_231" layout:id="entityVertex_983117_231_glyph"><layout:boundingBox><layout:position layout:x="1609.0" layout:y="566.0" /><layout:dimensions layout:height="36.0" layout:width="124.0" /></layout:boundingBox></layout:generalGlyph></layout:listOfAdditionalGraphicalObjects></layout:layout></layout:listOfLayouts><qual:listOfQualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="ISGF3_space_bound_space_to_space_ISRE_space_promotor_space_elements_complex" qual:constant="false" qual:id="entityVertex_1015697_161"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: "Type_space_I_space_IFN-regulated_space_genes_space_with_space_ISRE_space_promoter_space_elements_unknown"&amp;ISGF3_complex_nucleus</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#ISGF3_bound_to_ISRE_promotor_elements__nuc">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="ABCE1:RNASEL_space_dimer_complex" qual:constant="false" qual:id="entityVertex_5223322_426"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: RNASEL_space_dimer_complex&amp;ABCE1</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#ABCE1_RNASEL_dimer__mito">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="RNASEL_space_dimer_complex" qual:constant="true" qual:id="entityVertex_5357403_425"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: RNASEL_space_dimer_complex</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#RNASEL_dimer__mito">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="IFNA/B:IFNAR2:p-JAK1:STAT2:p-IFNAR1:p-TYK2:STAT2_complex" qual:constant="false" qual:id="entityVertex_909696_40"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: "IFNA/B:IFNAR2:p-JAK1:STAT2:p-IFNAR1:p-TYK2_complex"&amp;STAT2&amp;!multiubiquitinated_space_STAT2_complex</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#IFNA_B_IFNAR2_p_JAK1_STAT2_p_IFNAR1_p_TYK2_STAT2__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="IFNA/B:IFNAR2:p-JAK1:STAT2:p-IFNAR1:p-TYK2:p-STAT2_complex" qual:constant="false" qual:id="entityVertex_909697_44"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: "IFNA/B:IFNAR2:p-JAK1:STAT2:p-IFNAR1:p-TYK2:STAT2_complex"&amp;ATP_simple_molecule</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#IFNA_B_IFNAR2_p_JAK1_STAT2_p_IFNAR1_p_TYK2_p_STAT2__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="ISGF3_complex_cytosol" qual:constant="false" qual:id="entityVertex_909698_60"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: "p-STAT2:p-STAT1_complex"&amp;IRF9</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#ISGF3__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="p-STAT2:p-STAT1_complex" qual:constant="false" qual:id="entityVertex_909702_54"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: "IFNA/B:IFNAR2:p-JAK1:STAT2:p-IFNAR1:p-TYK2:p-STAT2:p-STAT1_complex"</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#p_STAT2_p_STAT1__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="IFNA/B:IFNAR2:JAK1:STAT2:IFNAR1:TYK2_complex" qual:constant="false" qual:id="entityVertex_909703_7"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: "IFNA/B:IFNAR2:JAK1:STAT2_complex"&amp;"IFNAR1:TYK2_complex"&amp;!"IFNAR1:TYK2:TYK2_space_inhibitors_complex"|"IFNA/B:IFNAR2:p-JAK1:STAT2:IFNAR1:TYK2_complex"&amp;H2O_simple_molecule&amp;PTPN6</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#IFNA_B_IFNAR2_JAK1_STAT2_IFNAR1_TYK2__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="IFNA/B:IFNAR2:p-JAK1:STAT2:p-IFNAR1:p-TYK2_complex" qual:constant="false" qual:id="entityVertex_909704_33"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: "IFNA/B:IFNAR2:p-JAK1:STAT2:IFNAR1:p-TYK2_complex"&amp;ATP_simple_molecule|"IFNA/B:IFNAR2:p-JAK1:STAT2:p-IFNAR1:p-TYK2:p-STAT2:p-STAT1_complex"</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#IFNA_B_IFNAR2_p_JAK1_STAT2_p_IFNAR1_p_TYK2__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="IFNA/B:IFNAR2:p-JAK1:STAT2:IFNAR1:p-TYK2_complex" qual:constant="false" qual:id="entityVertex_909705_13"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: "IFNA/B:IFNAR2:JAK1:STAT2:IFNAR1:TYK2_complex"&amp;ATP_simple_molecule&amp;!"p-TYK2:p-IFNAR1:SOCS-1/SOCS-3:IFNA/B:IFNAR2:p-JAK1:STAT2_complex"</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#IFNA_B_IFNAR2_p_JAK1_STAT2_IFNAR1_p_TYK2__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="IFNAR1:TYK2_complex" qual:constant="true" qual:id="entityVertex_909708_6"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: IFNAR1:TYK2_complex</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#IFNAR1_TYK2__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="IFNA/B:IFNAR2:p-JAK1:STAT2:p-IFNAR1:p-TYK2:p-STAT2:p-STAT1_complex" qual:constant="false" qual:id="entityVertex_909711_51"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: "IFNA/B:IFNAR2:p-JAK1:STAT2:p-IFNAR1:p-TYK2:p-STAT2_complex"&amp;STAT1_unknown&amp;ATP_simple_molecule&amp;!"PTPN6,PTPN11_unknown"&amp;!"STAT1,STAT2:N_complex"</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#IFNA_B_IFNAR2_p_JAK1_STAT2_p_IFNAR1_p_TYK2_p_STAT2_p_STAT1__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="p-TYK2:p-IFNAR1:SOCS-1/SOCS-3:IFNA/B:IFNAR2:p-JAK1:STAT2_complex" qual:constant="false" qual:id="entityVertex_912681_86"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: "IFNA/B:IFNAR2:JAK1:STAT2:IFNAR1:TYK2_complex"&amp;"SOCS-1_space_and_space_SOCS-3_unknown"</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#p_TYK2_p_IFNAR1_SOCS_1_SOCS_3_IFNA_B_IFNAR2_p_JAK1_STAT2__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="IFNAR2c:UBP43_complex" qual:constant="false" qual:id="entityVertex_912690_95"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: "IFNAR2-2"&amp;USP18</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#IFNAR2c_UBP43__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="p-Y701-STAT1-1_space_dimer_complex" qual:constant="false" qual:id="entityVertex_913524_66"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: "STAT1-1"&amp;ATP_simple_molecule&amp;"IFNA/B:IFNAR2:p-JAK1:STAT2:p-IFNAR1:p-TYK2:p-STAT2_complex"</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#p_Y701_STAT1_1_dimer__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="p-Y701-STAT1_space_dimer_complex" qual:constant="false" qual:id="entityVertex_913526_75"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: "p-Y701-STAT1:KPNA1:KPNB1_complex"</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#p_Y701_STAT1_dimer__nuc">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="ISGF3_complex_nucleus" qual:constant="false" qual:id="entityVertex_913527_62"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: "ISGF3:KPNA1:KPNB1_complex"</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#ISGF3__nuc">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="IFNAR2:JAK1:STAT2_complex" qual:constant="true" qual:id="entityVertex_918193_3"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: IFNAR2:JAK1:STAT2_complex</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#IFNAR2_JAK1_STAT2__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="IFNA/B:IFNAR2:JAK1:STAT2_complex" qual:constant="false" qual:id="entityVertex_918195_4"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: "IFN_space_alpha/beta_space_(IFNA/B)_unknown"&amp;"IFNAR2:JAK1:STAT2_complex"&amp;"IFNAR2:JAK1:STAT2:type_space_1_space_interferon_space_analogs_complex"&amp;!"IFNAR2:JAK1:STAT2:JAK1,2_space_inhibitors_complex"</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#IFNA_B_IFNAR2_JAK1_STAT2__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="IFNAR1:TYK2:TYK2_space_inhibitors_complex" qual:constant="false" qual:id="entityVertex_9678695_577"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: TYK2_space_inhibitors_unknown&amp;"IFNAR1:TYK2_complex"</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#IFNAR1_TYK2_TYK2_inhibitors__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="IFNAR2:JAK1:STAT2:JAK1,2_space_inhibitors_complex" qual:constant="false" qual:id="entityVertex_9678951_557"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: "IFNAR2:JAK1:STAT2_complex"&amp;"JAK1,2_space_inhibitors_unknown"</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#IFNAR2_JAK1_STAT2_JAK1_2_inhibitors__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="IFNAR2:JAK1:STAT2:type_space_1_space_interferon_space_analogs_complex" qual:constant="false" qual:id="entityVertex_9696161_651"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: type_space_1_space_interferon_space_analogs_unknown&amp;"IFNAR2:JAK1:STAT2_complex"</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#IFNAR2_JAK1_STAT2_type_1_interferon_analogs__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="ISGF3:KPNA1:KPNB1_complex" qual:constant="true" qual:id="entityVertex_9710965_652"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: ISGF3:KPNA1:KPNB1_complex</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#ISGF3_KPNA1_KPNB1__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="STAT1,STAT2:N_complex" qual:constant="true" qual:id="entityVertex_9729443_1740"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: STAT1,STAT2:N_complex</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#STAT1_STAT2_N__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="p-Y701-STAT1:KPNA1:KPNB1_complex" qual:constant="true" qual:id="entityVertex_9757480_1714"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: p-Y701-STAT1:KPNA1:KPNB1_complex</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#p_Y701_STAT1_KPNA1_KPNB1__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="multiubiquitinated_space_STAT2_complex" qual:constant="true" qual:id="entityVertex_9833154_1755"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: multiubiquitinated_space_STAT2_complex</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#multiubiquitinated_STAT2__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="IFNA/B:IFNAR2:p-JAK1:STAT2:IFNAR1:TYK2_complex" qual:constant="false" qual:id="entityVertex_997300_132"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: "IFNA/B:IFNAR2:p-JAK1:STAT2:IFNAR1:p-TYK2_complex"&amp;H2O_simple_molecule&amp;PTPN1</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#IFNA_B_IFNAR2_p_JAK1_STAT2_IFNAR1_TYK2__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="IFNA/B:IFNAR2:p-JAK1:STAT2:p-IFNAR1:p-TYK2:p-STAT2:STAT1_complex" qual:constant="false" qual:id="entityVertex_997304_156"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: "IFNA/B:IFNAR2:p-JAK1:STAT2:p-IFNAR1:p-TYK2:p-STAT2:p-STAT1_complex"&amp;H2O_simple_molecule&amp;PTPN11</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#IFNA_B_IFNAR2_p_JAK1_STAT2_p_IFNAR1_p_TYK2_p_STAT2_STAT1__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="ISG20" qual:constant="false" qual:id="entityVertex_1015671_172"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: "Type_space_I_space_IFN-regulated_space_genes_space_with_space_ISRE_space_promoter_space_elements_unknown"&amp;ISGF3_space_bound_space_to_space_ISRE_space_promotor_space_elements_complex</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#ISG20__nuc">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="GBP2" qual:constant="false" qual:id="entityVertex_1015673_174"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: "Type_space_I_space_IFN-regulated_space_genes_space_with_space_ISRE_space_promoter_space_elements_unknown"&amp;ISGF3_space_bound_space_to_space_ISRE_space_promotor_space_elements_complex</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#GBP2__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="IFIT2" qual:constant="false" qual:id="entityVertex_1015674_175"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: "Type_space_I_space_IFN-regulated_space_genes_space_with_space_ISRE_space_promoter_space_elements_unknown"&amp;ISGF3_space_bound_space_to_space_ISRE_space_promotor_space_elements_complex</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#IFIT2__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="IFI27" qual:constant="false" qual:id="entityVertex_1015677_176"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: "Type_space_I_space_IFN-regulated_space_genes_space_with_space_ISRE_space_promoter_space_elements_unknown"&amp;ISGF3_space_bound_space_to_space_ISRE_space_promotor_space_elements_complex</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#IFI27__mito">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="XAF1" qual:constant="false" qual:id="entityVertex_1015680_181"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: "Type_space_I_space_IFN-regulated_space_genes_space_with_space_ISRE_space_promoter_space_elements_unknown"&amp;ISGF3_space_bound_space_to_space_ISRE_space_promotor_space_elements_complex</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#XAF1__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="IFITM2" qual:constant="false" qual:id="entityVertex_1015682_182"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: "Type_space_I_space_IFN-regulated_space_genes_space_with_space_ISRE_space_promoter_space_elements_unknown"&amp;ISGF3_space_bound_space_to_space_ISRE_space_promotor_space_elements_complex</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#IFITM2__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="RNASEL" qual:constant="false" qual:id="entityVertex_1015684_183"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: "Type_space_I_space_IFN-regulated_space_genes_space_with_space_ISRE_space_promoter_space_elements_unknown"&amp;ISGF3_space_bound_space_to_space_ISRE_space_promotor_space_elements_complex</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#RNASEL__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="IP6K2" qual:constant="false" qual:id="entityVertex_1015687_186"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: "Type_space_I_space_IFN-regulated_space_genes_space_with_space_ISRE_space_promoter_space_elements_unknown"&amp;ISGF3_space_bound_space_to_space_ISRE_space_promotor_space_elements_complex</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#IP6K2__nuc">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="IFITM3" qual:constant="false" qual:id="entityVertex_1015688_187"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: "Type_space_I_space_IFN-regulated_space_genes_space_with_space_ISRE_space_promoter_space_elements_unknown"&amp;ISGF3_space_bound_space_to_space_ISRE_space_promotor_space_elements_complex</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#IFITM3__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="Mx_space_GTPases_unknown" qual:constant="false" qual:id="entityVertex_1015693_173"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: "Type_space_I_space_IFN-regulated_space_genes_space_with_space_ISRE_space_promoter_space_elements_unknown"&amp;ISGF3_space_bound_space_to_space_ISRE_space_promotor_space_elements_complex</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#MX_family__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="IRF_space_1-9_unknown" qual:constant="false" qual:id="entityVertex_1015695_184"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: "Type_space_I_space_IFN-regulated_space_genes_space_with_space_ISRE_space_promoter_space_elements_unknown"&amp;ISGF3_space_bound_space_to_space_ISRE_space_promotor_space_elements_complex</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#IRF_family__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="OAS_space_proteins_unknown" qual:constant="false" qual:id="entityVertex_1015696_188"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: "Type_space_I_space_IFN-regulated_space_genes_space_with_space_ISRE_space_promoter_space_elements_unknown"&amp;ISGF3_space_bound_space_to_space_ISRE_space_promotor_space_elements_complex</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#OAS_family__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="EGR1" qual:constant="false" qual:id="entityVertex_1031703_270"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: "Type_space_I_space_IFN-regulated_space_genes_space_with_space_ISRE_space_promoter_space_elements_unknown"&amp;ISGF3_space_bound_space_to_space_ISRE_space_promotor_space_elements_complex</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#EGR1__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="ATP_simple_molecule" qual:constant="true" qual:id="entityVertex_113592_12"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1,M2,M4</p><p>
+CaSQ-computed function: ATP_simple_molecule</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#ATP__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="PTPN11" qual:constant="true" qual:id="entityVertex_162563_158"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1,M2,M4</p><p>
+CaSQ-computed function: PTPN11</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#PTPN11__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="EIF2AK2" qual:constant="false" qual:id="entityVertex_168699_1761"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: "Type_space_I_space_IFN-regulated_space_genes_space_with_space_ISRE_space_promoter_space_elements_unknown"&amp;ISGF3_space_bound_space_to_space_ISRE_space_promotor_space_elements_complex</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#EIF2AK2__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="PSMB8" qual:constant="false" qual:id="entityVertex_174336_190"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: "Type_space_I_space_IFN-regulated_space_genes_space_with_space_ISRE_space_promoter_space_elements_unknown"&amp;ISGF3_space_bound_space_to_space_ISRE_space_promotor_space_elements_complex</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#PSMB8__nuc">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="KPNA1_cytosol" qual:constant="true" qual:id="entityVertex_180612_657"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: KPNA1_cytosol</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#KPNA1__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="KPNB1_nucleus" qual:constant="false" qual:id="entityVertex_180714_1739"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: "ISGF3:KPNA1:KPNB1_complex"|"p-Y701-STAT1:KPNA1:KPNB1_complex"</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#KPNB1__nuc">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="KPNB1_cytosol" qual:constant="true" qual:id="entityVertex_180733_660"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: KPNB1_cytosol</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#KPNB1__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="KPNA1_nucleus" qual:constant="false" qual:id="entityVertex_188865_1737"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: "ISGF3:KPNA1:KPNB1_complex"|"p-Y701-STAT1:KPNA1:KPNB1_complex"</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#KPNA1__nuc">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="PTPN6" qual:constant="true" qual:id="entityVertex_197938_145"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: PTPN6</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#PTPN6__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="IFITM1" qual:constant="false" qual:id="entityVertex_199523_171"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: "Type_space_I_space_IFN-regulated_space_genes_space_with_space_ISRE_space_promoter_space_elements_unknown"&amp;ISGF3_space_bound_space_to_space_ISRE_space_promotor_space_elements_complex</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#IFITM1__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="PTPN1" qual:constant="true" qual:id="entityVertex_210625_133"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: PTPN1</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#PTPN1__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="H2O_simple_molecule" qual:constant="true" qual:id="entityVertex_29356_130"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1,M2</p><p>
+CaSQ-computed function: H2O_simple_molecule</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#H2O__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="ADP_simple_molecule" qual:constant="false" qual:id="entityVertex_29370_14"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1,M2,M4</p><p>
+CaSQ-computed function: "IFNA/B:IFNAR2:JAK1:STAT2:IFNAR1:TYK2_complex"&amp;ATP_simple_molecule&amp;!"p-TYK2:p-IFNAR1:SOCS-1/SOCS-3:IFNA/B:IFNAR2:p-JAK1:STAT2_complex"|"IFNA/B:IFNAR2:p-JAK1:STAT2:IFNAR1:p-TYK2_complex"&amp;ATP_simple_molecule|"STAT1-1"&amp;ATP_simple_molecule&amp;"IFNA/B:IFNAR2:p-JAK1:STAT2:p-IFNAR1:p-TYK2:p-STAT2_complex"|"IFNA/B:IFNAR2:p-JAK1:STAT2:p-IFNAR1:p-TYK2:STAT2_complex"&amp;ATP_simple_molecule|"IFNA/B:IFNAR2:p-JAK1:STAT2:p-IFNAR1:p-TYK2:p-STAT2_complex"&amp;STAT1_unknown&amp;ATP_simple_molecule&amp;!"PTPN6,PTPN11_unknown"&amp;!"STAT1,STAT2:N_complex"</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#ADP__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="Pi_simple_molecule" qual:constant="false" qual:id="entityVertex_29372_131"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1,M2</p><p>
+CaSQ-computed function: "IFNA/B:IFNAR2:p-JAK1:STAT2:IFNAR1:p-TYK2_complex"&amp;H2O_simple_molecule&amp;PTPN1|"IFNA/B:IFNAR2:p-JAK1:STAT2:IFNAR1:TYK2_complex"&amp;H2O_simple_molecule&amp;PTPN6|"IFNA/B:IFNAR2:p-JAK1:STAT2:p-IFNAR1:p-TYK2:p-STAT2:p-STAT1_complex"&amp;H2O_simple_molecule&amp;PTPN11</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#Pi__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="STAT1-1" qual:constant="true" qual:id="entityVertex_380745_65"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: STAT1-1</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#STAT1_iso1__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="STAT1_unknown" qual:constant="true" qual:id="entityVertex_380755_50"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: STAT1_unknown</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#STAT1__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="PTPN6,PTPN11_unknown" qual:constant="true" qual:id="entityVertex_389744_52"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: PTPN6,PTPN11_unknown</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#PTPN6_PTPN11__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="ABCE1" qual:constant="true" qual:id="entityVertex_5216010_424"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: ABCE1</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#ABCE1__mito">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="ADAR" qual:constant="false" qual:id="entityVertex_53939_177"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: "Type_space_I_space_IFN-regulated_space_genes_space_with_space_ISRE_space_promoter_space_elements_unknown"&amp;ISGF3_space_bound_space_to_space_ISRE_space_promotor_space_elements_complex</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#ADAR__nuc">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="BST2" qual:constant="false" qual:id="entityVertex_5624196_419"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: "Type_space_I_space_IFN-regulated_space_genes_space_with_space_ISRE_space_promoter_space_elements_unknown"&amp;ISGF3_space_bound_space_to_space_ISRE_space_promotor_space_elements_complex</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#BST2__ext">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="SAMHD1" qual:constant="false" qual:id="entityVertex_5624198_420"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: "Type_space_I_space_IFN-regulated_space_genes_space_with_space_ISRE_space_promoter_space_elements_unknown"&amp;ISGF3_space_bound_space_to_space_ISRE_space_promotor_space_elements_complex</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#SAMHD1__nuc">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="RSAD2" qual:constant="false" qual:id="entityVertex_5624199_421"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: "Type_space_I_space_IFN-regulated_space_genes_space_with_space_ISRE_space_promoter_space_elements_unknown"&amp;ISGF3_space_bound_space_to_space_ISRE_space_promotor_space_elements_complex</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#RSAD2__er">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="SOCS-1_space_and_space_SOCS-3_unknown" qual:constant="true" qual:id="entityVertex_877267_128"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: SOCS-1_space_and_space_SOCS-3_unknown</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#SOCS_family__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="IFNAR2-2" qual:constant="true" qual:id="entityVertex_877333_127"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: IFNAR2-2</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#IFNAR2_iso2__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="IRF9" qual:constant="true" qual:id="entityVertex_879183_59"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: IRF9</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#IRF9__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="STAT2" qual:constant="true" qual:id="entityVertex_882029_39"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: STAT2</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#STAT2__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="Type_space_I_space_IFN-regulated_space_genes_space_with_space_ISRE_space_promoter_space_elements_unknown" qual:constant="true" qual:id="entityVertex_9034125_434"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: Type_space_I_space_IFN-regulated_space_genes_space_with_space_ISRE_space_promoter_space_elements_unknown</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#ISG_signature__nuc">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="IFN_space_alpha/beta_space_(IFNA/B)_unknown" qual:constant="true" qual:id="entityVertex_909690_2"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: IFN_space_alpha/beta_space_(IFNA/B)_unknown</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#IFN_alpha_beta_IFNA_B__ext">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="USP18" qual:constant="true" qual:id="entityVertex_912325_93"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: USP18</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#USP18__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="ISG15" qual:constant="false" qual:id="entityVertex_936552_180"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: "Type_space_I_space_IFN-regulated_space_genes_space_with_space_ISRE_space_promoter_space_elements_unknown"&amp;ISGF3_space_bound_space_to_space_ISRE_space_promotor_space_elements_complex</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#ISG15__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="IFIT1" qual:constant="false" qual:id="entityVertex_937341_179"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: "Type_space_I_space_IFN-regulated_space_genes_space_with_space_ISRE_space_promoter_space_elements_unknown"&amp;ISGF3_space_bound_space_to_space_ISRE_space_promotor_space_elements_complex</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#IFIT1__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="IFI6" qual:constant="false" qual:id="entityVertex_947487_185"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: "Type_space_I_space_IFN-regulated_space_genes_space_with_space_ISRE_space_promoter_space_elements_unknown"&amp;ISGF3_space_bound_space_to_space_ISRE_space_promotor_space_elements_complex</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#IFI6__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="IFIT3" qual:constant="false" qual:id="entityVertex_947491_178"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: "Type_space_I_space_IFN-regulated_space_genes_space_with_space_ISRE_space_promoter_space_elements_unknown"&amp;ISGF3_space_bound_space_to_space_ISRE_space_promotor_space_elements_complex</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#IFIT3__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="IFI35" qual:constant="false" qual:id="entityVertex_947492_189"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: "Type_space_I_space_IFN-regulated_space_genes_space_with_space_ISRE_space_promoter_space_elements_unknown"&amp;ISGF3_space_bound_space_to_space_ISRE_space_promotor_space_elements_complex</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#IFI35__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="TYK2_space_inhibitors_unknown" qual:constant="true" qual:id="entityVertex_9678619_575"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: TYK2_space_inhibitors_unknown</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#TYK2_inhibitors__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="JAK1,2_space_inhibitors_unknown" qual:constant="true" qual:id="entityVertex_9678984_556"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: JAK1,2_space_inhibitors_unknown</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#JAK1_2_inhibitors__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="IFIT5" qual:constant="false" qual:id="entityVertex_9684472_438"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: "Type_space_I_space_IFN-regulated_space_genes_space_with_space_ISRE_space_promoter_space_elements_unknown"&amp;ISGF3_space_bound_space_to_space_ISRE_space_promotor_space_elements_complex</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#IFIT5__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="type_space_1_space_interferon_space_analogs_unknown" qual:constant="true" qual:id="entityVertex_9696187_650"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: type_space_1_space_interferon_space_analogs_unknown</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#type_1_interferon_analogs__ext">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="p-STAT1_space_dimer,_space_ISGF3_unknown" qual:constant="true" qual:id="entityVertex_9710957_654"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: p-STAT1_space_dimer,_space_ISGF3_unknown</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#p_STAT1_dimer_ISGF3__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="p-STAT1_space_dimer:KPNA1:KPNB1_unknown" qual:constant="false" qual:id="entityVertex_9757476_1661"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: "p-STAT1_space_dimer:KPNA1_unknown"&amp;KPNB1_cytosol</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#p_STAT1_dimer_KPNA1_KPNB1__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="p-STAT1_space_dimer:KPNA1_unknown" qual:constant="false" qual:id="entityVertex_9757478_1535"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: "p-STAT1_space_dimer,_space_ISGF3_unknown"&amp;KPNA1_cytosol</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#p_STAT1_dimer_KPNA1__cyto">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies><qual:qualitativeSpecies qual:maxLevel="1" qual:compartment="comp1" qual:name="Class_space_I_space_MHC_space_heavy_space_chain_space_(MHC_space_HC)_unknown" qual:constant="false" qual:id="entityVertex_983117_231"><notes><html xmlns="http://www.w3.org/1999/xhtml"><head><title /></head><body><p>module=M1</p><p>
+CaSQ-computed function: "Type_space_I_space_IFN-regulated_space_genes_space_with_space_ISRE_space_promoter_space_elements_unknown"&amp;ISGF3_space_bound_space_to_space_ISRE_space_promotor_space_elements_complex</p></body></html></notes>
+<annotation><rdf:RDF>
+<rdf:Description rdf:about="#Class_I_MHC_heavy_chain_MHC_HC__er">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF>
+</annotation></qual:qualitativeSpecies></qual:listOfQualitativeSpecies><qual:listOfTransitions><qual:transition qual:id="tr_entityVertex_1015697_161"><qual:listOfInputs><qual:input qual:qualitativeSpecies="entityVertex_9034125_434" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_1015697_161_in_0" /><qual:input qual:qualitativeSpecies="entityVertex_913527_62" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_1015697_161_in_1" /></qual:listOfInputs><qual:listOfOutputs><qual:output qual:qualitativeSpecies="entityVertex_1015697_161" qual:transitionEffect="assignmentLevel" qual:id="tr_entityVertex_1015697_161_out" /></qual:listOfOutputs><qual:listOfFunctionTerms><qual:defaultTerm qual:resultLevel="0" /><qual:functionTerm qual:resultLevel="1"><math xmlns="http://www.w3.org/1998/Math/MathML"><apply><and /><apply><eq /><ci>entityVertex_9034125_434</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_913527_62</ci><cn type="integer">1</cn></apply></apply></math></qual:functionTerm></qual:listOfFunctionTerms><annotation><rdf:RDF><rdf:Description rdf:about="#reactionVertex_1015699_159">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF></annotation></qual:transition><qual:transition qual:id="tr_entityVertex_5223322_426"><qual:listOfInputs><qual:input qual:qualitativeSpecies="entityVertex_5357403_425" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_5223322_426_in_0" /><qual:input qual:qualitativeSpecies="entityVertex_5216010_424" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_5223322_426_in_1" /></qual:listOfInputs><qual:listOfOutputs><qual:output qual:qualitativeSpecies="entityVertex_5223322_426" qual:transitionEffect="assignmentLevel" qual:id="tr_entityVertex_5223322_426_out" /></qual:listOfOutputs><qual:listOfFunctionTerms><qual:defaultTerm qual:resultLevel="0" /><qual:functionTerm qual:resultLevel="1"><math xmlns="http://www.w3.org/1998/Math/MathML"><apply><and /><apply><eq /><ci>entityVertex_5357403_425</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_5216010_424</ci><cn type="integer">1</cn></apply></apply></math></qual:functionTerm></qual:listOfFunctionTerms><annotation><rdf:RDF><rdf:Description rdf:about="#reactionVertex_5223305_423">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF></annotation></qual:transition><qual:transition qual:id="tr_entityVertex_909696_40"><qual:listOfInputs><qual:input qual:qualitativeSpecies="entityVertex_909704_33" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_909696_40_in_0" /><qual:input qual:qualitativeSpecies="entityVertex_882029_39" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_909696_40_in_1" /><qual:input qual:qualitativeSpecies="entityVertex_9833154_1755" qual:transitionEffect="none" qual:sign="negative" qual:id="tr_entityVertex_909696_40_in_2" /></qual:listOfInputs><qual:listOfOutputs><qual:output qual:qualitativeSpecies="entityVertex_909696_40" qual:transitionEffect="assignmentLevel" qual:id="tr_entityVertex_909696_40_out" /></qual:listOfOutputs><qual:listOfFunctionTerms><qual:defaultTerm qual:resultLevel="0" /><qual:functionTerm qual:resultLevel="1"><math xmlns="http://www.w3.org/1998/Math/MathML"><apply><and /><apply><eq /><ci>entityVertex_909704_33</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_882029_39</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_9833154_1755</ci><cn type="integer">0</cn></apply></apply></math></qual:functionTerm></qual:listOfFunctionTerms><annotation><rdf:RDF><rdf:Description rdf:about="#reactionVertex_909719_38">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF></annotation></qual:transition><qual:transition qual:id="tr_entityVertex_909697_44"><qual:listOfInputs><qual:input qual:qualitativeSpecies="entityVertex_909696_40" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_909697_44_in_0" /><qual:input qual:qualitativeSpecies="entityVertex_113592_12" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_909697_44_in_1" /></qual:listOfInputs><qual:listOfOutputs><qual:output qual:qualitativeSpecies="entityVertex_909697_44" qual:transitionEffect="assignmentLevel" qual:id="tr_entityVertex_909697_44_out" /></qual:listOfOutputs><qual:listOfFunctionTerms><qual:defaultTerm qual:resultLevel="0" /><qual:functionTerm qual:resultLevel="1"><math xmlns="http://www.w3.org/1998/Math/MathML"><apply><and /><apply><eq /><ci>entityVertex_909696_40</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_113592_12</ci><cn type="integer">1</cn></apply></apply></math></qual:functionTerm></qual:listOfFunctionTerms><annotation><rdf:RDF><rdf:Description rdf:about="#reactionVertex_909732_41">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF></annotation></qual:transition><qual:transition qual:id="tr_entityVertex_909698_60"><qual:listOfInputs><qual:input qual:qualitativeSpecies="entityVertex_909702_54" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_909698_60_in_0" /><qual:input qual:qualitativeSpecies="entityVertex_879183_59" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_909698_60_in_1" /></qual:listOfInputs><qual:listOfOutputs><qual:output qual:qualitativeSpecies="entityVertex_909698_60" qual:transitionEffect="assignmentLevel" qual:id="tr_entityVertex_909698_60_out" /></qual:listOfOutputs><qual:listOfFunctionTerms><qual:defaultTerm qual:resultLevel="0" /><qual:functionTerm qual:resultLevel="1"><math xmlns="http://www.w3.org/1998/Math/MathML"><apply><and /><apply><eq /><ci>entityVertex_909702_54</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_879183_59</ci><cn type="integer">1</cn></apply></apply></math></qual:functionTerm></qual:listOfFunctionTerms><annotation><rdf:RDF><rdf:Description rdf:about="#reactionVertex_909725_58">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF></annotation></qual:transition><qual:transition qual:id="tr_entityVertex_909702_54"><qual:listOfInputs><qual:input qual:qualitativeSpecies="entityVertex_909711_51" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_909702_54_in_0" /></qual:listOfInputs><qual:listOfOutputs><qual:output qual:qualitativeSpecies="entityVertex_909702_54" qual:transitionEffect="assignmentLevel" qual:id="tr_entityVertex_909702_54_out" /></qual:listOfOutputs><qual:listOfFunctionTerms><qual:defaultTerm qual:resultLevel="0" /><qual:functionTerm qual:resultLevel="1"><math xmlns="http://www.w3.org/1998/Math/MathML"><apply><eq /><ci>entityVertex_909711_51</ci><cn type="integer">1</cn></apply></math></qual:functionTerm></qual:listOfFunctionTerms><annotation><rdf:RDF><rdf:Description rdf:about="#reactionVertex_909722_53">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF></annotation></qual:transition><qual:transition qual:id="tr_entityVertex_909703_7"><qual:listOfInputs><qual:input qual:qualitativeSpecies="entityVertex_918195_4" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_909703_7_in_0" /><qual:input qual:qualitativeSpecies="entityVertex_909708_6" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_909703_7_in_1" /><qual:input qual:qualitativeSpecies="entityVertex_9678695_577" qual:transitionEffect="none" qual:sign="negative" qual:id="tr_entityVertex_909703_7_in_2" /><qual:input qual:qualitativeSpecies="entityVertex_997300_132" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_909703_7_in_3" /><qual:input qual:qualitativeSpecies="entityVertex_29356_130" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_909703_7_in_4" /><qual:input qual:qualitativeSpecies="entityVertex_197938_145" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_909703_7_in_5" /></qual:listOfInputs><qual:listOfOutputs><qual:output qual:qualitativeSpecies="entityVertex_909703_7" qual:transitionEffect="assignmentLevel" qual:id="tr_entityVertex_909703_7_out" /></qual:listOfOutputs><qual:listOfFunctionTerms><qual:defaultTerm qual:resultLevel="0" /><qual:functionTerm qual:resultLevel="1"><math xmlns="http://www.w3.org/1998/Math/MathML"><apply><or /><apply><and /><apply><eq /><ci>entityVertex_918195_4</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_909708_6</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_9678695_577</ci><cn type="integer">0</cn></apply></apply><apply><and /><apply><eq /><ci>entityVertex_997300_132</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_29356_130</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_197938_145</ci><cn type="integer">1</cn></apply></apply></apply></math></qual:functionTerm></qual:listOfFunctionTerms><annotation><rdf:RDF><rdf:Description rdf:about="#reactionVertex_909724_5">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+<rdf:Description rdf:about="#reactionVertex_997314_142">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF></annotation></qual:transition><qual:transition qual:id="tr_entityVertex_909704_33"><qual:listOfInputs><qual:input qual:qualitativeSpecies="entityVertex_909705_13" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_909704_33_in_0" /><qual:input qual:qualitativeSpecies="entityVertex_113592_12" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_909704_33_in_1" /><qual:input qual:qualitativeSpecies="entityVertex_909711_51" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_909704_33_in_2" /></qual:listOfInputs><qual:listOfOutputs><qual:output qual:qualitativeSpecies="entityVertex_909704_33" qual:transitionEffect="assignmentLevel" qual:id="tr_entityVertex_909704_33_out" /></qual:listOfOutputs><qual:listOfFunctionTerms><qual:defaultTerm qual:resultLevel="0" /><qual:functionTerm qual:resultLevel="1"><math xmlns="http://www.w3.org/1998/Math/MathML"><apply><or /><apply><and /><apply><eq /><ci>entityVertex_909705_13</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_113592_12</ci><cn type="integer">1</cn></apply></apply><apply><eq /><ci>entityVertex_909711_51</ci><cn type="integer">1</cn></apply></apply></math></qual:functionTerm></qual:listOfFunctionTerms><annotation><rdf:RDF><rdf:Description rdf:about="#reactionVertex_909730_31">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+<rdf:Description rdf:about="#reactionVertex_909722_53">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF></annotation></qual:transition><qual:transition qual:id="tr_entityVertex_909705_13"><qual:listOfInputs><qual:input qual:qualitativeSpecies="entityVertex_909703_7" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_909705_13_in_0" /><qual:input qual:qualitativeSpecies="entityVertex_113592_12" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_909705_13_in_1" /><qual:input qual:qualitativeSpecies="entityVertex_912681_86" qual:transitionEffect="none" qual:sign="negative" qual:id="tr_entityVertex_909705_13_in_2" /></qual:listOfInputs><qual:listOfOutputs><qual:output qual:qualitativeSpecies="entityVertex_909705_13" qual:transitionEffect="assignmentLevel" qual:id="tr_entityVertex_909705_13_out" /></qual:listOfOutputs><qual:listOfFunctionTerms><qual:defaultTerm qual:resultLevel="0" /><qual:functionTerm qual:resultLevel="1"><math xmlns="http://www.w3.org/1998/Math/MathML"><apply><and /><apply><eq /><ci>entityVertex_909703_7</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_113592_12</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_912681_86</ci><cn type="integer">0</cn></apply></apply></math></qual:functionTerm></qual:listOfFunctionTerms><annotation><rdf:RDF><rdf:Description rdf:about="#reactionVertex_909729_11">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF></annotation></qual:transition><qual:transition qual:id="tr_entityVertex_909711_51"><qual:listOfInputs><qual:input qual:qualitativeSpecies="entityVertex_909697_44" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_909711_51_in_0" /><qual:input qual:qualitativeSpecies="entityVertex_380755_50" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_909711_51_in_1" /><qual:input qual:qualitativeSpecies="entityVertex_113592_12" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_909711_51_in_2" /><qual:input qual:qualitativeSpecies="entityVertex_389744_52" qual:transitionEffect="none" qual:sign="negative" qual:id="tr_entityVertex_909711_51_in_3" /><qual:input qual:qualitativeSpecies="entityVertex_9729443_1740" qual:transitionEffect="none" qual:sign="negative" qual:id="tr_entityVertex_909711_51_in_4" /></qual:listOfInputs><qual:listOfOutputs><qual:output qual:qualitativeSpecies="entityVertex_909711_51" qual:transitionEffect="assignmentLevel" qual:id="tr_entityVertex_909711_51_out" /></qual:listOfOutputs><qual:listOfFunctionTerms><qual:defaultTerm qual:resultLevel="0" /><qual:functionTerm qual:resultLevel="1"><math xmlns="http://www.w3.org/1998/Math/MathML"><apply><and /><apply><eq /><ci>entityVertex_909697_44</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_380755_50</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_113592_12</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_389744_52</ci><cn type="integer">0</cn></apply><apply><eq /><ci>entityVertex_9729443_1740</ci><cn type="integer">0</cn></apply></apply></math></qual:functionTerm></qual:listOfFunctionTerms><annotation><rdf:RDF><rdf:Description rdf:about="#reactionVertex_909726_48">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF></annotation></qual:transition><qual:transition qual:id="tr_entityVertex_912681_86"><qual:listOfInputs><qual:input qual:qualitativeSpecies="entityVertex_909703_7" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_912681_86_in_0" /><qual:input qual:qualitativeSpecies="entityVertex_877267_128" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_912681_86_in_1" /></qual:listOfInputs><qual:listOfOutputs><qual:output qual:qualitativeSpecies="entityVertex_912681_86" qual:transitionEffect="assignmentLevel" qual:id="tr_entityVertex_912681_86_out" /></qual:listOfOutputs><qual:listOfFunctionTerms><qual:defaultTerm qual:resultLevel="0" /><qual:functionTerm qual:resultLevel="1"><math xmlns="http://www.w3.org/1998/Math/MathML"><apply><and /><apply><eq /><ci>entityVertex_909703_7</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_877267_128</ci><cn type="integer">1</cn></apply></apply></math></qual:functionTerm></qual:listOfFunctionTerms><annotation><rdf:RDF><rdf:Description rdf:about="#reactionVertex_912680_84">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF></annotation></qual:transition><qual:transition qual:id="tr_entityVertex_912690_95"><qual:listOfInputs><qual:input qual:qualitativeSpecies="entityVertex_877333_127" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_912690_95_in_0" /><qual:input qual:qualitativeSpecies="entityVertex_912325_93" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_912690_95_in_1" /></qual:listOfInputs><qual:listOfOutputs><qual:output qual:qualitativeSpecies="entityVertex_912690_95" qual:transitionEffect="assignmentLevel" qual:id="tr_entityVertex_912690_95_out" /></qual:listOfOutputs><qual:listOfFunctionTerms><qual:defaultTerm qual:resultLevel="0" /><qual:functionTerm qual:resultLevel="1"><math xmlns="http://www.w3.org/1998/Math/MathML"><apply><and /><apply><eq /><ci>entityVertex_877333_127</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_912325_93</ci><cn type="integer">1</cn></apply></apply></math></qual:functionTerm></qual:listOfFunctionTerms><annotation><rdf:RDF><rdf:Description rdf:about="#reactionVertex_912685_92">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF></annotation></qual:transition><qual:transition qual:id="tr_entityVertex_913524_66"><qual:listOfInputs><qual:input qual:qualitativeSpecies="entityVertex_380745_65" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_913524_66_in_0" /><qual:input qual:qualitativeSpecies="entityVertex_113592_12" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_913524_66_in_1" /><qual:input qual:qualitativeSpecies="entityVertex_909697_44" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_913524_66_in_2" /></qual:listOfInputs><qual:listOfOutputs><qual:output qual:qualitativeSpecies="entityVertex_913524_66" qual:transitionEffect="assignmentLevel" qual:id="tr_entityVertex_913524_66_out" /></qual:listOfOutputs><qual:listOfFunctionTerms><qual:defaultTerm qual:resultLevel="0" /><qual:functionTerm qual:resultLevel="1"><math xmlns="http://www.w3.org/1998/Math/MathML"><apply><and /><apply><eq /><ci>entityVertex_380745_65</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_113592_12</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_909697_44</ci><cn type="integer">1</cn></apply></apply></math></qual:functionTerm></qual:listOfFunctionTerms><annotation><rdf:RDF><rdf:Description rdf:about="#reactionVertex_909718_63">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF></annotation></qual:transition><qual:transition qual:id="tr_entityVertex_913526_75"><qual:listOfInputs><qual:input qual:qualitativeSpecies="entityVertex_9757480_1714" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_913526_75_in_0" /></qual:listOfInputs><qual:listOfOutputs><qual:output qual:qualitativeSpecies="entityVertex_913526_75" qual:transitionEffect="assignmentLevel" qual:id="tr_entityVertex_913526_75_out" /></qual:listOfOutputs><qual:listOfFunctionTerms><qual:defaultTerm qual:resultLevel="0" /><qual:functionTerm qual:resultLevel="1"><math xmlns="http://www.w3.org/1998/Math/MathML"><apply><eq /><ci>entityVertex_9757480_1714</ci><cn type="integer">1</cn></apply></math></qual:functionTerm></qual:listOfFunctionTerms><annotation><rdf:RDF><rdf:Description rdf:about="#reactionVertex_913529_74">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF></annotation></qual:transition><qual:transition qual:id="tr_entityVertex_913527_62"><qual:listOfInputs><qual:input qual:qualitativeSpecies="entityVertex_9710965_652" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_913527_62_in_0" /></qual:listOfInputs><qual:listOfOutputs><qual:output qual:qualitativeSpecies="entityVertex_913527_62" qual:transitionEffect="assignmentLevel" qual:id="tr_entityVertex_913527_62_out" /></qual:listOfOutputs><qual:listOfFunctionTerms><qual:defaultTerm qual:resultLevel="0" /><qual:functionTerm qual:resultLevel="1"><math xmlns="http://www.w3.org/1998/Math/MathML"><apply><eq /><ci>entityVertex_9710965_652</ci><cn type="integer">1</cn></apply></math></qual:functionTerm></qual:listOfFunctionTerms><annotation><rdf:RDF><rdf:Description rdf:about="#reactionVertex_909721_61">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF></annotation></qual:transition><qual:transition qual:id="tr_entityVertex_918195_4"><qual:listOfInputs><qual:input qual:qualitativeSpecies="entityVertex_909690_2" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_918195_4_in_0" /><qual:input qual:qualitativeSpecies="entityVertex_918193_3" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_918195_4_in_1" /><qual:input qual:qualitativeSpecies="entityVertex_9696161_651" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_918195_4_in_2" /><qual:input qual:qualitativeSpecies="entityVertex_9678951_557" qual:transitionEffect="none" qual:sign="negative" qual:id="tr_entityVertex_918195_4_in_3" /></qual:listOfInputs><qual:listOfOutputs><qual:output qual:qualitativeSpecies="entityVertex_918195_4" qual:transitionEffect="assignmentLevel" qual:id="tr_entityVertex_918195_4_out" /></qual:listOfOutputs><qual:listOfFunctionTerms><qual:defaultTerm qual:resultLevel="0" /><qual:functionTerm qual:resultLevel="1"><math xmlns="http://www.w3.org/1998/Math/MathML"><apply><and /><apply><eq /><ci>entityVertex_909690_2</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_918193_3</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_9696161_651</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_9678951_557</ci><cn type="integer">0</cn></apply></apply></math></qual:functionTerm></qual:listOfFunctionTerms><annotation><rdf:RDF><rdf:Description rdf:about="#reactionVertex_909720_1">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF></annotation></qual:transition><qual:transition qual:id="tr_entityVertex_9678695_577"><qual:listOfInputs><qual:input qual:qualitativeSpecies="entityVertex_9678619_575" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_9678695_577_in_0" /><qual:input qual:qualitativeSpecies="entityVertex_909708_6" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_9678695_577_in_1" /></qual:listOfInputs><qual:listOfOutputs><qual:output qual:qualitativeSpecies="entityVertex_9678695_577" qual:transitionEffect="assignmentLevel" qual:id="tr_entityVertex_9678695_577_out" /></qual:listOfOutputs><qual:listOfFunctionTerms><qual:defaultTerm qual:resultLevel="0" /><qual:functionTerm qual:resultLevel="1"><math xmlns="http://www.w3.org/1998/Math/MathML"><apply><and /><apply><eq /><ci>entityVertex_9678619_575</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_909708_6</ci><cn type="integer">1</cn></apply></apply></math></qual:functionTerm></qual:listOfFunctionTerms><annotation><rdf:RDF><rdf:Description rdf:about="#reactionVertex_9678737_574">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF></annotation></qual:transition><qual:transition qual:id="tr_entityVertex_9678951_557"><qual:listOfInputs><qual:input qual:qualitativeSpecies="entityVertex_918193_3" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_9678951_557_in_0" /><qual:input qual:qualitativeSpecies="entityVertex_9678984_556" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_9678951_557_in_1" /></qual:listOfInputs><qual:listOfOutputs><qual:output qual:qualitativeSpecies="entityVertex_9678951_557" qual:transitionEffect="assignmentLevel" qual:id="tr_entityVertex_9678951_557_out" /></qual:listOfOutputs><qual:listOfFunctionTerms><qual:defaultTerm qual:resultLevel="0" /><qual:functionTerm qual:resultLevel="1"><math xmlns="http://www.w3.org/1998/Math/MathML"><apply><and /><apply><eq /><ci>entityVertex_918193_3</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_9678984_556</ci><cn type="integer">1</cn></apply></apply></math></qual:functionTerm></qual:listOfFunctionTerms><annotation><rdf:RDF><rdf:Description rdf:about="#reactionVertex_9678935_555">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF></annotation></qual:transition><qual:transition qual:id="tr_entityVertex_9696161_651"><qual:listOfInputs><qual:input qual:qualitativeSpecies="entityVertex_9696187_650" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_9696161_651_in_0" /><qual:input qual:qualitativeSpecies="entityVertex_918193_3" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_9696161_651_in_1" /></qual:listOfInputs><qual:listOfOutputs><qual:output qual:qualitativeSpecies="entityVertex_9696161_651" qual:transitionEffect="assignmentLevel" qual:id="tr_entityVertex_9696161_651_out" /></qual:listOfOutputs><qual:listOfFunctionTerms><qual:defaultTerm qual:resultLevel="0" /><qual:functionTerm qual:resultLevel="1"><math xmlns="http://www.w3.org/1998/Math/MathML"><apply><and /><apply><eq /><ci>entityVertex_9696187_650</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_918193_3</ci><cn type="integer">1</cn></apply></apply></math></qual:functionTerm></qual:listOfFunctionTerms><annotation><rdf:RDF><rdf:Description rdf:about="#reactionVertex_9696179_649">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF></annotation></qual:transition><qual:transition qual:id="tr_entityVertex_997300_132"><qual:listOfInputs><qual:input qual:qualitativeSpecies="entityVertex_909705_13" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_997300_132_in_0" /><qual:input qual:qualitativeSpecies="entityVertex_29356_130" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_997300_132_in_1" /><qual:input qual:qualitativeSpecies="entityVertex_210625_133" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_997300_132_in_2" /></qual:listOfInputs><qual:listOfOutputs><qual:output qual:qualitativeSpecies="entityVertex_997300_132" qual:transitionEffect="assignmentLevel" qual:id="tr_entityVertex_997300_132_out" /></qual:listOfOutputs><qual:listOfFunctionTerms><qual:defaultTerm qual:resultLevel="0" /><qual:functionTerm qual:resultLevel="1"><math xmlns="http://www.w3.org/1998/Math/MathML"><apply><and /><apply><eq /><ci>entityVertex_909705_13</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_29356_130</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_210625_133</ci><cn type="integer">1</cn></apply></apply></math></qual:functionTerm></qual:listOfFunctionTerms><annotation><rdf:RDF><rdf:Description rdf:about="#reactionVertex_997311_129">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF></annotation></qual:transition><qual:transition qual:id="tr_entityVertex_997304_156"><qual:listOfInputs><qual:input qual:qualitativeSpecies="entityVertex_909711_51" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_997304_156_in_0" /><qual:input qual:qualitativeSpecies="entityVertex_29356_130" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_997304_156_in_1" /><qual:input qual:qualitativeSpecies="entityVertex_162563_158" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_997304_156_in_2" /></qual:listOfInputs><qual:listOfOutputs><qual:output qual:qualitativeSpecies="entityVertex_997304_156" qual:transitionEffect="assignmentLevel" qual:id="tr_entityVertex_997304_156_out" /></qual:listOfOutputs><qual:listOfFunctionTerms><qual:defaultTerm qual:resultLevel="0" /><qual:functionTerm qual:resultLevel="1"><math xmlns="http://www.w3.org/1998/Math/MathML"><apply><and /><apply><eq /><ci>entityVertex_909711_51</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_29356_130</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_162563_158</ci><cn type="integer">1</cn></apply></apply></math></qual:functionTerm></qual:listOfFunctionTerms><annotation><rdf:RDF><rdf:Description rdf:about="#reactionVertex_997309_154">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF></annotation></qual:transition><qual:transition qual:id="tr_entityVertex_1015671_172"><qual:listOfInputs><qual:input qual:qualitativeSpecies="entityVertex_9034125_434" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_1015671_172_in_0" /><qual:input qual:qualitativeSpecies="entityVertex_1015697_161" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_1015671_172_in_1" /></qual:listOfInputs><qual:listOfOutputs><qual:output qual:qualitativeSpecies="entityVertex_1015671_172" qual:transitionEffect="assignmentLevel" qual:id="tr_entityVertex_1015671_172_out" /></qual:listOfOutputs><qual:listOfFunctionTerms><qual:defaultTerm qual:resultLevel="0" /><qual:functionTerm qual:resultLevel="1"><math xmlns="http://www.w3.org/1998/Math/MathML"><apply><and /><apply><eq /><ci>entityVertex_9034125_434</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_1015697_161</ci><cn type="integer">1</cn></apply></apply></math></qual:functionTerm></qual:listOfFunctionTerms><annotation><rdf:RDF><rdf:Description rdf:about="#reactionVertex_1015702_170">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF></annotation></qual:transition><qual:transition qual:id="tr_entityVertex_1015673_174"><qual:listOfInputs><qual:input qual:qualitativeSpecies="entityVertex_9034125_434" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_1015673_174_in_0" /><qual:input qual:qualitativeSpecies="entityVertex_1015697_161" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_1015673_174_in_1" /></qual:listOfInputs><qual:listOfOutputs><qual:output qual:qualitativeSpecies="entityVertex_1015673_174" qual:transitionEffect="assignmentLevel" qual:id="tr_entityVertex_1015673_174_out" /></qual:listOfOutputs><qual:listOfFunctionTerms><qual:defaultTerm qual:resultLevel="0" /><qual:functionTerm qual:resultLevel="1"><math xmlns="http://www.w3.org/1998/Math/MathML"><apply><and /><apply><eq /><ci>entityVertex_9034125_434</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_1015697_161</ci><cn type="integer">1</cn></apply></apply></math></qual:functionTerm></qual:listOfFunctionTerms><annotation><rdf:RDF><rdf:Description rdf:about="#reactionVertex_1015702_170">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF></annotation></qual:transition><qual:transition qual:id="tr_entityVertex_1015674_175"><qual:listOfInputs><qual:input qual:qualitativeSpecies="entityVertex_9034125_434" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_1015674_175_in_0" /><qual:input qual:qualitativeSpecies="entityVertex_1015697_161" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_1015674_175_in_1" /></qual:listOfInputs><qual:listOfOutputs><qual:output qual:qualitativeSpecies="entityVertex_1015674_175" qual:transitionEffect="assignmentLevel" qual:id="tr_entityVertex_1015674_175_out" /></qual:listOfOutputs><qual:listOfFunctionTerms><qual:defaultTerm qual:resultLevel="0" /><qual:functionTerm qual:resultLevel="1"><math xmlns="http://www.w3.org/1998/Math/MathML"><apply><and /><apply><eq /><ci>entityVertex_9034125_434</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_1015697_161</ci><cn type="integer">1</cn></apply></apply></math></qual:functionTerm></qual:listOfFunctionTerms><annotation><rdf:RDF><rdf:Description rdf:about="#reactionVertex_1015702_170">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF></annotation></qual:transition><qual:transition qual:id="tr_entityVertex_1015677_176"><qual:listOfInputs><qual:input qual:qualitativeSpecies="entityVertex_9034125_434" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_1015677_176_in_0" /><qual:input qual:qualitativeSpecies="entityVertex_1015697_161" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_1015677_176_in_1" /></qual:listOfInputs><qual:listOfOutputs><qual:output qual:qualitativeSpecies="entityVertex_1015677_176" qual:transitionEffect="assignmentLevel" qual:id="tr_entityVertex_1015677_176_out" /></qual:listOfOutputs><qual:listOfFunctionTerms><qual:defaultTerm qual:resultLevel="0" /><qual:functionTerm qual:resultLevel="1"><math xmlns="http://www.w3.org/1998/Math/MathML"><apply><and /><apply><eq /><ci>entityVertex_9034125_434</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_1015697_161</ci><cn type="integer">1</cn></apply></apply></math></qual:functionTerm></qual:listOfFunctionTerms><annotation><rdf:RDF><rdf:Description rdf:about="#reactionVertex_1015702_170">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF></annotation></qual:transition><qual:transition qual:id="tr_entityVertex_1015680_181"><qual:listOfInputs><qual:input qual:qualitativeSpecies="entityVertex_9034125_434" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_1015680_181_in_0" /><qual:input qual:qualitativeSpecies="entityVertex_1015697_161" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_1015680_181_in_1" /></qual:listOfInputs><qual:listOfOutputs><qual:output qual:qualitativeSpecies="entityVertex_1015680_181" qual:transitionEffect="assignmentLevel" qual:id="tr_entityVertex_1015680_181_out" /></qual:listOfOutputs><qual:listOfFunctionTerms><qual:defaultTerm qual:resultLevel="0" /><qual:functionTerm qual:resultLevel="1"><math xmlns="http://www.w3.org/1998/Math/MathML"><apply><and /><apply><eq /><ci>entityVertex_9034125_434</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_1015697_161</ci><cn type="integer">1</cn></apply></apply></math></qual:functionTerm></qual:listOfFunctionTerms><annotation><rdf:RDF><rdf:Description rdf:about="#reactionVertex_1015702_170">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF></annotation></qual:transition><qual:transition qual:id="tr_entityVertex_1015682_182"><qual:listOfInputs><qual:input qual:qualitativeSpecies="entityVertex_9034125_434" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_1015682_182_in_0" /><qual:input qual:qualitativeSpecies="entityVertex_1015697_161" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_1015682_182_in_1" /></qual:listOfInputs><qual:listOfOutputs><qual:output qual:qualitativeSpecies="entityVertex_1015682_182" qual:transitionEffect="assignmentLevel" qual:id="tr_entityVertex_1015682_182_out" /></qual:listOfOutputs><qual:listOfFunctionTerms><qual:defaultTerm qual:resultLevel="0" /><qual:functionTerm qual:resultLevel="1"><math xmlns="http://www.w3.org/1998/Math/MathML"><apply><and /><apply><eq /><ci>entityVertex_9034125_434</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_1015697_161</ci><cn type="integer">1</cn></apply></apply></math></qual:functionTerm></qual:listOfFunctionTerms><annotation><rdf:RDF><rdf:Description rdf:about="#reactionVertex_1015702_170">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF></annotation></qual:transition><qual:transition qual:id="tr_entityVertex_1015684_183"><qual:listOfInputs><qual:input qual:qualitativeSpecies="entityVertex_9034125_434" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_1015684_183_in_0" /><qual:input qual:qualitativeSpecies="entityVertex_1015697_161" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_1015684_183_in_1" /></qual:listOfInputs><qual:listOfOutputs><qual:output qual:qualitativeSpecies="entityVertex_1015684_183" qual:transitionEffect="assignmentLevel" qual:id="tr_entityVertex_1015684_183_out" /></qual:listOfOutputs><qual:listOfFunctionTerms><qual:defaultTerm qual:resultLevel="0" /><qual:functionTerm qual:resultLevel="1"><math xmlns="http://www.w3.org/1998/Math/MathML"><apply><and /><apply><eq /><ci>entityVertex_9034125_434</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_1015697_161</ci><cn type="integer">1</cn></apply></apply></math></qual:functionTerm></qual:listOfFunctionTerms><annotation><rdf:RDF><rdf:Description rdf:about="#reactionVertex_1015702_170">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF></annotation></qual:transition><qual:transition qual:id="tr_entityVertex_1015687_186"><qual:listOfInputs><qual:input qual:qualitativeSpecies="entityVertex_9034125_434" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_1015687_186_in_0" /><qual:input qual:qualitativeSpecies="entityVertex_1015697_161" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_1015687_186_in_1" /></qual:listOfInputs><qual:listOfOutputs><qual:output qual:qualitativeSpecies="entityVertex_1015687_186" qual:transitionEffect="assignmentLevel" qual:id="tr_entityVertex_1015687_186_out" /></qual:listOfOutputs><qual:listOfFunctionTerms><qual:defaultTerm qual:resultLevel="0" /><qual:functionTerm qual:resultLevel="1"><math xmlns="http://www.w3.org/1998/Math/MathML"><apply><and /><apply><eq /><ci>entityVertex_9034125_434</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_1015697_161</ci><cn type="integer">1</cn></apply></apply></math></qual:functionTerm></qual:listOfFunctionTerms><annotation><rdf:RDF><rdf:Description rdf:about="#reactionVertex_1015702_170">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF></annotation></qual:transition><qual:transition qual:id="tr_entityVertex_1015688_187"><qual:listOfInputs><qual:input qual:qualitativeSpecies="entityVertex_9034125_434" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_1015688_187_in_0" /><qual:input qual:qualitativeSpecies="entityVertex_1015697_161" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_1015688_187_in_1" /></qual:listOfInputs><qual:listOfOutputs><qual:output qual:qualitativeSpecies="entityVertex_1015688_187" qual:transitionEffect="assignmentLevel" qual:id="tr_entityVertex_1015688_187_out" /></qual:listOfOutputs><qual:listOfFunctionTerms><qual:defaultTerm qual:resultLevel="0" /><qual:functionTerm qual:resultLevel="1"><math xmlns="http://www.w3.org/1998/Math/MathML"><apply><and /><apply><eq /><ci>entityVertex_9034125_434</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_1015697_161</ci><cn type="integer">1</cn></apply></apply></math></qual:functionTerm></qual:listOfFunctionTerms><annotation><rdf:RDF><rdf:Description rdf:about="#reactionVertex_1015702_170">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF></annotation></qual:transition><qual:transition qual:id="tr_entityVertex_1015693_173"><qual:listOfInputs><qual:input qual:qualitativeSpecies="entityVertex_9034125_434" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_1015693_173_in_0" /><qual:input qual:qualitativeSpecies="entityVertex_1015697_161" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_1015693_173_in_1" /></qual:listOfInputs><qual:listOfOutputs><qual:output qual:qualitativeSpecies="entityVertex_1015693_173" qual:transitionEffect="assignmentLevel" qual:id="tr_entityVertex_1015693_173_out" /></qual:listOfOutputs><qual:listOfFunctionTerms><qual:defaultTerm qual:resultLevel="0" /><qual:functionTerm qual:resultLevel="1"><math xmlns="http://www.w3.org/1998/Math/MathML"><apply><and /><apply><eq /><ci>entityVertex_9034125_434</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_1015697_161</ci><cn type="integer">1</cn></apply></apply></math></qual:functionTerm></qual:listOfFunctionTerms><annotation><rdf:RDF><rdf:Description rdf:about="#reactionVertex_1015702_170">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF></annotation></qual:transition><qual:transition qual:id="tr_entityVertex_1015695_184"><qual:listOfInputs><qual:input qual:qualitativeSpecies="entityVertex_9034125_434" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_1015695_184_in_0" /><qual:input qual:qualitativeSpecies="entityVertex_1015697_161" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_1015695_184_in_1" /></qual:listOfInputs><qual:listOfOutputs><qual:output qual:qualitativeSpecies="entityVertex_1015695_184" qual:transitionEffect="assignmentLevel" qual:id="tr_entityVertex_1015695_184_out" /></qual:listOfOutputs><qual:listOfFunctionTerms><qual:defaultTerm qual:resultLevel="0" /><qual:functionTerm qual:resultLevel="1"><math xmlns="http://www.w3.org/1998/Math/MathML"><apply><and /><apply><eq /><ci>entityVertex_9034125_434</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_1015697_161</ci><cn type="integer">1</cn></apply></apply></math></qual:functionTerm></qual:listOfFunctionTerms><annotation><rdf:RDF><rdf:Description rdf:about="#reactionVertex_1015702_170">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF></annotation></qual:transition><qual:transition qual:id="tr_entityVertex_1015696_188"><qual:listOfInputs><qual:input qual:qualitativeSpecies="entityVertex_9034125_434" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_1015696_188_in_0" /><qual:input qual:qualitativeSpecies="entityVertex_1015697_161" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_1015696_188_in_1" /></qual:listOfInputs><qual:listOfOutputs><qual:output qual:qualitativeSpecies="entityVertex_1015696_188" qual:transitionEffect="assignmentLevel" qual:id="tr_entityVertex_1015696_188_out" /></qual:listOfOutputs><qual:listOfFunctionTerms><qual:defaultTerm qual:resultLevel="0" /><qual:functionTerm qual:resultLevel="1"><math xmlns="http://www.w3.org/1998/Math/MathML"><apply><and /><apply><eq /><ci>entityVertex_9034125_434</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_1015697_161</ci><cn type="integer">1</cn></apply></apply></math></qual:functionTerm></qual:listOfFunctionTerms><annotation><rdf:RDF><rdf:Description rdf:about="#reactionVertex_1015702_170">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF></annotation></qual:transition><qual:transition qual:id="tr_entityVertex_1031703_270"><qual:listOfInputs><qual:input qual:qualitativeSpecies="entityVertex_9034125_434" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_1031703_270_in_0" /><qual:input qual:qualitativeSpecies="entityVertex_1015697_161" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_1031703_270_in_1" /></qual:listOfInputs><qual:listOfOutputs><qual:output qual:qualitativeSpecies="entityVertex_1031703_270" qual:transitionEffect="assignmentLevel" qual:id="tr_entityVertex_1031703_270_out" /></qual:listOfOutputs><qual:listOfFunctionTerms><qual:defaultTerm qual:resultLevel="0" /><qual:functionTerm qual:resultLevel="1"><math xmlns="http://www.w3.org/1998/Math/MathML"><apply><and /><apply><eq /><ci>entityVertex_9034125_434</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_1015697_161</ci><cn type="integer">1</cn></apply></apply></math></qual:functionTerm></qual:listOfFunctionTerms><annotation><rdf:RDF><rdf:Description rdf:about="#reactionVertex_1015702_170">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF></annotation></qual:transition><qual:transition qual:id="tr_entityVertex_168699_1761"><qual:listOfInputs><qual:input qual:qualitativeSpecies="entityVertex_9034125_434" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_168699_1761_in_0" /><qual:input qual:qualitativeSpecies="entityVertex_1015697_161" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_168699_1761_in_1" /></qual:listOfInputs><qual:listOfOutputs><qual:output qual:qualitativeSpecies="entityVertex_168699_1761" qual:transitionEffect="assignmentLevel" qual:id="tr_entityVertex_168699_1761_out" /></qual:listOfOutputs><qual:listOfFunctionTerms><qual:defaultTerm qual:resultLevel="0" /><qual:functionTerm qual:resultLevel="1"><math xmlns="http://www.w3.org/1998/Math/MathML"><apply><and /><apply><eq /><ci>entityVertex_9034125_434</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_1015697_161</ci><cn type="integer">1</cn></apply></apply></math></qual:functionTerm></qual:listOfFunctionTerms><annotation><rdf:RDF><rdf:Description rdf:about="#reactionVertex_1015702_170">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF></annotation></qual:transition><qual:transition qual:id="tr_entityVertex_174336_190"><qual:listOfInputs><qual:input qual:qualitativeSpecies="entityVertex_9034125_434" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_174336_190_in_0" /><qual:input qual:qualitativeSpecies="entityVertex_1015697_161" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_174336_190_in_1" /></qual:listOfInputs><qual:listOfOutputs><qual:output qual:qualitativeSpecies="entityVertex_174336_190" qual:transitionEffect="assignmentLevel" qual:id="tr_entityVertex_174336_190_out" /></qual:listOfOutputs><qual:listOfFunctionTerms><qual:defaultTerm qual:resultLevel="0" /><qual:functionTerm qual:resultLevel="1"><math xmlns="http://www.w3.org/1998/Math/MathML"><apply><and /><apply><eq /><ci>entityVertex_9034125_434</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_1015697_161</ci><cn type="integer">1</cn></apply></apply></math></qual:functionTerm></qual:listOfFunctionTerms><annotation><rdf:RDF><rdf:Description rdf:about="#reactionVertex_1015702_170">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF></annotation></qual:transition><qual:transition qual:id="tr_entityVertex_180714_1739"><qual:listOfInputs><qual:input qual:qualitativeSpecies="entityVertex_9710965_652" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_180714_1739_in_0" /><qual:input qual:qualitativeSpecies="entityVertex_9757480_1714" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_180714_1739_in_1" /></qual:listOfInputs><qual:listOfOutputs><qual:output qual:qualitativeSpecies="entityVertex_180714_1739" qual:transitionEffect="assignmentLevel" qual:id="tr_entityVertex_180714_1739_out" /></qual:listOfOutputs><qual:listOfFunctionTerms><qual:defaultTerm qual:resultLevel="0" /><qual:functionTerm qual:resultLevel="1"><math xmlns="http://www.w3.org/1998/Math/MathML"><apply><or /><apply><eq /><ci>entityVertex_9710965_652</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_9757480_1714</ci><cn type="integer">1</cn></apply></apply></math></qual:functionTerm></qual:listOfFunctionTerms><annotation><rdf:RDF><rdf:Description rdf:about="#reactionVertex_909721_61">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+<rdf:Description rdf:about="#reactionVertex_913529_74">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF></annotation></qual:transition><qual:transition qual:id="tr_entityVertex_188865_1737"><qual:listOfInputs><qual:input qual:qualitativeSpecies="entityVertex_9710965_652" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_188865_1737_in_0" /><qual:input qual:qualitativeSpecies="entityVertex_9757480_1714" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_188865_1737_in_1" /></qual:listOfInputs><qual:listOfOutputs><qual:output qual:qualitativeSpecies="entityVertex_188865_1737" qual:transitionEffect="assignmentLevel" qual:id="tr_entityVertex_188865_1737_out" /></qual:listOfOutputs><qual:listOfFunctionTerms><qual:defaultTerm qual:resultLevel="0" /><qual:functionTerm qual:resultLevel="1"><math xmlns="http://www.w3.org/1998/Math/MathML"><apply><or /><apply><eq /><ci>entityVertex_9710965_652</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_9757480_1714</ci><cn type="integer">1</cn></apply></apply></math></qual:functionTerm></qual:listOfFunctionTerms><annotation><rdf:RDF><rdf:Description rdf:about="#reactionVertex_909721_61">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+<rdf:Description rdf:about="#reactionVertex_913529_74">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF></annotation></qual:transition><qual:transition qual:id="tr_entityVertex_199523_171"><qual:listOfInputs><qual:input qual:qualitativeSpecies="entityVertex_9034125_434" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_199523_171_in_0" /><qual:input qual:qualitativeSpecies="entityVertex_1015697_161" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_199523_171_in_1" /></qual:listOfInputs><qual:listOfOutputs><qual:output qual:qualitativeSpecies="entityVertex_199523_171" qual:transitionEffect="assignmentLevel" qual:id="tr_entityVertex_199523_171_out" /></qual:listOfOutputs><qual:listOfFunctionTerms><qual:defaultTerm qual:resultLevel="0" /><qual:functionTerm qual:resultLevel="1"><math xmlns="http://www.w3.org/1998/Math/MathML"><apply><and /><apply><eq /><ci>entityVertex_9034125_434</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_1015697_161</ci><cn type="integer">1</cn></apply></apply></math></qual:functionTerm></qual:listOfFunctionTerms><annotation><rdf:RDF><rdf:Description rdf:about="#reactionVertex_1015702_170">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF></annotation></qual:transition><qual:transition qual:id="tr_entityVertex_29370_14"><qual:listOfInputs><qual:input qual:qualitativeSpecies="entityVertex_909703_7" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_29370_14_in_0" /><qual:input qual:qualitativeSpecies="entityVertex_113592_12" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_29370_14_in_1" /><qual:input qual:qualitativeSpecies="entityVertex_912681_86" qual:transitionEffect="none" qual:sign="negative" qual:id="tr_entityVertex_29370_14_in_2" /><qual:input qual:qualitativeSpecies="entityVertex_909705_13" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_29370_14_in_3" /><qual:input qual:qualitativeSpecies="entityVertex_380745_65" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_29370_14_in_4" /><qual:input qual:qualitativeSpecies="entityVertex_909697_44" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_29370_14_in_5" /><qual:input qual:qualitativeSpecies="entityVertex_909696_40" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_29370_14_in_6" /><qual:input qual:qualitativeSpecies="entityVertex_380755_50" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_29370_14_in_7" /><qual:input qual:qualitativeSpecies="entityVertex_389744_52" qual:transitionEffect="none" qual:sign="negative" qual:id="tr_entityVertex_29370_14_in_8" /><qual:input qual:qualitativeSpecies="entityVertex_9729443_1740" qual:transitionEffect="none" qual:sign="negative" qual:id="tr_entityVertex_29370_14_in_9" /></qual:listOfInputs><qual:listOfOutputs><qual:output qual:qualitativeSpecies="entityVertex_29370_14" qual:transitionEffect="assignmentLevel" qual:id="tr_entityVertex_29370_14_out" /></qual:listOfOutputs><qual:listOfFunctionTerms><qual:defaultTerm qual:resultLevel="0" /><qual:functionTerm qual:resultLevel="1"><math xmlns="http://www.w3.org/1998/Math/MathML"><apply><or /><apply><and /><apply><eq /><ci>entityVertex_909703_7</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_113592_12</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_912681_86</ci><cn type="integer">0</cn></apply></apply><apply><and /><apply><eq /><ci>entityVertex_909705_13</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_113592_12</ci><cn type="integer">1</cn></apply></apply><apply><and /><apply><eq /><ci>entityVertex_380745_65</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_113592_12</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_909697_44</ci><cn type="integer">1</cn></apply></apply><apply><and /><apply><eq /><ci>entityVertex_909696_40</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_113592_12</ci><cn type="integer">1</cn></apply></apply><apply><and /><apply><eq /><ci>entityVertex_909697_44</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_380755_50</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_113592_12</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_389744_52</ci><cn type="integer">0</cn></apply><apply><eq /><ci>entityVertex_9729443_1740</ci><cn type="integer">0</cn></apply></apply></apply></math></qual:functionTerm></qual:listOfFunctionTerms><annotation><rdf:RDF><rdf:Description rdf:about="#reactionVertex_909729_11">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+<rdf:Description rdf:about="#reactionVertex_909730_31">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+<rdf:Description rdf:about="#reactionVertex_909718_63">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+<rdf:Description rdf:about="#reactionVertex_909732_41">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+<rdf:Description rdf:about="#reactionVertex_909726_48">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF></annotation></qual:transition><qual:transition qual:id="tr_entityVertex_29372_131"><qual:listOfInputs><qual:input qual:qualitativeSpecies="entityVertex_909705_13" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_29372_131_in_0" /><qual:input qual:qualitativeSpecies="entityVertex_29356_130" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_29372_131_in_1" /><qual:input qual:qualitativeSpecies="entityVertex_210625_133" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_29372_131_in_2" /><qual:input qual:qualitativeSpecies="entityVertex_997300_132" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_29372_131_in_3" /><qual:input qual:qualitativeSpecies="entityVertex_197938_145" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_29372_131_in_4" /><qual:input qual:qualitativeSpecies="entityVertex_909711_51" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_29372_131_in_5" /><qual:input qual:qualitativeSpecies="entityVertex_162563_158" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_29372_131_in_6" /></qual:listOfInputs><qual:listOfOutputs><qual:output qual:qualitativeSpecies="entityVertex_29372_131" qual:transitionEffect="assignmentLevel" qual:id="tr_entityVertex_29372_131_out" /></qual:listOfOutputs><qual:listOfFunctionTerms><qual:defaultTerm qual:resultLevel="0" /><qual:functionTerm qual:resultLevel="1"><math xmlns="http://www.w3.org/1998/Math/MathML"><apply><or /><apply><and /><apply><eq /><ci>entityVertex_909705_13</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_29356_130</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_210625_133</ci><cn type="integer">1</cn></apply></apply><apply><and /><apply><eq /><ci>entityVertex_997300_132</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_29356_130</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_197938_145</ci><cn type="integer">1</cn></apply></apply><apply><and /><apply><eq /><ci>entityVertex_909711_51</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_29356_130</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_162563_158</ci><cn type="integer">1</cn></apply></apply></apply></math></qual:functionTerm></qual:listOfFunctionTerms><annotation><rdf:RDF><rdf:Description rdf:about="#reactionVertex_997311_129">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+<rdf:Description rdf:about="#reactionVertex_997314_142">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+<rdf:Description rdf:about="#reactionVertex_997309_154">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF></annotation></qual:transition><qual:transition qual:id="tr_entityVertex_53939_177"><qual:listOfInputs><qual:input qual:qualitativeSpecies="entityVertex_9034125_434" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_53939_177_in_0" /><qual:input qual:qualitativeSpecies="entityVertex_1015697_161" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_53939_177_in_1" /></qual:listOfInputs><qual:listOfOutputs><qual:output qual:qualitativeSpecies="entityVertex_53939_177" qual:transitionEffect="assignmentLevel" qual:id="tr_entityVertex_53939_177_out" /></qual:listOfOutputs><qual:listOfFunctionTerms><qual:defaultTerm qual:resultLevel="0" /><qual:functionTerm qual:resultLevel="1"><math xmlns="http://www.w3.org/1998/Math/MathML"><apply><and /><apply><eq /><ci>entityVertex_9034125_434</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_1015697_161</ci><cn type="integer">1</cn></apply></apply></math></qual:functionTerm></qual:listOfFunctionTerms><annotation><rdf:RDF><rdf:Description rdf:about="#reactionVertex_1015702_170">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF></annotation></qual:transition><qual:transition qual:id="tr_entityVertex_5624196_419"><qual:listOfInputs><qual:input qual:qualitativeSpecies="entityVertex_9034125_434" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_5624196_419_in_0" /><qual:input qual:qualitativeSpecies="entityVertex_1015697_161" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_5624196_419_in_1" /></qual:listOfInputs><qual:listOfOutputs><qual:output qual:qualitativeSpecies="entityVertex_5624196_419" qual:transitionEffect="assignmentLevel" qual:id="tr_entityVertex_5624196_419_out" /></qual:listOfOutputs><qual:listOfFunctionTerms><qual:defaultTerm qual:resultLevel="0" /><qual:functionTerm qual:resultLevel="1"><math xmlns="http://www.w3.org/1998/Math/MathML"><apply><and /><apply><eq /><ci>entityVertex_9034125_434</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_1015697_161</ci><cn type="integer">1</cn></apply></apply></math></qual:functionTerm></qual:listOfFunctionTerms><annotation><rdf:RDF><rdf:Description rdf:about="#reactionVertex_1015702_170">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF></annotation></qual:transition><qual:transition qual:id="tr_entityVertex_5624198_420"><qual:listOfInputs><qual:input qual:qualitativeSpecies="entityVertex_9034125_434" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_5624198_420_in_0" /><qual:input qual:qualitativeSpecies="entityVertex_1015697_161" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_5624198_420_in_1" /></qual:listOfInputs><qual:listOfOutputs><qual:output qual:qualitativeSpecies="entityVertex_5624198_420" qual:transitionEffect="assignmentLevel" qual:id="tr_entityVertex_5624198_420_out" /></qual:listOfOutputs><qual:listOfFunctionTerms><qual:defaultTerm qual:resultLevel="0" /><qual:functionTerm qual:resultLevel="1"><math xmlns="http://www.w3.org/1998/Math/MathML"><apply><and /><apply><eq /><ci>entityVertex_9034125_434</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_1015697_161</ci><cn type="integer">1</cn></apply></apply></math></qual:functionTerm></qual:listOfFunctionTerms><annotation><rdf:RDF><rdf:Description rdf:about="#reactionVertex_1015702_170">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF></annotation></qual:transition><qual:transition qual:id="tr_entityVertex_5624199_421"><qual:listOfInputs><qual:input qual:qualitativeSpecies="entityVertex_9034125_434" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_5624199_421_in_0" /><qual:input qual:qualitativeSpecies="entityVertex_1015697_161" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_5624199_421_in_1" /></qual:listOfInputs><qual:listOfOutputs><qual:output qual:qualitativeSpecies="entityVertex_5624199_421" qual:transitionEffect="assignmentLevel" qual:id="tr_entityVertex_5624199_421_out" /></qual:listOfOutputs><qual:listOfFunctionTerms><qual:defaultTerm qual:resultLevel="0" /><qual:functionTerm qual:resultLevel="1"><math xmlns="http://www.w3.org/1998/Math/MathML"><apply><and /><apply><eq /><ci>entityVertex_9034125_434</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_1015697_161</ci><cn type="integer">1</cn></apply></apply></math></qual:functionTerm></qual:listOfFunctionTerms><annotation><rdf:RDF><rdf:Description rdf:about="#reactionVertex_1015702_170">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF></annotation></qual:transition><qual:transition qual:id="tr_entityVertex_936552_180"><qual:listOfInputs><qual:input qual:qualitativeSpecies="entityVertex_9034125_434" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_936552_180_in_0" /><qual:input qual:qualitativeSpecies="entityVertex_1015697_161" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_936552_180_in_1" /></qual:listOfInputs><qual:listOfOutputs><qual:output qual:qualitativeSpecies="entityVertex_936552_180" qual:transitionEffect="assignmentLevel" qual:id="tr_entityVertex_936552_180_out" /></qual:listOfOutputs><qual:listOfFunctionTerms><qual:defaultTerm qual:resultLevel="0" /><qual:functionTerm qual:resultLevel="1"><math xmlns="http://www.w3.org/1998/Math/MathML"><apply><and /><apply><eq /><ci>entityVertex_9034125_434</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_1015697_161</ci><cn type="integer">1</cn></apply></apply></math></qual:functionTerm></qual:listOfFunctionTerms><annotation><rdf:RDF><rdf:Description rdf:about="#reactionVertex_1015702_170">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF></annotation></qual:transition><qual:transition qual:id="tr_entityVertex_937341_179"><qual:listOfInputs><qual:input qual:qualitativeSpecies="entityVertex_9034125_434" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_937341_179_in_0" /><qual:input qual:qualitativeSpecies="entityVertex_1015697_161" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_937341_179_in_1" /></qual:listOfInputs><qual:listOfOutputs><qual:output qual:qualitativeSpecies="entityVertex_937341_179" qual:transitionEffect="assignmentLevel" qual:id="tr_entityVertex_937341_179_out" /></qual:listOfOutputs><qual:listOfFunctionTerms><qual:defaultTerm qual:resultLevel="0" /><qual:functionTerm qual:resultLevel="1"><math xmlns="http://www.w3.org/1998/Math/MathML"><apply><and /><apply><eq /><ci>entityVertex_9034125_434</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_1015697_161</ci><cn type="integer">1</cn></apply></apply></math></qual:functionTerm></qual:listOfFunctionTerms><annotation><rdf:RDF><rdf:Description rdf:about="#reactionVertex_1015702_170">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF></annotation></qual:transition><qual:transition qual:id="tr_entityVertex_947487_185"><qual:listOfInputs><qual:input qual:qualitativeSpecies="entityVertex_9034125_434" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_947487_185_in_0" /><qual:input qual:qualitativeSpecies="entityVertex_1015697_161" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_947487_185_in_1" /></qual:listOfInputs><qual:listOfOutputs><qual:output qual:qualitativeSpecies="entityVertex_947487_185" qual:transitionEffect="assignmentLevel" qual:id="tr_entityVertex_947487_185_out" /></qual:listOfOutputs><qual:listOfFunctionTerms><qual:defaultTerm qual:resultLevel="0" /><qual:functionTerm qual:resultLevel="1"><math xmlns="http://www.w3.org/1998/Math/MathML"><apply><and /><apply><eq /><ci>entityVertex_9034125_434</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_1015697_161</ci><cn type="integer">1</cn></apply></apply></math></qual:functionTerm></qual:listOfFunctionTerms><annotation><rdf:RDF><rdf:Description rdf:about="#reactionVertex_1015702_170">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF></annotation></qual:transition><qual:transition qual:id="tr_entityVertex_947491_178"><qual:listOfInputs><qual:input qual:qualitativeSpecies="entityVertex_9034125_434" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_947491_178_in_0" /><qual:input qual:qualitativeSpecies="entityVertex_1015697_161" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_947491_178_in_1" /></qual:listOfInputs><qual:listOfOutputs><qual:output qual:qualitativeSpecies="entityVertex_947491_178" qual:transitionEffect="assignmentLevel" qual:id="tr_entityVertex_947491_178_out" /></qual:listOfOutputs><qual:listOfFunctionTerms><qual:defaultTerm qual:resultLevel="0" /><qual:functionTerm qual:resultLevel="1"><math xmlns="http://www.w3.org/1998/Math/MathML"><apply><and /><apply><eq /><ci>entityVertex_9034125_434</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_1015697_161</ci><cn type="integer">1</cn></apply></apply></math></qual:functionTerm></qual:listOfFunctionTerms><annotation><rdf:RDF><rdf:Description rdf:about="#reactionVertex_1015702_170">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF></annotation></qual:transition><qual:transition qual:id="tr_entityVertex_947492_189"><qual:listOfInputs><qual:input qual:qualitativeSpecies="entityVertex_9034125_434" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_947492_189_in_0" /><qual:input qual:qualitativeSpecies="entityVertex_1015697_161" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_947492_189_in_1" /></qual:listOfInputs><qual:listOfOutputs><qual:output qual:qualitativeSpecies="entityVertex_947492_189" qual:transitionEffect="assignmentLevel" qual:id="tr_entityVertex_947492_189_out" /></qual:listOfOutputs><qual:listOfFunctionTerms><qual:defaultTerm qual:resultLevel="0" /><qual:functionTerm qual:resultLevel="1"><math xmlns="http://www.w3.org/1998/Math/MathML"><apply><and /><apply><eq /><ci>entityVertex_9034125_434</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_1015697_161</ci><cn type="integer">1</cn></apply></apply></math></qual:functionTerm></qual:listOfFunctionTerms><annotation><rdf:RDF><rdf:Description rdf:about="#reactionVertex_1015702_170">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF></annotation></qual:transition><qual:transition qual:id="tr_entityVertex_9684472_438"><qual:listOfInputs><qual:input qual:qualitativeSpecies="entityVertex_9034125_434" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_9684472_438_in_0" /><qual:input qual:qualitativeSpecies="entityVertex_1015697_161" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_9684472_438_in_1" /></qual:listOfInputs><qual:listOfOutputs><qual:output qual:qualitativeSpecies="entityVertex_9684472_438" qual:transitionEffect="assignmentLevel" qual:id="tr_entityVertex_9684472_438_out" /></qual:listOfOutputs><qual:listOfFunctionTerms><qual:defaultTerm qual:resultLevel="0" /><qual:functionTerm qual:resultLevel="1"><math xmlns="http://www.w3.org/1998/Math/MathML"><apply><and /><apply><eq /><ci>entityVertex_9034125_434</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_1015697_161</ci><cn type="integer">1</cn></apply></apply></math></qual:functionTerm></qual:listOfFunctionTerms><annotation><rdf:RDF><rdf:Description rdf:about="#reactionVertex_1015702_170">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF></annotation></qual:transition><qual:transition qual:id="tr_entityVertex_9757476_1661"><qual:listOfInputs><qual:input qual:qualitativeSpecies="entityVertex_9757478_1535" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_9757476_1661_in_0" /><qual:input qual:qualitativeSpecies="entityVertex_180733_660" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_9757476_1661_in_1" /></qual:listOfInputs><qual:listOfOutputs><qual:output qual:qualitativeSpecies="entityVertex_9757476_1661" qual:transitionEffect="assignmentLevel" qual:id="tr_entityVertex_9757476_1661_out" /></qual:listOfOutputs><qual:listOfFunctionTerms><qual:defaultTerm qual:resultLevel="0" /><qual:functionTerm qual:resultLevel="1"><math xmlns="http://www.w3.org/1998/Math/MathML"><apply><and /><apply><eq /><ci>entityVertex_9757478_1535</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_180733_660</ci><cn type="integer">1</cn></apply></apply></math></qual:functionTerm></qual:listOfFunctionTerms><annotation><rdf:RDF><rdf:Description rdf:about="#reactionVertex_9710963_659">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF></annotation></qual:transition><qual:transition qual:id="tr_entityVertex_9757478_1535"><qual:listOfInputs><qual:input qual:qualitativeSpecies="entityVertex_9710957_654" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_9757478_1535_in_0" /><qual:input qual:qualitativeSpecies="entityVertex_180612_657" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_9757478_1535_in_1" /></qual:listOfInputs><qual:listOfOutputs><qual:output qual:qualitativeSpecies="entityVertex_9757478_1535" qual:transitionEffect="assignmentLevel" qual:id="tr_entityVertex_9757478_1535_out" /></qual:listOfOutputs><qual:listOfFunctionTerms><qual:defaultTerm qual:resultLevel="0" /><qual:functionTerm qual:resultLevel="1"><math xmlns="http://www.w3.org/1998/Math/MathML"><apply><and /><apply><eq /><ci>entityVertex_9710957_654</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_180612_657</ci><cn type="integer">1</cn></apply></apply></math></qual:functionTerm></qual:listOfFunctionTerms><annotation><rdf:RDF><rdf:Description rdf:about="#reactionVertex_9710959_653">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF></annotation></qual:transition><qual:transition qual:id="tr_entityVertex_983117_231"><qual:listOfInputs><qual:input qual:qualitativeSpecies="entityVertex_9034125_434" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_983117_231_in_0" /><qual:input qual:qualitativeSpecies="entityVertex_1015697_161" qual:transitionEffect="none" qual:sign="positive" qual:id="tr_entityVertex_983117_231_in_1" /></qual:listOfInputs><qual:listOfOutputs><qual:output qual:qualitativeSpecies="entityVertex_983117_231" qual:transitionEffect="assignmentLevel" qual:id="tr_entityVertex_983117_231_out" /></qual:listOfOutputs><qual:listOfFunctionTerms><qual:defaultTerm qual:resultLevel="0" /><qual:functionTerm qual:resultLevel="1"><math xmlns="http://www.w3.org/1998/Math/MathML"><apply><and /><apply><eq /><ci>entityVertex_9034125_434</ci><cn type="integer">1</cn></apply><apply><eq /><ci>entityVertex_1015697_161</ci><cn type="integer">1</cn></apply></apply></math></qual:functionTerm></qual:listOfFunctionTerms><annotation><rdf:RDF><rdf:Description rdf:about="#reactionVertex_1015702_170">
+<dcterms:modified rdf:parseType="Resource" />
+</rdf:Description>
+</rdf:RDF></annotation></qual:transition></qual:listOfTransitions></model></sbml>

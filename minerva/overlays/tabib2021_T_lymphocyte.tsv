@@ -1,4 +1,5 @@
 species_id	log2fc	color
-IFITM1__cyto	0.438	#d7191c
-IFITM2__cyto	0.298	#d7191c
-RBPJ__pm	-0.214	#2c7fb8
+DLL1__cyto	-1.849	#2c7fb8
+IFITM2__cyto	0.547	#d7191c
+IRF7__cyto	0.685	#d7191c
+MS4A1__pm	-1.630	#2c7fb8

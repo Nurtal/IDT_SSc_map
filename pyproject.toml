@@ -1,0 +1,100 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sscmim"
+version = "1.1.0.dev0"
+description = "SSc-MIM: SBGN-compliant Molecular Interaction Map of skin fibrosis in diffuse cutaneous systemic sclerosis"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+  { name = "Nathan Foulquier", email = "nathan.foulquier@inserm.fr" },
+]
+requires-python = ">=3.11"
+keywords = [
+  "systemic sclerosis",
+  "disease map",
+  "SBGN",
+  "CellDesigner",
+  "single-cell RNA-seq",
+  "MI2CAST",
+  "Disease Maps Project",
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+
+# Runtime dependencies match those pinned in environment.yml at the
+# revision-v1.1 cycle (Methods §2.9, Table 3). For full reproducibility
+# of every figure and TSV, prefer the conda env: `mamba env create -f
+# environment.yml && conda activate sscmim`.
+dependencies = [
+  "anndata>=0.10",
+  "h5py>=3.10",
+  "matplotlib>=3.8",
+  "networkx>=3.2",
+  "numpy>=1.26",
+  "pandas>=2.2",
+  "python-libsbml>=5.20",
+  "scanpy>=1.10",
+  "scipy>=1.11",
+  "statsmodels>=0.14",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+]
+boolean = [
+  "casq",
+]
+deseq = [
+  "pydeseq2>=0.4.10",
+]
+
+[project.urls]
+Homepage = "https://github.com/Nurtal/IDT_SSc_map"
+Repository = "https://github.com/Nurtal/IDT_SSc_map"
+Issues = "https://github.com/Nurtal/IDT_SSc_map/issues"
+
+[tool.setuptools]
+# This is a research repository, not a packageable library: the
+# Makefile is the user-facing interface. We still ship `scripts/` so
+# that `pip install -e .` makes the helpers importable from notebooks
+# without manipulating sys.path.
+py-modules = []
+packages = []
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+# The pre-existing smoke tests live under `scripts/tests/` and use
+# `def test_*()` plus the standard `tmp_path` fixture, so pytest
+# discovers them out of the box.
+testpaths = ["scripts/tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+# The DEG and AUCell tests intentionally exercise the convergence
+# corners of the statsmodels NB GLM and emit RuntimeWarnings during
+# Hessian inversion; that is normal for the planted-low-count rows.
+# We don't want those to fail the CI, but we surface them in stdout
+# so any new warning category stands out.
+filterwarnings = [
+  "default",
+  "ignore::RuntimeWarning",
+  "ignore::DeprecationWarning",
+  "ignore::FutureWarning",
+]
+addopts = [
+  "-ra",
+  "--strict-markers",
+  "--strict-config",
+]

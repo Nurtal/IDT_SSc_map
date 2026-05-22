@@ -1,0 +1,15 @@
+{
+  "n_crosstalk_reactions": 8,
+  "n_with_pmid": 5,
+  "n_eco_weak_305": 3,
+  "n_arrow_parsed": 7,
+  "unique_module_edges": [
+    "M1\u2192M2",
+    "M1\u2192M4",
+    "M2\u2192M3",
+    "M3\u2192M2",
+    "M4\u2192M2"
+  ],
+  "source": "curation/ssc_curated_reactions.tsv",
+  "out": "manuscript/supplementary/S1_crosstalk_reactions.tsv"
+}

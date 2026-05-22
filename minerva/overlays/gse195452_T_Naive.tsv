@@ -1,8 +1,2 @@
 species_id	log2fc	color
-EGR1__cyto	0.453	#d7191c
-EIF2AK2__cyto	0.239	#d7191c
-FKBP1A__cyto	0.269	#d7191c
-IFIT3__cyto	0.224	#d7191c
-IFITM3__cyto	0.668	#d7191c
-ISG15__cyto	0.247	#d7191c
-STAT1__cyto	0.376	#d7191c
+IFITM3__cyto	0.982	#d7191c

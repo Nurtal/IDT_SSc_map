@@ -1025,3 +1025,280 @@ Fibro_LGR5, Fibro_MYOC2, Peri_TGFBI, Peri_RGS5, Fibro_PTGDS, Fibro_MYOC1, Fibro_
 **Note M3 :** gain modeste (+4 pp) mais biologiquement cohérent — PECAM1 (Vascular clusters), NUMB (Peri_RGS5/Peri_TGFBI, régulateur Notch), ROCK1/ROCK2 récupérés. NICD1 reste structurellement non-détectable (produit protéolytique). La prochaine priorité est un dataset digital ulcer / capillaroscopie.
 
 Manuscrit mis à jour : abstract, Methods 2.6, Results 3.2, Discussion 4.4–4.5. STATUS.md mis à jour Phase 4c.
+
+
+## 2026-05-20 — Simulated peer-review run pour npj-SBA + démarrage révision
+
+### 09:00 — Run de reviewing simulé (`reviewing/`)
+
+Avant submission à *npj Systems Biology and Applications*, run de peer-review interne avec trois personæ orthogonales pour stress-tester le manuscrit v0.1 (`SSc_MIM_manuscript_draft.md`).
+
+**Reviewers simulés (`reviewing/R*.md`) :**
+
+- **R1 — Systems biology / disease maps** : 5 points majeurs (novelty quantifiée vs Reactome/Mahoney/Taroni, hub-score robustness, hypergeometric crosstalk, CaSQ Boolean readiness, MINERVA/BioModels deposit) + 10 mineurs (dangling fraction, ECO distribution, compartment count 17 vs 20, etc.).
+- **R2 — scRNA-seq + clinical SSc** : 7 points majeurs (mixed-effects DEG + FDR, AUCell sans double-dipping, M3 within-vascular subset, drug table vs trial outcomes — focuSSced negative, fresolimumab abandon, RECITAL, brontictuzumab GI tox, CellTypist harmonisation, mRSS correlation, HC demographic matching). Calibration clinique forte.
+- **R3 — Reproducibility / FAIR** : 6 majeurs (Docker container, Zenodo input mirror, CI for figures, MIRIAM SBML, SBGN round-trip, RO-Crate manifest) + FAIR self-assessment.
+
+**Décision éditoriale (`reviewing/editor_decision.md`) : Major Revision.** 25 items essentiels E1–E25 regroupés en 5 thèmes (statistique, validation externe, FAIR, modules, Boolean). Convergence des trois reviewers.
+
+**Livrables (`reviewing/`) :**
+- `README.md` — index du run
+- `R1_systems_biology.md` / `R2_scRNAseq_clinical.md` / `R3_reproducibility.md`
+- `editor_decision.md` — checklist E1–E25 priorisée must/should/nice-to-have
+- `revision_plan.md` — mapping E item → fichiers touchés + effort
+- `REVISION_ROADMAP.md` — sprint-structured playbook (5 tracks T1–T5, 7 sprints S0–S7, 10 risques RR1–RR10, 9 gates go/no-go, 19 semaines wall-clock, target submission 2026-09-30)
+
+Commit `e638a4d`, push origin/main.
+
+### 11:00 — Sprint S0 — Pre-sprint setup
+
+**Actions exécutées (S0.1–S0.4) :**
+
+- **S0.1** — Branche `revision/v1.1` créée off `main@e638a4d`.
+- **S0.2** — Baseline figé dans `analysis/baseline_v1.0/` (5 artefacts + SHA256SUMS + README) : `cluster_deg_multi.tsv` (4 338 entries), `patient_module_scores_multi.tsv` (197 donneurs), `network_summary.json` (38 communities, top-20 hubs), `hubs.tsv`, `druggable_hubs.tsv`. Permet diff-vs-baseline reporting pendant les sprints suivants.
+- **S0.3** — Tag annoté `v1.0-pre-review` sur `e638a4d` (= snapshot pré-révision : 526 species / 260 reactions / 50% MIM coverage).
+- **S0.4** — `reviewing/PROGRESS.md` créé — dashboard one-screen : sprint tracker S0–WR avec gates ☐, table E1–E25 (must/should/nice) avec status + owner + sprint, risk watch RR1–RR5, headline numbers à rafraîchir à chaque sprint gate, change log.
+- **S0.5** — Brief co-author `docs/standups/2026-05-20_revision_kickoff.md` : agenda 60 min (5 thèmes, décisions D1–D7 à recorder, créneaux à locker pour S5 / WR-1 / WR-2, top 3 risques RR1–RR3). Pre-read prioritisé.
+
+**S0 gate restant :** kickoff co-author humain (sign-off scope + descope explicite de E10 [CaSQ Boolean] et E18 partiel [Mahoney/Taroni novelty comparison]).
+
+Commit `afa6196` sur `revision/v1.1`, push branch + tag.
+
+### 14:00 — Sprint S1 — Mixed-effects DEG + BH-FDR (E1)
+
+**Objectif :** remplacer le Wilcoxon raw + filtre `p ≤ 0.05` du v1.0 par un pipeline statistiquement défendable (NB GLM + multiple-testing correction), addressing R2-M1.
+
+**S1.1 — `scripts/deg_mixed_effects.py` (~370 lignes) :**
+
+- Trois backends pluggables avec détection auto (preference order) :
+  - **pydeseq2** (préféré) — DESeq2 en Python, NB GLM avec design `~ condition`. Référence : Muzellec et al. *Bioinformatics* 2023.
+  - **statsmodels NB** (fallback) — `NegativeBinomial(y, X, offset=log(libsize))` avec dispersion data-estimated. Pratique : recovery 10/10 sur synthétique vs 0/10 avec `GLM(family=NB(alpha=1.0))` initial.
+  - **scipy Welch's t-test** (last resort) — sur `log1p(CPM × 1e4)`, équivalent au v1.0 mais avec p-value reportée pour FDR aval.
+- BH-FDR appliqué deux fois : **per-dataset** (primaire, moins conservatif, recommandé par R2) et **per-cluster** (diagnostic).
+- Output schema enrichi : `pvalue`, `padj_dataset`, `padj_cluster`, `n_donors_ssc`, `n_donors_hc`, `mean_count_ssc`, `mean_count_hc`, `backend`.
+- API library + CLI (`--in pseudobulk.tsv --out deg.tsv --backend auto`).
+
+**S1.2 — `scripts/tests/test_deg_mixed_effects.py` :** smoke suite synthétique (8 donneurs × 50 gènes × 2 cell types, 10 DE plantés ×3 en fib SSC). Résultats :
+- `detect_backend()` → statsmodels (pydeseq2 pas installé)
+- scipy_welch : 8/10 plantés recovered à FDR ≤ 0.05 dans fib, 1 faux positif dans endo
+- statsmodels NB : 10/10 plantés recovered
+- BH monotone en ranking, padj ∈ [0,1]
+- I/O round-trip TSV preserve le schéma
+
+**S1.3 — refactor `scripts/build_overlay_multi.py` :**
+- `_pseudobulk_deg()` dispatch via `DEG_BACKEND` (env `SSC_DEG_BACKEND` ou CLI `--deg-backend`).
+- `mixed-v11` (default) : agrège raw_df → (donor × cell_type) raw counts, appelle `deg_mixed_effects.pseudobulk_deg`, applique FDR, filtre à `padj_dataset ≤ q` (default 0.05) ET `|lfc| ≥ 0.2`, collecte les rows complets dans `DEG_ROWS_V11`.
+- `wilcoxon-v10` : pathway legacy conservé pour sensitivity comparison.
+- 4 call sites updated (tabib2021/gse210395/gse128169 via `_pseudobulk_deg`, gse195452 via inline branch).
+- Nouveau writer `write_cluster_deg_v11()` → `cluster_deg_multi_v11.tsv` avec full stats.
+- `report.json` enrichi avec `fdr_summary` (per-dataset n_tested / n_sig genes).
+
+**S1.4 — Makefile + env :**
+- `make deg-test` → smoke suite
+- `make overlay-multi` → pipeline complet
+- `environment.yml` : ajout `statsmodels>=0.14` (conda) + `pydeseq2>=0.4.10` (pip)
+
+**Sanity check :** `make overlay-multi` tourne end-to-end sans données (les 4 datasets sont skipped, le dispatch v1.1 fonctionne, report.json reflète `deg_backend: mixed-v11`). Outputs vides clobbered restaurés via `git checkout --`.
+
+**S1 gate bloquant :** la re-run sur données réelles nécessite (i) `make tabib-fetch` (~594 MB) + équivalents pour GSE195452/210395/128169, (ii) l'env conda `sscmim` active (scanpy + leidenalg + pydeseq2). Code complet, prêt à exécuter.
+
+Commit `0176635` sur `revision/v1.1` (838 insertions, 26 deletions, 6 fichiers), push origin.
+
+### Bilan 2026-05-20
+
+| Sprint | Status | Code | Gate |
+|--------|--------|------|------|
+| Reviewing run | 🟢 | 6 fichiers `reviewing/` | n/a |
+| S0 | 🟢 done (code) | branch + baseline + tag + brief | ☐ kickoff co-author |
+| S1 | 🟡 in progress | E1 code complete + tests green | ☐ re-run real data |
+
+Prochaine étape : exécuter la kickoff co-author (S0 gate), puis `make tabib-fetch` + activer `sscmim` env pour produire `coverage_v1.1.json` avant d'enchaîner S2 (E2 AUCell + E3 hub robustness + E4 community hypergeometric).
+
+### 16:30 — Sprint S2 — E3 (hub robustness) + E4 (community enrichment) + E2 (AUCell code)
+
+**Stratégie :** S2.3 et S2.4 opèrent sur le graphe existant (analysis/network/ artefacts du v1.0), donc exécutables immédiatement sans data scRNA-seq. S2.1/S2.2 (AUCell + Z-score) nécessitent les pseudobulks réels — code complet, run bloqué comme S1.
+
+**S2.3 — Hub robustness (E3, `scripts/network_analysis.py`) :**
+
+- Ajout de l'eigenvector centrality (per-component pour gérer les 22 weakly-connected components ; `eigenvector_centrality_numpy` puis fallback iterative).
+- Nouveau bloc qui calcule top-20 sous chaque metric (hub_score, degree, betweenness, pagerank, eigenvector), Jaccard₂₀ pairwise, Spearman ρ sur tous les eligible species.
+- Output : `analysis/network/hub_overlap.tsv` (20 lignes × 5 metrics + module label par metric).
+
+**Résultats E3 — gate fail :**
+
+| vs hub_score | Jaccard₂₀ | ρ (all) |
+|--------------|-----------|---------|
+| degree | 0.54 (11/20) | +0.94 |
+| betweenness | 0.54 | +0.95 |
+| pagerank | **0.18 (4/20)** | +0.62 |
+| eigenvector | **0.00 (0/20)** | −0.02 |
+
+Le hub_score (deg+btw z-sum) est cohérent avec ses constituants directs mais **diverge fortement** des metrics indépendants. Top-1 par metric :
+- hub_score : SMAD3p_SMAD4 (M2)
+- pagerank : phenotype_myofibroblast_activation (M2) — convergence sink
+- eigenvector : JAK1_inhibited / LTBP1_TGFB1 complex — espèces denses dans sous-graphes ECM/IFN
+
+Gate S2 roadmap : "Top-20 partage ≥ 15/20 avec PageRank ou eigenvector". **Échec.** Décision déférée au co-author :
+- Option A : conserver deg+btw comme "mechanistic chokepoints", justifier le choix dans §2.7, rapporter PageRank/eigenvector en supplement (recommandé).
+- Option B : pivoter §3.3 narrative vers PageRank-primary → cascade dans Table 2 drug priorities → cohérent avec critère "convergence importance".
+
+**S2.4 — Community–module hypergeometric (E4) :**
+
+- Pour chaque (community, module) : `scipy.stats.hypergeom.sf(x-1, N=526, K=|module|, n=|community|)`, BH-FDR cross all 38×5 tests.
+- Output : `analysis/network/community_enrichment.tsv`.
+
+**Résultats E4 — gate clear :** 32 tests significatifs à q<0.05 sur 28/38 communities (gate ≥6 amplement dépassé). Les 6 plus grosses communities portent chacune un module dominant :
+- comm 4 (n=30) ⇒ M4 : 30/30 module genes, fold 7.21, padj 2.14e-27
+- comm 2 (n=37) ⇒ M3 : 35/37, fold 5.53, padj 3.04e-26
+- comm 5 (n=30) ⇒ M1 : 30/30, fold 5.84, padj 1.72e-24
+- comm 6 (n=28) ⇒ M3 : 28/28, fold 5.84, padj 8.44e-23
+- comm 3 (n=34) ⇒ M2 : 34/34, fold 2.97, padj 8.78e-17
+- comm 1 (n=52) ⇒ ssc_tier1 : 34/52, fold 3.91, padj 3.50e-16
+
+→ La structure modulaire curée est récapitulée de manière non-biaisée par la topologie. Le claim §3.3 "six largest enriched for single modules" est désormais soutenu par des p-values exactes.
+
+**Supplementary figure :** `figures/F_supp_hub_robustness.{svg,png}` — scatter 3-panels hub_score vs (degree | PageRank | eigenvector), top-20 hub_score en rouge. Visualise concrètement le défaut de robustness avec PageRank/eigenvector.
+
+**`summary.json` étendu :** `community_enrichment` (n_tests/n_significant/sig_communities), `hub_robustness` (jaccard + spearman par metric).
+
+**S2.1/S2.2 — AUCell + Tabib Z-score (E2, `scripts/score_aucell.py` ~290 lignes) :**
+
+- AUCell canonique (Aibar 2017) : rank-based gene-set recovery curve AUC normalisée à [0,1]. T = 5% de n_genes par défaut.
+- Tabib-style Z-score : mean((expr - μ)/σ) sur le gene set. Triangulation.
+- Loader des module gene sets depuis `species_annotations.tsv` (gère les modules joints "M1,M2").
+- API library + CLI (`--pseudobulk pb.tsv --species-tsv ... --out-aucell ... --out-zscore ...`).
+
+**Smoke test (`scripts/tests/test_score_aucell.py`, 4/4 green) :**
+- Directionality AUCell : M1 planté en SSc (×4) → Δ=+0.95 ; M2 planté en HC → Δ=−0.99 ; M3 neg-ctrl → Δ=0.
+- Directionality Z-score : M1 SSc +2.77 / HC −0.22 ; M2 inverse.
+- Loader sur le vrai `species_annotations.tsv` : récupère M1=37, M2=32, M3=24, M4=17, ssc_tier1=86 (cohérent avec manuscrit §2.6).
+- CLI round-trip TSV.
+
+Makefile : `make aucell-test` et `make aucell`. Exécution sur données réelles waits sur le pseudobulk dumpé par `make overlay-multi` (même blocker que S1).
+
+**Bilan S2 :**
+
+| Item | Status | Output |
+|------|--------|--------|
+| E2 AUCell | 🟡 code + tests | `score_aucell.py`, `tests/test_score_aucell.py` |
+| E3 hub robustness | 🟢 executed | `hub_overlap.tsv`, `F_supp_hub_robustness.{svg,png}` — **gate failed, decision needed** |
+| E4 community enrichment | 🟢 executed | `community_enrichment.tsv` — gate cleared (32 sig / 28 communities) |
+
+Next : co-author decision sur E3 framing (Option A vs B), puis enchaîner S3 (mRSS correlation + demographics) qui est indépendant des blockers data.
+
+### 18:00 — Décision E3 : Option A locked
+
+User décide Option A : conserver `hub_score = z(deg) + z(btw)` comme metric "mechanistic chokepoint", reporter PageRank + eigenvector en supplément.
+
+**Mise à jour manuscrit (`SSc_MIM_manuscript_draft.md`) :**
+
+- **§2.7 Network Analysis** — réécrit. Trois changements :
+  1. Correction de la formule : l'ancienne description ("geometric mean of betweenness centrality and degree, normalised to the 99th percentile") ne correspondait **pas** au code (`z_deg + z_btw`). Reviewer R1-M3 avait raison de pointer le mismatch.
+  2. Justification explicite du choix : "mechanistic chokepoint topology — species that simultaneously act as local information hubs (high degree) and bridges across otherwise distant subnetworks (high betweenness)".
+  3. Ajout de la robustness analysis avec les numerics : Jaccard₂₀(hub_score, degree) = 0.54 ; vs btw 0.54 ; vs PageRank 0.18 ; vs eigenvector 0.00. ρ Spearman sur tous les eligible : +0.94 / +0.95 / +0.62 / −0.02. Explanation biologique de ce que PageRank et eigenvector priorisent (sinks vs complex assemblies) — chaque metric répond à une question différente, le chokepoint framing est le bon choix pour l'aval druggability §2.8.
+  4. Bloc community detection avec mention explicite des hypergeometric tests + BH-correction sur 38×5 = 190 tests.
+
+- **§3.3 Results — Network Topology** — réécrit aussi :
+  1. Paragraphe communities mis à jour avec les vraies numerics : **32 enrichments significatifs à q<0.05 sur 28/38 communities**. Les 6 plus grandes communities listées explicitement avec n / module / fold / padj : comm 4 → M4 (30/30, 7.21×, q=2e-27), comm 2 → M3 (35/37, 5.5×, q=3e-26), comm 5 → M1 (30/30, 5.8×, q=2e-24), comm 6 → M3, comm 3 → M2, comm 1 → ssc_tier1.
+  2. Paragraphe hubs amendé : la chokepoint framing est répétée, les numerics de robustness intégrés ("recapitulates 11/20 of degree top-20 … 4/20 with PageRank, 0/20 with eigenvector"), explication biologique de la divergence avec PageRank/eigenvector.
+
+- **Caption Supplementary Figure S1** ajoutée après Figure 3 : référence à `F_supp_hub_robustness.svg` + companion `hub_overlap.tsv`.
+
+**Bilan révision §2.7 + §3.3 :** trois critiques R1 maintenant addressed dans le draft :
+- R1-M2 (hypergeometric tests pour community-module enrichment) ✅
+- R1-M3 (hub_score robustness avec metric alternative) ✅ (Option A justifie le choix avec data)
+- R1-m6 (ECO distribution histogram) — pas encore
+- R1-m3 (compartment count reconciliation) — pas encore
+
+Next : S3 (mRSS correlation + demographics) qui est indépendant des blockers data — exploite les GEO series_matrix.txt déjà disponibles.
+
+### 20:00 — Sprint S3 — Clinical metadata gap formellement documenté (E7, E12)
+
+**Stratégie :** S3 attaquait E7 (mRSS correlation) + E12 (demographic matching). Réviseur R2 demande Spearman ρ(M1, mRSS) sur les donneurs Tabib + matching age/sex sur les HC. Pré-requis : pull GEO series_matrix.txt pour les 4 datasets et vérifier ce qui est annoté.
+
+**S3.1 — `scripts/fetch_clinical_metadata.py` (~270 lignes) :**
+
+- Pulls les 4 GEO series_matrix.txt.gz via HTTPS (NCBI FTP), parse systématiquement tous les `!Sample_characteristics_ch1`.
+- Normalise en snake_case + coalesce aux canonical keys : mRSS, age, sex, disease_duration_months, ana_specificity, subtype, condition.
+- Output `analysis/clinical/donor_metadata.tsv` (donor × variable) + `metadata_gap.json` machine-readable.
+- Tourne en ~30s sur les 4 datasets ; ~13 kB total cached.
+
+**Résultat — RR2 confirmé en dur :**
+
+| Dataset | Samples | Available fields (GEO) |
+|---------|---------|------------------------|
+| Tabib 2021 / GSE138669 | 22 | tissue, chemistry, condition |
+| Gur 2022 / GSE195452 (2 platforms) | 727 | tissue, selection_marker (CD90+), patient_id |
+| pDC PBMC / GSE210395 | 8 | condition, tissue, cell_type |
+| Morse 2019 / GSE128169 | 16 | subject_status, tissue, chemistry |
+| **TOTAL** | **773** | — |
+
+**Canonical clinical fields — global presence :**
+
+| field | n_with / n_total | fraction |
+|-------|------------------|----------|
+| mRSS | 0 / 773 | 0.000 |
+| disease_duration_months | 0 / 773 | 0.000 |
+| age | 0 / 773 | 0.000 |
+| sex | 0 / 773 | 0.000 |
+| ana_specificity | 0 / 773 | 0.000 |
+| subtype (dcSSc/lcSSc) | 0 / 773 | 0.000 |
+
+**Zéro samples** sur 773 portent une variable clinique numérique. Le roadmap fallback (disease duration as proxy) **également absent**. Les 4 deposits publics GEO ne contiennent que les variables techniques + le label condition.
+
+**S3.2 — `scripts/clinical_correlation.py` (~230 lignes) :**
+
+- Spearman ρ via Pearson on ranks + bootstrap CI 1000-iter via `numpy.random.default_rng`.
+- Driver `analyse()` qui join AUCell scores ↔ donor_metadata sur (dataset, donor_id↔sample_title), détecte les variables cliniques numériques disponibles, fait Spearman pour chaque (module, var).
+- **Gap-mode** : si pas de variable clinique numérique disponible, émet un banner row "gap reason: no_numeric_clinical_var" plutôt que tomber silencieusement.
+- Optional supplementary scatter figure F_supp_module_clinical_scatter.svg quand des données existent.
+
+**S3.3 — `scripts/demographic_match.py` (~200 lignes) :**
+
+- Logistic propensity model P(SSc | age + sex) via sklearn (fallback Euclidean si sklearn absent).
+- 1:1 nearest-neighbour matching avec calliper 0.2σ logit, sans remplacement.
+- Output `demographics_summary.tsv` + `sensitivity_matched_hc.tsv`.
+- Gap-mode aussi.
+
+**S3.4 — `scripts/tests/test_clinical_correlation.py` (4/4 green) :**
+
+- Spearman strong+ recover ρ=+0.90, CI95 exclut zéro.
+- Spearman null : ρ=+0.06, CI95 spans zéro.
+- Planted M1↔mRSS pipeline : recovered ρ=+0.76.
+- Gap banner emitted quand no numeric var.
+- Propensity match : 9/10 pairs récupérées sur synthetic 10 SSc + 10 HC.
+
+**S3.5 — exécution sur données réelles :**
+
+- `make clinical-fetch` → 773 donor-rows, 0 numeric clinical vars.
+- `make clinical-correl` → gap banner ("scores_absent" — AUCell pas encore exécuté ; même si AUCell tournait, would output "no_numeric_clinical_var").
+- `make demographic-match` → gap banner ("no_age_sex_available").
+
+**Document formel `analysis/clinical/CLINICAL_METADATA_GAP.md` :**
+
+- TL;DR + tableau de présence + comparaison roadmap vs reality + scripts built + manuscript treatment + how-to-close-the-gap (Tabib lab email, Gur supplementary Table S1, Bhattacharyya/Whitfield bulk cohorts).
+
+**Manuscrit mis à jour (`SSc_MIM_manuscript_draft.md`) :**
+
+- **§4.4 fin de paragraphe** : ajout d'un disclaimer explicite : "stratification framing remains hypothesis-generating; direct testing requires per-donor clinical metadata (mRSS, disease duration, age, sex, ANA) that is not present in the public GEO deposits ... The analytical infrastructure (`clinical_correlation.py`, `demographic_match.py`) is in place and validated on synthetic data, and will execute as soon as cohort metadata becomes available either by direct request or by integration of a named clinical cohort (PRESS, EUSTAR, ESCISIT)."
+- **§4.5 quatrième limitation paragraph** : "Fourth, and most consequentially for the translational claims in §4.4, the integrated transcriptomic datasets are public GEO deposits whose series_matrix.txt.gz annotations do not carry per-donor clinical metadata: of 773 donor-samples we systematically parsed across the four accessions, zero carried mRSS, disease duration, age, sex, or autoantibody specificity."
+
+**Makefile :** `make clinical-fetch`, `make clinical-correl`, `make demographic-match`, `make clinical-test`.
+
+**Bilan S3 :**
+
+| Item | Status | Output |
+|------|--------|--------|
+| S3.1 fetch_clinical_metadata | 🟢 executed | donor_metadata.tsv (773×20), metadata_gap.json |
+| S3.2 clinical_correlation | 🟢 code+tests, gap banner active | scripts/clinical_correlation.py, gap TSV |
+| S3.3 demographic_match | 🟢 code+tests, gap banner active | scripts/demographic_match.py, gap TSV |
+| S3.4 smoke tests | 🟢 4/4 green | tests/test_clinical_correlation.py |
+| S3.5 real data run | 🟢 gap formally documented | CLINICAL_METADATA_GAP.md, manuscript §4.4/§4.5 |
+
+**Réviseur R2-C1 (mRSS connection) addressed honestly** : on documente le gap structurel public GEO plutôt que de le contourner par un proxy faible. C'est la bonne réponse pour npj-SBA — claims softened, infrastructure prête, plan de validation v2.0 explicite.
+
+**Next** : S4 (M3 within-vascular subset + CellTypist harmonisation), qui nécessite Gur 2022 expression data — même blocker que S1/S2/E2 (besoin de scanpy env + données raw).
+
+
+
+

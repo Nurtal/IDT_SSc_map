@@ -1,0 +1,134 @@
+{
+  "datasets": {
+    "tabib2021_GSE138669": {
+      "tissue": "skin",
+      "n_samples": 22,
+      "characteristic_columns": [
+        "chemistry",
+        "condition",
+        "tissue",
+        "tissue_2"
+      ],
+      "canonical_present": [
+        "condition"
+      ],
+      "canonical_absent": [
+        "mrss",
+        "disease_duration_months",
+        "age",
+        "sex",
+        "ana_specificity",
+        "subtype"
+      ],
+      "raw_files": [
+        "data/raw/series_matrix/tabib2021_GSE138669/GSE138669_series_matrix.txt.gz"
+      ]
+    },
+    "gur2022_GSE195452": {
+      "tissue": "skin_gur",
+      "n_samples": 727,
+      "characteristic_columns": [
+        "patient_id",
+        "selection_marker",
+        "tissue",
+        "patient_id",
+        "selection_marker",
+        "tissue"
+      ],
+      "canonical_present": [],
+      "canonical_absent": [
+        "mrss",
+        "disease_duration_months",
+        "age",
+        "sex",
+        "ana_specificity",
+        "subtype",
+        "condition"
+      ],
+      "raw_files": [
+        "data/raw/series_matrix/gur2022_GSE195452/GSE195452-GPL18573_series_matrix.txt.gz",
+        "data/raw/series_matrix/gur2022_GSE195452/GSE195452-GPL24676_series_matrix.txt.gz"
+      ]
+    },
+    "gse210395": {
+      "tissue": "pbmc",
+      "n_samples": 8,
+      "characteristic_columns": [
+        "cell_type",
+        "condition",
+        "tissue"
+      ],
+      "canonical_present": [
+        "condition"
+      ],
+      "canonical_absent": [
+        "mrss",
+        "disease_duration_months",
+        "age",
+        "sex",
+        "ana_specificity",
+        "subtype"
+      ],
+      "raw_files": [
+        "data/raw/series_matrix/gse210395/GSE210395_series_matrix.txt.gz"
+      ]
+    },
+    "morse2019_GSE128169": {
+      "tissue": "lung",
+      "n_samples": 16,
+      "characteristic_columns": [
+        "10x_genomics_chemistry",
+        "lung_section_portion",
+        "subject_status",
+        "tissue"
+      ],
+      "canonical_present": [
+        "condition"
+      ],
+      "canonical_absent": [
+        "mrss",
+        "disease_duration_months",
+        "age",
+        "sex",
+        "ana_specificity",
+        "subtype"
+      ],
+      "raw_files": [
+        "data/raw/series_matrix/morse2019_GSE128169/GSE128169_series_matrix.txt.gz"
+      ]
+    }
+  },
+  "global_gap": {
+    "mrss": {
+      "n_with": 0,
+      "n_total": 773,
+      "fraction": 0.0
+    },
+    "disease_duration_months": {
+      "n_with": 0,
+      "n_total": 773,
+      "fraction": 0.0
+    },
+    "age": {
+      "n_with": 0,
+      "n_total": 773,
+      "fraction": 0.0
+    },
+    "sex": {
+      "n_with": 0,
+      "n_total": 773,
+      "fraction": 0.0
+    },
+    "ana_specificity": {
+      "n_with": 0,
+      "n_total": 773,
+      "fraction": 0.0
+    },
+    "subtype": {
+      "n_with": 0,
+      "n_total": 773,
+      "fraction": 0.0
+    }
+  },
+  "donor_metadata_tsv": "analysis/clinical/donor_metadata.tsv"
+}
