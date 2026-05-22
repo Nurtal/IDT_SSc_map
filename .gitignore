@@ -52,10 +52,17 @@ celldesigner.log
 *.mtx
 *.mtx.gz
 *.rds
-# GEO archives
+# GEO archives — match both upper and lower-case directory naming
 *GSE*.tar
 *GSE*.tar.gz
 GSE*/
+gse*/
+# Per-sample GEO supplementary files (raw 10x MEX, count matrices, metadata)
+data/raw/gse*/
+data/raw/tabib*/*.h5
+data/raw/tabib*/*.tar
+# Auxiliary metadata text dumps (Gur per-cell annotations, etc.)
+data/raw/**/*.txt.gz
 # FASTQ
 *.fastq
 *.fastq.gz
