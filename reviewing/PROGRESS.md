@@ -9,7 +9,7 @@
 **Target submission**: 2026-09-30.
 **Re-review target**: R1 + R2.
 **Last gate cleared**: — (S0 still ☐ kickoff).
-**Last refresh**: 2026-05-21 (end of full-day session: **17/25 E-items closed** — see change log; E1/E2 numerics in manuscript; coverage 50% → 81.3%, M1 IFN Mann–Whitney *p* = 3.2 × 10⁻⁴ in Gur).
+**Last refresh**: 2026-05-22 (continuation session: **23/25 E-items closed** — added E6, E8, E9, E10 partial, E11 data side, E14, E15 data side, E18, E19, E20, E24 since the previous checkpoint. Only E7 + E12 remain 🟡 gap-documented — both blocked on external clinical metadata that the public GEO deposits do not carry).
 
 ## Sprint dashboard
 
@@ -38,12 +38,12 @@ Legend: 🟢 done · 🟡 in progress · ⏳ pending · 🔴 blocked · ⚪ desc
 | E3 | A-stats | Hub-score robustness (eigenvector, PageRank) | S2 | 🟢 done | curator | `analysis/network/hub_overlap.tsv`, `figures/F_supp_hub_robustness.{svg,png}`. Jaccard₂₀ vs PageRank = 0.18, vs eigenvector = 0.00 (gate ≥15/20 not met). **Decision (2026-05-20, Option A):** retain `hub_score = z(deg) + z(btw)` as the *mechanistic chokepoint* metric (rationale: most directly aligned with druggable-intervention prioritisation §2.8); report PageRank + eigenvector as Supplementary Figure S1 with explicit explanation of what each metric prioritises. Manuscript §2.7 and §3.3 updated. |
 | E4 | A-stats | Hypergeometric community–module enrichment | S2 | 🟢 executed | curator | `analysis/network/community_enrichment.tsv`: **32 significant tests at q<0.05 across 28/38 communities**. Largest 6 communities each carry one module overwhelmingly (fold enrichment 2.97–7.21, padj << 0.001). Gate (≥6) cleared. |
 | E5 | A-stats | Crosstalk supplementary table (8 reactions) | S5 | 🟢 done | curator | `manuscript/supplementary/S1_crosstalk_reactions.tsv` (8 rows); 5/8 carry PMID + ECO 270/314; 3/8 ECO:0000305 flagged for co-author upgrade; 1 intra-M2 autocrine row also flagged; edges M1→M2, M1→M4, M2→M3, M3→M2, M4→M2 covered. Manuscript §3.1 + §3.3 wired. Generator: `scripts/build_crosstalk_supp.py`. |
-| E6 | B-validation | Recalibrate Table 2 with SSc trial outcomes | S5 | ⏳ | curator + co-author | book co-author session for S5 |
+| E6 | B-validation | Recalibrate Table 2 with SSc trial outcomes | S5 | 🟢 done (co-author sign-off pending) | curator + co-author | Table 2 rewritten with 3 new columns (latest_clinical_phase, SSc_specific_evidence, key_limitations). Cited: Khanna 2020 focuSSced (PMID 38273631), Rice 2015 fresolimumab (PMID 26098215), Distler 2019 SENSCIS (PMID 31112379), Ebata 2021 DESIRES (PMID 38279400), Ferrarotto 2018 brontictuzumab (PMID 29748210), Skaug 2020 IFN-high (PMID 32759257). Honest note: only nintedanib has an SSc indication (ILD); brontictuzumab + fresolimumab discontinued / oncology-only; JAK inhibitors as the emerging class-level convergence. |
 | E7 | B-validation | mRSS correlation (Tabib, Gur) | S3 | 🟡 gap-documented | curator | All 4 GEO series_matrix parsed: 0/773 samples carry mRSS / disease duration / age / sex / ANA. Scripts (`fetch_clinical_metadata.py`, `clinical_correlation.py`) built + tested; Tabib lab request still required. Manuscript §4.4 / §4.5 updated to acknowledge gap explicitly. Document: `analysis/clinical/CLINICAL_METADATA_GAP.md`. |
-| E8 | D-modules | M3 within-vascular-subset analysis | S4 | ⏳ | curator | |
-| E9 | D-modules | CellTypist / Azimuth harmonisation | S4 | ⏳ | curator | |
-| E10 | E-Boolean | CaSQ + perturbation matrix | S7 | ⏳ | curator | **descopable** — decide at S5 gate |
-| E11 | C-FAIR | MINERVA *or* BioModels deposit | S6 | ⏳ | curator | email LCSB on S6 day 1 |
+| E8 | D-modules | M3 within-vascular-subset analysis | S4 | 🟢 done | curator | `make m3-vascular` → `analysis/overlay/m3_vascular_subset.tsv` + `figures/F5_M3_vascular.{svg,png}`. 33-gene EndoMT panel × 4 Gur vascular clusters (Vascular_ACKR1, Vascular_RBP7, Peri_RGS5, Peri_TGFBI). 7 sig hits at q≤0.05 — concentrated in pericytes: Peri_TGFBI NOS3↓ + PECAM1↑ + ANGPT2↑ + S100A4↓. Endothelial clusters: 0 sig EndoMT TF hits. 75% M3 species coverage is real but driven by non-endothelial cell types; residual hard core = ZEB1, PRRX1, CDH2, CDH5, DLL4, EDNRA, NICD1. Manuscript §4.5 rewritten honestly. |
+| E9 | D-modules | CellTypist / Azimuth harmonisation | S4 | 🟢 done (Tabib) | curator | `make celltypist` runs CellTypist 1.7 `Adult_Human_Skin.pkl` on Tabib (64 211 cells, 16 Leiden clusters); coarse-mapped to the 6-class marker space via `CT_TO_COARSE`. **Cohen's κ coarse = 0.92 (cell-level), 0.77 (cluster-level); Adjusted Rand Index = 0.70 (raw partition, label-name-invariant)** — strong agreement between marker rule and CellTypist. Raw-string κ = 0 reported as uninformative caveat. Outputs: `analysis/overlay/celltypist_labels.tsv` (confusion table), `analysis/overlay/celltypist_kappa.json` (summary). PBMC + lung extensions left for a follow-up methods note. |
+| E10 | E-Boolean | CaSQ + perturbation matrix | S7 | 🟢 partial (descoped per editor) | curator | `make casq` runs CaSQ 1.4.4 end-to-end on the integrated XML; emits `analysis/boolean/SSc_MIM_integrated.{sbml-qual.xml,bnet,sif}` (83 Boolean nodes, 98 regulatory inputs). Top-5 influencers: ISGF3 ISRE complex (k_out=27), JAK1 (17), STAT2 (16), STAT1 (8) — consistent with §3.3 hub analysis. **Full reachable-state-space simulation (MaBoSS / GINsim perturbation matrix on top-5 hubs) descoped to v2.0 Boolean-modelling follow-up**, per editor's explicit E10 descopability. Manuscript §4.5 softened. |
+| E11 | C-FAIR | MINERVA *or* BioModels deposit | S6 | 🟢 done (data side) | curator | `make biomodels` injects MIRIAM CVTerm annotations (`bqbiol:isVersionOf identifiers.org/hgnc.symbol/SYMBOL` for 206 species, `bqbiol:hasTaxon identifiers.org/taxonomy/9606` for all 526) via libSBML CVTerm API; round-trip-verified. Output: `curation/celldesigner/SSc_MIM_integrated.biomodels.xml` (libSBML L2V4 0 errors). Submission package + cover letter ready: `docs/biomodels_submission.md`. **Submission ID REPLACE_ME — pending lead-author upload at https://www.ebi.ac.uk/biomodels/submit.** MINERVA path remains a v2.0 stretch. |
 | E12 | B-validation | HC demographic matching | S3 | 🟡 gap-documented | curator | `scripts/demographic_match.py` ready (propensity-score 1:1 with calliper); 0/773 GEO samples carry age+sex so executes as a gap banner today. Will run when external metadata arrives. |
 | E13 | A-stats | Methods completeness (dangling %, ECO dist, compartment count) | S7 | 🟢 done | curator | §2.4 ECO distribution table (329 reactions: 76% ECO:0000305, 16% 314, 6% 270, 1% 353; SSc-curated layer = 46% strict vs Reactome import 6%); §2.5 dangling reconciliation (94/526 = 17.9% per minerva_preflight; `analysis/network/dangling_species.tsv` traceable, projector `scripts/dump_dangling_species.py`) + 17 vs 20 compartment reconciliation (17 biological + 3 layout-only CellDesigner round-trip vertices). |
 
@@ -51,13 +51,13 @@ Legend: 🟢 done · 🟡 in progress · ⏳ pending · 🔴 blocked · ⚪ desc
 
 | ID | Description | Sprint | Status | Notes |
 |----|-------------|--------|--------|-------|
-| E14 | Docker container + GHCR digest | S6 | ⏳ | |
-| E15 | Zenodo input-data mirror | S6 | ⏳ | |
+| E14 | Docker container + GHCR digest | S6 | 🟢 done | `Dockerfile` based on `mambaorg/micromamba:1.5.6` with `environment.yml` as the conda spec; build-time smoke test asserts the scanpy + statsmodels + networkx + libsbml stack imports cleanly. `.github/workflows/docker.yml` builds and pushes to `ghcr.io/Nurtal/idt_ssc_map:vX.Y` on every `vX.Y` tag, uploading the digest as a workflow artefact for citation in Methods §2.9. Image will mint on first `v1.1` tag push. |
+| E15 | Zenodo input-data mirror | S6 | 🟢 done (data side) | `data/MIRROR.md` documents the 5 raw GEO files (Tabib 594 MB + Morse 1.18 GB + Gur 921 MB + Gur metadata 3.27 MB + GSE210395 397 MB = 3.09 GB, within the 50 GB Zenodo quota). `data/MIRROR.sha256` machine-readable checksum file for `sha256sum --check`. **Zenodo upload remains a manual step at v1.1 tag push**; the deposit ID slot is REPLACE_ME in `data/MIRROR.md`. |
 | E16 | CI workflow for figures | S6 | 🟢 done | `.github/workflows/figures.yml` — renders F1 + F3 on push to render_figures / network_analysis / integrated XML / hubs / druggable_hubs / workflow itself; uploads SVG + 300 dpi PNG as artefacts (14 d retention); workflow_dispatch enabled. F2/F2_multi descoped to a separate manual job once Sprint S1.5 lands (depends on 25-min overlay + 600 MB Tabib download). |
 | E17 | RO-Crate / PROV-O manifest | S6 | 🟢 done | `ro-crate-metadata.json` at repo root, RO-Crate 1.1, 46 entities (38 files + corresponding author + LBAI + license + 4 source GEO datasets with citations). README §RO-Crate section added. |
 | E18 | Novelty vs Reactome/KEGG/Mahoney/Taroni | S7 | 🟢 done (KEGG only) | `analysis/network/novelty.json` + `novelty_kegg.tsv` from `make novelty`. Reaction-layer split: 244 Reactome + 85 SSc-Tier1 = 329 (25.8 % new curation). KEGG Jaccard: 0.058 hsa04350 TGF-β, 0.058 hsa04060 cytokines, 0.123 hsa04630 JAK-STAT. **70.2 % of MIM HGNC species (139/198) are NOT in any of the 3 canonical KEGG pathways relevant to SSc** — strong novelty headline. Mahoney 2015 / Taroni edge files descoped to v2.0 follow-up; gap acknowledged in §4.1. |
-| E19 | Figure 1 quadrant layout | S7 | ⏳ | |
-| E20 | Figure 2 significance bars + mRSS row | S7 | ⏳ | |
+| E19 | Figure 1 quadrant layout | S7 | 🟢 done | `make f1-quadrant` → `figures/F1_global_MIM_quadrant.{svg,png}` with modules in fixed quadrants (M1 top-left, M2 top-right, M3 bottom-right, M4 bottom-left), 4 phenotype sinks centred, SSc-Tier-1 ring around centre, inter-quadrant edges as curved arcs, intra-quadrant edges as faint straight lines. Quadrant headers + colour-keyed legend + faint cross-axis. The v1.0 spring-layout F1 retained for back-compatibility. |
+| E20 | Figure 2 significance bars + mRSS row | S7 | 🟢 done (mRSS N/A) | `make f2-aucell` → `figures/F2_multi_overlay_aucell.{svg,png}`: 4-panel AUCell heatmap (197 donors × 5 modules) with per-(dataset, module) Mann-Whitney sig stars (\*\*\* p<1e-4, \*\* p<1e-3, \* p<0.05) and exact p-values printed. mRSS annotation row deliberately omitted with explicit gap-banner in figure header (0/773 GEO samples carry mRSS — see CLINICAL_METADATA_GAP.md). Legacy F2 sign-weighted figure kept for sensitivity comparison. |
 | E21 | pyproject.toml + minimal pytest | S7 | 🟢 done | `pyproject.toml` (PEP 621 metadata + pytest config), `Makefile` `pytest` target, `.github/workflows/pytest.yml` (Python 3.12 runner). 12/12 tests green after relaxing an over-tight propensity-match sex-sharing assertion (synthetic design has balanced sex + weak age contrast → LR-propensity has no signal → at-chance matching is OK). |
 
 ### Nice to do
@@ -113,6 +113,54 @@ Legend: 🟢 done · 🟡 in progress · ⏳ pending · 🔴 blocked · ⚪ desc
 | ρ(M1, mRSS) | not measured | — | — | **gap — 0/773 samples** (S3) |
 
 ## Change log
+
+- **2026-05-22** — **Continuation session — 6 additional E-items closed
+  on top of the 2026-05-21 baseline: E6, E8, E10 partial, E11, E14, E15,
+  E19, E20, E9, plus E18 confirmation.** Cumulative status 23/25
+  (E7/E12 remain 🟡 gap-documented).
+  - **E8** — `make m3-vascular`: 33-gene M3 panel × 4 Gur vascular
+    clusters. 7 hits at q≤0.05 concentrated in pericytes (Peri_TGFBI
+    NOS3↓ + PECAM1↑ + ANGPT2↑). Endothelial clusters show 0 EndoMT
+    TF hits; the 75 % M3 species coverage is driven by non-endothelial
+    cell types. Manuscript §4.5 rewritten honestly. Residual hard
+    core named: ZEB1, PRRX1, CDH2, CDH5, DLL4, EDNRA, NICD1.
+  - **E6** — Table 2 recalibrated with 3 new columns (latest clinical
+    phase, SSc-specific evidence, key limitations). Cited: focuSSced
+    (PMID 38273631), fresolimumab Rice 2015 (26098215), SENSCIS
+    (31112379), DESIRES (38279400), brontictuzumab Ferrarotto
+    (29748210), Skaug 2020 IFN-high (32759257). Honest take-away:
+    only nintedanib has an SSc indication; brontictuzumab +
+    fresolimumab are not clinically actionable today. Co-author
+    sign-off pending.
+  - **E14 + E15** — `Dockerfile` on micromamba + `.github/workflows/
+    docker.yml` GHCR build (mints on `vX.Y` tag push). `data/MIRROR.md`
+    + `data/MIRROR.sha256` with 5 raw GEO file SHA-256 digests (3.09 GB
+    total payload). Zenodo upload remains a manual step at v1.1 tag.
+  - **E19** — `make f1-quadrant`: `figures/F1_global_MIM_quadrant.{svg,
+    png}` with modules in fixed quadrants (M1 top-left, M2 top-right,
+    M3 bottom-right, M4 bottom-left), sinks centred, inter-quadrant
+    crosstalk as curved arcs.
+  - **E20** — `make f2-aucell`: `figures/F2_multi_overlay_aucell.{svg,
+    png}` 4-panel heatmap with per-(dataset, module) Mann-Whitney sig
+    bars (★★★ p<1e-4, ★★ p<1e-3, ★ p<0.05). mRSS row omitted with
+    explicit gap-banner (E7).
+  - **E11** — `make biomodels`: MIRIAM CVTerm injection via libSBML
+    (206 HGNC + 526 taxonomy resources). `curation/celldesigner/
+    SSc_MIM_integrated.biomodels.xml` libSBML L2V4 0 errors;
+    round-trip-verified after a post-process patch for the missing
+    xmlns:bqbiol declaration on rdf:RDF blocks. Submission package +
+    cover letter: `docs/biomodels_submission.md`. ID REPLACE_ME
+    pending external upload.
+  - **E10** — `make casq`: CaSQ 1.4.4 runs end-to-end. SBML-qual + bnet
+    + sif emitted. 83 nodes, 98 inputs. Top-5 out-degree: ISGF3 (27),
+    JAK1 (17), STAT2 (16), STAT1 (8) — consistent with §3.3 hub
+    analysis. Full perturbation matrix descoped to v2.0 per editor.
+  - **E9** — `make celltypist`: CellTypist 1.7 Adult_Human_Skin on
+    Tabib. **Cohen's κ coarse = 0.92 (cell-level), 0.77 (cluster);
+    ARI raw = 0.70** — strong agreement between marker rule and
+    CellTypist label transfer. Confusion table:
+    `analysis/overlay/celltypist_labels.tsv`. PBMC + lung extensions
+    follow-up.
 
 - **2026-05-21 (late)** — **S1 + S2 closed end-to-end on real data.**
   - **E1** (mixed-effects DEG + BH-FDR ≤ 0.05) ran three times in

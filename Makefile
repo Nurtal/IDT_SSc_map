@@ -150,6 +150,10 @@ casq:  ## E10 — CaSQ Boolean inference (SBGN-PD → SBML-qual) + structural su
 	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/summarise_casq.py; \
 	else $(PYTHON) scripts/summarise_casq.py; fi
 
+celltypist:  ## E9 — CellTypist Adult_Human_Skin on Tabib + κ vs marker labels.
+	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/run_celltypist.py; \
+	else $(PYTHON) scripts/run_celltypist.py; fi
+
 aucell-test:  ## Smoke-test scripts/score_aucell.py (no data needed).
 	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/tests/test_score_aucell.py; \
 	else $(PYTHON) scripts/tests/test_score_aucell.py; fi

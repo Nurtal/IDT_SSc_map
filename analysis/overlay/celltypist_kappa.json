@@ -1,0 +1,130 @@
+{
+  "dataset": "tabib2021 (GSE138669)",
+  "celltypist_model": "Adult_Human_Skin.pkl",
+  "n_cells_kept": 64211,
+  "n_leiden_clusters": 16,
+  "n_marker_labels": 6,
+  "n_celltypist_labels": 9,
+  "n_celltypist_coarse_labels": 7,
+  "cells_kappa_marker_vs_celltypist_raw": 0.0,
+  "cells_kappa_marker_vs_celltypist_coarse": 0.921,
+  "cells_ari_marker_vs_celltypist_raw": 0.696,
+  "cluster_kappa_marker_vs_celltypist_raw": 0.0,
+  "cluster_kappa_marker_vs_celltypist_coarse": 0.769,
+  "cluster_ari_marker_vs_celltypist_raw": 0.446,
+  "interpretation": "Cohen's \u03ba on the *coarse* label space (marker rule and CellTypist majority both projected to the 6 marker classes via CT_TO_COARSE) is the meaningful agreement number: \u2265 0.6 = strong, \u2265 0.4 = moderate. Cohen's \u03ba on the *raw* label spaces is uninformative because the two vocabularies do not overlap in string identity (e.g. CellTypist 'F2' \u2260 marker rule 'fibroblast'). The Adjusted Rand Index (ARI) on raw partitions is label-name-invariant and reflects whether the two classifiers agree on the *grouping* of cells, regardless of how they name each group.",
+  "cluster_table": [
+    {
+      "leiden": "0",
+      "marker": "fibroblast",
+      "celltypist": "F2",
+      "celltypist_coarse": "fibroblast",
+      "n_cells": 12310
+    },
+    {
+      "leiden": "1",
+      "marker": "fibroblast",
+      "celltypist": "F2",
+      "celltypist_coarse": "fibroblast",
+      "n_cells": 622
+    },
+    {
+      "leiden": "2",
+      "marker": "T_lymphocyte",
+      "celltypist": "Melanocyte",
+      "celltypist_coarse": "unknown",
+      "n_cells": 1029
+    },
+    {
+      "leiden": "3",
+      "marker": "keratinocyte",
+      "celltypist": "Differentiated_KC",
+      "celltypist_coarse": "keratinocyte",
+      "n_cells": 4735
+    },
+    {
+      "leiden": "4",
+      "marker": "keratinocyte",
+      "celltypist": "Differentiated_KC",
+      "celltypist_coarse": "keratinocyte",
+      "n_cells": 8742
+    },
+    {
+      "leiden": "5",
+      "marker": "keratinocyte",
+      "celltypist": "Undifferentiated_KC",
+      "celltypist_coarse": "keratinocyte",
+      "n_cells": 10889
+    },
+    {
+      "leiden": "6",
+      "marker": "keratinocyte",
+      "celltypist": "Differentiated_KC",
+      "celltypist_coarse": "keratinocyte",
+      "n_cells": 381
+    },
+    {
+      "leiden": "7",
+      "marker": "T_lymphocyte",
+      "celltypist": "Differentiated_KC",
+      "celltypist_coarse": "keratinocyte",
+      "n_cells": 2213
+    },
+    {
+      "leiden": "8",
+      "marker": "T_lymphocyte",
+      "celltypist": "Th",
+      "celltypist_coarse": "T_lymphocyte",
+      "n_cells": 3116
+    },
+    {
+      "leiden": "9",
+      "marker": "keratinocyte",
+      "celltypist": "Differentiated_KC",
+      "celltypist_coarse": "keratinocyte",
+      "n_cells": 611
+    },
+    {
+      "leiden": "10",
+      "marker": "endothelial_vascular",
+      "celltypist": "VE3",
+      "celltypist_coarse": "endothelial_vascular",
+      "n_cells": 6807
+    },
+    {
+      "leiden": "11",
+      "marker": "myofibroblast_FAP_CTHRC1",
+      "celltypist": "Pericyte_2",
+      "celltypist_coarse": "myofibroblast_FAP_CTHRC1",
+      "n_cells": 7254
+    },
+    {
+      "leiden": "12",
+      "marker": "myofibroblast_FAP_CTHRC1",
+      "celltypist": "Pericyte_2",
+      "celltypist_coarse": "myofibroblast_FAP_CTHRC1",
+      "n_cells": 1463
+    },
+    {
+      "leiden": "13",
+      "marker": "macrophage_dermal",
+      "celltypist": "Melanocyte",
+      "celltypist_coarse": "unknown",
+      "n_cells": 556
+    },
+    {
+      "leiden": "14",
+      "marker": "macrophage_dermal",
+      "celltypist": "Macro_2",
+      "celltypist_coarse": "macrophage_dermal",
+      "n_cells": 2905
+    },
+    {
+      "leiden": "15",
+      "marker": "macrophage_dermal",
+      "celltypist": "Mast_cell",
+      "celltypist_coarse": "macrophage_dermal",
+      "n_cells": 578
+    }
+  ]
+}

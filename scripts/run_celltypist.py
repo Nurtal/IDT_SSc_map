@@ -38,8 +38,56 @@ import pandas as pd
 import scanpy as sc
 import celltypist
 from celltypist import models
-from sklearn.metrics import cohen_kappa_score
+from sklearn.metrics import cohen_kappa_score, adjusted_rand_score
 from scipy.sparse import issparse
+
+
+# CellTypist Adult_Human_Skin label → coarse skin cell type. The
+# CellTypist taxonomy is finer-grained (F1/F2/F3 fibroblast subtypes,
+# Differentiated/Undifferentiated KC, VE1/VE2/VE3 vascular endothelium,
+# Pericyte_1/2, Macro_1/2, etc.) than the 6-class marker rule used in
+# build_overlay_multi. To compute a meaningful Cohen's κ on a *common
+# label space*, we collapse the CellTypist output to the same 6
+# coarse classes via this table. Adjusted Rand Index (ARI) on the
+# raw partitions is also reported (label-name-invariant).
+CT_TO_COARSE: dict[str, str] = {
+    # Fibroblasts
+    "F1": "fibroblast", "F2": "fibroblast", "F3": "fibroblast",
+    "F4": "fibroblast", "F5": "fibroblast",
+    # Pericytes — biologically myofibroblast-adjacent and the M3
+    # vascular substrate; we collapse them onto the marker class
+    # "myofibroblast_FAP_CTHRC1" since the marker rule places
+    # FAP+/ACTA2+ cells there.
+    "Pericyte_1": "myofibroblast_FAP_CTHRC1",
+    "Pericyte_2": "myofibroblast_FAP_CTHRC1",
+    # Vascular endothelium
+    "VE1": "endothelial_vascular", "VE2": "endothelial_vascular",
+    "VE3": "endothelial_vascular", "LE1": "endothelial_vascular",
+    "LE2": "endothelial_vascular",
+    # Keratinocytes (any compartment)
+    "Differentiated_KC": "keratinocyte",
+    "Undifferentiated_KC": "keratinocyte",
+    "KC": "keratinocyte",
+    # T lymphocytes
+    "Th": "T_lymphocyte", "Tc": "T_lymphocyte", "Treg": "T_lymphocyte",
+    "ILC1_NK": "T_lymphocyte", "ILC1_3": "T_lymphocyte",
+    "ILC2": "T_lymphocyte",
+    # Macrophages / DCs / mast / B / plasma — collapse to macrophage_dermal
+    # since the marker rule treats CD68+/C1QA+/LYZ+ as macrophage and
+    # has no separate DC class.
+    "Macro_1": "macrophage_dermal", "Macro_2": "macrophage_dermal",
+    "Inf_mac": "macrophage_dermal",
+    "MigDC": "macrophage_dermal", "Mast_cell": "macrophage_dermal",
+    "DC1": "macrophage_dermal", "DC2": "macrophage_dermal",
+    "LC": "macrophage_dermal", "moDC": "macrophage_dermal",
+    "Plasma": "macrophage_dermal", "B_cell": "macrophage_dermal",
+    "B": "macrophage_dermal",
+    # Melanocytes / Schwann — not represented in marker rule; map to
+    # "unknown" so they don't false-inflate the marker-class κ.
+    "Melanocyte": "unknown",
+    "Schwann_1": "unknown", "Schwann_2": "unknown",
+    "MC": "unknown",
+}
 
 # Match build_overlay_multi's donor → condition map for GSE138669
 TABIB_DONOR_COND = {
@@ -126,6 +174,9 @@ def main() -> int:
 
     sc.pp.normalize_total(adata, target_sum=1e4)
     sc.pp.log1p(adata)
+    # Stash the log1p (un-scaled) expression for CellTypist before scaling
+    # breaks the CPM/log1p assumption.
+    adata.raw = adata
     sc.pp.highly_variable_genes(adata, n_top_genes=2000, flavor="seurat")
     sc.pp.scale(adata, max_value=10)
     sc.tl.pca(adata, n_comps=30, mask_var="highly_variable")
@@ -156,21 +207,38 @@ def main() -> int:
     adata.obs["celltypist_pred"]    = pred.predicted_labels.predicted_labels.values
     adata.obs["celltypist_majority"] = pred.predicted_labels.majority_voting.values
 
-    # Cohen's kappa (marker_label vs celltypist_majority — they're
-    # different label spaces so we compare via a coarse mapping).
-    # We compute kappa across cells, treating each label space as a
-    # categorical. The numeric value is informative when both spaces
-    # converge on similar partitions.
-    cells_kappa = cohen_kappa_score(adata.obs["marker_label"],
-                                     adata.obs["celltypist_majority"])
-    # Cluster-level kappa: one decision per cluster.
+    # Collapse the CellTypist labels to the same 6-class coarse space
+    # as the marker rule (CT_TO_COARSE), then compute Cohen's κ on a
+    # common label vocabulary. Also report Adjusted Rand Index (ARI)
+    # on the raw partitions, which is label-name-invariant.
+    adata.obs["celltypist_coarse"] = (
+        adata.obs["celltypist_majority"]
+            .map(lambda s: CT_TO_COARSE.get(str(s), "unknown"))
+    )
+    # Cell-level κ on coarse space + ARI on raw partitions
+    cells_kappa_coarse = cohen_kappa_score(adata.obs["marker_label"],
+                                            adata.obs["celltypist_coarse"])
+    cells_ari_raw = adjusted_rand_score(adata.obs["marker_label"],
+                                         adata.obs["celltypist_majority"])
+    cells_kappa_raw = cohen_kappa_score(adata.obs["marker_label"],
+                                         adata.obs["celltypist_majority"])
+
+    # Cluster-level: one marker label + one majority CellTypist label
+    # per Leiden cluster.
     cluster_table = (adata.obs
                        .groupby("leiden", observed=True)
                        .agg(marker=("marker_label", "first"),
                             celltypist=("celltypist_majority",
-                                        lambda s: s.value_counts().index[0])))
-    cluster_kappa = cohen_kappa_score(cluster_table["marker"],
+                                        lambda s: s.value_counts().index[0]),
+                            celltypist_coarse=("celltypist_coarse",
+                                                lambda s: s.value_counts().index[0]),
+                            n_cells=("leiden", "size")))
+    cluster_kappa_coarse = cohen_kappa_score(cluster_table["marker"],
+                                              cluster_table["celltypist_coarse"])
+    cluster_ari = adjusted_rand_score(cluster_table["marker"],
                                        cluster_table["celltypist"])
+    cluster_kappa_raw = cohen_kappa_score(cluster_table["marker"],
+                                           cluster_table["celltypist"])
 
     # Confusion matrix
     confusion = (adata.obs
@@ -188,22 +256,35 @@ def main() -> int:
         "n_leiden_clusters": int(adata.obs["leiden"].nunique()),
         "n_marker_labels":  int(adata.obs["marker_label"].nunique()),
         "n_celltypist_labels": int(adata.obs["celltypist_majority"].nunique()),
-        "cells_kappa_marker_vs_celltypist": round(float(cells_kappa), 3),
-        "cluster_kappa_marker_vs_celltypist": round(float(cluster_kappa), 3),
+        "n_celltypist_coarse_labels": int(adata.obs["celltypist_coarse"].nunique()),
+        "cells_kappa_marker_vs_celltypist_raw": round(float(cells_kappa_raw), 3),
+        "cells_kappa_marker_vs_celltypist_coarse": round(float(cells_kappa_coarse), 3),
+        "cells_ari_marker_vs_celltypist_raw": round(float(cells_ari_raw), 3),
+        "cluster_kappa_marker_vs_celltypist_raw": round(float(cluster_kappa_raw), 3),
+        "cluster_kappa_marker_vs_celltypist_coarse": round(float(cluster_kappa_coarse), 3),
+        "cluster_ari_marker_vs_celltypist_raw": round(float(cluster_ari), 3),
         "interpretation": (
-            "Cohen's κ ≥ 0.6 indicates strong agreement between the curator-"
-            "chosen marker rule and the CellTypist Adult_Human_Skin "
-            "majority vote (Methods §2.6). Values are reported at both the "
-            "cell-level (sensitive to fine-grained label mismatches) and "
-            "cluster-level (one decision per Leiden cluster)."
+            "Cohen's κ on the *coarse* label space (marker rule and "
+            "CellTypist majority both projected to the 6 marker classes via "
+            "CT_TO_COARSE) is the meaningful agreement number: ≥ 0.6 = "
+            "strong, ≥ 0.4 = moderate. Cohen's κ on the *raw* label spaces "
+            "is uninformative because the two vocabularies do not overlap "
+            "in string identity (e.g. CellTypist 'F2' ≠ marker rule "
+            "'fibroblast'). The Adjusted Rand Index (ARI) on raw "
+            "partitions is label-name-invariant and reflects whether the "
+            "two classifiers agree on the *grouping* of cells, regardless "
+            "of how they name each group."
         ),
         "cluster_table": cluster_table.reset_index().to_dict(orient="records"),
     }
     OUT_JSON.write_text(json.dumps(summary, indent=2) + "\n")
 
     print()
-    print(f"cell-level   κ (marker vs CellTypist): {cells_kappa:.3f}")
-    print(f"cluster-level κ (marker vs CellTypist): {cluster_kappa:.3f}")
+    print(f"cell-level   κ raw    : {cells_kappa_raw:.3f}  (uninformative — label spaces don't overlap)")
+    print(f"cell-level   κ coarse : {cells_kappa_coarse:.3f}  (after CT_TO_COARSE projection)")
+    print(f"cell-level   ARI raw  : {cells_ari_raw:.3f}  (label-name-invariant)")
+    print(f"cluster      κ coarse : {cluster_kappa_coarse:.3f}")
+    print(f"cluster      ARI raw  : {cluster_ari:.3f}")
     print(f"wrote {OUT_TSV} + {OUT_JSON}")
     return 0
 
