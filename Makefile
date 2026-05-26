@@ -162,6 +162,10 @@ crosstalk-validate:  ## STRING-DB v12 independent validation of the 3 weak cross
 	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/validate_crosstalk_string.py; \
 	else $(PYTHON) scripts/validate_crosstalk_string.py; fi
 
+celldesigner-check:  ## Static CellDesigner-loadability test (incl. CaSQ smoke).
+	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/test_celldesigner_loadability.py; \
+	else $(PYTHON) scripts/test_celldesigner_loadability.py; fi
+
 aucell-test:  ## Smoke-test scripts/score_aucell.py (no data needed).
 	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/tests/test_score_aucell.py; \
 	else $(PYTHON) scripts/tests/test_score_aucell.py; fi
