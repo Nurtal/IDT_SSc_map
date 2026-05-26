@@ -1,0 +1,37 @@
+reaction_id	source_gene	target_gene	target_phenotype	combined_score	string_confirmed
+ssc_crosstalk_001	IFNB1	SMAD3	fibroblast_proFibrotic		no
+ssc_crosstalk_001	IFNB1	TGFB1	fibroblast_proFibrotic	0.506	no
+ssc_crosstalk_001	IFNB1	COL1A1	fibroblast_proFibrotic		no
+ssc_crosstalk_001	IFNB1	ACTA2	fibroblast_proFibrotic		no
+ssc_crosstalk_001	IFNB1	POSTN	fibroblast_proFibrotic		no
+ssc_crosstalk_001	IFNA1	SMAD3	fibroblast_proFibrotic		no
+ssc_crosstalk_001	IFNA1	TGFB1	fibroblast_proFibrotic	0.570	no
+ssc_crosstalk_001	IFNA1	COL1A1	fibroblast_proFibrotic		no
+ssc_crosstalk_001	IFNA1	ACTA2	fibroblast_proFibrotic		no
+ssc_crosstalk_001	IFNA1	POSTN	fibroblast_proFibrotic		no
+ssc_crosstalk_003	IFNB1	CD40	pDC_activated_OR_BCR_activated	0.615	no
+ssc_crosstalk_003	IFNB1	CD79A	pDC_activated_OR_BCR_activated		no
+ssc_crosstalk_003	IFNB1	CD79B	pDC_activated_OR_BCR_activated		no
+ssc_crosstalk_003	IFNB1	IL3RA	pDC_activated_OR_BCR_activated	0.848	yes
+ssc_crosstalk_003	IFNB1	IRF7	pDC_activated_OR_BCR_activated	0.978	yes
+ssc_crosstalk_003	IFNB1	IRF8	pDC_activated_OR_BCR_activated	0.751	yes
+ssc_crosstalk_003	IFNB1	MS4A1	pDC_activated_OR_BCR_activated		no
+ssc_crosstalk_003	IFNB1	TLR7	pDC_activated_OR_BCR_activated	0.891	yes
+ssc_crosstalk_003	IFNA1	CD40	pDC_activated_OR_BCR_activated	0.808	yes
+ssc_crosstalk_003	IFNA1	CD79A	pDC_activated_OR_BCR_activated		no
+ssc_crosstalk_003	IFNA1	CD79B	pDC_activated_OR_BCR_activated		no
+ssc_crosstalk_003	IFNA1	IL3RA	pDC_activated_OR_BCR_activated	0.861	yes
+ssc_crosstalk_003	IFNA1	IRF7	pDC_activated_OR_BCR_activated	0.967	yes
+ssc_crosstalk_003	IFNA1	IRF8	pDC_activated_OR_BCR_activated	0.716	yes
+ssc_crosstalk_003	IFNA1	MS4A1	pDC_activated_OR_BCR_activated		no
+ssc_crosstalk_003	IFNA1	TLR7	pDC_activated_OR_BCR_activated	0.920	yes
+ssc_crosstalk_007	CDH2	ACTA2	phenotype_myofibroblast_activation	0.415	no
+ssc_crosstalk_007	CDH2	FAP	phenotype_myofibroblast_activation		no
+ssc_crosstalk_007	CDH2	COL1A1	phenotype_myofibroblast_activation	0.611	no
+ssc_crosstalk_007	CDH2	POSTN	phenotype_myofibroblast_activation	0.508	no
+ssc_crosstalk_007	CDH2	CTHRC1	phenotype_myofibroblast_activation	0.483	no
+ssc_crosstalk_007	FAP	ACTA2	phenotype_myofibroblast_activation		no
+ssc_crosstalk_007	FAP	FAP	phenotype_myofibroblast_activation		no
+ssc_crosstalk_007	FAP	COL1A1	phenotype_myofibroblast_activation	0.573	no
+ssc_crosstalk_007	FAP	POSTN	phenotype_myofibroblast_activation	0.652	no
+ssc_crosstalk_007	FAP	CTHRC1	phenotype_myofibroblast_activation		no
