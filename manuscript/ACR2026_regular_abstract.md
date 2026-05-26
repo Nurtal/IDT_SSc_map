@@ -8,9 +8,8 @@
 
 ## Title
 
-Curated Molecular Interaction Map of Diffuse Cutaneous Systemic Sclerosis
-Recovers 81 % of Detectable Targets in Multi-Tissue Single-Cell Data
-and Recalibrates Drug Repurposing Against Trial Outcomes
+From Mechanistic Map to Clinical Decision: A Curated Molecular Atlas of
+Diffuse Cutaneous Systemic Sclerosis with Trial-Grounded Drug Repurposing
 
 ## Authors
 
