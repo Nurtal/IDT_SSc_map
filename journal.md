@@ -1539,3 +1539,14 @@ coopération NICD1→ZEB2) → passées `proposed` avec flag explicite dans `not
 3 PMID au .bib. **0 untested**. Statuts : confirmed 67, proposed 8, conceptual_bridge 4,
 phenotype_aggregation 6. PMID SSc **75/85 (88.2%)**, reaction_evidence 233/244.
 
+
+### 18:10 — Reformulation M3_017 / M3_021 (mécanismes non soutenus)
+
+Faute de primaire pour les causalités exactes, reformulé vers ce que la littérature soutient :
+- M3_017 : « TGF-β/SMAD3 drives the EndMT master-TF programme, inducing TWIST1 » (retrait du
+  lien SNAI1→TWIST1 non établi). Réactant/modifieur = SMAD3p_SMAD4 seul. PMID 16123809.
+- M3_021 : « TGF-β/SMAD3 induces ZEB2 (SIP1) as part of the EndMT master-TF programme »
+  (retrait de la coopération NICD1/Notch non établie). PMID 19838011.
+Source de vérité (TSV) + reaction_evidence mis à jour. ⚠️ Changement de topologie (retrait de
+SNAI1/NICD1 comme modifieurs) → **re-wire de l'XML intégré requis au prochain rebuild**
+(wire skippe les reaction_id existants ; à régénérer + rerun network au moment du tag).
