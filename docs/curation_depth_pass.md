@@ -54,15 +54,19 @@ primary PMID; 45 rested on `ECO:0000305` (curator inference). The house rule
 
 ## Result
 
-| SSc-Tier-1 (85 reactions) | before | after |
-|---|---|---|
-| With a primary PMID | 40 (47%) | **63 (74.1%)** |
-| Experimental/review ECO (314/270/353/033) | 39 (46%) | **47 (55.3%)** |
-| Undeclared inference debt (`ECO:0000305`, no PMID, untriaged) | 45 | **0** |
+| SSc-Tier-1 (85 reactions) | before | after pass 1 | after pass 2 |
+|---|---|---|---|
+| With a primary PMID | 40 (47%) | 63 (74.1%) | **74 (87.1%)** |
+| Experimental/review ECO (314/270/353/033) | 39 (46%) | 47 (55.3%) | **50 (58.8%)** |
+| Undeclared inference debt (`ECO:0000305`, no PMID, untriaged) | 45 | 0 | **0** |
 
-Curation-status breakdown: **confirmed 40, proposed 23, conceptual_bridge 4,
-phenotype_aggregation 6, untested 12**. The 12 untested rows are the residual co-author
-backlog (`curation/curator_inference_register.tsv`), each with a candidate pool.
+Curation-status breakdown: **confirmed 40, proposed 34, conceptual_bridge 4,
+phenotype_aggregation 6, untested 1**. Pass 2 (2026-06-05, same day) cleared 11 of the 12
+`untested` rows with targeted searches + abstract verification (e.g. PMID 7539918, the
+canonical Wang & Semenza 1995 HIF-1 bHLH-PAS heterodimer paper, for `ssc_M3_020`; PMID
+9852257, BCR-signalling review, for `ssc_M4_007`). One row remains `untested`: `ssc_M1_013`
+(IRF7 cytosolic phospho-form nuclear translocation) — no clean primary surfaced; honest
+backlog, candidate pool retained.
 
 Notable SSc-specific anchors added: PMID 16319104 (constitutively phosphorylated Smad3 in
 scleroderma fibroblasts) and PMID 28062404 (EndoMT in systemic sclerosis), which underpin

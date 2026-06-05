@@ -102,12 +102,13 @@ Reversibility: every reaction is one row in the TSV. Co-author overrides at revi
 
 Beyond merely *quantifying* the weak SSc layer (H1), a depth pass paid most of it down
 (`docs/curation_depth_pass.md`). A new candidate miner (`scripts/mine_lit_candidates.py`,
-NCBI E-utils) + abstract-verified assignment raised SSc-Tier-1 PMID coverage **47% → 74.1%**
-(40 → 63/85) and dropped undeclared inference debt **45 → 0** (23 cited `proposed`, 10
-honestly reclassified as conceptual bridges / phenotype aggregations, 12 declared `untested`
-backlog with candidate pools). A CI guard (`make evidence-lint`, job `evidence-depth`)
-locks this in. This converts the H5 co-author task from "source 45 rows from scratch" into
-"ratify 23 abstract-checked proposals + confirm 10 reclassifications + clear 12 backlog rows".
+NCBI E-utils) + abstract-verified assignment raised SSc-Tier-1 PMID coverage **47% → 87.1%**
+(40 → 74/85, across two same-day passes) and dropped undeclared inference debt **45 → 0**
+(34 cited `proposed`, 10 honestly reclassified as conceptual bridges / phenotype
+aggregations, 1 declared `untested` backlog with a candidate pool). A CI guard
+(`make evidence-lint`, job `evidence-depth`) locks this in. This converts the H5 co-author
+task from "source 45 rows from scratch" into "ratify 34 abstract-checked proposals + confirm
+10 reclassifications + clear 1 backlog row".
 🟡 ASSIST (proposals) → 🔴 HUMAN (ratification).
 
 ---

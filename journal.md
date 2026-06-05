@@ -1475,3 +1475,19 @@ reclassements + traiter 12 backlog ».
 (`inject_miriam.py`) pour embarquer les nouveaux PMID au moment du tag ; mettre le manuscrit
 §2.3/§2.4 à jour une fois les `proposed` ratifiés.
 
+### 16:10 — Passe 2 : résorption des 12 lignes `untested`
+
+Recherches ciblées affinées + lecture d'abstracts sur les 12 `untested` restantes.
+**11/12 assignées** (proposed) : M2_015 (revue lysyl oxidase 31488698), M3_005 (PDE5/cGMP
+12135389), M3_006+M3_007 (revue HIF-1 9278140), M3_019 (revue récepteur TXA2 37321373),
+M3_020 (**7539918 = Wang & Semenza 1995, papier canonique HIF-1 bHLH-PAS**), M4_007 (revue
+signalisation BCR 9852257), M4_008 (CD20/MS4A1 37683180), M1_015 (TLR7/8 ssRNA 31662487),
+M4_004 (revue STAT6 33991851), M3_022 (revue Notch3/SMC vasculaire 31868216). 10 nouveaux
+PMID au .bib (remplis + auteurs). **1 seule reste `untested`** : M1_013 (translocation
+nucléaire IRF7 — aucun primaire propre ; backlog honnête, pool conservé).
+
+**Résultat cumulé** : PMID SSc **40 → 74/85 (87.1%)**, ECO expérimental/revue **58.8%**,
+`reaction_evidence` PMID **198 → 232/244 (95.1%)**, dette d'inférence non déclarée **45 → 0**.
+Statuts : confirmed 40, proposed 34, conceptual_bridge 4, phenotype_aggregation 6, untested 1.
+`make evidence-lint` OK, `make preflight` vert, carte 526/260 intacte.
+

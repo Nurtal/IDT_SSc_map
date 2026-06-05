@@ -29,18 +29,18 @@
     },
     "ssc_tier1": {
       "n_reactions": 85,
-      "n_with_pmid": 63,
-      "pct_with_pmid": 74.1,
-      "n_experimental_eco": 47,
-      "pct_experimental_eco": 55.3
+      "n_with_pmid": 74,
+      "pct_with_pmid": 87.1,
+      "n_experimental_eco": 50,
+      "pct_experimental_eco": 58.8
     }
   },
   "ssc_curation_status": {
     "confirmed": 40,
-    "proposed": 23,
-    "untested": 12,
+    "proposed": 34,
     "phenotype_aggregation": 6,
-    "conceptual_bridge": 4
+    "conceptual_bridge": 4,
+    "untested": 1
   },
   "inferences": []
 }

@@ -27,12 +27,12 @@ contribution. See §3 for how strongly that 85-reaction layer is evidenced.
 | Figure | Value | Definition | Source |
 |--------|-------|------------|--------|
 | `reaction_evidence.tsv` rows | **244** | all annotated reactions = **159 pure-Reactome + 85 SSc** (the 85 SSc rows live in *both* this file and `ssc_curated_reactions.tsv`; do **not** add 244 + 85) | `curation/annotations/reaction_evidence.tsv` |
-| ... with a primary PMID | **221 (90.6%)** | non-empty numeric `pmid` (was 198 before the 2026-06-05 depth pass) | preflight |
+| ... with a primary PMID | **232 (95.1%)** | non-empty numeric `pmid` (was 198 before the 2026-06-05 depth pass) | preflight |
 | ... `type=TODO` before H1 | **159** | un-classified reaction type | (pre-sprint) |
 | ... `type=TODO` after H1 | **0** | classified by `evidence_audit.py` (153 by rule, 6 fallback) | `analysis/curation/evidence_stratification.json` |
 | `ssc_curated_reactions.tsv` rows | **85** | SSc-Tier-1 layer | `curation/ssc_curated_reactions.tsv` |
-| ... with a primary PMID | **63 (74.1%)** | up from 40 (47.1%) after the depth pass | `analysis/curation/evidence_stratification.json` |
-| ... curator-inference debt (untriaged) | **0** | was 45; now 23 cited `proposed`, 10 reclassified, 12 declared `untested` backlog | `curation/curator_inference_register.tsv` |
+| ... with a primary PMID | **74 (87.1%)** | up from 40 (47.1%) after the depth pass | `analysis/curation/evidence_stratification.json` |
+| ... curator-inference debt (untriaged) | **0** | was 45; now 34 cited `proposed`, 10 reclassified, 1 declared `untested` backlog | `curation/curator_inference_register.tsv` |
 
 ## 3. Evidence quality by provenance layer (H1)
 
@@ -42,12 +42,12 @@ Stated honestly:
 | Layer | Reactions | With PMID | Experimental/review ECO (314/270/353/033) |
 |-------|-----------|-----------|--------------------------------|
 | Reactome backbone (pure-Reactome) | 159 | 158 (99.4%) | 0 (0.0%) |
-| **SSc-Tier-1 (the original contribution)** | **85** | **63 (74.1%)** | **47 (55.3%)** |
+| **SSc-Tier-1 (the original contribution)** | **85** | **74 (87.1%)** | **50 (58.8%)** |
 
 After the 2026-06-05 curation-depth pass (`docs/curation_depth_pass.md`), the SSc-specific
-layer carries both more citations (74.1%, up from 47.1%) and a *much higher* fraction of
-experimental/review-grade ECO codes (55.3%) than the Reactome backbone. The residual
-backlog is **12 declared `untested` rows** (down from 45), each with a candidate-PMID pool,
+layer carries both more citations (87.1%, up from 47.1%) and a *much higher* fraction of
+experimental/review-grade ECO codes (58.8%) than the Reactome backbone. The residual
+backlog is **1 declared `untested` row** (down from 45), with a candidate-PMID pool,
 itemised in `curation/curator_inference_register.tsv`; a further 10 rows were honestly
 reclassified as conceptual bridges / phenotype aggregations rather than force-cited. The
 `make evidence-lint` CI guard now fails on any *undeclared* inference debt.
