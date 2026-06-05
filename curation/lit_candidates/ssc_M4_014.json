@@ -1,0 +1,111 @@
+{
+  "reaction_id": "ssc_M4_014",
+  "module": "M4",
+  "mechanism": "Activated B cell BCR + CD40-CD40L \u2192 CD22 modulation and IRF4 induction",
+  "queries": {
+    "canonical": "IRF4[tiab] AND XBP1[tiab]",
+    "ssc_context": "IRF4[tiab] AND (\"systemic sclerosis\"[tiab] OR scleroderma[tiab] OR fibrosis[tiab])"
+  },
+  "candidates": [
+    {
+      "pmid": "36081178",
+      "title": "Regulatory network of BLIMP1, IRF4, and XBP1 triad in plasmacytic differentiation and multiple myeloma pathogenesis",
+      "journal": "Cell Immunol",
+      "year": "2022",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 0
+    },
+    {
+      "pmid": "37770480",
+      "title": "Metabolic crosstalk between skeletal muscle cells and liver through IRF4-FSTL1 in nonalcoholic steatohepatitis",
+      "journal": "Nat Commun",
+      "year": "2023",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 0
+    },
+    {
+      "pmid": "40495388",
+      "title": "IL16 Promotes Plasma Cell Differentiation",
+      "journal": "Immunology",
+      "year": "2025",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 1
+    },
+    {
+      "pmid": "40209842",
+      "title": "Histone lactylation-augmented IRF4 is implicated in arsenite-induced liver fibrosis via modulating Th17\u00a0cell differentiation",
+      "journal": "Chem Biol Interact",
+      "year": "2025",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 1
+    },
+    {
+      "pmid": "38902223",
+      "title": "Plasma cell differentiation is regulated by the expression of histone variant H3.3",
+      "journal": "Nat Commun",
+      "year": "2024",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 2
+    },
+    {
+      "pmid": "42018282",
+      "title": "E3 ubiquitin ligase Peli3 regulates M2 macrophage-to-myofibroblast transition and fibrosis in wound healing via IRF4",
+      "journal": "Connect Tissue Res",
+      "year": "2026",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 2
+    },
+    {
+      "pmid": "31360094",
+      "title": "Plasmablastic lymphoma: current perspectives",
+      "journal": "Blood Lymphat Cancer",
+      "year": "2018",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 3
+    },
+    {
+      "pmid": "41275206",
+      "title": "Th9/IL-9 axis mediates airway fibrosis in traumatic tracheal stenosis via TGF-\u03b21/SMAD2/3 signaling",
+      "journal": "Respir Res",
+      "year": "2025",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 3
+    },
+    {
+      "pmid": "34117720",
+      "title": "The Immunity-malignancy equilibrium in multiple myeloma: lessons from oncogenic events in plasma cells",
+      "journal": "FEBS J",
+      "year": "2022",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 4
+    },
+    {
+      "pmid": "37938462",
+      "title": "IRF4 Participates in Pulmonary Fibrosis Induced by Silica Particles through Regulating Macrophage Polarization and Fibroblast Activation",
+      "journal": "Inflammation",
+      "year": "2024",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 4
+    }
+  ]
+}

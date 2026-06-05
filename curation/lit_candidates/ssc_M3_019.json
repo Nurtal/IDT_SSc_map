@@ -1,0 +1,91 @@
+{
+  "reaction_id": "ssc_M3_019",
+  "module": "M3",
+  "mechanism": "COX-2 (PTGS2) produces thromboxane TXA2, signals via TBXA2R for vasoconstriction",
+  "queries": {
+    "canonical": "TBXA2R[tiab] AND COX[tiab]",
+    "ssc_context": "TBXA2R[tiab] AND (\"systemic sclerosis\"[tiab] OR scleroderma[tiab] OR fibrosis[tiab])"
+  },
+  "candidates": [
+    {
+      "pmid": "16502481",
+      "title": "Genetic markers for differentiating aspirin-hypersensitivity",
+      "journal": "Yonsei Med J",
+      "year": "2006",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 0
+    },
+    {
+      "pmid": "35728047",
+      "title": "Thromboxane-Prostanoid Receptor Signaling Drives Persistent Fibroblast Activation in Pulmonary Fibrosis",
+      "journal": "Am J Respir Crit Care Med",
+      "year": "2022",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 0
+    },
+    {
+      "pmid": "32948830",
+      "title": "Genetic polymorphisms associated with upper gastrointestinal bleeding: a systematic review",
+      "journal": "Pharmacogenomics J",
+      "year": "2021",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 1
+    },
+    {
+      "pmid": "25738781",
+      "title": "Thromboxane synthase deficiency improves insulin action and attenuates adipose tissue fibrosis",
+      "journal": "Am J Physiol Endocrinol Metab",
+      "year": "2015",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 1
+    },
+    {
+      "pmid": "33868179",
+      "title": "The Arachidonic Acid Metabolism Mechanism Based on UPLC-MS/MS Metabolomics in Recurrent Spontaneous Abortion Rats",
+      "journal": "Front Endocrinol (Lausanne)",
+      "year": "2021",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 2
+    },
+    {
+      "pmid": "30663834",
+      "title": "Alterations in cardiovascular function in an experimental model of lung fibrosis and pulmonary hypertension",
+      "journal": "Exp Physiol",
+      "year": "2019",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 2
+    },
+    {
+      "pmid": "25171226",
+      "title": "Immunopathogenesis of HIV infection in cocaine users: role of arachidonic acid",
+      "journal": "PLoS One",
+      "year": "2014",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 3
+    },
+    {
+      "pmid": "26993102",
+      "title": "Serelaxin (recombinant human relaxin-2) prevents high glucose-induced endothelial dysfunction by ameliorating prostacyclin production in the mouse aorta",
+      "journal": "Pharmacol Res",
+      "year": "2016",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 4
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "reaction_id": "ssc_M3_018",
+  "module": "M3",
+  "mechanism": "SNAI1/2 represses CDH5 + PECAM1 + VWF + TEK transcription (loss of endothelial identity)",
+  "queries": {
+    "canonical": "SNAI1[tiab] AND SNAI2[tiab]",
+    "ssc_context": "SNAI1[tiab] AND (\"systemic sclerosis\"[tiab] OR scleroderma[tiab] OR fibrosis[tiab])"
+  },
+  "candidates": [
+    {
+      "pmid": "38451818",
+      "title": "Hepatic Snai1 and Snai2 promote liver regeneration and suppress liver fibrosis in mice",
+      "journal": "Cell Rep",
+      "year": "2024",
+      "found_by": [
+        "canonical",
+        "ssc_context"
+      ],
+      "best_rank": 0
+    },
+    {
+      "pmid": "39913299",
+      "title": "ZDHHC18 promotes renal fibrosis development by regulating HRAS palmitoylation",
+      "journal": "J Clin Invest",
+      "year": "2025",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 0
+    },
+    {
+      "pmid": "23665016",
+      "title": "The SNAI1 and SNAI2 proteins occupy their own and each other's promoter during chondrogenesis",
+      "journal": "Biochem Biophys Res Commun",
+      "year": "2013",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 1
+    },
+    {
+      "pmid": "26571812",
+      "title": "[SNAI1 and SNAI2 - transcriptional master-regulators of epithelial-mesenchimal transition]",
+      "journal": "Patol Fiziol Eksp Ter",
+      "year": "2015",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 2
+    },
+    {
+      "pmid": "38054591",
+      "title": "Understanding interleukin 11 as a disease gene and therapeutic target",
+      "journal": "Biochem J",
+      "year": "2023",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 2
+    },
+    {
+      "pmid": "35768509",
+      "title": "GREM1 is required to maintain cellular heterogeneity in pancreatic cancer",
+      "journal": "Nature",
+      "year": "2022",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 3
+    },
+    {
+      "pmid": "39243762",
+      "title": "TGF-\u03b2 and RAS jointly unmask primed enhancers to drive metastasis",
+      "journal": "Cell",
+      "year": "2024",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 3
+    },
+    {
+      "pmid": "23322385",
+      "title": "Compensatory regulation of the Snai1 and Snai2 genes during chondrogenesis",
+      "journal": "J Bone Miner Res",
+      "year": "2013",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 4
+    },
+    {
+      "pmid": "34127536",
+      "title": "Kim-1 Targeted Extracellular Vesicles: A New Therapeutic Platform for RNAi to Treat AKI",
+      "journal": "J Am Soc Nephrol",
+      "year": "2021",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 4
+    }
+  ]
+}

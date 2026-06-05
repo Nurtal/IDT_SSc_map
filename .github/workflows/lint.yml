@@ -5,15 +5,19 @@ on:
     paths:
       - "docs/module_specs/**.md"
       - "curation/pubmed_corpus.bib"
+      - "curation/ssc_curated_reactions.tsv"
       - "scripts/check_module_specs.py"
       - "scripts/check_bib.py"
+      - "scripts/check_evidence_depth.py"
       - ".github/workflows/lint.yml"
   pull_request:
     paths:
       - "docs/module_specs/**.md"
       - "curation/pubmed_corpus.bib"
+      - "curation/ssc_curated_reactions.tsv"
       - "scripts/check_module_specs.py"
       - "scripts/check_bib.py"
+      - "scripts/check_evidence_depth.py"
       - ".github/workflows/lint.yml"
 
 jobs:
@@ -40,3 +44,15 @@ jobs:
           python-version: "3.11"
       - name: Lint pubmed corpus (informational until Phase 2)
         run: python scripts/check_bib.py curation/pubmed_corpus.bib
+
+  evidence-depth:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Guard SSc evidence-depth triage (no undeclared inference debt)
+        run: python scripts/check_evidence_depth.py

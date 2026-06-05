@@ -1,0 +1,111 @@
+{
+  "reaction_id": "ssc_M1_012",
+  "module": "M1",
+  "mechanism": "Combined ISG response (IFI44 + ISG15 + IFIT1 + IFIT3 + MX family + OAS family) converges on ISG signature phenotype",
+  "queries": {
+    "canonical": "ISG[tiab] AND combined[tiab]",
+    "ssc_context": "ISG[tiab] AND (\"systemic sclerosis\"[tiab] OR scleroderma[tiab] OR fibrosis[tiab])"
+  },
+  "candidates": [
+    {
+      "pmid": "21478870",
+      "title": "A diverse range of gene products are effectors of the type I interferon antiviral response",
+      "journal": "Nature",
+      "year": "2011",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 0
+    },
+    {
+      "pmid": "35290245",
+      "title": "Single-cell transcriptomics reveals distinct effector profiles of infiltrating T cells in lupus skin and kidney",
+      "journal": "JCI Insight",
+      "year": "2022",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 0
+    },
+    {
+      "pmid": "40019403",
+      "title": "Transcriptome Landscape of Cancer-Associated Fibroblasts in Human PDAC",
+      "journal": "Adv Sci (Weinh)",
+      "year": "2025",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 1
+    },
+    {
+      "pmid": "41682782",
+      "title": "Anifrolumab-A Potential New Systemic Sclerosis Treatment",
+      "journal": "J Clin Med",
+      "year": "2026",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 1
+    },
+    {
+      "pmid": "38414526",
+      "title": "Recent Advances in Intranasal Administration for Brain-Targeting Delivery: A Comprehensive Review of Lipid-Based Nanoparticles and Stimuli-Responsive Gel Formulations",
+      "journal": "Int J Nanomedicine",
+      "year": "2024",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 2
+    },
+    {
+      "pmid": "40573365",
+      "title": "Finetuning Type I Interferon Signaling to Enhance T Cell Immunity in HIV Infection",
+      "journal": "Viruses",
+      "year": "2025",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 2
+    },
+    {
+      "pmid": "40825172",
+      "title": "Is There a Role for Mifamurtide in Nonmetastatic High-Grade Osteosarcoma? Results From the Italian Sarcoma Group (ISG/OS-2) and Spanish Sarcoma Group (GEIS-33) Trials",
+      "journal": "J Clin Oncol",
+      "year": "2025",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 3
+    },
+    {
+      "pmid": "41196599",
+      "title": "Histopathological Response After Neoadjuvant Chemotherapy for High-Risk Soft-Tissue Sarcomas: A Secondary Analysis of a Randomized Clinical Trial",
+      "journal": "JAMA Netw Open",
+      "year": "2025",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 3
+    },
+    {
+      "pmid": "34795003",
+      "title": "Peripherally-driven myeloid NFkB and IFN/ISG responses predict malignancy risk, survival, and immunotherapy regime in ovarian cancer",
+      "journal": "J Immunother Cancer",
+      "year": "2021",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 4
+    },
+    {
+      "pmid": "40791384",
+      "title": "Airway epithelial SARS-CoV-2 infectious and repair responses: relationships to age, sex, and post-COVID pulmonary syndromes",
+      "journal": "bioRxiv",
+      "year": "2025",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 4
+    }
+  ]
+}

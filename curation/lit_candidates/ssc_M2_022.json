@@ -1,0 +1,102 @@
+{
+  "reaction_id": "ssc_M2_022",
+  "module": "M2",
+  "mechanism": "Sustained collagen/FN1/POSTN/COMP/CTGF/LOX deposition is ECM deposition phenotype",
+  "queries": {
+    "canonical": "COL1A1[tiab] AND COL3A1[tiab]",
+    "ssc_context": "COL1A1[tiab] AND (\"systemic sclerosis\"[tiab] OR scleroderma[tiab] OR fibrosis[tiab])"
+  },
+  "candidates": [
+    {
+      "pmid": "38070245",
+      "title": "Formononetin ameliorates isoproterenol induced cardiac fibrosis through improving mitochondrial dysfunction",
+      "journal": "Biomed Pharmacother",
+      "year": "2024",
+      "found_by": [
+        "canonical",
+        "ssc_context"
+      ],
+      "best_rank": 2
+    },
+    {
+      "pmid": "40833538",
+      "title": "SPARC Induces COL1A1/COL3A1 Expressions\u00a0Representing Aggressive Molecular Cancer-Associated Fibroblasts Signatures and CSF1-Mediated Cancer Invasion in Colorectal Cancer",
+      "journal": "Ann Surg Oncol",
+      "year": "2025",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 0
+    },
+    {
+      "pmid": "35274048",
+      "title": "Radiation increases COL1A1, COL3A1, and COL1A2 expression in breast cancer",
+      "journal": "Open Med (Wars)",
+      "year": "2022",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 1
+    },
+    {
+      "pmid": "40425095",
+      "title": "In vivo FAP-CAR macrophages enhance chemotherapy and immunotherapy against pancreatic cancer by removing the fibrosis barrier",
+      "journal": "J Control Release",
+      "year": "2025",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 1
+    },
+    {
+      "pmid": "37622114",
+      "title": "Identifying immune cell infiltration and effective diagnostic biomarkers in Crohn's disease by bioinformatics analysis",
+      "journal": "Front Immunol",
+      "year": "2023",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 2
+    },
+    {
+      "pmid": "37079061",
+      "title": "Specifications and validation of the ACMG/AMP criteria for clinical interpretation of sequence variants in collagen genes associated with joint hypermobility",
+      "journal": "Hum Genet",
+      "year": "2023",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 3
+    },
+    {
+      "pmid": "37813881",
+      "title": "Fibroblast growth factor 18 stimulates the proliferation of hepatic stellate cells, thereby inducing liver fibrosis",
+      "journal": "Nat Commun",
+      "year": "2023",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 3
+    },
+    {
+      "pmid": "39725008",
+      "title": "Adiponectin deficiency prevents chronic colitis-associated colonic fibrosis via inhibiting CXCL13 production",
+      "journal": "J Adv Res",
+      "year": "2025",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 4
+    },
+    {
+      "pmid": "36893290",
+      "title": "Exosome-Based Regimen Rescues Endometrial Fibrosis in Intrauterine Adhesions Via Targeting Clinical Fibrosis Biomarkers",
+      "journal": "Stem Cells Transl Med",
+      "year": "2023",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 4
+    }
+  ]
+}

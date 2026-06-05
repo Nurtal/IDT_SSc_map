@@ -1,0 +1,46 @@
+reaction_id	module	n_candidates	top_pmid	top_year	top_title
+ssc_M1_012	M1	10	21478870	2011	A diverse range of gene products are effectors of the type I interferon antiviral response
+ssc_M2_014	M2	9	26747705	2016	TGF-β/SMAD Pathway and Its Regulation in Hepatic Fibrosis
+ssc_M2_015	M2	8	32176358	2020	Lysyl Oxidase (LOX) Family Members: Rationale and Their Potential as Therapeutic Targets f
+ssc_M2_016	M2	10	37032648	2023	Paeonol alleviates neuropathic pain by modulating microglial M1 and M2 polarization via th
+ssc_M2_021	M2	7	34601654	2021	Resolving the intertwining of inflammation and fibrosis in human heart failure at single-c
+ssc_M2_022	M2	9	38070245	2024	Formononetin ameliorates isoproterenol induced cardiac fibrosis through improving mitochon
+ssc_M3_002	M3	10	40245183	2025	Crosstalk Between Gastric Cancer and Adjacent Mucosa Reveals EDN1-EDNRA-Mediated Regulatio
+ssc_M3_003	M3	0			
+ssc_M3_004	M3	5	28533362	2017	cGAS is essential for cellular senescence
+ssc_M3_005	M3	9	23117837	2012	Selective PDE5A inhibition with sildenafil rescues left ventricular dysfunction, inflammat
+ssc_M3_006	M3	10	39265983	2025	Hypoxia-induced BNIP3 facilitates the progression and metastasis of uveal melanoma by driv
+ssc_M3_007	M3	10	31734650	2019	Hypoxic regulation of EDN1, EDNRA, EDNRB, and ECE1 gene expressions in ERN1 knockdown U87 
+ssc_M3_008	M3	10	38029740	2023	VEGFA mRNA-LNP promotes biliary epithelial cell-to-hepatocyte conversion in acute and chro
+ssc_M3_011	M3	9	38451818	2024	Hepatic Snai1 and Snai2 promote liver regeneration and suppress liver fibrosis in mice
+ssc_M3_012	M3	9	39011470	2024	Architectural organization and molecular profiling of 3D cancer heterospheroids and their 
+ssc_M3_013	M3	9	39011470	2024	Architectural organization and molecular profiling of 3D cancer heterospheroids and their 
+ssc_M3_014	M3	10	40245183	2025	Crosstalk Between Gastric Cancer and Adjacent Mucosa Reveals EDN1-EDNRA-Mediated Regulatio
+ssc_M4_001	M4	10	31505066	2020	Mechanisms of Dupilumab
+ssc_M4_002	M4	10	40403128	2025	Type 2 cytokines act on enteric sensory neurons to regulate neuropeptide-driven host defen
+ssc_M4_004	M4	10	33293423	2020	IL-4/STAT6 signaling facilitates innate hematoma resolution and neurological recovery afte
+ssc_M4_006	M4	10	38923989	2024	A distal enhancer of GATA3 regulates Th2 differentiation and allergic inflammation
+ssc_M4_007	M4	10	33077936	2021	Kinase inhibition in autoimmunity and inflammation
+ssc_M4_008	M4	10	39696439	2024	Machine learning-based prognostic model of lactylation-related genes for predicting progno
+ssc_M4_011	M4	9	36081178	2022	Regulatory network of BLIMP1, IRF4, and XBP1 triad in plasmacytic differentiation and mult
+ssc_crosstalk_001	crosstalk	8	32186434	2021	Mitochondrial DNA stress triggers autophagy-dependent ferroptotic death
+ssc_crosstalk_003	crosstalk	10	30166420	2018	Development, Function, and Clinical Significance of Plasmacytoid Dendritic Cells in Chroni
+ssc_crosstalk_007	crosstalk	9	39011470	2024	Architectural organization and molecular profiling of 3D cancer heterospheroids and their 
+ssc_M2_023	M2	9	26747705	2016	TGF-β/SMAD Pathway and Its Regulation in Hepatic Fibrosis
+ssc_M2_024	M2	10	37934103	2023	TEAD Inhibition Overcomes YAP1/TAZ-Driven Primary and Acquired Resistance to KRASG12C Inhi
+ssc_M2_025	M2	10	37934103	2023	TEAD Inhibition Overcomes YAP1/TAZ-Driven Primary and Acquired Resistance to KRASG12C Inhi
+ssc_M3_015	M3	10	40570741	2025	HDAC inhibitors repress Tek and Angpt1 expression and proliferation in RUNX1-MECOM-type le
+ssc_M3_016	M3	10	33375813	2021	Single-Cell Analysis of Blood-Brain Barrier Response to Pericyte Loss
+ssc_M3_017	M3	9	26747705	2016	TGF-β/SMAD Pathway and Its Regulation in Hepatic Fibrosis
+ssc_M3_018	M3	9	38451818	2024	Hepatic Snai1 and Snai2 promote liver regeneration and suppress liver fibrosis in mice
+ssc_M3_019	M3	8	16502481	2006	Genetic markers for differentiating aspirin-hypersensitivity
+ssc_M3_020	M3	10	39477683	2025	Atractylenolide I inhibits angiogenesis and reverses sunitinib resistance in clear cell re
+ssc_M3_021	M3	9	26747705	2016	TGF-β/SMAD Pathway and Its Regulation in Hepatic Fibrosis
+ssc_M4_012	M4	10	38990948	2024	Unique and redundant roles of mouse BCMA, TACI, BAFF, APRIL, and IL-6 in supporting antibo
+ssc_M4_013	M4	10	28847903	2018	T Helper Cell Differentiation, Heterogeneity, and Plasticity
+ssc_M4_014	M4	10	36081178	2022	Regulatory network of BLIMP1, IRF4, and XBP1 triad in plasmacytic differentiation and mult
+ssc_M4_015	M4	10	28847903	2018	T Helper Cell Differentiation, Heterogeneity, and Plasticity
+ssc_M1_013	M1	10	38836630	2024	Single-cell RNA sequencing identifies interferon-inducible monocytes/macrophages as a cell
+ssc_M1_014	M1	10	37963021	2023	Macrophage autophagy deficiency-induced CEBPB accumulation alleviates atopic dermatitis vi
+ssc_M3_022	M3	10	29931229	2018	RBPJ binds to consensus and methylated cis elements within phased nucleosomes and controls
+ssc_M1_015	M1	10	16737960	2006	TLR8-mediated NF-kappaB and JNK activation are TAK1-independent and MEKK3-dependent

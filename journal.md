@@ -1403,3 +1403,75 @@ Next : S3 (mRSS correlation + demographics) qui est indépendant des blockers da
 les chiffres réconciliés + le headline couverture gated par l'effet ; passage
 littérature co-auteur sur les 44 lignes du registre (priorité M3).
 
+### 14:30 — Passe de profondeur de curation (sourcing littérature de la couche SSc-Tier-1)
+
+> Cf. [[ROADMAP]] § « Curation-depth pass follow-up » + `docs/curation_depth_pass.md`.
+> Suite au constat H1 : la couche SSc originale (85 réactions) n'avait que 40 PMID, 45 en
+> inférence curateur `ECO:0000305`. Plan validé en mode /plan (3 décisions co-auteur :
+> pipeline + propositions PMID, backend NCBI E-utils, reclassement honnête des ponts
+> conceptuels). Exécution P1→P6.
+
+**P1 — schéma** : 3 colonnes ajoutées en fin de `ssc_curated_reactions.tsv`
+(`curation_status`, `candidate_pmids`, `provenance`), additives (wire lit en `DictReader`,
+vérifié). 40 lignes citées backfillées `confirmed`.
+
+**P2 — `scripts/mine_lit_candidates.py`** : miner NCBI E-utils (esearch+esummary) réutilisant
+l'infra de `bib_lookup.py`. Construit 2 requêtes par réaction (contexte SSc + mécanisme
+canonique) à partir des gènes participants + mots-clés mécanisme ; cache
+`curation/lit_candidates/<rid>.json` (offline en re-run). 45 lignes minées. Cible Makefile
+`mine-lit`.
+
+**P3 — assignation vérifiée** (le cœur) : les pools relevance-sort étant bruités (cancer/foie
+hors-sujet), j'ai fait des recherches affinées ciblées + **lecture des abstracts** avant
+toute assignation. Codes ECO selon `mi2cast_checklist.md` : revue fidèle → `ECO:0000033`,
+primaire/SSc → `ECO:0000314`. Bilan :
+- **23 lignes** → PMID `proposed` vérifié (M1×1, M2×5, M3×11, M4×6). Ancres SSc-spécifiques :
+  **16319104** (Smad3 phosphorylé constitutif en fibroblastes sclérodermiques → collagène)
+  et **28062404** (EndoMT en SSc, ancre 5 arêtes M3).
+- **10 lignes** reclassées honnêtement : 4 `conceptual_bridge` (dont les 3 crosstalks
+  inférés), 6 `phenotype_aggregation` (convergences de phénotype, pas des interactions
+  moléculaires uniques) — exclues de la dette, pas de citation forcée.
+- **12 lignes** laissées `untested` avec pool de candidats (pas de papier primaire propre ;
+  rejets honnêtes : ex. CD20 sur cellules NK pour MS4A1, vardénafil pour PDE5A).
+
+**P4 — biblio** : 17 nouveaux PMID distincts ajoutés en stubs à `pubmed_corpus.bib`, remplis
+via `bib_lookup.py` (titre/journal/année/auteurs), validés par `check_bib.py` (seuls les 3
+TODO pré-existants Aghakhani/Singh/Tabib restent, hors périmètre).
+
+**P5 — sync + audit + lint** :
+- `wire` **skip** les reaction_id existants (ligne 325) → re-wiring inopérant et fragile.
+  Plus sûr : sync direct des 85 lignes SSc de `reaction_evidence.tsv` depuis la source de
+  vérité (23 lignes mises à jour).
+- **Bug de double-comptage corrigé** dans `evidence_audit.py` : les 244 lignes =
+  **159 Reactome purs + 85 SSc** (les 85 sont dans les deux fichiers). Backbone recalculé à
+  159 (était étiqueté 244 à tort, idem manuscrit « 329 = 244+85 » → faux). Ajout ventilation
+  `curation_status`.
+- Nouveau garde-fou `scripts/check_evidence_depth.py` (`make evidence-lint`, job CI
+  `evidence-depth`) : échoue sur **dette non déclarée** (305 + sans-PMID + statut non triagé),
+  pas sur les `untested` (backlog suivi). Break-test : échoue bien sur statut vide, repasse
+  vert restauré.
+
+**P6 — docs** : `docs/curation_depth_pass.md` (méthode + discipline d'intégrité),
+`NUMBERS_RECONCILIATION.md` rafraîchi (correction 244 vs 159+85), ROADMAP + ce journal.
+
+**Résultat** :
+
+| Couche SSc-Tier-1 (85) | avant | après |
+|---|---|---|
+| PMID primaire | 40 (47%) | **63 (74.1%)** |
+| ECO expérimental/revue | 39 (46%) | **47 (55.3%)** |
+| Dette d'inférence non déclarée | 45 | **0** |
+| reaction_evidence PMID | 198/244 | **221/244 (90.6%)** |
+
+`make preflight` toujours vert (carte 526/260 intacte, 1 advisory dangling inchangé).
+Statuts : confirmed 40, proposed 23, conceptual_bridge 4, phenotype_aggregation 6, untested 12.
+
+**Garde-fou d'intégrité** : aucun PMID inventé (tous réels, abstract lu) ; `proposed` ≠
+validé (compté séparément), la ratification co-auteur reste l'étape HUMAN irréductible —
+mais elle passe de « sourcer 45 lignes » à « ratifier 23 propositions + confirmer 10
+reclassements + traiter 12 backlog ».
+
+**Next** : ratification co-auteur (`proposed`→`confirmed`) ; regénérer le SBML MIRIAM
+(`inject_miriam.py`) pour embarquer les nouveaux PMID au moment du tag ; mettre le manuscrit
+§2.3/§2.4 à jour une fois les `proposed` ratifiés.
+

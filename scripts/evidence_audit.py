@@ -128,7 +128,11 @@ def main() -> None:
             )
         return rows
 
-    backbone_rows = layer_stats(re_df, "evidence_code", "pmid", "reactome_backbone")
+    # The 85 SSc rows are present in BOTH reaction_evidence.tsv and
+    # ssc_curated_reactions.tsv. To avoid double-counting, "backbone" is the
+    # pure-Reactome remainder (reaction_id not starting with "ssc_").
+    backbone_df = re_df[~re_df["reaction_id"].str.startswith("ssc_")].copy()
+    backbone_rows = layer_stats(backbone_df, "evidence_code", "pmid", "reactome_backbone")
     ssc_rows = layer_stats(ssc_df, "evidence_code", "pmid", "ssc_tier1")
     strat = pd.DataFrame(backbone_rows + ssc_rows)
     strat = strat.sort_values(["layer", "evidence_code"]).reset_index(drop=True)
@@ -158,9 +162,13 @@ def main() -> None:
             "type_distribution_after": re_df["type"].str.strip().value_counts().to_dict(),
         },
         "provenance": {
-            "reactome_backbone": layer_summary(re_df, "pmid"),
+            "reactome_backbone": layer_summary(backbone_df, "pmid"),
             "ssc_tier1": layer_summary(ssc_df, "pmid"),
         },
+        "ssc_curation_status": (
+            ssc_df["curation_status"].str.strip().replace("", "(unset)").value_counts().to_dict()
+            if "curation_status" in ssc_df.columns else {}
+        ),
         "inferences": inferences,
     }
     (OUT_DIR / "evidence_stratification.json").write_text(json.dumps(summary, indent=2))
@@ -179,7 +187,7 @@ def main() -> None:
     md.append("| Layer | Reactions | With PMID | Experimental ECO (314/270/353) |")
     md.append("|---|---|---|---|")
     md.append(
-        f"| **Reactome backbone** (`reaction_evidence.tsv`) | {bb['n_reactions']} | "
+        f"| **Reactome backbone** (pure-Reactome rows of `reaction_evidence.tsv`) | {bb['n_reactions']} | "
         f"{bb['n_with_pmid']} ({bb['pct_with_pmid']}%) | {bb['n_experimental_eco']} ({bb['pct_experimental_eco']}%) |"
     )
     md.append(
@@ -195,6 +203,21 @@ def main() -> None:
         "experimental ECO code. This is the honest denominator for 'how much new SSc "
         "curation does this resource contribute'.\n"
     )
+    status = summary.get("ssc_curation_status", {})
+    if status:
+        md.append("## 1b. SSc-Tier-1 curation status (depth pass)\n")
+        md.append(
+            "Each SSc reaction carries a `curation_status`. `proposed` rows received a "
+            "literature-mined, abstract-verified citation pending co-author ratification; "
+            "`conceptual_bridge`/`phenotype_aggregation` are honest reclassifications of "
+            "cell-state assertions that are not single molecular interactions (not citation "
+            "debt); `untested` rows still need a primary citation and carry a candidate pool.\n"
+        )
+        md.append("| status | n |")
+        md.append("|---|---|")
+        for s, c in sorted(status.items(), key=lambda kv: -kv[1]):
+            md.append(f"| {s} | {c} |")
+        md.append("")
     md.append("## 2. TODO reaction-type classification\n")
     tc = summary["todo_classification"]
     md.append(

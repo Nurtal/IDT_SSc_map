@@ -1,0 +1,111 @@
+{
+  "reaction_id": "ssc_M1_013",
+  "module": "M1",
+  "mechanism": "IRF7 cytosolic phospho-form translocates to nucleus",
+  "queries": {
+    "canonical": "IRF7[tiab] AND cytosolic[tiab]",
+    "ssc_context": "IRF7[tiab] AND (\"systemic sclerosis\"[tiab] OR scleroderma[tiab] OR fibrosis[tiab])"
+  },
+  "candidates": [
+    {
+      "pmid": "38836630",
+      "title": "Single-cell RNA sequencing identifies interferon-inducible monocytes/macrophages as a cellular target for mitigating the progression of abdominal aortic aneurysm and rupture risk",
+      "journal": "Cardiovasc Res",
+      "year": "2024",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 0
+    },
+    {
+      "pmid": "34282151",
+      "title": "Myofibroblast transcriptome indicates SFRP2(hi) fibroblast progenitors in systemic sclerosis skin",
+      "journal": "Nat Commun",
+      "year": "2021",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 0
+    },
+    {
+      "pmid": "37979047",
+      "title": "Cytosolic nucleic acid sensing and mitochondrial transcriptomic changes as early triggers of metabolic disease in db/db mice",
+      "journal": "Mamm Genome",
+      "year": "2024",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 1
+    },
+    {
+      "pmid": "39985573",
+      "title": "Irf7 aggravates prostatitis by promoting Hif-1\u03b1-mediated glycolysis to facilitate M1 polarization",
+      "journal": "Cell Mol Life Sci",
+      "year": "2025",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 1
+    },
+    {
+      "pmid": "19479062",
+      "title": "TRAF6 establishes innate immune responses by activating NF-kappaB and IRF7 upon sensing cytosolic viral RNA and DNA",
+      "journal": "PLoS One",
+      "year": "2009",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 2
+    },
+    {
+      "pmid": "36450710",
+      "title": "The E3 ubiquitin ligase WWP2 regulates pro-fibrogenic monocyte infiltration and activity in heart fibrosis",
+      "journal": "Nat Commun",
+      "year": "2022",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 2
+    },
+    {
+      "pmid": "26259872",
+      "title": "ISG15 counteracts Listeria monocytogenes infection",
+      "journal": "Elife",
+      "year": "2015",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 3
+    },
+    {
+      "pmid": "38814825",
+      "title": "Mice Hepatic Organoids for Modeling Nonalcoholic Fatty Liver Disease and Drug Response",
+      "journal": "Stem Cells Dev",
+      "year": "2024",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 3
+    },
+    {
+      "pmid": "30337468",
+      "title": "Mycobacterium tuberculosis-induced IFN-\u03b2 production requires cytosolic DNA and RNA sensing pathways",
+      "journal": "J Exp Med",
+      "year": "2018",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 4
+    },
+    {
+      "pmid": "32826477",
+      "title": "Systemic sclerosis pathogenesis: contribution of recent advances in genetics",
+      "journal": "Curr Opin Rheumatol",
+      "year": "2020",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 4
+    }
+  ]
+}

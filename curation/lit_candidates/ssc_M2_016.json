@@ -1,0 +1,111 @@
+{
+  "reaction_id": "ssc_M2_016",
+  "module": "M2",
+  "mechanism": "ECM stiffness activates RHOA \u2192 ROCK1/2 \u2192 YAP1/TAZ nuclear translocation",
+  "queries": {
+    "canonical": "RHOA[tiab] AND ROCK1[tiab]",
+    "ssc_context": "RHOA[tiab] AND (\"systemic sclerosis\"[tiab] OR scleroderma[tiab] OR fibrosis[tiab])"
+  },
+  "candidates": [
+    {
+      "pmid": "37032648",
+      "title": "Paeonol alleviates neuropathic pain by modulating microglial M1 and M2 polarization via the RhoA/p38MAPK signaling pathway",
+      "journal": "CNS Neurosci Ther",
+      "year": "2023",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 0
+    },
+    {
+      "pmid": "35273164",
+      "title": "Signaling pathways and targeted therapy for myocardial infarction",
+      "journal": "Signal Transduct Target Ther",
+      "year": "2022",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 0
+    },
+    {
+      "pmid": "38499763",
+      "title": "Activation of GPR81 by lactate drives tumour-induced cachexia",
+      "journal": "Nat Metab",
+      "year": "2024",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 1
+    },
+    {
+      "pmid": "36918564",
+      "title": "Deficiency of gluconeogenic enzyme PCK1 promotes metabolic-associated fatty liver disease through PI3K/AKT/PDGF axis activation in male mice",
+      "journal": "Nat Commun",
+      "year": "2023",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 1
+    },
+    {
+      "pmid": "39392399",
+      "title": "Gastric Cancer Actively Remodels Mechanical Microenvironment to Promote Chemotherapy Resistance via MSCs-Mediated Mitochondrial Transfer",
+      "journal": "Adv Sci (Weinh)",
+      "year": "2024",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 2
+    },
+    {
+      "pmid": "38212077",
+      "title": "Sfrp1 inhibits lung fibroblast invasion during transition to injury-induced myofibroblasts",
+      "journal": "Eur Respir J",
+      "year": "2024",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 2
+    },
+    {
+      "pmid": "39497162",
+      "title": "Critical role of ROCK1 in AD pathogenesis via controlling lysosomal biogenesis and acidification",
+      "journal": "Transl Neurodegener",
+      "year": "2024",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 3
+    },
+    {
+      "pmid": "37867255",
+      "title": "Actomyosin Activity and Piezo1 Activity Synergistically Drive Urinary System Fibroblast Activation",
+      "journal": "Adv Sci (Weinh)",
+      "year": "2023",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 3
+    },
+    {
+      "pmid": "37244125",
+      "title": "HDAC3 deficiency protects against acute lung injury by maintaining epithelial barrier integrity through preserving mitochondrial quality control",
+      "journal": "Redox Biol",
+      "year": "2023",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 4
+    },
+    {
+      "pmid": "39781462",
+      "title": "TAGLN-RhoA/ROCK2-SLC2A3-mediated Mechano-metabolic Axis Promotes Skin Fibrosis",
+      "journal": "Int J Biol Sci",
+      "year": "2025",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 4
+    }
+  ]
+}

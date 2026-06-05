@@ -174,7 +174,15 @@ inference-register:  ## H3: register of curator-inference (no-PMID) SSc reaction
 	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/build_inference_register.py; \
 	else $(PYTHON) scripts/build_inference_register.py; fi
 
-harden: evidence-audit coverage-sensitivity inference-register  ## Run the full v1.1 hardening sprint (H1-H3, offline).
+mine-lit:  ## Discover candidate PMIDs for the curator-inference SSc reactions (NCBI E-utils).
+	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/mine_lit_candidates.py; \
+	else $(PYTHON) scripts/mine_lit_candidates.py; fi
+
+evidence-lint:  ## CI guard: every SSc reaction must be explicitly triaged (no undeclared inference debt).
+	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/check_evidence_depth.py; \
+	else $(PYTHON) scripts/check_evidence_depth.py; fi
+
+harden: evidence-audit coverage-sensitivity inference-register evidence-lint  ## Run the full v1.1 hardening sprint (H1-H3, offline).
 	@echo "[harden] v1.1 hardening sprint complete — see analysis/curation/, analysis/overlay/coverage_sensitivity.*, curation/curator_inference_register.*"
 
 celldesigner-check:  ## Static CellDesigner-loadability test (incl. CaSQ smoke).

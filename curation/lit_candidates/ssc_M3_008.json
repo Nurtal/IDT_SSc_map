@@ -1,0 +1,111 @@
+{
+  "reaction_id": "ssc_M3_008",
+  "module": "M3",
+  "mechanism": "VEGFA binds KDR (VEGFR2) on endothelial cells",
+  "queries": {
+    "canonical": "VEGFA[tiab] AND KDR[tiab]",
+    "ssc_context": "VEGFA[tiab] AND (\"systemic sclerosis\"[tiab] OR scleroderma[tiab] OR fibrosis[tiab])"
+  },
+  "candidates": [
+    {
+      "pmid": "38029740",
+      "title": "VEGFA mRNA-LNP promotes biliary epithelial cell-to-hepatocyte conversion in acute and chronic liver diseases and reverses steatosis and fibrosis",
+      "journal": "Cell Stem Cell",
+      "year": "2023",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 0
+    },
+    {
+      "pmid": "39201294",
+      "title": "Pathophysiological Mechanisms of Peritoneal Fibrosis and Peritoneal Membrane Dysfunction in Peritoneal Dialysis",
+      "journal": "Int J Mol Sci",
+      "year": "2024",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 0
+    },
+    {
+      "pmid": "30173249",
+      "title": "Vascular endothelial growth factor (VEGF) - key factor in normal and pathological angiogenesis",
+      "journal": "Rom J Morphol Embryol",
+      "year": "2018",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 1
+    },
+    {
+      "pmid": "37666859",
+      "title": "Exploring the role and mechanism of Astragalus membranaceus and radix paeoniae rubra in idiopathic pulmonary fibrosis through network pharmacology and experimental validation",
+      "journal": "Sci Rep",
+      "year": "2023",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 1
+    },
+    {
+      "pmid": "39915484",
+      "title": "Single-cell atlas of human pancreatic islet and acinar endothelial cells in health and diabetes",
+      "journal": "Nat Commun",
+      "year": "2025",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 2
+    },
+    {
+      "pmid": "39327553",
+      "title": "\u03b1-Klotho prevents diabetic retinopathy by reversing the senescence of macrophages",
+      "journal": "Cell Commun Signal",
+      "year": "2024",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 2
+    },
+    {
+      "pmid": "20641842",
+      "title": "(89)Zr-N-Succinyldesferrioxamine-bevacizumab",
+      "journal": "",
+      "year": "2004",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 3
+    },
+    {
+      "pmid": "35372585",
+      "title": "Using Network Pharmacology to Explore the Mechanism of Panax notoginseng in the Treatment of Myocardial Fibrosis",
+      "journal": "J Diabetes Res",
+      "year": "2022",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 3
+    },
+    {
+      "pmid": "39477683",
+      "title": "Atractylenolide I inhibits angiogenesis and reverses sunitinib resistance in clear cell renal cell carcinoma through ATP6V0D2-mediated autophagic degradation of EPAS1/HIF2\u03b1",
+      "journal": "Autophagy",
+      "year": "2025",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 4
+    },
+    {
+      "pmid": "38841857",
+      "title": "Molecular Changes Implicate Angiogenesis and Arterial Remodeling in Systemic Sclerosis-Associated and Idiopathic Pulmonary Hypertension",
+      "journal": "Arterioscler Thromb Vasc Biol",
+      "year": "2024",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 4
+    }
+  ]
+}

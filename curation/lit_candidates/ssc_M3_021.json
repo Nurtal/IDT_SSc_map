@@ -1,0 +1,102 @@
+{
+  "reaction_id": "ssc_M3_021",
+  "module": "M3",
+  "mechanism": "SMAD3 + Notch (NICD1) cooperatively induces ZEB2",
+  "queries": {
+    "canonical": "SMAD3[tiab] AND SMAD4[tiab]",
+    "ssc_context": "SMAD3[tiab] AND (\"systemic sclerosis\"[tiab] OR scleroderma[tiab] OR fibrosis[tiab])"
+  },
+  "candidates": [
+    {
+      "pmid": "26747705",
+      "title": "TGF-\u03b2/SMAD Pathway and Its Regulation in Hepatic Fibrosis",
+      "journal": "J Histochem Cytochem",
+      "year": "2016",
+      "found_by": [
+        "canonical",
+        "ssc_context"
+      ],
+      "best_rank": 0
+    },
+    {
+      "pmid": "35541902",
+      "title": "Smad3 Signatures in Renal Inflammation and Fibrosis",
+      "journal": "Int J Biol Sci",
+      "year": "2022",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 0
+    },
+    {
+      "pmid": "40064862",
+      "title": "A positive feedback loop between SMAD3 and PINK1 in regulation of mitophagy",
+      "journal": "Cell Discov",
+      "year": "2025",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 1
+    },
+    {
+      "pmid": "37913894",
+      "title": "An NFATc1/SMAD3/cJUN Complex Restricted to SMAD4-Deficient Pancreatic Cancer Guides Rational Therapies",
+      "journal": "Gastroenterology",
+      "year": "2024",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 2
+    },
+    {
+      "pmid": "35791881",
+      "title": "P2Y12 inhibitor clopidogrel inhibits renal fibrosis by blocking macrophage-to-myofibroblast transition",
+      "journal": "Mol Ther",
+      "year": "2022",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 2
+    },
+    {
+      "pmid": "39578449",
+      "title": "A stepwise mode of TGF\u03b2-SMAD signaling and DNA methylation regulates na\u00efve-to-primed pluripotency and differentiation",
+      "journal": "Nat Commun",
+      "year": "2024",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 3
+    },
+    {
+      "pmid": "39346543",
+      "title": "Knocking out USP7 attenuates cardiac fibrosis and endothelial-to-mesenchymal transition by destabilizing SMAD3 in mice with heart failure with preserved ejection fraction",
+      "journal": "Theranostics",
+      "year": "2024",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 3
+    },
+    {
+      "pmid": "30659096",
+      "title": "SMAD family member 3 (SMAD3) and SMAD4 repress HIF2\u03b1-dependent iron-regulatory genes",
+      "journal": "J Biol Chem",
+      "year": "2019",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 4
+    },
+    {
+      "pmid": "34282151",
+      "title": "Myofibroblast transcriptome indicates SFRP2(hi) fibroblast progenitors in systemic sclerosis skin",
+      "journal": "Nat Commun",
+      "year": "2021",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 4
+    }
+  ]
+}

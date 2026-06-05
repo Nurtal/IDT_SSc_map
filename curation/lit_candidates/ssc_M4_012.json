@@ -1,0 +1,111 @@
+{
+  "reaction_id": "ssc_M4_012",
+  "module": "M4",
+  "mechanism": "BAFF (TNFSF13B) + APRIL (TNFSF13) bind BCMA on plasma cells",
+  "queries": {
+    "canonical": "BAFF[tiab] AND BCMA[tiab]",
+    "ssc_context": "BAFF[tiab] AND (\"systemic sclerosis\"[tiab] OR scleroderma[tiab] OR fibrosis[tiab])"
+  },
+  "candidates": [
+    {
+      "pmid": "38990948",
+      "title": "Unique and redundant roles of mouse BCMA, TACI, BAFF, APRIL, and IL-6 in supporting antibody-producing cells in different tissues",
+      "journal": "Proc Natl Acad Sci U S A",
+      "year": "2024",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 0
+    },
+    {
+      "pmid": "40592721",
+      "title": "New horizons in systemic sclerosis treatment: advances and emerging therapies in 2025",
+      "journal": "RMD Open",
+      "year": "2025",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 0
+    },
+    {
+      "pmid": "23684423",
+      "title": "The BAFF/APRIL system: emerging functions beyond B cell biology and autoimmunity",
+      "journal": "Cytokine Growth Factor Rev",
+      "year": "2013",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 1
+    },
+    {
+      "pmid": "39327767",
+      "title": "B cell targeting in IgA nephropathy",
+      "journal": "Nephrology (Carlton)",
+      "year": "2024",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 1
+    },
+    {
+      "pmid": "40993243",
+      "title": "Co-infusion of CD19-targeting and BCMA-targeting CAR-T cells for treatment-refractory systemic lupus erythematosus: a phase 1 trial",
+      "journal": "Nat Med",
+      "year": "2025",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 2
+    },
+    {
+      "pmid": "37442744",
+      "title": "Targeted therapy in glomerular diseases",
+      "journal": "J Formos Med Assoc",
+      "year": "2024",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 2
+    },
+    {
+      "pmid": "39425894",
+      "title": "Juvenile Dermatomyositis: Updates in Pathogenesis and Biomarkers, Current Treatment, and Emerging Targeted Therapies",
+      "journal": "Paediatr Drugs",
+      "year": "2025",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 3
+    },
+    {
+      "pmid": "30009261",
+      "title": "BAFF inhibition attenuates fibrosis in scleroderma by modulating the regulatory and effector B cell balance",
+      "journal": "Sci Adv",
+      "year": "2018",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 3
+    },
+    {
+      "pmid": "36026513",
+      "title": "Changes in Bone Marrow Tumor and Immune Cells Correlate with Durability of Remissions Following BCMA CAR T Therapy in Myeloma",
+      "journal": "Blood Cancer Discov",
+      "year": "2022",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 4
+    },
+    {
+      "pmid": "29343447",
+      "title": "Altered B lymphocyte homeostasis and functions in systemic sclerosis",
+      "journal": "Autoimmun Rev",
+      "year": "2018",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 4
+    }
+  ]
+}

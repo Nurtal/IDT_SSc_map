@@ -1,0 +1,111 @@
+{
+  "reaction_id": "ssc_M3_007",
+  "module": "M3",
+  "mechanism": "HIF1A induces EDN1 and VEGFA transcription",
+  "queries": {
+    "canonical": "HIF1A[tiab] AND EDN1[tiab]",
+    "ssc_context": "HIF1A[tiab] AND (\"systemic sclerosis\"[tiab] OR scleroderma[tiab] OR fibrosis[tiab])"
+  },
+  "candidates": [
+    {
+      "pmid": "31734650",
+      "title": "Hypoxic regulation of EDN1, EDNRA, EDNRB, and ECE1 gene expressions in ERN1 knockdown U87 glioma cells",
+      "journal": "Endocr Regul",
+      "year": "2019",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 0
+    },
+    {
+      "pmid": "34762860",
+      "title": "Hif-1a suppresses ROS-induced proliferation of cardiac fibroblasts following myocardial infarction",
+      "journal": "Cell Stem Cell",
+      "year": "2022",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 0
+    },
+    {
+      "pmid": "32968110",
+      "title": "Hepatic lipocalin 2 promotes liver fibrosis and portal hypertension",
+      "journal": "Sci Rep",
+      "year": "2020",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 1
+    },
+    {
+      "pmid": "37666859",
+      "title": "Exploring the role and mechanism of Astragalus membranaceus and radix paeoniae rubra in idiopathic pulmonary fibrosis through network pharmacology and experimental validation",
+      "journal": "Sci Rep",
+      "year": "2023",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 1
+    },
+    {
+      "pmid": "37373979",
+      "title": "Analysis of Inflammation-Related Genes in Patients with Stanford Type A Aortic Dissection",
+      "journal": "J Pers Med",
+      "year": "2023",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 2
+    },
+    {
+      "pmid": "39772774",
+      "title": "Hypoxia-inducible factor 2 regulates alveolar regeneration after repetitive injury in three-dimensional cellular and in vivo models",
+      "journal": "Sci Transl Med",
+      "year": "2025",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 2
+    },
+    {
+      "pmid": "38509125",
+      "title": "Transfection of hypoxia-inducible factor-1\u03b1 mRNA upregulates the expression of genes encoding angiogenic growth factors",
+      "journal": "Sci Rep",
+      "year": "2024",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 3
+    },
+    {
+      "pmid": "41344160",
+      "title": "Oxidative hypoxia drives TGF-\u03b21-induced fibrosis under normoxia",
+      "journal": "Redox Biol",
+      "year": "2026",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 3
+    },
+    {
+      "pmid": "38298716",
+      "title": "HIF-1A as a prognostic biomarker related to invasion, migration and immunosuppression of cervical cancer",
+      "journal": "Heliyon",
+      "year": "2024",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 4
+    },
+    {
+      "pmid": "38953555",
+      "title": "Inhibition of hypoxia-inducible factors suppresses subretinal fibrosis",
+      "journal": "FASEB J",
+      "year": "2024",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 4
+    }
+  ]
+}

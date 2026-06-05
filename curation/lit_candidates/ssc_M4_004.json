@@ -1,0 +1,111 @@
+{
+  "reaction_id": "ssc_M4_004",
+  "module": "M4",
+  "mechanism": "Phospho-STAT6 dimerises and translocates to nucleus",
+  "queries": {
+    "canonical": "STAT6[tiab] AND phospho[tiab]",
+    "ssc_context": "STAT6[tiab] AND (\"systemic sclerosis\"[tiab] OR scleroderma[tiab] OR fibrosis[tiab])"
+  },
+  "candidates": [
+    {
+      "pmid": "33293423",
+      "title": "IL-4/STAT6 signaling facilitates innate hematoma resolution and neurological recovery after hemorrhagic stroke in mice",
+      "journal": "Proc Natl Acad Sci U S A",
+      "year": "2020",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 0
+    },
+    {
+      "pmid": "38773984",
+      "title": "Nicotinamide phosphoribosyltransferase prompts bleomycin-induced pulmonary fibrosis by driving macrophage M2 polarization in mice",
+      "journal": "Theranostics",
+      "year": "2024",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 0
+    },
+    {
+      "pmid": "38906855",
+      "title": "Co-targeting JAK1/STAT6/GAS6/TAM signaling improves chemotherapy efficacy in Ewing sarcoma",
+      "journal": "Nat Commun",
+      "year": "2024",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 1
+    },
+    {
+      "pmid": "39781451",
+      "title": "USP25 stabilizes STAT6 to promote IL-4-induced macrophage M2 polarization and fibrosis",
+      "journal": "Int J Biol Sci",
+      "year": "2025",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 1
+    },
+    {
+      "pmid": "31123330",
+      "title": "Ras suppressor-1 (RSU-1) promotes cell invasion in aggressive glioma cells and inhibits it in non-aggressive cells through STAT6 phospho-regulation",
+      "journal": "Sci Rep",
+      "year": "2019",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 2
+    },
+    {
+      "pmid": "36757802",
+      "title": "IL-13RA2 downregulation in fibroblasts promotes keloid fibrosis via JAK/STAT6 activation",
+      "journal": "JCI Insight",
+      "year": "2023",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 2
+    },
+    {
+      "pmid": "31111215",
+      "title": "Modulation of phospho-proteins by interferon-alpha and valproic acid in acute myeloid leukemia",
+      "journal": "J Cancer Res Clin Oncol",
+      "year": "2019",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 3
+    },
+    {
+      "pmid": "33144678",
+      "title": "IL-24 deficiency protects mice against bleomycin-induced pulmonary fibrosis by repressing IL-4-induced M2 program in macrophages",
+      "journal": "Cell Death Differ",
+      "year": "2021",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 3
+    },
+    {
+      "pmid": "38087324",
+      "title": "Interleukin-30 subverts prostate cancer-endothelium crosstalk by fostering angiogenesis and activating immunoregulatory and oncogenic signaling pathways",
+      "journal": "J Exp Clin Cancer Res",
+      "year": "2023",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 4
+    },
+    {
+      "pmid": "37029114",
+      "title": "Enhancer of zeste homolog 2 promotes renal fibrosis after acute kidney injury by inducing epithelial-mesenchymal transition and activation of M2 macrophage polarization",
+      "journal": "Cell Death Dis",
+      "year": "2023",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 4
+    }
+  ]
+}

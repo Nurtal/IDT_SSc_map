@@ -1,0 +1,93 @@
+{
+  "reaction_id": "ssc_M2_015",
+  "module": "M2",
+  "mechanism": "LOX/LOXL2 cross-link collagens, stiffen ECM",
+  "queries": {
+    "canonical": "LOX[tiab] AND LOXL2[tiab]",
+    "ssc_context": "LOX[tiab] AND (\"systemic sclerosis\"[tiab] OR scleroderma[tiab] OR fibrosis[tiab])"
+  },
+  "candidates": [
+    {
+      "pmid": "32176358",
+      "title": "Lysyl Oxidase (LOX) Family Members: Rationale and Their Potential as Therapeutic Targets for Liver Fibrosis",
+      "journal": "Hepatology",
+      "year": "2020",
+      "found_by": [
+        "canonical",
+        "ssc_context"
+      ],
+      "best_rank": 0
+    },
+    {
+      "pmid": "37328872",
+      "title": "Mesenchymal stem cell-derived exosomal miR-27b-3p alleviates liver fibrosis via downregulating YAP/LOXL2 pathway",
+      "journal": "J Nanobiotechnology",
+      "year": "2023",
+      "found_by": [
+        "canonical",
+        "ssc_context"
+      ],
+      "best_rank": 1
+    },
+    {
+      "pmid": "38283827",
+      "title": "LOX, but not LOXL2, promotes bone metastasis formation and bone destruction in triple-negative breast cancer",
+      "journal": "J Bone Oncol",
+      "year": "2024",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 2
+    },
+    {
+      "pmid": "39373248",
+      "title": "Fibroblast-specific TGF-\u03b2 signaling mediates cardiac dysfunction, fibrosis, and hypertrophy in obese diabetic mice",
+      "journal": "Cardiovasc Res",
+      "year": "2024",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 2
+    },
+    {
+      "pmid": "40186284",
+      "title": "Machine learning-based in-silico analysis identifies signatures of lysyl oxidases for prognostic and therapeutic response prediction in cancer",
+      "journal": "Cell Commun Signal",
+      "year": "2025",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 3
+    },
+    {
+      "pmid": "40753090",
+      "title": "Inhibition of epithelial cell YAP-TEAD/LOX signaling attenuates pulmonary fibrosis in preclinical models",
+      "journal": "Nat Commun",
+      "year": "2025",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 3
+    },
+    {
+      "pmid": "36197797",
+      "title": "Loss of LOXL2 Promotes Uterine Hypertrophy and Tumor Progression by Enhancing H3K36ac-Dependent Gene Expression",
+      "journal": "Cancer Res",
+      "year": "2022",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 4
+    },
+    {
+      "pmid": "35730208",
+      "title": "Auranofin attenuates hepatic steatosis and fibrosis in nonalcoholic fatty liver disease via NRF2 and NF- \u03baB signaling pathways",
+      "journal": "Clin Mol Hepatol",
+      "year": "2022",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 4
+    }
+  ]
+}

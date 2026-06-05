@@ -1,0 +1,111 @@
+{
+  "reaction_id": "ssc_M3_016",
+  "module": "M3",
+  "mechanism": "ANGPT2 competes with ANGPT1 at TEK, destabilises endothelium",
+  "queries": {
+    "canonical": "ANGPT2[tiab] AND TEK[tiab]",
+    "ssc_context": "ANGPT2[tiab] AND (\"systemic sclerosis\"[tiab] OR scleroderma[tiab] OR fibrosis[tiab])"
+  },
+  "candidates": [
+    {
+      "pmid": "33375813",
+      "title": "Single-Cell Analysis of Blood-Brain Barrier Response to Pericyte Loss",
+      "journal": "Circ Res",
+      "year": "2021",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 0
+    },
+    {
+      "pmid": "38299345",
+      "title": "Proteomic Associations of NT-proBNP (N-Terminal Pro-B-Type Natriuretic Peptide) in Heart Failure With Preserved Ejection Fraction",
+      "journal": "Circ Heart Fail",
+      "year": "2024",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 0
+    },
+    {
+      "pmid": "39206543",
+      "title": "Glaucoma-Protective Human Single-Nucleotide Polymorphism in the Angpt2 Locus Increased ANGPT2 Expression and Schlemm Canal Area in Mice-Brief Report",
+      "journal": "Arterioscler Thromb Vasc Biol",
+      "year": "2024",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 1
+    },
+    {
+      "pmid": "38820174",
+      "title": "Loss-of-function mutations of the TIE1 receptor tyrosine kinase cause late-onset primary lymphedema",
+      "journal": "J Clin Invest",
+      "year": "2024",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 1
+    },
+    {
+      "pmid": "41035073",
+      "title": "Molecular hallmarks of excitatory and inhibitory neuronal resilience to Alzheimer's disease",
+      "journal": "Mol Neurodegener",
+      "year": "2025",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 2
+    },
+    {
+      "pmid": "34643357",
+      "title": "Preliminary observations on ANGPT1 and ANGPT2 polymorphisms in systemic sclerosis: ANGPT2 rs2442598 and rs3739390 are associated with disease susceptibility and diffuse disease subtype",
+      "journal": "Pol Arch Intern Med",
+      "year": "2021",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 2
+    },
+    {
+      "pmid": "28045923",
+      "title": "Germline Genetic Variants in TEK, ANGPT1, ANGPT2, MMP9, FGF2 and VEGFA Are Associated with Pathologic Complete Response to Bevacizumab in Breast Cancer Patients",
+      "journal": "PLoS One",
+      "year": "2017",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 3
+    },
+    {
+      "pmid": "41979897",
+      "title": "Cell-Specific Roles of Angiopoietin-2 in CKD",
+      "journal": "J Am Soc Nephrol",
+      "year": "2026",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 3
+    },
+    {
+      "pmid": "40370455",
+      "title": "IFN-\u03b3-mediated suppression of ANGPT2-Tie2 in endothelial cells facilitates tumor vascular normalization during immunotherapy",
+      "journal": "Front Immunol",
+      "year": "2025",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 4
+    },
+    {
+      "pmid": "37611550",
+      "title": "The Role of Vascular Biomarkers in Outcomes of Patients with Kidney Disease",
+      "journal": "Nephron",
+      "year": "2023",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 4
+    }
+  ]
+}

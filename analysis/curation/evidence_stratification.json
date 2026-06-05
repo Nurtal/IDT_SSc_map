@@ -21,19 +21,26 @@
   },
   "provenance": {
     "reactome_backbone": {
-      "n_reactions": 244,
-      "n_with_pmid": 198,
-      "pct_with_pmid": 81.1,
-      "n_experimental_eco": 39,
-      "pct_experimental_eco": 16.0
+      "n_reactions": 159,
+      "n_with_pmid": 158,
+      "pct_with_pmid": 99.4,
+      "n_experimental_eco": 0,
+      "pct_experimental_eco": 0.0
     },
     "ssc_tier1": {
       "n_reactions": 85,
-      "n_with_pmid": 40,
-      "pct_with_pmid": 47.1,
-      "n_experimental_eco": 39,
-      "pct_experimental_eco": 45.9
+      "n_with_pmid": 63,
+      "pct_with_pmid": 74.1,
+      "n_experimental_eco": 47,
+      "pct_experimental_eco": 55.3
     }
+  },
+  "ssc_curation_status": {
+    "confirmed": 40,
+    "proposed": 23,
+    "untested": 12,
+    "phenotype_aggregation": 6,
+    "conceptual_bridge": 4
   },
   "inferences": []
 }

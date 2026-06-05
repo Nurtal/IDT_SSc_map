@@ -1,0 +1,111 @@
+{
+  "reaction_id": "ssc_crosstalk_003",
+  "module": "crosstalk",
+  "mechanism": "IFN-I primes pDC and B-cell class switching (M1\u2192M4)",
+  "queries": {
+    "canonical": "PDC[tiab] AND BCR[tiab]",
+    "ssc_context": "PDC[tiab] AND (\"systemic sclerosis\"[tiab] OR scleroderma[tiab] OR fibrosis[tiab])"
+  },
+  "candidates": [
+    {
+      "pmid": "30166420",
+      "title": "Development, Function, and Clinical Significance of Plasmacytoid Dendritic Cells in Chronic Myeloid Leukemia",
+      "journal": "Cancer Res",
+      "year": "2018",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 0
+    },
+    {
+      "pmid": "36053251",
+      "title": "Chronic activation of pDCs in autoimmunity is linked to dysregulated ER stress and metabolic responses",
+      "journal": "J Exp Med",
+      "year": "2022",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 0
+    },
+    {
+      "pmid": "29535732",
+      "title": "The MEK1/2-ERK Pathway Inhibits Type I IFN Production in Plasmacytoid Dendritic Cells",
+      "journal": "Front Immunol",
+      "year": "2018",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 1
+    },
+    {
+      "pmid": "34586589",
+      "title": "Antimitochondrial Antibodies: from Bench to Bedside",
+      "journal": "Clin Rev Allergy Immunol",
+      "year": "2022",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 1
+    },
+    {
+      "pmid": "18022864",
+      "title": "CD303 (BDCA-2) signals in plasmacytoid dendritic cells via a BCR-like signalosome involving Syk, Slp65 and PLCgamma2",
+      "journal": "Eur J Immunol",
+      "year": "2007",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 2
+    },
+    {
+      "pmid": "39670996",
+      "title": "Mechanosensing regulates pDC activation in the skin through NRF2 activation",
+      "journal": "J Exp Med",
+      "year": "2025",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 2
+    },
+    {
+      "pmid": "19266271",
+      "title": "Molecular characterization of human plasmacytoid dendritic cells",
+      "journal": "J Clin Immunol",
+      "year": "2009",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 3
+    },
+    {
+      "pmid": "36715304",
+      "title": "Systemic sclerosis and primary biliary cholangitis share an antibody population with identical specificity",
+      "journal": "Clin Exp Immunol",
+      "year": "2023",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 3
+    },
+    {
+      "pmid": "18050162",
+      "title": "Running to stand still: BCR-like signaling suppresses type I IFN responses in pDC",
+      "journal": "Eur J Immunol",
+      "year": "2007",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 4
+    },
+    {
+      "pmid": "30343706",
+      "title": "Pathophysiology of primary biliary cholangitis",
+      "journal": "Best Pract Res Clin Gastroenterol",
+      "year": "2018",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 4
+    }
+  ]
+}

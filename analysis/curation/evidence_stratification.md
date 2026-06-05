@@ -8,10 +8,22 @@ The integrated map's reaction annotations come from two distinct layers. Conflat
 
 | Layer | Reactions | With PMID | Experimental ECO (314/270/353) |
 |---|---|---|---|
-| **Reactome backbone** (`reaction_evidence.tsv`) | 244 | 198 (81.1%) | 39 (16.0%) |
-| **SSc-Tier-1** (`ssc_curated_reactions.tsv`) | 85 | 40 (47.1%) | 39 (45.9%) |
+| **Reactome backbone** (pure-Reactome rows of `reaction_evidence.tsv`) | 159 | 158 (99.4%) | 0 (0.0%) |
+| **SSc-Tier-1** (`ssc_curated_reactions.tsv`) | 85 | 63 (74.1%) | 47 (55.3%) |
 
-**Read this as:** the headline reaction count is dominated by the imported Reactome backbone, which propagates `ECO:0000305` (curator inference) by default. The genuinely SSc-specific layer is 85 reactions, of which 40 carry a primary PMID and 39 carry an experimental ECO code. This is the honest denominator for 'how much new SSc curation does this resource contribute'.
+**Read this as:** the headline reaction count is dominated by the imported Reactome backbone, which propagates `ECO:0000305` (curator inference) by default. The genuinely SSc-specific layer is 85 reactions, of which 63 carry a primary PMID and 47 carry an experimental ECO code. This is the honest denominator for 'how much new SSc curation does this resource contribute'.
+
+## 1b. SSc-Tier-1 curation status (depth pass)
+
+Each SSc reaction carries a `curation_status`. `proposed` rows received a literature-mined, abstract-verified citation pending co-author ratification; `conceptual_bridge`/`phenotype_aggregation` are honest reclassifications of cell-state assertions that are not single molecular interactions (not citation debt); `untested` rows still need a primary citation and carry a candidate pool.
+
+| status | n |
+|---|---|
+| confirmed | 40 |
+| proposed | 23 |
+| untested | 12 |
+| phenotype_aggregation | 6 |
+| conceptual_bridge | 4 |
 
 ## 2. TODO reaction-type classification
 
@@ -41,12 +53,10 @@ See `evidence_stratification.tsv`. Per (layer, ECO):
 
 | layer | ECO | n | with PMID | without PMID |
 |---|---|---|---|---|
-| reactome_backbone | ECO:0000270 | 10 | 10 | 0 |
-| reactome_backbone | ECO:0000305 | 204 | 159 | 45 |
-| reactome_backbone | ECO:0000314 | 27 | 27 | 0 |
-| reactome_backbone | ECO:0000353 | 2 | 2 | 0 |
+| reactome_backbone | ECO:0000305 | 158 | 158 | 0 |
 | reactome_backbone | TODO | 1 | 0 | 1 |
+| ssc_tier1 | ECO:0000033 | 15 | 15 | 0 |
 | ssc_tier1 | ECO:0000270 | 10 | 10 | 0 |
-| ssc_tier1 | ECO:0000305 | 46 | 1 | 45 |
-| ssc_tier1 | ECO:0000314 | 27 | 27 | 0 |
+| ssc_tier1 | ECO:0000305 | 23 | 1 | 22 |
+| ssc_tier1 | ECO:0000314 | 35 | 35 | 0 |
 | ssc_tier1 | ECO:0000353 | 2 | 2 | 0 |

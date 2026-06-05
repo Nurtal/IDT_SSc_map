@@ -1,0 +1,111 @@
+{
+  "reaction_id": "ssc_M1_015",
+  "module": "M1",
+  "mechanism": "TLR8 endosomal ssRNA sensing \u2192 MyD88 \u2192 IRF7",
+  "queries": {
+    "canonical": "IRF7[tiab] AND TLR8[tiab]",
+    "ssc_context": "IRF7[tiab] AND (\"systemic sclerosis\"[tiab] OR scleroderma[tiab] OR fibrosis[tiab])"
+  },
+  "candidates": [
+    {
+      "pmid": "16737960",
+      "title": "TLR8-mediated NF-kappaB and JNK activation are TAK1-independent and MEKK3-dependent",
+      "journal": "J Biol Chem",
+      "year": "2006",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 0
+    },
+    {
+      "pmid": "34282151",
+      "title": "Myofibroblast transcriptome indicates SFRP2(hi) fibroblast progenitors in systemic sclerosis skin",
+      "journal": "Nat Commun",
+      "year": "2021",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 0
+    },
+    {
+      "pmid": "23516559",
+      "title": "1,25-Dihydroxyvitamin D3 suppresses TLR8 expression and TLR8-mediated inflammatory responses in monocytes in vitro and experimental autoimmune encephalomyelitis in vivo",
+      "journal": "PLoS One",
+      "year": "2013",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 1
+    },
+    {
+      "pmid": "39985573",
+      "title": "Irf7 aggravates prostatitis by promoting Hif-1\u03b1-mediated glycolysis to facilitate M1 polarization",
+      "journal": "Cell Mol Life Sci",
+      "year": "2025",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 1
+    },
+    {
+      "pmid": "21321205",
+      "title": "Phagosomal signaling by Borrelia burgdorferi in human monocytes involves Toll-like receptor (TLR) 2 and TLR8 cooperativity and TLR8-mediated induction of IFN-beta",
+      "journal": "Proc Natl Acad Sci U S A",
+      "year": "2011",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 2
+    },
+    {
+      "pmid": "36450710",
+      "title": "The E3 ubiquitin ligase WWP2 regulates pro-fibrogenic monocyte infiltration and activity in heart fibrosis",
+      "journal": "Nat Commun",
+      "year": "2022",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 2
+    },
+    {
+      "pmid": "41940040",
+      "title": "LncRNA TLR8-AS1 Restricts HIV-1 Infection and Inflammation in Macrophages by Suppressing Arachidonic Acid Metabolism Through NFAT1",
+      "journal": "J Inflamm Res",
+      "year": "2026",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 3
+    },
+    {
+      "pmid": "39412518",
+      "title": "Unique transcriptomic profile of peripheral blood monocytes in rheumatoid arthritis-associated interstitial lung disease",
+      "journal": "Rheumatology (Oxford)",
+      "year": "2025",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 3
+    },
+    {
+      "pmid": "39940907",
+      "title": "TNF/IFN-\u03b3 Co-Signaling Induces Differential Cellular Activation in COVID-19 Patients: Implications for Patient Outcomes",
+      "journal": "Int J Mol Sci",
+      "year": "2025",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 4
+    },
+    {
+      "pmid": "38814825",
+      "title": "Mice Hepatic Organoids for Modeling Nonalcoholic Fatty Liver Disease and Drug Response",
+      "journal": "Stem Cells Dev",
+      "year": "2024",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 4
+    }
+  ]
+}

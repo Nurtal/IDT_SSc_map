@@ -1,0 +1,111 @@
+{
+  "reaction_id": "ssc_M4_007",
+  "module": "M4",
+  "mechanism": "BCR engagement activates CD79A/CD79B \u2192 SYK/BLK/LYN \u2192 BTK \u2192 PLC\u03b32",
+  "queries": {
+    "canonical": "SYK[tiab] AND BTK[tiab]",
+    "ssc_context": "SYK[tiab] AND (\"systemic sclerosis\"[tiab] OR scleroderma[tiab] OR fibrosis[tiab])"
+  },
+  "candidates": [
+    {
+      "pmid": "33077936",
+      "title": "Kinase inhibition in autoimmunity and inflammation",
+      "journal": "Nat Rev Drug Discov",
+      "year": "2021",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 0
+    },
+    {
+      "pmid": "35551173",
+      "title": "Gefitinib and fostamatinib target EGFR and SYK to attenuate silicosis: a multi-omics study with drug exploration",
+      "journal": "Signal Transduct Target Ther",
+      "year": "2022",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 0
+    },
+    {
+      "pmid": "36030136",
+      "title": "Systemic lupus erythematosus-complicating immune thrombocytopenia: From pathogenesis to treatment",
+      "journal": "J Autoimmun",
+      "year": "2022",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 1
+    },
+    {
+      "pmid": "37756381",
+      "title": "Hepatocyte CYR61 polarizes profibrotic macrophages to orchestrate NASH fibrosis",
+      "journal": "Sci Transl Med",
+      "year": "2023",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 1
+    },
+    {
+      "pmid": "32853177",
+      "title": "Contribution of plasma cells and B cells to hidradenitis suppurativa pathogenesis",
+      "journal": "JCI Insight",
+      "year": "2020",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 2
+    },
+    {
+      "pmid": "39187291",
+      "title": "CD64(+) fibroblast-targeted vilanterol and a STING agonist augment CLDN18.2 BiTEs efficacy against pancreatic cancer by reducing desmoplasia and enriching stem-like CD8(+) T cells",
+      "journal": "Gut",
+      "year": "2024",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 2
+    },
+    {
+      "pmid": "29925955",
+      "title": "A multiprotein supercomplex controlling oncogenic signalling in lymphoma",
+      "journal": "Nature",
+      "year": "2018",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 3
+    },
+    {
+      "pmid": "40857403",
+      "title": "The spleen tyrosine kinase inhibitor entospletinib resolves inflammation to promote repair following acute kidney injury",
+      "journal": "JCI Insight",
+      "year": "2025",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 3
+    },
+    {
+      "pmid": "40385351",
+      "title": "Efficacy and Safety of Syk and BTK Inhibitors in Immune Thrombocytopenia: A Comprehensive Review of Emerging Evidence",
+      "journal": "Mediators Inflamm",
+      "year": "2025",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 4
+    },
+    {
+      "pmid": "40959267",
+      "title": "Dectin-1 is Pathogenic in Chronic Kidney Disease by Promoting Macrophage Infiltration and Transition to Myofibroblast",
+      "journal": "Int J Biol Sci",
+      "year": "2025",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 4
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "reaction_id": "ssc_M4_008",
+  "module": "M4",
+  "mechanism": "CD20 (MS4A1) is the rituximab binding target on mature B cells",
+  "queries": {
+    "canonical": "BCELL[tiab] AND MS4A1[tiab]",
+    "ssc_context": "BCELL[tiab] AND (\"systemic sclerosis\"[tiab] OR scleroderma[tiab] OR fibrosis[tiab])"
+  },
+  "candidates": [
+    {
+      "pmid": "39696439",
+      "title": "Machine learning-based prognostic model of lactylation-related genes for predicting prognosis and immune infiltration in patients with lung adenocarcinoma",
+      "journal": "Cancer Cell Int",
+      "year": "2024",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 0
+    },
+    {
+      "pmid": "38381673",
+      "title": "CD19 CAR T-Cell Therapy in Autoimmune Disease - A Case Series with Follow-up",
+      "journal": "N Engl J Med",
+      "year": "2024",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 0
+    },
+    {
+      "pmid": "32482755",
+      "title": "The regulation and function of CD20: an \"enigma\" of B-cell biology and targeted therapy",
+      "journal": "Haematologica",
+      "year": "2020",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 1
+    },
+    {
+      "pmid": "25481618",
+      "title": "IgG4-related disease",
+      "journal": "Lancet",
+      "year": "2015",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 1
+    },
+    {
+      "pmid": "40710355",
+      "title": "Pathogenesis of Graves' Disease Determined Using Single-Cell Sequencing with Thyroid Autoantigen Peptide Stimulation in B Cells",
+      "journal": "Cells",
+      "year": "2025",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 2
+    },
+    {
+      "pmid": "35131401",
+      "title": "Systemic sclerosis in adults. Part II: management and therapeutics",
+      "journal": "J Am Acad Dermatol",
+      "year": "2022",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 2
+    },
+    {
+      "pmid": "39865939",
+      "title": "PerC B-Cells Activation via Thermogenetics-Based CXCL12 Generator for Intraperitoneal Immunity Against Metastatic Disseminated Tumor Cells",
+      "journal": "Adv Mater",
+      "year": "2025",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 3
+    },
+    {
+      "pmid": "30704705",
+      "title": "Inflammation and immunity in IPF pathogenesis and treatment",
+      "journal": "Respir Med",
+      "year": "2019",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 3
+    },
+    {
+      "pmid": "38745770",
+      "title": "Artificial intelligence and classification of mature lymphoid neoplasms",
+      "journal": "Explor Target Antitumor Ther",
+      "year": "2024",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 4
+    },
+    {
+      "pmid": "19038878",
+      "title": "Stromal gene signatures in large-B-cell lymphomas",
+      "journal": "N Engl J Med",
+      "year": "2008",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 4
+    }
+  ]
+}

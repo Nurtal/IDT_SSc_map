@@ -1,0 +1,111 @@
+{
+  "reaction_id": "ssc_M2_025",
+  "module": "M2",
+  "mechanism": "TAZ enters the YAP1/TAZ active nuclear complex",
+  "queries": {
+    "canonical": "YAP1[tiab] AND TAZ[tiab]",
+    "ssc_context": "YAP1[tiab] AND (\"systemic sclerosis\"[tiab] OR scleroderma[tiab] OR fibrosis[tiab])"
+  },
+  "candidates": [
+    {
+      "pmid": "37934103",
+      "title": "TEAD Inhibition Overcomes YAP1/TAZ-Driven Primary and Acquired Resistance to KRASG12C Inhibitors",
+      "journal": "Cancer Res",
+      "year": "2023",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 0
+    },
+    {
+      "pmid": "38945958",
+      "title": "YAP1 inhibits the senescence of alveolar epithelial cells by targeting Prdx3 to alleviate pulmonary fibrosis",
+      "journal": "Exp Mol Med",
+      "year": "2024",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 0
+    },
+    {
+      "pmid": "39051998",
+      "title": "Hippo pathway-mediated YAP1/TAZ inhibition is essential for proper pancreatic endocrine specification and differentiation",
+      "journal": "Elife",
+      "year": "2024",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 1
+    },
+    {
+      "pmid": "34648896",
+      "title": "Dopamine receptor D2 antagonism normalizes profibrotic macrophage-endothelial crosstalk in non-alcoholic steatohepatitis",
+      "journal": "J Hepatol",
+      "year": "2022",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 1
+    },
+    {
+      "pmid": "32760212",
+      "title": "Role of Hippo-YAP1/TAZ pathway and its crosstalk in cardiac biology",
+      "journal": "Int J Biol Sci",
+      "year": "2020",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 2
+    },
+    {
+      "pmid": "29305935",
+      "title": "Hedgehog-YAP Signaling Pathway Regulates Glutaminolysis to Control Activation of Hepatic Stellate Cells",
+      "journal": "Gastroenterology",
+      "year": "2018",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 2
+    },
+    {
+      "pmid": "35753219",
+      "title": "YAP1/TAZ activity maintains vascular integrity and organismal survival",
+      "journal": "Biochem Biophys Res Commun",
+      "year": "2022",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 3
+    },
+    {
+      "pmid": "38050650",
+      "title": "YAP1 Recognizes Inflammatory and Mechanical Cues to Exacerbate Benign Prostatic Hyperplasia via Promoting Cell Survival and Fibrosis",
+      "journal": "Adv Sci (Weinh)",
+      "year": "2024",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 3
+    },
+    {
+      "pmid": "35648375",
+      "title": "Differential influence of YAP1 and TAZ on differentiation of intestinal epithelial cell: A review",
+      "journal": "Anat Rec (Hoboken)",
+      "year": "2023",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 4
+    },
+    {
+      "pmid": "40517844",
+      "title": "Mechanical stretch-mediated fibroblast activation: The pivotal role of Piezo1 channels",
+      "journal": "Biochim Biophys Acta Mol Cell Res",
+      "year": "2025",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 4
+    }
+  ]
+}

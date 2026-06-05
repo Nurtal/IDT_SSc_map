@@ -1,0 +1,102 @@
+{
+  "reaction_id": "ssc_M3_005",
+  "module": "M3",
+  "mechanism": "PDE5A degrades cGMP",
+  "queries": {
+    "canonical": "PDE5A[tiab] AND GMP[tiab]",
+    "ssc_context": "PDE5A[tiab] AND (\"systemic sclerosis\"[tiab] OR scleroderma[tiab] OR fibrosis[tiab])"
+  },
+  "candidates": [
+    {
+      "pmid": "23117837",
+      "title": "Selective PDE5A inhibition with sildenafil rescues left ventricular dysfunction, inflammatory immune response and cardiac remodeling in angiotensin II-induced heart failure in vivo",
+      "journal": "Basic Res Cardiol",
+      "year": "2012",
+      "found_by": [
+        "canonical",
+        "ssc_context"
+      ],
+      "best_rank": 3
+    },
+    {
+      "pmid": "36252813",
+      "title": "Impaired Platelet Function and Thrombus Formation in PDE5A-Deficient Mice",
+      "journal": "Thromb Haemost",
+      "year": "2023",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 0
+    },
+    {
+      "pmid": "32503314",
+      "title": "Sildenafil Recovers Burn-Induced Cardiomyopathy",
+      "journal": "Cells",
+      "year": "2020",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 0
+    },
+    {
+      "pmid": "18790048",
+      "title": "Expression, activity, and pro-hypertrophic effects of PDE5A in cardiac myocytes",
+      "journal": "Cell Signal",
+      "year": "2008",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 1
+    },
+    {
+      "pmid": "40659490",
+      "title": "The rewiring of cAMP/cGMP and LDH signalling drives cardiac hypertrophy in Pde5a (-/-) mice",
+      "journal": "Life Sci Alliance",
+      "year": "2025",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 1
+    },
+    {
+      "pmid": "36860644",
+      "title": "A label-free LC/MS-based enzymatic activity assay for the detection of PDE5A inhibitors",
+      "journal": "Front Chem",
+      "year": "2023",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 2
+    },
+    {
+      "pmid": "17965319",
+      "title": "PDE5A inhibition attenuates bleomycin-induced pulmonary fibrosis and pulmonary hypertension through inhibition of ROS generation and RhoA/Rho kinase activation",
+      "journal": "Am J Physiol Lung Cell Mol Physiol",
+      "year": "2008",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 2
+    },
+    {
+      "pmid": "18040025",
+      "title": "Phosphodiesterase type 5: expanding roles in cardiovascular regulation",
+      "journal": "Circ Res",
+      "year": "2007",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 4
+    },
+    {
+      "pmid": "33421567",
+      "title": "Effect of Mitochondrial Antioxidant (Mito-TEMPO) on Burn-Induced Cardiac Dysfunction",
+      "journal": "J Am Coll Surg",
+      "year": "2021",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 4
+    }
+  ]
+}

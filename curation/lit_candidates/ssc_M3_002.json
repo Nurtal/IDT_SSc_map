@@ -1,0 +1,111 @@
+{
+  "reaction_id": "ssc_M3_002",
+  "module": "M3",
+  "mechanism": "EDN1:EDNRA \u2192 Gq/PLC \u2192 IP3 \u2192 cytosolic Ca\u00b2\u207a \u2192 smooth-muscle contraction (vasoconstriction)",
+  "queries": {
+    "canonical": "EDN1[tiab] AND EDNRA[tiab]",
+    "ssc_context": "EDN1[tiab] AND (\"systemic sclerosis\"[tiab] OR scleroderma[tiab] OR fibrosis[tiab])"
+  },
+  "candidates": [
+    {
+      "pmid": "40245183",
+      "title": "Crosstalk Between Gastric Cancer and Adjacent Mucosa Reveals EDN1-EDNRA-Mediated Regulation of Cancer Stemness and Immunomodulation Networks",
+      "journal": "J Cell Mol Med",
+      "year": "2025",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 0
+    },
+    {
+      "pmid": "29786110",
+      "title": "Multi\u2011layered prevention and treatment of chronic inflammation, organ fibrosis and cancer associated with canonical WNT/\u03b2\u2011catenin signaling activation (Review)",
+      "journal": "Int J Mol Med",
+      "year": "2018",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 0
+    },
+    {
+      "pmid": "31734650",
+      "title": "Hypoxic regulation of EDN1, EDNRA, EDNRB, and ECE1 gene expressions in ERN1 knockdown U87 glioma cells",
+      "journal": "Endocr Regul",
+      "year": "2019",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 1
+    },
+    {
+      "pmid": "32556240",
+      "title": "Parvovirus B19 activates in vitro normal human dermal fibroblasts: a possible implication in skin fibrosis and systemic sclerosis",
+      "journal": "Rheumatology (Oxford)",
+      "year": "2020",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 1
+    },
+    {
+      "pmid": "31351053",
+      "title": "Endothelins (EDN1, EDN2, EDN3) and their receptors (EDNRA, EDNRB, EDNRB2) in chickens: Functional analysis and tissue distribution",
+      "journal": "Gen Comp Endocrinol",
+      "year": "2019",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 2
+    },
+    {
+      "pmid": "41270390",
+      "title": "Shouhui Tongbian Capsules ameliorate heart failure and atrial fibrillation via gut microbiota regulation",
+      "journal": "Phytomedicine",
+      "year": "2025",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 2
+    },
+    {
+      "pmid": "38718895",
+      "title": "Crosstalk between endothelial cells and dermal papilla entails hair regeneration and angiogenesis during aging",
+      "journal": "J Adv Res",
+      "year": "2025",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 3
+    },
+    {
+      "pmid": "32968110",
+      "title": "Hepatic lipocalin 2 promotes liver fibrosis and portal hypertension",
+      "journal": "Sci Rep",
+      "year": "2020",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 3
+    },
+    {
+      "pmid": "24633486",
+      "title": "Effect of SNP polymorphisms of EDN1, EDNRA, and EDNRB gene on ischemic stroke",
+      "journal": "Cell Biochem Biophys",
+      "year": "2014",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 4
+    },
+    {
+      "pmid": "38324287",
+      "title": "Clinical, Histologic, and Transcriptomic Evaluation of Sequential Fat Grafting for Morphea: A Nonrandomized Controlled Trial",
+      "journal": "JAMA Dermatol",
+      "year": "2024",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 4
+    }
+  ]
+}

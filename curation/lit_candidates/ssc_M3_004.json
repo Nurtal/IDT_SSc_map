@@ -1,0 +1,61 @@
+{
+  "reaction_id": "ssc_M3_004",
+  "module": "M3",
+  "mechanism": "NO activates soluble guanylate cyclase (sGC) to produce cGMP",
+  "queries": {
+    "canonical": "CGMP[tiab] AND NO[tiab]",
+    "ssc_context": "CGMP[tiab] AND (\"systemic sclerosis\"[tiab] OR scleroderma[tiab] OR fibrosis[tiab])"
+  },
+  "candidates": [
+    {
+      "pmid": "28533362",
+      "title": "cGAS is essential for cellular senescence",
+      "journal": "Proc Natl Acad Sci U S A",
+      "year": "2017",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 0
+    },
+    {
+      "pmid": "14987573",
+      "title": "Essential biochemistry and physiology of (NT-pro)BNP",
+      "journal": "Eur J Heart Fail",
+      "year": "2004",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 1
+    },
+    {
+      "pmid": "40856046",
+      "title": "GUCY1A1-LDHA Axis Suppresses Ferroptosis in Cardiac Ischemia-Reperfusion Injury",
+      "journal": "Circ Res",
+      "year": "2025",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 2
+    },
+    {
+      "pmid": "39571904",
+      "title": "Activating soluble guanylyl cyclase attenuates ischemic kidney damage",
+      "journal": "Kidney Int",
+      "year": "2025",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 3
+    },
+    {
+      "pmid": "19089336",
+      "title": "Natriuretic peptides: their structures, receptors, physiologic functions and therapeutic applications",
+      "journal": "Handb Exp Pharmacol",
+      "year": "2009",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 4
+    }
+  ]
+}

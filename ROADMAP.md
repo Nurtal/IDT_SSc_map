@@ -98,6 +98,18 @@ Reversibility: every reaction is one row in the TSV. Co-author overrides at revi
 
 **Acceptance for this sprint:** all four AUTO scripts run clean offline; `reaction_evidence` TODO-type count drops to ≤ 20; the manuscript Methods §2.4 / §2.6 and README cite the reconciled numbers and the effect-size-gated coverage; nothing in the curated map content is silently altered (only annotation completeness + provenance docs).
 
+### Curation-depth pass follow-up (2026-06-05) — addresses H1 + de-risks H5
+
+Beyond merely *quantifying* the weak SSc layer (H1), a depth pass paid most of it down
+(`docs/curation_depth_pass.md`). A new candidate miner (`scripts/mine_lit_candidates.py`,
+NCBI E-utils) + abstract-verified assignment raised SSc-Tier-1 PMID coverage **47% → 74.1%**
+(40 → 63/85) and dropped undeclared inference debt **45 → 0** (23 cited `proposed`, 10
+honestly reclassified as conceptual bridges / phenotype aggregations, 12 declared `untested`
+backlog with candidate pools). A CI guard (`make evidence-lint`, job `evidence-depth`)
+locks this in. This converts the H5 co-author task from "source 45 rows from scratch" into
+"ratify 23 abstract-checked proposals + confirm 10 reclassifications + clear 12 backlog rows".
+🟡 ASSIST (proposals) → 🔴 HUMAN (ratification).
+
 ---
 
 ## v1.0 release definition

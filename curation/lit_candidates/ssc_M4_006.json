@@ -1,0 +1,111 @@
+{
+  "reaction_id": "ssc_M4_006",
+  "module": "M4",
+  "mechanism": "GATA3 commits na\u00efve CD4 T cells to Th2 lineage",
+  "queries": {
+    "canonical": "GATA3[tiab] AND TH2[tiab]",
+    "ssc_context": "GATA3[tiab] AND (\"systemic sclerosis\"[tiab] OR scleroderma[tiab] OR fibrosis[tiab])"
+  },
+  "candidates": [
+    {
+      "pmid": "38923989",
+      "title": "A distal enhancer of GATA3 regulates Th2 differentiation and allergic inflammation",
+      "journal": "Proc Natl Acad Sci U S A",
+      "year": "2024",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 0
+    },
+    {
+      "pmid": "39609127",
+      "title": "Hypoxia-inducible factor 2\u03b1 promotes pathogenic polarization of stem-like Th2 cells via modulation of phospholipid metabolism",
+      "journal": "Immunity",
+      "year": "2024",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 0
+    },
+    {
+      "pmid": "36463230",
+      "title": "Setd2 supports GATA3(+)ST2(+) thymic-derived Treg cells and suppresses intestinal inflammation",
+      "journal": "Nat Commun",
+      "year": "2022",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 1
+    },
+    {
+      "pmid": "41275961",
+      "title": "ANXA1 improves mitochondrial homeostasis through uncoupling protein 1 in diabetic nephropathy",
+      "journal": "J Adv Res",
+      "year": "2025",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 1
+    },
+    {
+      "pmid": "27912316",
+      "title": "Th2 Cells in Health and Disease",
+      "journal": "Annu Rev Immunol",
+      "year": "2017",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 2
+    },
+    {
+      "pmid": "41518994",
+      "title": "Anacardic acid mitigates post\u2011MI cardiac fibrosis via suppressing p38/JNK-GATA3 pathway and H3K9ac\u2011dependent epigenetic regulation",
+      "journal": "Phytomedicine",
+      "year": "2026",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 2
+    },
+    {
+      "pmid": "40196108",
+      "title": "Glucocorticoid receptor inhibits Th2 immune responses by down-regulating Pparg and Gata3 in schistosomiasis",
+      "journal": "Front Immunol",
+      "year": "2025",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 3
+    },
+    {
+      "pmid": "40299532",
+      "title": "Tauroursodeoxycholic Acid Induces Liver Regeneration and Alleviates Fibrosis Through GATA3 Activation",
+      "journal": "Biomedicines",
+      "year": "2025",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 3
+    },
+    {
+      "pmid": "32152552",
+      "title": "Sox12 enhances Fbw7-mediated ubiquitination and degradation of GATA3 in Th2 cells",
+      "journal": "Cell Mol Immunol",
+      "year": "2021",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 4
+    },
+    {
+      "pmid": "39366933",
+      "title": "Tumor draining lymph nodes connected to cold triple-negative breast cancers are characterized by Th2-associated microenvironment",
+      "journal": "Nat Commun",
+      "year": "2024",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 4
+    }
+  ]
+}

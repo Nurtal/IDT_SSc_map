@@ -1,0 +1,111 @@
+{
+  "reaction_id": "ssc_M4_002",
+  "module": "M4",
+  "mechanism": "IL-13 binds IL-13R\u03b11/IL-4R\u03b1 heterodimer",
+  "queries": {
+    "canonical": "IL13[tiab] AND IL13RA1[tiab]",
+    "ssc_context": "IL13[tiab] AND (\"systemic sclerosis\"[tiab] OR scleroderma[tiab] OR fibrosis[tiab])"
+  },
+  "candidates": [
+    {
+      "pmid": "40403128",
+      "title": "Type 2 cytokines act on enteric sensory neurons to regulate neuropeptide-driven host defense",
+      "journal": "Science",
+      "year": "2025",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 0
+    },
+    {
+      "pmid": "18161745",
+      "title": "Cellular and molecular mechanisms of fibrosis",
+      "journal": "J Pathol",
+      "year": "2008",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 0
+    },
+    {
+      "pmid": "40198135",
+      "title": "Preadipocyte IL-13/IL-13R\u03b11 signaling regulates beige adipogenesis through modulation of PPAR\u03b3 activity",
+      "journal": "J Clin Invest",
+      "year": "2025",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 1
+    },
+    {
+      "pmid": "28853443",
+      "title": "Type 2 immunity in tissue repair and fibrosis",
+      "journal": "Nat Rev Immunol",
+      "year": "2018",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 1
+    },
+    {
+      "pmid": "39009587",
+      "title": "Single-cell transcriptomics analysis of bullous pemphigoid unveils immune-stromal crosstalk in type 2 inflammatory disease",
+      "journal": "Nat Commun",
+      "year": "2024",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 2
+    },
+    {
+      "pmid": "38235661",
+      "title": "Disruption of gut barrier integrity and host-microbiome interactions underlie MASLD severity in patients with type-2 diabetes mellitus",
+      "journal": "Gut Microbes",
+      "year": "2024",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 2
+    },
+    {
+      "pmid": "32276028",
+      "title": "Two single nucleotide polymorphisms in IL13 and IL13RA1 from individuals with idiopathic Parkinson's disease increase cellular susceptibility to oxidative stress",
+      "journal": "Brain Behav Immun",
+      "year": "2020",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 3
+    },
+    {
+      "pmid": "37210042",
+      "title": "Single-cell RNA sequencing defines disease-specific differences between chronic nodular prurigo and atopic dermatitis",
+      "journal": "J Allergy Clin Immunol",
+      "year": "2023",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 3
+    },
+    {
+      "pmid": "39521279",
+      "title": "Integrative epidemiology and immunotranscriptomics uncover a risk and potential mechanism for cutaneous lymphoma unmasking or progression with dupilumab therapy",
+      "journal": "J Allergy Clin Immunol",
+      "year": "2025",
+      "found_by": [
+        "canonical"
+      ],
+      "best_rank": 4
+    },
+    {
+      "pmid": "36757802",
+      "title": "IL-13RA2 downregulation in fibroblasts promotes keloid fibrosis via JAK/STAT6 activation",
+      "journal": "JCI Insight",
+      "year": "2023",
+      "found_by": [
+        "ssc_context"
+      ],
+      "best_rank": 4
+    }
+  ]
+}

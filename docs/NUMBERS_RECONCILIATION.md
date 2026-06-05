@@ -26,28 +26,35 @@ contribution. See §3 for how strongly that 85-reaction layer is evidenced.
 
 | Figure | Value | Definition | Source |
 |--------|-------|------------|--------|
-| `reaction_evidence.tsv` rows | **244** | Reactome-backbone reaction annotations | `curation/annotations/reaction_evidence.tsv` |
-| ... with a primary PMID | **198 (81.1%)** | non-empty numeric `pmid` | `analysis/curation/evidence_stratification.json` |
+| `reaction_evidence.tsv` rows | **244** | all annotated reactions = **159 pure-Reactome + 85 SSc** (the 85 SSc rows live in *both* this file and `ssc_curated_reactions.tsv`; do **not** add 244 + 85) | `curation/annotations/reaction_evidence.tsv` |
+| ... with a primary PMID | **221 (90.6%)** | non-empty numeric `pmid` (was 198 before the 2026-06-05 depth pass) | preflight |
 | ... `type=TODO` before H1 | **159** | un-classified reaction type | (pre-sprint) |
 | ... `type=TODO` after H1 | **0** | classified by `evidence_audit.py` (153 by rule, 6 fallback) | `analysis/curation/evidence_stratification.json` |
 | `ssc_curated_reactions.tsv` rows | **85** | SSc-Tier-1 layer | `curation/ssc_curated_reactions.tsv` |
-| ... with a primary PMID | **40 (47.1%)** | — | `analysis/curation/evidence_stratification.json` |
-| ... curator-inference, no PMID | **45** | `ECO:0000305` AND no PMID | `curation/curator_inference_register.tsv` |
+| ... with a primary PMID | **63 (74.1%)** | up from 40 (47.1%) after the depth pass | `analysis/curation/evidence_stratification.json` |
+| ... curator-inference debt (untriaged) | **0** | was 45; now 23 cited `proposed`, 10 reclassified, 12 declared `untested` backlog | `curation/curator_inference_register.tsv` |
 
 ## 3. Evidence quality by provenance layer (H1)
 
 Conflating the two layers inflates the apparent depth of SSc-specific curation.
 Stated honestly:
 
-| Layer | Reactions | With PMID | Experimental ECO (314/270/353) |
+| Layer | Reactions | With PMID | Experimental/review ECO (314/270/353/033) |
 |-------|-----------|-----------|--------------------------------|
-| Reactome backbone | 244 | 198 (81.1%) | 39 (16.0%) |
-| **SSc-Tier-1 (the original contribution)** | **85** | **40 (47.1%)** | **39 (45.9%)** |
+| Reactome backbone (pure-Reactome) | 159 | 158 (99.4%) | 0 (0.0%) |
+| **SSc-Tier-1 (the original contribution)** | **85** | **63 (74.1%)** | **47 (55.3%)** |
 
-So the SSc-specific layer carries a *higher* fraction of experimental ECO codes
-(45.9% vs 16.0%) than the Reactome backbone — but **45 of its 85 reactions still rest
-on curator inference without a citation** (the M3/EndoMT module is weakest, 19 rows).
-That backlog is itemised in `curation/curator_inference_register.tsv`.
+After the 2026-06-05 curation-depth pass (`docs/curation_depth_pass.md`), the SSc-specific
+layer carries both more citations (74.1%, up from 47.1%) and a *much higher* fraction of
+experimental/review-grade ECO codes (55.3%) than the Reactome backbone. The residual
+backlog is **12 declared `untested` rows** (down from 45), each with a candidate-PMID pool,
+itemised in `curation/curator_inference_register.tsv`; a further 10 rows were honestly
+reclassified as conceptual bridges / phenotype aggregations rather than force-cited. The
+`make evidence-lint` CI guard now fails on any *undeclared* inference debt.
+
+Note: the Reactome backbone's 99.4% PMID / 0% experimental-ECO reflects that Reactome
+import rows carry a PMID but propagate `ECO:0000305` by default — citation present,
+evidence-grade weak. The SSc layer is the inverse and now stronger on both axes.
 
 ## 4. Single-cell coverage — report with effect-size context (H2)
 
