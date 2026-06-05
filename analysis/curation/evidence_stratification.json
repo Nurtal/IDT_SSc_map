@@ -1,0 +1,39 @@
+{
+  "todo_classification": {
+    "n_todo_before": 0,
+    "n_todo_after": 0,
+    "n_classified": 0,
+    "n_by_rule": 0,
+    "n_by_fallback": 0,
+    "type_distribution_after": {
+      "binding": 80,
+      "transcription": 36,
+      "phosphorylation": 31,
+      "state_change": 24,
+      "activation": 19,
+      "catalysis": 15,
+      "degradation": 13,
+      "transport": 9,
+      "inhibition": 7,
+      "contributes": 7,
+      "dissociation": 3
+    }
+  },
+  "provenance": {
+    "reactome_backbone": {
+      "n_reactions": 244,
+      "n_with_pmid": 198,
+      "pct_with_pmid": 81.1,
+      "n_experimental_eco": 39,
+      "pct_experimental_eco": 16.0
+    },
+    "ssc_tier1": {
+      "n_reactions": 85,
+      "n_with_pmid": 40,
+      "pct_with_pmid": 47.1,
+      "n_experimental_eco": 39,
+      "pct_experimental_eco": 45.9
+    }
+  },
+  "inferences": []
+}

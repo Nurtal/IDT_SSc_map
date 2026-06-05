@@ -1,0 +1,10 @@
+layer	evidence_code	n_reactions	n_with_pmid	n_without_pmid
+reactome_backbone	ECO:0000270	10	10	0
+reactome_backbone	ECO:0000305	204	159	45
+reactome_backbone	ECO:0000314	27	27	0
+reactome_backbone	ECO:0000353	2	2	0
+reactome_backbone	TODO	1	0	1
+ssc_tier1	ECO:0000270	10	10	0
+ssc_tier1	ECO:0000305	46	1	45
+ssc_tier1	ECO:0000314	27	27	0
+ssc_tier1	ECO:0000353	2	2	0

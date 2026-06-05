@@ -1299,6 +1299,107 @@ Next : S3 (mRSS correlation + demographics) qui est indépendant des blockers da
 
 **Next** : S4 (M3 within-vascular subset + CellTypist harmonisation), qui nécessite Gur 2022 expression data — même blocker que S1/S2/E2 (besoin de scanpy env + données raw).
 
+---
 
+## 2026-06-05 — Sprint de durcissement v1.1 (réponse à une relecture critique externe)
 
+> Cf. [[ROADMAP]] § « v1.1 hardening sprint ». Déclenché par un audit critique
+> indépendant qui a identifié que **plusieurs chiffres « headline » sont plus
+> solides que la couche de curation SSc réellement originale**, et que la métrique
+> de couverture est sensible à la méthode statistique. Posture retenue : **quantifier
+> et documenter les faiblesses** plutôt que les masquer — c'est la position défendable
+> pour la major revision npj-SBA. 5 points faibles → 5 mitigations (H1–H5), 4 en lane
+> 🟢 AUTO (offline, à partir d'artefacts déjà au repo), 1 irréductiblement 🔴 HUMAN.
+
+### Constat de départ (les 5 points faibles)
+
+1. **Headline ≠ curation SSc réelle.** « 260 réactions » est dominé par le backbone
+   Reactome importé. La couche SSc-Tier-1 originale = 85 réactions, dont **45/85 en
+   inférence curateur (ECO:0000305, sans PMID)** ; et **159/244** lignes de
+   `reaction_evidence.tsv` avaient `type=TODO`.
+2. **Saut de couverture 50 % → 81.3 %** dû au seul changement Wilcoxon → NB-GLM —
+   métrique qui suit la puissance statistique, pas la biologie.
+3. **8 crosstalks fragiles** (3 en inférence, 2 non confirmés par STRING) — c'est
+   pourtant le cœur de la nouveauté SSc-spécifique.
+4. **Incohérences de chiffres** entre fichiers (526 vs 385 espèces, 260 vs 175 vs 85
+   réactions, 17 vs 20 compartiments, 50 vs 81 %).
+5. **Cadrage « community/expert-curated » vs réalité mono-auteur** (`.zenodo.json`
+   encore `REPLACE_ME`, pas de sign-off clinicien sur les 85 Tier-1).
+
+### H1 — `scripts/evidence_audit.py` (stratification de provenance + classification TODO)
+
+- Sépare formellement **Reactome-backbone** (`reaction_evidence.tsv`, 244 lignes) vs
+  **SSc-Tier-1** (`ssc_curated_reactions.tsv`, 85 lignes) et croise ECO × présence de PMID.
+- Classe les **159 `type=TODO`** par règles de mots-clés ordonnées sur le champ
+  `mechanism` (vocabulaire contrôlé déjà utilisé par la couche SSc + transport/
+  inhibition/dissociation). Résultat : **159 → 0 TODO** (153 par règle, 6 fallback
+  `state_change` génuinement ambigus : nucleotide exchange, deubiquitination,
+  neddylation, competition, sequestration, displacement).
+- Chaque inférence est tracée dans la colonne `notes` (`[type auto-inferred: …]`),
+  réversible ; **aucun contenu de carte modifié**, seule l'annotation-complétude.
+- Chiffres durs sortis : backbone 81.1 % PMID / 16.0 % ECO expérimental ; **SSc-Tier-1
+  47.1 % PMID / 45.9 % ECO expérimental**.
+- Outputs : `analysis/curation/evidence_stratification.{tsv,json,md}` + `reaction_evidence.tsv` mis à jour.
+
+### H2 — `scripts/coverage_sensitivity.py` (sensibilité de la couverture)
+
+- Recalcule la couverture MIM depuis `cluster_deg_multi_v11.tsv` sur une grille
+  (padj_dataset ∈ {0.05, 0.01, 0.001}) × (|log2FC| ∈ {0.2, 0.5, 1.0, 2.0}), méthode
+  NB-GLM **tenue fixe**. Reproduit exactement le 161/198 = **81.3 %** publié au point permissif.
+- **Constat majeur et honnête** : au point gated par l'effet (≥2-fold, padj ≤ 0.01),
+  couverture = **49.5 % (98/198)**, quasi identique au baseline Wilcoxon v1.0
+  (98/196 = 50.0 %). → le « +31 points » est **un effet de permissivité/puissance,
+  pas un gain biologique**. Reco : annoncer ≈50 % (robuste) et présenter 81.3 % comme
+  borne supérieure permissive, grille en Supplementary.
+- Outputs : `analysis/overlay/coverage_sensitivity.{tsv,json}`.
+
+### H3 — `scripts/build_inference_register.py` (registre d'inférence curateur)
+
+- Matérialise les **45** réactions SSc faibles (ECO:0000305 + no PMID) avec
+  `validation_status` (croise la validation STRING-DB v12 existante), `lit_search_needed`
+  et `suggested_action`.
+- Bilan : **44/45 nécessitent un passage littérature** ; 1 seule a un appui
+  computationnel indépendant (STRING-confirmed, ssc_crosstalk_003) ; 2 STRING-not-confirmed
+  (assertions de cell-state, hors graphe PPI) ; 42 untested. **M3 (EndoMT/vasculopathie)
+  est le maillon faible : 19 lignes** (cohérent — module le plus curé à la main).
+- Outputs : `curation/curator_inference_register.{tsv,md}` — c'est le **review packet**
+  pour le sign-off co-auteur (adresse partiellement H5).
+
+### H4 — réconciliation des chiffres + honnêteté README
+
+- `docs/NUMBERS_RECONCILIATION.md` : table canonique unique reliant chaque chiffre
+  publié à sa définition et son artefact source (espèces 526/385, réactions 260/175/85,
+  compartiments 17/20, couverture 50/81 %), + tables d'évidence par provenance et grille
+  de sensibilité.
+- README « Headline numbers » corrigé : ligne *Reactions* explicite désormais le split
+  175 backbone / 85 Tier-1 et les 45 inférences ; ligne *Coverage* annonce ≈50 % robuste /
+  81.3 % permissif avec pointeurs.
+
+### H5 — 🔴 HUMAN (non automatisable)
+
+- Le sign-off biologique du clinicien co-auteur sur les 85 Tier-1 reste hors scope.
+  Le matériel (H1 + H3) est prêt comme packet de relecture. Reste en tête de la
+  handover queue.
+
+### Outillage + garde-fous
+
+- Makefile : nouvelles cibles `evidence-audit`, `coverage-sensitivity`,
+  `inference-register`, et **`make harden`** (orchestre H1→H3, offline). Run end-to-end OK.
+- **`make preflight` toujours vert** (1 advisory dangling 94/526 inchangé ;
+  PMID 198/244 inchangé) → la carte XML n'est pas touchée, conformément au critère
+  d'acceptation « aucun contenu de carte silencieusement altéré ».
+
+### Bilan
+
+| WP | Livrable | Statut |
+|----|----------|--------|
+| H1 | evidence_audit.py + stratification ; 159→0 TODO | 🟢 exécuté |
+| H2 | coverage_sensitivity.py ; robuste 49.5 % vs permissif 81.3 % | 🟢 exécuté |
+| H3 | curator_inference_register (45 lignes, 44 à sourcer) | 🟢 exécuté |
+| H4 | NUMBERS_RECONCILIATION.md + README durci | 🟢 exécuté |
+| H5 | review packet prêt ; sign-off clinicien | 🔴 handover |
+
+**Next** : faire porter dans le manuscrit (Méthodes §2.4 / §2.6, Résultats couverture)
+les chiffres réconciliés + le headline couverture gated par l'effet ; passage
+littérature co-auteur sur les 44 lignes du registre (priorité M3).
 

@@ -162,6 +162,21 @@ crosstalk-validate:  ## STRING-DB v12 independent validation of the 3 weak cross
 	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/validate_crosstalk_string.py; \
 	else $(PYTHON) scripts/validate_crosstalk_string.py; fi
 
+evidence-audit:  ## H1: provenance stratification + classify TODO reaction types.
+	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/evidence_audit.py; \
+	else $(PYTHON) scripts/evidence_audit.py; fi
+
+coverage-sensitivity:  ## H2: MIM coverage over a (padj, |log2FC|) threshold grid.
+	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/coverage_sensitivity.py; \
+	else $(PYTHON) scripts/coverage_sensitivity.py; fi
+
+inference-register:  ## H3: register of curator-inference (no-PMID) SSc reactions.
+	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/build_inference_register.py; \
+	else $(PYTHON) scripts/build_inference_register.py; fi
+
+harden: evidence-audit coverage-sensitivity inference-register  ## Run the full v1.1 hardening sprint (H1-H3, offline).
+	@echo "[harden] v1.1 hardening sprint complete — see analysis/curation/, analysis/overlay/coverage_sensitivity.*, curation/curator_inference_register.*"
+
 celldesigner-check:  ## Static CellDesigner-loadability test (incl. CaSQ smoke).
 	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/test_celldesigner_loadability.py; \
 	else $(PYTHON) scripts/test_celldesigner_loadability.py; fi

@@ -15,13 +15,13 @@
 | Quantity | Value | Notes |
 |---|---|---|
 | Species | **526** | 17 biologically meaningful compartments (20 raw SBML declarations) |
-| Reactions | **260** | 244 Reactome-derived + 85 SSc-curated; 198/244 (81%) carry a PMID |
+| Reactions | **260** | **175 Reactome-backbone + 85 SSc-Tier-1** (the original SSc contribution); of the 85, 40 (47%) carry a PMID and 39 (46%) an experimental ECO code — the remaining **45 are curator inference** (see [`curation/curator_inference_register.tsv`](curation/curator_inference_register.tsv)). Full provenance split in [`docs/NUMBERS_RECONCILIATION.md`](docs/NUMBERS_RECONCILIATION.md). |
 | SBML validation | **0 errors** | libSBML L2v4 across 5 module XMLs + integrated |
 | Annotated HGNC species | **198** | 196 (99%) RNA-seq-detectable; 15 alias corrections + 13 non-gene removals applied |
 | Single-cell donors integrated | **197** | 117 SSc / 80 HC across 4 datasets |
 | Cells processed | **266 884** | Tabib skin / Gur skin multiome / GSE210395 PBMC / GSE128169 lung |
 | Cell-type clusters | **58** | per-(dataset, cluster) MINERVA overlay TSVs |
-| MIM coverage by transcriptomics | **50.0 %** | 98/196 detectable species hit by ≥ 1 DEG (v1.0 raw-p baseline; revision-v1.1 number under BH-FDR pending S1 re-run) |
+| MIM coverage by transcriptomics | **≈50 % (robust) / 81.3 % (permissive)** | Effect-size-gated (≥2-fold, padj ≤ 0.01) = **49.5 % (98/198)**, ≈ the v1.0 Wilcoxon baseline (50 %); the 81.3 % NB-GLM figure is the permissive upper bound (\|log2FC\| ≥ 0.2). The 50→81 jump is a stringency/power effect, not biology — full grid in [`analysis/overlay/coverage_sensitivity.tsv`](analysis/overlay/coverage_sensitivity.tsv). |
 | Network communities | **38** | greedy modularity; 32 significant (community, module) hypergeometric tests at q < 0.05 (revision-v1.1) |
 | Druggable interactions | **21** | DGIdb v4 on top 20 hubs; 11 distinct molecular targets |
 
