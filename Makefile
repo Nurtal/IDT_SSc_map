@@ -182,6 +182,10 @@ evidence-lint:  ## CI guard: every SSc reaction must be explicitly triaged (no u
 	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/check_evidence_depth.py; \
 	else $(PYTHON) scripts/check_evidence_depth.py; fi
 
+ratification-worksheet:  ## Co-author tick-and-correct sheet for the proposed SSc citations.
+	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/build_ratification_worksheet.py; \
+	else $(PYTHON) scripts/build_ratification_worksheet.py; fi
+
 harden: evidence-audit coverage-sensitivity inference-register evidence-lint  ## Run the full v1.1 hardening sprint (H1-H3, offline).
 	@echo "[harden] v1.1 hardening sprint complete — see analysis/curation/, analysis/overlay/coverage_sensitivity.*, curation/curator_inference_register.*"
 
