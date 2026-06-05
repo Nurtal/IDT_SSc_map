@@ -1491,3 +1491,19 @@ nucléaire IRF7 — aucun primaire propre ; backlog honnête, pool conservé).
 Statuts : confirmed 40, proposed 34, conceptual_bridge 4, phenotype_aggregation 6, untested 1.
 `make evidence-lint` OK, `make preflight` vert, carte 526/260 intacte.
 
+### 16:40 — Politique d'évidence tiérée (alignement gold standard GO/GOA)
+
+La règle maison « remplacer les revues par le primaire » (§9) était plus stricte que le
+standard du domaine. Gold standard = GO/GOA (dont MI2CAST hérite) : **provenance honnête codée
+ECO**, pas « primaire partout ». Une revue traçable (`ECO:0000033`, tier TAS) est acceptée
+pour le **canonique** ; le primaire n'est requis que pour la **nouveauté SSc** (crosstalks,
+assertions contestées).
+
+Réécrit : `mi2cast_checklist.md` (nouvelle § « Evidence policy (tiered) » + House rule
+remplacée par triage déclaré), `curation_guidelines.md §9`. **Lint aligné**
+(`check_evidence_depth.py`) : `module=crosstalk` → standard supérieur (ECO expérimental
+314/270/353/315 + PMID, ou `conceptual_bridge`) ; le reste accepte `ECO:0000033`. Break-test
+OK. Les 8 crosstalks passent (5 primaires + 3 ponts). **Pratique** : sur les 34 `proposed`,
+le socle canonique est déjà au standard ; seules les arêtes de nouveauté SSc demandent du
+primaire.
+

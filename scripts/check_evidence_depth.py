@@ -4,19 +4,26 @@
 Part of the curation-depth pass (see docs/curation_depth_pass.md). Implements the
 open CI-lint item in docs/mi2cast_checklist.md §"Open items".
 
+Encodes the **tiered evidence policy** of `docs/mi2cast_checklist.md` §"Evidence policy
+(tiered)", which follows the GO/GOA gold standard (honest ECO-coded provenance), NOT a
+"primary-only" rule. Review citations (`ECO:0000033`, traceable author statement) are
+accepted for canonical mechanisms; the higher bar (primary/experimental evidence) is
+reserved for the SSc-specific novelty layer — the inter-module crosstalk rows.
+
 Every SSc-curated reaction must be **explicitly triaged**. A row is *resolved* when:
-  - it carries a primary PMID (status `confirmed` or `proposed`), OR
+  - it carries a citation at `ECO:0000033` or stronger (status `confirmed` / `proposed`), OR
   - it is honestly reclassified (`conceptual_bridge` / `phenotype_aggregation`), OR
   - it is declared backlog (`untested`, with a candidate pool).
 
 The lint FAILS on:
   - undeclared inference debt — `ECO:0000305` + no PMID + status not in the declared
-    set above (i.e. an empty/unset status, or a new uncurated row), and
-  - a `confirmed`/`proposed` row with no PMID (a contradiction).
+    set above (i.e. an empty/unset status, or a new uncurated row);
+  - a `confirmed`/`proposed` row with no PMID (a contradiction); and
+  - a **crosstalk** row that is neither primary/experimental-cited nor reclassified as a
+    `conceptual_bridge` — undeclared SSc-novelty debt (§7 of the guidelines).
 
-It does NOT fail on `untested` rows — those are tracked backlog, reported as an advisory.
-This enforces triage completeness and prevents silent new debt, without demanding a
-zero-inference map.
+It does NOT fail on `untested` rows (tracked backlog, advisory), and does NOT demand that
+canonical review-cited (`ECO:0000033`) edges be upgraded to primary.
 
 Run:
     python3 scripts/check_evidence_depth.py            # exit 1 on failure
@@ -36,6 +43,8 @@ SSC = ROOT / "curation/ssc_curated_reactions.tsv"
 
 DECLARED = {"confirmed", "proposed", "conceptual_bridge", "phenotype_aggregation", "untested"}
 RECLASSIFIED = {"conceptual_bridge", "phenotype_aggregation"}
+# Experimental ECO codes (primary evidence) required for the SSc-novelty crosstalk layer.
+EXPERIMENTAL = {"ECO:0000314", "ECO:0000270", "ECO:0000353", "ECO:0000315"}
 UNTESTED_THRESHOLD = 20  # --strict ceiling on remaining backlog
 
 
@@ -71,6 +80,16 @@ def main() -> int:
         if eco == "ECO:0000305" and not pmid and status not in (RECLASSIFIED | {"untested"}):
             failures.append(f"{rid}: ECO:0000305 + no PMID + status={status} "
                             f"(undeclared inference debt)")
+
+        # Tiered policy: crosstalk rows carry the map's SSc-specific novelty and are held
+        # to the higher bar — primary/experimental evidence, or an explicit conceptual_bridge.
+        module = (r.get("module", "") or "").strip()
+        if module == "crosstalk" and status not in RECLASSIFIED:
+            if not (pmid and eco in EXPERIMENTAL):
+                failures.append(
+                    f"{rid}: crosstalk needs experimental ECO (314/270/353/315) + PMID, "
+                    f"or a conceptual_bridge tag (has eco={eco}, "
+                    f"pmid={'yes' if pmid else 'no'}, status={status}) — SSc-novelty debt")
 
     n = len(rows)
     cited = sum(1 for r in rows if has_pmid(r.get("pmid", "")))

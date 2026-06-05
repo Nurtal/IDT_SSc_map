@@ -29,7 +29,31 @@
 | `ECO:0000305` | curator inference | only when no direct primary evidence exists; flag for follow-up |
 | `ECO:0000033` | author statement supported by traceable reference | review-cited mechanism, with the review's primary citation captured separately |
 
-**House rule:** every reaction must have at least one citation with an ECO code stricter than `ECO:0000305` (curator inference). Inferred reactions are tolerated short-term but flagged for replacement.
+## Evidence policy (tiered) — aligned with GO/GOA, not "primary-only"
+
+The gold standard in pathway/interaction curation is the **Gene Ontology Annotation (GO/GOA)**
+model, which MI2CAST inherits: **honest, ECO-coded provenance** — *not* "cite a primary paper
+for everything". A review that states an established mechanism and traces it to its source is
+a **first-class, accepted** evidence category — the Traceable-Author-Statement (TAS) tier,
+encoded here as `ECO:0000033`. There is a quality hierarchy (experimental > review-traceable >
+curator inference), but a review citation is a legitimate annotation, not a placeholder. The
+COVID-19 Disease Map and RA-map both rely heavily on reviews.
+
+The useful distinction is therefore **canonical vs. study-novel**, not review vs. primary:
+
+| Claim type | Minimum acceptable evidence |
+|---|---|
+| Canonical / textbook mechanism (known receptor, enzyme, TF) | a citation at **`ECO:0000033`** (review, traceable) or stronger — **do not** burn effort upgrading these to primary |
+| **SSc-specific novelty — especially inter-module crosstalk** (`module = crosstalk`) | a **primary** citation with an experimental ECO (`0000314` / `0000270` / `0000353` / `0000315`), ideally in an SSc context (see `curation_guidelines.md` §7); **or** an explicit `conceptual_bridge` tag when it encodes a cell-state assertion rather than a molecular interaction |
+| Contested / non-consensus claim | primary experimental |
+
+**House rule (replaces the old "stricter-than-0000305 everywhere" rule):** every reaction must
+either (a) carry a citation at `ECO:0000033` or stronger, or (b) be **declared** — `untested`
+backlog or honest reclassification (`conceptual_bridge` / `phenotype_aggregation`). Pure
+curator inference (`ECO:0000305`, no citation) is tolerated **only as declared backlog**.
+Crosstalk rows are held to the higher (primary/experimental, or reclassified) bar. The
+`make evidence-lint` guard (`scripts/check_evidence_depth.py`) enforces exactly this — it does
+**not** demand that canonical review-cited edges be upgraded to primary.
 
 ## Recommended SSc-specific context vocabularies
 
