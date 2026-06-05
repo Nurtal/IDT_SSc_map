@@ -1526,6 +1526,16 @@ Sur 34 proposed : **27 keep** (le texte confirme l'assertion → `confirmed`), *
   fibroblasts ».
 
 **État final** : confirmed **67**, proposed 5, conceptual_bridge 4, phenotype_aggregation 6,
-untested 3. PMID SSc 72/85 (84.7%), `reaction_evidence` 230/244. Worksheet régénérée
-(ne liste plus que 5 proposed + 10 reclass + 3 untested). Lint OK, preflight vert, carte intacte.
+untested 3. PMID SSc 72/85 (84.7%), `reaction_evidence` 230/244. Worksheet régénérée. Lint OK,
+preflight vert, carte intacte.
+
+### 17:55 — Sourcing des 3 untested
+
+Recherche ciblée sur les 3 untested : **M1_013** → 37251373 (revue dédiée IRF7, bon fit) ;
+**M3_017** → 16123809 (revue TGF-β/EMT) et **M3_021** → 19838011 (revue TGF-β/Smad EMT) —
+ces 2 réfs couvrent le programme de TF EndMT mais **pas la causalité exacte** (Snail→Twist1 ;
+coopération NICD1→ZEB2) → passées `proposed` avec flag explicite dans `notes` + le log
+(reformuler vers « TGF-β pilote le programme TF EndMT » ou ajouter un primaire Notch-ZEB2).
+3 PMID au .bib. **0 untested**. Statuts : confirmed 67, proposed 8, conceptual_bridge 4,
+phenotype_aggregation 6. PMID SSc **75/85 (88.2%)**, reaction_evidence 233/244.
 

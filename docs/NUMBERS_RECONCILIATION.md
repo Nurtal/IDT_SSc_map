@@ -31,8 +31,8 @@ contribution. See §3 for how strongly that 85-reaction layer is evidenced.
 | ... `type=TODO` before H1 | **159** | un-classified reaction type | (pre-sprint) |
 | ... `type=TODO` after H1 | **0** | classified by `evidence_audit.py` (153 by rule, 6 fallback) | `analysis/curation/evidence_stratification.json` |
 | `ssc_curated_reactions.tsv` rows | **85** | SSc-Tier-1 layer | `curation/ssc_curated_reactions.tsv` |
-| ... with a primary PMID | **72 (84.7%)** | up from 40 (47.1%); of these **67 are full-text- or originally-verified** (`confirmed`), 5 abstract-only (`proposed`, PDF pending) | `analysis/curation/evidence_stratification.json` |
-| ... curator-inference debt (untriaged) | **0** | was 45; now 67 confirmed, 5 proposed, 10 reclassified, 3 declared `untested` backlog | `curation/curator_inference_register.tsv`, `curation/fulltext_verification_log.md` |
+| ... with a primary PMID | **75 (88.2%)** | up from 40 (47.1%); of these **67 are full-text- or originally-verified** (`confirmed`), 8 abstract-only (`proposed`) | `analysis/curation/evidence_stratification.json` |
+| ... curator-inference debt (untriaged) | **0** | was 45; now 67 confirmed, 8 proposed, 10 reclassified, 0 untested | `curation/curator_inference_register.tsv`, `curation/fulltext_verification_log.md` |
 
 ## 3. Evidence quality by provenance layer (H1)
 

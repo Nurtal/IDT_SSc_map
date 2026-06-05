@@ -44,3 +44,11 @@ _Decisions made by reading the downloaded full-text PDFs (not just abstracts). K
 - ssc_M3_007 (PDF not downloaded)
 - ssc_M3_008 (PDF not downloaded)
 - ssc_M3_019 (PDF not downloaded)
+
+## 🔎 Untested follow-up (2026-06-05) — sourced at abstract level (proposed)
+
+- **ssc_M1_013** → PMID 37251373 (dedicated IRF7 review) — good canonical fit.
+- **ssc_M3_017** → PMID 16123809 (TGF-β & EMT review) — covers the EMT-TF programme; ⚠️ confirm TWIST1 coverage or reword the Snail→Twist1 causality.
+- **ssc_M3_021** → PMID 19838011 (TGF-β/Smad EMT review, SMAD→ZEB2) — ⚠️ NICD1/Notch cooperation NOT established by this ref; reword or add a Notch–ZEB2 primary.
+
+These 3 remain `proposed` (abstract-level, PDFs not downloaded); 017/021 need a wording/ref check.
