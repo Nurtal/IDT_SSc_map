@@ -33262,7 +33262,8 @@
             <html:body>
               <html:p>module=M2</html:p>
               <html:p>mechanism=SMAD3:SMAD4 induces LOX/LOXL2 transcription</html:p>
-              <html:p>evidence_code=ECO:0000305</html:p>
+              <html:p>pmid=31317653</html:p>
+              <html:p>evidence_code=ECO:0000314</html:p>
               <html:p>ssc_relevance=collagen cross-linking enzymes; LOXL2 anti-fibrotic target (simtuzumab fail but rationale stands)</html:p>
               <html:p>curation_note=co-author upgrade</html:p>
             </html:body>
@@ -33288,7 +33289,8 @@
             <html:body>
               <html:p>module=M2</html:p>
               <html:p>mechanism=LOX/LOXL2 cross-link collagens, stiffen ECM</html:p>
-              <html:p>evidence_code=ECO:0000305</html:p>
+              <html:p>pmid=31488698</html:p>
+              <html:p>evidence_code=ECO:0000033</html:p>
               <html:p>ssc_relevance=matures fibrosis; mechanical feedback to YAP/TAZ</html:p>
               <html:p>curation_note=-</html:p>
             </html:body>
@@ -33315,7 +33317,8 @@
             <html:body>
               <html:p>module=M2</html:p>
               <html:p>mechanism=ECM stiffness activates RHOA → ROCK1/2 → YAP1/TAZ nuclear translocation</html:p>
-              <html:p>evidence_code=ECO:0000305</html:p>
+              <html:p>pmid=21654799</html:p>
+              <html:p>evidence_code=ECO:0000314</html:p>
               <html:p>ssc_relevance=mechanotransduction loop; verteporfin candidate</html:p>
               <html:p>curation_note=-</html:p>
             </html:body>
@@ -33525,7 +33528,8 @@
             <html:body>
               <html:p>module=M3</html:p>
               <html:p>mechanism=EDN1:EDNRA → Gq/PLC → IP3 → cytosolic Ca²⁺ → smooth-muscle contraction (vasoconstriction)</html:p>
-              <html:p>evidence_code=ECO:0000305</html:p>
+              <html:p>pmid=24412386</html:p>
+              <html:p>evidence_code=ECO:0000314</html:p>
               <html:p>ssc_relevance=vasomotor tone; SSc Raynaud + intimal proliferation</html:p>
               <html:p>curation_note=-</html:p>
             </html:body>
@@ -33547,7 +33551,8 @@
             <html:body>
               <html:p>module=M3</html:p>
               <html:p>mechanism=eNOS (NOS3) in endothelial cells produces NO</html:p>
-              <html:p>evidence_code=ECO:0000305</html:p>
+              <html:p>pmid=26390975</html:p>
+              <html:p>evidence_code=ECO:0000033</html:p>
               <html:p>ssc_relevance=vasoprotective axis; impaired in SSc vasculopathy</html:p>
               <html:p>curation_note=-</html:p>
             </html:body>
@@ -33569,7 +33574,8 @@
             <html:body>
               <html:p>module=M3</html:p>
               <html:p>mechanism=NO activates soluble guanylate cyclase (sGC) to produce cGMP</html:p>
-              <html:p>evidence_code=ECO:0000305</html:p>
+              <html:p>pmid=37572934</html:p>
+              <html:p>evidence_code=ECO:0000033</html:p>
               <html:p>ssc_relevance=riociguat target (sGC stimulator) — SSc-PAH (RISE-SSc)</html:p>
               <html:p>curation_note=-</html:p>
             </html:body>
@@ -33591,7 +33597,8 @@
             <html:body>
               <html:p>module=M3</html:p>
               <html:p>mechanism=PDE5A degrades cGMP</html:p>
-              <html:p>evidence_code=ECO:0000305</html:p>
+              <html:p>pmid=12135389</html:p>
+              <html:p>evidence_code=ECO:0000314</html:p>
               <html:p>ssc_relevance=sildenafil/tadalafil target in SSc Raynaud + digital ulcers</html:p>
               <html:p>curation_note=-</html:p>
             </html:body>
@@ -33616,7 +33623,8 @@
             <html:body>
               <html:p>module=M3</html:p>
               <html:p>mechanism=Hypoxia activates HIF1A, which moves to nucleus to drive transcription</html:p>
-              <html:p>evidence_code=ECO:0000305</html:p>
+              <html:p>pmid=9278140</html:p>
+              <html:p>evidence_code=ECO:0000033</html:p>
               <html:p>ssc_relevance=skin hypoxia in SSc vasculopathy</html:p>
               <html:p>curation_note=-</html:p>
             </html:body>
@@ -33638,7 +33646,8 @@
             <html:body>
               <html:p>module=M3</html:p>
               <html:p>mechanism=HIF1A induces EDN1 and VEGFA transcription</html:p>
-              <html:p>evidence_code=ECO:0000305</html:p>
+              <html:p>pmid=9278140</html:p>
+              <html:p>evidence_code=ECO:0000033</html:p>
               <html:p>ssc_relevance=hypoxia → endothelin + angiogenic signal</html:p>
               <html:p>curation_note=-</html:p>
             </html:body>
@@ -33664,7 +33673,8 @@
             <html:body>
               <html:p>module=M3</html:p>
               <html:p>mechanism=VEGFA binds KDR (VEGFR2) on endothelial cells</html:p>
-              <html:p>evidence_code=ECO:0000305</html:p>
+              <html:p>pmid=30173249</html:p>
+              <html:p>evidence_code=ECO:0000033</html:p>
               <html:p>ssc_relevance=endothelial maintenance; impaired angiogenesis in SSc</html:p>
               <html:p>curation_note=-</html:p>
             </html:body>
@@ -33742,7 +33752,8 @@
             <html:body>
               <html:p>module=M3</html:p>
               <html:p>mechanism=SNAI1/SNAI2 represses CDH5 (VE-cadherin) transcription</html:p>
-              <html:p>evidence_code=ECO:0000305</html:p>
+              <html:p>pmid=28062404</html:p>
+              <html:p>evidence_code=ECO:0000033</html:p>
               <html:p>ssc_relevance=loss of endothelial identity in EndMT</html:p>
               <html:p>curation_note=-</html:p>
             </html:body>
@@ -33768,7 +33779,8 @@
             <html:body>
               <html:p>module=M3</html:p>
               <html:p>mechanism=SNAI1/SNAI2 + TGF-β induces CDH2 (N-cadherin) + FAP + FSP1 (mesenchymal markers)</html:p>
-              <html:p>evidence_code=ECO:0000305</html:p>
+              <html:p>pmid=28062404</html:p>
+              <html:p>evidence_code=ECO:0000314</html:p>
               <html:p>ssc_relevance=gain of mesenchymal markers</html:p>
               <html:p>curation_note=-</html:p>
             </html:body>
@@ -33840,7 +33852,8 @@
             <html:body>
               <html:p>module=M4</html:p>
               <html:p>mechanism=IL-4 binds IL-4Rα</html:p>
-              <html:p>evidence_code=ECO:0000305</html:p>
+              <html:p>pmid=29930549</html:p>
+              <html:p>evidence_code=ECO:0000033</html:p>
               <html:p>ssc_relevance=Th2 cytokine receptor binding</html:p>
               <html:p>curation_note=-</html:p>
             </html:body>
@@ -33863,7 +33876,8 @@
             <html:body>
               <html:p>module=M4</html:p>
               <html:p>mechanism=IL-13 binds IL-13Rα1/IL-4Rα heterodimer</html:p>
-              <html:p>evidence_code=ECO:0000305</html:p>
+              <html:p>pmid=29930549</html:p>
+              <html:p>evidence_code=ECO:0000033</html:p>
               <html:p>ssc_relevance=Th2 receptor; romilkimab target in SSc trials</html:p>
               <html:p>curation_note=-</html:p>
             </html:body>
@@ -33915,7 +33929,8 @@
             <html:body>
               <html:p>module=M4</html:p>
               <html:p>mechanism=Phospho-STAT6 dimerises and translocates to nucleus</html:p>
-              <html:p>evidence_code=ECO:0000305</html:p>
+              <html:p>pmid=33991851</html:p>
+              <html:p>evidence_code=ECO:0000033</html:p>
               <html:p>ssc_relevance=canonical TF activation</html:p>
               <html:p>curation_note=-</html:p>
             </html:body>
@@ -33965,7 +33980,8 @@
             <html:body>
               <html:p>module=M4</html:p>
               <html:p>mechanism=GATA3 commits naïve CD4 T cells to Th2 lineage</html:p>
-              <html:p>evidence_code=ECO:0000305</html:p>
+              <html:p>pmid=24786134</html:p>
+              <html:p>evidence_code=ECO:0000033</html:p>
               <html:p>ssc_relevance=Th2 differentiation; secretes IL-4/IL-13</html:p>
               <html:p>curation_note=-</html:p>
             </html:body>
@@ -33990,7 +34006,8 @@
             <html:body>
               <html:p>module=M4</html:p>
               <html:p>mechanism=BCR engagement activates CD79A/CD79B → SYK/BLK/LYN → BTK → PLCγ2</html:p>
-              <html:p>evidence_code=ECO:0000305</html:p>
+              <html:p>pmid=9852257</html:p>
+              <html:p>evidence_code=ECO:0000033</html:p>
               <html:p>ssc_relevance=B-cell receptor signaling; ibrutinib (BTK inhibitor) anti-fibrotic rationale</html:p>
               <html:p>curation_note=-</html:p>
             </html:body>
@@ -34019,7 +34036,8 @@
             <html:body>
               <html:p>module=M4</html:p>
               <html:p>mechanism=CD20 (MS4A1) is the rituximab binding target on mature B cells</html:p>
-              <html:p>evidence_code=ECO:0000305</html:p>
+              <html:p>pmid=37683180</html:p>
+              <html:p>evidence_code=ECO:0000033</html:p>
               <html:p>ssc_relevance=RECITAL trial target in SSc-ILD</html:p>
               <html:p>curation_note=-</html:p>
             </html:body>
@@ -34311,7 +34329,8 @@
             <html:body>
               <html:p>module=M2</html:p>
               <html:p>mechanism=SMAD3:SMAD4 induces COL1A2, COL5A1, COL5A2, TNC transcription (extended ECM battery)</html:p>
-              <html:p>evidence_code=ECO:0000305</html:p>
+              <html:p>pmid=16319104</html:p>
+              <html:p>evidence_code=ECO:0000314</html:p>
               <html:p>ssc_relevance=completes the ECM transcription panel</html:p>
               <html:p>curation_note=co-author upgrade</html:p>
             </html:body>
@@ -34339,7 +34358,8 @@
             <html:body>
               <html:p>module=M2</html:p>
               <html:p>mechanism=YAP1 / TAZ co-activates mechanosensitive ECM genes including COL5A1 + TNC</html:p>
-              <html:p>evidence_code=ECO:0000305</html:p>
+              <html:p>pmid=39329703</html:p>
+              <html:p>evidence_code=ECO:0000033</html:p>
               <html:p>ssc_relevance=mechanotransduction-driven ECM contribution</html:p>
               <html:p>curation_note=-</html:p>
             </html:body>
@@ -34366,7 +34386,8 @@
             <html:body>
               <html:p>module=M2</html:p>
               <html:p>mechanism=TAZ enters the YAP1/TAZ active nuclear complex</html:p>
-              <html:p>evidence_code=ECO:0000305</html:p>
+              <html:p>pmid=21654799</html:p>
+              <html:p>evidence_code=ECO:0000314</html:p>
               <html:p>ssc_relevance=YAP/TAZ shuttling under mechanical signal</html:p>
               <html:p>curation_note=-</html:p>
             </html:body>
@@ -34389,7 +34410,8 @@
             <html:body>
               <html:p>module=M3</html:p>
               <html:p>mechanism=ANGPT1 binds TEK on endothelial cells, stabilises quiescent vasculature</html:p>
-              <html:p>evidence_code=ECO:0000305</html:p>
+              <html:p>pmid=23182855</html:p>
+              <html:p>evidence_code=ECO:0000033</html:p>
               <html:p>ssc_relevance=vascular stabilisation; reduced in SSc skin</html:p>
               <html:p>curation_note=-</html:p>
             </html:body>
@@ -34412,7 +34434,8 @@
             <html:body>
               <html:p>module=M3</html:p>
               <html:p>mechanism=ANGPT2 competes with ANGPT1 at TEK, destabilises endothelium</html:p>
-              <html:p>evidence_code=ECO:0000305</html:p>
+              <html:p>pmid=40029709</html:p>
+              <html:p>evidence_code=ECO:0000033</html:p>
               <html:p>ssc_relevance=Tie2 antagonism; elevated in SSc plasma</html:p>
               <html:p>curation_note=-</html:p>
             </html:body>
@@ -34426,7 +34449,7 @@
           <speciesReference species="ANGPT2_TEK_complex__pm"/>
         </listOfProducts>
       </reaction>
-      <reaction metaid="ssc_M3_017" id="ssc_M3_017" name="SNAI1/2 + TGF-β induces TWIST1 transcription (third EMT-master TF)" reversible="false">
+      <reaction metaid="ssc_M3_017" id="ssc_M3_017" name="TGF-β/SMAD3 signalling drives the EndMT master-TF programme, inducing TWIST1 tra" reversible="false">
         <notes>
           <html:html>
             <html:head>
@@ -34434,23 +34457,22 @@
             </html:head>
             <html:body>
               <html:p>module=M3</html:p>
-              <html:p>mechanism=SNAI1/2 + TGF-β induces TWIST1 transcription (third EMT-master TF)</html:p>
-              <html:p>evidence_code=ECO:0000305</html:p>
+              <html:p>mechanism=TGF-β/SMAD3 signalling drives the EndMT master-TF programme, inducing TWIST1 transcription</html:p>
+              <html:p>pmid=16123809</html:p>
+              <html:p>evidence_code=ECO:0000033</html:p>
               <html:p>ssc_relevance=completes the EndMT TF triplet</html:p>
-              <html:p>curation_note=-</html:p>
+              <html:p>curation_note=reworded 2026-06-05: dropped unsupported SNAI1→TWIST1 causality; TGF-β/SMAD→TWIST1 per EMT-TF programme (PMID 16123809)</html:p>
             </html:body>
           </html:html>
         </notes>
         <listOfReactants>
           <speciesReference species="SMAD3p_SMAD4__nuc"/>
-          <speciesReference species="SNAI1__nuc"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="TWIST1__nuc"/>
         </listOfProducts>
         <listOfModifiers>
           <modifierSpeciesReference species="SMAD3p_SMAD4__nuc"/>
-          <modifierSpeciesReference species="SNAI1__nuc"/>
         </listOfModifiers>
       </reaction>
       <reaction metaid="ssc_M3_018" id="ssc_M3_018" name="SNAI1/2 represses CDH5 + PECAM1 + VWF + TEK transcription (loss of endothelial i" reversible="false">
@@ -34462,7 +34484,8 @@
             <html:body>
               <html:p>module=M3</html:p>
               <html:p>mechanism=SNAI1/2 represses CDH5 + PECAM1 + VWF + TEK transcription (loss of endothelial identity)</html:p>
-              <html:p>evidence_code=ECO:0000305</html:p>
+              <html:p>pmid=28062404</html:p>
+              <html:p>evidence_code=ECO:0000033</html:p>
               <html:p>ssc_relevance=canonical EndMT loss-of-identity panel</html:p>
               <html:p>curation_note=-</html:p>
             </html:body>
@@ -34491,7 +34514,8 @@
             <html:body>
               <html:p>module=M3</html:p>
               <html:p>mechanism=COX-2 (PTGS2) produces thromboxane TXA2, signals via TBXA2R for vasoconstriction</html:p>
-              <html:p>evidence_code=ECO:0000305</html:p>
+              <html:p>pmid=37321373</html:p>
+              <html:p>evidence_code=ECO:0000033</html:p>
               <html:p>ssc_relevance=COX-2/TXA2 axis; SSc digital ischaemia</html:p>
               <html:p>curation_note=-</html:p>
             </html:body>
@@ -34516,7 +34540,8 @@
             <html:body>
               <html:p>module=M3</html:p>
               <html:p>mechanism=HIF1A under hypoxia partners with ARNT in nucleus</html:p>
-              <html:p>evidence_code=ECO:0000305</html:p>
+              <html:p>pmid=7539918</html:p>
+              <html:p>evidence_code=ECO:0000314</html:p>
               <html:p>ssc_relevance=HIF1A complex assembly</html:p>
               <html:p>curation_note=-</html:p>
             </html:body>
@@ -34530,7 +34555,7 @@
           <speciesReference species="HIF1A_ARNT__nuc"/>
         </listOfProducts>
       </reaction>
-      <reaction metaid="ssc_M3_021" id="ssc_M3_021" name="SMAD3 + Notch (NICD1) cooperatively induces ZEB2" reversible="false">
+      <reaction metaid="ssc_M3_021" id="ssc_M3_021" name="TGF-β/SMAD3 signalling induces ZEB2 (SIP1) as part of the EndMT master-TF progra" reversible="false">
         <notes>
           <html:html>
             <html:head>
@@ -34538,23 +34563,22 @@
             </html:head>
             <html:body>
               <html:p>module=M3</html:p>
-              <html:p>mechanism=SMAD3 + Notch (NICD1) cooperatively induces ZEB2</html:p>
-              <html:p>evidence_code=ECO:0000305</html:p>
+              <html:p>mechanism=TGF-β/SMAD3 signalling induces ZEB2 (SIP1) as part of the EndMT master-TF programme</html:p>
+              <html:p>pmid=19838011</html:p>
+              <html:p>evidence_code=ECO:0000033</html:p>
               <html:p>ssc_relevance=parallel EndMT TF to SNAI/ZEB1</html:p>
-              <html:p>curation_note=-</html:p>
+              <html:p>curation_note=reworded 2026-06-05: dropped unsupported NICD1/Notch cooperation; TGF-β/SMAD→ZEB2 per EMT-TF programme (PMID 19838011)</html:p>
             </html:body>
           </html:html>
         </notes>
         <listOfReactants>
           <speciesReference species="SMAD3p_SMAD4__nuc"/>
-          <speciesReference species="NICD1__cyto"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="ZEB2__nuc"/>
         </listOfProducts>
         <listOfModifiers>
           <modifierSpeciesReference species="SMAD3p_SMAD4__nuc"/>
-          <modifierSpeciesReference species="NICD1__cyto"/>
         </listOfModifiers>
       </reaction>
       <reaction metaid="ssc_M4_012" id="ssc_M4_012" name="BAFF (TNFSF13B) + APRIL (TNFSF13) bind BCMA on plasma cells" reversible="false">
@@ -34566,7 +34590,8 @@
             <html:body>
               <html:p>module=M4</html:p>
               <html:p>mechanism=BAFF (TNFSF13B) + APRIL (TNFSF13) bind BCMA on plasma cells</html:p>
-              <html:p>evidence_code=ECO:0000305</html:p>
+              <html:p>pmid=38990948</html:p>
+              <html:p>evidence_code=ECO:0000314</html:p>
               <html:p>ssc_relevance=survival signal; belimumab target</html:p>
               <html:p>curation_note=-</html:p>
             </html:body>
@@ -34590,7 +34615,8 @@
             <html:body>
               <html:p>module=M4</html:p>
               <html:p>mechanism=GATA3, TBX21, FOXP3, RORC drive Th2 / Th1 / Treg / Th17 lineage commitment respectively</html:p>
-              <html:p>evidence_code=ECO:0000305</html:p>
+              <html:p>pmid=28847903</html:p>
+              <html:p>evidence_code=ECO:0000033</html:p>
               <html:p>ssc_relevance=T-helper lineage anchors</html:p>
               <html:p>curation_note=-</html:p>
             </html:body>
@@ -34615,7 +34641,8 @@
             <html:body>
               <html:p>module=M4</html:p>
               <html:p>mechanism=Activated B cell BCR + CD40-CD40L → CD22 modulation and IRF4 induction</html:p>
-              <html:p>evidence_code=ECO:0000305</html:p>
+              <html:p>pmid=34759017</html:p>
+              <html:p>evidence_code=ECO:0000314</html:p>
               <html:p>ssc_relevance=full B-cell activation surface</html:p>
               <html:p>curation_note=-</html:p>
             </html:body>
@@ -34666,7 +34693,8 @@
             <html:body>
               <html:p>module=M1</html:p>
               <html:p>mechanism=IRF7 cytosolic phospho-form translocates to nucleus</html:p>
-              <html:p>evidence_code=ECO:0000305</html:p>
+              <html:p>pmid=37251373</html:p>
+              <html:p>evidence_code=ECO:0000033</html:p>
               <html:p>ssc_relevance=IRF7 activation closes the loop</html:p>
               <html:p>curation_note=-</html:p>
             </html:body>
@@ -34688,7 +34716,8 @@
             <html:body>
               <html:p>module=M1</html:p>
               <html:p>mechanism=SOCS1 + PTPN2 inhibit JAK1 to dampen IFN signalling</html:p>
-              <html:p>evidence_code=ECO:0000305</html:p>
+              <html:p>pmid=11706989</html:p>
+              <html:p>evidence_code=ECO:0000033</html:p>
               <html:p>ssc_relevance=IFN negative feedback</html:p>
               <html:p>curation_note=-</html:p>
             </html:body>
@@ -34711,7 +34740,8 @@
             <html:body>
               <html:p>module=M3</html:p>
               <html:p>mechanism=NOTCH3 receptor on smooth-muscle/pericyte engaged by ligands (cross-Notch with M3 vasculopathy)</html:p>
-              <html:p>evidence_code=ECO:0000305</html:p>
+              <html:p>pmid=31868216</html:p>
+              <html:p>evidence_code=ECO:0000033</html:p>
               <html:p>ssc_relevance=NOTCH3 mutations cause CADASIL; pericyte axis in SSc</html:p>
               <html:p>curation_note=-</html:p>
             </html:body>
@@ -34737,7 +34767,8 @@
             <html:body>
               <html:p>module=M1</html:p>
               <html:p>mechanism=TLR8 endosomal ssRNA sensing → MyD88 → IRF7</html:p>
-              <html:p>evidence_code=ECO:0000305</html:p>
+              <html:p>pmid=31662487</html:p>
+              <html:p>evidence_code=ECO:0000314</html:p>
               <html:p>ssc_relevance=TLR8 covers ssRNA sensing branch</html:p>
               <html:p>curation_note=-</html:p>
             </html:body>

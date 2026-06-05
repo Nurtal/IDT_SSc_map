@@ -133,5 +133,20 @@
     "title": "TLR7 and TLR8 activate distinct pathways in monocytes during RNA virus infection.",
     "abstract": "Human blood CD14",
     "is_review": false
+  },
+  "16123809": {
+    "title": "TGF-beta and epithelial-to-mesenchymal transitions.",
+    "abstract": "Remarkable phenotype plasticity of epithelial cells underlies morphogenesis, epithelial repair and tumor invasiveness. Detailed understanding of the contextual cues and molecular mediators that control epithelial plasticity will be required in order to develop viable therapeutic approaches targeting epithelial-to-mesenchymal transition (EMT), an advanced manifestation of epithelial plasticity. Members of the transforming growth factor (TGF-beta) family of growth factors can initiate and maintain EMT in a variety of biological systems and pathophysiological context by activating major signaling pathways and transcriptional regulators integrated in extensive signaling networks. Here we will review the distinct physiological contexts of EMT and the underlying molecular signaling networks controlled by TGF-beta.",
+    "is_review": true
+  },
+  "19838011": {
+    "title": "Transforming growth factor-beta signaling in epithelial-mesenchymal transition and progression of cancer.",
+    "abstract": "Transforming growth factor-beta (TGF-beta) is a multifunctional cytokine that induces growth arrest, tissue fibrosis, and epithelial-mesenchymal transition (EMT) through activation of Smad and non-Smad signaling pathways. EMT is the differentiation switch by which polarized epithelial cells differentiate into contractile and motile mesenchymal cells. Cell motility and invasive capacity are activated upon EMT. Multiple transcription factors, including deltaEF1/ZEB1, SIP1/ZEB2, and Snail/SNAI1, are induced by TGF-beta-Smad signaling and play critical roles in TGF-beta-induced EMT. In addition, both non-Smad signaling activated by TGF-beta and cross-talk with other signaling pathways play important roles in induction of EMT. Of these, Ras signaling synergizes with TGF-beta-Smad signaling, and plays an important role in the induction of EMT. TGF-beta inhibitors prevent invasion and metastasis of advanced cancer through multiple mechanisms, including inhibition of EMT. The discovery of molecules that inhibit TGF-beta-induced EMT but not TGF-beta-induced growth arrest may be an ideal strategy for treatment of invasion and metastasis of cancer.",
+    "is_review": true
+  },
+  "37251373": {
+    "title": "Interferon regulatory factor 7 in inflammation, cancer and infection.",
+    "abstract": "Interferon regulatory factor 7 (IRF7), a member of the interferon regulatory factors (IRFs) family, is located downstream of the pattern recognition receptors (PRRs)-mediated signaling pathway and is essential for the production of type I interferon (IFN-I). Activation of IRF7 inhibits various viral and bacterial infections and suppresses the growth and metastasis of some cancers, but it may also affect the tumor microenvironment and promote the development of other cancers. Here, we summarize recent advances in the role of IRF7 as a multifunctional transcription factor in inflammation, cancer and infection by regulating IFN-I production or IFN-I-independent signaling pathways.",
+    "is_review": true
   }
 }
