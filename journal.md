@@ -1507,3 +1507,25 @@ OK. Les 8 crosstalks passent (5 primaires + 3 ponts). **Pratique** : sur les 34 
 le socle canonique est déjà au standard ; seules les arêtes de nouveauté SSc demandent du
 primaire.
 
+### 17:30 — Passe 3 : vérification sur texte intégral (keep/discard)
+
+L'utilisateur a téléchargé les PDF (dans `/home/drfox/data/IDT_SSc_map/article/`, hors repo).
+J'ai **lu le texte intégral** (extraction `pymupdf`, recherche par entités+synonymes :
+CDH5=VE-cadherin, NOS3=eNOS, MS4A1=CD20, TEK=Tie2…) pour trancher keep/discard chaque
+`proposed`. Log dans `curation/fulltext_verification_log.md`.
+
+Sur 34 proposed : **27 keep** (le texte confirme l'assertion → `confirmed`), **2 discard**,
+**5 non-vérifiables** (PDF absent → restent `proposed`).
+- Discards : `ssc_M3_017` (TWIST1) et `ssc_M3_021` (ZEB2) étaient assignés à PMID 28062404
+  (Manetti, EndoMT en SSc) qui documente **Snail1** mais **ni TWIST1 ni ZEB2** → retour
+  `untested`. Le même PMID **reste valide** pour M3_011/012/018 (perte d'identité endothéliale
+  + marqueurs mésenchymateux, bien démontrés dans l'article).
+- Exemples keep confirmés sur texte : M3_020 « HIF-1 is a heterodimeric bHLH-PAS… HIF-1α
+  complexed with HIF-1β (ARNT) » ; M4_001 « Upon IL-4 binding to IL-4Rα… » ; M2_023 (SSc)
+  « Overexpression of Smad3 increased transcription of the α2(I) collagen gene… scleroderma
+  fibroblasts ».
+
+**État final** : confirmed **67**, proposed 5, conceptual_bridge 4, phenotype_aggregation 6,
+untested 3. PMID SSc 72/85 (84.7%), `reaction_evidence` 230/244. Worksheet régénérée
+(ne liste plus que 5 proposed + 10 reclass + 3 untested). Lint OK, preflight vert, carte intacte.
+

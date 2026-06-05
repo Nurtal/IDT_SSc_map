@@ -9,9 +9,9 @@ The integrated map's reaction annotations come from two distinct layers. Conflat
 | Layer | Reactions | With PMID | Experimental ECO (314/270/353) |
 |---|---|---|---|
 | **Reactome backbone** (pure-Reactome rows of `reaction_evidence.tsv`) | 159 | 158 (99.4%) | 0 (0.0%) |
-| **SSc-Tier-1** (`ssc_curated_reactions.tsv`) | 85 | 74 (87.1%) | 50 (58.8%) |
+| **SSc-Tier-1** (`ssc_curated_reactions.tsv`) | 85 | 72 (84.7%) | 50 (58.8%) |
 
-**Read this as:** the headline reaction count is dominated by the imported Reactome backbone, which propagates `ECO:0000305` (curator inference) by default. The genuinely SSc-specific layer is 85 reactions, of which 74 carry a primary PMID and 50 carry an experimental ECO code. This is the honest denominator for 'how much new SSc curation does this resource contribute'.
+**Read this as:** the headline reaction count is dominated by the imported Reactome backbone, which propagates `ECO:0000305` (curator inference) by default. The genuinely SSc-specific layer is 85 reactions, of which 72 carry a primary PMID and 50 carry an experimental ECO code. This is the honest denominator for 'how much new SSc curation does this resource contribute'.
 
 ## 1b. SSc-Tier-1 curation status (depth pass)
 
@@ -19,11 +19,11 @@ Each SSc reaction carries a `curation_status`. `proposed` rows received a litera
 
 | status | n |
 |---|---|
-| confirmed | 40 |
-| proposed | 34 |
+| confirmed | 67 |
 | phenotype_aggregation | 6 |
+| proposed | 5 |
 | conceptual_bridge | 4 |
-| untested | 1 |
+| untested | 3 |
 
 ## 2. TODO reaction-type classification
 
@@ -55,8 +55,8 @@ See `evidence_stratification.tsv`. Per (layer, ECO):
 |---|---|---|---|---|
 | reactome_backbone | ECO:0000305 | 158 | 158 | 0 |
 | reactome_backbone | TODO | 1 | 0 | 1 |
-| ssc_tier1 | ECO:0000033 | 23 | 23 | 0 |
+| ssc_tier1 | ECO:0000033 | 21 | 21 | 0 |
 | ssc_tier1 | ECO:0000270 | 10 | 10 | 0 |
-| ssc_tier1 | ECO:0000305 | 12 | 1 | 11 |
+| ssc_tier1 | ECO:0000305 | 14 | 1 | 13 |
 | ssc_tier1 | ECO:0000314 | 38 | 38 | 0 |
 | ssc_tier1 | ECO:0000353 | 2 | 2 | 0 |

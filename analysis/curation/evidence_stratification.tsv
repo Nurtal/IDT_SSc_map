@@ -1,8 +1,8 @@
 layer	evidence_code	n_reactions	n_with_pmid	n_without_pmid
 reactome_backbone	ECO:0000305	158	158	0
 reactome_backbone	TODO	1	0	1
-ssc_tier1	ECO:0000033	23	23	0
+ssc_tier1	ECO:0000033	21	21	0
 ssc_tier1	ECO:0000270	10	10	0
-ssc_tier1	ECO:0000305	12	1	11
+ssc_tier1	ECO:0000305	14	1	13
 ssc_tier1	ECO:0000314	38	38	0
 ssc_tier1	ECO:0000353	2	2	0
