@@ -19436,6 +19436,96 @@
           </rdf:RDF>
         </annotation>
       </species>
+      <species metaid="FLI1__nuc" id="FLI1__nuc" name="FLI1" compartment="nucleus" initialAmount="0">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M3</html:p>
+              <html:p>tier=1</html:p>
+              <html:p>notes=auto-created by wire_ssc_tier1</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#FLI1__nuc">
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/hgnc.symbol/FLI1"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+              <bqbiol:hasTaxon>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/taxonomy/9606"/>
+                </rdf:Bag>
+              </bqbiol:hasTaxon>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="MMP12__ext" id="MMP12__ext" name="MMP12" compartment="extracellular" initialAmount="0">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M3</html:p>
+              <html:p>tier=1</html:p>
+              <html:p>notes=auto-created by wire_ssc_tier1</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#MMP12__ext">
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/hgnc.symbol/MMP12"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+              <bqbiol:hasTaxon>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/taxonomy/9606"/>
+                </rdf:Bag>
+              </bqbiol:hasTaxon>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="PLAUR__pm" id="PLAUR__pm" name="PLAUR" compartment="plasma_membrane" initialAmount="0">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M3</html:p>
+              <html:p>tier=1</html:p>
+              <html:p>notes=auto-created by wire_ssc_tier1</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#PLAUR__pm">
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/hgnc.symbol/PLAUR"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+              <bqbiol:hasTaxon>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/taxonomy/9606"/>
+                </rdf:Bag>
+              </bqbiol:hasTaxon>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
     </listOfSpecies>
     <listOfReactions>
       <reaction metaid="reactionVertex_909721_61" id="reactionVertex_909721_61" reversible="false">
@@ -35195,6 +35285,53 @@
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="phenotype_myofibroblast_activation__cell"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="ssc_M3_023" id="ssc_M3_023" name="FLI1 maintains dermal endothelial identity; its reduction in SSc microvascular E" reversible="false">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M3</html:p>
+              <html:p>mechanism=FLI1 maintains dermal endothelial identity; its reduction in SSc microvascular EC permits EndoMT</html:p>
+              <html:p>pmid=28062404</html:p>
+              <html:p>evidence_code=ECO:0000314</html:p>
+              <html:p>ssc_relevance=FLI1 deficiency is an SSc-signature endothelial lesion driving EndoMT</html:p>
+              <html:p>curation_note=discovery candidate cand_endomt_fli1; quote: &quot;reduction in protein expression of Fli1 (p&lt;0.001 vs H-dMVECs) (ﬁgure 3C), a transcription factor that plays a pivotal role in the maintenance of EC homeostasis &quot;</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="FLI1__nuc"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="CDH5__pm"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="ssc_M3_024" id="ssc_M3_024" name="MMP-12-dependent cleavage of uPAR (PLAUR) drives EndoMT induced by SSc serum" reversible="false">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M3</html:p>
+              <html:p>mechanism=MMP-12-dependent cleavage of uPAR (PLAUR) drives EndoMT induced by SSc serum</html:p>
+              <html:p>pmid=28062404</html:p>
+              <html:p>evidence_code=ECO:0000314</html:p>
+              <html:p>ssc_relevance=MMP-12/uPAR axis as an SSc-specific EndoMT trigger</html:p>
+              <html:p>curation_note=discovery candidate cand_endomt_mmp12; quote: &quot;Matrix metalloproteinase-12-dependent uPAR cleavage was implicated in the induction of EndoMT by SSc sera.&quot;</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="MMP12__ext"/>
+          <speciesReference species="PLAUR__pm"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="phenotype_vascular_remodelling__cell"/>
         </listOfProducts>
       </reaction>
     </listOfReactions>

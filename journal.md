@@ -1643,3 +1643,20 @@ Confirme la leçon : les **mécanismes moléculaires SSc-spécifiques** rendent 
 **État** : 535 espèces / 266 réactions / **91 SSc** (97.8% Reactome-novel). Croissance totale
 de la session : 85 → 91 (+6 : 1 auto-Ac, 1 PF4→IFNA1, 1 IRF5→IFN, 3 fibroblaste). SBML 0
 erreur, lint vert, preflight vert, biomodels régénéré.
+
+### Batch EndoMT (M3) — +2 arêtes SSc-spécifiques
+
+Source : Manetti 2021 (28062404, EndoMT en SSc) — full text injecté au corpus depuis le PDF
+(non-OA, donc extraction pymupdf pour permettre l'ancrage). 2 arêtes NOUVELLES (la carte avait
+déjà SNAI1/CDH5/loss-of-identity), ancrées, PASS, promues :
+- `ssc_M3_023` FLI1 → CDH5 : FLI1 maintient l'identité endothéliale ; sa déficience dans l'EC
+  dermique SSc permet l'EndoMT (lésion-signature SSc). Citation corrigée pour couvrir Fli1 +
+  homéostasie EC + EndoMT (le split sur '.' l'avait tronquée à 'p<0.').
+- `ssc_M3_024` MMP12/PLAUR → remodelage vasculaire : clivage d'uPAR MMP-12-dépendant déclenchant
+  l'EndoMT induite par sérum SSc.
+
+Détail méthodo utile : pour un papier non-OA, j'injecte le texte du PDF (déjà téléchargé) dans
+`curation/staging/corpus/` → l'ancrage G2 fonctionne sur full text même hors OA.
+
+**État** : 538 espèces / 268 réactions / **93 SSc** (97.8% Reactome-novel). Croissance totale
+session : 85 → 93 (+8). SBML 0 erreur, lint vert, preflight vert, biomodels régénéré.

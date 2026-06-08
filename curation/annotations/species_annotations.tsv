@@ -534,3 +534,6 @@ SFRP4__ext	SFRP4				extracellular	M2	9606	wired by wire_ssc_tier1.py
 FNDC1__ext	FNDC1				extracellular	M2	9606	wired by wire_ssc_tier1.py
 RUNX1__nuc	RUNX1				nucleus	M2	9606	wired by wire_ssc_tier1.py
 CREB3L1__nuc	CREB3L1				nucleus	M2	9606	wired by wire_ssc_tier1.py
+FLI1__nuc	FLI1				nucleus	M3	9606	wired by wire_ssc_tier1.py
+MMP12__ext	MMP12				extracellular	M3	9606	wired by wire_ssc_tier1.py
+PLAUR__pm	PLAUR				plasma_membrane	M3	9606	wired by wire_ssc_tier1.py
