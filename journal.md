@@ -1626,3 +1626,20 @@ génétique d'association. À réorienter les prochains batchs en conséquence.
 
 **État** : 529 espèces / 263 réactions / **88 SSc** (97.7% Reactome-novel) ; +3 arêtes ce cycle
 (TOP1/CENPB auto-Ab, PF4→IFNA1, IRF5→IFN). SBML 0 erreur, lint vert, preflight vert.
+
+### Batch états de fibroblaste SSc (catégorie à haut rendement) — +3 arêtes
+
+Source : Tabib 2021 (34282151, full text OA) — le papier single-cell de référence sur les
+états fibroblastiques SSc. 3 arêtes ancrées extraites, toutes PASS aux gates, promues :
+- `ssc_M2_026` SFRP2/DPP4 (progéniteur) → myofibroblaste (transition en 2 étapes).
+- `ssc_M2_027` SFRP4/FNDC1 (fraction qui s'engage) → myofibroblaste.
+- `ssc_M2_028` FOSL2/RUNX1/CREB3L1 (TF amont) → différenciation myofibroblastique.
+6 nouvelles espèces (SFRP2, DPP4, SFRP4, FNDC1, RUNX1, CREB3L1), toutes HGNC-valides.
+Gur (LGR5) et Valenzi écartés : abstracts trop vagues pour une arête causale propre (qualité).
+
+Confirme la leçon : les **mécanismes moléculaires SSc-spécifiques** rendent bien (auto-Ac,
+états fibroblaste), contrairement au GWAS d'association.
+
+**État** : 535 espèces / 266 réactions / **91 SSc** (97.8% Reactome-novel). Croissance totale
+de la session : 85 → 91 (+6 : 1 auto-Ac, 1 PF4→IFNA1, 1 IRF5→IFN, 3 fibroblaste). SBML 0
+erreur, lint vert, preflight vert, biomodels régénéré.

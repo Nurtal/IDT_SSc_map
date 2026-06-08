@@ -2,7 +2,7 @@
   "integrated_xml": "curation/celldesigner/SSc_MIM_integrated.xml",
   "tsv_input": "curation/ssc_curated_reactions.tsv",
   "stubs_wired": 88,
-  "reactions_added": 88,
+  "reactions_added": 91,
   "species_auto_created": [
     "dsDNA__cyto",
     "cGAMP__cyto",
@@ -59,6 +59,12 @@
     "NOTCH3_JAG1_complex__pm",
     "TOP1__ext",
     "CENPB__ext",
-    "IRF5__nuc"
+    "IRF5__nuc",
+    "SFRP2__ext",
+    "DPP4__pm",
+    "SFRP4__ext",
+    "FNDC1__ext",
+    "RUNX1__nuc",
+    "CREB3L1__nuc"
   ]
 }

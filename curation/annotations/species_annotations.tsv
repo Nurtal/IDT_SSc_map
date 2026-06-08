@@ -528,3 +528,9 @@ NOTCH3_JAG1_complex__pm					plasma_membrane	M3	9606	wired by wire_ssc_tier1.py
 TOP1__ext	TOP1				extracellular	M4	9606	wired by wire_ssc_tier1.py
 CENPB__ext	CENPB				extracellular	M4	9606	wired by wire_ssc_tier1.py
 IRF5__nuc	IRF5				nucleus	M1	9606	wired by wire_ssc_tier1.py
+SFRP2__ext	SFRP2				extracellular	M2	9606	wired by wire_ssc_tier1.py
+DPP4__pm	DPP4				plasma_membrane	M2	9606	wired by wire_ssc_tier1.py
+SFRP4__ext	SFRP4				extracellular	M2	9606	wired by wire_ssc_tier1.py
+FNDC1__ext	FNDC1				extracellular	M2	9606	wired by wire_ssc_tier1.py
+RUNX1__nuc	RUNX1				nucleus	M2	9606	wired by wire_ssc_tier1.py
+CREB3L1__nuc	CREB3L1				nucleus	M2	9606	wired by wire_ssc_tier1.py

@@ -19256,6 +19256,186 @@
           </rdf:RDF>
         </annotation>
       </species>
+      <species metaid="SFRP2__ext" id="SFRP2__ext" name="SFRP2" compartment="extracellular" initialAmount="0">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M2</html:p>
+              <html:p>tier=1</html:p>
+              <html:p>notes=auto-created by wire_ssc_tier1</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#SFRP2__ext">
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/hgnc.symbol/SFRP2"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+              <bqbiol:hasTaxon>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/taxonomy/9606"/>
+                </rdf:Bag>
+              </bqbiol:hasTaxon>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="DPP4__pm" id="DPP4__pm" name="DPP4" compartment="plasma_membrane" initialAmount="0">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M2</html:p>
+              <html:p>tier=1</html:p>
+              <html:p>notes=auto-created by wire_ssc_tier1</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#DPP4__pm">
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/hgnc.symbol/DPP4"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+              <bqbiol:hasTaxon>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/taxonomy/9606"/>
+                </rdf:Bag>
+              </bqbiol:hasTaxon>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="SFRP4__ext" id="SFRP4__ext" name="SFRP4" compartment="extracellular" initialAmount="0">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M2</html:p>
+              <html:p>tier=1</html:p>
+              <html:p>notes=auto-created by wire_ssc_tier1</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#SFRP4__ext">
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/hgnc.symbol/SFRP4"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+              <bqbiol:hasTaxon>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/taxonomy/9606"/>
+                </rdf:Bag>
+              </bqbiol:hasTaxon>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="FNDC1__ext" id="FNDC1__ext" name="FNDC1" compartment="extracellular" initialAmount="0">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M2</html:p>
+              <html:p>tier=1</html:p>
+              <html:p>notes=auto-created by wire_ssc_tier1</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#FNDC1__ext">
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/hgnc.symbol/FNDC1"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+              <bqbiol:hasTaxon>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/taxonomy/9606"/>
+                </rdf:Bag>
+              </bqbiol:hasTaxon>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="RUNX1__nuc" id="RUNX1__nuc" name="RUNX1" compartment="nucleus" initialAmount="0">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M2</html:p>
+              <html:p>tier=1</html:p>
+              <html:p>notes=auto-created by wire_ssc_tier1</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#RUNX1__nuc">
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/hgnc.symbol/RUNX1"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+              <bqbiol:hasTaxon>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/taxonomy/9606"/>
+                </rdf:Bag>
+              </bqbiol:hasTaxon>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="CREB3L1__nuc" id="CREB3L1__nuc" name="CREB3L1" compartment="nucleus" initialAmount="0">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M2</html:p>
+              <html:p>tier=1</html:p>
+              <html:p>notes=auto-created by wire_ssc_tier1</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#CREB3L1__nuc">
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/hgnc.symbol/CREB3L1"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+              <bqbiol:hasTaxon>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/taxonomy/9606"/>
+                </rdf:Bag>
+              </bqbiol:hasTaxon>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
     </listOfSpecies>
     <listOfReactions>
       <reaction metaid="reactionVertex_909721_61" id="reactionVertex_909721_61" reversible="false">
@@ -34942,6 +35122,79 @@
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="IFNB1__ext"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="ssc_M2_026" id="ssc_M2_026" name="SSc SFRP2hi/DPP4 progenitor fibroblasts give rise to myofibroblasts (two-step tr" reversible="false">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M2</html:p>
+              <html:p>mechanism=SSc SFRP2hi/DPP4 progenitor fibroblasts give rise to myofibroblasts (two-step transition)</html:p>
+              <html:p>pmid=34282151</html:p>
+              <html:p>evidence_code=ECO:0000270</html:p>
+              <html:p>ssc_relevance=SSc-specific dermal myofibroblast progenitor state (Tabib single-cell)</html:p>
+              <html:p>curation_note=discovery candidate cand_fib_01; quote: &quot;Here, we show that SSc dermal myofibroblasts arise in two steps from an SFRP2hi/DPP4-expressing progenitor fibroblast population.&quot;</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="SFRP2__ext"/>
+          <speciesReference species="DPP4__pm"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="phenotype_myofibroblast_activation__cell"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="ssc_M2_027" id="ssc_M2_027" name="The committing SFRP2hi fraction acquires SFRP4 and FNDC1 as it differentiates in" reversible="false">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M2</html:p>
+              <html:p>mechanism=The committing SFRP2hi fraction acquires SFRP4 and FNDC1 as it differentiates into myofibroblasts</html:p>
+              <html:p>pmid=34282151</html:p>
+              <html:p>evidence_code=ECO:0000270</html:p>
+              <html:p>ssc_relevance=SFRP4/FNDC1 mark the SSc fibroblast fraction committing to myofibroblast</html:p>
+              <html:p>curation_note=discovery candidate cand_fib_02; quote: &quot;Only a fraction of SFRP2hi SSc fibroblasts differentiate into myofibroblasts, as shown by expression of additional markers, SFRP4 and FNDC1.&quot;</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="SFRP4__ext"/>
+          <speciesReference species="FNDC1__ext"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="phenotype_myofibroblast_activation__cell"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="ssc_M2_028" id="ssc_M2_028" name="Upstream TFs FOSL2/RUNX1/CREB3L1 are implicated in driving SSc myofibroblast dif" reversible="false">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M2</html:p>
+              <html:p>mechanism=Upstream TFs FOSL2/RUNX1/CREB3L1 are implicated in driving SSc myofibroblast differentiation</html:p>
+              <html:p>pmid=34282151</html:p>
+              <html:p>evidence_code=ECO:0000270</html:p>
+              <html:p>ssc_relevance=SSc myofibroblast regulons (Tabib): adds RUNX1/CREB3L1 upstream regulators</html:p>
+              <html:p>curation_note=discovery candidate cand_fib_03; quote: &quot;Bioinformatics analysis of the SSc fibroblast transcriptomes implicated upstream transcription factors, including FOSL2, RUNX1, STAT1, FOXP1, IRF7 and CREB3L1, &quot;</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="FOSL2__nuc"/>
+          <speciesReference species="RUNX1__nuc"/>
+          <speciesReference species="CREB3L1__nuc"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="phenotype_myofibroblast_activation__cell"/>
         </listOfProducts>
       </reaction>
     </listOfReactions>

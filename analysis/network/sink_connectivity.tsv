@@ -59,6 +59,7 @@ COL5A1__ext	ssc_tier1	1	-1	1	2	2	no
 COL5A2__ext	ssc_tier1	2	-1	2	2	3	no
 COMP__ecm	ssc_tier1	0	-1	0	2	2	yes
 COX_2__er	ssc_tier1	-1	-1	-1	-1	-1	no
+CREB3L1__nuc	M2	1	-1	1	4	3	no
 CREBBP__nuc	M3	1	-1	5	1	6	no
 CRK_CRKL__cyto	M2	4	-1	6	7	4	no
 CRLF1_CLCF1__cyto	M4	-1	-1	-1	-1	-1	no
@@ -80,6 +81,7 @@ DLL_JAG_NOTCH1__cyto	M3	3	-1	5	3	6	no
 DLL_JAG__cyto	M3	5	-1	7	5	8	no
 DNER_NOTCH1_DTX__cyto	M3	2	-1	4	2	5	no
 DNER__cyto	M3	3	-1	5	3	6	no
+DPP4__pm	M2	1	-1	1	4	3	no
 DTX_ITCH__cyto	M3	5	-1	7	5	8	no
 DTX__cyto	M3	4	-1	6	4	7	no
 Dimeric_TGFB1_TGFBR2_homodimer__cyto	M2	3	-1	3	4	3	no
@@ -95,6 +97,7 @@ FAP__pm	ssc_tier1	1	-1	1	2	3	no
 FBXW7_SKP1_CUL1_RBX1__nuc	M3	1	-1	7	1	8	no
 FKBP1A__cyto	M2	3	-1	3	4	3	no
 FN1__ecm	ssc_tier1	0	-1	0	2	1	yes
+FNDC1__ext	M2	1	-1	1	4	3	no
 FOSL2_TBX2__nuc	M2	2	-1	2	4	3	no
 FOSL2__nuc	ssc_tier1	1	-1	1	3	2	no
 FOXP3__nuc	ssc_tier1	2	-1	7	9	2	no
@@ -351,7 +354,10 @@ ROCK1__cyto	ssc_tier1	2	-1	2	4	3	no
 ROCK2__cyto	ssc_tier1	2	-1	2	4	3	no
 RORC__nuc	ssc_tier1	2	-1	7	9	2	no
 RSAD2__er	M1	0	0	-1	-1	4	yes
+RUNX1__nuc	M2	1	-1	1	4	3	no
 SAMHD1__nuc	M1	1	1	-1	-1	4	no
+SFRP2__ext	M2	1	-1	1	4	3	no
+SFRP4__ext	M2	1	-1	1	4	3	no
 SMAD2_3_PMEPA1__cyto	M2	4	-1	5	5	4	no
 SMAD2_3__cyto	M2	3	-1	4	4	3	no
 SMAD2_SMURF2__cyto	M2	-1	-1	-1	-1	-1	no
