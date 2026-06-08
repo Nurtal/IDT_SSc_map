@@ -17991,7 +17991,7 @@
           </rdf:RDF>
         </annotation>
       </species>
-      <species metaid="CXCL4__ext" id="CXCL4__ext" name="CXCL4" compartment="extracellular" initialAmount="0">
+      <species metaid="PF4__ext" id="PF4__ext" name="PF4" compartment="extracellular" initialAmount="0">
         <notes>
           <html:html>
             <html:head>
@@ -18006,10 +18006,10 @@
         </notes>
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-            <rdf:Description rdf:about="#CXCL4__ext">
+            <rdf:Description rdf:about="#PF4__ext">
               <bqbiol:isVersionOf>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/hgnc.symbol/CXCL4"/>
+                  <rdf:li rdf:resource="http://identifiers.org/hgnc.symbol/PF4"/>
                 </rdf:Bag>
               </bqbiol:isVersionOf>
               <bqbiol:hasTaxon>
@@ -32933,7 +32933,7 @@
           </html:html>
         </notes>
         <listOfReactants>
-          <speciesReference species="CXCL4__ext"/>
+          <speciesReference species="PF4__ext"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="pDC_activated__cell"/>
@@ -34224,7 +34224,7 @@
           </html:html>
         </notes>
         <listOfReactants>
-          <speciesReference species="CXCL4__ext"/>
+          <speciesReference species="PF4__ext"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="fibroblast_proFibrotic__cell"/>
@@ -34864,6 +34864,32 @@
         <listOfProducts>
           <speciesReference species="fibroblast_proFibrotic__cell"/>
         </listOfProducts>
+      </reaction>
+      <reaction metaid="ssc_M1_016" id="ssc_M1_016" name="PF4 (CXCL4) binds DNA/RNA and favours pDC IFN-α production, feeding the SSc type" reversible="false">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M1</html:p>
+              <html:p>mechanism=PF4 (CXCL4) binds DNA/RNA and favours pDC IFN-α production, feeding the SSc type-I IFN signature</html:p>
+              <html:p>pmid=32707718</html:p>
+              <html:p>evidence_code=ECO:0000314</html:p>
+              <html:p>ssc_relevance=CXCL4 (PF4) drives the SSc type-I IFN signature via pDC</html:p>
+              <html:p>curation_note=discovery candidate cand_pilot_01; quote: &quot;CXCL4 binds DNA/RNA and favors interferon (IFN)-α production by plasmacytoid dendritic cells (pDCs), contributing to the type I IFN (IFN-I) signature in SSc pat&quot;</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="PF4__ext"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="IFNA1__ext"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="pDC_activated__cell"/>
+        </listOfModifiers>
       </reaction>
     </listOfReactions>
   </model>

@@ -66,7 +66,6 @@ CRLF1__cyto	M4	-1	-1	-1	-1	-1	no
 CTF1_LIFR_JAKs__cyto	M4	6	-1	6	8	6	no
 CTF1__ext	M4	6	-1	6	8	6	no
 CTGF__ext	M2	0	-1	0	2	2	yes
-CXCL4__ext	M1	2	-1	2	4	2	no
 Class_I_MHC_heavy_chain_MHC_HC__er	M1	1	1	-1	-1	4	no
 Cleaved_PDGF_B_peptides__golgi	M2	-1	-1	-1	-1	-1	no
 Cleaved_novel_PDGF_fragments__ext	M2	-1	-1	-1	-1	-1	no
@@ -317,6 +316,7 @@ PDGF_p_PDGFR_dimer_p_PLCgamma__cyto	M2	2	-1	4	5	2	no
 PDGF_phospho_PDGF_receptor_dimer_STAT__cyto	M2	4	-1	6	7	4	no
 PDGF_precursor_dimers_AA_BB_A_B_CC_DD__er	M2	-1	-1	-1	-1	-1	no
 PDGF_precursor_dimers_AA_BB_A_B_CC_DD__golgi	M2	-1	-1	-1	-1	-1	no
+PF4__ext	M1	2	-1	2	4	2	no
 PI3K__cyto	M2	3	-1	5	6	3	no
 PI_3_4_5_P3__cyto	M2	2	-1	4	5	2	no
 PI_4_5_P2__cyto	M2	2	-1	4	5	2	no

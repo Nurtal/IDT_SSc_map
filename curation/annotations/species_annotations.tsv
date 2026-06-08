@@ -480,7 +480,7 @@ IFNB1__ext	IFNB1				extracellular	M1	9606	wired by wire_ssc_tier1.py
 IRF7_p__nuc					nucleus	M1	9606	wired by wire_ssc_tier1.py
 IFNA1__ext	IFNA1				extracellular	M1	9606	wired by wire_ssc_tier1.py
 DDX58_MAVS__mito					mitochondrion	M1	9606	wired by wire_ssc_tier1.py
-CXCL4__ext	CXCL4				extracellular	M1	9606	wired by wire_ssc_tier1.py
+PF4__ext	PF4				extracellular	M1	9606	wired by wire_ssc_tier1.py | HGNC-official PF4; CXCL4 in SSc literature
 pDC_activated__cell					cell	M1	9606	wired by wire_ssc_tier1.py
 phenotype_ISG_signature__cell					cell	M1	9606	wired by wire_ssc_tier1.py
 TGFB1__ext	TGFB1				extracellular	M2	9606	wired by wire_ssc_tier1.py

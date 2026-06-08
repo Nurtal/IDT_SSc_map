@@ -2,7 +2,7 @@
   "integrated_xml": "curation/celldesigner/SSc_MIM_integrated.xml",
   "tsv_input": "curation/ssc_curated_reactions.tsv",
   "stubs_wired": 88,
-  "reactions_added": 86,
+  "reactions_added": 87,
   "species_auto_created": [
     "dsDNA__cyto",
     "cGAMP__cyto",
@@ -12,7 +12,7 @@
     "IRF7_p__nuc",
     "IFNA1__ext",
     "DDX58_MAVS__mito",
-    "CXCL4__ext",
+    "PF4__ext",
     "pDC_activated__cell",
     "phenotype_ISG_signature__cell",
     "TGFB1__ext",

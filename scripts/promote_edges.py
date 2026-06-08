@@ -53,8 +53,11 @@ def main() -> None:
     fn = list(ssc_rows[0].keys())
     nxt = next_ids(ssc_rows)
 
+    # idempotency: skip candidates whose (type, reactants, products, pmid) is already curated
+    existing = {(r["type"], r["reactants"], r["products"], r["pmid"]) for r in ssc_rows}
     to_promote = [c for cid, c in cands.items()
-                  if (c.get("decision", "") or "").strip() == "promote" and cid in passing]
+                  if (c.get("decision", "") or "").strip() == "promote" and cid in passing
+                  and (c["type"], c["reactants"], c["products"], c["source_pmid"]) not in existing]
     if not to_promote:
         print("[promote] nothing to promote (need decision=promote AND verdict=PASS)")
         return

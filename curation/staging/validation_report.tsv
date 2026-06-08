@@ -1,4 +1,4 @@
 candidate_id	verdict	problems	flags	mechanism
-cand_pilot_01	FLAG		G1:not_official_HGNC[CXCL4]	CXCL4 binds DNA/RNA and favours pDC IFN-α production, feeding the SSc type-I IFN
+cand_pilot_01	PASS			PF4 (CXCL4) binds DNA/RNA and favours pDC IFN-α production, feeding the SSc type
 cand_pilot_02	PASS			anti-Topo-I (TOP1) and anti-Cenp-B (CENPB) autoantibodies induce pro-fibrotic ma
 cand_negctrl	REJECT	G2:NOT_GROUNDED		FOXP3 directly transactivates COL1A1 in SSc fibroblasts (FABRICATED negative con
