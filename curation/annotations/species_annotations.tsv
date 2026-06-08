@@ -486,7 +486,7 @@ phenotype_ISG_signature__cell					cell	M1	9606	wired by wire_ssc_tier1.py
 TGFB1__ext	TGFB1				extracellular	M2	9606	wired by wire_ssc_tier1.py
 SMAD3_p__cyto					cytosol	M2	9606	wired by wire_ssc_tier1.py
 SMAD3p_SMAD4__nuc					nucleus	M2	9606	wired by wire_ssc_tier1.py
-CTGF__ext	CTGF				extracellular	M2	9606	wired by wire_ssc_tier1.py
+CCN2__ext	CCN2				extracellular	M2	9606	wired by wire_ssc_tier1.py | HGNC-official CCN2; CTGF in SSc literature
 fibroblast_proFibrotic__cell					cell	M2	9606	wired by wire_ssc_tier1.py
 stiffened_ECM__ecm					ECM	M2	9606	wired by wire_ssc_tier1.py
 YAP1_TAZ_active__nuc					nucleus	M2	9606	wired by wire_ssc_tier1.py
@@ -544,3 +544,7 @@ TLR9_active__endo					endosome	M1	9606	wired by wire_ssc_tier1.py
 GREM1__ext	GREM1				extracellular	M2	9606	wired by wire_ssc_tier1.py
 CTNNB1__nuc	CTNNB1				nucleus	M2	9606	wired by wire_ssc_tier1.py
 GLI2__nuc	GLI2				nucleus	M2	9606	wired by wire_ssc_tier1.py
+HTR2B__pm	HTR2B				plasma_membrane	M2	9606	wired by wire_ssc_tier1.py
+ENPP2__ext	ENPP2				extracellular	M2	9606	wired by wire_ssc_tier1.py
+LPAR1__pm	LPAR1				plasma_membrane	M2	9606	wired by wire_ssc_tier1.py
+TLR4__pm	TLR4				plasma_membrane	M2	9606	wired by wire_ssc_tier1.py

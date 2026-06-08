@@ -18151,7 +18151,7 @@
           </rdf:RDF>
         </annotation>
       </species>
-      <species metaid="CTGF__ext" id="CTGF__ext" name="CTGF" compartment="extracellular" initialAmount="0">
+      <species metaid="CCN2__ext" id="CCN2__ext" name="CCN2" compartment="extracellular" initialAmount="0">
         <notes>
           <html:html>
             <html:head>
@@ -18166,10 +18166,10 @@
         </notes>
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-            <rdf:Description rdf:about="#CTGF__ext">
+            <rdf:Description rdf:about="#CCN2__ext">
               <bqbiol:isVersionOf>
                 <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/hgnc.symbol/CTGF"/>
+                  <rdf:li rdf:resource="http://identifiers.org/hgnc.symbol/CCN2"/>
                 </rdf:Bag>
               </bqbiol:isVersionOf>
               <bqbiol:hasTaxon>
@@ -19715,6 +19715,126 @@
               <bqbiol:isVersionOf>
                 <rdf:Bag>
                   <rdf:li rdf:resource="http://identifiers.org/hgnc.symbol/GLI2"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+              <bqbiol:hasTaxon>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/taxonomy/9606"/>
+                </rdf:Bag>
+              </bqbiol:hasTaxon>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="HTR2B__pm" id="HTR2B__pm" name="HTR2B" compartment="plasma_membrane" initialAmount="0">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M2</html:p>
+              <html:p>tier=1</html:p>
+              <html:p>notes=auto-created by wire_ssc_tier1</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#HTR2B__pm">
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/hgnc.symbol/HTR2B"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+              <bqbiol:hasTaxon>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/taxonomy/9606"/>
+                </rdf:Bag>
+              </bqbiol:hasTaxon>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="ENPP2__ext" id="ENPP2__ext" name="ENPP2" compartment="extracellular" initialAmount="0">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M2</html:p>
+              <html:p>tier=1</html:p>
+              <html:p>notes=auto-created by wire_ssc_tier1</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#ENPP2__ext">
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/hgnc.symbol/ENPP2"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+              <bqbiol:hasTaxon>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/taxonomy/9606"/>
+                </rdf:Bag>
+              </bqbiol:hasTaxon>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="LPAR1__pm" id="LPAR1__pm" name="LPAR1" compartment="plasma_membrane" initialAmount="0">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M2</html:p>
+              <html:p>tier=1</html:p>
+              <html:p>notes=auto-created by wire_ssc_tier1</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#LPAR1__pm">
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/hgnc.symbol/LPAR1"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+              <bqbiol:hasTaxon>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/taxonomy/9606"/>
+                </rdf:Bag>
+              </bqbiol:hasTaxon>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="TLR4__pm" id="TLR4__pm" name="TLR4" compartment="plasma_membrane" initialAmount="0">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M2</html:p>
+              <html:p>tier=1</html:p>
+              <html:p>notes=auto-created by wire_ssc_tier1</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#TLR4__pm">
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/hgnc.symbol/TLR4"/>
                 </rdf:Bag>
               </bqbiol:isVersionOf>
               <bqbiol:hasTaxon>
@@ -33732,7 +33852,7 @@
           <speciesReference species="SMAD3p_SMAD4__nuc"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="CTGF__ext"/>
+          <speciesReference species="CCN2__ext"/>
         </listOfProducts>
         <listOfModifiers>
           <modifierSpeciesReference species="SMAD3p_SMAD4__nuc"/>
@@ -33755,7 +33875,7 @@
           </html:html>
         </notes>
         <listOfReactants>
-          <speciesReference species="CTGF__ext"/>
+          <speciesReference species="CCN2__ext"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="fibroblast_proFibrotic__cell"/>
@@ -33917,7 +34037,7 @@
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="ACTA2__cyto"/>
-          <speciesReference species="CTGF__ext"/>
+          <speciesReference species="CCN2__ext"/>
         </listOfProducts>
         <listOfModifiers>
           <modifierSpeciesReference species="YAP1_TAZ_active__nuc"/>
@@ -34046,7 +34166,7 @@
           <speciesReference species="FN1__ecm"/>
           <speciesReference species="POSTN__ecm"/>
           <speciesReference species="COMP__ecm"/>
-          <speciesReference species="CTGF__ext"/>
+          <speciesReference species="CCN2__ext"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="phenotype_ECM_deposition__ecm"/>
@@ -34876,7 +34996,7 @@
           <speciesReference species="TGFB1__ext"/>
         </listOfReactants>
         <listOfProducts>
-          <speciesReference species="CTGF__ext"/>
+          <speciesReference species="CCN2__ext"/>
           <speciesReference species="fibroblast_proFibrotic__cell"/>
         </listOfProducts>
       </reaction>
@@ -35798,6 +35918,121 @@
         </notes>
         <listOfReactants>
           <speciesReference species="GLI2__nuc"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="fibroblast_proFibrotic__cell"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="ssc_M2_036" id="ssc_M2_036" name="Serotonin (5-HT) profibrotic effects on dermal fibroblasts are mediated by the 5" reversible="false">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M2</html:p>
+              <html:p>mechanism=Serotonin (5-HT) profibrotic effects on dermal fibroblasts are mediated by the 5-HT2B receptor (HTR2B)</html:p>
+              <html:p>pmid=21518801</html:p>
+              <html:p>evidence_code=ECO:0000314</html:p>
+              <html:p>ssc_relevance=platelet-serotonin/5-HT2B axis links SSc vascular damage to fibrosis</html:p>
+              <html:p>curation_note=discovery candidate cand_ser_htr2b; quote: &quot;The profibrotic effects of 5-HT are mediated by 5-HT2B&quot;</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="HTR2B__pm"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="fibroblast_proFibrotic__cell"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="ssc_M2_037" id="ssc_M2_037" name="Autotaxin (ENPP2) produces LPA that activates LPAR1" reversible="false">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M2</html:p>
+              <html:p>mechanism=Autotaxin (ENPP2) produces LPA that activates LPAR1</html:p>
+              <html:p>pmid=39009409</html:p>
+              <html:p>evidence_code=ECO:0000305</html:p>
+              <html:p>ssc_relevance=ATX-LPA-LPAR1 axis (ziritaxestat target) in SSc fibrosis</html:p>
+              <html:p>curation_note=discovery candidate cand_lpa_atx; quote: &quot;The LPA-producing enzyme autotaxin (ATX) and LPAR1 activation contribute to inflammation and mechanisms underlying fibrosis in preclinical fibrotic models.&quot;</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="ENPP2__ext"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="LPAR1__pm"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="ssc_M2_038" id="ssc_M2_038" name="LPA-mediated LPAR1 activation contributes to SSc fibrosis" reversible="false">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M2</html:p>
+              <html:p>mechanism=LPA-mediated LPAR1 activation contributes to SSc fibrosis</html:p>
+              <html:p>pmid=39009409</html:p>
+              <html:p>evidence_code=ECO:0000314</html:p>
+              <html:p>ssc_relevance=LPAR1 as a profibrotic node and drug target in SSc</html:p>
+              <html:p>curation_note=discovery candidate cand_lpa_lpar1; quote: &quot;Lysophosphatidic acid (LPA)-mediated activation of LPA receptor 1 (LPAR1) contributes to the pathophysiology of fibrotic diseases such as idiopathic pulmonary f&quot;</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="LPAR1__pm"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="fibroblast_proFibrotic__cell"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="ssc_M2_039" id="ssc_M2_039" name="TLR4 sensing of endogenous danger ligands drives fibrotic gene expression and my" reversible="false">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M2</html:p>
+              <html:p>mechanism=TLR4 sensing of endogenous danger ligands drives fibrotic gene expression and myofibroblast differentiation, sensitising to TGF-β</html:p>
+              <html:p>pmid=28964818</html:p>
+              <html:p>evidence_code=ECO:0000314</html:p>
+              <html:p>ssc_relevance=DAMP/TLR4 axis sustains unresolving SSc fibrosis</html:p>
+              <html:p>curation_note=discovery candidate cand_tlr4_myo; quote: &quot;Sensing of these danger signals by TLR4 on resident cells elicits potent stimulatory effects on fibrotic gene expression and myofibroblast differentiation, and &quot;</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="TLR4__pm"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="phenotype_myofibroblast_activation__cell"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="ssc_M2_040" id="ssc_M2_040" name="Autocrine CCN2 (CTGF) overexpression maintains the fibrotic fibroblast phenotype" reversible="false">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M2</html:p>
+              <html:p>mechanism=Autocrine CCN2 (CTGF) overexpression maintains the fibrotic fibroblast phenotype in SSc</html:p>
+              <html:p>pmid=10942593</html:p>
+              <html:p>evidence_code=ECO:0000270</html:p>
+              <html:p>ssc_relevance=CTGF autocrine loop sustains SSc fibrosis</html:p>
+              <html:p>curation_note=discovery candidate cand_ctgf_auto; quote: &quot;Autocrine overexpression of CTGF maintains fibrosis: RDA analysis of fibrosis genes in systemic sclerosis.&quot;</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="CCN2__ext"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="fibroblast_proFibrotic__cell"/>

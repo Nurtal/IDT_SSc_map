@@ -1708,3 +1708,15 @@ Nouveaux nœuds : CTNNB1 (Wnt), GLI2 (Hedgehog).
 
 **État** : 545 espèces / 279 réactions / **104 SSc** (98.1% Reactome-novel). Croissance totale
 session : 85 → 104 (+19). SBML 0 erreur, lint vert, preflight vert.
+
+### Batch sérotonine/LPA/TLR4/CCN2 — +5 arêtes (+ harmonisation CTGF→CCN2)
+
+- `ssc_M2_036` HTR2B (5-HT2B) → fibroblaste : effets profibrotiques de la sérotonine via 5-HT2B (21518801, Dees/Distler).
+- `ssc_M2_037` ENPP2 (autotaxine) → LPAR1 : production de LPA activant LPAR1 (39009409).
+- `ssc_M2_038` LPAR1 → fibroblaste : axe ATX-LPA-LPAR1 (cible ziritaxestat) en fibrose SSc.
+- `ssc_M2_039` TLR4 → myofibroblaste : DAMP/TLR4 → gènes fibrotiques + sensibilisation TGF-β (28964818).
+- `ssc_M2_040` CCN2 (CTGF) → fibroblaste : boucle autocrine CTGF maintenant la fibrose (10942593).
+Harmonisation HGNC CTGF→CCN2 (comme CXCL4→PF4), corrige le nœud existant + permet l'arête.
+NOX4 écarté (phrase ancrée trop nuancée).
+
+**État** : 549 espèces / 284 réactions / **109 SSc** (98.2% Reactome-novel). Croissance session : 85→109 (+24).

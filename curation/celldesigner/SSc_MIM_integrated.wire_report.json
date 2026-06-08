@@ -2,7 +2,7 @@
   "integrated_xml": "curation/celldesigner/SSc_MIM_integrated.xml",
   "tsv_input": "curation/ssc_curated_reactions.tsv",
   "stubs_wired": 88,
-  "reactions_added": 104,
+  "reactions_added": 109,
   "species_auto_created": [
     "dsDNA__cyto",
     "cGAMP__cyto",
@@ -18,7 +18,7 @@
     "TGFB1__ext",
     "SMAD3_p__cyto",
     "SMAD3p_SMAD4__nuc",
-    "CTGF__ext",
+    "CCN2__ext",
     "fibroblast_proFibrotic__cell",
     "stiffened_ECM__ecm",
     "YAP1_TAZ_active__nuc",
@@ -75,6 +75,10 @@
     "TLR9_active__endo",
     "GREM1__ext",
     "CTNNB1__nuc",
-    "GLI2__nuc"
+    "GLI2__nuc",
+    "HTR2B__pm",
+    "ENPP2__ext",
+    "LPAR1__pm",
+    "TLR4__pm"
   ]
 }

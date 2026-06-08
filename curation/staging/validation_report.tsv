@@ -17,6 +17,11 @@ cand_ic_ifn	PASS			SSc autoantibody immunoglobulin immune complexes induce IFN-�
 cand_il6_grem	REJECT	G3:DUP_existing_ssc		IL-6 trans-signalling via STAT3 induces Gremlin (GREM1) in SSc fibroblasts
 cand_grem_smad	REJECT	G3:DUP_existing_ssc		Gremlin (GREM1) promotes hyperactive TGF-β/SMAD3 signalling driving fibrosis
 cand_et1_col	REJECT	G3:DUP_existing_ssc		Endothelin-1 (EDN1) enhances collagen I/III release by SSc dermal fibroblasts vi
-cand_wnt_ctnnb1	PASS			Sustained β-catenin (CTNNB1) activity in dermal fibroblasts up-regulates ECM/col
-cand_hh_tgfb_gli2	PASS			TGF-β up-regulates GLI2 in a SMAD3-dependent manner (non-canonical Hedgehog acti
+cand_wnt_ctnnb1	REJECT	G3:DUP_existing_ssc		Sustained β-catenin (CTNNB1) activity in dermal fibroblasts up-regulates ECM/col
+cand_hh_tgfb_gli2	REJECT	G3:DUP_existing_ssc		TGF-β up-regulates GLI2 in a SMAD3-dependent manner (non-canonical Hedgehog acti
 cand_hh_gli2_fib	PASS			GLI2 acts as a downstream mediator of TGF-β-induced fibroblast activation in SSc
+cand_ser_htr2b	PASS			Serotonin (5-HT) profibrotic effects on dermal fibroblasts are mediated by the 5
+cand_lpa_atx	REJECT	G3:DUP_existing_ssc		Autotaxin (ENPP2) produces LPA that activates LPAR1
+cand_lpa_lpar1	PASS			LPA-mediated LPAR1 activation contributes to SSc fibrosis
+cand_tlr4_myo	PASS			TLR4 sensing of endogenous danger ligands drives fibrotic gene expression and my
+cand_ctgf_auto	PASS			Autocrine CCN2 (CTGF) overexpression maintains the fibrotic fibroblast phenotype
