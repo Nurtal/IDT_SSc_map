@@ -19226,6 +19226,36 @@
           </rdf:RDF>
         </annotation>
       </species>
+      <species metaid="IRF5__nuc" id="IRF5__nuc" name="IRF5" compartment="nucleus" initialAmount="0">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M1</html:p>
+              <html:p>tier=1</html:p>
+              <html:p>notes=auto-created by wire_ssc_tier1</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#IRF5__nuc">
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/hgnc.symbol/IRF5"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+              <bqbiol:hasTaxon>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/taxonomy/9606"/>
+                </rdf:Bag>
+              </bqbiol:hasTaxon>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
     </listOfSpecies>
     <listOfReactions>
       <reaction metaid="reactionVertex_909721_61" id="reactionVertex_909721_61" reversible="false">
@@ -34890,6 +34920,29 @@
         <listOfModifiers>
           <modifierSpeciesReference species="pDC_activated__cell"/>
         </listOfModifiers>
+      </reaction>
+      <reaction metaid="ssc_M1_017" id="ssc_M1_017" name="IRF5 (top SSc GWAS locus) drives type-I interferon (IFNB1) transcription, linkin" reversible="false">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M1</html:p>
+              <html:p>mechanism=IRF5 (top SSc GWAS locus) drives type-I interferon (IFNB1) transcription, linking genetic risk to the SSc IFN signature</html:p>
+              <html:p>pmid=20231204</html:p>
+              <html:p>evidence_code=ECO:0000033</html:p>
+              <html:p>ssc_relevance=IRF5 is a top SSc risk locus; connects GWAS genetics to module M1 (type-I IFN)</html:p>
+              <html:p>curation_note=discovery candidate cand_gwas_irf5; quote: &quot;Identification of an association between IRF5 rs2004640 and systemic sclerosis (SSc) has highlighted a key role for type 1 interferon (IFN).&quot;</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="IRF5__nuc"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="IFNB1__ext"/>
+        </listOfProducts>
       </reaction>
     </listOfReactions>
   </model>

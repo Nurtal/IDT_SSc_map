@@ -527,3 +527,4 @@ JAK1_inhibited__cyto					cytosol	M1	9606	wired by wire_ssc_tier1.py
 NOTCH3_JAG1_complex__pm					plasma_membrane	M3	9606	wired by wire_ssc_tier1.py
 TOP1__ext	TOP1				extracellular	M4	9606	wired by wire_ssc_tier1.py
 CENPB__ext	CENPB				extracellular	M4	9606	wired by wire_ssc_tier1.py
+IRF5__nuc	IRF5				nucleus	M1	9606	wired by wire_ssc_tier1.py

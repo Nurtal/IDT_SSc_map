@@ -1602,3 +1602,27 @@ attrape les citations qui ne soutiennent pas ce qu'on leur fait dire.
 
 **État** : 528 espèces / 261 réactions / **86 SSc** (97.7% Reactome-novel), PMID SSc 88.4%,
 SBML 0 erreur, lint vert, preflight vert, biomodels régénéré. Pipeline prêt à scaler par batch.
+
+### CXCL4→PF4 + batch GWAS (constat stratégique : GWAS = faible rendement)
+
+**Harmonisation CXCL4→PF4** (la gate G1 avait flagué CXCL4 = alias) : `CXCL4__ext`→`PF4__ext`
+(symbole HGNC officiel, CXCL4 gardé dans les notes). Du coup `cand_pilot_01` passe → promu
+`ssc_M1_016` (PF4/CXCL4 → IFNA1 via pDC, driver de la signature IFN SSc). Garde-fou
+d'idempotence ajouté à `promote_edges` (le dedup G3 attrape les déjà-promus).
+
+**Batch GWAS — constat important** : exécuté via le pipeline, il révèle que **le GWAS est une
+catégorie à faible rendement pour une carte d'interactions moléculaires** :
+1. les papiers GWAS énoncent des **associations** (« IRF5/STAT4/CD247 associés à la SSc »),
+   pas des arêtes moléculaires causales → la gate G2 rejette tout mécanisme non énoncé ;
+2. la fonction moléculaire canonique de ces gènes (IRF5→IFN, A20→NF-κB) est souvent **déjà dans
+   Reactome** → faible nouveauté.
+Forcer 30-50 arêtes GWAS aurait été ajouter des bêtises. Le pipeline a fait son travail : **1
+seule arête défendable** extraite et promue — `ssc_M1_017` IRF5 → IFNB1 (top locus GWAS SSc,
+connecte le risque génétique au module M1), ancrée sur PMID 20231204.
+
+**Leçon de curation** : les catégories à haut rendement sont les **mécanismes moléculaires
+SSc-spécifiques** (auto-anticorps ✓, états fibroblaste, EndoMT, axe CXCL4/PF4), pas la
+génétique d'association. À réorienter les prochains batchs en conséquence.
+
+**État** : 529 espèces / 263 réactions / **88 SSc** (97.7% Reactome-novel) ; +3 arêtes ce cycle
+(TOP1/CENPB auto-Ab, PF4→IFNA1, IRF5→IFN). SBML 0 erreur, lint vert, preflight vert.

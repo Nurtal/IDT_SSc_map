@@ -1,6 +1,6 @@
 {
   "integrated_xml": "curation/celldesigner/SSc_MIM_integrated.xml",
-  "total_species": 528,
+  "total_species": 529,
   "max_path_threshold": 6,
   "n_dangling": 94,
   "n_far_from_sink": 0,
@@ -12,8 +12,8 @@
   },
   "distance_distribution_per_module": {
     "M1": {
-      "n": 90,
-      "median": 2.0,
+      "n": 91,
+      "median": 2,
       "max": 6,
       "dangling": 12
     },

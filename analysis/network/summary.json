@@ -1,16 +1,16 @@
 {
   "integrated_xml": "curation/celldesigner/SSc_MIM_integrated.xml",
   "bipartite_graph": {
-    "n_species": 528,
-    "n_reactions": 262,
-    "n_edges": 903
+    "n_species": 529,
+    "n_reactions": 263,
+    "n_edges": 905
   },
   "species_projection": {
-    "n_nodes": 528,
-    "n_edges": 714,
+    "n_nodes": 529,
+    "n_edges": 715,
     "n_weakly_connected_components": 22,
-    "avg_in_degree": 1.3522727272727273,
-    "avg_out_degree": 1.3522727272727273
+    "avg_in_degree": 1.3516068052930057,
+    "avg_out_degree": 1.3516068052930057
   },
   "communities": {
     "count": 39,
@@ -18,7 +18,7 @@
       66,
       46,
       37,
-      34,
+      35,
       34,
       31,
       30,
@@ -69,12 +69,12 @@
     "comm1__ssc_tier1": 34,
     "comm2__M3": 35,
     "comm2__ssc_tier1": 2,
-    "comm3__M2": 34,
-    "comm4__M1": 4,
-    "comm4__M2": 4,
-    "comm4__M4": 7,
-    "comm4__crosstalk": 1,
-    "comm4__ssc_tier1": 18,
+    "comm3__M1": 5,
+    "comm3__M2": 4,
+    "comm3__M4": 7,
+    "comm3__crosstalk": 1,
+    "comm3__ssc_tier1": 18,
+    "comm4__M2": 34,
     "comm5__M4": 31,
     "comm6__M1": 30,
     "comm7__M3": 28,
@@ -171,112 +171,112 @@
       "eigenvector": 0.0
     },
     "spearman_all_eligible_vs_hub_score": {
-      "degree": 0.945,
+      "degree": 0.946,
       "betweenness": 0.954,
-      "pagerank": 0.616,
-      "eigenvector": -0.023
+      "pagerank": 0.617,
+      "eigenvector": -0.022
     }
   },
   "top_hubs": [
     {
       "species": "SMAD3p_SMAD4__nuc",
       "module": "M2",
-      "hub_score": 13.1442
+      "hub_score": 13.1334
     },
     {
       "species": "fibroblast_proFibrotic__cell",
       "module": "M2",
-      "hub_score": 10.7636
+      "hub_score": 10.8367
     },
     {
       "species": "TGFB1__ext",
       "module": "M2",
-      "hub_score": 9.1673
+      "hub_score": 9.1879
     },
     {
       "species": "NICD1__cyto",
       "module": "M3",
-      "hub_score": 9.016
+      "hub_score": 9.0077
     },
     {
       "species": "ISGF3_bound_to_ISRE_promotor_elements__nuc",
       "module": "M1",
-      "hub_score": 8.9222
+      "hub_score": 8.9246
     },
     {
       "species": "ISG_signature__nuc",
       "module": "M1",
-      "hub_score": 8.8822
+      "hub_score": 8.8849
     },
     {
       "species": "TGFB1_TGFBR2_TGFBR1__cyto",
       "module": "M2",
-      "hub_score": 8.1189
+      "hub_score": 8.1313
     },
     {
       "species": "SNAI2__nuc",
       "module": "ssc_tier1",
-      "hub_score": 6.5546
+      "hub_score": 6.5531
     },
     {
       "species": "TGFB1_TGFBR2_p_TGFBR1__cyto",
       "module": "M2",
-      "hub_score": 6.2103
+      "hub_score": 6.2017
     },
     {
       "species": "NICD1__nuc",
       "module": "M3",
-      "hub_score": 5.893
+      "hub_score": 5.8868
     },
     {
       "species": "BCR_activated__cell",
       "module": "M4",
-      "hub_score": 5.6558
+      "hub_score": 5.6546
     },
     {
       "species": "NOTCH1_Coactivator_Complex__nuc",
       "module": "M3",
-      "hub_score": 5.1388
+      "hub_score": 5.1359
     },
     {
       "species": "CDH5_repressed__pm",
       "module": "M3",
-      "hub_score": 4.9623
+      "hub_score": 4.957
     },
     {
       "species": "COL1A1__ext",
       "module": "ssc_tier1",
-      "hub_score": 4.5941
+      "hub_score": 4.5896
     },
     {
       "species": "PDGF_Phospho_PDGF_receptor_dimer__cyto",
       "module": "M2",
-      "hub_score": 4.1708
+      "hub_score": 4.1693
     },
     {
       "species": "IFNA_B_IFNAR2_JAK1_STAT2_IFNAR1_TYK2__cyto",
       "module": "M1",
-      "hub_score": 3.4217
+      "hub_score": 3.4213
     },
     {
       "species": "IL6__ext",
       "module": "M4",
-      "hub_score": 3.4159
+      "hub_score": 3.4141
     },
     {
       "species": "SMAD3_p__cyto",
       "module": "M2",
-      "hub_score": 3.2379
+      "hub_score": 3.2258
     },
     {
       "species": "YAP1_TAZ_active__nuc",
       "module": "M2",
-      "hub_score": 3.2171
+      "hub_score": 3.2179
     },
     {
       "species": "NOTCH1_Coactivator_Complex_CDK8_CCNC__nuc",
       "module": "M3",
-      "hub_score": 2.9919
+      "hub_score": 2.9922
     }
   ]
 }
