@@ -8,7 +8,7 @@
 
 Rationale:
 
-- **M1 IFN-I** — independently supported by the IFN signature literature in SSc skin (Tabib 2021, van Bon 2014 PMID 24382179). Defines the inflammatory subset of the Whitfield intrinsic classification. Necessary.
+- **M1 IFN-I** — independently supported by the IFN signature literature in SSc skin (Tabib 2021, van Bon 2014 PMID 24350901). Defines the inflammatory subset of the Whitfield intrinsic classification. Necessary.
 - **M2 TGF-β / fibroblast → myofibroblast** — the central fibrotic axis. Pirfenidone, fresolimumab, romilkimab (via M4 crosstalk), nintedanib (via PDGFR) all converge here. Volumetrically the largest module by design.
 - **M3 EndoMT / vasculopathy** — SSc-specific bridge that distinguishes this MIM from PR/SLE maps. SSc vasculopathy (digital ulcers, telangiectasia, PAH precursors) is clinically defining. EndoMT (loss of CDH5 / gain of CDH2 + ACTA2 + FAP) feeds the perivascular fibroblast pool — direct M3→M2 crosstalk.
 - **M4 IL-6 / Th2 / B-cell** — anchors the validated SSc trials (focuSSced / tocilizumab, RECITAL / rituximab, SSc trial / romilkimab). Without it the abstract has no "tractable target" handle.
@@ -32,7 +32,7 @@ Rationale:
 | STING (TMEM173) activated by cGAMP → TBK1 → IRF3-P → IFN-β | Same |
 | TLR3 / TLR7 / TLR9 endosomal sensing → MyD88/TRIF → IRF7-P → IFN production | TLR involvement in SSc (autoimmunity / nucleic acid release) |
 | RIG-I (DDX58) → MAVS → IRF3/7 phosphorylation | Cytosolic RNA sensing, third sensor branch |
-| **CXCL4 / PF4 → IFN modulation of pDC + direct fibroblast activation** | Van Bon 2014 NEJM PMID 24382179 — flagship SSc-specific finding |
+| **CXCL4 / PF4 → IFN modulation of pDC + direct fibroblast activation** | Van Bon 2014 NEJM PMID 24350901 — flagship SSc-specific finding |
 | IRF7 nuclear translocation → IFN-α positive feedback | Closes the IFN amplification loop |
 | USP18 / SOCS1 → JAK1 degradation (already-imported negative regulators get explicit reactions) | Negative feedback completeness |
 
@@ -125,7 +125,7 @@ From the auto-extracted `docs/crosstalk_matrix.md` (14 edges, redundancy across 
 | # | Edge | Mechanism | PMID strategy |
 |---|------|-----------|---------------|
 | 1 | M1 → M2 | IFN-α/β primes fibroblast pro-fibrotic transcription (priming, not direct induction) | Curator inference; co-author upgrades |
-| 2 | M1 → M2 | CXCL4 → direct fibroblast activation | 24382179 (van Bon 2014) |
+| 2 | M1 → M2 | CXCL4 → direct fibroblast activation | 24350901 (van Bon 2014) |
 | 3 | M1 → M4 | IFN-α/β → pDC / B-cell class switching | Curator inference |
 | 4 | M2 → M3 | TGF-β → SMAD3 → SNAI1/2 → EndMT | Strong canonical evidence |
 | 5 | M3 → M2 | EndMT-derived EC → perivascular fibroblast → joins myofibroblast pool | Curator inference; conceptual bridge |

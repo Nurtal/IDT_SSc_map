@@ -41,6 +41,7 @@ CDH2__pm	ssc_tier1	1	-1	1	2	3	no
 CDH5__pm	ssc_tier1	2	-1	3	2	4	no
 CDH5_repressed__pm	M3	2	-1	2	2	3	no
 CDK8_CCNC__nuc	M3	1	-1	6	1	7	no
+CENPB__ext	M4	2	-1	2	4	2	no
 CLCF1__ext	M4	-1	-1	-1	-1	-1	no
 CNTFR_CRLF1_CLCF1__cyto	M4	-1	-1	-1	-1	-1	no
 CNTFR__cyto	M4	-1	-1	-1	-1	-1	no
@@ -439,6 +440,7 @@ TMEM173_active__er	M1	4	-1	4	6	4	no
 TNC__ecm	ssc_tier1	1	-1	1	2	2	no
 TNFSF13B__ext	ssc_tier1	-1	-1	-1	-1	-1	no
 TNFSF13__ext	ssc_tier1	-1	-1	-1	-1	-1	no
+TOP1__ext	M4	2	-1	2	4	2	no
 TWIST1__nuc	ssc_tier1	2	-1	2	2	3	no
 TYK2_inhibitors__cyto	M1	4	-1	6	7	4	no
 Th2_cell__cell	M4	3	-1	8	10	3	no

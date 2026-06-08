@@ -1,9 +1,9 @@
 {
-  "n_species": 526,
-  "with_hgnc": 206,
-  "with_taxonomy": 526,
+  "n_species": 528,
+  "with_hgnc": 208,
+  "with_taxonomy": 528,
   "with_neither": 0,
-  "post_write_total_cvterm_resources": 732,
-  "post_write_hgnc_resources": 206,
-  "post_write_taxonomy_resources": 526
+  "post_write_total_cvterm_resources": 736,
+  "post_write_hgnc_resources": 208,
+  "post_write_taxonomy_resources": 528
 }

@@ -2,7 +2,7 @@
   "integrated_xml": "curation/celldesigner/SSc_MIM_integrated.xml",
   "tsv_input": "curation/ssc_curated_reactions.tsv",
   "stubs_wired": 88,
-  "reactions_added": 85,
+  "reactions_added": 86,
   "species_auto_created": [
     "dsDNA__cyto",
     "cGAMP__cyto",
@@ -56,6 +56,8 @@
     "BAFF_BCMA__pm",
     "Th_lineage_committed__cell",
     "JAK1_inhibited__cyto",
-    "NOTCH3_JAG1_complex__pm"
+    "NOTCH3_JAG1_complex__pm",
+    "TOP1__ext",
+    "CENPB__ext"
   ]
 }

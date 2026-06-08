@@ -246,3 +246,15 @@ evidence-figure:  ## Render the supplementary evidence-depth figure.
 reactome-novelty:  ## Per-reaction Reactome-overlap (originality of the SSc-curated layer).
 	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/reactome_novelty.py; \
 	else $(PYTHON) scripts/reactome_novelty.py; fi
+
+corpus-fetch:  ## Edge-discovery: fetch source-paper text for the grounding gate.
+	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/fetch_ssc_corpus.py; \
+	else $(PYTHON) scripts/fetch_ssc_corpus.py; fi
+
+validate-edges:  ## Edge-discovery: run G0-G4 anti-nonsense gates on staged candidates.
+	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/validate_edge_candidates.py; \
+	else $(PYTHON) scripts/validate_edge_candidates.py; fi
+
+promote-edges:  ## Edge-discovery: promote ratified, gate-passing candidates into the curated map.
+	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/promote_edges.py; \
+	else $(PYTHON) scripts/promote_edges.py; fi

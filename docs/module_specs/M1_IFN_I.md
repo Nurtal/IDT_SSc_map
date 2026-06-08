@@ -34,7 +34,7 @@ Captures the canonical type-I interferon (IFN-α and IFN-β) signalling cascade 
 | TRIF (TICAM1), MyD88 | macromolecule | cytosol | adaptor | manual |
 | TBK1, IKBKE | macromolecule | cytosol | kinase | manual |
 | USP18, SOCS1, PTPN1, PTPN2 | macromolecule | cytosol | negative regulator | manual |
-| CXCL4 / PF4 | macromolecule | extracellular | SSc-specific IFN modulator | manual (Van Bon 2014, PMID 24382179) |
+| CXCL4 / PF4 | macromolecule | extracellular | SSc-specific IFN modulator | manual (Van Bon 2014, PMID 24350901) |
 
 ## 3. ISG output anchors (sink contributors)
 

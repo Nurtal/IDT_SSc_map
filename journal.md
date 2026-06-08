@@ -1570,3 +1570,35 @@ auto-anticorps (pilote), GWAS→fonction, états fibroblaste SSc, crosstalks, é
 
 **Phases** : G1 pipeline+gates · G2 métrique d'originalité Reactome · G3 pilote auto-anticorps ·
 G4 scale par batch. Exécution ci-dessous.
+
+### Pipeline de découverte (G1) + pilote auto-anticorps (G3) + 2 bugs de citation trouvés
+
+**G1 — pipeline gaté construit** : `fetch_ssc_corpus.py` (texte source OA/abstract pour
+l'ancrage), `validate_edge_candidates.py` (gates G0–G4), `promote_edges.py`, zone
+`curation/staging/`, `docs/edge_discovery_protocol.md`, cibles Makefile. La gate **G2
+(ancrage)** exige que la citation verbatim soit un substring du texte réel de l'article.
+
+**G2 — métrique d'originalité** : `reactome_novelty.py` → **97.6 % des réactions SSc n'ont
+aucun équivalent Reactome** (seulement 2 chevauchent : activation TGF-β canonique). Le reproche
+"copie Reactome nettoyée" est quantifié comme faux pour la couche SSc.
+
+**G3 — pilote auto-anticorps** : 3 candidates extraites (citations verbatim du texte mis en
+cache), passées aux gates :
+- `cand_pilot_02` (TOP1;CENPB → fibroblaste pro-fibrotique, PMID 31234888) → **PASS** → promu
+  `ssc_M4_016`. Première arête de croissance : auto-anticorps SSc → effet pro-fibrotique direct,
+  Reactome-novel.
+- `cand_pilot_01` (CXCL4 → IFNA1) → **FLAG** : `CXCL4` n'est pas le symbole HGNC officiel (PF4).
+  Tenu en attente → tâche de harmonisation CXCL4→PF4 map-wide.
+- `cand_negctrl` (citation fabriquée) → **REJECT** `G2:NOT_GROUNDED`. La gate anti-hallucination
+  fonctionne : une arête sans citation réelle dans le texte est bloquée.
+
+**Deux bugs de citation pré-existants débusqués par l'ancrage** :
+1. `ssc_crosstalk_002` (van Bon CXCL4) citait **24382179** = article sur l'acide urique /
+   trouble bipolaire (faux).
+2. Le manuscrit citait van Bon = **24350902** = e-cigarettes NEJM (faux).
+Le vrai van Bon CXCL4 NEJM 2014 = **24350901**. Corrigé partout (TSV, reaction_evidence, bib
+rafraîchi, S1, docs, manuscrit). C'est exactement la valeur de l'approche par ancrage : elle
+attrape les citations qui ne soutiennent pas ce qu'on leur fait dire.
+
+**État** : 528 espèces / 261 réactions / **86 SSc** (97.7% Reactome-novel), PMID SSc 88.4%,
+SBML 0 erreur, lint vert, preflight vert, biomodels régénéré. Pipeline prêt à scaler par batch.

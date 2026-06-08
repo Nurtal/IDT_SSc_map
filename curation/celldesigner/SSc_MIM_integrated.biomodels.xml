@@ -19166,6 +19166,66 @@
           </rdf:RDF>
         </annotation>
       </species>
+      <species metaid="TOP1__ext" id="TOP1__ext" name="TOP1" compartment="extracellular" initialAmount="0">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M4</html:p>
+              <html:p>tier=1</html:p>
+              <html:p>notes=auto-created by wire_ssc_tier1</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#TOP1__ext">
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/hgnc.symbol/TOP1"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+              <bqbiol:hasTaxon>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/taxonomy/9606"/>
+                </rdf:Bag>
+              </bqbiol:hasTaxon>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="CENPB__ext" id="CENPB__ext" name="CENPB" compartment="extracellular" initialAmount="0">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M4</html:p>
+              <html:p>tier=1</html:p>
+              <html:p>notes=auto-created by wire_ssc_tier1</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#CENPB__ext">
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/hgnc.symbol/CENPB"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+              <bqbiol:hasTaxon>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/taxonomy/9606"/>
+                </rdf:Bag>
+              </bqbiol:hasTaxon>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
     </listOfSpecies>
     <listOfReactions>
       <reaction metaid="reactionVertex_909721_61" id="reactionVertex_909721_61" reversible="false">
@@ -32865,7 +32925,7 @@
             <html:body>
               <html:p>module=M1</html:p>
               <html:p>mechanism=CXCL4 (PF4) primes plasmacytoid dendritic cells, amplifies IFN-α production</html:p>
-              <html:p>pmid=24382179</html:p>
+              <html:p>pmid=24350901</html:p>
               <html:p>evidence_code=ECO:0000314</html:p>
               <html:p>ssc_relevance=Van Bon 2014 NEJM — flagship SSc-specific biomarker; stratifies severity</html:p>
               <html:p>curation_note=-</html:p>
@@ -32888,7 +32948,7 @@
             <html:body>
               <html:p>module=M1</html:p>
               <html:p>mechanism=Activated pDC produces IFN-α</html:p>
-              <html:p>pmid=24382179</html:p>
+              <html:p>pmid=24350901</html:p>
               <html:p>evidence_code=ECO:0000314</html:p>
               <html:p>ssc_relevance=pDC as the source of dermal IFN-α in SSc</html:p>
               <html:p>curation_note=-</html:p>
@@ -33600,7 +33660,7 @@
               <html:p>pmid=12135389</html:p>
               <html:p>evidence_code=ECO:0000314</html:p>
               <html:p>ssc_relevance=sildenafil/tadalafil target in SSc Raynaud + digital ulcers</html:p>
-              <html:p>curation_note=-</html:p>
+              <html:p>curation_note=- | paywalled — canonical mechanism, abstract-verified; full-text not required (tiered policy)</html:p>
             </html:body>
           </html:html>
         </notes>
@@ -33626,7 +33686,7 @@
               <html:p>pmid=9278140</html:p>
               <html:p>evidence_code=ECO:0000033</html:p>
               <html:p>ssc_relevance=skin hypoxia in SSc vasculopathy</html:p>
-              <html:p>curation_note=-</html:p>
+              <html:p>curation_note=- | paywalled — canonical mechanism, abstract-verified; full-text not required (tiered policy)</html:p>
             </html:body>
           </html:html>
         </notes>
@@ -33649,7 +33709,7 @@
               <html:p>pmid=9278140</html:p>
               <html:p>evidence_code=ECO:0000033</html:p>
               <html:p>ssc_relevance=hypoxia → endothelin + angiogenic signal</html:p>
-              <html:p>curation_note=-</html:p>
+              <html:p>curation_note=- | paywalled — canonical mechanism, abstract-verified; full-text not required (tiered policy)</html:p>
             </html:body>
           </html:html>
         </notes>
@@ -33676,7 +33736,7 @@
               <html:p>pmid=30173249</html:p>
               <html:p>evidence_code=ECO:0000033</html:p>
               <html:p>ssc_relevance=endothelial maintenance; impaired angiogenesis in SSc</html:p>
-              <html:p>curation_note=-</html:p>
+              <html:p>curation_note=- | paywalled — canonical mechanism, abstract-verified; full-text not required (tiered policy)</html:p>
             </html:body>
           </html:html>
         </notes>
@@ -34156,7 +34216,7 @@
             <html:body>
               <html:p>module=crosstalk</html:p>
               <html:p>mechanism=CXCL4 acts directly on dermal fibroblasts (M1→M2 bypass of IFN)</html:p>
-              <html:p>pmid=24382179</html:p>
+              <html:p>pmid=24350901</html:p>
               <html:p>evidence_code=ECO:0000270</html:p>
               <html:p>ssc_relevance=van Bon 2014 — CXCL4 → fibroblast direct effect</html:p>
               <html:p>curation_note=-</html:p>
@@ -34517,7 +34577,7 @@
               <html:p>pmid=37321373</html:p>
               <html:p>evidence_code=ECO:0000033</html:p>
               <html:p>ssc_relevance=COX-2/TXA2 axis; SSc digital ischaemia</html:p>
-              <html:p>curation_note=-</html:p>
+              <html:p>curation_note=- | paywalled — canonical mechanism, abstract-verified; full-text not required (tiered policy)</html:p>
             </html:body>
           </html:html>
         </notes>
@@ -34779,6 +34839,30 @@
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="IRF7_p__nuc"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="ssc_M4_016" id="ssc_M4_016" name="anti-Topo-I (TOP1) and anti-Cenp-B (CENPB) autoantibodies induce pro-fibrotic ma" reversible="false">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M4</html:p>
+              <html:p>mechanism=anti-Topo-I (TOP1) and anti-Cenp-B (CENPB) autoantibodies induce pro-fibrotic markers in dermal fibroblasts</html:p>
+              <html:p>pmid=31234888</html:p>
+              <html:p>evidence_code=ECO:0000314</html:p>
+              <html:p>ssc_relevance=SSc-defining autoantibodies with a direct pro-fibrotic fibroblast effect</html:p>
+              <html:p>curation_note=discovery candidate cand_pilot_02; quote: &quot;The aim of the study is to assess the pathogenic capacity of anti-DNA-topoisomerase I (anti-Topo-I) and anti-centromeric protein B (anti-Cenp-B) autoantibodies &quot;</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="TOP1__ext"/>
+          <speciesReference species="CENPB__ext"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="fibroblast_proFibrotic__cell"/>
         </listOfProducts>
       </reaction>
     </listOfReactions>

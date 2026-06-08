@@ -288,7 +288,7 @@ Tabib T, Huang M, Morse N, et al. Myofibroblast transcriptome indicates SFRP2hi 
 
 Touré V, Vercruysse S, Acencio ML, et al. The Minimum Information about a Molecular Interaction Causal STatement (MI2CAST). *Bioinformatics*. 2021;37(11):1622-1624. PMID 32997126.
 
-van Bon L, Affandi AJ, Broen J, et al. Proteome-wide analysis and CXCL4 as a biomarker in systemic sclerosis. *N Engl J Med*. 2014;370(5):433-443. PMID 24350902.
+van Bon L, Affandi AJ, Broen J, et al. Proteome-wide analysis and CXCL4 as a biomarker in systemic sclerosis. *N Engl J Med*. 2014;370(5):433-443. PMID 24350901.
 
 Varga J, Abraham D. Systemic sclerosis: a prototypic multisystem fibrotic disorder. *J Clin Invest*. 2007;117(3):557-567. PMID 17332883.
 
