@@ -19846,6 +19846,36 @@
           </rdf:RDF>
         </annotation>
       </species>
+      <species metaid="ADORA2A__pm" id="ADORA2A__pm" name="ADORA2A" compartment="plasma_membrane" initialAmount="0">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M2</html:p>
+              <html:p>tier=1</html:p>
+              <html:p>notes=auto-created by wire_ssc_tier1</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#ADORA2A__pm">
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/hgnc.symbol/ADORA2A"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+              <bqbiol:hasTaxon>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/taxonomy/9606"/>
+                </rdf:Bag>
+              </bqbiol:hasTaxon>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
     </listOfSpecies>
     <listOfReactions>
       <reaction metaid="reactionVertex_909721_61" id="reactionVertex_909721_61" reversible="false">
@@ -36036,6 +36066,52 @@
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="fibroblast_proFibrotic__cell"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="ssc_M2_041" id="ssc_M2_041" name="Stimulatory anti-PDGF-receptor autoantibodies activate PDGFRB on SSc fibroblasts" reversible="false">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M2</html:p>
+              <html:p>mechanism=Stimulatory anti-PDGF-receptor autoantibodies activate PDGFRB on SSc fibroblasts</html:p>
+              <html:p>pmid=16990392</html:p>
+              <html:p>evidence_code=ECO:0000314</html:p>
+              <html:p>ssc_relevance=agonistic anti-PDGFR autoantibodies link SSc autoimmunity to fibroblast activation</html:p>
+              <html:p>curation_note=discovery candidate cand_pdgfr_autoab; quote: &quot;Stimulatory autoantibodies to the PDGF receptor in scleroderma.&quot;</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="phenotype_autoAb_production__ext"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="PDGFRB__pm"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="ssc_M2_042" id="ssc_M2_042" name="Adenosine A2A receptor (ADORA2A) activation stimulates collagen production in SS" reversible="false">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M2</html:p>
+              <html:p>mechanism=Adenosine A2A receptor (ADORA2A) activation stimulates collagen production in SSc dermal fibroblasts</html:p>
+              <html:p>pmid=22033526</html:p>
+              <html:p>evidence_code=ECO:0000314</html:p>
+              <html:p>ssc_relevance=adenosine A2A axis as a profibrotic node in SSc skin</html:p>
+              <html:p>curation_note=discovery candidate cand_ado_a2a; quote: &quot;Adenosine A2A receptor activation stimulates collagen production in sclerodermic dermal fibroblasts either directly and through a cross-talk with the cannabinoi&quot;</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="ADORA2A__pm"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="COL1A1__ext"/>
         </listOfProducts>
       </reaction>
     </listOfReactions>

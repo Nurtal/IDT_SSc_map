@@ -25,3 +25,5 @@ cand_lpa_atx	REJECT	G3:DUP_existing_ssc		Autotaxin (ENPP2) produces LPA that act
 cand_lpa_lpar1	PASS			LPA-mediated LPAR1 activation contributes to SSc fibrosis
 cand_tlr4_myo	PASS			TLR4 sensing of endogenous danger ligands drives fibrotic gene expression and my
 cand_ctgf_auto	PASS			Autocrine CCN2 (CTGF) overexpression maintains the fibrotic fibroblast phenotype
+cand_pdgfr_autoab	PASS			Stimulatory anti-PDGF-receptor autoantibodies activate PDGFRB on SSc fibroblasts
+cand_ado_a2a	PASS			Adenosine A2A receptor (ADORA2A) activation stimulates collagen production in SS

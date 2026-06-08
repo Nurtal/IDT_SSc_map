@@ -1720,3 +1720,9 @@ Harmonisation HGNC CTGF→CCN2 (comme CXCL4→PF4), corrige le nœud existant + 
 NOX4 écarté (phrase ancrée trop nuancée).
 
 **État** : 549 espèces / 284 réactions / **109 SSc** (98.2% Reactome-novel). Croissance session : 85→109 (+24).
+
+### Batch auto-Ac PDGFR + adénosine A2A — +2 arêtes
+
+- `ssc_M2_041` auto-Ac anti-PDGFR → PDGFRB : auto-anticorps stimulants activant le récepteur PDGF (16990392).
+- `ssc_M2_042` ADORA2A → COL1A1 : l'activation du récepteur adénosine A2A stimule le collagène (22033526).
+IL-17 écarté (revue Yin/Yang : rôle pro/anti-fibrotique ambigu, ne pas sur-interpréter une direction).
