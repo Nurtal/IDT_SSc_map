@@ -19,8 +19,7 @@ Each SSc reaction carries a `curation_status`. `proposed` rows received a litera
 
 | status | n |
 |---|---|
-| confirmed | 67 |
-| proposed | 8 |
+| confirmed | 75 |
 | phenotype_aggregation | 6 |
 | conceptual_bridge | 4 |
 

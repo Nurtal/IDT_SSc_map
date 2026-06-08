@@ -238,3 +238,7 @@ clean:  ## Remove transient files (Python caches, notebook checkpoints).
 	@find . -type d -name '__pycache__' -prune -exec rm -rf {} +
 	@find . -type d -name '.ipynb_checkpoints' -prune -exec rm -rf {} +
 	@echo ">> cleaned."
+
+evidence-figure:  ## Render the supplementary evidence-depth figure.
+	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/render_evidence_depth_figure.py; \
+	else $(PYTHON) scripts/render_evidence_depth_figure.py; fi
