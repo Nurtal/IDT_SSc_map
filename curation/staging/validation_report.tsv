@@ -8,6 +8,9 @@ cand_fib_02	PASS			The committing SFRP2hi fraction acquires SFRP4 and FNDC1 as i
 cand_fib_03	PASS			Upstream TFs FOSL2/RUNX1/CREB3L1 are implicated in driving SSc myofibroblast dif
 cand_endomt_fli1	REJECT	G3:DUP_existing_ssc		FLI1 maintains dermal endothelial identity; its reduction in SSc microvascular E
 cand_endomt_mmp12	PASS			MMP-12-dependent cleavage of uPAR (PLAUR) drives EndoMT induced by SSc serum
-cand_sig_cav1	PASS			TGF-β downregulates caveolin-1 (CAV1) in SSc, removing a brake on fibrotic/TGF-β
+cand_sig_cav1	REJECT	G3:DUP_existing_ssc		TGF-β downregulates caveolin-1 (CAV1) in SSc, removing a brake on fibrotic/TGF-β
 cand_clin_comp	PASS			ECM markers COMP and THBS1 track modified Rodnan Skin Score (mRSS) skin severity
 cand_sig_cav1_angio	PASS			Caveolin-1 (CAV1) loss in SSc fibroblasts contributes to defective angiogenesis
+cand_cxcl4_bcell	PASS			PF4 (CXCL4)-DNA/RNA complexes stimulate B cells to become antibody-secreting pla
+cand_cxcl4_tlr9	PASS			PF4 (CXCL4) protects and organises DNA for sensing by TLR9
+cand_ic_ifn	PASS			SSc autoantibody immunoglobulin immune complexes induce IFN-α production by pDCs

@@ -1672,3 +1672,15 @@ l'angiogenèse est *incertain* — ne soutenait pas l'arête). Auto-Ac RNAPol3/f
 écartés : abstracts purement cliniques-descriptifs (fréquences), pas de mécanisme moléculaire
 ancrable (même limite que le GWAS).
 **État** : 541 espèces / 270 réactions / **95 SSc** (97.9% Reactome-novel).
+
+### Batch axe CXCL4/PF4 innée↔adaptatif (depuis papier en cache) — +3 arêtes
+
+Exploitation du papier anti-CXCL4 déjà en corpus (32707718), 3 arêtes nouvelles ancrées :
+- `ssc_M4_017` PF4 → production d'auto-Ac (complexes CXCL4-ADN/ARN → plasmocytes sécréteurs).
+- `ssc_M1_018` PF4 + TLR9 → activation TLR9 (CXCL4 organise l'ADN pour le sensing TLR9).
+- `ssc_M1_019` complexes immuns auto-Ac → IFN-α pDC (crosstalk M4→M1).
+Gate G1 a attrapé un faux gène « DNA » extrait de `TLR9_DNA_complex` → produit renommé
+`TLR9_active__endo` (propre). 
+
+**État** : 542 espèces / 273 réactions / **98 SSc** (98.0% Reactome-novel). Croissance totale
+session : 85 → 98 (+13). SBML 0 erreur, lint vert, preflight vert.

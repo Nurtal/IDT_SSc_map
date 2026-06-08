@@ -19611,6 +19611,31 @@
           </rdf:RDF>
         </annotation>
       </species>
+      <species metaid="TLR9_active__endo" id="TLR9_active__endo" name="TLR9 active" compartment="endosome" initialAmount="0">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M1</html:p>
+              <html:p>tier=1</html:p>
+              <html:p>notes=auto-created by wire_ssc_tier1</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#TLR9_active__endo">
+              <bqbiol:hasTaxon>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/taxonomy/9606"/>
+                </rdf:Bag>
+              </bqbiol:hasTaxon>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
     </listOfSpecies>
     <listOfReactions>
       <reaction metaid="reactionVertex_909721_61" id="reactionVertex_909721_61" reversible="false">
@@ -35465,6 +35490,79 @@
         <listOfProducts>
           <speciesReference species="phenotype_skin_severity_mRSS__cell"/>
         </listOfProducts>
+      </reaction>
+      <reaction metaid="ssc_M4_017" id="ssc_M4_017" name="PF4 (CXCL4)-DNA/RNA complexes stimulate B cells to become antibody-secreting pla" reversible="false">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M4</html:p>
+              <html:p>mechanism=PF4 (CXCL4)-DNA/RNA complexes stimulate B cells to become antibody-secreting plasma cells</html:p>
+              <html:p>pmid=32707718</html:p>
+              <html:p>evidence_code=ECO:0000314</html:p>
+              <html:p>ssc_relevance=links the SSc CXCL4/PF4 axis to plasma-cell autoantibody output</html:p>
+              <html:p>curation_note=discovery candidate cand_cxcl4_bcell; quote: &quot;CXCL4–DNA/RNA complexes stimulate purified human B-cells to become antibody-secreting plasma cells in vitro.&quot;</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="PF4__ext"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="phenotype_autoAb_production__ext"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="ssc_M1_018" id="ssc_M1_018" name="PF4 (CXCL4) protects and organises DNA for sensing by TLR9" reversible="false">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M1</html:p>
+              <html:p>mechanism=PF4 (CXCL4) protects and organises DNA for sensing by TLR9</html:p>
+              <html:p>pmid=32707718</html:p>
+              <html:p>evidence_code=ECO:0000314</html:p>
+              <html:p>ssc_relevance=mechanistic basis of CXCL4-driven innate nucleic-acid sensing in SSc</html:p>
+              <html:p>curation_note=discovery candidate cand_cxcl4_tlr9; quote: &quot;CXCL4 protects the DNA form degradation and allows DNA entry into the cells, while organizing it into periodic liquid crystalline structures with an inter-DNA s&quot;</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="PF4__ext"/>
+          <speciesReference species="TLR9__endo"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="TLR9_active__endo"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="ssc_M1_019" id="ssc_M1_019" name="SSc autoantibody immunoglobulin immune complexes induce IFN-α production by pDCs" reversible="false">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M1</html:p>
+              <html:p>mechanism=SSc autoantibody immunoglobulin immune complexes induce IFN-α production by pDCs (M4-&gt;M1 crosstalk)</html:p>
+              <html:p>pmid=32707718</html:p>
+              <html:p>evidence_code=ECO:0000314</html:p>
+              <html:p>ssc_relevance=autoantibody immune complexes feed the SSc type-I IFN signature</html:p>
+              <html:p>curation_note=discovery candidate cand_ic_ifn; quote: &quot;sera from SSc patients, mixed with necrotic/apoptotic material, induced IFN-α production in pDCs, apparently activated by immunoglobulin (Ig) immune complexes (&quot;</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="phenotype_autoAb_production__ext"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="IFNA1__ext"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="pDC_activated__cell"/>
+        </listOfModifiers>
       </reaction>
     </listOfReactions>
   </model>
