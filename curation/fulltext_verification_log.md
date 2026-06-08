@@ -52,3 +52,17 @@ _Decisions made by reading the downloaded full-text PDFs (not just abstracts). K
 - **ssc_M3_021** → PMID 19838011 (TGF-β/Smad EMT review, SMAD→ZEB2) — ⚠️ NICD1/Notch cooperation NOT established by this ref; reword or add a Notch–ZEB2 primary.
 
 These 3 remain `proposed` (abstract-level, PDFs not downloaded); 017/021 need a wording/ref check.
+
+## 🔒 Paywalled — kept as proposed (full-text not required)
+
+The 5 reactions below are canonical, textbook mechanisms whose source PDFs are paywalled
+(`9278140`, `12135389`, `30173249`, `37321373`). Under the tiered evidence policy
+(`docs/mi2cast_checklist.md`), abstract-grade ECO:0000033 citation is sufficient for canonical
+edges — full-text verification is NOT required. They remain `proposed` (abstract-verified):
+
+- ssc_M3_005 (PDE5A hydrolyses cGMP) — 12135389
+- ssc_M3_006 (hypoxia stabilises HIF1A) / ssc_M3_007 (HIF1A induces VEGFA) — 9278140
+- ssc_M3_008 (VEGFA binds VEGFR2/KDR) — 30173249
+- ssc_M3_019 (COX-2 -> TXA2 -> TBXA2R) — 37321373
+
+No further PDF chase needed; co-author may ratify these directly.
