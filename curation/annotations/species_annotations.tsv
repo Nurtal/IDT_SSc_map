@@ -541,3 +541,4 @@ CAV1__pm	CAV1				plasma_membrane	M2	9606	wired by wire_ssc_tier1.py
 THBS1__ext	THBS1				extracellular	M2	9606	wired by wire_ssc_tier1.py
 phenotype_skin_severity_mRSS__cell					cell	M2	9606	wired by wire_ssc_tier1.py
 TLR9_active__endo					endosome	M1	9606	wired by wire_ssc_tier1.py
+GREM1__ext	GREM1				extracellular	M2	9606	wired by wire_ssc_tier1.py

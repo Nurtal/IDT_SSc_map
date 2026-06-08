@@ -1684,3 +1684,14 @@ Gate G1 a attrapé un faux gène « DNA » extrait de `TLR9_DNA_complex` → pro
 
 **État** : 542 espèces / 273 réactions / **98 SSc** (98.0% Reactome-novel). Croissance totale
 session : 85 → 98 (+13). SBML 0 erreur, lint vert, preflight vert.
+
+### Batch IL-6/Gremlin + endothéline→fibroblaste — +3 arêtes (franchit 100 réactions SSc)
+
+- `ssc_M2_031` IL6 → GREM1 (via STAT3) : IL-6 trans-signaling induit la Gremline (PMID 24550394).
+- `ssc_M2_032` GREM1 → SMAD3 : la Gremline amplifie TGF-β/SMAD3 — nœud reliant inflammation→fibrose.
+- `ssc_M3_025` EDN1 → COL1A1/COL3A1 : ET-1 augmente le collagène I/III dans le fibroblaste SSc,
+  axe profibrotique direct distinct de la vasoconstriction (PMID 9595482).
+GREM1 (Gremline) est un nouveau nœud SSc-pertinent reliant l'axe IL-6 à l'hyperactivation TGF-β.
+
+**État** : 543 espèces / 276 réactions / **101 SSc** (98.0% Reactome-novel) — **>100 franchi**.
+Croissance totale session : 85 → 101 (+16). SBML 0 erreur, lint vert, preflight vert.

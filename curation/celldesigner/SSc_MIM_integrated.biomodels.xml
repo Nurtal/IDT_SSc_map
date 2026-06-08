@@ -19636,6 +19636,36 @@
           </rdf:RDF>
         </annotation>
       </species>
+      <species metaid="GREM1__ext" id="GREM1__ext" name="GREM1" compartment="extracellular" initialAmount="0">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M2</html:p>
+              <html:p>tier=1</html:p>
+              <html:p>notes=auto-created by wire_ssc_tier1</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#GREM1__ext">
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/hgnc.symbol/GREM1"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+              <bqbiol:hasTaxon>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/taxonomy/9606"/>
+                </rdf:Bag>
+              </bqbiol:hasTaxon>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
     </listOfSpecies>
     <listOfReactions>
       <reaction metaid="reactionVertex_909721_61" id="reactionVertex_909721_61" reversible="false">
@@ -35562,6 +35592,83 @@
         </listOfProducts>
         <listOfModifiers>
           <modifierSpeciesReference species="pDC_activated__cell"/>
+        </listOfModifiers>
+      </reaction>
+      <reaction metaid="ssc_M2_031" id="ssc_M2_031" name="IL-6 trans-signalling via STAT3 induces Gremlin (GREM1) in SSc fibroblasts" reversible="false">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M2</html:p>
+              <html:p>mechanism=IL-6 trans-signalling via STAT3 induces Gremlin (GREM1) in SSc fibroblasts</html:p>
+              <html:p>pmid=24550394</html:p>
+              <html:p>evidence_code=ECO:0000314</html:p>
+              <html:p>ssc_relevance=IL-6/STAT3-driven Gremlin links inflammation to TGF-β hyperactivation in SSc</html:p>
+              <html:p>curation_note=discovery candidate cand_il6_grem; quote: &quot;Interleukin-6 (IL-6) trans signaling drives a STAT3-dependent pathway that leads to hyperactive transforming growth factor-β (TGF-β) signaling promoting SMAD3 a&quot;</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="IL6__ext"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="GREM1__ext"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="STAT3__cyto"/>
+        </listOfModifiers>
+      </reaction>
+      <reaction metaid="ssc_M2_032" id="ssc_M2_032" name="Gremlin (GREM1) promotes hyperactive TGF-β/SMAD3 signalling driving fibrosis" reversible="false">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M2</html:p>
+              <html:p>mechanism=Gremlin (GREM1) promotes hyperactive TGF-β/SMAD3 signalling driving fibrosis</html:p>
+              <html:p>pmid=24550394</html:p>
+              <html:p>evidence_code=ECO:0000314</html:p>
+              <html:p>ssc_relevance=Gremlin as the IL-6→TGF-β amplifier node in SSc fibrosis</html:p>
+              <html:p>curation_note=discovery candidate cand_grem_smad; quote: &quot;Interleukin-6 (IL-6) trans signaling drives a STAT3-dependent pathway that leads to hyperactive transforming growth factor-β (TGF-β) signaling promoting SMAD3 a&quot;</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="GREM1__ext"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="SMAD3_p__cyto"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="ssc_M3_025" id="ssc_M3_025" name="Endothelin-1 (EDN1) enhances collagen I/III release by SSc dermal fibroblasts vi" reversible="false">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M3</html:p>
+              <html:p>mechanism=Endothelin-1 (EDN1) enhances collagen I/III release by SSc dermal fibroblasts via EDNRA/EDNRB</html:p>
+              <html:p>pmid=9595482</html:p>
+              <html:p>evidence_code=ECO:0000314</html:p>
+              <html:p>ssc_relevance=direct profibrotic ET-1→fibroblast collagen axis (distinct from vasoconstriction)</html:p>
+              <html:p>curation_note=discovery candidate cand_et1_col; quote: &quot;ET-1 enhanced release of collagen types I and III by control and SSc fibroblast strains&quot;</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="EDN1__ext"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="COL1A1__ext"/>
+          <speciesReference species="COL3A1__ext"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="EDNRA__pm"/>
+          <modifierSpeciesReference species="EDNRB__pm"/>
         </listOfModifiers>
       </reaction>
     </listOfReactions>

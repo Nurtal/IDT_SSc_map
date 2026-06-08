@@ -11,7 +11,7 @@ ANGPT1_TEK_complex__pm	M3	3	-1	4	3	5	no
 ANGPT1__ext	ssc_tier1	3	-1	4	3	5	no
 ANGPT2_TEK_complex__pm	M3	3	-1	4	3	5	no
 ANGPT2__ext	ssc_tier1	3	-1	4	3	5	no
-ARNT__cyto	ssc_tier1	2	-1	6	2	7	no
+ARNT__cyto	ssc_tier1	2	-1	3	2	4	no
 ARRB__cyto	M3	4	-1	6	4	7	no
 ATP__cyto	M1,M2,M4	1	-1	3	4	1	no
 ATP__endo	M2	4	-1	5	5	4	no
@@ -86,10 +86,10 @@ DPP4__pm	M2	1	-1	1	4	3	no
 DTX_ITCH__cyto	M3	5	-1	7	5	8	no
 DTX__cyto	M3	4	-1	6	4	7	no
 Dimeric_TGFB1_TGFBR2_homodimer__cyto	M2	3	-1	3	4	3	no
-EDN1_EDNRA_complex__pm	M3	1	-1	7	1	8	no
-EDN1__ext	ssc_tier1	2	-1	6	2	7	no
-EDNRA__pm	ssc_tier1	2	-1	7	2	8	no
-EDNRB__pm	ssc_tier1	2	-1	7	2	8	no
+EDN1_EDNRA_complex__pm	M3	1	-1	2	1	3	no
+EDN1__ext	ssc_tier1	1	-1	1	2	2	no
+EDNRA__pm	ssc_tier1	1	-1	1	2	2	no
+EDNRB__pm	ssc_tier1	1	-1	1	2	2	no
 EGR1__cyto	M1	1	1	-1	-1	4	no
 EIF2AK2__cyto	M1	1	1	-1	-1	4	no
 EP300__nuc	M3	1	-1	5	1	6	no
@@ -110,9 +110,10 @@ GADD34_PP1__cyto	M2	4	-1	5	5	4	no
 GATA3__nuc	ssc_tier1	2	-1	5	7	2	no
 GBP2__cyto	M1	1	1	-1	-1	4	no
 GDP__cyto	M2	5	-1	7	8	5	no
-GMP__cyto	M3	2	-1	9	2	10	no
+GMP__cyto	M3	2	-1	4	2	5	no
 GRB2_1_SOS1__cyto	M2	4	-1	6	7	4	no
 GRB7__cyto	M2	4	-1	6	7	4	no
+GREM1__ext	M2	1	-1	2	3	1	no
 GTP__cyto	M2	5	-1	7	8	5	no
 H2O__cyto	M1,M2	3	-1	5	6	3	no
 H2O__endo	M2	4	-1	5	5	4	no
@@ -123,9 +124,9 @@ HES5__nuc	M3	1	-1	7	1	8	no
 HES5_gene__nuc	M3	1	-1	6	1	7	no
 HEY_Genes__nuc	M3	1	-1	6	1	7	no
 HEY__nuc	M3	1	-1	7	1	8	no
-HIF1A_ARNT__nuc	M3	2	-1	6	2	7	no
-HIF1A__nuc	M3	0	-1	4	0	5	yes
-HIF1A_active__nuc	M3	1	-1	5	1	6	no
+HIF1A_ARNT__nuc	M3	2	-1	3	2	4	no
+HIF1A__nuc	M3	0	-1	3	0	4	yes
+HIF1A_active__nuc	M3	1	-1	2	1	3	no
 IFI27__mito	M1	0	0	-1	-1	4	yes
 IFI35__cyto	M1	1	1	-1	-1	4	no
 IFI6__cyto	M1	0	0	-1	-1	4	yes
@@ -212,7 +213,7 @@ JAK1_inhibited__cyto	M1	-1	-1	-1	-1	-1	no
 JAK2__cyto	M4	3	-1	3	5	3	no
 JAKs_LIFR__cyto	M4	5	-1	5	7	5	no
 JAKs_OSMR__cyto	M4	5	-1	5	7	5	no
-KDR__ext	ssc_tier1	2	-1	7	2	8	no
+KDR__ext	ssc_tier1	2	-1	3	2	4	no
 KPNA1__cyto	M1	-1	-1	-1	-1	-1	no
 KPNA1__nuc	M1	1	2	-1	-1	1	no
 KPNB1__cyto	M1	-1	-1	-1	-1	-1	no
@@ -242,7 +243,7 @@ MAML__nuc	M3	1	-1	5	1	6	no
 MAVS__cyto	ssc_tier1	5	-1	5	7	5	no
 MB21D1__cyto	ssc_tier1	6	-1	6	8	6	no
 MIB_NEURL__cyto	M3	3	-1	5	3	6	no
-MMP12__ext	M3	1	-1	9	1	10	no
+MMP12__ext	M3	1	-1	4	1	5	no
 MS4A1__pm	ssc_tier1	2	-1	4	6	2	no
 MTMR4__endo	M2	4	-1	4	4	4	no
 MX_family__cyto	M1	0	0	-1	-1	4	yes
@@ -263,7 +264,7 @@ NICD1_NBEA__nuc	M3	1	-1	4	1	5	no
 NICD1_RBPJ_SNW1__nuc	M3	1	-1	4	1	5	no
 NICD1__cyto	M3	0	-1	2	0	3	yes
 NICD1__nuc	M3	0	-1	3	0	4	yes
-NOS3__pm	ssc_tier1	3	-1	10	3	11	no
+NOS3__pm	ssc_tier1	3	-1	5	3	6	no
 NOTCH1_1721_1753__cyto	M3	1	-1	3	1	4	no
 NOTCH1_Coactivator_Complex_CDK8_CCNC__nuc	M3	0	-1	6	0	7	yes
 NOTCH1_Coactivator_Complex_HES1_Gene__nuc	M3	0	-1	6	0	7	yes
@@ -280,7 +281,7 @@ NOTCH1_NUMB_ITCH__cyto	M3	5	-1	7	5	8	no
 NOTCH1__cyto	M3	4	-1	6	4	7	no
 NOTCH3_JAG1_complex__pm	M3	6	-1	8	6	9	no
 NOTCH3__pm	ssc_tier1	6	-1	8	6	9	no
-NO__ext	ssc_tier1	2	-1	9	2	10	no
+NO__ext	ssc_tier1	2	-1	4	2	5	no
 NUMB__cyto	M3	5	-1	7	5	8	no
 N_ter_PDGFA_2_fragment__golgi	M2	-1	-1	-1	-1	-1	no
 N_ter_PDGF_A_fragment__golgi	M2	-1	-1	-1	-1	-1	no
@@ -292,7 +293,7 @@ OSMR__cyto	M4	5	-1	5	7	5	no
 OSM_OSMR_LIFR__cyto	M4	-1	-1	-1	-1	-1	no
 OSM__ext	M4	-1	-1	-1	-1	-1	no
 PCAF__nuc	M3	1	-1	5	1	6	no
-PDE5A__cyto	ssc_tier1	2	-1	9	2	10	no
+PDE5A__cyto	ssc_tier1	2	-1	4	2	5	no
 PDGFA__ext	M2	2	-1	2	4	2	no
 PDGFB__ext	M2	2	-1	2	4	2	no
 PDGFRA_PDGFRB__cyto	M2	4	-1	4	6	4	no
@@ -327,7 +328,7 @@ PF4__ext	M1	1	-1	2	4	1	no
 PI3K__cyto	M2	3	-1	5	6	3	no
 PI_3_4_5_P3__cyto	M2	2	-1	4	5	2	no
 PI_4_5_P2__cyto	M2	2	-1	4	5	2	no
-PLAUR__pm	M3	1	-1	9	1	10	no
+PLAUR__pm	M3	1	-1	4	1	5	no
 PLCG1__cyto	M2	3	-1	5	6	3	no
 PMEPA1__cyto	M2	4	-1	5	5	4	no
 PMEPA1__endo	M2	4	-1	4	4	5	no
@@ -368,7 +369,7 @@ SMAD2_SMURF2__cyto	M2	-1	-1	-1	-1	-1	no
 SMAD2__cyto	M2	-1	-1	-1	-1	-1	no
 SMAD3_STUB1__cyto	M2	4	-1	4	4	4	no
 SMAD3__cyto	M2	3	-1	3	3	3	no
-SMAD3_p__cyto	M2	2	-1	2	2	3	no
+SMAD3_p__cyto	M2	2	-1	2	2	2	no
 SMAD3p_SMAD4__nuc	M2	1	-1	1	1	2	no
 SMAD4__cyto	M2	2	-1	2	2	3	no
 SMAD7_NEDD4L__cyto	M2	-1	-1	-1	-1	-1	no
@@ -482,8 +483,8 @@ Ub_SMAD2__cyto	M2	-1	-1	-1	-1	-1	no
 Ub_SMAD3__cyto	M2	5	-1	5	5	5	no
 Ub_p_NICD1__nuc	M3	0	-1	8	0	9	yes
 Ubiquitin_ligase__cyto	M3	5	-1	7	5	8	no
-VEGFA_KDR_complex__pm	M3	1	-1	7	1	8	no
-VEGFA__ext	ssc_tier1	2	-1	6	2	7	no
+VEGFA_KDR_complex__pm	M3	1	-1	3	1	4	no
+VEGFA__ext	ssc_tier1	2	-1	2	2	3	no
 VWF__pm	ssc_tier1	2	-1	3	2	4	no
 XAF1__cyto	M1	1	1	-1	-1	4	no
 XBP1__nuc	ssc_tier1	1	-1	4	6	1	no
@@ -497,7 +498,7 @@ ZFYVE9_iso1__endo	M2	3	-1	4	4	3	no
 active_PDGF_AA_dimer__ext	M2	-1	-1	-1	-1	-1	no
 active_PDGF_BB_dimer__ext	M2	-1	-1	-1	-1	-1	no
 cGAMP__cyto	M1	5	-1	5	7	5	no
-cGMP__cyto	M3	1	-1	8	1	9	no
+cGMP__cyto	M3	1	-1	3	1	4	no
 dsDNA__cyto	M1	6	-1	6	8	6	no
 fibroblast_proFibrotic__cell	M2	1	-1	1	3	1	no
 gamma_secretase_complex__cyto	M3	1	-1	3	1	4	no
@@ -530,7 +531,7 @@ phenotype_ISG_signature__cell	M1	0	0	-1	-1	4	yes
 phenotype_autoAb_production__ext	M4	0	-1	3	5	0	yes
 phenotype_myofibroblast_activation__cell	M2	0	-1	0	3	2	yes
 phenotype_skin_severity_mRSS__cell	M2	1	-1	1	3	3	no
-phenotype_vascular_remodelling__cell	M3	0	-1	8	0	9	yes
+phenotype_vascular_remodelling__cell	M3	0	-1	3	0	4	yes
 proPDGF_AA_dimer__golgi	M2	-1	-1	-1	-1	-1	no
 proPDGF_AB_dimer__golgi	M2	-1	-1	-1	-1	-1	no
 proPDGF_BB_dimer__golgi	M2	-1	-1	-1	-1	-1	no
@@ -540,4 +541,4 @@ stiffened_ECM__ecm	M2	1	-1	1	3	2	no
 type_1_interferon_analogs__ext	M1	5	-1	7	8	5	no
 type_II_PDGFR_binding_tyrosine_kinase_inhibitors__cyto	M2	5	-1	5	7	5	no
 type_I_PDGFR_binding_tyrosine_kinase_inhibitors__cyto	M2	3	-1	5	6	3	no
-vasoconstriction__cell	M3	2	-1	8	2	9	no
+vasoconstriction__cell	M3	2	-1	3	2	4	no
