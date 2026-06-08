@@ -9,9 +9,9 @@ The integrated map's reaction annotations come from two distinct layers. Conflat
 | Layer | Reactions | With PMID | Experimental ECO (314/270/353) |
 |---|---|---|---|
 | **Reactome backbone** (pure-Reactome rows of `reaction_evidence.tsv`) | 159 | 158 (99.4%) | 0 (0.0%) |
-| **SSc-Tier-1** (`ssc_curated_reactions.tsv`) | 85 | 75 (88.2%) | 50 (58.8%) |
+| **SSc-Tier-1** (`ssc_curated_reactions.tsv`) | 86 | 76 (88.4%) | 51 (59.3%) |
 
-**Read this as:** the headline reaction count is dominated by the imported Reactome backbone, which propagates `ECO:0000305` (curator inference) by default. The genuinely SSc-specific layer is 85 reactions, of which 75 carry a primary PMID and 50 carry an experimental ECO code. This is the honest denominator for 'how much new SSc curation does this resource contribute'.
+**Read this as:** the headline reaction count is dominated by the imported Reactome backbone, which propagates `ECO:0000305` (curator inference) by default. The genuinely SSc-specific layer is 86 reactions, of which 76 carry a primary PMID and 51 carry an experimental ECO code. This is the honest denominator for 'how much new SSc curation does this resource contribute'.
 
 ## 1b. SSc-Tier-1 curation status (depth pass)
 
@@ -19,7 +19,7 @@ Each SSc reaction carries a `curation_status`. `proposed` rows received a litera
 
 | status | n |
 |---|---|
-| confirmed | 75 |
+| confirmed | 76 |
 | phenotype_aggregation | 6 |
 | conceptual_bridge | 4 |
 
@@ -41,8 +41,8 @@ Type distribution after classification:
 | catalysis | 15 |
 | degradation | 13 |
 | transport | 9 |
+| contributes | 8 |
 | inhibition | 7 |
-| contributes | 7 |
 | dissociation | 3 |
 
 ## 3. Full provenance × ECO × PMID matrix
@@ -56,5 +56,5 @@ See `evidence_stratification.tsv`. Per (layer, ECO):
 | ssc_tier1 | ECO:0000033 | 24 | 24 | 0 |
 | ssc_tier1 | ECO:0000270 | 10 | 10 | 0 |
 | ssc_tier1 | ECO:0000305 | 11 | 1 | 10 |
-| ssc_tier1 | ECO:0000314 | 38 | 38 | 0 |
+| ssc_tier1 | ECO:0000314 | 39 | 39 | 0 |
 | ssc_tier1 | ECO:0000353 | 2 | 2 | 0 |

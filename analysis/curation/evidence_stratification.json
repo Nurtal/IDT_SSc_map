@@ -14,8 +14,8 @@
       "catalysis": 15,
       "degradation": 13,
       "transport": 9,
+      "contributes": 8,
       "inhibition": 7,
-      "contributes": 7,
       "dissociation": 3
     }
   },
@@ -28,15 +28,15 @@
       "pct_experimental_eco": 0.0
     },
     "ssc_tier1": {
-      "n_reactions": 85,
-      "n_with_pmid": 75,
-      "pct_with_pmid": 88.2,
-      "n_experimental_eco": 50,
-      "pct_experimental_eco": 58.8
+      "n_reactions": 86,
+      "n_with_pmid": 76,
+      "pct_with_pmid": 88.4,
+      "n_experimental_eco": 51,
+      "pct_experimental_eco": 59.3
     }
   },
   "ssc_curation_status": {
-    "confirmed": 75,
+    "confirmed": 76,
     "phenotype_aggregation": 6,
     "conceptual_bridge": 4
   },
