@@ -19876,6 +19876,96 @@
           </rdf:RDF>
         </annotation>
       </species>
+      <species metaid="DKK1__ext" id="DKK1__ext" name="DKK1" compartment="extracellular" initialAmount="0">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M2</html:p>
+              <html:p>tier=1</html:p>
+              <html:p>notes=auto-created by wire_ssc_tier1</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#DKK1__ext">
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/hgnc.symbol/DKK1"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+              <bqbiol:hasTaxon>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/taxonomy/9606"/>
+                </rdf:Bag>
+              </bqbiol:hasTaxon>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="MTOR__cyto" id="MTOR__cyto" name="MTOR" compartment="cytosol" initialAmount="0">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M2</html:p>
+              <html:p>tier=1</html:p>
+              <html:p>notes=auto-created by wire_ssc_tier1</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#MTOR__cyto">
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/hgnc.symbol/MTOR"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+              <bqbiol:hasTaxon>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/taxonomy/9606"/>
+                </rdf:Bag>
+              </bqbiol:hasTaxon>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="JUNB__nuc" id="JUNB__nuc" name="JUNB" compartment="nucleus" initialAmount="0">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M2</html:p>
+              <html:p>tier=1</html:p>
+              <html:p>notes=auto-created by wire_ssc_tier1</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#JUNB__nuc">
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/hgnc.symbol/JUNB"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+              <bqbiol:hasTaxon>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/taxonomy/9606"/>
+                </rdf:Bag>
+              </bqbiol:hasTaxon>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
     </listOfSpecies>
     <listOfReactions>
       <reaction metaid="reactionVertex_909721_61" id="reactionVertex_909721_61" reversible="false">
@@ -36112,6 +36202,98 @@
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="COL1A1__ext"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="ssc_M2_043" id="ssc_M2_043" name="DKK1 antagonises Wnt/β-catenin; it is downregulated by promoter hypermethylation" reversible="false">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M2</html:p>
+              <html:p>mechanism=DKK1 antagonises Wnt/β-catenin; it is downregulated by promoter hypermethylation in SSc, derepressing Wnt</html:p>
+              <html:p>pmid=23698475</html:p>
+              <html:p>evidence_code=ECO:0000270</html:p>
+              <html:p>ssc_relevance=epigenetic loss of the Wnt antagonist DKK1 amplifies fibrotic Wnt signalling in SSc</html:p>
+              <html:p>curation_note=discovery candidate cand_dkk1_wnt; quote: &quot;The Wnt antagonists DKK1 and SFRP1 are downregulated by promoter hypermethylation in systemic sclerosis.&quot;</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="DKK1__ext"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="CTNNB1__nuc"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="ssc_M2_044" id="ssc_M2_044" name="Altered mTOR/Akt signalling stabilises JunB by failing its proteolytic degradati" reversible="false">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M2</html:p>
+              <html:p>mechanism=Altered mTOR/Akt signalling stabilises JunB by failing its proteolytic degradation in SSc</html:p>
+              <html:p>pmid=25303440</html:p>
+              <html:p>evidence_code=ECO:0000314</html:p>
+              <html:p>ssc_relevance=mTOR/Akt axis driving JunB accumulation in SSc fibroblasts</html:p>
+              <html:p>curation_note=discovery candidate cand_mtor_junb; quote: &quot;the accumulation of JunB resulting from altered mTOR/Akt signaling and a failure of proteolytic degradation underpins the aberrant overexpression of type I coll&quot;</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="MTOR__cyto"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="JUNB__nuc"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="ssc_M2_045" id="ssc_M2_045" name="Accumulated JunB underpins aberrant overexpression of type I collagen in SSc" reversible="false">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M2</html:p>
+              <html:p>mechanism=Accumulated JunB underpins aberrant overexpression of type I collagen in SSc</html:p>
+              <html:p>pmid=25303440</html:p>
+              <html:p>evidence_code=ECO:0000314</html:p>
+              <html:p>ssc_relevance=JunB as a profibrotic TF driving collagen in SSc</html:p>
+              <html:p>curation_note=discovery candidate cand_junb_col; quote: &quot;the accumulation of JunB resulting from altered mTOR/Akt signaling and a failure of proteolytic degradation underpins the aberrant overexpression of type I coll&quot;</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="JUNB__nuc"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="COL1A1__ext"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="ssc_M2_046" id="ssc_M2_046" name="Notch (NICD1) signalling regulates fibroblast activation and collagen release in" reversible="false">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M2</html:p>
+              <html:p>mechanism=Notch (NICD1) signalling regulates fibroblast activation and collagen release in SSc</html:p>
+              <html:p>pmid=21450749</html:p>
+              <html:p>evidence_code=ECO:0000314</html:p>
+              <html:p>ssc_relevance=direct Notch-&gt;fibroblast activation axis (distinct from EndoMT role)</html:p>
+              <html:p>curation_note=discovery candidate cand_notch_fib; quote: &quot;Notch signalling regulates fibroblast activation and collagen release in systemic sclerosis.&quot;</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="NICD1__cyto"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="fibroblast_proFibrotic__cell"/>
         </listOfProducts>
       </reaction>
     </listOfReactions>

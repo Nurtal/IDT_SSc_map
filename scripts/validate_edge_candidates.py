@@ -119,6 +119,10 @@ def main() -> None:
     hgnc_cache = load_hgnc_cache()
     ssc_pairs = existing_ssc_pairs()
     bb_pairs = backbone_pairs()
+    # established curated nodes/proteoforms already in the map (e.g. NICD1, SMAD3p) bypass G1
+    known_entities = set()
+    for r in csv.DictReader(ANN.open(), delimiter="\t"):
+        known_entities |= set(genes(r["species_id"]))
 
     rows = []
     for c in cands:
@@ -133,6 +137,8 @@ def main() -> None:
         # G1 HGNC
         all_genes = genes(c.get("reactants", "")) + genes(c.get("products", "")) + genes(c.get("modifiers", ""))
         for g in all_genes:
+            if g in known_entities:  # established curated proteoform/node already in the map (e.g. NICD1)
+                continue
             ok = hgnc_official(g, hgnc_cache)
             if ok is False:
                 flags.append(f"G1:not_official_HGNC[{g}]")  # likely alias/typo — fixable, not nonsense

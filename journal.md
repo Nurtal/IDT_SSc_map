@@ -1726,3 +1726,11 @@ NOX4 écarté (phrase ancrée trop nuancée).
 - `ssc_M2_041` auto-Ac anti-PDGFR → PDGFRB : auto-anticorps stimulants activant le récepteur PDGF (16990392).
 - `ssc_M2_042` ADORA2A → COL1A1 : l'activation du récepteur adénosine A2A stimule le collagène (22033526).
 IL-17 écarté (revue Yin/Yang : rôle pro/anti-fibrotique ambigu, ne pas sur-interpréter une direction).
+
+### Batch Notch/DKK1/mTOR-JunB — +4 arêtes
+
+- `ssc_M2_043` DKK1 ⊣ CTNNB1 : antagoniste Wnt hyperméthylé (downregulé) en SSc → Wnt déréprimé (23698475).
+- `ssc_M2_044` MTOR → JUNB : mTOR/Akt stabilise JunB (échec de dégradation) (25303440).
+- `ssc_M2_045` JUNB → COL1A1 : JunB accumulé → surexpression collagène I (25303440).
+- `ssc_M2_046` NICD1 → fibroblaste : Notch régule l'activation fibroblastique + collagène (21450749).
+Gate améliorée : les proteoformes curés existants (NICD1…) bypass G1 (faux positif HGNC corrigé).
