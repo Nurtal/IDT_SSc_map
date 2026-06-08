@@ -8,8 +8,9 @@
 
 ## Title
 
-From Mechanistic Map to Clinical Decision: A Curated Molecular Atlas of
-Diffuse Cutaneous Systemic Sclerosis with Trial-Grounded Drug Repurposing
+A Curated Molecular Interaction Map of Diffuse Cutaneous Systemic
+Sclerosis: From Mechanism to Clinical Decision with Trial-Grounded
+Drug Repurposing
 
 ## Authors
 
@@ -32,8 +33,9 @@ clinical-trial-grounded drug prioritisation.
 
 SSc-MIM was built in CellDesigner across four modules — M1 type-I IFN,
 M2 TGF-β fibroblast-to-myofibroblast, M3 EndoMT/vasculopathy, M4
-IL-6/Th2/B-cell — with 85 SSc-specific curated reactions (355 PMIDs,
-MI2CAST-annotated). Four scRNA-seq cohorts were integrated: Tabib
+IL-6/Th2/B-cell — with 85 SSc-specific curated reactions, MI2CAST-annotated
+and ECO-evidence-graded under a GOA-aligned tier policy (75/85 [88%]
+primary-PMID-cited after literature verification). Four scRNA-seq cohorts were integrated: Tabib
 (GSE138669, n=22), Gur (GSE195452, n=154), GSE210395 PBMC (n=8), Morse
 SSc-ILD (GSE128169, n=13) — 266,884 cells, 197 donors (117 SSc/80 HC).
 Pseudobulk differential expression used a negative-binomial GLM with
@@ -44,8 +46,11 @@ actual SSc trial outcomes.
 ## Results
 
 The map encompasses 526 species and 260 reactions across 17 compartments.
-Transcriptomic overlay recovered **161/198 (81 %)** of detectable MIM
-species (M1 84 %, M2 87 %, M3 75 %, M4 71 %). The M1 IFN AUCell score was
+Transcriptomic overlay recovered **50–81 % of detectable MIM species
+depending on the effect-size threshold** (98/198 = 49.5 % at ≥ 2-fold,
+padj ≤ 0.01 — matching the Wilcoxon baseline; 161/198 = 81 % at the
+permissive |log₂FC| ≥ 0.2 cutoff), interpreted as corroboration of the
+curated biology rather than validation. The M1 IFN AUCell score was
 significantly elevated in SSc skin in Gur (Δ = +0.058, Mann–Whitney
 *p* = 3.2 × 10⁻⁴; n=97/57) and Tabib (*p* = 0.011). Recalibration
 identified nintedanib (SENSCIS) as the only SSc-indicated agent,
