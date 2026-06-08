@@ -19966,6 +19966,66 @@
           </rdf:RDF>
         </annotation>
       </species>
+      <species metaid="CDH11__pm" id="CDH11__pm" name="CDH11" compartment="plasma_membrane" initialAmount="0">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M2</html:p>
+              <html:p>tier=1</html:p>
+              <html:p>notes=auto-created by wire_ssc_tier1</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#CDH11__pm">
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/hgnc.symbol/CDH11"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+              <bqbiol:hasTaxon>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/taxonomy/9606"/>
+                </rdf:Bag>
+              </bqbiol:hasTaxon>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="CCL2__ext" id="CCL2__ext" name="CCL2" compartment="extracellular" initialAmount="0">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M4</html:p>
+              <html:p>tier=1</html:p>
+              <html:p>notes=auto-created by wire_ssc_tier1</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#CCL2__ext">
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/hgnc.symbol/CCL2"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+              <bqbiol:hasTaxon>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/taxonomy/9606"/>
+                </rdf:Bag>
+              </bqbiol:hasTaxon>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
     </listOfSpecies>
     <listOfReactions>
       <reaction metaid="reactionVertex_909721_61" id="reactionVertex_909721_61" reversible="false">
@@ -36294,6 +36354,52 @@
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="fibroblast_proFibrotic__cell"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="ssc_M2_047" id="ssc_M2_047" name="Cadherin-11 (CDH11) mediates dermal fibrosis in SSc" reversible="false">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M2</html:p>
+              <html:p>mechanism=Cadherin-11 (CDH11) mediates dermal fibrosis in SSc</html:p>
+              <html:p>pmid=24757152</html:p>
+              <html:p>evidence_code=ECO:0000314</html:p>
+              <html:p>ssc_relevance=CDH11 cell-cell adhesion drives myofibroblast organisation in SSc dermal fibrosis</html:p>
+              <html:p>curation_note=discovery candidate cand_cdh11_fib; quote: &quot;Identification of cadherin 11 as a mediator of dermal fibrosis and possible role in systemic sclerosis.&quot;</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="CDH11__pm"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="phenotype_myofibroblast_activation__cell"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="ssc_M4_018" id="ssc_M4_018" name="SSc fibroblasts overexpress CCL2 (MCP-1), recruiting monocytes that amplify fibr" reversible="false">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M4</html:p>
+              <html:p>mechanism=SSc fibroblasts overexpress CCL2 (MCP-1), recruiting monocytes that amplify fibrosis</html:p>
+              <html:p>pmid=18984611</html:p>
+              <html:p>evidence_code=ECO:0000270</html:p>
+              <html:p>ssc_relevance=fibroblast-derived CCL2 links fibrosis to monocyte recruitment in SSc</html:p>
+              <html:p>curation_note=discovery candidate cand_ccl2_mono; quote: &quot;MCP-1 and -3 are overexpressed by SSc fibroblasts and in skin lesions from SSc patients compared to healthy controls.&quot;</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="fibroblast_proFibrotic__cell"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="CCL2__ext"/>
         </listOfProducts>
       </reaction>
     </listOfReactions>

@@ -1734,3 +1734,11 @@ IL-17 écarté (revue Yin/Yang : rôle pro/anti-fibrotique ambigu, ne pas sur-in
 - `ssc_M2_045` JUNB → COL1A1 : JunB accumulé → surexpression collagène I (25303440).
 - `ssc_M2_046` NICD1 → fibroblaste : Notch régule l'activation fibroblastique + collagène (21450749).
 Gate améliorée : les proteoformes curés existants (NICD1…) bypass G1 (faux positif HGNC corrigé).
+
+### Batch cadhérine-11 + CCL2 — +2 arêtes
+
+- `ssc_M2_047` CDH11 → myofibroblaste : la cadhérine-11 médie la fibrose dermique en SSc (24757152).
+- `ssc_M4_018` fibroblaste → CCL2 : les fibroblastes SSc surexpriment CCL2/MCP-1 (recrutement monocytaire) (18984611).
+Intégrine αvβ6 (Munger) écartée : papier non-SSc → viole la cohérence du corpus SSc.
+
+**État** : 555 espèces / 292 réactions / **117 SSc** (98.3% Reactome-novel). Croissance session : 85→117 (+32).

@@ -1,29 +1,29 @@
 {
   "integrated_xml": "curation/celldesigner/SSc_MIM_integrated.xml",
   "bipartite_graph": {
-    "n_species": 553,
-    "n_reactions": 290,
-    "n_edges": 972
+    "n_species": 555,
+    "n_reactions": 292,
+    "n_edges": 976
   },
   "species_projection": {
-    "n_nodes": 553,
-    "n_edges": 755,
+    "n_nodes": 555,
+    "n_edges": 757,
     "n_weakly_connected_components": 22,
-    "avg_in_degree": 1.3652802893309222,
-    "avg_out_degree": 1.3652802893309222
+    "avg_in_degree": 1.363963963963964,
+    "avg_out_degree": 1.363963963963964
   },
   "communities": {
     "count": 37,
     "sizes": [
       77,
       50,
-      48,
+      49,
       36,
       36,
       33,
       30,
       29,
-      28,
+      29,
       28,
       21,
       15,
@@ -67,7 +67,7 @@
     "comm1__ssc_tier1": 28,
     "comm2__M1": 7,
     "comm2__M2": 14,
-    "comm2__M4": 6,
+    "comm2__M4": 7,
     "comm2__crosstalk": 1,
     "comm2__ssc_tier1": 20,
     "comm3__M2": 36,
@@ -77,10 +77,10 @@
     "comm6__M4": 30,
     "comm7__M3": 27,
     "comm7__ssc_tier1": 2,
-    "comm8__M3": 28,
-    "comm9__M2": 10,
-    "comm9__M3": 4,
-    "comm9__ssc_tier1": 14,
+    "comm8__M2": 11,
+    "comm8__M3": 4,
+    "comm8__ssc_tier1": 14,
+    "comm9__M3": 28,
     "comm10__M2": 19,
     "comm10__M2,M4": 1,
     "comm10__M4": 1,
@@ -166,112 +166,112 @@
       "eigenvector": 0.0
     },
     "spearman_all_eligible_vs_hub_score": {
-      "degree": 0.954,
+      "degree": 0.955,
       "betweenness": 0.954,
-      "pagerank": 0.621,
-      "eigenvector": 0.019
+      "pagerank": 0.618,
+      "eigenvector": 0.021
     }
   },
   "top_hubs": [
     {
       "species": "fibroblast_proFibrotic__cell",
       "module": "M2",
-      "hub_score": 16.9663
+      "hub_score": 17.3981
     },
     {
       "species": "SMAD3p_SMAD4__nuc",
       "module": "M2",
-      "hub_score": 10.7175
+      "hub_score": 10.6726
     },
     {
       "species": "TGFB1__ext",
       "module": "M2",
-      "hub_score": 10.0597
+      "hub_score": 10.0663
     },
     {
       "species": "ISGF3_bound_to_ISRE_promotor_elements__nuc",
       "module": "M1",
-      "hub_score": 8.6958
+      "hub_score": 8.661
     },
     {
       "species": "ISG_signature__nuc",
       "module": "M1",
-      "hub_score": 8.6565
+      "hub_score": 8.622
     },
     {
       "species": "TGFB1_TGFBR2_TGFBR1__cyto",
       "module": "M2",
-      "hub_score": 8.5762
+      "hub_score": 8.5828
     },
     {
       "species": "NICD1__cyto",
       "module": "M3",
-      "hub_score": 8.2767
+      "hub_score": 8.2595
     },
     {
       "species": "COL1A1__ext",
       "module": "ssc_tier1",
-      "hub_score": 7.3658
+      "hub_score": 7.3457
     },
     {
       "species": "TGFB1_TGFBR2_p_TGFBR1__cyto",
       "module": "M2",
-      "hub_score": 6.4769
+      "hub_score": 6.4546
     },
     {
       "species": "NOTCH1_Coactivator_Complex__nuc",
       "module": "M3",
-      "hub_score": 5.229
+      "hub_score": 5.2128
     },
     {
       "species": "BCR_activated__cell",
       "module": "M4",
-      "hub_score": 4.5662
+      "hub_score": 4.5502
     },
     {
       "species": "SMAD3_p__cyto",
       "module": "M2",
-      "hub_score": 4.4427
+      "hub_score": 4.4262
     },
     {
       "species": "NICD1__nuc",
       "module": "M3",
-      "hub_score": 4.419
-    },
-    {
-      "species": "IL6__ext",
-      "module": "M4",
-      "hub_score": 4.2726
-    },
-    {
-      "species": "PDGF_Phospho_PDGF_receptor_dimer__cyto",
-      "module": "M2",
-      "hub_score": 4.2111
+      "hub_score": 4.4079
     },
     {
       "species": "phenotype_myofibroblast_activation__cell",
       "module": "M2",
-      "hub_score": 3.943
+      "hub_score": 4.3827
+    },
+    {
+      "species": "IL6__ext",
+      "module": "M4",
+      "hub_score": 4.2648
+    },
+    {
+      "species": "PDGF_Phospho_PDGF_receptor_dimer__cyto",
+      "module": "M2",
+      "hub_score": 4.1976
     },
     {
       "species": "IFNA_B_IFNAR2_JAK1_STAT2_IFNAR1_TYK2__cyto",
       "module": "M1",
-      "hub_score": 3.4704
+      "hub_score": 3.4603
     },
     {
       "species": "YAP1_TAZ_active__nuc",
       "module": "M2",
-      "hub_score": 3.22
+      "hub_score": 3.2089
     },
     {
       "species": "NOTCH1_DTX__cyto",
       "module": "M3",
-      "hub_score": 3.0749
+      "hub_score": 3.0669
     },
     {
       "species": "gamma_secretase_complex__cyto",
       "module": "M3",
-      "hub_score": 3.046
+      "hub_score": 3.0394
     }
   ]
 }

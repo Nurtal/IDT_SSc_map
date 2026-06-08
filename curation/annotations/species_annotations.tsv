@@ -552,3 +552,5 @@ ADORA2A__pm	ADORA2A				plasma_membrane	M2	9606	wired by wire_ssc_tier1.py
 DKK1__ext	DKK1				extracellular	M2	9606	wired by wire_ssc_tier1.py
 MTOR__cyto	MTOR				cytosol	M2	9606	wired by wire_ssc_tier1.py
 JUNB__nuc	JUNB				nucleus	M2	9606	wired by wire_ssc_tier1.py
+CDH11__pm	CDH11				plasma_membrane	M2	9606	wired by wire_ssc_tier1.py
+CCL2__ext	CCL2				extracellular	M4	9606	wired by wire_ssc_tier1.py

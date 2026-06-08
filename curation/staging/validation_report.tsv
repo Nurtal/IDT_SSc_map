@@ -31,3 +31,5 @@ cand_notch_fib	PASS			Notch (NICD1) signalling regulates fibroblast activation a
 cand_dkk1_wnt	REJECT	G3:DUP_existing_ssc		DKK1 antagonises Wnt/β-catenin; it is downregulated by promoter hypermethylation
 cand_mtor_junb	REJECT	G3:DUP_existing_ssc		Altered mTOR/Akt signalling stabilises JunB by failing its proteolytic degradati
 cand_junb_col	REJECT	G3:DUP_existing_ssc		Accumulated JunB underpins aberrant overexpression of type I collagen in SSc
+cand_cdh11_fib	PASS			Cadherin-11 (CDH11) mediates dermal fibrosis in SSc
+cand_ccl2_mono	PASS			SSc fibroblasts overexpress CCL2 (MCP-1), recruiting monocytes that amplify fibr
