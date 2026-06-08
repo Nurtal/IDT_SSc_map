@@ -537,3 +537,6 @@ CREB3L1__nuc	CREB3L1				nucleus	M2	9606	wired by wire_ssc_tier1.py
 FLI1__nuc	FLI1				nucleus	M3	9606	wired by wire_ssc_tier1.py
 MMP12__ext	MMP12				extracellular	M3	9606	wired by wire_ssc_tier1.py
 PLAUR__pm	PLAUR				plasma_membrane	M3	9606	wired by wire_ssc_tier1.py
+CAV1__pm	CAV1				plasma_membrane	M2	9606	wired by wire_ssc_tier1.py
+THBS1__ext	THBS1				extracellular	M2	9606	wired by wire_ssc_tier1.py
+phenotype_skin_severity_mRSS__cell					cell	M2	9606	wired by wire_ssc_tier1.py

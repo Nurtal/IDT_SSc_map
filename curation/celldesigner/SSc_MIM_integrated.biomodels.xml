@@ -19526,6 +19526,91 @@
           </rdf:RDF>
         </annotation>
       </species>
+      <species metaid="CAV1__pm" id="CAV1__pm" name="CAV1" compartment="plasma_membrane" initialAmount="0">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M2</html:p>
+              <html:p>tier=1</html:p>
+              <html:p>notes=auto-created by wire_ssc_tier1</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#CAV1__pm">
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/hgnc.symbol/CAV1"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+              <bqbiol:hasTaxon>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/taxonomy/9606"/>
+                </rdf:Bag>
+              </bqbiol:hasTaxon>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="THBS1__ext" id="THBS1__ext" name="THBS1" compartment="extracellular" initialAmount="0">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M2</html:p>
+              <html:p>tier=1</html:p>
+              <html:p>notes=auto-created by wire_ssc_tier1</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#THBS1__ext">
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/hgnc.symbol/THBS1"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+              <bqbiol:hasTaxon>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/taxonomy/9606"/>
+                </rdf:Bag>
+              </bqbiol:hasTaxon>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="phenotype_skin_severity_mRSS__cell" id="phenotype_skin_severity_mRSS__cell" name="phenotype skin severity mRSS" compartment="cell" initialAmount="0">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M2</html:p>
+              <html:p>tier=1</html:p>
+              <html:p>notes=auto-created by wire_ssc_tier1</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#phenotype_skin_severity_mRSS__cell">
+              <bqbiol:hasTaxon>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/taxonomy/9606"/>
+                </rdf:Bag>
+              </bqbiol:hasTaxon>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
     </listOfSpecies>
     <listOfReactions>
       <reaction metaid="reactionVertex_909721_61" id="reactionVertex_909721_61" reversible="false">
@@ -35332,6 +35417,53 @@
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="phenotype_vascular_remodelling__cell"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="ssc_M2_029" id="ssc_M2_029" name="TGF-β downregulates caveolin-1 (CAV1) in SSc, removing a brake on fibrotic/TGF-β" reversible="false">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M2</html:p>
+              <html:p>mechanism=TGF-β downregulates caveolin-1 (CAV1) in SSc, removing a brake on fibrotic/TGF-β signalling</html:p>
+              <html:p>pmid=29259049</html:p>
+              <html:p>evidence_code=ECO:0000314</html:p>
+              <html:p>ssc_relevance=CAV1 loss is an SSc-signature lesion amplifying TGF-β-driven fibrosis</html:p>
+              <html:p>curation_note=discovery candidate cand_sig_cav1; quote: &quot;Transforming growth factor beta (TGF-β) plays a major role in tissue fibrosis, including downregulation of caveolin-1 (Cav-1); however, its role in defective an&quot;</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="TGFB1__ext"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="CAV1__pm"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="ssc_M2_030" id="ssc_M2_030" name="ECM markers COMP and THBS1 track modified Rodnan Skin Score (mRSS) skin severity" reversible="false">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M2</html:p>
+              <html:p>mechanism=ECM markers COMP and THBS1 track modified Rodnan Skin Score (mRSS) skin severity in SSc</html:p>
+              <html:p>pmid=34282151</html:p>
+              <html:p>evidence_code=ECO:0000270</html:p>
+              <html:p>ssc_relevance=clinical-axis link: molecular ECM markers to the mRSS skin-severity readout</html:p>
+              <html:p>curation_note=discovery candidate cand_clin_comp; quote: &quot;Comparing these two clusters directly revealed top differentially expressed genes, including COMP and THBS1, genes highly associated with the MRSS and previousl&quot;</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="COMP__ecm"/>
+          <speciesReference species="THBS1__ext"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="phenotype_skin_severity_mRSS__cell"/>
         </listOfProducts>
       </reaction>
     </listOfReactions>

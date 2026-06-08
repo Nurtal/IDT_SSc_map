@@ -29,6 +29,7 @@ BLIMP1__nuc	3	ssc_tier1
 BLK__cyto	3	ssc_tier1
 BST2__ext	6	M1
 BTK__cyto	3	ssc_tier1
+CAV1__pm	1	M2
 CBL__cyto	10	M2,M4
 CD154__pm	3	ssc_tier1
 CD19__pm	3	ssc_tier1
@@ -439,6 +440,7 @@ TGFB_LAP__ext	30	M2
 TGF_beta_1_LAP1__golgi	11	M2
 TGF_beta_3_LAP3_LAP3_binding_integrins__ext	31	M2
 THBS1__ecm	1	ssc_tier1
+THBS1__ext	1	M2
 TICAM1__cyto	19	ssc_tier1
 TLE__nuc	7	M3
 TLR3__endo	19	ssc_tier1
@@ -526,6 +528,7 @@ phenotype_ECM_deposition__ecm	1	M2
 phenotype_ISG_signature__cell	6	M1
 phenotype_autoAb_production__ext	3	M4
 phenotype_myofibroblast_activation__cell	1	M2
+phenotype_skin_severity_mRSS__cell	1	M2
 phenotype_vascular_remodelling__cell	8	M3
 proPDGF_AA_dimer__golgi	11	M2
 proPDGF_AB_dimer__golgi	11	M2

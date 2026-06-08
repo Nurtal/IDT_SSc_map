@@ -2,7 +2,7 @@
   "integrated_xml": "curation/celldesigner/SSc_MIM_integrated.xml",
   "tsv_input": "curation/ssc_curated_reactions.tsv",
   "stubs_wired": 88,
-  "reactions_added": 93,
+  "reactions_added": 95,
   "species_auto_created": [
     "dsDNA__cyto",
     "cGAMP__cyto",
@@ -68,6 +68,9 @@
     "CREB3L1__nuc",
     "FLI1__nuc",
     "MMP12__ext",
-    "PLAUR__pm"
+    "PLAUR__pm",
+    "CAV1__pm",
+    "THBS1__ext",
+    "phenotype_skin_severity_mRSS__cell"
   ]
 }

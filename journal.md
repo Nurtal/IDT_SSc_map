@@ -1660,3 +1660,15 @@ Détail méthodo utile : pour un papier non-OA, j'injecte le texte du PDF (déj�
 
 **État** : 538 espèces / 268 réactions / **93 SSc** (97.8% Reactome-novel). Croissance totale
 session : 85 → 93 (+8). SBML 0 erreur, lint vert, preflight vert, biomodels régénéré.
+
+### Batchs événement-signature (CAV1) + axe clinique (mRSS) — +2 arêtes
+
+- `ssc_M2_029` TGFB1 → CAV1 (inhibition) : TGF-β réprime la cavéoline-1, perte-signature SSc
+  qui amplifie la fibrose (PMID 29259049, OA).
+- `ssc_M2_030` COMP/THBS1 → phénotype mRSS : premier axe **clinique** (marqueurs ECM →
+  sévérité cutanée mRSS), ancré sur Tabib (34282151).
+Écarté : CAV1→angiogenèse (la citation disponible disait que le rôle de TGF-β dans
+l'angiogenèse est *incertain* — ne soutenait pas l'arête). Auto-Ac RNAPol3/fibrillarine
+écartés : abstracts purement cliniques-descriptifs (fréquences), pas de mécanisme moléculaire
+ancrable (même limite que le GWAS).
+**État** : 541 espèces / 270 réactions / **95 SSc** (97.9% Reactome-novel).
