@@ -113,6 +113,67 @@ task from "source 45 rows from scratch" into "ratify 34 abstract-checked proposa
 
 ---
 
+## SSc-specificity growth plan (2026-06-08) — "more disease biology, zero garbage"
+
+> **Problem.** The map's defensible core is the 85 SSc-specific reactions; the rest is a
+> harmonised Reactome import. A reviewer can fairly ask "where is the SSc biology Reactome
+> does *not* contain?" The answer is to grow the SSc-specific layer toward ~200–250 reactions
+> — but **only** with content that is (a) genuinely disease-specific, (b) literature-grounded,
+> and (c) not already in Reactome. The overriding constraint is **do not add nonsense**: every
+> new edge must clear automated gates *and* human ratification before it touches the curated map.
+
+### Design principle — a gated staging pipeline; the curated map is never written speculatively
+
+Nothing reaches `curation/ssc_curated_reactions.tsv` (the source of truth) until it passes
+five automated gates **and** is ratified. Candidates live in `curation/staging/` until promoted.
+
+```
+SSc papers → extract candidate edges → STAGING → [G0–G4 gates] → ratification worksheet → promote → wire/audit/lint
+   (LLM-assisted)        (verbatim quote)   (never the map)   (hard rejects)      (human/AI tag)   (existing chain)
+```
+
+### The five anti-nonsense gates (`scripts/validate_edge_candidates.py`)
+
+| Gate | Check | Rejects |
+|------|-------|---------|
+| **G0 schema** | required fields present; valid `type`, compartment suffixes, naming convention | malformed rows |
+| **G1 HGNC** | every protein/gene entity resolves to an **official HGNC symbol** (HGNC REST, cached) | invented / alias / typo symbols |
+| **G2 grounding** | the row's `supporting_quote` is a **verbatim substring of the source paper's fetched text** | **hallucinated edges** (quote not in paper ⇒ hard reject) — the core anti-nonsense guarantee |
+| **G3 novelty** | the (A→B) pair is **not** already an existing SSc reaction nor a Reactome-backbone pair | duplicates / "cleaned Reactome" padding |
+| **G4 evidence** | PMID present + resolvable; paper is SSc-context (corpus membership); ECO assignable per tier policy | uncited or off-disease claims |
+
+G2 is the keystone: an edge can only exist if it carries a quote that is provably present in
+the real article text. This makes fabrication structurally hard, not just discouraged.
+
+### High-yield categories (content Reactome structurally cannot hold)
+
+| Category | Why intrinsically SSc | Target | Lane |
+|----------|----------------------|--------|------|
+| **Autoantibody mechanisms** (anti-Scl70/TOPO1, anti-centromere CENPA/B, anti-RNA-Pol-III, anti-fibrillarin FBL; immune complexes, FcγR, complement) | defines SSc serological subsets; absent from Reactome | +20–40 | **pilot** |
+| **GWAS risk-locus → function** (IRF5, STAT4, CD247, TNFAIP3, BANK1, BLK, IL12RB2, CD226…) | disease-association is SSc-specific | +30–50 | batch 2 |
+| **SSc fibroblast/myofibroblast states** (SFRP2hi, LGR5+ from Tabib/Gur/Valenzi) and their drivers | SSc single-cell-defined cell states | +20–30 | batch 3 |
+| **Inter-module crosstalk** (extend the current 8) | Reactome is mono-pathway → cannot encode crosstalk | +15–25 | batch 4 |
+| **SSc-signature events** (FLI1↓, miR-29↓, CXCL4/PF4, EndoMT, NETs) | hallmark SSc molecular lesions | +15–25 | batch 5 |
+| **Clinical-axis edges** (molecular node → mRSS/ILD/PAH/digital ulcers) | disease phenotype by definition | +10–20 | batch 6 |
+
+### Execution phases
+
+| # | Phase | Lane | Deliverable |
+|---|-------|------|-------------|
+| G1 | **Pipeline + gates** — `scripts/fetch_ssc_corpus.py`, `validate_edge_candidates.py`, `promote_edges.py`, `curation/staging/`, `docs/edge_discovery_protocol.md` | 🟢 | gated staging machinery |
+| G2 | **Originality metric** — `scripts/reactome_novelty.py`: per-reaction Reactome-overlap; quantifies "% of the 85 absent from Reactome" (turns the criticism into a measured number) | 🟢 | `analysis/network/reactome_novelty.{tsv,json}` |
+| G3 | **Pilot — autoantibody module** — assemble authoritative SSc-autoAb PMIDs, fetch OA full text, extract verbatim-grounded candidate edges → staging → gates → ratification worksheet → conservative promotion (tagged `AI-proposed (discovery)`) | 🟡→🔴 | first validated growth batch |
+| G4 | **Scale by category** — batches 2–6, one ratification cycle each; expert/co-author sign-off per batch | 🔴 | toward 200–250 SSc reactions |
+
+### Acceptance / guardrails
+
+- **No candidate enters the curated map without passing G0–G4** (esp. G2 grounding) and being ratified; promotions are tagged in `ratification` and fully reversible (one TSV row each).
+- Every batch re-runs `make wire network evidence-audit evidence-lint preflight`; SBML stays 0-error; no orphan species.
+- The originality metric is reported in the manuscript: the goal is to state *"N % of SSc-curated reactions have no Reactome equivalent."*
+- Quality > volume: a batch that yields 12 solid grounded edges beats one that yields 40 shaky ones. Padding is a failure, not a win.
+
+---
+
 ## v1.0 release definition
 
 A clean GitHub release tagged `v1.0` (auto-DOI'd via the Zenodo↔GitHub webhook), containing:

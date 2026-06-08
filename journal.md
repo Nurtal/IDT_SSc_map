@@ -1550,3 +1550,23 @@ Faute de primaire pour les causalités exactes, reformulé vers ce que la litté
 Source de vérité (TSV) + reaction_evidence mis à jour. ⚠️ Changement de topologie (retrait de
 SNAI1/NICD1 comme modifieurs) → **re-wire de l'XML intégré requis au prochain rebuild**
 (wire skippe les reaction_id existants ; à régénérer + rerun network au moment du tag).
+
+## 2026-06-08 — Plan de croissance de la spécificité SSc ("plus de biologie, zéro bêtise")
+
+> Cf. [[ROADMAP]] § "SSc-specificity growth plan". Objectif : faire croître la couche
+> SSc-spécifique (85 → ~200–250 réactions) avec UNIQUEMENT du contenu (a) spécifique à la
+> maladie, (b) ancré dans la littérature, (c) absent de Reactome. Contrainte n°1 de
+> l'utilisateur : **ne pas ajouter de bêtises**.
+
+**Principe de design** : pipeline en zone de staging avec 5 gates automatiques + ratification
+humaine. Rien n'entre dans `ssc_curated_reactions.tsv` sans passer G0–G4 ET être ratifié.
+- **G2 (ancrage)** est la clé anti-hallucination : chaque arête candidate porte une citation
+  verbatim qui DOIT être un substring du texte réel de l'article source ; sinon rejet dur.
+- G1 = symbole HGNC officiel (REST), G3 = nouveauté vs Reactome + dédup, G4 = PMID + contexte SSc.
+
+**Catégories à haut rendement** (ce que Reactome ne peut structurellement pas contenir) :
+auto-anticorps (pilote), GWAS→fonction, états fibroblaste SSc, crosstalks, événements-signature
+(FLI1↓, miR-29↓, CXCL4), axes cliniques.
+
+**Phases** : G1 pipeline+gates · G2 métrique d'originalité Reactome · G3 pilote auto-anticorps ·
+G4 scale par batch. Exécution ci-dessous.

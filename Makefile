@@ -242,3 +242,7 @@ clean:  ## Remove transient files (Python caches, notebook checkpoints).
 evidence-figure:  ## Render the supplementary evidence-depth figure.
 	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/render_evidence_depth_figure.py; \
 	else $(PYTHON) scripts/render_evidence_depth_figure.py; fi
+
+reactome-novelty:  ## Per-reaction Reactome-overlap (originality of the SSc-curated layer).
+	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/reactome_novelty.py; \
+	else $(PYTHON) scripts/reactome_novelty.py; fi
