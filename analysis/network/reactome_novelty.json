@@ -1,14 +1,14 @@
 {
-  "n_ssc_reactions": 101,
+  "n_ssc_reactions": 104,
   "verdict_distribution": {
-    "no-gene-pair": 32,
-    "novel": 67,
+    "no-gene-pair": 33,
+    "novel": 69,
     "in-reactome": 2
   },
-  "n_with_no_forward_reactome_equivalent": 99,
-  "pct_no_reactome_equivalent": 98.0,
-  "n_strictly_novel_genes": 67,
+  "n_with_no_forward_reactome_equivalent": 102,
+  "pct_no_reactome_equivalent": 98.1,
+  "n_strictly_novel_genes": 69,
   "pct_strictly_novel": 66.3,
   "backbone_directed_gene_pairs": 919,
-  "headline": "99/101 (98.0%) of SSc-curated reactions have no forward Reactome equivalent; 67 encode gene pairs absent from the Reactome backbone in either direction."
+  "headline": "102/104 (98.1%) of SSc-curated reactions have no forward Reactome equivalent; 69 encode gene pairs absent from the Reactome backbone in either direction."
 }

@@ -19666,6 +19666,66 @@
           </rdf:RDF>
         </annotation>
       </species>
+      <species metaid="CTNNB1__nuc" id="CTNNB1__nuc" name="CTNNB1" compartment="nucleus" initialAmount="0">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M2</html:p>
+              <html:p>tier=1</html:p>
+              <html:p>notes=auto-created by wire_ssc_tier1</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#CTNNB1__nuc">
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/hgnc.symbol/CTNNB1"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+              <bqbiol:hasTaxon>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/taxonomy/9606"/>
+                </rdf:Bag>
+              </bqbiol:hasTaxon>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="GLI2__nuc" id="GLI2__nuc" name="GLI2" compartment="nucleus" initialAmount="0">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M2</html:p>
+              <html:p>tier=1</html:p>
+              <html:p>notes=auto-created by wire_ssc_tier1</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#GLI2__nuc">
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/hgnc.symbol/GLI2"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+              <bqbiol:hasTaxon>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/taxonomy/9606"/>
+                </rdf:Bag>
+              </bqbiol:hasTaxon>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
     </listOfSpecies>
     <listOfReactions>
       <reaction metaid="reactionVertex_909721_61" id="reactionVertex_909721_61" reversible="false">
@@ -35670,6 +35730,78 @@
           <modifierSpeciesReference species="EDNRA__pm"/>
           <modifierSpeciesReference species="EDNRB__pm"/>
         </listOfModifiers>
+      </reaction>
+      <reaction metaid="ssc_M2_033" id="ssc_M2_033" name="Sustained β-catenin (CTNNB1) activity in dermal fibroblasts up-regulates ECM/col" reversible="false">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M2</html:p>
+              <html:p>mechanism=Sustained β-catenin (CTNNB1) activity in dermal fibroblasts up-regulates ECM/collagen genes, driving skin fibrosis</html:p>
+              <html:p>pmid=25385294</html:p>
+              <html:p>evidence_code=ECO:0000314</html:p>
+              <html:p>ssc_relevance=adds the Wnt/β-catenin effector axis (absent from the map) as an SSc fibrosis driver</html:p>
+              <html:p>curation_note=discovery candidate cand_wnt_ctnnb1; quote: &quot;expression of stabilized β-catenin in mouse dermal fibroblasts resulted in spontaneous, progressive skin fibrosis with thickened collagen fibres and altered col&quot;</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="CTNNB1__nuc"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="COL1A1__ext"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="ssc_M2_034" id="ssc_M2_034" name="TGF-β up-regulates GLI2 in a SMAD3-dependent manner (non-canonical Hedgehog acti" reversible="false">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M2</html:p>
+              <html:p>mechanism=TGF-β up-regulates GLI2 in a SMAD3-dependent manner (non-canonical Hedgehog activation)</html:p>
+              <html:p>pmid=27793816</html:p>
+              <html:p>evidence_code=ECO:0000314</html:p>
+              <html:p>ssc_relevance=links TGF-β to the Hedgehog/GLI2 axis in SSc fibroblasts</html:p>
+              <html:p>curation_note=discovery candidate cand_hh_tgfb_gli2; quote: &quot;TGF-β upregulated GLI2 in a Smad3-dependent manner and induced nuclear accumulation and DNA binding of GLI2.&quot;</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="TGFB1__ext"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="GLI2__nuc"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="SMAD3_p__cyto"/>
+        </listOfModifiers>
+      </reaction>
+      <reaction metaid="ssc_M2_035" id="ssc_M2_035" name="GLI2 acts as a downstream mediator of TGF-β-induced fibroblast activation in SSc" reversible="false">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M2</html:p>
+              <html:p>mechanism=GLI2 acts as a downstream mediator of TGF-β-induced fibroblast activation in SSc</html:p>
+              <html:p>pmid=27793816</html:p>
+              <html:p>evidence_code=ECO:0000314</html:p>
+              <html:p>ssc_relevance=Hedgehog/GLI2 as an SSc fibroblast-activation node (new pathway)</html:p>
+              <html:p>curation_note=discovery candidate cand_hh_gli2_fib; quote: &quot;The transcription factor GLI2 as a downstream mediator of transforming growth factor-β-induced fibroblast activation in SSc.&quot;</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="GLI2__nuc"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="fibroblast_proFibrotic__cell"/>
+        </listOfProducts>
       </reaction>
     </listOfReactions>
   </model>

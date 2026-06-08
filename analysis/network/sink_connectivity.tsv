@@ -68,6 +68,7 @@ CRLF1__cyto	M4	-1	-1	-1	-1	-1	no
 CTF1_LIFR_JAKs__cyto	M4	6	-1	6	8	6	no
 CTF1__ext	M4	6	-1	6	8	6	no
 CTGF__ext	M2	0	-1	0	2	2	yes
+CTNNB1__nuc	M2	1	-1	1	3	2	no
 Class_I_MHC_heavy_chain_MHC_HC__er	M1	1	1	-1	-1	4	no
 Cleaved_PDGF_B_peptides__golgi	M2	-1	-1	-1	-1	-1	no
 Cleaved_novel_PDGF_fragments__ext	M2	-1	-1	-1	-1	-1	no
@@ -110,6 +111,7 @@ GADD34_PP1__cyto	M2	4	-1	5	5	4	no
 GATA3__nuc	ssc_tier1	2	-1	5	7	2	no
 GBP2__cyto	M1	1	1	-1	-1	4	no
 GDP__cyto	M2	5	-1	7	8	5	no
+GLI2__nuc	M2	2	-1	2	3	2	no
 GMP__cyto	M3	2	-1	4	2	5	no
 GRB2_1_SOS1__cyto	M2	4	-1	6	7	4	no
 GRB7__cyto	M2	4	-1	6	7	4	no

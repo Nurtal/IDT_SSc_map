@@ -1695,3 +1695,16 @@ GREM1 (Gremline) est un nouveau nœud SSc-pertinent reliant l'axe IL-6 à l'hype
 
 **État** : 543 espèces / 276 réactions / **101 SSc** (98.0% Reactome-novel) — **>100 franchi**.
 Croissance totale session : 85 → 101 (+16). SBML 0 erreur, lint vert, preflight vert.
+
+### Batch Wnt/β-caténine + Hedgehog/GLI2 — +3 arêtes (2 pathways nouveaux)
+
+Deux voies fibrotiques SSc majeures absentes de la carte, désormais ajoutées :
+- `ssc_M2_033` CTNNB1 (β-caténine) → COL1A1 : la β-caténine stabilisée dans le fibroblaste
+  dermique up-régule l'ECM/collagène → fibrose (PMID 25385294).
+- `ssc_M2_034` TGFB1 → GLI2 (Smad3-dépendant) : TGF-β active la voie Hedgehog non-canonique (27793816).
+- `ssc_M2_035` GLI2 → activation fibroblastique : GLI2 médiateur aval de l'activation induite
+  par TGF-β en SSc (27793816).
+Nouveaux nœuds : CTNNB1 (Wnt), GLI2 (Hedgehog).
+
+**État** : 545 espèces / 279 réactions / **104 SSc** (98.1% Reactome-novel). Croissance totale
+session : 85 → 104 (+19). SBML 0 erreur, lint vert, preflight vert.

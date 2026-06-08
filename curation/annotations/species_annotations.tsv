@@ -542,3 +542,5 @@ THBS1__ext	THBS1				extracellular	M2	9606	wired by wire_ssc_tier1.py
 phenotype_skin_severity_mRSS__cell					cell	M2	9606	wired by wire_ssc_tier1.py
 TLR9_active__endo					endosome	M1	9606	wired by wire_ssc_tier1.py
 GREM1__ext	GREM1				extracellular	M2	9606	wired by wire_ssc_tier1.py
+CTNNB1__nuc	CTNNB1				nucleus	M2	9606	wired by wire_ssc_tier1.py
+GLI2__nuc	GLI2				nucleus	M2	9606	wired by wire_ssc_tier1.py
