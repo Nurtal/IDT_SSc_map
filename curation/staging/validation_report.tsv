@@ -33,3 +33,8 @@ cand_mtor_junb	REJECT	G3:DUP_existing_ssc		Altered mTOR/Akt signalling stabilise
 cand_junb_col	REJECT	G3:DUP_existing_ssc		Accumulated JunB underpins aberrant overexpression of type I collagen in SSc
 cand_cdh11_fib	PASS			Cadherin-11 (CDH11) mediates dermal fibrosis in SSc
 cand_ccl2_mono	PASS			SSc fibroblasts overexpress CCL2 (MCP-1), recruiting monocytes that amplify fibr
+cand_gal3	PASS			Galectin-3 (LGALS3) acts as a central pro-fibrotic regulator in tissue fibrosis
+cand_wnt5a_tgfb	PASS			WNT5A/JNK/ROCK signalling coordinates activation of latent TGF-β
+cand_gli2_clic4	PASS			GLI2 upregulation mediates induction of pro-fibrotic CLIC4 in dermal fibroblasts
+cand_notch2_myo	PASS			NOTCH2 promotes myofibroblast activation (the direct target of antifibrotic miR-
+cand_ereg	PASS			Dendritic-cell-derived epiregulin (EREG), an EGFR ligand, maintains skin and lun

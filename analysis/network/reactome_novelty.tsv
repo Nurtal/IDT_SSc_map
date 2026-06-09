@@ -13,7 +13,7 @@ ssc_M1_011	M1	0	no-gene-pair
 ssc_M1_012	M1	0	no-gene-pair	
 ssc_M2_001	M2	2	in-reactome	LTBP1->TGFB1
 ssc_M2_002	M2	2	novel	
-ssc_M2_003	M2	2	in-reactome	TGFB1->TGFBR2;TGFB1->TGFBR1
+ssc_M2_003	M2	2	in-reactome	TGFB1->TGFBR1;TGFB1->TGFBR2
 ssc_M2_004	M2	3	novel	
 ssc_M2_005	M2	2	novel	
 ssc_M2_006	M2	2	novel	
@@ -116,3 +116,8 @@ ssc_M2_045	M2	1	novel
 ssc_M2_046	M2	0	no-gene-pair	
 ssc_M2_047	M2	0	no-gene-pair	
 ssc_M4_018	M4	0	no-gene-pair	
+ssc_M2_048	M2	0	no-gene-pair	
+ssc_M2_049	M2	1	novel	
+ssc_M2_050	M2	1	novel	
+ssc_M2_051	M2	0	no-gene-pair	
+ssc_M2_052	M2	0	no-gene-pair	

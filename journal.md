@@ -1742,3 +1742,14 @@ Gate améliorée : les proteoformes curés existants (NICD1…) bypass G1 (faux 
 Intégrine αvβ6 (Munger) écartée : papier non-SSc → viole la cohérence du corpus SSc.
 
 **État** : 555 espèces / 292 réactions / **117 SSc** (98.3% Reactome-novel). Croissance session : 85→117 (+32).
+
+### Batch revue-OA — +5 arêtes (preuve que la revue littérature n'est pas redondante)
+
+Minage des papiers OA trouvés par la revue systématique (que je n'avais pas cherchés avant) :
+- `ssc_M2_048` LGALS3 (galectine-3) → fibroblaste (36499646).
+- `ssc_M2_049` WNT5A → TGFB1 : WNT5A/JNK/ROCK active le TGF-β latent (38747285) — relie Wnt↔TGF-β.
+- `ssc_M2_050` GLI2 → CLIC4 : étend l'axe Hedgehog/GLI2 vers l'effecteur CLIC4 (35159339).
+- `ssc_M2_051` NOTCH2 → myofibroblaste (cible de miR-16-5p antifibrotique) (33411678).
+- `ssc_M2_052` EREG (épiréguline DC-dérivée, ligand EGFR) → fibroblaste (36490328).
+Revue systématique : 77 papiers/24 thèmes → 18 OA non-minés (12 PDF téléchargés, 6 via XML),
+52 non-OA pour le co-auteur. Worklist : curation/staging/litreview_worklist.tsv.

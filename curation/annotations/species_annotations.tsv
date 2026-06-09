@@ -554,3 +554,9 @@ MTOR__cyto	MTOR				cytosol	M2	9606	wired by wire_ssc_tier1.py
 JUNB__nuc	JUNB				nucleus	M2	9606	wired by wire_ssc_tier1.py
 CDH11__pm	CDH11				plasma_membrane	M2	9606	wired by wire_ssc_tier1.py
 CCL2__ext	CCL2				extracellular	M4	9606	wired by wire_ssc_tier1.py
+LGALS3__ext	LGALS3				extracellular	M2	9606	wired by wire_ssc_tier1.py
+WNT5A__ext	WNT5A				extracellular	M2	9606	wired by wire_ssc_tier1.py
+CLIC4__cyto	CLIC4				cytosol	M2	9606	wired by wire_ssc_tier1.py
+NOTCH2__pm	NOTCH2				plasma_membrane	M2	9606	wired by wire_ssc_tier1.py
+EREG__ext	EREG				extracellular	M2	9606	wired by wire_ssc_tier1.py
+EGFR__pm	EGFR				plasma_membrane	M2	9606	wired by wire_ssc_tier1.py

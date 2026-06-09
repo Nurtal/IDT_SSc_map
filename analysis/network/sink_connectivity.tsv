@@ -48,6 +48,7 @@ CDH5_repressed__pm	M3	2	-1	2	2	3	no
 CDK8_CCNC__nuc	M3	1	-1	6	1	6	no
 CENPB__ext	M4	2	-1	2	2	2	no
 CLCF1__ext	M4	-1	-1	-1	-1	-1	no
+CLIC4__cyto	M2	3	-1	3	3	3	no
 CNTFR_CRLF1_CLCF1__cyto	M4	-1	-1	-1	-1	-1	no
 CNTFR__cyto	M4	-1	-1	-1	-1	-1	no
 CNTF_CNTFR_CRLF1_CLCF1_CNTFR_IL6ST_JAK1_JAK2_TYK2__cyto	M4	4	-1	4	5	4	no
@@ -95,10 +96,12 @@ EDN1_EDNRA_complex__pm	M3	1	-1	2	1	3	no
 EDN1__ext	ssc_tier1	1	-1	1	2	2	no
 EDNRA__pm	ssc_tier1	1	-1	1	2	2	no
 EDNRB__pm	ssc_tier1	1	-1	1	2	2	no
+EGFR__pm	M2	2	-1	2	2	2	no
 EGR1__cyto	M1	1	1	-1	-1	4	no
 EIF2AK2__cyto	M1	1	1	-1	-1	4	no
 ENPP2__ext	M2	3	-1	3	3	3	no
 EP300__nuc	M3	1	-1	5	1	5	no
+EREG__ext	M2	2	-1	2	2	2	no
 Extracellular_matrix_ligands__ext	M2	-1	-1	-1	-1	-1	no
 FAP__pm	ssc_tier1	1	-1	1	2	3	no
 FBXW7_SKP1_CUL1_RBX1__nuc	M3	1	-1	7	1	7	no
@@ -230,6 +233,7 @@ KPNB1__nuc	M1	1	2	-1	-1	1	no
 LAP1_binding_integrins__cyto	M2	-1	-1	-1	-1	-1	no
 LAP3_binding_integrins__cyto	M2	-1	-1	-1	-1	-1	no
 LAP__ecm	ssc_tier1	2	-1	2	3	3	no
+LGALS3__ext	M2	2	-1	2	2	2	no
 LIFR_JAKs_OSMR_JAKs__cyto	M4	-1	-1	-1	-1	-1	no
 LIFR__cyto	M4	5	-1	5	6	5	no
 LIF_LIFR_JAKs__cyto	M4	6	-1	6	7	6	no
@@ -290,6 +294,7 @@ NOTCH1_DTX__cyto	M3	3	-1	5	3	5	no
 NOTCH1_Fringe_modified_NOTCH1__cyto	M3	-1	-1	-1	-1	-1	no
 NOTCH1_NUMB_ITCH__cyto	M3	5	-1	7	5	7	no
 NOTCH1__cyto	M3	4	-1	6	4	6	no
+NOTCH2__pm	M2	1	-1	1	3	3	no
 NOTCH3_JAG1_complex__pm	M3	6	-1	8	6	8	no
 NOTCH3__pm	ssc_tier1	6	-1	8	6	8	no
 NO__ext	ssc_tier1	2	-1	4	2	5	no
@@ -498,6 +503,7 @@ Ubiquitin_ligase__cyto	M3	5	-1	7	5	7	no
 VEGFA_KDR_complex__pm	M3	1	-1	3	1	4	no
 VEGFA__ext	ssc_tier1	2	-1	2	2	3	no
 VWF__pm	ssc_tier1	2	-1	3	2	4	no
+WNT5A__ext	M2	2	-1	2	3	3	no
 XAF1__cyto	M1	1	1	-1	-1	4	no
 XBP1__nuc	ssc_tier1	1	-1	4	4	1	no
 XPO1__cyto	M2	-1	-1	-1	-1	-1	no
