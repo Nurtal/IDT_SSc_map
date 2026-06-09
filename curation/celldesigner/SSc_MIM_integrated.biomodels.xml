@@ -20321,6 +20321,96 @@
           </rdf:RDF>
         </annotation>
       </species>
+      <species metaid="SIRT1__nuc" id="SIRT1__nuc" name="SIRT1" compartment="nucleus" initialAmount="0">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M2</html:p>
+              <html:p>tier=1</html:p>
+              <html:p>notes=auto-created by wire_ssc_tier1</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#SIRT1__nuc">
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/hgnc.symbol/SIRT1"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+              <bqbiol:hasTaxon>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/taxonomy/9606"/>
+                </rdf:Bag>
+              </bqbiol:hasTaxon>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="MMP1__ext" id="MMP1__ext" name="MMP1" compartment="extracellular" initialAmount="0">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M2</html:p>
+              <html:p>tier=1</html:p>
+              <html:p>notes=auto-created by wire_ssc_tier1</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#MMP1__ext">
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/hgnc.symbol/MMP1"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+              <bqbiol:hasTaxon>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/taxonomy/9606"/>
+                </rdf:Bag>
+              </bqbiol:hasTaxon>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="IL17A__ext" id="IL17A__ext" name="IL17A" compartment="extracellular" initialAmount="0">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M4</html:p>
+              <html:p>tier=1</html:p>
+              <html:p>notes=auto-created by wire_ssc_tier1</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#IL17A__ext">
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/hgnc.symbol/IL17A"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+              <bqbiol:hasTaxon>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/taxonomy/9606"/>
+                </rdf:Bag>
+              </bqbiol:hasTaxon>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
     </listOfSpecies>
     <listOfReactions>
       <reaction metaid="reactionVertex_909721_61" id="reactionVertex_909721_61" reversible="false">
@@ -37001,6 +37091,75 @@
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="EDN1__ext"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="ssc_M4_020" id="ssc_M4_020" name="CD19 on plasma cells drives autoantibody production, skin thickening and collage" reversible="false">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M4</html:p>
+              <html:p>mechanism=CD19 on plasma cells drives autoantibody production, skin thickening and collagen (its inhibition reduces all three)</html:p>
+              <html:p>pmid=29956883</html:p>
+              <html:p>evidence_code=ECO:0000315</html:p>
+              <html:p>ssc_relevance=CD19/plasma-cell axis (CAR-T/anti-CD19 rationale) in SSc</html:p>
+              <html:p>curation_note=discovery candidate cand_cd19_autoab; quote: &quot;CD19 inhibition in mice reduced skin thickness, collagen production, and autoantibody levels&quot;</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="CD19__pm"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="phenotype_autoAb_production__ext"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="ssc_M2_058" id="ssc_M2_058" name="SIRT1 negatively regulates MMP levels in dermal fibroblasts" reversible="false">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M2</html:p>
+              <html:p>mechanism=SIRT1 negatively regulates MMP levels in dermal fibroblasts</html:p>
+              <html:p>pmid=29579252</html:p>
+              <html:p>evidence_code=ECO:0000314</html:p>
+              <html:p>ssc_relevance=SIRT1 deacetylase as an anti-fibrotic regulator of ECM turnover in SSc</html:p>
+              <html:p>curation_note=discovery candidate cand_sirt1_mmp; quote: &quot;Sirt1 has also been found to negatively regulate MMP levels in dermal fibroblasts&quot;</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="SIRT1__nuc"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="MMP1__ext"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="ssc_M4_021" id="ssc_M4_021" name="IL-17A promotes skin fibrosis (its loss attenuates bleomycin-induced fibrosis)" reversible="false">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M4</html:p>
+              <html:p>mechanism=IL-17A promotes skin fibrosis (its loss attenuates bleomycin-induced fibrosis)</html:p>
+              <html:p>pmid=22833167</html:p>
+              <html:p>evidence_code=ECO:0000315</html:p>
+              <html:p>ssc_relevance=IL-17A as a profibrotic cytokine in SSc skin (directional model evidence)</html:p>
+              <html:p>curation_note=discovery candidate cand_il17a_fib; quote: &quot;loss of IL-17A significantly attenu- ated bleomycin-induced skin fibrosis&quot;</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="IL17A__ext"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="fibroblast_proFibrotic__cell"/>
         </listOfProducts>
       </reaction>
     </listOfReactions>

@@ -1,8 +1,8 @@
 {
   "integrated_xml": "curation/celldesigner/SSc_MIM_integrated.xml",
-  "total_species": 565,
+  "total_species": 568,
   "max_path_threshold": 6,
-  "n_dangling": 94,
+  "n_dangling": 96,
   "n_far_from_sink": 0,
   "sinks_detected_per_anchor": {
     "M1_ISG_signature": 10,
@@ -30,10 +30,10 @@
       "dangling": 6
     },
     "M2": {
-      "n": 206,
+      "n": 208,
       "median": 3.0,
       "max": 5,
-      "dangling": 54
+      "dangling": 56
     },
     "M1,M2,M4": {
       "n": 3,
@@ -42,8 +42,8 @@
       "dangling": 0
     },
     "M4": {
-      "n": 77,
-      "median": 3.0,
+      "n": 78,
+      "median": 3,
       "max": 6,
       "dangling": 15
     },

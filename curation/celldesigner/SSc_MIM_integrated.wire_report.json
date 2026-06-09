@@ -2,7 +2,7 @@
   "integrated_xml": "curation/celldesigner/SSc_MIM_integrated.xml",
   "tsv_input": "curation/ssc_curated_reactions.tsv",
   "stubs_wired": 88,
-  "reactions_added": 130,
+  "reactions_added": 133,
   "species_auto_created": [
     "dsDNA__cyto",
     "cGAMP__cyto",
@@ -95,6 +95,9 @@
     "AGTR1__pm",
     "macrophage_proFibrotic__cell",
     "NOX4__cyto",
-    "ITGAV__pm"
+    "ITGAV__pm",
+    "SIRT1__nuc",
+    "MMP1__ext",
+    "IL17A__ext"
   ]
 }

@@ -1753,3 +1753,10 @@ Minage des papiers OA trouvés par la revue systématique (que je n'avais pas ch
 - `ssc_M2_052` EREG (épiréguline DC-dérivée, ligand EGFR) → fibroblaste (36490328).
 Revue systématique : 77 papiers/24 thèmes → 18 OA non-minés (12 PDF téléchargés, 6 via XML),
 52 non-OA pour le co-auteur. Worklist : curation/staging/litreview_worklist.tsv.
+
+### Minage PDF co-auteur batch 2 — +3 arêtes
+
+- `ssc_M4_020` CD19 → production auto-Ac : CD19 sur plasmocytes (rationnel anti-CD19/CAR-T) (29956883).
+- `ssc_M2_058` SIRT1 ⊣ MMP1 : SIRT1 régule négativement les MMP dans le fibroblaste dermique (29579252).
+- `ssc_M4_021` IL17A → fibroblaste : IL-17A profibrotique (sa perte atténue la fibrose bléomycine) (22833167).
+STAT6→collagène écarté (dup avec crosstalk_005). Gros du groupe '?' écarté (rein/foie/générique, hors SSc).

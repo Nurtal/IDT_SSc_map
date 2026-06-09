@@ -36,7 +36,7 @@ CBL__cyto	M2,M4	3	-1	5	6	3	no
 CCL2__ext	M4	2	-1	2	2	2	no
 CCN2__ext	M2	0	-1	0	2	2	yes
 CD154__pm	ssc_tier1	2	-1	4	4	2	no
-CD19__pm	ssc_tier1	2	-1	4	4	2	no
+CD19__pm	ssc_tier1	1	-1	3	4	1	no
 CD22__pm	ssc_tier1	2	-1	4	4	2	no
 CD31__pm	ssc_tier1	2	-1	3	2	3	no
 CD40__pm	ssc_tier1	2	-1	4	4	2	no
@@ -175,6 +175,7 @@ IL11__ext	M4	5	-1	5	6	5	no
 IL13RA1__ext	ssc_tier1	2	-1	2	4	2	no
 IL13__ext	ssc_tier1	1	-1	1	3	1	no
 IL13_complex__pm	M4	2	-1	2	4	2	no
+IL17A__ext	M4	2	-1	2	2	2	no
 IL31_IL31RA_JAK1_OSMR_JAK1__cyto	M4	-1	-1	-1	-1	-1	no
 IL31_IL31RA_JAK1__cyto	M4	-1	-1	-1	-1	-1	no
 IL4R__ext	ssc_tier1	2	-1	2	4	2	no
@@ -260,6 +261,7 @@ MAVS__cyto	ssc_tier1	5	-1	5	5	5	no
 MB21D1__cyto	ssc_tier1	6	-1	6	6	6	no
 MIB_NEURL__cyto	M3	3	-1	5	3	5	no
 MMP12__ext	M3	1	-1	4	1	4	no
+MMP1__ext	M2	-1	-1	-1	-1	-1	no
 MS4A1__pm	ssc_tier1	2	-1	4	4	2	no
 MTMR4__endo	M2	4	-1	4	4	4	no
 MTOR__cyto	M2	2	-1	2	4	3	no
@@ -382,6 +384,7 @@ RUNX1__nuc	M2	1	-1	1	3	3	no
 SAMHD1__nuc	M1	1	1	-1	-1	4	no
 SFRP2__ext	M2	1	-1	1	3	3	no
 SFRP4__ext	M2	1	-1	1	3	3	no
+SIRT1__nuc	M2	-1	-1	-1	-1	-1	no
 SMAD2_3_PMEPA1__cyto	M2	4	-1	5	5	4	no
 SMAD2_3__cyto	M2	3	-1	4	4	3	no
 SMAD2_SMURF2__cyto	M2	-1	-1	-1	-1	-1	no

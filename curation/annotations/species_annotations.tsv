@@ -564,3 +564,6 @@ AGTR1__pm	AGTR1				plasma_membrane	M3	9606	wired by wire_ssc_tier1.py
 macrophage_proFibrotic__cell					cell	M4	9606	wired by wire_ssc_tier1.py
 NOX4__cyto	NOX4				cytosol	M2	9606	wired by wire_ssc_tier1.py
 ITGAV__pm	ITGAV				plasma_membrane	M2	9606	wired by wire_ssc_tier1.py
+SIRT1__nuc	SIRT1				nucleus	M2	9606	wired by wire_ssc_tier1.py
+MMP1__ext	MMP1				extracellular	M2	9606	wired by wire_ssc_tier1.py
+IL17A__ext	IL17A				extracellular	M4	9606	wired by wire_ssc_tier1.py

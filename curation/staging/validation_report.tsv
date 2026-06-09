@@ -44,5 +44,9 @@ cand_tgfb_gal3	REJECT	G3:DUP_existing_ssc		Galectin-3 (LGALS3) is a downstream r
 cand_nox4_myo	PASS			NOX4-dependent H2O2 production drives TGF-β1-induced myofibroblast differentiati
 cand_pdgfr_myo	PASS			Stimulatory PDGFR signalling induces Ha-Ras/ERK/ROS, type I collagen and myofibr
 cand_macro_tgfb	PASS			Macrophage-derived TGF-β stimulates myofibroblasts to produce extracellular-matr
-cand_itgav_tgfb	PASS			αv-containing integrins (ITGAV) bind and activate latent TGF-β, implicated in fi
-cand_tgfb_edn1	PASS			TGF-β (among other stimuli) up-regulates endothelin-1 (EDN1) expression
+cand_itgav_tgfb	REJECT	G3:DUP_existing_ssc		αv-containing integrins (ITGAV) bind and activate latent TGF-β, implicated in fi
+cand_tgfb_edn1	REJECT	G3:DUP_existing_ssc		TGF-β (among other stimuli) up-regulates endothelin-1 (EDN1) expression
+cand_stat6_col	REJECT	G0:missing[supporting_quote];G2:quote_too_short;G3:DUP_existing_ssc		IL-4/IL-13-driven STAT6 signalling stimulates collagen production in fibroblasts
+cand_il17a_fib	PASS			IL-17A promotes skin fibrosis (its loss attenuates bleomycin-induced fibrosis)
+cand_cd19_autoab	PASS			CD19 on plasma cells drives autoantibody production, skin thickening and collage
+cand_sirt1_mmp	REJECT	G3:DUP_existing_ssc		SIRT1 negatively regulates MMP levels in dermal fibroblasts

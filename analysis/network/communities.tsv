@@ -175,6 +175,7 @@ IL11__ext	6	M4
 IL13RA1__ext	14	ssc_tier1
 IL13__ext	1	ssc_tier1
 IL13_complex__pm	14	M4
+IL17A__ext	2	M4
 IL31_IL31RA_JAK1_OSMR_JAK1__cyto	34	M4
 IL31_IL31RA_JAK1__cyto	34	M4
 IL4R__ext	14	ssc_tier1
@@ -260,6 +261,7 @@ MAVS__cyto	12	ssc_tier1
 MB21D1__cyto	12	ssc_tier1
 MIB_NEURL__cyto	5	M3
 MMP12__ext	5	M3
+MMP1__ext	38	M2
 MS4A1__pm	2	ssc_tier1
 MTMR4__endo	3	M2
 MTOR__cyto	1	M2
@@ -382,6 +384,7 @@ RUNX1__nuc	1	M2
 SAMHD1__nuc	4	M1
 SFRP2__ext	1	M2
 SFRP4__ext	1	M2
+SIRT1__nuc	38	M2
 SMAD2_3_PMEPA1__cyto	3	M2
 SMAD2_3__cyto	3	M2
 SMAD2_SMURF2__cyto	25	M2
