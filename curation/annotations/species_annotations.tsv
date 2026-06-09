@@ -560,3 +560,7 @@ CLIC4__cyto	CLIC4				cytosol	M2	9606	wired by wire_ssc_tier1.py
 NOTCH2__pm	NOTCH2				plasma_membrane	M2	9606	wired by wire_ssc_tier1.py
 EREG__ext	EREG				extracellular	M2	9606	wired by wire_ssc_tier1.py
 EGFR__pm	EGFR				plasma_membrane	M2	9606	wired by wire_ssc_tier1.py
+AGTR1__pm	AGTR1				plasma_membrane	M3	9606	wired by wire_ssc_tier1.py
+macrophage_proFibrotic__cell					cell	M4	9606	wired by wire_ssc_tier1.py
+NOX4__cyto	NOX4				cytosol	M2	9606	wired by wire_ssc_tier1.py
+ITGAV__pm	ITGAV				plasma_membrane	M2	9606	wired by wire_ssc_tier1.py

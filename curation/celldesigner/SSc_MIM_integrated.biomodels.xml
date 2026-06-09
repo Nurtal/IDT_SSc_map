@@ -20206,6 +20206,121 @@
           </rdf:RDF>
         </annotation>
       </species>
+      <species metaid="AGTR1__pm" id="AGTR1__pm" name="AGTR1" compartment="plasma_membrane" initialAmount="0">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M3</html:p>
+              <html:p>tier=1</html:p>
+              <html:p>notes=auto-created by wire_ssc_tier1</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#AGTR1__pm">
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/hgnc.symbol/AGTR1"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+              <bqbiol:hasTaxon>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/taxonomy/9606"/>
+                </rdf:Bag>
+              </bqbiol:hasTaxon>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="macrophage_proFibrotic__cell" id="macrophage_proFibrotic__cell" name="macrophage proFibrotic" compartment="cell" initialAmount="0">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M4</html:p>
+              <html:p>tier=1</html:p>
+              <html:p>notes=auto-created by wire_ssc_tier1</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#macrophage_proFibrotic__cell">
+              <bqbiol:hasTaxon>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/taxonomy/9606"/>
+                </rdf:Bag>
+              </bqbiol:hasTaxon>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="NOX4__cyto" id="NOX4__cyto" name="NOX4" compartment="cytosol" initialAmount="0">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M2</html:p>
+              <html:p>tier=1</html:p>
+              <html:p>notes=auto-created by wire_ssc_tier1</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#NOX4__cyto">
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/hgnc.symbol/NOX4"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+              <bqbiol:hasTaxon>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/taxonomy/9606"/>
+                </rdf:Bag>
+              </bqbiol:hasTaxon>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species metaid="ITGAV__pm" id="ITGAV__pm" name="ITGAV" compartment="plasma_membrane" initialAmount="0">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M2</html:p>
+              <html:p>tier=1</html:p>
+              <html:p>notes=auto-created by wire_ssc_tier1</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#ITGAV__pm">
+              <bqbiol:isVersionOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/hgnc.symbol/ITGAV"/>
+                </rdf:Bag>
+              </bqbiol:isVersionOf>
+              <bqbiol:hasTaxon>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/taxonomy/9606"/>
+                </rdf:Bag>
+              </bqbiol:hasTaxon>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
     </listOfSpecies>
     <listOfReactions>
       <reaction metaid="reactionVertex_909721_61" id="reactionVertex_909721_61" reversible="false">
@@ -36699,6 +36814,194 @@
         <listOfModifiers>
           <modifierSpeciesReference species="EGFR__pm"/>
         </listOfModifiers>
+      </reaction>
+      <reaction metaid="ssc_M3_026" id="ssc_M3_026" name="Agonistic anti-AT1R/anti-ETAR autoantibodies from SSc patients induce TGF-β prod" reversible="false">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M3</html:p>
+              <html:p>mechanism=Agonistic anti-AT1R/anti-ETAR autoantibodies from SSc patients induce TGF-β production by dermal microvascular endothelial cells</html:p>
+              <html:p>pmid=26970493</html:p>
+              <html:p>evidence_code=ECO:0000314</html:p>
+              <html:p>ssc_relevance=agonistic GPCR autoantibodies link SSc autoimmunity to TGF-β/vasculopathy</html:p>
+              <html:p>curation_note=discovery candidate cand_gpcr_autoab; quote: &quot;stimulating anti-AT1R and anti-ETAR derived from SSc patients induce a variety of cellular responses such as production of TGF-β by human dermal microvascular e&quot;</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="phenotype_autoAb_production__ext"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="TGFB1__ext"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="AGTR1__pm"/>
+          <modifierSpeciesReference species="EDNRA__pm"/>
+        </listOfModifiers>
+      </reaction>
+      <reaction metaid="ssc_M2_053" id="ssc_M2_053" name="FLI1 is a collagen-suppressor gene; its epigenetic repression/methylation in SSc" reversible="false">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M2</html:p>
+              <html:p>mechanism=FLI1 is a collagen-suppressor gene; its epigenetic repression/methylation in SSc derepresses collagen synthesis</html:p>
+              <html:p>pmid=19863377</html:p>
+              <html:p>evidence_code=ECO:0000314</html:p>
+              <html:p>ssc_relevance=FLI1 epigenetic silencing is an SSc-signature lesion driving collagen overexpression</html:p>
+              <html:p>curation_note=discovery candidate cand_fli1_col; quote: &quot;collagen synthesis was speciﬁcally linked to the epigenetic repression and the methylation status of the collagen suppressor gene FLI1 and its promoter [11].&quot;</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="FLI1__nuc"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="COL1A1__ext"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="ssc_M2_054" id="ssc_M2_054" name="Galectin-3 (LGALS3) is a downstream regulator of TGF-β1 action" reversible="false">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M2</html:p>
+              <html:p>mechanism=Galectin-3 (LGALS3) is a downstream regulator of TGF-β1 action</html:p>
+              <html:p>pmid=22700848</html:p>
+              <html:p>evidence_code=ECO:0000314</html:p>
+              <html:p>ssc_relevance=places galectin-3 downstream of TGF-β in the SSc fibrotic program</html:p>
+              <html:p>curation_note=discovery candidate cand_tgfb_gal3; quote: &quot;Galectin-3, a b-galacto- side–binding animal lectin secreted by macrophages, has been considered a downstream regulator of TGF-b1 action.&quot;</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="TGFB1__ext"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="LGALS3__ext"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="ssc_M2_055" id="ssc_M2_055" name="Stimulatory PDGFR signalling induces Ha-Ras/ERK/ROS, type I collagen and myofibr" reversible="false">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M2</html:p>
+              <html:p>mechanism=Stimulatory PDGFR signalling induces Ha-Ras/ERK/ROS, type I collagen and myofibroblast conversion in fibroblasts</html:p>
+              <html:p>pmid=16790699</html:p>
+              <html:p>evidence_code=ECO:0000314</html:p>
+              <html:p>ssc_relevance=downstream of agonistic anti-PDGFR autoantibodies in SSc</html:p>
+              <html:p>curation_note=discovery candidate cand_pdgfr_myo; quote: &quot;Stimulatory PDGFR antibodies selectively induced the Ha-Ras-ERK1/2 and ROS cascades and stimulated type I collagen–gene expression and myofibroblast phenotype c&quot;</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="PDGFRB__pm"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="phenotype_myofibroblast_activation__cell"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="ssc_M4_019" id="ssc_M4_019" name="Macrophage-derived TGF-β stimulates myofibroblasts to produce extracellular-matr" reversible="false">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M4</html:p>
+              <html:p>mechanism=Macrophage-derived TGF-β stimulates myofibroblasts to produce extracellular-matrix proteins</html:p>
+              <html:p>pmid=27156795</html:p>
+              <html:p>evidence_code=ECO:0000314</html:p>
+              <html:p>ssc_relevance=adds the profibrotic macrophage as a TGF-β source in SSc</html:p>
+              <html:p>curation_note=discovery candidate cand_macro_tgfb; quote: &quot;Macrophage-derived TGFb stimulates myoﬁbroblasts to produce various extracellular matrix (ECM) proteins and inhib- itors of metalloproteases that are involved i&quot;</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="macrophage_proFibrotic__cell"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="TGFB1__ext"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="ssc_M2_056" id="ssc_M2_056" name="NOX4-dependent H2O2 production drives TGF-β1-induced myofibroblast differentiati" reversible="false">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M2</html:p>
+              <html:p>mechanism=NOX4-dependent H2O2 production drives TGF-β1-induced myofibroblast differentiation</html:p>
+              <html:p>pmid=25040787</html:p>
+              <html:p>evidence_code=ECO:0000314</html:p>
+              <html:p>ssc_relevance=NOX4/ROS as a redox node in SSc myofibroblast differentiation</html:p>
+              <html:p>curation_note=discovery candidate cand_nox4_myo; quote: &quot;myoﬁbroblast differentiation of human foetal lung mesenchymal cells were Nox4-dependent&quot;</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="NOX4__cyto"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="phenotype_myofibroblast_activation__cell"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="ssc_M2_057" id="ssc_M2_057" name="αv-containing integrins (ITGAV) bind and activate latent TGF-β, implicated in fi" reversible="false">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M2</html:p>
+              <html:p>mechanism=αv-containing integrins (ITGAV) bind and activate latent TGF-β, implicated in fibrosis</html:p>
+              <html:p>pmid=16436664</html:p>
+              <html:p>evidence_code=ECO:0000033</html:p>
+              <html:p>ssc_relevance=integrin-mediated latent TGF-β activation in SSc fibrosis</html:p>
+              <html:p>curation_note=discovery candidate cand_itgav_tgfb; quote: &quot;containing integrins can bind to and/or activate latent TGF&quot;</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="ITGAV__pm"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="TGFB1__ext"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="ssc_M3_027" id="ssc_M3_027" name="TGF-β (among other stimuli) up-regulates endothelin-1 (EDN1) expression" reversible="false">
+        <notes>
+          <html:html>
+            <html:head>
+              <html:title/>
+            </html:head>
+            <html:body>
+              <html:p>module=M3</html:p>
+              <html:p>mechanism=TGF-β (among other stimuli) up-regulates endothelin-1 (EDN1) expression</html:p>
+              <html:p>pmid=19335743</html:p>
+              <html:p>evidence_code=ECO:0000033</html:p>
+              <html:p>ssc_relevance=TGF-β-&gt;ET-1 link bridging fibrosis and vasculopathy in SSc</html:p>
+              <html:p>curation_note=discovery candidate cand_tgfb_edn1; quote: &quot;ET-1 expression is stimulated by hypoxia&quot;</html:p>
+            </html:body>
+          </html:html>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="TGFB1__ext"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="EDN1__ext"/>
+        </listOfProducts>
       </reaction>
     </listOfReactions>
   </model>
