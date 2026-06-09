@@ -1,0 +1,78 @@
+theme	pmid	oa	pmcid	mined	title
+TGFb_SMAD	40969268	Y	PMC12440922	no	The pivotal role of TGF-β/Smad pathway in fibrosis pathogenesis and treatment.
+TGFb_SMAD	25180292	N		no	Sirt1 regulates canonical TGF-β signalling to control fibroblast activation and 
+TGFb_SMAD	17628443	N		no	Autocrine TGF-beta signaling in the pathogenesis of systemic sclerosis.
+TGFb_SMAD	41225517	Y	PMC12613396	no	Temporal dynamics of ADSC therapy in skin fibrosis: unraveling the roles of ROS/
+TGFb_SMAD	18298657	Y	PMC3828896	no	Chondroitin sulphate decreases collagen synthesis in normal and scleroderma fibr
+EndoMT	37488975	N		no	Endothelial Response to Type I Interferon Contributes to Vasculopathy and Fibros
+EndoMT	18483217	N	PMC2732412	no	Role of platelet-derived growth factors in physiology and medicine.
+EndoMT	38440901	N		no	Characterization of Vascular Niche in Systemic Sclerosis by Spatial Proteomics.
+EndoMT	26152638	N		no	Vasculopathy in scleroderma.
+EndoMT	38841857	N	PMC11269037	no	Molecular Changes Implicate Angiogenesis and Arterial Remodeling in Systemic Scl
+Endothelin	19335743	N		no	Endothelin receptor selectivity: evidence from in vitro and pre-clinical models 
+Endothelin	40686216	N	PMC12313177	no	Lung Single-Cell Transcriptomics Reveal Diverging Pathobiology and Opportunities
+Endothelin	26970493	N		no	Vascular hypothesis revisited: Role of stimulating antibodies against angiotensi
+Endothelin	28488090	N		no	Pathogenesis of systemic sclerosis-current concept and emerging treatments.
+Endothelin	20175840	N		no	Future treatments in systemic sclerosis.
+Bcell_autoAb	42244451	N		no	Translating B-Cell and Plasma-Cell Targeting from Oncology to Autoimmunity: Moda
+Bcell_autoAb	29956883	N		no	Baseline Plasma Cell Gene Signature Predicts Improvement in Systemic Sclerosis S
+Bcell_autoAb	41934478	Y	PMC13050336	no	Brachio-cervical inflammatory myopathy: multilevel clinical, histopathological a
+Bcell_autoAb	33974929	N	PMC8573062	no	Neutralizing anti-IL-1 receptor antagonist autoantibodies induce inflammatory an
+Th2_IL13	36629780	N	PMC10226134	no	STAT6 suppression prevents bleomycin-induced dermal fibrosis.
+Th2_IL13	16380822	N		no	Molecular aspects of regulation of collagen gene expression in fibrosis.
+Th17_IL17	39872534	Y	PMC11769821	no	Single-cell RNA-seq reveals immune cell heterogeneity and increased Th17 cells i
+Th17_IL17	36031049	N		no	T cell abnormalities in systemic sclerosis.
+Th17_IL17	26750756	N		no	Th17 cells and IL-17 promote the skin and lung inflammation and fibrosis process
+Th17_IL17	22833167	N		no	Potential roles of interleukin-17A in the development of skin fibrosis in mice.
+Th17_IL17	27987499	N		no	[Therapeutic effect of adipose tissue-derived stem cells on bleomycin-induced mi
+Wnt	33125640	N		no	Icaritin Inhibits Skin Fibrosis through Regulating AMPK and Wnt/β-catenin Signal
+Wnt	38570030	N		no	The β-Secretase BACE1 Drives Fibroblast Activation in Systemic Sclerosis through
+Wnt	22328118	N	PMC3553791	no	Wnt/β-catenin signaling is hyperactivated in systemic sclerosis and induces Smad
+Wnt	30876809	N	PMC6545260	no	Evolving insights into the cellular and molecular pathogenesis of fibrosis in sy
+Wnt	22328737	N	PMC3951949	yes	β-catenin is a central mediator of pro-fibrotic Wnt signaling in systemic sclero
+Hedgehog	35159339	Y	PMC8834396	no	Induction of Pro-Fibrotic CLIC4 in Dermal Fibroblasts by TGF-β/Wnt3a Is Mediated
+Hedgehog	27793816	N		yes	The transcription factor GLI2 as a downstream mediator of transforming growth fa
+Hedgehog	22354771	N		yes	Hedgehog signaling controls fibroblast activation and tissue fibrosis in systemi
+Notch	36490328	Y	PMC9840167	no	Epiregulin is a dendritic cell-derived EGFR ligand that maintains skin and lung 
+Notch	33911613	Y	PMC7992759	no	The Significance of NOTCH Pathway in the Development of Fibrosis in Systemic Scl
+Notch	21450749	N		yes	Notch signalling regulates fibroblast activation and collagen release in systemi
+Notch	33411678	Y	PMC7880343	no	MiR-16-5p suppresses myofibroblast activation in systemic sclerosis by inhibitin
+Macrophage	34506339	N		yes	Contribution of monocytes and macrophages to the pathogenesis of systemic sclero
+Macrophage	27156795	N		no	Paquinimod reduces skin fibrosis in tight skin 1 mice, an experimental model of 
+Macrophage	32562787	N		no	Combined anti-fibrotic and anti-inflammatory properties of JAK-inhibitors on mac
+Mast	34179507	N	PMC8225255	no	Mast Cell Activation in the Systemic Sclerosis Esophagus.
+Mast	15887294	N		no	c-Kit immunophenotyping and metalloproteinase expression profiles of mast cells 
+Mast	23335253	N		no	Interleukin-17A+ cell counts are increased in systemic sclerosis skin and their 
+Mast	8503561	N		no	Mast cells' contribution to the fibrosing alveolitis of the scleroderma lung.
+Fibroblast_sc	34487318	Y	PMC10167130	no	Current Concepts on the Pathogenesis of Systemic Sclerosis.
+Fibroblast_sc	40579317	N		no	Matrix stiffness regulates profibrotic fibroblast differentiation and fibrotic n
+Fibroblast_sc	39686726	Y	PMC11809421	no	Aberrant Chitinase 3-Like 1 Expression in Basal Cells Contributes to Systemic Sc
+Fibroblast_sc	39442983	N		no	Imaging mass cytometry-based characterisation of fibroblast subsets and their ce
+Fibroblast_sc	41457004	N		no	Identification of novel fibroblast subsets in diffuse cutaneous systemic scleros
+Epigenetics	34718115	N		no	Pathophysiology of systemic sclerosis.
+Epigenetics	29579252	N		no	Epigenetic modulation as a therapy in systemic sclerosis.
+Epigenetics	32697935	N	PMC7647676	no	Epigenetics and systemic sclerosis: An answer to disease onset and evolution?
+Epigenetics	32349208	Y	PMC7246753	no	Pathogenic Roles of Autoantibodies and Aberrant Epigenetic Regulation of Immune 
+Epigenetics	24740406	N		no	Epigenetics, the holy grail in the pathogenesis of systemic sclerosis.
+Oxidative	34682914	Y	PMC8539594	yes	Oxidative Stress Induced by Reactive Oxygen Species (ROS) and NADPH Oxidase 4 (N
+Oxidative	25707572	N		yes	A reactive oxygen species-mediated loop maintains increased expression of NADPH 
+Oxidative	25040787	N		no	Is Nox4 a key regulator of the activated state of fibroblasts in systemic sclero
+Oxidative	31119153	Y	PMC6500679	no	Bromodomain and Extraterminal (BET) Protein Inhibition Restores Redox Balance an
+PDGF	16790706	N		no	Autoantibodies against PDGF receptor in scleroderma.
+PDGF	18548250	N		no	Oxidative stress and the pathogenesis of scleroderma: the Murrell's hypothesis r
+PDGF	16790699	N		no	Stimulatory autoantibodies to the PDGF receptor in systemic sclerosis.
+PDGF	25808833	N		no	Epitope Specificity Determines Pathogenicity and Detectability of Anti-Platelet-
+PDGF	17363728	N		no	Stimulatory autoantibodies to PDGF receptor in patients with extensive chronic g
+Hypoxia_HIF	27071377	N		no	Hypoxia-inducible factor 1 in autoimmune diseases.
+Hypoxia_HIF	14648091	N		no	[Hypoxia and angiogenesis in rheumatic diseases].
+Hypoxia_HIF	19863377	N		no	Mechanisms of vascular damage in systemic sclerosis.
+Hypoxia_HIF	13680145	N		no	Disease-associated increased HIF-1, alphavbeta3 integrin, and Flt-1 do not suffi
+Galectin	23912642	N		no	Serum galectin-3 level in systemic sclerosis.
+Galectin	36499646	Y	PMC9737805	no	Increased Expression of Galectin-3 in Skin Fibrosis: Evidence from In Vitro and 
+Galectin	22700848	N		no	Immunophenotypical characterization of macrophages in rat bleomycin-induced scle
+Integrin_TGFb	38747285	Y	PMC11093613	no	Noncanonical WNT5A controls the activation of latent TGF-β to drive fibroblast a
+Integrin_TGFb	16436664	N	PMC1606497	no	Increased expression of integrin alphavbeta5 induces the myofibroblastic differe
+Integrin_TGFb	30175895	N		no	Suppressive Regulation by MFG-E8 of Latent Transforming Growth Factor β-Induced 
+Metabolism_mTOR	40947145	Y	PMC12571701	no	[Research progress on cellular metabolic reprogramming in skin fibrosis].
+CalciumPDE	33242341	Y	PMC8359233	no	Riociguat: Clinical research and evolving role in therapy.
+CalciumPDE	37765060	Y	PMC10534675	no	Recent Advances in the Treatment of Pulmonary Arterial Hypertension Associated w
