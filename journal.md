@@ -1760,3 +1760,26 @@ Revue systématique : 77 papiers/24 thèmes → 18 OA non-minés (12 PDF téléc
 - `ssc_M2_058` SIRT1 ⊣ MMP1 : SIRT1 régule négativement les MMP dans le fibroblaste dermique (29579252).
 - `ssc_M4_021` IL17A → fibroblaste : IL-17A profibrotique (sa perte atténue la fibrose bléomycine) (22833167).
 STAT6→collagène écarté (dup avec crosstalk_005). Gros du groupe '?' écarté (rein/foie/générique, hors SSc).
+
+## 2026-06-15 — Base d'interactions reviewer-ready + détecteur de contradictions
+
+> Demande utilisateur : gérer les sources contradictoires + constituer une base tidy de chaque
+> interaction (niveau de preuve, référence article, phrase qui tranche) pour une future mini-app
+> HTML de review.
+
+- `scripts/check_contradictions.py` (`make check-contradictions`) : signale (sans rien jeter)
+  les paires de gènes A→B curées avec des signes opposés (promote vs suppress) → rapport
+  `analysis/curation/contradictions.tsv`. Sur les 133 actuelles : **0 contradiction** (j'ai été
+  conservateur — ex. IL-17 différé jusqu'à direction expérimentale nette). Le check est en place
+  pour les futurs ajouts.
+- `scripts/build_interaction_db.py` (`make interaction-db`) → `analysis/curation/interaction_database.csv` :
+  **1 ligne par interaction SSc (133)**, colonnes tidy : régulateur, cible, type, mécanisme,
+  PMID, DOI, titre, code ECO, **niveau de preuve lisible**, **citation verbatim qui a tranché**
+  (+ `quote_status`), provenance (humain/IA full-text/IA discovery/…), `contradiction_flag`, et
+  colonnes vides `review_decision`/`review_notes` pour l'app.
+  77/133 ont une citation verbatim, 56 « to_complete » (40 curation humaine d'origine + 8
+  abstract-only + 10 reclassements) ; 117 avec DOI. Prêt comme backend de l'app HTML statique.
+
+**Gestion des contradictions, principe acté** : pas de détection auto avant ; maintenant
+signalement systématique pour arbitrage humain. La hiérarchie de preuve (expérimental > revue)
+et l'ancrage directionnel strict restent les règles de tranchage côté IA.

@@ -258,3 +258,11 @@ validate-edges:  ## Edge-discovery: run G0-G4 anti-nonsense gates on staged cand
 promote-edges:  ## Edge-discovery: promote ratified, gate-passing candidates into the curated map.
 	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/promote_edges.py; \
 	else $(PYTHON) scripts/promote_edges.py; fi
+
+check-contradictions:  ## Flag SSc interactions with opposite signs on the same gene pair (for review).
+	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/check_contradictions.py; \
+	else $(PYTHON) scripts/check_contradictions.py; fi
+
+interaction-db:  ## Build the reviewer-ready tidy interaction database (CSV) with evidence + quotes.
+	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/build_interaction_db.py; \
+	else $(PYTHON) scripts/build_interaction_db.py; fi
