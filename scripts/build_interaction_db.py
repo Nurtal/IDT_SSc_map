@@ -109,6 +109,45 @@ def quote_for(row: dict, staging: dict[str, str], ftlog: dict[str, str]) -> tupl
     return "", "to_complete"
 
 
+EXCLUDED = ROOT / "curation/staging/excluded_interactions.tsv"
+STAGING_DROP_REASONS = {
+    "cand_negctrl": "NEGATIVE CONTROL: fabricated edge whose quote is absent from any source — "
+                    "correctly rejected by the grounding gate (G2). Demonstrates the anti-nonsense guarantee.",
+    "cand_sig_cav1_angio": "discarded: the available quote stated TGF-β's role in angiogenesis is "
+                           "*uncertain* — it did not support the CAV1→angiogenesis claim.",
+    "cand_stat6_col": "discarded: duplicate of the existing IL-13→COL1A1/STAT6 crosstalk (ssc_crosstalk_005).",
+}
+
+
+def load_discarded(curated_rows: list[dict]) -> list[dict]:
+    """Considered-but-not-included interactions, with the deciding quote and discard reason."""
+    cur = {(r["type"], r["reactants"], r["products"], r["pmid"].strip()) for r in curated_rows}
+    out: list[dict] = []
+    # (a) staged candidates that never reached the map
+    if STAGING.exists():
+        for c in csv.DictReader(STAGING.open(), delimiter="\t"):
+            key = (c["type"], c["reactants"], c["products"], c["source_pmid"].strip())
+            if key in cur:
+                continue
+            out.append({
+                "id": c["candidate_id"], "type": c["type"],
+                "regulator": ";".join(x for x in [c["reactants"], c.get("modifiers", "")] if x.strip()),
+                "target": c["products"], "mechanism": c.get("mechanism", ""),
+                "pmid": c["source_pmid"].strip(), "quote": c.get("supporting_quote", ""),
+                "reason": STAGING_DROP_REASONS.get(c["candidate_id"], "not promoted (held / failed a gate)"),
+            })
+    # (b) interactions surfaced during scanning but judged out (curation_excluded registry)
+    if EXCLUDED.exists():
+        for c in csv.DictReader(EXCLUDED.open(), delimiter="\t"):
+            out.append({
+                "id": c["candidate_id"], "type": c["interaction_type"],
+                "regulator": c["regulator"], "target": c["target"], "mechanism": "",
+                "pmid": c["source_pmid"].strip(), "quote": c.get("supporting_quote", ""),
+                "reason": c["discard_reason"],
+            })
+    return out
+
+
 def fetch_meta(pmids: list[str]) -> dict[str, dict]:
     cache = json.loads(META.read_text()) if META.exists() else {}
     missing = [p for p in pmids if p and p not in cache]
@@ -141,11 +180,14 @@ def main() -> None:
     staging = load_staging_quotes()
     ftlog = load_ftlog_snippets()
     flags = get_contradiction_flags()
-    meta = fetch_meta(sorted({r["pmid"].strip() for r in rows if has_pmid(r.get("pmid", ""))}))
+    discarded = load_discarded(rows)
+    pmids = {r["pmid"].strip() for r in rows if has_pmid(r.get("pmid", ""))}
+    pmids |= {d["pmid"] for d in discarded if d["pmid"]}
+    meta = fetch_meta(sorted(pmids))
 
-    cols = ["reaction_id", "module", "interaction_type", "regulator", "target", "mechanism",
-            "ssc_relevance", "pmid", "doi", "article_title", "journal_year",
-            "eco_code", "evidence_level", "supporting_quote", "quote_status",
+    cols = ["reaction_id", "inclusion_status", "discard_reason", "module", "interaction_type",
+            "regulator", "target", "mechanism", "ssc_relevance", "pmid", "doi", "article_title",
+            "journal_year", "eco_code", "evidence_level", "supporting_quote", "quote_status",
             "provenance", "curation_status", "contradiction_flag",
             "review_decision", "review_notes"]
     out_rows = []
@@ -156,6 +198,8 @@ def main() -> None:
         reg = ";".join(x for x in [r["reactants"], r.get("modifiers", "")] if x.strip())
         out_rows.append({
             "reaction_id": r["reaction_id"],
+            "inclusion_status": "in_map",
+            "discard_reason": "",
             "module": r["module"],
             "interaction_type": r["type"],
             "regulator": reg,
@@ -175,6 +219,26 @@ def main() -> None:
             "contradiction_flag": flags.get(r["reaction_id"], ""),
             "review_decision": "",   # for the HTML app: confirm / reject / edit
             "review_notes": "",
+        })
+
+    # discarded / considered-but-excluded interactions — full reviewer control
+    for d in discarded:
+        m = meta.get(d["pmid"], {})
+        out_rows.append({
+            "reaction_id": d["id"],
+            "inclusion_status": "discarded",
+            "discard_reason": d["reason"],
+            "module": "", "interaction_type": d["type"],
+            "regulator": d["regulator"], "target": d["target"], "mechanism": d["mechanism"],
+            "ssc_relevance": "",
+            "pmid": d["pmid"], "doi": m.get("doi", ""), "article_title": m.get("title", ""),
+            "journal_year": f"{m.get('journal','')} {m.get('year','')}".strip(),
+            "eco_code": "", "evidence_level": "",
+            "supporting_quote": d["quote"],
+            "quote_status": "verbatim (excluded)" if d["quote"] else "to_complete",
+            "provenance": "AI — considered & discarded",
+            "curation_status": "excluded", "contradiction_flag": "",
+            "review_decision": "", "review_notes": "",
         })
 
     OUT.parent.mkdir(parents=True, exist_ok=True)

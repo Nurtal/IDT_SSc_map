@@ -1783,3 +1783,15 @@ STAT6→collagène écarté (dup avec crosstalk_005). Gros du groupe '?' écart�
 **Gestion des contradictions, principe acté** : pas de détection auto avant ; maintenant
 signalement systématique pour arbitrage humain. La hiérarchie de preuve (expérimental > revue)
 et l'ancrage directionnel strict restent les règles de tranchage côté IA.
+
+### Enrichissement base review : interactions écartées (contrôle reviewer total)
+
+`interaction_database.csv` étendu : +2 colonnes `inclusion_status` (in_map/discarded) +
+`discard_reason`. **144 lignes = 133 in_map + 11 discarded**, chaque exclusion avec citation
+réelle + raison :
+- contrôle négatif fabriqué (rejeté par G2) ;
+- 2 drops qualité (CAV1→angiogenèse : citation ne soutenait pas ; STAT6→collagène : doublon) ;
+- 8 exclusions de scan (`curation/staging/excluded_interactions.tsv`) : MFGE8/NOX1/MX1
+  (SSc-adjacents, ré-inclusibles), IL-17→αSMA (résultat NÉGATIF, transparence sur le Yin/Yang),
+  SMAD3→PINK1 / LOX→IL6 / SMAD3-AngII / LOXL2 (off-target non-SSc).
+Le reviewer peut ré-inclure n'importe laquelle via `review_decision`.
