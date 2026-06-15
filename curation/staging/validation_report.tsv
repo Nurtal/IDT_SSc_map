@@ -1,52 +1,53 @@
 candidate_id	verdict	problems	flags	mechanism
-cand_pilot_01	REJECT	G3:DUP_existing_ssc		PF4 (CXCL4) binds DNA/RNA and favours pDC IFN-α production, feeding the SSc type
+cand_pilot_01	REJECT	G3:REDUNDANT[ssc_M1_016]		PF4 (CXCL4) binds DNA/RNA and favours pDC IFN-α production, feeding the SSc type
 cand_pilot_02	PASS			anti-Topo-I (TOP1) and anti-Cenp-B (CENPB) autoantibodies induce pro-fibrotic ma
 cand_negctrl	REJECT	G2:NOT_GROUNDED		FOXP3 directly transactivates COL1A1 in SSc fibroblasts (FABRICATED negative con
-cand_gwas_irf5	REJECT	G3:DUP_existing_ssc		IRF5 (top SSc GWAS locus) drives type-I interferon (IFNB1) transcription, linkin
+cand_gwas_irf5	REJECT	G3:REDUNDANT[ssc_M1_017]		IRF5 (top SSc GWAS locus) drives type-I interferon (IFNB1) transcription, linkin
 cand_fib_01	PASS			SSc SFRP2hi/DPP4 progenitor fibroblasts give rise to myofibroblasts (two-step tr
 cand_fib_02	PASS			The committing SFRP2hi fraction acquires SFRP4 and FNDC1 as it differentiates in
 cand_fib_03	PASS			Upstream TFs FOSL2/RUNX1/CREB3L1 are implicated in driving SSc myofibroblast dif
-cand_endomt_fli1	REJECT	G3:DUP_existing_ssc		FLI1 maintains dermal endothelial identity; its reduction in SSc microvascular E
+cand_endomt_fli1	REJECT	G3:REDUNDANT[ssc_M3_023]		FLI1 maintains dermal endothelial identity; its reduction in SSc microvascular E
 cand_endomt_mmp12	PASS			MMP-12-dependent cleavage of uPAR (PLAUR) drives EndoMT induced by SSc serum
-cand_sig_cav1	REJECT	G3:DUP_existing_ssc		TGF-β downregulates caveolin-1 (CAV1) in SSc, removing a brake on fibrotic/TGF-β
+cand_sig_cav1	REJECT	G3:REDUNDANT[ssc_M2_029]		TGF-β downregulates caveolin-1 (CAV1) in SSc, removing a brake on fibrotic/TGF-β
 cand_clin_comp	PASS			ECM markers COMP and THBS1 track modified Rodnan Skin Score (mRSS) skin severity
 cand_sig_cav1_angio	PASS			Caveolin-1 (CAV1) loss in SSc fibroblasts contributes to defective angiogenesis
 cand_cxcl4_bcell	PASS			PF4 (CXCL4)-DNA/RNA complexes stimulate B cells to become antibody-secreting pla
-cand_cxcl4_tlr9	REJECT	G3:DUP_existing_ssc		PF4 (CXCL4) protects and organises DNA for sensing by TLR9
+cand_cxcl4_tlr9	REJECT	G3:REDUNDANT[ssc_M1_018]		PF4 (CXCL4) protects and organises DNA for sensing by TLR9
 cand_ic_ifn	PASS			SSc autoantibody immunoglobulin immune complexes induce IFN-α production by pDCs
-cand_il6_grem	REJECT	G3:DUP_existing_ssc		IL-6 trans-signalling via STAT3 induces Gremlin (GREM1) in SSc fibroblasts
-cand_grem_smad	REJECT	G3:DUP_existing_ssc		Gremlin (GREM1) promotes hyperactive TGF-β/SMAD3 signalling driving fibrosis
-cand_et1_col	REJECT	G3:DUP_existing_ssc		Endothelin-1 (EDN1) enhances collagen I/III release by SSc dermal fibroblasts vi
-cand_wnt_ctnnb1	REJECT	G3:DUP_existing_ssc		Sustained β-catenin (CTNNB1) activity in dermal fibroblasts up-regulates ECM/col
-cand_hh_tgfb_gli2	REJECT	G3:DUP_existing_ssc		TGF-β up-regulates GLI2 in a SMAD3-dependent manner (non-canonical Hedgehog acti
+cand_il6_grem	REJECT	G3:REDUNDANT[ssc_M2_031];G3:REDUNDANT[ssc_M2_031]		IL-6 trans-signalling via STAT3 induces Gremlin (GREM1) in SSc fibroblasts
+cand_grem_smad	REJECT	G3:REDUNDANT[ssc_M2_032]		Gremlin (GREM1) promotes hyperactive TGF-β/SMAD3 signalling driving fibrosis
+cand_et1_col	REJECT	G3:REDUNDANT[ssc_M3_025];G3:REDUNDANT[ssc_M3_025];G3:REDUNDANT[ssc_M3_025];G3:REDUNDANT[ssc_M3_025];G3:REDUNDANT[ssc_M3_025];G3:REDUNDANT[ssc_M3_025]		Endothelin-1 (EDN1) enhances collagen I/III release by SSc dermal fibroblasts vi
+cand_wnt_ctnnb1	REJECT	G3:REDUNDANT[ssc_M2_033]		Sustained β-catenin (CTNNB1) activity in dermal fibroblasts up-regulates ECM/col
+cand_hh_tgfb_gli2	REJECT	G3:REDUNDANT[ssc_M2_034];G3:REDUNDANT[ssc_M2_034]		TGF-β up-regulates GLI2 in a SMAD3-dependent manner (non-canonical Hedgehog acti
 cand_hh_gli2_fib	PASS			GLI2 acts as a downstream mediator of TGF-β-induced fibroblast activation in SSc
 cand_ser_htr2b	PASS			Serotonin (5-HT) profibrotic effects on dermal fibroblasts are mediated by the 5
-cand_lpa_atx	REJECT	G3:DUP_existing_ssc		Autotaxin (ENPP2) produces LPA that activates LPAR1
+cand_lpa_atx	REJECT	G3:REDUNDANT[ssc_M2_037]		Autotaxin (ENPP2) produces LPA that activates LPAR1
 cand_lpa_lpar1	PASS			LPA-mediated LPAR1 activation contributes to SSc fibrosis
 cand_tlr4_myo	PASS			TLR4 sensing of endogenous danger ligands drives fibrotic gene expression and my
 cand_ctgf_auto	PASS			Autocrine CCN2 (CTGF) overexpression maintains the fibrotic fibroblast phenotype
 cand_pdgfr_autoab	PASS			Stimulatory anti-PDGF-receptor autoantibodies activate PDGFRB on SSc fibroblasts
-cand_ado_a2a	REJECT	G3:DUP_existing_ssc		Adenosine A2A receptor (ADORA2A) activation stimulates collagen production in SS
+cand_ado_a2a	REJECT	G3:REDUNDANT[ssc_M2_042]		Adenosine A2A receptor (ADORA2A) activation stimulates collagen production in SS
 cand_notch_fib	PASS			Notch (NICD1) signalling regulates fibroblast activation and collagen release in
-cand_dkk1_wnt	REJECT	G3:DUP_existing_ssc		DKK1 antagonises Wnt/β-catenin; it is downregulated by promoter hypermethylation
-cand_mtor_junb	REJECT	G3:DUP_existing_ssc		Altered mTOR/Akt signalling stabilises JunB by failing its proteolytic degradati
-cand_junb_col	REJECT	G3:DUP_existing_ssc		Accumulated JunB underpins aberrant overexpression of type I collagen in SSc
+cand_dkk1_wnt	REJECT	G3:REDUNDANT[ssc_M2_043]		DKK1 antagonises Wnt/β-catenin; it is downregulated by promoter hypermethylation
+cand_mtor_junb	REJECT	G3:REDUNDANT[ssc_M2_044]		Altered mTOR/Akt signalling stabilises JunB by failing its proteolytic degradati
+cand_junb_col	REJECT	G3:REDUNDANT[ssc_M2_045]		Accumulated JunB underpins aberrant overexpression of type I collagen in SSc
 cand_cdh11_fib	PASS			Cadherin-11 (CDH11) mediates dermal fibrosis in SSc
 cand_ccl2_mono	PASS			SSc fibroblasts overexpress CCL2 (MCP-1), recruiting monocytes that amplify fibr
 cand_gal3	PASS			Galectin-3 (LGALS3) acts as a central pro-fibrotic regulator in tissue fibrosis
-cand_wnt5a_tgfb	REJECT	G3:DUP_existing_ssc		WNT5A/JNK/ROCK signalling coordinates activation of latent TGF-β
-cand_gli2_clic4	REJECT	G3:DUP_existing_ssc		GLI2 upregulation mediates induction of pro-fibrotic CLIC4 in dermal fibroblasts
+cand_wnt5a_tgfb	REJECT	G3:REDUNDANT[ssc_M2_049]		WNT5A/JNK/ROCK signalling coordinates activation of latent TGF-β
+cand_gli2_clic4	REJECT	G3:REDUNDANT[ssc_M2_050]		GLI2 upregulation mediates induction of pro-fibrotic CLIC4 in dermal fibroblasts
 cand_notch2_myo	PASS			NOTCH2 promotes myofibroblast activation (the direct target of antifibrotic miR-
 cand_ereg	PASS			Dendritic-cell-derived epiregulin (EREG), an EGFR ligand, maintains skin and lun
-cand_gpcr_autoab	REJECT	G3:DUP_existing_ssc		Agonistic anti-AT1R/anti-ETAR autoantibodies from SSc patients induce TGF-β prod
-cand_fli1_col	REJECT	G3:DUP_existing_ssc		FLI1 is a collagen-suppressor gene; its epigenetic repression/methylation in SSc
-cand_tgfb_gal3	REJECT	G3:DUP_existing_ssc		Galectin-3 (LGALS3) is a downstream regulator of TGF-β1 action
+cand_gpcr_autoab	REJECT	G3:REDUNDANT[ssc_M3_026];G3:REDUNDANT[ssc_M3_026]		Agonistic anti-AT1R/anti-ETAR autoantibodies from SSc patients induce TGF-β prod
+cand_fli1_col	REJECT	G3:REDUNDANT[ssc_M2_053]		FLI1 is a collagen-suppressor gene; its epigenetic repression/methylation in SSc
+cand_tgfb_gal3	REJECT	G3:REDUNDANT[ssc_M2_054]		Galectin-3 (LGALS3) is a downstream regulator of TGF-β1 action
 cand_nox4_myo	PASS			NOX4-dependent H2O2 production drives TGF-β1-induced myofibroblast differentiati
 cand_pdgfr_myo	PASS			Stimulatory PDGFR signalling induces Ha-Ras/ERK/ROS, type I collagen and myofibr
 cand_macro_tgfb	PASS			Macrophage-derived TGF-β stimulates myofibroblasts to produce extracellular-matr
-cand_itgav_tgfb	REJECT	G3:DUP_existing_ssc		αv-containing integrins (ITGAV) bind and activate latent TGF-β, implicated in fi
-cand_tgfb_edn1	REJECT	G3:DUP_existing_ssc		TGF-β (among other stimuli) up-regulates endothelin-1 (EDN1) expression
-cand_stat6_col	REJECT	G0:missing[supporting_quote];G2:quote_too_short;G3:DUP_existing_ssc		IL-4/IL-13-driven STAT6 signalling stimulates collagen production in fibroblasts
+cand_itgav_tgfb	REJECT	G3:REDUNDANT[ssc_M2_057]		αv-containing integrins (ITGAV) bind and activate latent TGF-β, implicated in fi
+cand_tgfb_edn1	REJECT	G3:REDUNDANT[ssc_M3_027]		TGF-β (among other stimuli) up-regulates endothelin-1 (EDN1) expression
+cand_stat6_col	REJECT	G0:missing[supporting_quote];G2:quote_too_short	G3:merge_into[ssc_M4_005];G3:merge_into[ssc_M4_005];G3:merge_into[ssc_crosstalk_005]	IL-4/IL-13-driven STAT6 signalling stimulates collagen production in fibroblasts
 cand_il17a_fib	PASS			IL-17A promotes skin fibrosis (its loss attenuates bleomycin-induced fibrosis)
 cand_cd19_autoab	PASS			CD19 on plasma cells drives autoantibody production, skin thickening and collage
-cand_sirt1_mmp	REJECT	G3:DUP_existing_ssc		SIRT1 negatively regulates MMP levels in dermal fibroblasts
+cand_sirt1_mmp	REJECT	G3:REDUNDANT[ssc_M2_058]		SIRT1 negatively regulates MMP levels in dermal fibroblasts
+cand_merge_ctnnb1	FLAG		G3:merge_into[ssc_M2_033]	β-catenin (CTNNB1) is a central mediator of pro-fibrotic Wnt signalling driving 

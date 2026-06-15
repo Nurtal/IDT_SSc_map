@@ -80,6 +80,19 @@ def provenance_label(ratification: str, provenance: str) -> str:
     return provenance or ratification or "unknown"
 
 
+EVIDENCE = ROOT / "curation/interaction_evidence.tsv"
+
+
+def load_secondary_evidence() -> dict[str, list[str]]:
+    """reaction_id -> list of secondary PMIDs (multi-source cumulative evidence)."""
+    out: dict[str, list[str]] = {}
+    if EVIDENCE.exists():
+        for r in csv.DictReader(EVIDENCE.open(), delimiter="\t"):
+            if r.get("role") == "secondary" and r.get("pmid"):
+                out.setdefault(r["reaction_id"], []).append(r["pmid"])
+    return out
+
+
 def load_staging_quotes() -> dict[str, str]:
     if not STAGING.exists():
         return {}
@@ -122,12 +135,14 @@ STAGING_DROP_REASONS = {
 def load_discarded(curated_rows: list[dict]) -> list[dict]:
     """Considered-but-not-included interactions, with the deciding quote and discard reason."""
     cur = {(r["type"], r["reactants"], r["products"], r["pmid"].strip()) for r in curated_rows}
+    # PMIDs that were merged in as secondary evidence (cumulated, not discarded)
+    merged_pmids = {p for ps in load_secondary_evidence().values() for p in ps}
     out: list[dict] = []
     # (a) staged candidates that never reached the map
     if STAGING.exists():
         for c in csv.DictReader(STAGING.open(), delimiter="\t"):
             key = (c["type"], c["reactants"], c["products"], c["source_pmid"].strip())
-            if key in cur:
+            if key in cur or c["source_pmid"].strip() in merged_pmids:
                 continue
             out.append({
                 "id": c["candidate_id"], "type": c["type"],
@@ -185,10 +200,11 @@ def main() -> None:
     pmids |= {d["pmid"] for d in discarded if d["pmid"]}
     meta = fetch_meta(sorted(pmids))
 
+    secondaries = load_secondary_evidence()
     cols = ["reaction_id", "inclusion_status", "discard_reason", "module", "interaction_type",
             "regulator", "target", "mechanism", "ssc_relevance", "pmid", "doi", "article_title",
             "journal_year", "eco_code", "evidence_level", "supporting_quote", "quote_status",
-            "provenance", "curation_status", "contradiction_flag",
+            "n_sources", "secondary_pmids", "provenance", "curation_status", "contradiction_flag",
             "review_decision", "review_notes"]
     out_rows = []
     for r in rows:
@@ -214,6 +230,8 @@ def main() -> None:
             "evidence_level": EVIDENCE_LEVEL.get(r["evidence_code"].strip(), r["evidence_code"]),
             "supporting_quote": quote,
             "quote_status": qstatus,
+            "n_sources": 1 + len(secondaries.get(r["reaction_id"], [])),
+            "secondary_pmids": ";".join(secondaries.get(r["reaction_id"], [])),
             "provenance": provenance_label(r.get("ratification", ""), r.get("provenance", "")),
             "curation_status": r.get("curation_status", ""),
             "contradiction_flag": flags.get(r["reaction_id"], ""),
@@ -236,6 +254,7 @@ def main() -> None:
             "eco_code": "", "evidence_level": "",
             "supporting_quote": d["quote"],
             "quote_status": "verbatim (excluded)" if d["quote"] else "to_complete",
+            "n_sources": 0, "secondary_pmids": "",
             "provenance": "AI — considered & discarded",
             "curation_status": "excluded", "contradiction_flag": "",
             "review_decision": "", "review_notes": "",

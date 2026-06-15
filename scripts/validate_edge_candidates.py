@@ -30,6 +30,8 @@ from itertools import product
 from pathlib import Path
 from xml.etree import ElementTree as ET
 
+from check_contradictions import polarity
+
 ROOT = Path(__file__).resolve().parents[1]
 CAND = ROOT / "curation/staging/ssc_edge_candidates.tsv"
 CORPUS = ROOT / "curation/staging/corpus"
@@ -77,14 +79,18 @@ def hgnc_official(sym: str, cache: dict) -> bool:
     return ok
 
 
-def existing_ssc_pairs() -> set[tuple[str, str]]:
-    pairs = set()
+def existing_ssc_info() -> dict[tuple[str, str], list[tuple[str, str, str]]]:
+    """Directed gene pair -> list of (polarity, pmid, reaction_id) already curated."""
+    from collections import defaultdict
+    info = defaultdict(list)
     for r in csv.DictReader(SSC.open(), delimiter="\t"):
         ins = genes(r["reactants"]) + genes(r.get("modifiers", ""))
         outs = genes(r["products"])
+        pol = polarity(r["type"])
         for a, b in product(ins, outs):
-            pairs.add((a, b))
-    return pairs
+            if a != b:
+                info[(a, b)].append((pol, r["pmid"].strip(), r["reaction_id"]))
+    return info
 
 
 def backbone_pairs() -> set[tuple[str, str]]:
@@ -117,7 +123,7 @@ def main() -> None:
         return
     cands = list(csv.DictReader(CAND.open(), delimiter="\t"))
     hgnc_cache = load_hgnc_cache()
-    ssc_pairs = existing_ssc_pairs()
+    ssc_info = existing_ssc_info()
     bb_pairs = backbone_pairs()
     # established curated nodes/proteoforms already in the map (e.g. NICD1, SMAD3p) bypass G1
     known_entities = set()
@@ -154,12 +160,20 @@ def main() -> None:
             problems.append("G2:quote_too_short")
         elif quote not in txt:
             problems.append("G2:NOT_GROUNDED")
-        # G3 novelty / dedup
+        # G3 novelty / dedup — polarity-aware (multi-source merge vs contradiction vs redundant)
         ins = genes(c.get("reactants", "")) + genes(c.get("modifiers", ""))
         outs = genes(c.get("products", ""))
         cpairs = [(a, b) for a, b in product(ins, outs) if a != b]
-        if cpairs and all(p in ssc_pairs for p in cpairs):
-            problems.append("G3:DUP_existing_ssc")
+        cpol = polarity(c.get("type", ""))
+        cpmid = (c.get("source_pmid", "") or "").strip()
+        for pair in cpairs:
+            for (pol, pmid, rid) in ssc_info.get(pair, []):
+                if pol == cpol and pmid == cpmid:
+                    problems.append(f"G3:REDUNDANT[{rid}]")          # same pair+sign+source -> true dup
+                elif pol == cpol:
+                    flags.append(f"G3:merge_into[{rid}]")             # same pair+sign, new source -> cumulate
+                elif "neutral" not in (pol, cpol):
+                    flags.append(f"G3:contradicts[{rid}]")           # same pair, opposite sign -> separate, review
         if any(p in bb_pairs for p in cpairs):
             flags.append("G3:reactome_overlap")
         # G4 evidence
