@@ -109,6 +109,29 @@ def load_ftlog_snippets() -> dict[str, str]:
     return out
 
 
+def ai_reco(evidence_level: str, curation_status: str, contradiction: str,
+            n_sources: int, quote_status: str) -> tuple[str, str]:
+    """A short AI recommendation + rationale for the reviewer."""
+    if contradiction:
+        return "REVIEW — contradiction", contradiction
+    if curation_status in ("conceptual_bridge", "phenotype_aggregation"):
+        return "KEEP — conceptual (verify reclassification)", f"{curation_status}; cell-state/phenotype assertion"
+    if quote_status == "to_complete":
+        return "KEEP — add a citation", f"{evidence_level or 'evidence'} but no verbatim quote stored yet"
+    if "experimental" in evidence_level:
+        base = "KEEP — strong (experimental)"
+    elif "review" in evidence_level:
+        base = "KEEP — review-grade"
+    elif "curator inference" in evidence_level:
+        base = "VERIFY — curator inference"
+    else:
+        base = "KEEP"
+    if n_sources > 1:
+        base += " · corroborated"
+        return base, f"{evidence_level}; {n_sources} independent sources"
+    return base, evidence_level
+
+
 def quote_for(row: dict, staging: dict[str, str], ftlog: dict[str, str]) -> tuple[str, str]:
     notes = row.get("notes", "")
     m = re.search(r'quote:\s*"(.+?)"\s*$', notes)
@@ -204,7 +227,8 @@ def main() -> None:
     cols = ["reaction_id", "inclusion_status", "discard_reason", "module", "interaction_type",
             "regulator", "target", "mechanism", "ssc_relevance", "pmid", "doi", "article_title",
             "journal_year", "eco_code", "evidence_level", "supporting_quote", "quote_status",
-            "n_sources", "secondary_pmids", "provenance", "curation_status", "contradiction_flag",
+            "n_sources", "secondary_pmids", "ai_recommendation", "ai_rationale",
+            "provenance", "curation_status", "contradiction_flag",
             "review_decision", "review_notes"]
     out_rows = []
     for r in rows:
@@ -232,6 +256,10 @@ def main() -> None:
             "quote_status": qstatus,
             "n_sources": 1 + len(secondaries.get(r["reaction_id"], [])),
             "secondary_pmids": ";".join(secondaries.get(r["reaction_id"], [])),
+            **dict(zip(("ai_recommendation", "ai_rationale"),
+                       ai_reco(EVIDENCE_LEVEL.get(r["evidence_code"].strip(), ""),
+                               r.get("curation_status", ""), flags.get(r["reaction_id"], ""),
+                               1 + len(secondaries.get(r["reaction_id"], [])), qstatus))),
             "provenance": provenance_label(r.get("ratification", ""), r.get("provenance", "")),
             "curation_status": r.get("curation_status", ""),
             "contradiction_flag": flags.get(r["reaction_id"], ""),
@@ -255,6 +283,7 @@ def main() -> None:
             "supporting_quote": d["quote"],
             "quote_status": "verbatim (excluded)" if d["quote"] else "to_complete",
             "n_sources": 0, "secondary_pmids": "",
+            "ai_recommendation": "EXCLUDE", "ai_rationale": d["reason"],
             "provenance": "AI — considered & discarded",
             "curation_status": "excluded", "contradiction_flag": "",
             "review_decision": "", "review_notes": "",
