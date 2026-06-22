@@ -263,7 +263,19 @@ check-contradictions:  ## Flag SSc interactions with opposite signs on the same 
 	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/check_contradictions.py; \
 	else $(PYTHON) scripts/check_contradictions.py; fi
 
-interaction-db:  ## Build the reviewer-ready tidy interaction database (CSV) with evidence + quotes.
+pdf-quotes:  ## Extract verbatim supporting sentences from local PDFs, else PMC full-text / PubMed abstract.
+	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/mine_pdf_quotes.py; \
+	else $(PYTHON) scripts/mine_pdf_quotes.py; fi
+
+dossier:  ## Build the per-interaction literature dossier (PubMed support + possibly-contrary refs). Network; resumable.
+	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/mine_evidence_dossier.py; \
+	else $(PYTHON) scripts/mine_evidence_dossier.py; fi
+
+reading-packets:  ## Fetch dossier abstracts and assemble per-interaction reading packets (for adjudication). Network.
+	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/build_reading_packets.py; \
+	else $(PYTHON) scripts/build_reading_packets.py; fi
+
+interaction-db:  pdf-quotes  ## Build the reviewer-ready tidy interaction database (CSV) with evidence + quotes.
 	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/build_interaction_db.py; \
 	else $(PYTHON) scripts/build_interaction_db.py; fi
 
@@ -271,5 +283,5 @@ review-app:  ## Build the static HTML review app from the interaction database.
 	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/build_review_app.py; \
 	else $(PYTHON) scripts/build_review_app.py; fi
 
-review:  interaction-db review-app  ## Refresh the interaction DB + the HTML review app in one go.
+review:  interaction-db review-app  ## Refresh PDF quotes + interaction DB + the HTML review app in one go.
 	@echo "[review] open review/index.html in a browser."

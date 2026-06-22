@@ -1,0 +1,4606 @@
+{
+"ssc_crosstalk_001": {
+"support": [
+{
+"pmid": "27324217",
+"title": "Activation of STING requires palmitoylation at the Golgi.",
+"year": "2016",
+"journal": "Nat Commun"
+},
+{
+"pmid": "37488975",
+"title": "Endothelial Response to Type I Interferon Contributes to Vasculopathy and Fibrosis and Predicts Disease Progression of Systemic Sclerosis.",
+"year": "2024",
+"journal": "Arthritis Rheumatol"
+}
+],
+"contrary": [
+{
+"pmid": "39198639",
+"title": "Spatially clustered type I interferon responses at injury borderzones.",
+"year": "2024",
+"journal": "Nature",
+"cue": "did not",
+"snippet": "…ls or endothelial cells, Ccr2-deficient mice or plasmacytoid-dendritic-cell-depleted mice did not. Interferons blunted the protective matricellular programs and contractile function of bo…"
+},
+{
+"pmid": "34648896",
+"title": "Dopamine receptor D2 antagonism normalizes profibrotic macrophage-endothelial crosstalk in non-alcoholic steatohepatitis.",
+"year": "2022",
+"journal": "J Hepatol",
+"cue": "no effect",
+"snippet": "Currently there is no effective treatment for liver fibrosis, which is one of the main histological determinants of no…"
+},
+{
+"pmid": "37584284",
+"title": "Role and Therapeutic Potential for Targeting Fibroblast Growth Factor 10/FGFR1 in Relapsed Rheumatoid Arthritis.",
+"year": "2024",
+"journal": "Arthritis Rheumatol",
+"cue": "independent of",
+"snippet": "…also activated in the lining FLSs, in vitro stimulation experiment suggested that it was independent of the FGF10 pathway. FGF10 knockdown by small interfering RNA in FLSs significantly reduced…"
+}
+]
+},
+"ssc_M2_036": {
+"support": [
+{
+"pmid": "25667920",
+"title": "5-HT2B receptor antagonists inhibit fibrosis and protect from RV heart failure.",
+"year": "2015",
+"journal": "Biomed Res Int"
+},
+{
+"pmid": "39032441",
+"title": "Preclinical mitigation of 5-HT2B agonism-related cardiac valvulopathy revisited.",
+"year": "2024",
+"journal": "J Pharmacol Toxicol Methods"
+},
+{
+"pmid": "38214279",
+"title": "Microdosing psychedelics and the risk of cardiac fibrosis and valvulopathy: Comparison to known cardiotoxins.",
+"year": "2024",
+"journal": "J Psychopharmacol"
+},
+{
+"pmid": "19118279",
+"title": "Serotonin 5-HT2B receptor in cardiac fibroblast contributes to cardiac hypertrophy: a new therapeutic target for heart failure?",
+"year": "2009",
+"journal": "Circ Res"
+},
+{
+"pmid": "29931963",
+"title": "[The expression of 5-HTR2B、E-cad、α-SMA in the pulmonary fibrosis in rats].",
+"year": "2016",
+"journal": "Zhongguo Ying Yong Sheng Li Xue Za Zhi"
+},
+{
+"pmid": "31787571",
+"title": "Serotonin receptors 5-HTR2A and 5-HTR2B are involved in cigarette smoke-induced airway inflammation, mucus hypersecretion and airway remodeling in mice.",
+"year": "2020",
+"journal": "Int Immunopharmacol"
+}
+],
+"contrary": [
+{
+"pmid": "33379351",
+"title": "Pathological Insight into 5-HT2B Receptor Activation in Fibrosing Interstitial Lung Diseases.",
+"year": "2020",
+"journal": "Int J Mol Sci",
+"cue": "antifibrotic",
+"snippet": "…in observed profibrotic actions. Our research findings in support by others, demonstrate antifibrotic effects with 5-HT2B receptor antagonists, alleviating several key events common for the f…"
+},
+{
+"pmid": "16614540",
+"title": "Lisuride, a dopamine receptor agonist with 5-HT2B receptor antagonist properties: absence of cardiac valvulopathy adverse drug reaction reports supports the concept of a crucial role for 5-HT2B receptor agonism in cardiac valvular fibrosis.",
+"year": "2006",
+"journal": "Clin Neuropharmacol",
+"cue": "do not",
+"snippet": "…is kind of side effects is still to be recommended in the therapy with lisuride, our data do not support the concept of a class effect suggesting that all ergot-derived drugs and especia…"
+},
+{
+"pmid": "41034989",
+"title": "The aggressive colorectal cancer subtype marker HTR2B has a dual role depending on the tumor microenvironment.",
+"year": "2025",
+"journal": "Cell Commun Signal",
+"cue": "no effect",
+"snippet": "…(ECM) increased the number of HTR2B + cells. Interestingly, whereas stimulating HTR2B had no effect on PDOs under normal conditions, it reduced cellular survival under unfavorable condition…"
+},
+{
+"pmid": "25712664",
+"title": "Ergotamine and nicergoline - facts and myths.",
+"year": "2015",
+"journal": "Pharmacol Rep",
+"cue": "do not",
+"snippet": "…rug-induced valvulopathy. In contrary structurally related drugs - lisuride and terguride do not increase the risk of valvular heart disease. It seems, that more detailed mechanistic stu…"
+}
+]
+},
+"ssc_M4_021": {
+"support": [
+{
+"pmid": "39662091",
+"title": "Skin immune-mesenchymal interplay within tertiary lymphoid structures promotes autoimmune pathogenesis in hidradenitis suppurativa.",
+"year": "2024",
+"journal": "Immunity"
+},
+{
+"pmid": "37781522",
+"title": "Hypoxia-induced exosomes facilitate lung pre-metastatic niche formation in hepatocellular carcinoma through the miR-4508-RFX1-IL17A-p38 MAPK-NF-κB pathway.",
+"year": "2023",
+"journal": "Int J Biol Sci"
+}
+],
+"contrary": []
+},
+"ssc_M2_045": {
+"support": [
+{
+"pmid": "38420807",
+"title": "Single-Cell Transcriptome Analysis Identified Core Genes and Transcription Factors in Mesenchymal Cell Differentiation during Liver Cirrhosis.",
+"year": "2024",
+"journal": "Front Biosci (Landmark Ed)"
+},
+{
+"pmid": "27936102",
+"title": "AM251 Suppresses Epithelial-Mesenchymal Transition of Renal Tubular Epithelial Cells.",
+"year": "2016",
+"journal": "PLoS One"
+},
+{
+"pmid": "39712244",
+"title": "Identification of genetic associations between acute myocardial infarction and non-small cell lung cancer.",
+"year": "2024",
+"journal": "Front Mol Biosci"
+},
+{
+"pmid": "37621558",
+"title": "Identification of hub genes and key signaling pathways by weighted gene co-expression network analysis for human aortic stenosis and insufficiency.",
+"year": "2023",
+"journal": "Front Cardiovasc Med"
+},
+{
+"pmid": "26909883",
+"title": "RNA-seq analysis of clinical-grade osteochondral allografts reveals activation of early response genes.",
+"year": "2016",
+"journal": "J Orthop Res"
+}
+],
+"contrary": [
+{
+"pmid": "41746718",
+"title": "RNA-binding protein LARP6 coordinates hepatic stellate cell activation and liver fibrosis.",
+"year": "2026",
+"journal": "J Clin Invest",
+"cue": "attenuated fibrosis",
+"snippet": "…substrate siRNA-based HSC-specific gene knockdown or pharmacological inhibition of LARP6 attenuated fibrosis development in human MASH and MetALD liver spheroids. Our results suggest LARP6 plays a k…"
+}
+]
+},
+"ssc_M1_001": {
+"support": [
+{
+"pmid": "39753529",
+"title": "Macrophage STING signaling promotes fibrosis in benign airway stenosis via an IL6-STAT3 pathway.",
+"year": "2025",
+"journal": "Nat Commun"
+},
+{
+"pmid": "35752612",
+"title": "Pseudomonas aeruginosa: pathogenesis, virulence factors, antibiotic resistance, interaction with host, technology advances and emerging therapeutics.",
+"year": "2022",
+"journal": "Signal Transduct Target Ther"
+},
+{
+"pmid": "31474566",
+"title": "Mitochondrial Damage and Activation of the STING Pathway Lead to Renal Inflammation and Fibrosis.",
+"year": "2019",
+"journal": "Cell Metab"
+},
+{
+"pmid": "28533362",
+"title": "cGAS is essential for cellular senescence.",
+"year": "2017",
+"journal": "Proc Natl Acad Sci U S A"
+},
+{
+"pmid": "37965345",
+"title": "The role of cGAS-STING signaling in pulmonary fibrosis and its therapeutic potential.",
+"year": "2023",
+"journal": "Front Immunol"
+}
+],
+"contrary": []
+},
+"ssc_M1_002": {
+"support": [
+{
+"pmid": "39753529",
+"title": "Macrophage STING signaling promotes fibrosis in benign airway stenosis via an IL6-STAT3 pathway.",
+"year": "2025",
+"journal": "Nat Commun"
+},
+{
+"pmid": "31474566",
+"title": "Mitochondrial Damage and Activation of the STING Pathway Lead to Renal Inflammation and Fibrosis.",
+"year": "2019",
+"journal": "Cell Metab"
+},
+{
+"pmid": "37533255",
+"title": "STING/ACSL4 axis-dependent ferroptosis and inflammation promote hypertension-associated chronic kidney disease.",
+"year": "2023",
+"journal": "Mol Ther"
+},
+{
+"pmid": "37018971",
+"title": "STING mediates hepatocyte pyroptosis in liver fibrosis by Epigenetically activating the NLRP3 inflammasome.",
+"year": "2023",
+"journal": "Redox Biol"
+},
+{
+"pmid": "37965345",
+"title": "The role of cGAS-STING signaling in pulmonary fibrosis and its therapeutic potential.",
+"year": "2023",
+"journal": "Front Immunol"
+},
+{
+"pmid": "27324217",
+"title": "Activation of STING requires palmitoylation at the Golgi.",
+"year": "2016",
+"journal": "Nat Commun"
+}
+],
+"contrary": []
+},
+"ssc_M1_003": {
+"support": [
+{
+"pmid": "35501370",
+"title": "A non-canonical cGAS-STING-PERK pathway facilitates the translational program critical for senescence and organ fibrosis.",
+"year": "2022",
+"journal": "Nat Cell Biol"
+},
+{
+"pmid": "41208891",
+"title": "Glycolysis drives STING signaling to promote M1-macrophage polarization and aggravate liver fibrosis.",
+"year": "2025",
+"journal": "Int J Biol Sci"
+},
+{
+"pmid": "36923406",
+"title": "The STING/TBK1/IRF3/IFN type I pathway is defective in cystic fibrosis.",
+"year": "2023",
+"journal": "Front Immunol"
+},
+{
+"pmid": "41110750",
+"title": "Amlexanox alleviates renal inflammation and fibrosis by inhibiting cGAS/STING/TBK1 and TGF-β1/Smad signaling.",
+"year": "2025",
+"journal": "Eur J Pharmacol"
+},
+{
+"pmid": "40243337",
+"title": "Protein-S-nitrosylation of human cytomegalovirus pp65 reduces its ability to undermine cGAS.",
+"year": "2025",
+"journal": "J Virol"
+},
+{
+"pmid": "41020872",
+"title": "Targeting the cGAS-STING Pathway to Modulate Immune Inflammation in Diabetes and Cardiovascular Complications: Mechanisms and Therapeutic Insights.",
+"year": "2025",
+"journal": "Curr Issues Mol Biol"
+}
+],
+"contrary": [
+{
+"pmid": "37555319",
+"title": "Epigenetic Induction of Smooth Muscle Cell Phenotypic Alterations in Aortic Aneurysms and Dissections.",
+"year": "2023",
+"journal": "Circulation",
+"cue": "In contrast",
+"snippet": "…2) to contractile genes to induce repressive H3K27me3 modification and gene suppression. In contrast, double-stranded DNA-STING-IRF3 signaling induced inflammatory gene expression in SMCs. I…"
+},
+{
+"pmid": "40279968",
+"title": "Targeting STING and protecting mitochondrial function with Nephropathy II decoction to alleviate renal fibrosis.",
+"year": "2025",
+"journal": "Phytomedicine",
+"cue": "reduced fibrosis",
+"snippet": "…mitochondrial function, and suppressed STING activation. STING inhibitor C176 effectively reduced fibrosis in both FAN mice and folic acid -induced cells, whereas the STING agonist DMXAA intensifi…"
+},
+{
+"pmid": "36185574",
+"title": "XBP1-mediated activation of the STING signalling pathway in macrophages contributes to liver fibrosis progression.",
+"year": "2022",
+"journal": "JHEP Rep",
+"cue": "no effect",
+"snippet": "…d is characterised by an excess of extracellular matrix in the liver. Currently, there is no effective therapeutic strategy for the treatment of liver fibrosis, resulting in high mortality…"
+},
+{
+"pmid": "37806536",
+"title": "QFAE-nB alleviates pulmonary fibrosis by inhibiting the STING pathway in mice.",
+"year": "2024",
+"journal": "J Ethnopharmacol",
+"cue": "anti-fibrotic",
+"snippet": "…as therapeutic effects on respiratory diseases. However, the effects and the mechanism of anti-fibrotic have not been elucidated. In this study, QFAE-nB was extracted from QFA, the aims of this…"
+}
+]
+},
+"ssc_M1_004": {
+"support": [
+{
+"pmid": "36576150",
+"title": "TRIM7/RNF90 promotes autophagy via regulation of ATG7 ubiquitination during L. monocytogenes infection.",
+"year": "2023",
+"journal": "Autophagy"
+},
+{
+"pmid": "35278833",
+"title": "The selective STING inhibitor H-151 preserves myocardial function and ameliorates cardiac fibrosis in murine myocardial infarction.",
+"year": "2022",
+"journal": "Int Immunopharmacol"
+},
+{
+"pmid": "37723657",
+"title": "CSNK1A1/CK1α suppresses autoimmunity by restraining the CGAS-STING1 signaling.",
+"year": "2024",
+"journal": "Autophagy"
+},
+{
+"pmid": "35543189",
+"title": "UXT attenuates the CGAS-STING1 signaling by targeting STING1 for autophagic degradation.",
+"year": "2023",
+"journal": "Autophagy"
+},
+{
+"pmid": "35686918",
+"title": "DNA from macrophages induces fibrosis and vasculopathy through POLR3A/STING/type I interferon axis in systemic sclerosis.",
+"year": "2023",
+"journal": "Rheumatology (Oxford)"
+},
+{
+"pmid": "36923406",
+"title": "The STING/TBK1/IRF3/IFN type I pathway is defective in cystic fibrosis.",
+"year": "2023",
+"journal": "Front Immunol"
+}
+],
+"contrary": [
+{
+"pmid": "39198639",
+"title": "Spatially clustered type I interferon responses at injury borderzones.",
+"year": "2024",
+"journal": "Nature",
+"cue": "did not",
+"snippet": "…ls or endothelial cells, Ccr2-deficient mice or plasmacytoid-dendritic-cell-depleted mice did not. Interferons blunted the protective matricellular programs and contractile function of bo…"
+}
+]
+},
+"ssc_M1_005": {
+"support": [],
+"contrary": []
+},
+"ssc_M1_006": {
+"support": [
+{
+"pmid": "23678181",
+"title": "Human parainfluenza virus type 2 V protein inhibits TRAF6-mediated ubiquitination of IRF7 to prevent TLR7- and TLR9-dependent interferon induction.",
+"year": "2013",
+"journal": "J Virol"
+},
+{
+"pmid": "25907537",
+"title": "TRIM35 negatively regulates TLR7- and TLR9-mediated type I interferon production by targeting IRF7.",
+"year": "2015",
+"journal": "FEBS Lett"
+},
+{
+"pmid": "37123625",
+"title": "The Expression of Plasmacytoid Dendritic Cells and TLR7/9-MyD88-IRAKs Pathway in Chronic Eczema Lesions.",
+"year": "2023",
+"journal": "Clin Cosmet Investig Dermatol"
+},
+{
+"pmid": "32111355",
+"title": "The mechanism of action of Spi-B in the transcriptional activation of the interferon-α4 gene.",
+"year": "2020",
+"journal": "Biochem Biophys Res Commun"
+}
+],
+"contrary": []
+},
+"ssc_M1_007": {
+"support": [
+{
+"pmid": "40825908",
+"title": "FGF15/FGFR4 signaling suppresses M1 macrophage polarization and multi-organ inflammation in septic mice by inhibiting H3K18 lactylation-driven Irf7 expression through NF2-Hippo activation.",
+"year": "2025",
+"journal": "Cell Death Dis"
+}
+],
+"contrary": [
+{
+"pmid": "31439591",
+"title": "Interferon regulatory factor 7 (IRF7) represents a link between inflammation and fibrosis in the pathogenesis of systemic sclerosis.",
+"year": "2019",
+"journal": "Ann Rheum Dis",
+"cue": "unaffected",
+"snippet": "…lated and activated in SSc skin tissue and explanted SSc dermal fibroblasts compared with unaffected, matched controls. Moreover, IRF7 expression was stimulated by IFN-α in dermal fibroblast…"
+},
+{
+"pmid": "39043024",
+"title": "Novel goose parvovirus VP1 targets IRF7 protein to block the type I interferon upstream signaling pathway.",
+"year": "2024",
+"journal": "Poult Sci",
+"cue": "do not",
+"snippet": "…protein could inhibit the expression of IFN-β, while the truncated proteins VP1U and VP2 do not possess such characteristics. The immunoprecipitation experiment showed that both VP1 and…"
+}
+]
+},
+"ssc_M1_008": {
+"support": [
+{
+"pmid": "35470757",
+"title": "Multifaceted roles of TAX1BP1 in autophagy.",
+"year": "2023",
+"journal": "Autophagy"
+},
+{
+"pmid": "28768533",
+"title": "Progression of pathology in PINK1-deficient mouse brain from splicing via ubiquitination, ER stress, and mitophagy changes to neuroinflammation.",
+"year": "2017",
+"journal": "J Neuroinflammation"
+}
+],
+"contrary": [
+{
+"pmid": "33966599",
+"title": "Lipotoxicity reduces DDX58/Rig-1 expression and activity leading to impaired autophagy and cell death.",
+"year": "2022",
+"journal": "Autophagy",
+"cue": "protective",
+"snippet": "…of DDX58 promotes apoptosis. Importantly, we show that stable overexpression of DDX58 is protective against toxic levels of PA and stimulates autophagy. This study begins to demonstrate the…"
+}
+]
+},
+"ssc_M1_009": {
+"support": [],
+"contrary": []
+},
+"ssc_M1_010": {
+"support": [
+{
+"pmid": "38167034",
+"title": "Single-cell RNA-seq analysis decodes the kidney microenvironment induced by polystyrene microplastics in mice receiving a high-fat diet.",
+"year": "2024",
+"journal": "J Nanobiotechnology"
+},
+{
+"pmid": "34986347",
+"title": "CXCL4 drives fibrosis by promoting several key cellular and molecular processes.",
+"year": "2022",
+"journal": "Cell Rep"
+},
+{
+"pmid": "39025985",
+"title": "Proteomic screening identifies PF4/Cxcl4 as a critical driver of myelofibrosis.",
+"year": "2024",
+"journal": "Leukemia"
+},
+{
+"pmid": "39464886",
+"title": "Efferocytosis dysfunction in CXCL4-induced M4 macrophages: phenotypic insights in systemic sclerosis in vitro and in vivo.",
+"year": "2024",
+"journal": "Front Immunol"
+},
+{
+"pmid": "40141068",
+"title": "The Role of CXCL4 in Systemic Sclerosis: DAMP, Auto-Antigen and Biomarker.",
+"year": "2025",
+"journal": "Int J Mol Sci"
+},
+{
+"pmid": "39707183",
+"title": "CXCL4 deficiency limits M4 macrophage infiltration and attenuates hyperoxia-induced lung injury.",
+"year": "2024",
+"journal": "Mol Med"
+}
+],
+"contrary": [
+{
+"pmid": "36807143",
+"title": "Platelet-instructed SPP1+ macrophages drive myofibroblast activation in fibrosis in a CXCL4-dependent manner.",
+"year": "2023",
+"journal": "Cell Rep",
+"cue": "independent of",
+"snippet": "Fibrosis represents the common end stage of chronic organ injury independent of the initial insult, destroying tissue architecture and driving organ failure. Here we dis…"
+},
+{
+"pmid": "40072075",
+"title": "Pro-Fibrotic Macrophage Subtypes: SPP1+ Macrophages as a Key Player and Therapeutic Target in Cardiac Fibrosis?",
+"year": "2025",
+"journal": "Cells",
+"cue": "reduced fibrosis",
+"snippet": "…key pathways involved in macrophage differentiation. These interventions have effectively reduced fibrosis and improved cardiac function in animal models. The mechanisms underlying SPP1+ macrophag…"
+},
+{
+"pmid": "41337540",
+"title": "Dysregulated alveolar type 2 epithelial cell proteostasis promotes fibrogenic macrophage migration inhibitory factor-CD74 signaling.",
+"year": "2025",
+"journal": "Sci Transl Med",
+"cue": "attenuated fibrosis",
+"snippet": "…fluid (BALF) in the model. Global or conditional AEC2-specific deletions of Mif or Mif-2 attenuated fibrosis in the bleomycin-treated mouse model, as did conditional deletions of Cd74, the cognate r…"
+},
+{
+"pmid": "36614095",
+"title": "CXCL4-RNA Complexes Circulate in Systemic Sclerosis and Amplify Inflammatory/Pro-Fibrotic Responses by Myeloid Dendritic Cells.",
+"year": "2022",
+"journal": "Int J Mol Sci",
+"cue": "In contrast",
+"snippet": "…IL-23, IL-8, and pro-collagen, mainly in a TLR7/8-dependent but CXCR3-independent manner. In contrast, MDDCs produced IL-6 and fibronectin independently in their CXCL4 RNA-binding ability. Th…"
+}
+]
+},
+"ssc_M1_011": {
+"support": [
+{
+"pmid": "37488975",
+"title": "Endothelial Response to Type I Interferon Contributes to Vasculopathy and Fibrosis and Predicts Disease Progression of Systemic Sclerosis.",
+"year": "2024",
+"journal": "Arthritis Rheumatol"
+},
+{
+"pmid": "27324217",
+"title": "Activation of STING requires palmitoylation at the Golgi.",
+"year": "2016",
+"journal": "Nat Commun"
+},
+{
+"pmid": "39152751",
+"title": "A randomised, parallel-group, double-blind, placebo-controlled phase 3 study to Determine the effectiveness of the type I interferon receptor antibody, Anifrolumab, In SYstemic sclerosis: DAISY study design and rationale.",
+"year": "2024",
+"journal": "Clin Exp Rheumatol"
+}
+],
+"contrary": [
+{
+"pmid": "39198639",
+"title": "Spatially clustered type I interferon responses at injury borderzones.",
+"year": "2024",
+"journal": "Nature",
+"cue": "did not",
+"snippet": "…ls or endothelial cells, Ccr2-deficient mice or plasmacytoid-dendritic-cell-depleted mice did not. Interferons blunted the protective matricellular programs and contractile function of bo…"
+},
+{
+"pmid": "34648896",
+"title": "Dopamine receptor D2 antagonism normalizes profibrotic macrophage-endothelial crosstalk in non-alcoholic steatohepatitis.",
+"year": "2022",
+"journal": "J Hepatol",
+"cue": "no effect",
+"snippet": "Currently there is no effective treatment for liver fibrosis, which is one of the main histological determinants of no…"
+},
+{
+"pmid": "37584284",
+"title": "Role and Therapeutic Potential for Targeting Fibroblast Growth Factor 10/FGFR1 in Relapsed Rheumatoid Arthritis.",
+"year": "2024",
+"journal": "Arthritis Rheumatol",
+"cue": "independent of",
+"snippet": "…also activated in the lining FLSs, in vitro stimulation experiment suggested that it was independent of the FGF10 pathway. FGF10 knockdown by small interfering RNA in FLSs significantly reduced…"
+}
+]
+},
+"ssc_M1_012": {
+"support": [],
+"contrary": [],
+"note": "no searchable gene participant"
+},
+"ssc_M2_001": {
+"support": [],
+"contrary": [
+{
+"pmid": "11907708",
+"title": "The first stage of transforming growth factor beta1 activation is release of the large latent complex from the extracellular matrix of growth plate chondrocytes by matrix vesicle stromelysin-1 (MMP-3).",
+"year": "2002",
+"journal": "Calcif Tissue Int",
+"cue": "In contrast",
+"snippet": "…a1, composed of these three components, is known as the \"large latent TGF-beta1 complex.\" In contrast, latent TGF-beta1 without LTBP1 is known as \"small latent TGF-beta1.\" For all latent form…"
+}
+]
+},
+"ssc_M2_002": {
+"support": [],
+"contrary": []
+},
+"ssc_M2_003": {
+"support": [
+{
+"pmid": "40400126",
+"title": "Autophagic degradation of SQSTM1 enables fibroblast activation to accelerate wound healing.",
+"year": "2025",
+"journal": "Autophagy"
+},
+{
+"pmid": "31400222",
+"title": "Overactivity or blockade of transforming growth factor-β each generate a specific ureter malformation.",
+"year": "2019",
+"journal": "J Pathol"
+},
+{
+"pmid": "20924205",
+"title": "Proinflammatory/profibrotic effects of interleukin-17A on human proximal tubule epithelium.",
+"year": "2011",
+"journal": "Nephron Exp Nephrol"
+},
+{
+"pmid": "31531112",
+"title": "Oxidative Stress and TGF-β1/Smads Signaling Are Involved in Rosa roxburghii Fruit Extract Alleviating Renal Fibrosis.",
+"year": "2019",
+"journal": "Evid Based Complement Alternat Med"
+},
+{
+"pmid": "21541268",
+"title": "Patterns of mRNA and protein expression during minus-lens compensation and recovery in tree shrew sclera.",
+"year": "2011",
+"journal": "Mol Vis"
+},
+{
+"pmid": "29460548",
+"title": "The role of zinc plus octenidine in the regulation of gene expression: an in vitro study.",
+"year": "2018",
+"journal": "J Biol Regul Homeost Agents"
+}
+],
+"contrary": [
+{
+"pmid": "29505748",
+"title": "Neuronal Transforming Growth Factor beta Signaling via SMAD3 Contributes to Pain in Animal Models of Chronic Pancreatitis.",
+"year": "2018",
+"journal": "Gastroenterology",
+"cue": "In contrast",
+"snippet": "…SMAD3 had attenuated neuronal sensitization and pain behavior following induction of CP. In contrast to findings from peripheral administration of TGFB1, intrathecal infusion of TGFB1 reduce…"
+},
+{
+"pmid": "35413103",
+"title": "Candidate genes for polycystic ovary syndrome are regulated by TGFβ in the bovine foetal ovary.",
+"year": "2022",
+"journal": "Hum Reprod",
+"cue": "did not",
+"snippet": "…GTN1171592) and the UK Medical Research Council (R.A.A.; grant no. G1100357). The funders did not play any role in the study design, data collection and analysis, decision to publish or p…"
+}
+]
+},
+"ssc_M2_004": {
+"support": [
+{
+"pmid": "40400126",
+"title": "Autophagic degradation of SQSTM1 enables fibroblast activation to accelerate wound healing.",
+"year": "2025",
+"journal": "Autophagy"
+},
+{
+"pmid": "31531112",
+"title": "Oxidative Stress and TGF-β1/Smads Signaling Are Involved in Rosa roxburghii Fruit Extract Alleviating Renal Fibrosis.",
+"year": "2019",
+"journal": "Evid Based Complement Alternat Med"
+}
+],
+"contrary": [
+{
+"pmid": "29505748",
+"title": "Neuronal Transforming Growth Factor beta Signaling via SMAD3 Contributes to Pain in Animal Models of Chronic Pancreatitis.",
+"year": "2018",
+"journal": "Gastroenterology",
+"cue": "In contrast",
+"snippet": "…SMAD3 had attenuated neuronal sensitization and pain behavior following induction of CP. In contrast to findings from peripheral administration of TGFB1, intrathecal infusion of TGFB1 reduce…"
+}
+]
+},
+"ssc_M2_005": {
+"support": [],
+"contrary": []
+},
+"ssc_M2_006": {
+"support": [],
+"contrary": []
+},
+"ssc_M2_007": {
+"support": [],
+"contrary": []
+},
+"ssc_M2_008": {
+"support": [],
+"contrary": []
+},
+"ssc_M2_009": {
+"support": [],
+"contrary": []
+},
+"ssc_M2_010": {
+"support": [],
+"contrary": []
+},
+"ssc_M2_011": {
+"support": [
+{
+"pmid": "39994205",
+"title": "CCN2 mediates fibroblast-macrophage interaction in knee arthrofibrosis based on single-cell RNA-seq analysis.",
+"year": "2025",
+"journal": "Bone Res"
+},
+{
+"pmid": "11890876",
+"title": "Scleroderma-like cutaneous syndromes.",
+"year": "2002",
+"journal": "Curr Rheumatol Rep"
+},
+{
+"pmid": "27734393",
+"title": "CCN2 in Skin Fibrosis.",
+"year": "2017",
+"journal": "Methods Mol Biol"
+},
+{
+"pmid": "40780596",
+"title": "Transcription factor MEOX1 accelerates pulmonary fibrosis by regulating mitophagy and senescence.",
+"year": "2025",
+"journal": "Eur J Pharmacol"
+},
+{
+"pmid": "11890879",
+"title": "Connective tissue growth factor: a new and important player in the pathogenesis of fibrosis.",
+"year": "2002",
+"journal": "Curr Rheumatol Rep"
+},
+{
+"pmid": "28488090",
+"title": "Pathogenesis of systemic sclerosis-current concept and emerging treatments.",
+"year": "2017",
+"journal": "Immunol Res"
+}
+],
+"contrary": [
+{
+"pmid": "35491858",
+"title": "Tubular cells produce FGF2 via autophagy after acute kidney injury leading to fibroblast activation and renal fibrosis.",
+"year": "2023",
+"journal": "Autophagy",
+"cue": "reduced fibrosis",
+"snippet": "…y deficiency induced after AKI suppressed the pro-fibrotic phenotype in tubular cells and reduced fibrosis. Among the major cytokines, tubular autophagy deficiency in iRT-atg7-KO mice specifically…"
+},
+{
+"pmid": "38899461",
+"title": "Fibroblast Smad7 Induction Protects the Remodeling Pressure-Overloaded Heart.",
+"year": "2024",
+"journal": "Circ Res",
+"cue": "In contrast",
+"snippet": "…of structural collagens and matricellular proteins and markedly increases MMP2 secretion. In contrast, Smad7 overexpression reduced MMP2 levels. In fibroblasts populating collagen lattices, t…"
+},
+{
+"pmid": "38788399",
+"title": "Forsythoside A regulates pulmonary fibrosis by inhibiting endothelial-to-mesenchymal transition and lung fibroblast proliferation via the PTPRB signaling.",
+"year": "2024",
+"journal": "Phytomedicine",
+"cue": "protective",
+"snippet": "…side A (FA) derived from Forsythia suspensa (Thunb.) Vahl, has been found to possess lung-protective effect. However, studies on its anti-pulmonary fibrosis effect are limited and its mechan…"
+},
+{
+"pmid": "38103794",
+"title": "Therapeutic strategies to target connective tissue growth factor in fibrotic lung diseases.",
+"year": "2024",
+"journal": "Pharmacol Ther",
+"cue": "antifibrotic",
+"snippet": "…, including idiopathic pulmonary fibrosis (IPF), remains challenging as current available antifibrotic agents are not effective in halting disease progression. Connective tissue growth factor…"
+},
+{
+"pmid": "11698729",
+"title": "Transforming growth factor-beta and connective tissue growth factor: key cytokines in scleroderma pathogenesis.",
+"year": "2001",
+"journal": "Curr Opin Rheumatol",
+"cue": "independent of",
+"snippet": "…ta responsive element in the CTGF promoter is involved, although this appears to function independent of the Smad proteins, suggesting that other TGF-beta-regulated pathways may be involved. TGF…"
+}
+]
+},
+"ssc_M2_012": {
+"support": [],
+"contrary": []
+},
+"ssc_M2_013": {
+"support": [],
+"contrary": []
+},
+"ssc_M2_014": {
+"support": [],
+"contrary": []
+},
+"ssc_M2_015": {
+"support": [
+{
+"pmid": "39233335",
+"title": "ALKBH5-mediated m6A demethylation ameliorates extracellular matrix deposition in cutaneous pathological fibrosis.",
+"year": "2024",
+"journal": "Clin Transl Med"
+},
+{
+"pmid": "37690517",
+"title": "Conjunctival transcriptomics in ocular mucous membrane pemphigoid.",
+"year": "2023",
+"journal": "Ocul Surf"
+},
+{
+"pmid": "41158346",
+"title": "Exploring diagnostic gene markers and immune infiltration in idiopathic pulmonary fibrosis.",
+"year": "2025",
+"journal": "J Thorac Dis"
+},
+{
+"pmid": "41065540",
+"title": "Modeling hepatic fibrosis in TP53 knockout iPSC-derived human liver organoids.",
+"year": "2026",
+"journal": "Mol Oncol"
+},
+{
+"pmid": "37138491",
+"title": "Toosendanin Restrains Idiopathic Pulmonary Fibrosis by Inhibiting ZEB1/CTBP1 Interaction.",
+"year": "2024",
+"journal": "Curr Mol Med"
+},
+{
+"pmid": "41601169",
+"title": "Circular RNA circSmad4 controls pulmonary fibrosis.",
+"year": "2026",
+"journal": "Korean J Physiol Pharmacol"
+}
+],
+"contrary": [
+{
+"pmid": "37757709",
+"title": "UPLC-Q-TOF-MS based investigation into the bioactive compounds and molecular mechanisms of Lamiophlomis Herba against hepatic fibrosis.",
+"year": "2023",
+"journal": "Phytomedicine",
+"cue": "anti-fibrotic",
+"snippet": "…Network pharmacology and molecular docking techniques were used to predict the potential anti-fibrotic targets of LH. Immunofluorescence, enzyme-linked immunosorbent assay (ELISA), real-time P…"
+},
+{
+"pmid": "40692863",
+"title": "Functions and mechanisms of UC-MSC-derived exosomal miR-486-5p in pulmonary fibrosis.",
+"year": "2025",
+"journal": "Front Oncol",
+"cue": "does not",
+"snippet": "…MSC-derived exosomal miR-486-5p slightly promotes apoptosis in MRC-5 cells (p = 0.06) but does not significantly affect cell proliferation (p > 0.05). Exosomal miR-486-5p derived from UC-M…"
+},
+{
+"pmid": "40676074",
+"title": "Enhanced THBS2 promotes collagen synthesis and inflammatory secretome of fibroblasts in idiopathic pulmonary fibrosis.",
+"year": "2025",
+"journal": "Sci Rep",
+"cue": "did not",
+"snippet": "…expression of downstream molecules (TGFBR1, TGFBR2, P-Smad2/3) and collagen synthesis but did not inhibit the upregulation of post-translational modification enzymes LOX and LOXL2 involve…"
+},
+{
+"pmid": "40090156",
+"title": "Melatonin alleviates endometrial fibrosis in bovine endometritis by regulating TGF-β/Smad and MAPK signaling pathways via MT2.",
+"year": "2025",
+"journal": "J Reprod Immunol",
+"cue": "antifibrotic",
+"snippet": "…ibrosis process of ESCs in a dose-dependent manner. The MT2 inhibitor 4P-PDOT blocked the antifibrotic effects of melatonin and inhibited the phosphorylation of Smad2/3, ERK1/2, and JNK1/2 in…"
+}
+]
+},
+"ssc_M2_016": {
+"support": [
+{
+"pmid": "30135582",
+"title": "RAP2 mediates mechanoresponses of the Hippo pathway.",
+"year": "2018",
+"journal": "Nature"
+},
+{
+"pmid": "30934860",
+"title": "Mechanotransduction and Cytoskeleton Remodeling Shaping YAP1 in Gastric Tumorigenesis.",
+"year": "2019",
+"journal": "Int J Mol Sci"
+},
+{
+"pmid": "36539815",
+"title": "Ginsenoside Rg1 inhibits nucleus pulposus cell apoptosis, inflammation and extracellular matrix degradation via the YAP1/TAZ pathway in rats with intervertebral disc degeneration.",
+"year": "2022",
+"journal": "J Orthop Surg Res"
+},
+{
+"pmid": "32056132",
+"title": "YAP/TAZ are Activated by Mechanical and Hormonal Stimuli in Myometrium and Exhibit Increased Baseline Activation in Uterine Fibroids.",
+"year": "2020",
+"journal": "Reprod Sci"
+},
+{
+"pmid": "42153663",
+"title": "Mechanical stress-mediated ferritinophagy aggravates cartilage endplate degeneration via a PIEZO1-NCOA4-ZBP1 axis.",
+"year": "2026",
+"journal": "Autophagy"
+},
+{
+"pmid": "29511023",
+"title": "Loss of Mob1a/b in mice results in chondrodysplasia due to YAP1/TAZ-TEAD-dependent repression of SOX9.",
+"year": "2018",
+"journal": "Development"
+}
+],
+"contrary": [
+{
+"pmid": "28115535",
+"title": "Vinculin promotes nuclear localization of TAZ to inhibit ECM stiffness-dependent differentiation into adipocytes.",
+"year": "2017",
+"journal": "J Cell Sci",
+"cue": "does not",
+"snippet": "…cessary for enhanced nuclear localization and activity of YAP/TAZ on the rigid ECM but it does not affect the phosphorylation of the YAP/TAZ kinase LATS1. Furthermore, vinculin depletion p…"
+}
+]
+},
+"ssc_M2_017": {
+"support": [
+{
+"pmid": "38123514",
+"title": "Wnt16 Promotes Vascular Smooth Muscle Contractile Phenotype and Function via Taz (Wwtr1) Activation in Male LDLR-/- Mice.",
+"year": "2023",
+"journal": "Endocrinology"
+}
+],
+"contrary": []
+},
+"ssc_M2_018": {
+"support": [
+{
+"pmid": "37662889",
+"title": "FOSL2 participates in renal fibrosis via SGK1-mediated epithelial-mesenchymal transition of proximal tubular epithelial cells.",
+"year": "2023",
+"journal": "J Transl Int Med"
+}
+],
+"contrary": []
+},
+"ssc_M2_019": {
+"support": [],
+"contrary": []
+},
+"ssc_M2_020": {
+"support": [
+{
+"pmid": "15081117",
+"title": "Disruption of the PDGFB gene in a 1;22 translocation patient does not cause Costello syndrome.",
+"year": "2004",
+"journal": "Genomics"
+},
+{
+"pmid": "19648501",
+"title": "Differential expression of growth factors and their receptors indicates their involvement in the inverted teat defect in pigs.",
+"year": "2009",
+"journal": "J Anim Sci"
+}
+],
+"contrary": [
+{
+"pmid": "10817561",
+"title": "Microsatellites and intragenic polymorphisms of transforming growth factor beta and platelet-derived growth factor and their receptor genes in Native Americans with systemic sclerosis (scleroderma): a preliminary analysis showing no genetic association.",
+"year": "2000",
+"journal": "Arthritis Rheum",
+"cue": "did not",
+"snippet": "…hism within the TGFbeta1 gene (TGFbeta1) was modestly increased in the SSc patients, this did not maintain statistical significance after correction. Similarly, 1 microsatellite (D9S120)…"
+},
+{
+"pmid": "26315480",
+"title": "Clopidogrel inhibits angiogenesis of gastric ulcer healing via downregulation of vascular endothelial growth factor receptor 2.",
+"year": "2016",
+"journal": "J Formos Med Assoc",
+"cue": "does not",
+"snippet": "Although clopidogrel does not cause gastric mucosal injury, it does not prevent peptic ulcer recurrence in high-risk pa…"
+}
+]
+},
+"ssc_M2_021": {
+"support": [
+{
+"pmid": "34282151",
+"title": "Myofibroblast transcriptome indicates SFRP2hi fibroblast progenitors in systemic sclerosis skin.",
+"year": "2021",
+"journal": "Nat Commun"
+},
+{
+"pmid": "39430238",
+"title": "Single-Cell RNA-Sequencing Identifies Bone Marrow-Derived Progenitor Cells as a Main Source of Extracellular Matrix-Producing Cells Across Multiple Organ-Based Fibrotic Diseases.",
+"year": "2024",
+"journal": "Int J Biol Sci"
+}
+],
+"contrary": [
+{
+"pmid": "35491858",
+"title": "Tubular cells produce FGF2 via autophagy after acute kidney injury leading to fibroblast activation and renal fibrosis.",
+"year": "2023",
+"journal": "Autophagy",
+"cue": "reduced fibrosis",
+"snippet": "…y deficiency induced after AKI suppressed the pro-fibrotic phenotype in tubular cells and reduced fibrosis. Among the major cytokines, tubular autophagy deficiency in iRT-atg7-KO mice specifically…"
+}
+]
+},
+"ssc_M2_022": {
+"support": [
+{
+"pmid": "40754287",
+"title": "A high-throughput microphysiological system to quantify key events leading to liver fibrosis.",
+"year": "2025",
+"journal": "Toxicology"
+},
+{
+"pmid": "40818625",
+"title": "NNMT enhances invasive and migratory capacity of keloid fibroblasts and M2 macrophage polarization.",
+"year": "2025",
+"journal": "Arch Biochem Biophys"
+},
+{
+"pmid": "40715237",
+"title": "Propolis compound inhibits profibrotic TGF-β1/SMAD signalling in human fibroblasts.",
+"year": "2025",
+"journal": "Sci Rep"
+},
+{
+"pmid": "37690517",
+"title": "Conjunctival transcriptomics in ocular mucous membrane pemphigoid.",
+"year": "2023",
+"journal": "Ocul Surf"
+},
+{
+"pmid": "35461855",
+"title": "MED1 Deficiency in Macrophages Aggravates Isoproterenol-Induced Cardiac Fibrosis in Mice.",
+"year": "2022",
+"journal": "Am J Pathol"
+},
+{
+"pmid": "39998673",
+"title": "Spatial transcriptomics reveals prognostically LYZ+ fibroblasts and colocalization with FN1+ macrophages in diffuse large B-cell lymphoma.",
+"year": "2025",
+"journal": "Cancer Immunol Immunother"
+}
+],
+"contrary": [
+{
+"pmid": "37757709",
+"title": "UPLC-Q-TOF-MS based investigation into the bioactive compounds and molecular mechanisms of Lamiophlomis Herba against hepatic fibrosis.",
+"year": "2023",
+"journal": "Phytomedicine",
+"cue": "anti-fibrotic",
+"snippet": "…Network pharmacology and molecular docking techniques were used to predict the potential anti-fibrotic targets of LH. Immunofluorescence, enzyme-linked immunosorbent assay (ELISA), real-time P…"
+},
+{
+"pmid": "39098168",
+"title": "Aerosol inhalation of total ginsenosides repairs acute lung injury and inhibits pulmonary fibrosis through SMAD2 signaling-mediated mechanism.",
+"year": "2024",
+"journal": "Phytomedicine",
+"cue": "anti-fibrotic",
+"snippet": "…n of fibrotic genes and proteins, including α-sma, Col1a1, Col3a1, and FN1, suggesting an anti-fibrotic mechanism mediated by the smad2 signaling pathway. In vitro, TG's safety and efficacy wer…"
+},
+{
+"pmid": "33082140",
+"title": "MicroRNA-98 reduces nerve growth factor expression in nicotine-induced airway remodeling.",
+"year": "2020",
+"journal": "J Biol Chem",
+"cue": "In contrast",
+"snippet": "…1, ET-1, COL1A1, and COL3A1 expression in human and mouse LFs and mouse lung homogenates. In contrast, nicotine reduced miR-98 levels in LFs in vitro and in lung homogenates in vivo Treatment…"
+},
+{
+"pmid": "42036667",
+"title": "Cetirizine suppresses cancer-associated fibroblast-mediated fibrotic remodeling and epithelial-mesenchymal transition via histamine H1 receptor inverse agonism.",
+"year": "2026",
+"journal": "Breast Cancer Res",
+"cue": "no effect",
+"snippet": "…in 4T1 cells. RESULTS: Cetirizine improved survival in a subcutaneous TNBC model but had no effect in a lung colonization model, indicating suppression of early metastatic processes. Trans…"
+},
+{
+"pmid": "41188687",
+"title": "Pinoresinol Diglucoside Alleviates Cardiac Fibrosis Through Inhibiting Endothelial-Mesenchymal Transition via the Transforming Growth Factor-β1/Smads Pathway in db/db Mice.",
+"year": "2025",
+"journal": "Phytother Res",
+"cue": "protective",
+"snippet": "This study aimed to investigate the protective effect of pinoresinol diglucoside (PDG) on diabetic cardiomyopathy (DCM)-induced cardiac…"
+}
+]
+},
+"ssc_M3_001": {
+"support": [
+{
+"pmid": "24633486",
+"title": "Effect of SNP polymorphisms of EDN1, EDNRA, and EDNRB gene on ischemic stroke.",
+"year": "2014",
+"journal": "Cell Biochem Biophys"
+},
+{
+"pmid": "31734650",
+"title": "Hypoxic regulation of EDN1, EDNRA, EDNRB, and ECE1 gene expressions in ERN1 knockdown U87 glioma cells.",
+"year": "2019",
+"journal": "Endocr Regul"
+},
+{
+"pmid": "28597546",
+"title": "Endothelin-1 receptor blockade as new possible therapeutic approach in multiple myeloma.",
+"year": "2017",
+"journal": "Br J Haematol"
+},
+{
+"pmid": "36542159",
+"title": "Endothelin-3 is epigenetically silenced in endometrioid endometrial cancer.",
+"year": "2023",
+"journal": "J Cancer Res Clin Oncol"
+}
+],
+"contrary": [
+{
+"pmid": "16947775",
+"title": "Endothelin axis polymorphisms in patients with scleroderma.",
+"year": "2006",
+"journal": "Arthritis Rheum",
+"cue": "No significant",
+"snippet": "…NRB, +2841 of exon 2 (EDNRB-3), -2547 of exon 3 (EDNRB-2), and -2446 of exon 3 (EDNRB-1). No significant differences between the SSc group as a whole and control subjects were observed for any o…"
+},
+{
+"pmid": "38860875",
+"title": "Microarray analysis demonstrates up-regulation of the endothelin-1 gene with compensatory down-regulation of the ETA receptor gene in human portal vein.",
+"year": "2024",
+"journal": "Biosci Rep",
+"cue": "do not",
+"snippet": "…ure is mainly limited to β-adrenergic receptor blockade but approximately 40% of patients do not respond. Our aim was to use microarray to measure the expression of ∼20,800 genes in port…"
+},
+{
+"pmid": "20028935",
+"title": "EDNRA variants associate with smooth muscle mRNA levels, cell proliferation rates, and cystic fibrosis pulmonary disease severity.",
+"year": "2010",
+"journal": "Physiol Genomics",
+"cue": "protective",
+"snippet": "…s are greater for the allele that appears to be deleterious to lung function than for the protective allele, suggesting a mechanism by which increased receptor function is harmful to the CF…"
+},
+{
+"pmid": "19558538",
+"title": "Genetic association study of endothelin-1 and its receptors EDNRA and EDNRB in migraine with aura.",
+"year": "2009",
+"journal": "Cephalalgia",
+"cue": "No significant",
+"snippet": "…were further studied in 648 German migraine patients and 651 non-migrainous individuals. No significant association was detected. However, the homozygous minor genotype (5% in cases) of the EDN…"
+},
+{
+"pmid": "31150867",
+"title": "Associations of EDNRA and EDNRB Polymorphisms with Intracerebral Hemorrhage.",
+"year": "2019",
+"journal": "World Neurosurg",
+"cue": "protective",
+"snippet": "…genotyped in this case-control study. We identified that EDNRA rs5333 T allele might be a protective factor of ICH (adjusted odds ratio [OR] = 0.638, 95% CI: 0.417-0.977, P = 0.038), while E…"
+}
+]
+},
+"ssc_M3_002": {
+"support": [
+{
+"pmid": "39907539",
+"title": "Selective endothelin A receptor antagonism in chronic kidney disease: improving clinical application.",
+"year": "2025",
+"journal": "Nephrol Dial Transplant"
+},
+{
+"pmid": "30031229",
+"title": "Cardiomyocyte-specific knockout of endothelin receptor a attenuates obesity cardiomyopathy.",
+"year": "2018",
+"journal": "Biochim Biophys Acta Mol Basis Dis"
+},
+{
+"pmid": "25660617",
+"title": "Protective effects of endothelin receptor A and B inhibitors against doxorubicin-induced cardiomyopathy.",
+"year": "2015",
+"journal": "Biochem Pharmacol"
+},
+{
+"pmid": "19524622",
+"title": "Endothelin receptor A expression in human inflammatory cells.",
+"year": "2009",
+"journal": "Regul Pept"
+},
+{
+"pmid": "31923844",
+"title": "Irreversible and sustained upregulation of endothelin axis during oncogene-associated pancreatic inflammation and cancer.",
+"year": "2020",
+"journal": "Neoplasia"
+},
+{
+"pmid": "37963542",
+"title": "Cardiomyocyte-specific deletion of endothelin receptor A (ETA) obliterates cardiac aging through regulation of mitophagy and ferroptosis.",
+"year": "2024",
+"journal": "Biochim Biophys Acta Mol Basis Dis"
+}
+],
+"contrary": [
+{
+"pmid": "20028935",
+"title": "EDNRA variants associate with smooth muscle mRNA levels, cell proliferation rates, and cystic fibrosis pulmonary disease severity.",
+"year": "2010",
+"journal": "Physiol Genomics",
+"cue": "protective",
+"snippet": "…s are greater for the allele that appears to be deleterious to lung function than for the protective allele, suggesting a mechanism by which increased receptor function is harmful to the CF…"
+},
+{
+"pmid": "19008257",
+"title": "Increase in tissue endothelin-1 and ETA receptor levels in human aortic valve stenosis.",
+"year": "2009",
+"journal": "Eur Heart J",
+"cue": "did not",
+"snippet": "…(ET-1) positive cells was higher in AS than in control valves, while levels of ET-1 mRNA did not differ between groups. Endothelin receptor-A (ET(A)) mRNA levels were upregulated in sten…"
+},
+{
+"pmid": "16947775",
+"title": "Endothelin axis polymorphisms in patients with scleroderma.",
+"year": "2006",
+"journal": "Arthritis Rheum",
+"cue": "No significant",
+"snippet": "…NRB, +2841 of exon 2 (EDNRB-3), -2547 of exon 3 (EDNRB-2), and -2446 of exon 3 (EDNRB-1). No significant differences between the SSc group as a whole and control subjects were observed for any o…"
+},
+{
+"pmid": "38860875",
+"title": "Microarray analysis demonstrates up-regulation of the endothelin-1 gene with compensatory down-regulation of the ETA receptor gene in human portal vein.",
+"year": "2024",
+"journal": "Biosci Rep",
+"cue": "do not",
+"snippet": "…ure is mainly limited to β-adrenergic receptor blockade but approximately 40% of patients do not respond. Our aim was to use microarray to measure the expression of ∼20,800 genes in port…"
+}
+]
+},
+"ssc_M3_003": {
+"support": [],
+"contrary": []
+},
+"ssc_M3_004": {
+"support": [],
+"contrary": []
+},
+"ssc_M3_005": {
+"support": [
+{
+"pmid": "23117837",
+"title": "Selective PDE5A inhibition with sildenafil rescues left ventricular dysfunction, inflammatory immune response and cardiac remodeling in angiotensin II-induced heart failure in vivo.",
+"year": "2012",
+"journal": "Basic Res Cardiol"
+},
+{
+"pmid": "36252813",
+"title": "Impaired Platelet Function and Thrombus Formation in PDE5A-Deficient Mice.",
+"year": "2023",
+"journal": "Thromb Haemost"
+},
+{
+"pmid": "36860644",
+"title": "A label-free LC/MS-based enzymatic activity assay for the detection of PDE5A inhibitors.",
+"year": "2023",
+"journal": "Front Chem"
+},
+{
+"pmid": "18040025",
+"title": "Phosphodiesterase type 5: expanding roles in cardiovascular regulation.",
+"year": "2007",
+"journal": "Circ Res"
+}
+],
+"contrary": [
+{
+"pmid": "22447941",
+"title": "Adenoviral short hairpin RNA therapy targeting phosphodiesterase 5a relieves cardiac remodeling and dysfunction following myocardial infarction.",
+"year": "2012",
+"journal": "Am J Physiol Heart Circ Physiol",
+"cue": "no significant",
+"snippet": "…kinase G (PKG) were activated with concomitant reduction in caspase-3 activity. However, no significant change in PKA and cAMP activities were observed in Ad-shPDE5a-treated hearts. Inhibition…"
+}
+]
+},
+"ssc_M3_006": {
+"support": [
+{
+"pmid": "35013299",
+"title": "Single cell transcriptomic landscape of diabetic foot ulcers.",
+"year": "2022",
+"journal": "Nat Commun"
+},
+{
+"pmid": "38342630",
+"title": "Inflammatory Fibroblast-Like Synoviocyte-Derived Exosomes Aggravate Osteoarthritis via Enhancing Macrophage Glycolysis.",
+"year": "2024",
+"journal": "Adv Sci (Weinh)"
+},
+{
+"pmid": "35220880",
+"title": "A defective lysophosphatidic acid-autophagy axis increases miscarriage risk by restricting decidual macrophage residence.",
+"year": "2022",
+"journal": "Autophagy"
+},
+{
+"pmid": "36300763",
+"title": "Ablation of endothelial Atg7 inhibits ischemia-induced angiogenesis by upregulating Stat1 that suppresses Hif1a expression.",
+"year": "2023",
+"journal": "Autophagy"
+},
+{
+"pmid": "39772774",
+"title": "Hypoxia-inducible factor 2 regulates alveolar regeneration after repetitive injury in three-dimensional cellular and in vivo models.",
+"year": "2025",
+"journal": "Sci Transl Med"
+}
+],
+"contrary": [
+{
+"pmid": "37666859",
+"title": "Exploring the role and mechanism of Astragalus membranaceus and radix paeoniae rubra in idiopathic pulmonary fibrosis through network pharmacology and experimental validation.",
+"year": "2023",
+"journal": "Sci Rep",
+"cue": "no effect",
+"snippet": "…ry fibrosis (IPF) is a chronic, progressive fibrotic disease with an unclear etiology and no effective treatment. This study aims to elucidate the pathogenic mechanism networks involving mu…"
+},
+{
+"pmid": "35802383",
+"title": "Hypoxia-Induced Scleral HIF-2α Upregulation Contributes to Rises in MMP-2 Expression and Myopia Development in Mice.",
+"year": "2022",
+"journal": "Invest Ophthalmol Vis Sci",
+"cue": "did not",
+"snippet": "…1α knockdown also significantly suppressed FD-induced declines in COL1α1 accumulation, it did not abrogate scleral MMP-2 upregulation. HIF-2α rather than HIF-1α induces myopia development…"
+}
+]
+},
+"ssc_M3_007": {
+"support": [
+{
+"pmid": "28423608",
+"title": "Anthracyclines suppress pheochromocytoma cell characteristics, including metastasis, through inhibition of the hypoxia signaling pathway.",
+"year": "2017",
+"journal": "Oncotarget"
+},
+{
+"pmid": "23472125",
+"title": "Altered subcellular localization of heat shock protein 90 is associated with impaired expression of the aryl hydrocarbon receptor pathway in dogs.",
+"year": "2013",
+"journal": "PLoS One"
+}
+],
+"contrary": [
+{
+"pmid": "25375852",
+"title": "Transcriptomic changes triggered by hypoxia: evidence for HIF-1α-independent, [Na+]i/[K+]i-mediated, excitation-transcription coupling.",
+"year": "2014",
+"journal": "PLoS One",
+"cue": "In contrast",
+"snippet": "…Per2 mRNAs and sharply diminished augmentation expression of Klf10, Edn1, Nr4a1 and Hes1. In contrast to low-Na+, high-K+ medium, RASMC transfection with Hif-1a siRNA attenuated increments of…"
+},
+{
+"pmid": "26577025",
+"title": "Steroid hormones, prostanoids, and angiogenic systems during rescue of the corpus luteum in pigs.",
+"year": "2016",
+"journal": "Reproduction",
+"cue": "in contrast",
+"snippet": "…the synthesis of progesterone by cultured luteal slices obtained on day 14 of pregnancy, in contrast to the action of PGF2 α on the corresponding day of the estrous cycle. PGE2 stimulated cA…"
+}
+]
+},
+"ssc_M3_008": {
+"support": [
+{
+"pmid": "38029740",
+"title": "VEGFA mRNA-LNP promotes biliary epithelial cell-to-hepatocyte conversion in acute and chronic liver diseases and reverses steatosis and fibrosis.",
+"year": "2023",
+"journal": "Cell Stem Cell"
+},
+{
+"pmid": "40843133",
+"title": "VEGF Signal Complexity Confers Resistance to Atezolizumab, Bevacizumab, Carboplatin, and Paclitaxel in EGFR-Tyrosine Kinase Inhibitor-Resistant Non-Small Cell Lung Cancer.",
+"year": "2025",
+"journal": "MedComm (2020)"
+},
+{
+"pmid": "39479394",
+"title": "Identifying HIF1A and HGF as two hub genes in aortic dissection and function analysis by integrating RNA sequencing and single-cell RNA sequencing data.",
+"year": "2024",
+"journal": "Front Cardiovasc Med"
+},
+{
+"pmid": "38020087",
+"title": "Axitinib targets cardiac fibrosis in pressure overload-induced heart failure through VEGFA-KDR pathway.",
+"year": "2023",
+"journal": "Front Med (Lausanne)"
+},
+{
+"pmid": "35441149",
+"title": "Placental vascularization in middle and late gestation in the pig.",
+"year": "2022",
+"journal": "Reprod Fertil"
+},
+{
+"pmid": "37131823",
+"title": "VEGFA mRNA-LNP promotes biliary epithelial cell-to-hepatocyte conversion in acute and chronic liver diseases and reverses steatosis and fibrosis.",
+"year": "2023",
+"journal": "bioRxiv"
+}
+],
+"contrary": []
+},
+"ssc_M3_009": {
+"support": [],
+"contrary": []
+},
+"ssc_M3_010": {
+"support": [],
+"contrary": []
+},
+"ssc_M3_011": {
+"support": [
+{
+"pmid": "32226439",
+"title": "A Computational Model of the Endothelial to Mesenchymal Transition.",
+"year": "2020",
+"journal": "Front Genet"
+},
+{
+"pmid": "33963183",
+"title": "Sox9 and Rbpj differentially regulate endothelial to mesenchymal transition and wound scarring in murine endovascular progenitors.",
+"year": "2021",
+"journal": "Nat Commun"
+},
+{
+"pmid": "27503671",
+"title": "Differential effect of hypoxia on early endothelial-mesenchymal transition response to transforming growth beta isoforms 1 and 2.",
+"year": "2016",
+"journal": "Microvasc Res"
+}
+],
+"contrary": [
+{
+"pmid": "40349322",
+"title": "Endothelial-to-mesenchymal transition in the fetoplacental macrovasculature and microvasculature in pregnancies complicated by gestational diabetes.",
+"year": "2026",
+"journal": "J Physiol",
+"cue": "no change",
+"snippet": "…nied by a reduction in EndMT regulators SNAI2, TGB2, TGFB3 and TGFBR2; however, there was no change in mesenchymal markers or other EndMT regulators. This suggests that there may be some al…"
+},
+{
+"pmid": "34837068",
+"title": "Mechanical strain triggers endothelial-to-mesenchymal transition of the endocardium in the immature heart.",
+"year": "2022",
+"journal": "Pediatr Res",
+"cue": "no effect",
+"snippet": "…of endothelial-to-mesenchymal transition (EndMT) in endocardial endothelial cells but has no effect in mature hearts. Local inhibition through either rebalancing the TGF-β/BMP pathway or wi…"
+}
+]
+},
+"ssc_M3_012": {
+"support": [
+{
+"pmid": "29412104",
+"title": "Radiation-Induced Pulmonary Epithelial-Mesenchymal Transition: A Review on Targeting Molecular Pathways and Mediators.",
+"year": "2018",
+"journal": "Curr Drug Targets"
+},
+{
+"pmid": "26905733",
+"title": "Regulation of epithelial-mesenchymal transition through epigenetic and post-translational modifications.",
+"year": "2016",
+"journal": "Mol Cancer"
+},
+{
+"pmid": "30021582",
+"title": "Epithelial mesenchymal transition (EMT): a universal process in lung diseases with implications for cystic fibrosis pathophysiology.",
+"year": "2018",
+"journal": "Respir Res"
+},
+{
+"pmid": "37922232",
+"title": "Human dermal fibroblast subpopulations and epithelial mesenchymal transition signals in hidradenitis suppurativa tunnels are normalized by spleen tyrosine kinase antagonism in vivo.",
+"year": "2023",
+"journal": "PLoS One"
+}
+],
+"contrary": [
+{
+"pmid": "38904007",
+"title": "Coenzyme Q0 inhibited the NLRP3 inflammasome, metastasis/EMT, and Warburg effect by suppressing hypoxia-induced HIF-1α expression in HNSCC cells.",
+"year": "2024",
+"journal": "Int J Biol Sci",
+"cue": "attenuated fibrosis",
+"snippet": "…, ALDH1, and OCT4) under normoxia and/or hypoxia. Further, in IL-6-treated SG cells, CoQ0 attenuated fibrosis by inhibiting TGF-β and Collagen I expression and suppressed EMT by downregulating Slug a…"
+},
+{
+"pmid": "23975425",
+"title": "N-cadherin/FGFR promotes metastasis through epithelial-to-mesenchymal transition and stem/progenitor cell-like properties.",
+"year": "2014",
+"journal": "Oncogene",
+"cue": "did not",
+"snippet": "…ppressed cyclin D1 expression, cell proliferation and stem/progenitor cell properties, it did not affect invasion or EMT. Conversely, AKT inhibition suppressed invasion through Akt 2 atte…"
+},
+{
+"pmid": "39451219",
+"title": "β-Mangostin Alleviates Renal Tubulointerstitial Fibrosis via the TGF-β1/JNK Signaling Pathway.",
+"year": "2024",
+"journal": "Cells",
+"cue": "antifibrotic",
+"snippet": "…is a xanthone derivative obtained from mangosteens that is involved in the generation of antifibrotic and anti-oxidation effects. The purpose of this study was to examine the effects of β-Mag…"
+},
+{
+"pmid": "29609658",
+"title": "Sulforaphane attenuates pulmonary fibrosis by inhibiting the epithelial-mesenchymal transition.",
+"year": "2018",
+"journal": "BMC Pharmacol Toxicol",
+"cue": "no effect",
+"snippet": "Idiopathic pulmonary fibrosis (IPF) is a progressive and fatal disease with no effective treatment. The epithelial-mesenchymal transition (EMT) is a critical stage during the…"
+},
+{
+"pmid": "37375218",
+"title": "Vincamine Ameliorates Epithelial-Mesenchymal Transition in Bleomycin-Induced Pulmonary Fibrosis in Rats; Targeting TGF-β/MAPK/Snai1 Pathway.",
+"year": "2023",
+"journal": "Molecules",
+"cue": "protective",
+"snippet": "…eaves of Vinca minor and acts as a vasodilator. The present study aims to investigate the protective activity of vincamine against EMT in bleomycin (BLM)-induced pulmonary fibrosis via asses…"
+}
+]
+},
+"ssc_M3_013": {
+"support": [
+{
+"pmid": "37461061",
+"title": "TGF-β1 dominates stromal fibroblast-mediated EMT via the FAP/VCAN axis in bladder cancer cells.",
+"year": "2023",
+"journal": "J Transl Med"
+},
+{
+"pmid": "30419872",
+"title": "Stromal fibroblast activation protein alpha promotes gastric cancer progression via epithelial-mesenchymal transition through Wnt/ β-catenin pathway.",
+"year": "2018",
+"journal": "BMC Cancer"
+},
+{
+"pmid": "39011470",
+"title": "Architectural organization and molecular profiling of 3D cancer heterospheroids and their application in drug testing.",
+"year": "2024",
+"journal": "Front Oncol"
+},
+{
+"pmid": "37907991",
+"title": "Changes of immune microenvironment in head and neck squamous cell carcinoma in 3D-4-culture compared to 2D-4-culture.",
+"year": "2023",
+"journal": "J Transl Med"
+},
+{
+"pmid": "38391973",
+"title": "Pharmacological Stimulation of Soluble Guanylate Cyclase Counteracts the Profibrotic Activation of Human Conjunctival Fibroblasts.",
+"year": "2024",
+"journal": "Cells"
+},
+{
+"pmid": "38920695",
+"title": "Blockade of Sialylation with Decrease in Polysialic Acid Levels Counteracts Transforming Growth Factor β1-Induced Skin Fibroblast-to-Myofibroblast Transition.",
+"year": "2024",
+"journal": "Cells"
+}
+],
+"contrary": [
+{
+"pmid": "39941052",
+"title": "Skin Telocyte Secretome as Conditioned Medium Prevents Profibrotic Differentiation of Skin Fibroblasts into Myofibroblasts.",
+"year": "2025",
+"journal": "Int J Mol Sci",
+"cue": "did not",
+"snippet": "…able to significantly prevent TGFβ1-induced fibroblast-to-myofibroblast transition. TC-CM did not influence cell viability, while it effectively inhibited TGFβ1-induced fibroblast prolife…"
+},
+{
+"pmid": "20646316",
+"title": "TWIST1 promotes invasion through mesenchymal change in human glioblastoma.",
+"year": "2010",
+"journal": "Mol Cancer",
+"cue": "did not",
+"snippet": "…GBM invasion included SNAI2, MMP2, HGF, FAP and FN1. Distinct from carcinoma EMT, TWIST1 did not generate an E- to N-cadherin \"switch\" in GBM cell lines. The clinical relevance of putati…"
+}
+]
+},
+"ssc_M3_014": {
+"support": [
+{
+"pmid": "16947426",
+"title": "Cloprostenol, a prostaglandin F(2alpha) analog, induces hypoxia in rat placenta: BOLD contrast MRI.",
+"year": "2007",
+"journal": "NMR Biomed"
+}
+],
+"contrary": []
+},
+"ssc_M4_001": {
+"support": [
+{
+"pmid": "33453147",
+"title": "Inhibition of vascular adhesion protein-1 enhances the anti-tumor effects of immune checkpoint inhibitors.",
+"year": "2021",
+"journal": "Cancer Sci"
+}
+],
+"contrary": []
+},
+"ssc_M4_002": {
+"support": [
+{
+"pmid": "41740930",
+"title": "Comprehensive single-cell transcriptomic profiling of the scalp from patients with moderate-to-severe alopecia areata.",
+"year": "2026",
+"journal": "J Allergy Clin Immunol"
+}
+],
+"contrary": []
+},
+"ssc_M4_003": {
+"support": [
+{
+"pmid": "33453147",
+"title": "Inhibition of vascular adhesion protein-1 enhances the anti-tumor effects of immune checkpoint inhibitors.",
+"year": "2021",
+"journal": "Cancer Sci"
+}
+],
+"contrary": []
+},
+"ssc_M4_004": {
+"support": [
+{
+"pmid": "38773979",
+"title": "Cancer-associated fibroblast-derived periostin promotes papillary thyroid tumor growth through integrin-FAK-STAT3 signaling.",
+"year": "2024",
+"journal": "Theranostics"
+},
+{
+"pmid": "39781451",
+"title": "USP25 stabilizes STAT6 to promote IL-4-induced macrophage M2 polarization and fibrosis.",
+"year": "2025",
+"journal": "Int J Biol Sci"
+},
+{
+"pmid": "36757802",
+"title": "IL-13RA2 downregulation in fibroblasts promotes keloid fibrosis via JAK/STAT6 activation.",
+"year": "2023",
+"journal": "JCI Insight"
+},
+{
+"pmid": "37029114",
+"title": "Enhancer of zeste homolog 2 promotes renal fibrosis after acute kidney injury by inducing epithelial-mesenchymal transition and activation of M2 macrophage polarization.",
+"year": "2023",
+"journal": "Cell Death Dis"
+},
+{
+"pmid": "40673883",
+"title": "STAT6 Activation Exacerbates Ferroptosis in Airway Epithelium by Inhibiting PRKN-Mediated Mitophagy in Pulmonary Fibrosis.",
+"year": "2025",
+"journal": "Adv Sci (Weinh)"
+},
+{
+"pmid": "37316763",
+"title": "Autosomal Dominant STAT6 Gain of Function Causes Severe Atopy Associated with Lymphoma.",
+"year": "2023",
+"journal": "J Clin Immunol"
+}
+],
+"contrary": [
+{
+"pmid": "38773984",
+"title": "Nicotinamide phosphoribosyltransferase prompts bleomycin-induced pulmonary fibrosis by driving macrophage M2 polarization in mice.",
+"year": "2024",
+"journal": "Theranostics",
+"cue": "protective",
+"snippet": "…ubsequent pulmonary reinfusion of IL-4-induced M2 BMDMs from wild-type mice, reversed the protective effect of monocyte/macrophage NAMPT-deletion on lung fibrosis. In vitro experiments confi…"
+},
+{
+"pmid": "33144678",
+"title": "IL-24 deficiency protects mice against bleomycin-induced pulmonary fibrosis by repressing IL-4-induced M2 program in macrophages.",
+"year": "2021",
+"journal": "Cell Death Differ",
+"cue": "did not",
+"snippet": "…M2 macrophage infiltration in the lung of BLM-induced mice. Mechanistically, IL-24 alone did not show a perceptible impact on the induction of M2 macrophages, but it synergized with IL-4…"
+}
+]
+},
+"ssc_M4_005": {
+"support": [],
+"contrary": [
+{
+"pmid": "30458613",
+"title": "Attenuating Effects of Nortrachelogenin on IL-4 and IL-13 Induced Alternative Macrophage Activation and on Bleomycin-Induced Dermal Fibrosis.",
+"year": "2018",
+"journal": "J Agric Food Chem",
+"cue": "no effect",
+"snippet": "…ibition of arginase 1 at 10 μM). Nortrachelogenin also decreased PPARγ expression but had no effect on STAT6 phosphorylation. In vivo, nortrachelogenin reduced bleomycin-induced increase in…"
+},
+{
+"pmid": "32471168",
+"title": "RELMα is Induced in Airway Epithelial Cells by Oncostatin M Without Requirement of STAT6 or IL-6 in Mouse Lungs In Vivo.",
+"year": "2020",
+"journal": "Cells",
+"cue": "not required",
+"snippet": "…kine) induced RELMα, but at significantly lower levels. IL-6 (assessing IL-6-/- mice) was not required, nor was STAT6 (IL-4/13 canonical signalling) for AdOSM-induction of RELMα in AEC. AEC re…"
+}
+]
+},
+"ssc_M4_006": {
+"support": [
+{
+"pmid": "39609127",
+"title": "Hypoxia-inducible factor 2α promotes pathogenic polarization of stem-like Th2 cells via modulation of phospholipid metabolism.",
+"year": "2024",
+"journal": "Immunity"
+},
+{
+"pmid": "40131363",
+"title": "CFTR negatively reprograms Th2 cell responses, and CFTR potentiation restrains allergic airway inflammation.",
+"year": "2025",
+"journal": "JCI Insight"
+},
+{
+"pmid": "39366933",
+"title": "Tumor draining lymph nodes connected to cold triple-negative breast cancers are characterized by Th2-associated microenvironment.",
+"year": "2024",
+"journal": "Nat Commun"
+},
+{
+"pmid": "26023586",
+"title": "Role of IL-25 in Immunity.",
+"year": "2015",
+"journal": "J Clin Diagn Res"
+},
+{
+"pmid": "40689016",
+"title": "Oncostatin M Drives Th2 Polarized Allergic Airway Inflammation Through Fibroblast Reprogramming and Endoplasmic Reticulum Stress.",
+"year": "2025",
+"journal": "Int J Nanomedicine"
+},
+{
+"pmid": "38935935",
+"title": "The Differentially Expressed Genes Responsible for the Development of T Helper 9 Cells From T Helper 2 Cells in Various Disease States: Immuno-Interactomics Study.",
+"year": "2023",
+"journal": "JMIR Bioinform Biotechnol"
+}
+],
+"contrary": [
+{
+"pmid": "40631071",
+"title": "REGULATORY T CELLS PROTECT AGAINST ABERRANT REMODELING IN A MOUSE MODEL OF PULMONARY FIBROSIS.",
+"year": "2025",
+"journal": "bioRxiv",
+"cue": "protective",
+"snippet": "…nchymal-epithelial signaling crosstalk is present in the distal lung wherein Tregs play a protective role by limiting fibrosis and promoting tissue repair, highlighting their broader functio…"
+},
+{
+"pmid": "22222821",
+"title": "Pirfenidone restricts Th2 differentiation in vitro and limits Th2 response in experimental liver fibrosis.",
+"year": "2012",
+"journal": "Eur J Pharmacol",
+"cue": "anti-fibrotic",
+"snippet": "…elper type 2 (Th2) response is linked with fibrosis. Here, we evaluated the effect of the anti-fibrotic agent pirfenidone on Th type 1 (Th1) and Th2 responses. For in vivo testing; Wistar rats…"
+},
+{
+"pmid": "41461253",
+"title": "Regulatory T cells protect against aberrant remodeling in a mouse model of pulmonary fibrosis.",
+"year": "2026",
+"journal": "Mucosal Immunol",
+"cue": "protective",
+"snippet": "…nchymal-epithelial signaling crosstalk is present in the distal lung wherein Tregs play a protective role by limiting fibrosis and promoting tissue repair, highlighting their broader functio…"
+}
+]
+},
+"ssc_M4_007": {
+"support": [
+{
+"pmid": "34563671",
+"title": "Molecular cloning and expression analysis of CD79a and CD79b in rainbow trout (Oncorhynchus mykiss) after bacterial, parasitic, and viral infection.",
+"year": "2021",
+"journal": "Fish Shellfish Immunol"
+}
+],
+"contrary": [
+{
+"pmid": "35321883",
+"title": "Preclinical Analysis of Candidate Anti-Human CD79 Therapeutic Antibodies Using a Humanized CD79 Mouse Model.",
+"year": "2022",
+"journal": "J Immunol",
+"cue": "does not",
+"snippet": "…unctionally interchangeable, and that anti-human CD79 lacking Fc region effector function does not cause significant B cell depletion, but induces 1) decreased expression of plasma membran…"
+}
+]
+},
+"ssc_M4_008": {
+"support": [],
+"contrary": []
+},
+"ssc_M4_009": {
+"support": [],
+"contrary": []
+},
+"ssc_M4_010": {
+"support": [
+{
+"pmid": "36481267",
+"title": "Neutrophilic granulocyte-derived B-cell activating factor supports B cells in skin lesions in hidradenitis suppurativa.",
+"year": "2023",
+"journal": "J Allergy Clin Immunol"
+},
+{
+"pmid": "16276047",
+"title": "[The role of BAFF in autoimmune diseases].",
+"year": "2005",
+"journal": "Nihon Rinsho Meneki Gakkai Kaishi"
+},
+{
+"pmid": "18474519",
+"title": "Interferon-beta increases BAFF levels in multiple sclerosis: implications for B cell autoimmunity.",
+"year": "2008",
+"journal": "Brain"
+},
+{
+"pmid": "10801128",
+"title": "TACI and BCMA are receptors for a TNF homologue implicated in B-cell autoimmune disease.",
+"year": "2000",
+"journal": "Nature"
+},
+{
+"pmid": "25466610",
+"title": "APRIL promotes proliferation, secretion and invasion of fibroblast-like synoviocyte from rats with adjuvant induced arthritis.",
+"year": "2015",
+"journal": "Mol Immunol"
+},
+{
+"pmid": "19828625",
+"title": "Adipocytes as immune cells: differential expression of TWEAK, BAFF, and APRIL and their receptors (Fn14, BAFF-R, TACI, and BCMA) at different stages of normal and pathological adipose tissue development.",
+"year": "2009",
+"journal": "J Immunol"
+}
+],
+"contrary": [
+{
+"pmid": "31964950",
+"title": "Positive and negative cooperativity of TNF and Interferon-γ in regulating synovial fibroblast function and B cell survival in fibroblast/B cell co-cultures.",
+"year": "2020",
+"journal": "Sci Rep",
+"cue": "did not",
+"snippet": "…IL-8 production but decreased TNF-induced IL-6 production, whereas APRIL, BAFF and leptin did not modulate TNF or TNF/IFN-γ-induced proliferation or cytokine production. Proliferation was…"
+},
+{
+"pmid": "27196292",
+"title": "CP-25 attenuates the inflammatory response of fibroblast-like synoviocytes co-cultured with BAFF-activated CD4(+) T cells.",
+"year": "2016",
+"journal": "J Ethnopharmacol",
+"cue": "no change",
+"snippet": "…anced in the mesenteric lymph nodes of AA rats, TACI expression was reduced, and BCMA had no change. The expression of BAFF-R in CD4(+) T cells was also enhanced. CP-25 alleviated the joint…"
+}
+]
+},
+"ssc_M4_011": {
+"support": [
+{
+"pmid": "39875809",
+"title": "Myricetin exposure reduces PC differentiation in vitro in primary human B cells.",
+"year": "2025",
+"journal": "Mol Med"
+}
+],
+"contrary": []
+},
+"ssc_crosstalk_002": {
+"support": [
+{
+"pmid": "38167034",
+"title": "Single-cell RNA-seq analysis decodes the kidney microenvironment induced by polystyrene microplastics in mice receiving a high-fat diet.",
+"year": "2024",
+"journal": "J Nanobiotechnology"
+},
+{
+"pmid": "34986347",
+"title": "CXCL4 drives fibrosis by promoting several key cellular and molecular processes.",
+"year": "2022",
+"journal": "Cell Rep"
+},
+{
+"pmid": "39025985",
+"title": "Proteomic screening identifies PF4/Cxcl4 as a critical driver of myelofibrosis.",
+"year": "2024",
+"journal": "Leukemia"
+},
+{
+"pmid": "39464886",
+"title": "Efferocytosis dysfunction in CXCL4-induced M4 macrophages: phenotypic insights in systemic sclerosis in vitro and in vivo.",
+"year": "2024",
+"journal": "Front Immunol"
+},
+{
+"pmid": "40141068",
+"title": "The Role of CXCL4 in Systemic Sclerosis: DAMP, Auto-Antigen and Biomarker.",
+"year": "2025",
+"journal": "Int J Mol Sci"
+},
+{
+"pmid": "39707183",
+"title": "CXCL4 deficiency limits M4 macrophage infiltration and attenuates hyperoxia-induced lung injury.",
+"year": "2024",
+"journal": "Mol Med"
+}
+],
+"contrary": [
+{
+"pmid": "36807143",
+"title": "Platelet-instructed SPP1+ macrophages drive myofibroblast activation in fibrosis in a CXCL4-dependent manner.",
+"year": "2023",
+"journal": "Cell Rep",
+"cue": "independent of",
+"snippet": "Fibrosis represents the common end stage of chronic organ injury independent of the initial insult, destroying tissue architecture and driving organ failure. Here we dis…"
+},
+{
+"pmid": "40072075",
+"title": "Pro-Fibrotic Macrophage Subtypes: SPP1+ Macrophages as a Key Player and Therapeutic Target in Cardiac Fibrosis?",
+"year": "2025",
+"journal": "Cells",
+"cue": "reduced fibrosis",
+"snippet": "…key pathways involved in macrophage differentiation. These interventions have effectively reduced fibrosis and improved cardiac function in animal models. The mechanisms underlying SPP1+ macrophag…"
+},
+{
+"pmid": "41337540",
+"title": "Dysregulated alveolar type 2 epithelial cell proteostasis promotes fibrogenic macrophage migration inhibitory factor-CD74 signaling.",
+"year": "2025",
+"journal": "Sci Transl Med",
+"cue": "attenuated fibrosis",
+"snippet": "…fluid (BALF) in the model. Global or conditional AEC2-specific deletions of Mif or Mif-2 attenuated fibrosis in the bleomycin-treated mouse model, as did conditional deletions of Cd74, the cognate r…"
+},
+{
+"pmid": "36614095",
+"title": "CXCL4-RNA Complexes Circulate in Systemic Sclerosis and Amplify Inflammatory/Pro-Fibrotic Responses by Myeloid Dendritic Cells.",
+"year": "2022",
+"journal": "Int J Mol Sci",
+"cue": "In contrast",
+"snippet": "…IL-23, IL-8, and pro-collagen, mainly in a TLR7/8-dependent but CXCR3-independent manner. In contrast, MDDCs produced IL-6 and fibronectin independently in their CXCL4 RNA-binding ability. Th…"
+}
+]
+},
+"ssc_crosstalk_003": {
+"support": [
+{
+"pmid": "37946666",
+"title": "Single-Cell Profiling of Bone Marrow B Cells and Early B Cell Developmental Disorders Associated With Systemic Lupus Erythematosus.",
+"year": "2024",
+"journal": "Arthritis Rheumatol"
+},
+{
+"pmid": "40467564",
+"title": "MBD2 promotes B cell differentiation and BCR signaling in systemic lupus erythematosus by regulating the LEF-1-PTEN-PI3K axis.",
+"year": "2025",
+"journal": "Cell Death Dis"
+},
+{
+"pmid": "26728039",
+"title": "Roles of Interferon Regulatory Factors in Chronic Myeloid Leukemia.",
+"year": "2016",
+"journal": "Curr Cancer Drug Targets"
+},
+{
+"pmid": "42072684",
+"title": "Type I Interferons as Contextual Regulators of B-Cell Tolerance in Type 1 Diabetes.",
+"year": "2026",
+"journal": "Biomolecules"
+},
+{
+"pmid": "26821304",
+"title": "Btk inhibition treats TLR7/IFN driven murine lupus.",
+"year": "2016",
+"journal": "Clin Immunol"
+}
+],
+"contrary": []
+},
+"ssc_crosstalk_004": {
+"support": [
+{
+"pmid": "36140747",
+"title": "Senescent Fibroblasts Generate a CAF Phenotype through the Stat3 Pathway.",
+"year": "2022",
+"journal": "Genes (Basel)"
+},
+{
+"pmid": "37563850",
+"title": "Molecular and immune signatures, and pathological trajectories of fatal COVID-19 lungs defined by in situ spatial single-cell transcriptome analysis.",
+"year": "2023",
+"journal": "J Med Virol"
+},
+{
+"pmid": "32827326",
+"title": "Co-cultured bone marrow mesenchymal stem cells repair thioacetamide-induced hepatocyte damage.",
+"year": "2020",
+"journal": "Cell Biol Int"
+},
+{
+"pmid": "28992339",
+"title": "STAT3 inhibition attenuates the progressive phenotypes of Alport syndrome mouse model.",
+"year": "2018",
+"journal": "Nephrol Dial Transplant"
+},
+{
+"pmid": "38286349",
+"title": "Identification of STAT3 as a biomarker for cellular senescence in liver fibrosis: A bioinformatics and experimental validation study.",
+"year": "2024",
+"journal": "Genomics"
+},
+{
+"pmid": "35628356",
+"title": "ASC-J9 Blocks Cell Proliferation and Extracellular Matrix Production of Keloid Fibroblasts through Inhibiting STAT3 Signaling.",
+"year": "2022",
+"journal": "Int J Mol Sci"
+}
+],
+"contrary": [
+{
+"pmid": "30935693",
+"title": "A novel STAT3 inhibitor, STX-0119, attenuates liver fibrosis by inactivating hepatic stellate cells in mice.",
+"year": "2019",
+"journal": "Biochem Biophys Res Commun",
+"cue": "anti-fibrotic",
+"snippet": "…erization, which is required for nuclear localization of STAT3. We first investigated the anti-fibrotic effect of STX-0119 in in vitro experiments. Exposure to STX-0119 inhibited the nuclear lo…"
+},
+{
+"pmid": "38864415",
+"title": "Multi-omics analysis of kidney tissue metabolome and proteome reveals the protective effect of sheep milk against adenine-induced chronic kidney disease in mice.",
+"year": "2024",
+"journal": "Food Funct",
+"cue": "protective",
+"snippet": "…ion, oxidative stress, and fibrosis. Sheep milk contains several bioactive molecules with protective effects against inflammation and oxidative stress. In the current study, we investigated…"
+},
+{
+"pmid": "25740948",
+"title": "Noncanonical STAT3 activation regulates excess TGF-β1 and collagen I expression in muscle of stricturing Crohn's disease.",
+"year": "2015",
+"journal": "J Immunol",
+"cue": "unaffected",
+"snippet": "…orylation emerged: high STAT3(S727) and low STAT3(Y705) in strictures and the opposite in unaffected intestine. TGFB1 transcriptional activity was regulated by phospho-STAT3(S727) and was de…"
+}
+]
+},
+"ssc_crosstalk_005": {
+"support": [],
+"contrary": [
+{
+"pmid": "41512274",
+"title": "STL1267 inhibits myofibroblast differentiation in a TGFβ1-driven human lung fibroblast model.",
+"year": "2026",
+"journal": "Am J Physiol Cell Physiol",
+"cue": "antifibrotic",
+"snippet": "…ein TGFβ1 in primary normal human lung fibroblasts. Using this model, we investigated the antifibrotic potential of STL1267, a next-generation REV-ERBα agonist with improved potency, specifici…"
+},
+{
+"pmid": "38168149",
+"title": "Modelling bronchial epithelial-fibroblast cross-talk in idiopathic pulmonary fibrosis (IPF) using a human-derived in vitro air liquid interface (ALI) culture.",
+"year": "2024",
+"journal": "Sci Rep",
+"cue": "In contrast",
+"snippet": "…upregulation of EMT (COL1A1, FN1, VIM, ASMA) and senescence (P21) markers, respectively. In contrast, direct NHLF/NHBE co-culture indicated a protective role of epithelial-fibroblastic cross…"
+},
+{
+"pmid": "30654796",
+"title": "Loss of the adhesion G-protein coupled receptor ADGRF5 in mice induces airway inflammation and the expression of CCL2 in lung endothelial cells.",
+"year": "2019",
+"journal": "Respir Res",
+"cue": "In contrast",
+"snippet": "…d type 2 immune response (Il4, Il5, Il13, IL-25, and IL-33) at 12 and/or 30 weeks of age. In contrast, mRNA expression of Ccl2, S100a8, and S100a9 was upregulated in embryonic or neonatal Adg…"
+},
+{
+"pmid": "28679671",
+"title": "Breast Regression Protein-39/Chitinase 3-Like 1 Promotes Renal Fibrosis after Kidney Injury via Activation of Myofibroblasts.",
+"year": "2017",
+"journal": "J Am Soc Nephrol",
+"cue": "did not",
+"snippet": "…otic growth factors, and decreased accumulation of extracellular matrix. BRP-39 depletion did not affect myofibroblast accumulation but did attenuate myofibroblast expression of Col1a1, C…"
+}
+]
+},
+"ssc_crosstalk_006": {
+"support": [],
+"contrary": []
+},
+"ssc_crosstalk_007": {
+"support": [
+{
+"pmid": "37461061",
+"title": "TGF-β1 dominates stromal fibroblast-mediated EMT via the FAP/VCAN axis in bladder cancer cells.",
+"year": "2023",
+"journal": "J Transl Med"
+},
+{
+"pmid": "30419872",
+"title": "Stromal fibroblast activation protein alpha promotes gastric cancer progression via epithelial-mesenchymal transition through Wnt/ β-catenin pathway.",
+"year": "2018",
+"journal": "BMC Cancer"
+},
+{
+"pmid": "39011470",
+"title": "Architectural organization and molecular profiling of 3D cancer heterospheroids and their application in drug testing.",
+"year": "2024",
+"journal": "Front Oncol"
+},
+{
+"pmid": "37907991",
+"title": "Changes of immune microenvironment in head and neck squamous cell carcinoma in 3D-4-culture compared to 2D-4-culture.",
+"year": "2023",
+"journal": "J Transl Med"
+},
+{
+"pmid": "38391973",
+"title": "Pharmacological Stimulation of Soluble Guanylate Cyclase Counteracts the Profibrotic Activation of Human Conjunctival Fibroblasts.",
+"year": "2024",
+"journal": "Cells"
+},
+{
+"pmid": "38920695",
+"title": "Blockade of Sialylation with Decrease in Polysialic Acid Levels Counteracts Transforming Growth Factor β1-Induced Skin Fibroblast-to-Myofibroblast Transition.",
+"year": "2024",
+"journal": "Cells"
+}
+],
+"contrary": [
+{
+"pmid": "39941052",
+"title": "Skin Telocyte Secretome as Conditioned Medium Prevents Profibrotic Differentiation of Skin Fibroblasts into Myofibroblasts.",
+"year": "2025",
+"journal": "Int J Mol Sci",
+"cue": "did not",
+"snippet": "…able to significantly prevent TGFβ1-induced fibroblast-to-myofibroblast transition. TC-CM did not influence cell viability, while it effectively inhibited TGFβ1-induced fibroblast prolife…"
+},
+{
+"pmid": "20646316",
+"title": "TWIST1 promotes invasion through mesenchymal change in human glioblastoma.",
+"year": "2010",
+"journal": "Mol Cancer",
+"cue": "did not",
+"snippet": "…GBM invasion included SNAI2, MMP2, HGF, FAP and FN1. Distinct from carcinoma EMT, TWIST1 did not generate an E- to N-cadherin \"switch\" in GBM cell lines. The clinical relevance of putati…"
+}
+]
+},
+"ssc_crosstalk_008": {
+"support": [
+{
+"pmid": "37752256",
+"title": "HK-2 cell response to TGF-β highly depends on cell culture medium formulations.",
+"year": "2024",
+"journal": "Histochem Cell Biol"
+},
+{
+"pmid": "38311169",
+"title": "MCPIP1 Inhibits Hepatic Stellate Cell Activation in Autocrine and Paracrine Manners, Preventing Liver Fibrosis.",
+"year": "2024",
+"journal": "Cell Mol Gastroenterol Hepatol"
+},
+{
+"pmid": "36250997",
+"title": "CD133-Src-TAZ signaling stimulates ductal fibrosis following DDC diet-induced liver injury.",
+"year": "2022",
+"journal": "J Cell Physiol"
+},
+{
+"pmid": "30586711",
+"title": "LMO7 Is a Negative Feedback Regulator of Transforming Growth Factor β Signaling and Fibrosis.",
+"year": "2019",
+"journal": "Circulation"
+},
+{
+"pmid": "37762068",
+"title": "High Salt Promotes Inflammatory and Fibrotic Response in Peritoneal Cells.",
+"year": "2023",
+"journal": "Int J Mol Sci"
+},
+{
+"pmid": "41772008",
+"title": "Cardiomyocyte-derived TGFB3 attenuates cardiac fibrosis and preserves cardiac function in heart failure.",
+"year": "2026",
+"journal": "Sci Rep"
+}
+],
+"contrary": [
+{
+"pmid": "35491858",
+"title": "Tubular cells produce FGF2 via autophagy after acute kidney injury leading to fibroblast activation and renal fibrosis.",
+"year": "2023",
+"journal": "Autophagy",
+"cue": "reduced fibrosis",
+"snippet": "…y deficiency induced after AKI suppressed the pro-fibrotic phenotype in tubular cells and reduced fibrosis. Among the major cytokines, tubular autophagy deficiency in iRT-atg7-KO mice specifically…"
+},
+{
+"pmid": "37166517",
+"title": "Myeloid-specific deletion of chitinase-3-like 1 protein ameliorates murine diet-induced steatohepatitis progression.",
+"year": "2023",
+"journal": "J Mol Med (Berl)",
+"cue": "anti-fibrotic",
+"snippet": "…ved from liver macrophages in NASH progression and identifies this protein as a potential anti-fibrotic therapeutic target. KEY MESSAGES: We showed that CHI3L1 expression is increased in murine…"
+},
+{
+"pmid": "22033529",
+"title": "Pirfenidone suppresses keloid fibroblast-embedded collagen gel contraction.",
+"year": "2012",
+"journal": "Arch Dermatol Res",
+"cue": "anti-fibrotic",
+"snippet": "…abnormal proliferation of fibroblasts and production of collagen. Pirfenidone is a novel anti-fibrotic agent that inhibits the progression of fibrosis occurring in the keloid lesions of the lu…"
+},
+{
+"pmid": "31831776",
+"title": "ERK1/2 drives IL-1β-induced expression of TGF-β1 and BMP-2 in torn tendons.",
+"year": "2019",
+"journal": "Sci Rep",
+"cue": "did not",
+"snippet": "…d partially reduced BMP2 mRNA expression. Conversely, the same treatment of healthy cells did not modulate IL-1β-induced TGFB1 or BMP2 mRNA expression. ERK1/2 inhibition did not attenuate…"
+}
+]
+},
+"ssc_M2_023": {
+"support": [],
+"contrary": []
+},
+"ssc_M2_024": {
+"support": [],
+"contrary": []
+},
+"ssc_M2_025": {
+"support": [
+{
+"pmid": "37225012",
+"title": "SPARC-YAP/TAZ inhibition prevents the fibroblasts-myofibroblasts transformation.",
+"year": "2023",
+"journal": "Exp Cell Res"
+},
+{
+"pmid": "31145701",
+"title": "Recurrent YAP1-MAML2 and YAP1-NUTM1 fusions in poroma and porocarcinoma.",
+"year": "2019",
+"journal": "J Clin Invest"
+},
+{
+"pmid": "32128850",
+"title": "YAP/TAZ: Drivers of Tumor Growth, Metastasis, and Resistance to Therapy.",
+"year": "2020",
+"journal": "Bioessays"
+},
+{
+"pmid": "40683423",
+"title": "Injinoryeong-San attenuates metabolic dysfunction-associated steatohepatitis via regulation of YAP/TAZ-signaling pathway.",
+"year": "2025",
+"journal": "J Ethnopharmacol"
+},
+{
+"pmid": "41403814",
+"title": "Hippo Signaling Transduction Pathway Deregulation in Eye Diseases.",
+"year": "2025",
+"journal": "Maedica (Bucur)"
+},
+{
+"pmid": "39917623",
+"title": "Regulation of Hippo-YAP1/TAZ pathway in metabolic dysfunction-associated steatotic liver disease.",
+"year": "2025",
+"journal": "Front Pharmacol"
+}
+],
+"contrary": [
+{
+"pmid": "36317529",
+"title": "Hippo-Yap Signaling Maintains Sinoatrial Node Homeostasis.",
+"year": "2022",
+"journal": "Circulation",
+"cue": "reduced fibrosis",
+"snippet": "…and Taz in the cardiac conduction system. These rescued mice had normal sinus rhythm and reduced fibrosis of the SAN, indicating that Lats1/2 function through Yap and Taz. Cleavage Under Targets…"
+},
+{
+"pmid": "26699479",
+"title": "Dysregulated YAP1/TAZ and TGF-β signaling mediate hepatocarcinogenesis in Mob1a/1b-deficient mice.",
+"year": "2016",
+"journal": "Proc Natl Acad Sci U S A",
+"cue": "independent of",
+"snippet": "…iated Protein-1 (Yap1) and partially dependent on PDZ-binding motif (Taz) and Tgfbr2, but independent of connective tissue growth factor (Ctgf). In human liver cancers, YAP1 activation is freque…"
+}
+]
+},
+"ssc_M3_015": {
+"support": [
+{
+"pmid": "41077163",
+"title": "Vascular endothelial cells and angiogenesis.",
+"year": "2025",
+"journal": "Pharmacol Res"
+},
+{
+"pmid": "18266978",
+"title": "Intra and extravascular transmembrane signalling of angiopoietin-1-Tie2 receptor in health and disease.",
+"year": "2008",
+"journal": "J Cell Mol Med"
+},
+{
+"pmid": "39851503",
+"title": "miR-1233-3p Inhibits Angiopoietin-1-Induced Endothelial Cell Survival, Migration, and Differentiation.",
+"year": "2025",
+"journal": "Cells"
+},
+{
+"pmid": "32146252",
+"title": "Angiopoietin-1 protects 3T3-L1 preadipocytes from saturated fatty acid-induced cell death.",
+"year": "2020",
+"journal": "Nutr Res"
+},
+{
+"pmid": "27454431",
+"title": "Tubular Overexpression of Angiopoietin-1 Attenuates Renal Fibrosis.",
+"year": "2016",
+"journal": "PLoS One"
+},
+{
+"pmid": "29237738",
+"title": "Ascending Vasa Recta Are Angiopoietin/Tie2-Dependent Lymphatic-Like Vessels.",
+"year": "2018",
+"journal": "J Am Soc Nephrol"
+}
+],
+"contrary": [
+{
+"pmid": "29293543",
+"title": "Angiopoietin-1 deficiency increases renal capillary rarefaction and tubulointerstitial fibrosis in mice.",
+"year": "2018",
+"journal": "PLoS One",
+"cue": "independent of",
+"snippet": "…e of tubulointerstitial fibrosis is predictive of progressive decline in kidney function, independent of its underlying cause. Injury to the renal microvasculature is a major factor in the progr…"
+},
+{
+"pmid": "28045923",
+"title": "Germline Genetic Variants in TEK, ANGPT1, ANGPT2, MMP9, FGF2 and VEGFA Are Associated with Pathologic Complete Response to Bevacizumab in Breast Cancer Patients.",
+"year": "2017",
+"journal": "PLoS One",
+"cue": "did not",
+"snippet": "…from 34 subjects who received bevacizumab in addition to chemotherapy and 29 subjects who did not. Using Illumina® technology, we queried 504 SNPs with a minor allele frequency (MAF) of a…"
+}
+]
+},
+"ssc_M3_016": {
+"support": [
+{
+"pmid": "40952790",
+"title": "TIE2 activation by antibody-clustered endogenous angiopoietin-2 prevents capillary loss and fibrosis in experimental kidney disease.",
+"year": "2025",
+"journal": "J Clin Invest"
+},
+{
+"pmid": "40541454",
+"title": "Influence of canstatin on fibroblast-driven hypervascularisation in rheumatoid arthritis.",
+"year": "2025",
+"journal": "Ann Rheum Dis"
+},
+{
+"pmid": "38820174",
+"title": "Loss-of-function mutations of the TIE1 receptor tyrosine kinase cause late-onset primary lymphedema.",
+"year": "2024",
+"journal": "J Clin Invest"
+},
+{
+"pmid": "33333969",
+"title": "Angiopoietin-2 Promotes Inflammatory Activation in Monocytes of Systemic Sclerosis Patients.",
+"year": "2020",
+"journal": "Int J Mol Sci"
+},
+{
+"pmid": "40764444",
+"title": "Angiopoietin-2 binds to FGFR2, inhibits FGF-FGFR2 signaling, and delays cutaneous wound healing by inhibiting wound angiogenesis.",
+"year": "2025",
+"journal": "Angiogenesis"
+},
+{
+"pmid": "30141205",
+"title": "Serum Angiopoietin-2 Predicts Mortality and Kidney Outcomes in Decompensated Cirrhosis.",
+"year": "2019",
+"journal": "Hepatology"
+}
+],
+"contrary": [
+{
+"pmid": "41232699",
+"title": "Dual faces of angiogenesis: Mechanisms and therapeutic applications.",
+"year": "2025",
+"journal": "Biochim Biophys Acta Rev Cancer",
+"cue": "In contrast",
+"snippet": "…tore perfusion in ischemic heart disease, chronic wounds, and neurovascular degeneration. In contrast, tumor-driven \"malignant\" angiogenesis subverts the same core pathways in both hypoxia-de…"
+},
+{
+"pmid": "36558475",
+"title": "Paricalcitol Improves the Angiopoietin/Tie-2 and VEGF/VEGFR2 Signaling Pathways in Adriamycin-Induced Nephropathy.",
+"year": "2022",
+"journal": "Nutrients",
+"cue": "protective",
+"snippet": "…ssion and VDR recovery to renal tissue after paricalcitol treatment. Our results showed a protective role of paricalcitol in the renal microvasculature that could be used as a target for tre…"
+}
+]
+},
+"ssc_M3_017": {
+"support": [],
+"contrary": []
+},
+"ssc_M3_018": {
+"support": [
+{
+"pmid": "38843440",
+"title": "Lung Fibrosis Is Linked to Increased Endothelial Cell Activation and Dysfunctional Vascular Barrier Integrity.",
+"year": "2024",
+"journal": "Am J Respir Cell Mol Biol"
+},
+{
+"pmid": "37263345",
+"title": "Development of Scaffold-Free Three-Dimensional Cholangiocyte Organoids to Study the Progression of Primary Sclerosing Cholangitis.",
+"year": "2023",
+"journal": "Am J Pathol"
+},
+{
+"pmid": "32119531",
+"title": "Stem Cell-Derived Endothelial Cell Model that Responds to Tobacco Smoke Like Primary Endothelial Cells.",
+"year": "2020",
+"journal": "Chem Res Toxicol"
+},
+{
+"pmid": "36210433",
+"title": "Identification of a new way to induce differentiation of dermal fibroblasts into vascular endothelial cells.",
+"year": "2022",
+"journal": "Stem Cell Res Ther"
+},
+{
+"pmid": "31264280",
+"title": "LncRNA TUG1 regulates FGF1 to enhance endothelial differentiation of adipose-derived stem cells by sponging miR-143.",
+"year": "2019",
+"journal": "J Cell Biochem"
+},
+{
+"pmid": "26720480",
+"title": "Generating iPSC-Derived Choroidal Endothelial Cells to Study Age-Related Macular Degeneration.",
+"year": "2015",
+"journal": "Invest Ophthalmol Vis Sci"
+}
+],
+"contrary": [
+{
+"pmid": "35368373",
+"title": "Autologous hematopoietic stem cell transplantation modifies specific aspects of systemic sclerosis-related microvasculopathy.",
+"year": "2022",
+"journal": "Ther Adv Musculoskelet Dis",
+"cue": "does not",
+"snippet": "…CT contributes to improvements of the vessel morphology and dermal microvasculopathy, but does not normalize elevated levels of serum vascular markers in SSc patients. Additional vascular…"
+},
+{
+"pmid": "16282704",
+"title": "Murine metanephric mesenchyme possesses characteristics of vascular endothelial cells in vitro.",
+"year": "2006",
+"journal": "Nephron Exp Nephrol",
+"cue": "did not",
+"snippet": "…ne kinase with Ig and EGF homology domains 2 (Tie2), CD31, and podocalyxin. However, they did not express mRNA for vascular endothelial-cadherin (VE-cadherin) or von Willebrand factor (vW…"
+},
+{
+"pmid": "26300240",
+"title": "Autologous hematopoietic stem cell transplantation reverses skin fibrosis but does not change skin vessel density in patients with systemic sclerosis.",
+"year": "2015",
+"journal": "Pathol Biol (Paris)",
+"cue": "did not",
+"snippet": "…core and the fibrosis score correlated positively (r=0.589, P<0.001). The vessels density did not significantly change after HSCT nor did the expression of the tested endothelial markers.…"
+},
+{
+"pmid": "33540918",
+"title": "Resveratrol-Elicited PKC Inhibition Counteracts NOX-Mediated Endothelial to Mesenchymal Transition in Human Retinal Endothelial Cells Exposed to High Glucose.",
+"year": "2021",
+"journal": "Antioxidants (Basel)",
+"cue": "protective",
+"snippet": "…echanism. Taken together, our results provide the basis for a resveratrol-based potential protective therapy to prevent diabetic-associated complications."
+}
+]
+},
+"ssc_M3_019": {
+"support": [],
+"contrary": [
+{
+"pmid": "26993102",
+"title": "Serelaxin (recombinant human relaxin-2) prevents high glucose-induced endothelial dysfunction by ameliorating prostacyclin production in the mouse aorta.",
+"year": "2016",
+"journal": "Pharmacol Res",
+"cue": "no effect",
+"snippet": "…L-NAME (200μM) (normal glucose=59.9±8.3% vs high glucose=38.7±4.3%, n=6, P<0.05), but had no effect on the endothelium-independent agonist, sodium nitroprusside (SNP)-mediated relaxation. T…"
+}
+]
+},
+"ssc_M3_020": {
+"support": [
+{
+"pmid": "39477683",
+"title": "Atractylenolide I inhibits angiogenesis and reverses sunitinib resistance in clear cell renal cell carcinoma through ATP6V0D2-mediated autophagic degradation of EPAS1/HIF2α.",
+"year": "2025",
+"journal": "Autophagy"
+},
+{
+"pmid": "10425220",
+"title": "HIF1A gene transcription is dependent on a core promoter sequence encompassing activating and inhibiting sequences located upstream from the transcription initiation site and cis elements located within the 5'UTR.",
+"year": "1999",
+"journal": "Biochem Biophys Res Commun"
+}
+],
+"contrary": [
+{
+"pmid": "9027737",
+"title": "Structural and functional analysis of hypoxia-inducible factor 1.",
+"year": "1997",
+"journal": "Kidney Int",
+"cue": "no effect",
+"snippet": "…a superinduction of transcription in hypoxic cells, whereas HIF-1 expression vectors had no effect on the transcription of reporter genes containing a mutation in the HIF-1 binding site. H…"
+}
+]
+},
+"ssc_M3_021": {
+"support": [],
+"contrary": []
+},
+"ssc_M4_012": {
+"support": [
+{
+"pmid": "27098833",
+"title": "Tumor necrosis factor superfamily member APRIL contributes to fibrotic scar formation after spinal cord injury.",
+"year": "2016",
+"journal": "J Neuroinflammation"
+},
+{
+"pmid": "36980677",
+"title": "The BAFF-APRIL System in Cancer.",
+"year": "2023",
+"journal": "Cancers (Basel)"
+},
+{
+"pmid": "35780200",
+"title": "Protein and functional isoform levels and genetic variants of the BAFF and APRIL pathway components in systemic lupus erythematosus.",
+"year": "2022",
+"journal": "Sci Rep"
+},
+{
+"pmid": "40821822",
+"title": "Exploring the role of APRIL in autoimmunity: implications for therapeutic targeting in systemic lupus erythematosus, rheumatoid arthritis, and Sjögren's syndrome.",
+"year": "2025",
+"journal": "Front Immunol"
+}
+],
+"contrary": [
+{
+"pmid": "22166983",
+"title": "B-cell maturation antigen (BCMA) activation exerts specific proinflammatory effects in normal human keratinocytes and is preferentially expressed in inflammatory skin pathologies.",
+"year": "2012",
+"journal": "Endocrinology",
+"cue": "do not",
+"snippet": "…ptors, an activation inhibited by anti-BCMA short hairpin RNA. However, BAFF and/or APRIL do not induce IL-8 or TNFα production. Our data advance BCMA as an inflammation-related TNFSFR m…"
+}
+]
+},
+"ssc_M4_013": {
+"support": [
+{
+"pmid": "38842161",
+"title": "Chronic liver fibrosis induction in aging causes significant ultra-structural deterioration in liver and alteration on immune response gene expressions in liver-spleen axis.",
+"year": "2024",
+"journal": "Ultrastruct Pathol"
+},
+{
+"pmid": "25292313",
+"title": "The effects of galectin-1 on the gene expression of the transcription factors TBX21, GATA-3, FOXP3 and RORC.",
+"year": "2015",
+"journal": "Mol Cell Biochem"
+},
+{
+"pmid": "30254507",
+"title": "Dynamic DNA Methylation Changes of Tbx21 and Rorc during Experimental Autoimmune Uveitis in Mice.",
+"year": "2018",
+"journal": "Mediators Inflamm"
+},
+{
+"pmid": "27764137",
+"title": "Role of TEFFECTOR/MEMORY Cells, TBX21 Gene Expression and T-Cell Homing Receptor on Type 1 Reaction in Borderline Lepromatous Leprosy Patients.",
+"year": "2016",
+"journal": "PLoS One"
+}
+],
+"contrary": [
+{
+"pmid": "40283008",
+"title": "Immune Modulation Through Stereotactic Radiotherapy: The Role of TBX21, GATA-3, FoxP3, and RORɣt.",
+"year": "2025",
+"journal": "Medicina (Kaunas)",
+"cue": "No correlation",
+"snippet": "…P3 (Treg), while RORɣt (Th17) remained stable but trended higher in lung cancer patients. No correlations were found with demographic factors. However, TBX21 levels were significantly related to…"
+}
+]
+},
+"ssc_M4_014": {
+"support": [
+{
+"pmid": "16227086",
+"title": "CD22: a multifunctional receptor that regulates B lymphocyte survival and signal transduction.",
+"year": "2005",
+"journal": "Adv Immunol"
+},
+{
+"pmid": "31616406",
+"title": "Identification and Characterization of Post-activated B Cells in Systemic Autoimmune Diseases.",
+"year": "2019",
+"journal": "Front Immunol"
+}
+],
+"contrary": []
+},
+"ssc_M4_015": {
+"support": [],
+"contrary": [],
+"note": "no searchable gene participant"
+},
+"ssc_M1_013": {
+"support": [
+{
+"pmid": "34282151",
+"title": "Myofibroblast transcriptome indicates SFRP2hi fibroblast progenitors in systemic sclerosis skin.",
+"year": "2021",
+"journal": "Nat Commun"
+},
+{
+"pmid": "34033851",
+"title": "An international genome-wide meta-analysis of primary biliary cholangitis: Novel risk loci and candidate drugs.",
+"year": "2021",
+"journal": "J Hepatol"
+},
+{
+"pmid": "39985573",
+"title": "Irf7 aggravates prostatitis by promoting Hif-1α-mediated glycolysis to facilitate M1 polarization.",
+"year": "2025",
+"journal": "Cell Mol Life Sci"
+},
+{
+"pmid": "42168655",
+"title": "IRF7 links HK1-dependent histone lactylation to fibroblast activation and cardiac fibrosis.",
+"year": "2026",
+"journal": "EMBO Mol Med"
+},
+{
+"pmid": "36450710",
+"title": "The E3 ubiquitin ligase WWP2 regulates pro-fibrogenic monocyte infiltration and activity in heart fibrosis.",
+"year": "2022",
+"journal": "Nat Commun"
+},
+{
+"pmid": "38814825",
+"title": "Mice Hepatic Organoids for Modeling Nonalcoholic Fatty Liver Disease and Drug Response.",
+"year": "2024",
+"journal": "Stem Cells Dev"
+}
+],
+"contrary": [
+{
+"pmid": "31439591",
+"title": "Interferon regulatory factor 7 (IRF7) represents a link between inflammation and fibrosis in the pathogenesis of systemic sclerosis.",
+"year": "2019",
+"journal": "Ann Rheum Dis",
+"cue": "unaffected",
+"snippet": "…lated and activated in SSc skin tissue and explanted SSc dermal fibroblasts compared with unaffected, matched controls. Moreover, IRF7 expression was stimulated by IFN-α in dermal fibroblast…"
+}
+]
+},
+"ssc_M1_014": {
+"support": [],
+"contrary": []
+},
+"ssc_M3_022": {
+"support": [
+{
+"pmid": "29054964",
+"title": "Gene expression profiling of the Notch-AhR-IL22 axis at homeostasis and in response to tissue injury.",
+"year": "2017",
+"journal": "Biosci Rep"
+},
+{
+"pmid": "35103284",
+"title": "Notch signaling is a novel regulator of visceral smooth muscle cell differentiation in the murine ureter.",
+"year": "2022",
+"journal": "Development"
+}
+],
+"contrary": []
+},
+"ssc_M1_015": {
+"support": [
+{
+"pmid": "38972975",
+"title": "tRF-His-GTG-1 enhances NETs formation and interferon-α production in lupus by extracellular vesicle.",
+"year": "2024",
+"journal": "Cell Commun Signal"
+},
+{
+"pmid": "40615103",
+"title": "A 1:1 combination of cannabidiol and Δ9-tetrahydrocannabinol inhibit toll-like receptor 7- and 8-mediated inflammation in human immune cells.",
+"year": "2025",
+"journal": "Eur J Pharmacol"
+}
+],
+"contrary": [
+{
+"pmid": "16737960",
+"title": "TLR8-mediated NF-kappaB and JNK activation are TAK1-independent and MEKK3-dependent.",
+"year": "2006",
+"journal": "J Biol Chem",
+"cue": "do not",
+"snippet": "…ndicate that although TLR8-mediated NF-kappaB and JNK activation are IRAK-dependent, they do not require IRAK modification and are TAK1-independent. On the other hand, TLR8-mediated Ikap…"
+}
+]
+},
+"ssc_M4_016": {
+"support": [],
+"contrary": []
+},
+"ssc_M1_016": {
+"support": [
+{
+"pmid": "36053251",
+"title": "Chronic activation of pDCs in autoimmunity is linked to dysregulated ER stress and metabolic responses.",
+"year": "2022",
+"journal": "J Exp Med"
+},
+{
+"pmid": "39670996",
+"title": "Mechanosensing regulates pDC activation in the skin through NRF2 activation.",
+"year": "2025",
+"journal": "J Exp Med"
+},
+{
+"pmid": "40729289",
+"title": "Plasma CXCL4-DNA/RNA Complexes and Anti-CXCL4 Antibodies Modulation in an SSc Cohort under Iloprost Treatment.",
+"year": "2024",
+"journal": "Reports (MDPI)"
+},
+{
+"pmid": "29126878",
+"title": "Dendritic cells in systemic sclerosis: Advances from human and mice studies.",
+"year": "2018",
+"journal": "Immunol Lett"
+},
+{
+"pmid": "24350901",
+"title": "Proteome-wide analysis and CXCL4 as a biomarker in systemic sclerosis.",
+"year": "2014",
+"journal": "N Engl J Med"
+},
+{
+"pmid": "36829561",
+"title": "Molecular Mechanisms Behind the Role of Plasmacytoid Dendritic Cells in Systemic Sclerosis.",
+"year": "2023",
+"journal": "Biology (Basel)"
+}
+],
+"contrary": [
+{
+"pmid": "36614095",
+"title": "CXCL4-RNA Complexes Circulate in Systemic Sclerosis and Amplify Inflammatory/Pro-Fibrotic Responses by Myeloid Dendritic Cells.",
+"year": "2022",
+"journal": "Int J Mol Sci",
+"cue": "In contrast",
+"snippet": "…IL-23, IL-8, and pro-collagen, mainly in a TLR7/8-dependent but CXCR3-independent manner. In contrast, MDDCs produced IL-6 and fibronectin independently in their CXCL4 RNA-binding ability. Th…"
+},
+{
+"pmid": "31043596",
+"title": "CXCL4 assembles DNA into liquid crystalline complexes to amplify TLR9-mediated interferon-α production in systemic sclerosis.",
+"year": "2019",
+"journal": "Nat Commun",
+"cue": "does not",
+"snippet": "…ritic cell (pDC)-hyperactivation and interferon-α production. Surprisingly, this activity does not require CXCR3, the CXCL4 receptor. Importantly, we find that CXCL4-DNA complexes are pres…"
+},
+{
+"pmid": "37965262",
+"title": "Bacterial outer membrane vesicles bound to bacteriophages modulate neutrophil responses to bacterial infection.",
+"year": "2023",
+"journal": "Front Cell Infect Microbiol",
+"cue": "does not",
+"snippet": "…ed unclear. Notably, Pf4 is a single-stranded DNA and lysogenic phage, and its production does not typically result in lysis of its bacterial host. We identified previously that internaliz…"
+},
+{
+"pmid": "29321259",
+"title": "Plasmacytoid dendritic cells promote systemic sclerosis with a key role for TLR8.",
+"year": "2018",
+"journal": "Sci Transl Med",
+"cue": "In contrast",
+"snippet": "…a mouse model of scleroderma and could revert fibrosis in mice with established disease. In contrast, the disease was exacerbated in mice transgenic for TLR8 with recruitment of pDCs to the…"
+}
+]
+},
+"ssc_M1_017": {
+"support": [
+{
+"pmid": "19116937",
+"title": "Association between the IRF5 rs2004640 functional polymorphism and systemic sclerosis: a new perspective for pulmonary fibrosis.",
+"year": "2009",
+"journal": "Arthritis Rheum"
+},
+{
+"pmid": "19479858",
+"title": "Association of a functional polymorphism in the IRF5 region with systemic sclerosis in a Japanese population.",
+"year": "2009",
+"journal": "Arthritis Rheum"
+},
+{
+"pmid": "19644887",
+"title": "STAT4 is a genetic risk factor for systemic sclerosis having additive effects with IRF5 on disease susceptibility and related pulmonary fibrosis.",
+"year": "2009",
+"journal": "Arthritis Rheum"
+}
+],
+"contrary": []
+},
+"ssc_M2_026": {
+"support": [
+{
+"pmid": "29080679",
+"title": "SFRP2/DPP4 and FMO1/LSP1 Define Major Fibroblast Populations in Human Skin.",
+"year": "2018",
+"journal": "J Invest Dermatol"
+},
+{
+"pmid": "35943798",
+"title": "Tofacitinib blocks IFN-regulated biomarker genes in skin fibroblasts and keratinocytes in a systemic sclerosis trial.",
+"year": "2022",
+"journal": "JCI Insight"
+}
+],
+"contrary": []
+},
+"ssc_M2_027": {
+"support": [
+{
+"pmid": "40530118",
+"title": "The prognostic and immune significance of fibronectin type III domain-containing 1 gene in pan-cancer and its relationship with proliferation and migration of stomach adenocarcinoma.",
+"year": "2025",
+"journal": "Transl Cancer Res"
+},
+{
+"pmid": "36190948",
+"title": "A pan-cancer analysis of matrisome proteins reveals CTHRC1 and a related network as major ECM regulators across cancers.",
+"year": "2022",
+"journal": "PLoS One"
+}
+],
+"contrary": []
+},
+"ssc_M2_028": {
+"support": [],
+"contrary": []
+},
+"ssc_M3_023": {
+"support": [
+{
+"pmid": "32226439",
+"title": "A Computational Model of the Endothelial to Mesenchymal Transition.",
+"year": "2020",
+"journal": "Front Genet"
+},
+{
+"pmid": "32075417",
+"title": "Etv2- and Fli1-Induced Vascular Progenitor Cells Enhance Functional Recovery in Ischemic Vascular Disease Model-Brief Report.",
+"year": "2020",
+"journal": "Arterioscler Thromb Vasc Biol"
+},
+{
+"pmid": "20228226",
+"title": "Endothelial Fli1 deficiency impairs vascular homeostasis: a role in scleroderma vasculopathy.",
+"year": "2010",
+"journal": "Am J Pathol"
+},
+{
+"pmid": "32627966",
+"title": "Altered Properties of Endothelial Cells and Mesenchymal Stem Cells Underlying the Development of Scleroderma-like Vasculopathy in KLF5+/- ;Fli-1+/- Mice.",
+"year": "2020",
+"journal": "Arthritis Rheumatol"
+},
+{
+"pmid": "17409396",
+"title": "Mammalian tumor xenografts induce neovascularization in zebrafish embryos.",
+"year": "2007",
+"journal": "Cancer Res"
+},
+{
+"pmid": "28248004",
+"title": "Highly Efficient Differentiation of Endothelial Cells from Pluripotent Stem Cells Requires the MAPK and the PI3K Pathways.",
+"year": "2017",
+"journal": "Stem Cells"
+}
+],
+"contrary": [
+{
+"pmid": "23359533",
+"title": "Interferon-γ promotes vascular remodeling in human microvascular endothelial cells by upregulating endothelin (ET)-1 and transforming growth factor (TGF) β2.",
+"year": "2013",
+"journal": "J Cell Physiol",
+"cue": "In contrast",
+"snippet": "…creen for EndoMT genes. Treatment with IFN-α or IFN-γ downregulated Fli1 and VE-cadherin. In contrast, IFN-α and IFN-γ exerted opposite effects on the expression of α-SMA, CTGF, ET-1, and TGF…"
+}
+]
+},
+"ssc_M3_024": {
+"support": [
+{
+"pmid": "36555389",
+"title": "Gene Expression Linked to Reepithelialization of Human Skin Wounds.",
+"year": "2022",
+"journal": "Int J Mol Sci"
+},
+{
+"pmid": "42259118",
+"title": "Plasma proteomic signatures of long-term PM2.5 exposure and risk of incident chronic obstructive pulmonary disease.",
+"year": "2026",
+"journal": "Ecotoxicol Environ Saf"
+}
+],
+"contrary": []
+},
+"ssc_M2_029": {
+"support": [
+{
+"pmid": "40730611",
+"title": "Tumor extracellular matrix enhances invasive gene expression of breast cancer cells in 3D patient-derived scaffolds.",
+"year": "2025",
+"journal": "Sci Rep"
+}
+],
+"contrary": [
+{
+"pmid": "23051628",
+"title": "Fibrosis-associated single-nucleotide polymorphisms in TGFB1 and CAV1 are not associated with the development of nephrogenic systemic fibrosis.",
+"year": "2013",
+"journal": "Am J Dermatopathol",
+"cue": "No significant",
+"snippet": "…(n = 17) and control subjects (n = 24) without clinical or histological evidence of NSF. No significant differences in the genotype frequencies at these SNPs in TGFB1 and CAV1 were found betwee…"
+},
+{
+"pmid": "25681461",
+"title": "Moderate alterations of the cytoskeleton in human chondrocytes after short-term microgravity produced by parabolic flight maneuvers could be prevented by up-regulation of BMP-2 and SOX-9.",
+"year": "2015",
+"journal": "FASEB J",
+"cue": "no change",
+"snippet": "…nd fixed them after the 1st and the 31st parabola. Immunofluorescence microscopy revealed no changes after the 1st parabola, but disruptions of β-tubulin, vimentin, and cytokeratin networks…"
+}
+]
+},
+"ssc_M2_030": {
+"support": [
+{
+"pmid": "26098215",
+"title": "Fresolimumab treatment decreases biomarkers and improves clinical symptoms in systemic sclerosis patients.",
+"year": "2015",
+"journal": "J Clin Invest"
+},
+{
+"pmid": "30952646",
+"title": "Compendium of skin molecular signatures identifies key pathological features associated with fibrosis in systemic sclerosis.",
+"year": "2019",
+"journal": "Ann Rheum Dis"
+},
+{
+"pmid": "36768853",
+"title": "Differential Urinary Proteomic Analysis of High-Risk Cervical Intraepithelial Neoplasia.",
+"year": "2023",
+"journal": "Int J Mol Sci"
+},
+{
+"pmid": "33996903",
+"title": "Diagnostic, Therapeutic, and Prognostic Value of the Thrombospondin Family in Gastric Cancer.",
+"year": "2021",
+"journal": "Front Mol Biosci"
+},
+{
+"pmid": "34012631",
+"title": "Expression and prognostic significance of thrombospondin gene family in gastric cancer.",
+"year": "2021",
+"journal": "J Gastrointest Oncol"
+}
+],
+"contrary": [
+{
+"pmid": "28807667",
+"title": "Inhibition of β-Catenin Signaling in the Skin Rescues Cutaneous Adipogenesis in Systemic Sclerosis: A Randomized, Double-Blind, Placebo-Controlled Trial of C-82.",
+"year": "2017",
+"journal": "J Invest Dermatol",
+"cue": "did not",
+"snippet": "…d with C-82 or placebo on opposite forearms. C-82- compared with placebo-treated forearms did not show any clinical effect. Skin biopsies performed before and after treatment showed a ver…"
+},
+{
+"pmid": "39912080",
+"title": "Changes in Gene Expression of the Extracellular Matrix in Patients with Full-Thickness Rotator Cuff Tears of Varying Sizes.",
+"year": "2025",
+"journal": "Clin Orthop Surg",
+"cue": "did not",
+"snippet": "…spinatus tendon tissue was sourced from 3 patients who had proximal humerus fractures but did not present with RCTs. Among the 11 collagens and 14 non-collagenous protein (NCP) genes exam…"
+}
+]
+},
+"ssc_M4_017": {
+"support": [
+{
+"pmid": "38167034",
+"title": "Single-cell RNA-seq analysis decodes the kidney microenvironment induced by polystyrene microplastics in mice receiving a high-fat diet.",
+"year": "2024",
+"journal": "J Nanobiotechnology"
+},
+{
+"pmid": "34986347",
+"title": "CXCL4 drives fibrosis by promoting several key cellular and molecular processes.",
+"year": "2022",
+"journal": "Cell Rep"
+},
+{
+"pmid": "39025985",
+"title": "Proteomic screening identifies PF4/Cxcl4 as a critical driver of myelofibrosis.",
+"year": "2024",
+"journal": "Leukemia"
+},
+{
+"pmid": "39464886",
+"title": "Efferocytosis dysfunction in CXCL4-induced M4 macrophages: phenotypic insights in systemic sclerosis in vitro and in vivo.",
+"year": "2024",
+"journal": "Front Immunol"
+},
+{
+"pmid": "40141068",
+"title": "The Role of CXCL4 in Systemic Sclerosis: DAMP, Auto-Antigen and Biomarker.",
+"year": "2025",
+"journal": "Int J Mol Sci"
+},
+{
+"pmid": "39707183",
+"title": "CXCL4 deficiency limits M4 macrophage infiltration and attenuates hyperoxia-induced lung injury.",
+"year": "2024",
+"journal": "Mol Med"
+}
+],
+"contrary": [
+{
+"pmid": "36807143",
+"title": "Platelet-instructed SPP1+ macrophages drive myofibroblast activation in fibrosis in a CXCL4-dependent manner.",
+"year": "2023",
+"journal": "Cell Rep",
+"cue": "independent of",
+"snippet": "Fibrosis represents the common end stage of chronic organ injury independent of the initial insult, destroying tissue architecture and driving organ failure. Here we dis…"
+},
+{
+"pmid": "40072075",
+"title": "Pro-Fibrotic Macrophage Subtypes: SPP1+ Macrophages as a Key Player and Therapeutic Target in Cardiac Fibrosis?",
+"year": "2025",
+"journal": "Cells",
+"cue": "reduced fibrosis",
+"snippet": "…key pathways involved in macrophage differentiation. These interventions have effectively reduced fibrosis and improved cardiac function in animal models. The mechanisms underlying SPP1+ macrophag…"
+},
+{
+"pmid": "41337540",
+"title": "Dysregulated alveolar type 2 epithelial cell proteostasis promotes fibrogenic macrophage migration inhibitory factor-CD74 signaling.",
+"year": "2025",
+"journal": "Sci Transl Med",
+"cue": "attenuated fibrosis",
+"snippet": "…fluid (BALF) in the model. Global or conditional AEC2-specific deletions of Mif or Mif-2 attenuated fibrosis in the bleomycin-treated mouse model, as did conditional deletions of Cd74, the cognate r…"
+},
+{
+"pmid": "36614095",
+"title": "CXCL4-RNA Complexes Circulate in Systemic Sclerosis and Amplify Inflammatory/Pro-Fibrotic Responses by Myeloid Dendritic Cells.",
+"year": "2022",
+"journal": "Int J Mol Sci",
+"cue": "In contrast",
+"snippet": "…IL-23, IL-8, and pro-collagen, mainly in a TLR7/8-dependent but CXCR3-independent manner. In contrast, MDDCs produced IL-6 and fibronectin independently in their CXCL4 RNA-binding ability. Th…"
+}
+]
+},
+"ssc_M1_018": {
+"support": [
+{
+"pmid": "37773045",
+"title": "TLR9 ligand sequestration by chemokine CXCL4 negatively affects central B cell tolerance.",
+"year": "2023",
+"journal": "J Exp Med"
+},
+{
+"pmid": "34559222",
+"title": "Hypoxia and TLR9 activation drive CXCL4 production in systemic sclerosis plasmacytoid dendritic cells via mtROS and HIF-2α.",
+"year": "2022",
+"journal": "Rheumatology (Oxford)"
+},
+{
+"pmid": "36053251",
+"title": "Chronic activation of pDCs in autoimmunity is linked to dysregulated ER stress and metabolic responses.",
+"year": "2022",
+"journal": "J Exp Med"
+},
+{
+"pmid": "42156955",
+"title": "Tetrameric assembly disruption impairs CXCL4 chaperon ability for DNA and type I interferon immune amplification.",
+"year": "2026",
+"journal": "Commun Biol"
+},
+{
+"pmid": "35640018",
+"title": "Chemokines form nanoparticles with DNA and can superinduce TLR-driven immune inflammation.",
+"year": "2022",
+"journal": "J Exp Med"
+}
+],
+"contrary": [
+{
+"pmid": "36614095",
+"title": "CXCL4-RNA Complexes Circulate in Systemic Sclerosis and Amplify Inflammatory/Pro-Fibrotic Responses by Myeloid Dendritic Cells.",
+"year": "2022",
+"journal": "Int J Mol Sci",
+"cue": "In contrast",
+"snippet": "…IL-23, IL-8, and pro-collagen, mainly in a TLR7/8-dependent but CXCR3-independent manner. In contrast, MDDCs produced IL-6 and fibronectin independently in their CXCL4 RNA-binding ability. Th…"
+},
+{
+"pmid": "31043596",
+"title": "CXCL4 assembles DNA into liquid crystalline complexes to amplify TLR9-mediated interferon-α production in systemic sclerosis.",
+"year": "2019",
+"journal": "Nat Commun",
+"cue": "does not",
+"snippet": "…ritic cell (pDC)-hyperactivation and interferon-α production. Surprisingly, this activity does not require CXCR3, the CXCL4 receptor. Importantly, we find that CXCL4-DNA complexes are pres…"
+},
+{
+"pmid": "29321259",
+"title": "Plasmacytoid dendritic cells promote systemic sclerosis with a key role for TLR8.",
+"year": "2018",
+"journal": "Sci Transl Med",
+"cue": "In contrast",
+"snippet": "…a mouse model of scleroderma and could revert fibrosis in mice with established disease. In contrast, the disease was exacerbated in mice transgenic for TLR8 with recruitment of pDCs to the…"
+}
+]
+},
+"ssc_M1_019": {
+"support": [
+{
+"pmid": "37488975",
+"title": "Endothelial Response to Type I Interferon Contributes to Vasculopathy and Fibrosis and Predicts Disease Progression of Systemic Sclerosis.",
+"year": "2024",
+"journal": "Arthritis Rheumatol"
+},
+{
+"pmid": "27324217",
+"title": "Activation of STING requires palmitoylation at the Golgi.",
+"year": "2016",
+"journal": "Nat Commun"
+},
+{
+"pmid": "39152751",
+"title": "A randomised, parallel-group, double-blind, placebo-controlled phase 3 study to Determine the effectiveness of the type I interferon receptor antibody, Anifrolumab, In SYstemic sclerosis: DAISY study design and rationale.",
+"year": "2024",
+"journal": "Clin Exp Rheumatol"
+}
+],
+"contrary": [
+{
+"pmid": "39198639",
+"title": "Spatially clustered type I interferon responses at injury borderzones.",
+"year": "2024",
+"journal": "Nature",
+"cue": "did not",
+"snippet": "…ls or endothelial cells, Ccr2-deficient mice or plasmacytoid-dendritic-cell-depleted mice did not. Interferons blunted the protective matricellular programs and contractile function of bo…"
+},
+{
+"pmid": "34648896",
+"title": "Dopamine receptor D2 antagonism normalizes profibrotic macrophage-endothelial crosstalk in non-alcoholic steatohepatitis.",
+"year": "2022",
+"journal": "J Hepatol",
+"cue": "no effect",
+"snippet": "Currently there is no effective treatment for liver fibrosis, which is one of the main histological determinants of no…"
+},
+{
+"pmid": "37584284",
+"title": "Role and Therapeutic Potential for Targeting Fibroblast Growth Factor 10/FGFR1 in Relapsed Rheumatoid Arthritis.",
+"year": "2024",
+"journal": "Arthritis Rheumatol",
+"cue": "independent of",
+"snippet": "…also activated in the lining FLSs, in vitro stimulation experiment suggested that it was independent of the FGF10 pathway. FGF10 knockdown by small interfering RNA in FLSs significantly reduced…"
+}
+]
+},
+"ssc_M2_031": {
+"support": [
+{
+"pmid": "32070329",
+"title": "TGF-β pathway activation by idiopathic pulmonary fibrosis (IPF) fibroblast derived soluble factors is mediated by IL-6 trans-signaling.",
+"year": "2020",
+"journal": "Respir Res"
+},
+{
+"pmid": "29703138",
+"title": "Transcriptional profiling of human bronchial epithelial cell BEAS-2B exposed to diesel and biomass ultrafine particles.",
+"year": "2018",
+"journal": "BMC Genomics"
+}
+],
+"contrary": [
+{
+"pmid": "24933422",
+"title": "Oncostatin M overexpression induces matrix deposition, STAT3 activation, and SMAD1 Dysregulation in lungs of fibrosis-resistant BALB/c mice.",
+"year": "2014",
+"journal": "Lab Invest",
+"cue": "In contrast",
+"snippet": "…mRNA levels and pSMAD2 signal were not regulated in either strain in total lung extracts. In contrast to C57Bl/6 mice, BALB/c mice lacked eosinophil, Th2 cytokine, and pro-inflammatory cytoki…"
+}
+]
+},
+"ssc_M2_032": {
+"support": [
+{
+"pmid": "18455002",
+"title": "Gremlin: a novel mediator of epithelial mesenchymal transition and fibrosis in chronic allograft nephropathy.",
+"year": "2008",
+"journal": "Transplant Proc"
+},
+{
+"pmid": "32070329",
+"title": "TGF-β pathway activation by idiopathic pulmonary fibrosis (IPF) fibroblast derived soluble factors is mediated by IL-6 trans-signaling.",
+"year": "2020",
+"journal": "Respir Res"
+},
+{
+"pmid": "24755068",
+"title": "TGF-β2 induces transdifferentiation and fibrosis in human lens epithelial cells via regulating gremlin and CTGF.",
+"year": "2014",
+"journal": "Biochem Biophys Res Commun"
+}
+],
+"contrary": [
+{
+"pmid": "31700227",
+"title": "Gremlin-1: An endogenous BMP antagonist induces epithelial-mesenchymal transition and interferes with redifferentiation in fetal RPE cells with repeated wounds.",
+"year": "2019",
+"journal": "Mol Vis",
+"cue": "In contrast",
+"snippet": "…y, Smad4, which plays a role as a Snail1 cooperator by binding Smad3, was also increased. In contrast, GREM1 silencing increased the expression of MITF and OTX2, which means there was better…"
+}
+]
+},
+"ssc_M3_025": {
+"support": [
+{
+"pmid": "34332113",
+"title": "Extracellular matrix remodeling precedes atrial fibrillation: Results of the PREDICT-AF trial.",
+"year": "2021",
+"journal": "Heart Rhythm"
+},
+{
+"pmid": "20219212",
+"title": "Cellular phenotype transformation occurs during thoracic aortic aneurysm development.",
+"year": "2010",
+"journal": "J Thorac Cardiovasc Surg"
+}
+],
+"contrary": [
+{
+"pmid": "33082140",
+"title": "MicroRNA-98 reduces nerve growth factor expression in nicotine-induced airway remodeling.",
+"year": "2020",
+"journal": "J Biol Chem",
+"cue": "In contrast",
+"snippet": "…1, ET-1, COL1A1, and COL3A1 expression in human and mouse LFs and mouse lung homogenates. In contrast, nicotine reduced miR-98 levels in LFs in vitro and in lung homogenates in vivo Treatment…"
+},
+{
+"pmid": "42080429",
+"title": "The PPAR-gamma agonist pioglitazone alleviates bleomycin-induced lung fibrosis in male BALB/c mice.",
+"year": "2026",
+"journal": "Multidiscip Respir Med",
+"cue": "protective",
+"snippet": "…such factor is PPARG. The PPARG agonist, pioglitazone (PG), has demonstrated general lung protective activity in animal models and is considered a promising therapeutic agent for fibrotic in…"
+},
+{
+"pmid": "31829272",
+"title": "Proposition of a novel animal model of systemic sclerosis induced by type V collagen in C57BL/6 mice that reproduces fibrosis, vasculopathy and autoimmunity.",
+"year": "2019",
+"journal": "Arthritis Res Ther",
+"cue": "did not",
+"snippet": "…plete Freund adjuvant, followed by two intramuscular boosters. The control group (n = 19) did not receive Col V. After 120 days, we examined the respiratory mechanics, serum autoantibodie…"
+},
+{
+"pmid": "27881410",
+"title": "TAZ activation drives fibroblast spheroid growth, expression of profibrotic paracrine signals, and context-dependent ECM gene expression.",
+"year": "2017",
+"journal": "Am J Physiol Cell Physiol",
+"cue": "In contrast",
+"snippet": "…t remained stable and neither increased nor decreased in size significantly over 15 days. In contrast, TAZ4SA-transduced fibroblasts grew robustly in spheroid culture, and expressed enhanced…"
+}
+]
+},
+"ssc_M2_033": {
+"support": [
+{
+"pmid": "42233622",
+"title": "WNT2B impairs endosomal trafficking via WASHC5 to inhibit autophagy: a novel non-secretory WNT pathway.",
+"year": "2026",
+"journal": "Autophagy"
+},
+{
+"pmid": "37467914",
+"title": "Role of Caveolin-1 on the molybdenum and cadmium exposure induces pulmonary ferroptosis and fibrosis in the sheep.",
+"year": "2023",
+"journal": "Environ Pollut"
+}
+],
+"contrary": [
+{
+"pmid": "33847014",
+"title": "Effect of long noncoding RNAs on epithelial-mesenchymal transition in A549 cells and fibrotic human lungs.",
+"year": "2021",
+"journal": "J Cell Biochem",
+"cue": "did not",
+"snippet": "…535 treatment regressed these alterations. But it increased HOTAIR expression at 36 h and did not increase E-cadherin at 48 h. Fibrotic human lungs were characterized by increased express…"
+}
+]
+},
+"ssc_M2_034": {
+"support": [],
+"contrary": []
+},
+"ssc_M2_035": {
+"support": [
+{
+"pmid": "40849669",
+"title": "Single-cell transcriptomic landscape of sciatic nerve after transection injury.",
+"year": "2025",
+"journal": "J Neuroinflammation"
+},
+{
+"pmid": "40622850",
+"title": "Biliary YB-1/GLI2 axis facilitates ductular reaction and promotes HSC activation via SPP1/integrin αvβ1 signaling during liver fibrogenesis.",
+"year": "2026",
+"journal": "Hepatology"
+},
+{
+"pmid": "39182559",
+"title": "FGF21 Ameliorates Fibroblasts Activation and Systemic Sclerosis by Inhibiting CK2α/GLI2 Signaling Axis.",
+"year": "2025",
+"journal": "J Invest Dermatol"
+},
+{
+"pmid": "38460793",
+"title": "Pkd1l1-deficiency drives biliary atresia through ciliary dysfunction in biliary epithelial cells.",
+"year": "2024",
+"journal": "J Hepatol"
+},
+{
+"pmid": "38117649",
+"title": "Non-canonical Hedgehog signaling mediates profibrotic hematopoiesis-stroma crosstalk in myeloproliferative neoplasms.",
+"year": "2024",
+"journal": "Cell Rep"
+},
+{
+"pmid": "38593509",
+"title": "Identification of idiopathic pulmonary fibrosis hub genes and exploration of the mechanisms of action of Jinshui Huanxian formula.",
+"year": "2024",
+"journal": "Int Immunopharmacol"
+}
+],
+"contrary": [
+{
+"pmid": "39187464",
+"title": "Mutual Amplification of GLI2/Hedgehog and Transcription Factor JUN/AP-1 Signaling in Fibroblasts in Systemic Sclerosis: Potential Implications for Combined Therapies.",
+"year": "2025",
+"journal": "Arthritis Rheumatol",
+"cue": "antifibrotic",
+"snippet": "…oreover, combined pharmacologic inhibition of cJUN/AP-1 and hedgehog/GLI2 exerts additive antifibrotic effects in a model of TGFβ-driven experimental fibrosis (TBRACT mice). The transcription…"
+},
+{
+"pmid": "35008794",
+"title": "Modulation by 17,20S(OH)2pD of Fibrosis-Related Mediators in Dermal Fibroblast Lines from Healthy Donors and from Patients with Systemic Sclerosis.",
+"year": "2021",
+"journal": "Int J Mol Sci",
+"cue": "no effect",
+"snippet": "…S and decreased TIMP-1 and PAI1 expression in SSc fibroblasts. Although 17,20S(OH)2pD had no effect on Gli1 or Gli2 in SSc fibroblasts, it increased Gli2 expression when cultured with TGF-β…"
+},
+{
+"pmid": "41281756",
+"title": "TGF-β1/SMAD3-mediated Non-canonical Hedgehog Signaling Promotes Pancreatic Stellate Cell Activation and Fibrosis in Chronic Pancreatitis.",
+"year": "2025",
+"journal": "Int J Biol Sci",
+"cue": "reduces fibrosis",
+"snippet": "…ly expressed in activated PSCs. PSC-specific deletion of Gli2, but not Smo, significantly reduces fibrosis and the severity of the mouse CP, indicating that GLI2 in PSCs can be driven by non-canon…"
+}
+]
+},
+"ssc_M2_037": {
+"support": [
+{
+"pmid": "35220880",
+"title": "A defective lysophosphatidic acid-autophagy axis increases miscarriage risk by restricting decidual macrophage residence.",
+"year": "2022",
+"journal": "Autophagy"
+},
+{
+"pmid": "39062979",
+"title": "Autotaxin-Lysophosphatidate Axis: Promoter of Cancer Development and Possible Therapeutic Implications.",
+"year": "2024",
+"journal": "Int J Mol Sci"
+},
+{
+"pmid": "29724718",
+"title": "The Autotaxin-Lysophosphatidic Acid Axis Promotes Lung Carcinogenesis.",
+"year": "2018",
+"journal": "Cancer Res"
+},
+{
+"pmid": "36910157",
+"title": "Single-cell transcriptome dynamics of the autotaxin-lysophosphatidic acid axis during muscle regeneration reveal proliferative effects in mesenchymal fibro-adipogenic progenitors.",
+"year": "2023",
+"journal": "Front Cell Dev Biol"
+},
+{
+"pmid": "22744859",
+"title": "Pulmonary autotaxin expression contributes to the pathogenesis of pulmonary fibrosis.",
+"year": "2012",
+"journal": "Am J Respir Cell Mol Biol"
+}
+],
+"contrary": []
+},
+"ssc_M2_038": {
+"support": [
+{
+"pmid": "31722201",
+"title": "Single-Cell Transcriptomics Uncovers Zonation of Function in the Mesenchyme during Liver Fibrosis.",
+"year": "2019",
+"journal": "Cell Rep"
+},
+{
+"pmid": "35220880",
+"title": "A defective lysophosphatidic acid-autophagy axis increases miscarriage risk by restricting decidual macrophage residence.",
+"year": "2022",
+"journal": "Autophagy"
+},
+{
+"pmid": "37680863",
+"title": "Inhibition of LPA-LPAR1 and VEGF-VEGFR2 Signaling in IPF Treatment.",
+"year": "2023",
+"journal": "Drug Des Devel Ther"
+},
+{
+"pmid": "39524207",
+"title": "YAP mediates HIV-related liver fibrosis.",
+"year": "2024",
+"journal": "JHEP Rep"
+},
+{
+"pmid": "39062979",
+"title": "Autotaxin-Lysophosphatidate Axis: Promoter of Cancer Development and Possible Therapeutic Implications.",
+"year": "2024",
+"journal": "Int J Mol Sci"
+},
+{
+"pmid": "40555342",
+"title": "Inflammation-related gene ITGA5 affects the healing of diabetic foot ulcers through PI3K-AKT signaling pathway.",
+"year": "2025",
+"journal": "Eur J Pharmacol"
+}
+],
+"contrary": [
+{
+"pmid": "40887574",
+"title": "The LPAR1 antagonist, PIPE-791 produces antifibrotic effects in models of lung fibrosis.",
+"year": "2025",
+"journal": "Respir Res",
+"cue": "reduces fibrosis",
+"snippet": "…osis and collagen expression in mouse bleomycin models. We show that PIPE-791 effectively reduces fibrosis and fibrotic markers in vitro and in vivo and that it has slow association and dissociati…"
+},
+{
+"pmid": "39570661",
+"title": "Discovery of GS-2278, a Potent and Selective LPAR1 Antagonist for the Treatment of Idiopathic Pulmonary Fibrosis.",
+"year": "2025",
+"journal": "J Med Chem",
+"cue": "antifibrotic",
+"snippet": "…nt and selective lysophosphatidic acid receptor 1 (LPAR1) antagonist with a direct-acting antifibrotic mechanism. 18a was initially identified as a potent non-carboxylic acid LPAR1 antagonist…"
+}
+]
+},
+"ssc_M2_039": {
+"support": [
+{
+"pmid": "39955992",
+"title": "Senescent endothelial cell-derived Galectin 3 promotes silicosis through endothelial-fibroblast and endothelial-macrophage crosstalk.",
+"year": "2025",
+"journal": "J Hazard Mater"
+},
+{
+"pmid": "17952090",
+"title": "TLR4 enhances TGF-beta signaling and hepatic fibrosis.",
+"year": "2007",
+"journal": "Nat Med"
+},
+{
+"pmid": "40957419",
+"title": "A TLR4-dependent fibroblast-monocyte axis in tumor-draining lymph nodes contributes to metastasis in triple-negative breast cancer.",
+"year": "2025",
+"journal": "Immunity"
+},
+{
+"pmid": "38917754",
+"title": "Gentiopicroside improves NASH and liver fibrosis by suppressing TLR4 and NLRP3 signaling pathways.",
+"year": "2024",
+"journal": "Biomed Pharmacother"
+},
+{
+"pmid": "41042124",
+"title": "Single Cell and Spatial Transcriptomics Define a Proinflammatory and Profibrotic Niche After Kidney Injury.",
+"year": "2026",
+"journal": "Adv Sci (Weinh)"
+},
+{
+"pmid": "31683033",
+"title": "Phillygenin inhibits LPS-induced activation and inflammation of LX2 cells by TLR4/MyD88/NF-κB signaling pathway.",
+"year": "2020",
+"journal": "J Ethnopharmacol"
+}
+],
+"contrary": [
+{
+"pmid": "39413786",
+"title": "Multiscale drug screening for cardiac fibrosis identifies MD2 as a therapeutic target.",
+"year": "2024",
+"journal": "Cell",
+"cue": "no effect",
+"snippet": "Cardiac fibrosis impairs cardiac function, but no effective clinical therapies exist. To address this unmet need, we employed a high-throughput sc…"
+},
+{
+"pmid": "37196773",
+"title": "NQO1 alleviates renal fibrosis by inhibiting the TLR4/NF-κB and TGF-β/Smad signaling pathways in diabetic nephropathy.",
+"year": "2023",
+"journal": "Cell Signal",
+"cue": "protective",
+"snippet": "…ss and damage caused by toxic quinones. In the present study, we aimed to investigate the protective effects of NQO1 against diabetes-induced renal inflammation and fibrosis and the underlyi…"
+},
+{
+"pmid": "39096618",
+"title": "Mefunidone alleviates silica-induced inflammation and fibrosis by inhibiting the TLR4-NF-κB/MAPK pathway and attenuating pyroptosis in murine macrophages.",
+"year": "2024",
+"journal": "Biomed Pharmacother",
+"cue": "no effect",
+"snippet": "…The pathogenesis and key targets of silicosis are not yet clear, and there are currently no effective treatments available. Therefore, we conducted research on mefunidone (MFD), a novel an…"
+},
+{
+"pmid": "38763013",
+"title": "Zhen-wu-tang protects against myocardial fibrosis by inhibiting M1 macrophage polarization via the TLR4/NF-κB pathway.",
+"year": "2024",
+"journal": "Phytomedicine",
+"cue": "protective",
+"snippet": "…myocardial fibrosis pathomorphologically and identifying fibrosis-related indicators, the protective effect of the ZWT on the heart was evaluated. A model of macrophage polarization was esta…"
+}
+]
+},
+"ssc_M2_040": {
+"support": [
+{
+"pmid": "39994205",
+"title": "CCN2 mediates fibroblast-macrophage interaction in knee arthrofibrosis based on single-cell RNA-seq analysis.",
+"year": "2025",
+"journal": "Bone Res"
+},
+{
+"pmid": "11890876",
+"title": "Scleroderma-like cutaneous syndromes.",
+"year": "2002",
+"journal": "Curr Rheumatol Rep"
+},
+{
+"pmid": "27734393",
+"title": "CCN2 in Skin Fibrosis.",
+"year": "2017",
+"journal": "Methods Mol Biol"
+},
+{
+"pmid": "40780596",
+"title": "Transcription factor MEOX1 accelerates pulmonary fibrosis by regulating mitophagy and senescence.",
+"year": "2025",
+"journal": "Eur J Pharmacol"
+},
+{
+"pmid": "11890879",
+"title": "Connective tissue growth factor: a new and important player in the pathogenesis of fibrosis.",
+"year": "2002",
+"journal": "Curr Rheumatol Rep"
+},
+{
+"pmid": "28488090",
+"title": "Pathogenesis of systemic sclerosis-current concept and emerging treatments.",
+"year": "2017",
+"journal": "Immunol Res"
+}
+],
+"contrary": [
+{
+"pmid": "35491858",
+"title": "Tubular cells produce FGF2 via autophagy after acute kidney injury leading to fibroblast activation and renal fibrosis.",
+"year": "2023",
+"journal": "Autophagy",
+"cue": "reduced fibrosis",
+"snippet": "…y deficiency induced after AKI suppressed the pro-fibrotic phenotype in tubular cells and reduced fibrosis. Among the major cytokines, tubular autophagy deficiency in iRT-atg7-KO mice specifically…"
+},
+{
+"pmid": "38899461",
+"title": "Fibroblast Smad7 Induction Protects the Remodeling Pressure-Overloaded Heart.",
+"year": "2024",
+"journal": "Circ Res",
+"cue": "In contrast",
+"snippet": "…of structural collagens and matricellular proteins and markedly increases MMP2 secretion. In contrast, Smad7 overexpression reduced MMP2 levels. In fibroblasts populating collagen lattices, t…"
+},
+{
+"pmid": "38788399",
+"title": "Forsythoside A regulates pulmonary fibrosis by inhibiting endothelial-to-mesenchymal transition and lung fibroblast proliferation via the PTPRB signaling.",
+"year": "2024",
+"journal": "Phytomedicine",
+"cue": "protective",
+"snippet": "…side A (FA) derived from Forsythia suspensa (Thunb.) Vahl, has been found to possess lung-protective effect. However, studies on its anti-pulmonary fibrosis effect are limited and its mechan…"
+},
+{
+"pmid": "38103794",
+"title": "Therapeutic strategies to target connective tissue growth factor in fibrotic lung diseases.",
+"year": "2024",
+"journal": "Pharmacol Ther",
+"cue": "antifibrotic",
+"snippet": "…, including idiopathic pulmonary fibrosis (IPF), remains challenging as current available antifibrotic agents are not effective in halting disease progression. Connective tissue growth factor…"
+},
+{
+"pmid": "11698729",
+"title": "Transforming growth factor-beta and connective tissue growth factor: key cytokines in scleroderma pathogenesis.",
+"year": "2001",
+"journal": "Curr Opin Rheumatol",
+"cue": "independent of",
+"snippet": "…ta responsive element in the CTGF promoter is involved, although this appears to function independent of the Smad proteins, suggesting that other TGF-beta-regulated pathways may be involved. TGF…"
+}
+]
+},
+"ssc_M2_041": {
+"support": [
+{
+"pmid": "37264161",
+"title": "Single-nucleus multiregion transcriptomic analysis of brain vasculature in Alzheimer's disease.",
+"year": "2023",
+"journal": "Nat Neurosci"
+},
+{
+"pmid": "37196797",
+"title": "Apposition of Fibroblasts With Metaplastic Gastric Cells Promotes Dysplastic Transition.",
+"year": "2023",
+"journal": "Gastroenterology"
+},
+{
+"pmid": "32472305",
+"title": "Pemigatinib: First Approval.",
+"year": "2020",
+"journal": "Drugs"
+},
+{
+"pmid": "38239077",
+"title": "Inhibition of TGFβ1 activation prevents radiation-induced lung fibrosis.",
+"year": "2024",
+"journal": "Clin Transl Med"
+},
+{
+"pmid": "36196152",
+"title": "Irisin promotes fracture healing by improving osteogenesis and angiogenesis.",
+"year": "2022",
+"journal": "J Orthop Translat"
+},
+{
+"pmid": "36549436",
+"title": "Hepatocyte Ninjurin2 promotes hepatic stellate cell activation and liver fibrosis through the IGF1R/EGR1/PDGF-BB signaling pathway.",
+"year": "2023",
+"journal": "Metabolism"
+}
+],
+"contrary": [
+{
+"pmid": "34686668",
+"title": "A human multi-lineage hepatic organoid model for liver fibrosis.",
+"year": "2021",
+"journal": "Nat Commun",
+"cue": "anti-fibrotic",
+"snippet": "…mmonly occurring forms of liver fibrosis. PDGFRB pathway involvement was confirmed by the anti-fibrotic effect observed when ARPKD organoids were treated with PDGFRB inhibitors. Besides providi…"
+},
+{
+"pmid": "38652223",
+"title": "Exploring the impact of PDGFD in osteosarcoma metastasis through single-cell sequencing analysis.",
+"year": "2024",
+"journal": "Cell Oncol (Dordr)",
+"cue": "no significant",
+"snippet": "…correlating with extended metastasis-free and overall survival. PDGFRB expression showed no significant variation between non-metastatic and metastatic osteosarcoma, nor strong correlations wit…"
+},
+{
+"pmid": "24216753",
+"title": "Targeting of αv integrin identifies a core molecular pathway that regulates fibrosis in several organs.",
+"year": "2013",
+"journal": "Nat Med",
+"cue": "did not",
+"snippet": "…whereas global loss of β3, β5 or β6 integrins or conditional loss of β8 integrins in HSCs did not. We also found that Pdgfrb-Cre effectively targeted myofibroblasts in multiple organs, an…"
+}
+]
+},
+"ssc_M2_042": {
+"support": [],
+"contrary": []
+},
+"ssc_M2_043": {
+"support": [
+{
+"pmid": "29786110",
+"title": "Multi‐layered prevention and treatment of chronic inflammation, organ fibrosis and cancer associated with canonical WNT/β‐catenin signaling activation (Review).",
+"year": "2018",
+"journal": "Int J Mol Med"
+},
+{
+"pmid": "37182601",
+"title": "EZH2 activates Wnt/β-catenin signaling in human uterine fibroids, which is inhibited by the natural compound methyl jasmonate.",
+"year": "2023",
+"journal": "F S Sci"
+}
+],
+"contrary": [
+{
+"pmid": "40690007",
+"title": "The link between Wnt-related, stress-related, and circadian genes in the dermal fibroblasts of individuals with attention-deficit hyperactivity disorder.",
+"year": "2026",
+"journal": "J Neural Transm (Vienna)",
+"cue": "did not",
+"snippet": "…each group. DKK3 was rhythmic only in the ADHD group. Although between-group differences did not reach statistical significance, BMAL1 and CRY1 expression peaked later, while PER2 and PE…"
+},
+{
+"pmid": "38158162",
+"title": "Investigation of iso-propylchaetominine anticancer activity on apoptosis, cell cycle and Wnt signaling pathway in different cancer models.",
+"year": "2024",
+"journal": "Fitoterapia",
+"cue": "no significant",
+"snippet": "…opylchaetominine in healthy fibroblast cells was assessed using the annexin V method, and no significant apoptotic activity was observed between the groups treated with the active substance and…"
+}
+]
+},
+"ssc_M2_044": {
+"support": [
+{
+"pmid": "36835413",
+"title": "Crosstalk of Inflammatory Cytokines within the Breast Tumor Microenvironment.",
+"year": "2023",
+"journal": "Int J Mol Sci"
+}
+],
+"contrary": []
+},
+"ssc_M2_046": {
+"support": [
+{
+"pmid": "32499639",
+"title": "Notch signalling drives synovial fibroblast identity and arthritis pathology.",
+"year": "2020",
+"journal": "Nature"
+},
+{
+"pmid": "38799455",
+"title": "Macrophage polarization in rheumatoid arthritis: signaling pathways, metabolic reprogramming, and crosstalk with synovial fibroblasts.",
+"year": "2024",
+"journal": "Front Immunol"
+},
+{
+"pmid": "36289173",
+"title": "Endometriosis: Cellular and Molecular Mechanisms Leading to Fibrosis.",
+"year": "2023",
+"journal": "Reprod Sci"
+},
+{
+"pmid": "38460791",
+"title": "Endothelial POFUT1 controls injury-induced liver fibrosis by repressing fibrinogen synthesis.",
+"year": "2024",
+"journal": "J Hepatol"
+},
+{
+"pmid": "38330107",
+"title": "Corpora cavernosa fibroblasts mediate penile erection.",
+"year": "2024",
+"journal": "Science"
+},
+{
+"pmid": "38841857",
+"title": "Molecular Changes Implicate Angiogenesis and Arterial Remodeling in Systemic Sclerosis-Associated and Idiopathic Pulmonary Hypertension.",
+"year": "2024",
+"journal": "Arterioscler Thromb Vasc Biol"
+}
+],
+"contrary": [
+{
+"pmid": "38335304",
+"title": "Single-Cell Analysis Identifies NOTCH3-Mediated Interactions between Stromal Cells That Promote Microenvironment Remodeling and Invasion in Lung Adenocarcinoma.",
+"year": "2024",
+"journal": "Cancer Res",
+"cue": "do not",
+"snippet": "…he treatment of lung adenocarcinoma (LUAD); however, a significant proportion of patients do not respond. Recent transcriptomic studies to understand determinants of immunotherapy respon…"
+},
+{
+"pmid": "26779814",
+"title": "Targeting of the pulmonary capillary vascular niche promotes lung alveolar repair and ameliorates fibrosis.",
+"year": "2016",
+"journal": "Nat Med",
+"cue": "reduces fibrosis",
+"snippet": "…CXCR7 agonist or PCEC-targeted Jag1 shRNA after lung injury promotes alveolar repair and reduces fibrosis. Thus, targeting of a maladapted hematopoietic-vascular niche, in which macrophages, PCEC…"
+}
+]
+},
+"ssc_M2_047": {
+"support": [
+{
+"pmid": "37507073",
+"title": "Stricturing Crohn's Disease Single-Cell RNA Sequencing Reveals Fibroblast Heterogeneity and Intercellular Interactions.",
+"year": "2023",
+"journal": "Gastroenterology"
+},
+{
+"pmid": "31436586",
+"title": "Macrophages and cadherins in fibrosis and systemic sclerosis.",
+"year": "2019",
+"journal": "Curr Opin Rheumatol"
+},
+{
+"pmid": "36050483",
+"title": "ZFP281 drives a mesenchymal-like dormancy program in early disseminated breast cancer cells that prevents metastatic outgrowth in the lung.",
+"year": "2022",
+"journal": "Nat Cancer"
+},
+{
+"pmid": "40877928",
+"title": "Regulation of fibroblast-like synoviocyte function by cadherin 6 in rheumatoid arthritis.",
+"year": "2025",
+"journal": "Arthritis Res Ther"
+},
+{
+"pmid": "38034129",
+"title": "Cdh11: Roles in different diseases and potential value in disease diagnosis and treatment.",
+"year": "2023",
+"journal": "Biochem Biophys Rep"
+},
+{
+"pmid": "35662129",
+"title": "Cadherin-11 and Its Role in Tissue Fibrosis.",
+"year": "2023",
+"journal": "Cells Tissues Organs"
+}
+],
+"contrary": [
+{
+"pmid": "41329017",
+"title": "CDH11 Contributes to Airway Neutrophilic Inflammation in Severe Asthma via FGFR1.",
+"year": "2025",
+"journal": "FASEB J",
+"cue": "no effect",
+"snippet": "…ramatically decreased airway neutrophil accumulation, as well as IL-6 production, but had no effect on eosinophilic infiltration, type 2 inflammation (IL-4 and IL-5) nor airway hyperrespons…"
+},
+{
+"pmid": "30509494",
+"title": "CDH11 promotes liver fibrosis via activation of hepatic stellate cells.",
+"year": "2019",
+"journal": "Biochem Biophys Res Commun",
+"cue": "anti-fibrotic",
+"snippet": "…CDH11 promotes liver fibrosis by activating HSCs and may represent a potential target for anti-fibrotic therapies."
+},
+{
+"pmid": "38447248",
+"title": "CADHERIN-11 regulation of myeloid phagocytes and autoimmune inflammation in murine lupus.",
+"year": "2024",
+"journal": "J Autoimmun",
+"cue": "Paradoxical",
+"snippet": "…anti-dsDNA autoantibodies, splenomegaly, type I interferons, and inflammatory cytokines. Paradoxically, at the tissue level, Cdh11-/- mice were protected against glomerulonephritis, indicati…"
+}
+]
+},
+"ssc_M4_018": {
+"support": [
+{
+"pmid": "32035984",
+"title": "Single-cell transcriptome analysis of human skin identifies novel fibroblast subpopulation and enrichment of immune subsets in atopic dermatitis.",
+"year": "2020",
+"journal": "J Allergy Clin Immunol"
+},
+{
+"pmid": "37137915",
+"title": "Lung endothelial cells regulate pulmonary fibrosis through FOXF1/R-Ras signaling.",
+"year": "2023",
+"journal": "Nat Commun"
+},
+{
+"pmid": "27340270",
+"title": "The Biological Basis for Cardiac Repair After Myocardial Infarction: From Inflammation to Fibrosis.",
+"year": "2016",
+"journal": "Circ Res"
+},
+{
+"pmid": "39915054",
+"title": "YAP/TAZ are crucial regulators of macrophage-mediated pulmonary inflammation and fibrosis after bleomycin-induced injury.",
+"year": "2025",
+"journal": "Eur Respir J"
+},
+{
+"pmid": "39580151",
+"title": "Spatial dissection of tumour microenvironments in gastric cancers reveals the immunosuppressive crosstalk between CCL2+ fibroblasts and STAT3-activated macrophages.",
+"year": "2025",
+"journal": "Gut"
+},
+{
+"pmid": "40957419",
+"title": "A TLR4-dependent fibroblast-monocyte axis in tumor-draining lymph nodes contributes to metastasis in triple-negative breast cancer.",
+"year": "2025",
+"journal": "Immunity"
+}
+],
+"contrary": []
+},
+"ssc_M2_048": {
+"support": [
+{
+"pmid": "37061196",
+"title": "An integrated view of anti-inflammatory and antifibrotic targets for the treatment of NASH.",
+"year": "2023",
+"journal": "J Hepatol"
+},
+{
+"pmid": "37391294",
+"title": "Targeting galectin-3 in inflammatory and fibrotic diseases.",
+"year": "2023",
+"journal": "Trends Pharmacol Sci"
+},
+{
+"pmid": "39955992",
+"title": "Senescent endothelial cell-derived Galectin 3 promotes silicosis through endothelial-fibroblast and endothelial-macrophage crosstalk.",
+"year": "2025",
+"journal": "J Hazard Mater"
+},
+{
+"pmid": "39084257",
+"title": "Galectin-3 contributes to pathogenesis of IgA nephropathy.",
+"year": "2024",
+"journal": "Kidney Int"
+},
+{
+"pmid": "37418531",
+"title": "Single-cell and spatial transcriptomics identify a macrophage population associated with skeletal muscle fibrosis.",
+"year": "2023",
+"journal": "Sci Adv"
+},
+{
+"pmid": "39595213",
+"title": "Involvement of Lgals3/Galectin-3 in Choroidal Neovascularization and Subretinal Fibrosis Formation.",
+"year": "2024",
+"journal": "Biomedicines"
+}
+],
+"contrary": [
+{
+"pmid": "37224653",
+"title": "Macrophage in liver Fibrosis: Identities and mechanisms.",
+"year": "2023",
+"journal": "Int Immunopharmacol",
+"cue": "In contrast",
+"snippet": "…-inflammatory effects, and, therefore, influences the degree of fibrosis in later phases. In contrast, the origin of the macrophages is closely associated with their replenishment and activat…"
+},
+{
+"pmid": "31812510",
+"title": "Effects of Belapectin, an Inhibitor of Galectin-3, in Patients With Nonalcoholic Steatohepatitis With Cirrhosis and Portal Hypertension.",
+"year": "2020",
+"journal": "Gastroenterology",
+"cue": "no significant",
+"snippet": "…s included changes in liver histology and development of liver-related outcomes. We found no significant difference in ΔHVPG between the 2 mg/kg belapectin group and placebo group (-0.28 mm HG v…"
+}
+]
+},
+"ssc_M2_049": {
+"support": [
+{
+"pmid": "28409151",
+"title": "Temporal Changes in Gene Expression Profile during Mature Adipocyte Dedifferentiation.",
+"year": "2017",
+"journal": "Int J Genomics"
+},
+{
+"pmid": "32977422",
+"title": "Hair Growth Activity of Three Plants of the Polynesian Cosmetopoeia and Their Regulatory Effect on Dermal Papilla Cells.",
+"year": "2020",
+"journal": "Molecules"
+},
+{
+"pmid": "32567373",
+"title": "Clinical Management and Therapeutic Strategies for the Thyroid-Associated Ophthalmopathy: Current and Future Perspectives.",
+"year": "2020",
+"journal": "Curr Eye Res"
+}
+],
+"contrary": [
+{
+"pmid": "20676061",
+"title": "Unique microRNA profile in Dupuytren's contracture supports deregulation of β-catenin pathway.",
+"year": "2010",
+"journal": "Mod Pathol",
+"cue": "no significant",
+"snippet": "…nt/non-recurrent and patients with hereditary/non-hereditary Dupuytren's contracture, but no significant differences appeared in miRNA-expression profiles of these groups. Identification of uniq…"
+}
+]
+},
+"ssc_M2_050": {
+"support": [],
+"contrary": []
+},
+"ssc_M2_051": {
+"support": [
+{
+"pmid": "29786110",
+"title": "Multi‐layered prevention and treatment of chronic inflammation, organ fibrosis and cancer associated with canonical WNT/β‐catenin signaling activation (Review).",
+"year": "2018",
+"journal": "Int J Mol Med"
+},
+{
+"pmid": "32692579",
+"title": "Single-Cell Reconstruction of Human Basal Cell Diversity in Normal and Idiopathic Pulmonary Fibrosis Lungs.",
+"year": "2020",
+"journal": "Am J Respir Crit Care Med"
+},
+{
+"pmid": "40908548",
+"title": "Sympathetic Activation Promotes Kidney Fibrosis in Mice via Macrophage-Derived N2ICD-Enriched Extracellular Vesicles.",
+"year": "2025",
+"journal": "Adv Sci (Weinh)"
+},
+{
+"pmid": "40345585",
+"title": "NOTCH2 disrupts the synovial fibroblast identity and the inflammatory response of epiphyseal chondrocytes.",
+"year": "2025",
+"journal": "J Biol Chem"
+},
+{
+"pmid": "31894255",
+"title": "Precision medicine for human cancers with Notch signaling dysregulation (Review).",
+"year": "2020",
+"journal": "Int J Mol Med"
+},
+{
+"pmid": "34588551",
+"title": "Single-cell and bulk transcriptomics of the liver reveals potential targets of NASH with fibrosis.",
+"year": "2021",
+"journal": "Sci Rep"
+}
+],
+"contrary": [
+{
+"pmid": "39505846",
+"title": "Induction of a distinct macrophage population and protection from lung injury and fibrosis by Notch2 blockade.",
+"year": "2024",
+"journal": "Nat Commun",
+"cue": "does not",
+"snippet": "…g injury and fibrosis, we find that the expansion of these macrophages before lung injury does not promote fibrosis but rather appears to ameliorate it. This suggests that these damage-ass…"
+},
+{
+"pmid": "39798343",
+"title": "Celastrol ameliorates fibrosis in Western diet/tetrachloromethane-induced nonalcoholic steatohepatitis by suppressing Notch/osteopontin signaling.",
+"year": "2025",
+"journal": "Phytomedicine",
+"cue": "protective",
+"snippet": "…eopontin (OPN) levels, inhibiting hepatic stellate cells (HSCs) activation. Moreover, the protective effects of Celastrol on NASH progression were abolished in Notch2-overexpressing mice. Th…"
+}
+]
+},
+"ssc_M2_052": {
+"support": [
+{
+"pmid": "34884633",
+"title": "The Role of EREG/EGFR Pathway in Tumor Progression.",
+"year": "2021",
+"journal": "Int J Mol Sci"
+},
+{
+"pmid": "34326696",
+"title": "Single-cell transcriptomics reveals heterogeneous progression and EGFR activation in pancreatic adenosquamous carcinoma.",
+"year": "2021",
+"journal": "Int J Biol Sci"
+},
+{
+"pmid": "39750963",
+"title": "dEREGulated pathways: unraveling the role of epiregulin in skin, kidney, and lung fibrosis.",
+"year": "2025",
+"journal": "Am J Physiol Cell Physiol"
+},
+{
+"pmid": "33520984",
+"title": "Epiregulin (EREG) and Myocardin Related Transcription Factor A (MRTF-A) Form a Feedforward Loop to Drive Hepatic Stellate Cell Activation.",
+"year": "2020",
+"journal": "Front Cell Dev Biol"
+},
+{
+"pmid": "40725178",
+"title": "NR4A1 Mediates Bronchopulmonary Dysplasia-Like Lung Injury Induced by Intrauterine Inflammation in Mouse Offspring.",
+"year": "2025",
+"journal": "Int J Mol Sci"
+},
+{
+"pmid": "29091309",
+"title": "Epiregulin (EREG) is upregulated through an IL-1β autocrine loop in Caco-2 epithelial cells with reduced CFTR function.",
+"year": "2018",
+"journal": "J Cell Biochem"
+}
+],
+"contrary": [
+{
+"pmid": "40961242",
+"title": "Sclerotic GVHD and scleroderma share dysregulated gene expression that is ameliorated by EREG therapeutic antibody.",
+"year": "2025",
+"journal": "Blood",
+"cue": "antifibrotic",
+"snippet": "…tibody to be functional and safe in vivo using human EREG knockin mice. To understand the antifibrotic mechanism of targeting EREG, we aligned skin single-cell transcriptomic profiles of SSc,…"
+},
+{
+"pmid": "41326761",
+"title": "N-phenylquinazolin-4-amine-based EGFR TKIs suppress pulmonary fibrosis by modulating the EGFR/ERBB3 axis in epithelial-macrophage interaction.",
+"year": "2025",
+"journal": "Commun Biol",
+"cue": "attenuated fibrosis",
+"snippet": "…ase inhibitors (TKIs) in murine models of bleomycin- and radiation-induced PF. These TKIs attenuated fibrosis by modulating the alveolar epithelial EGFR/ERBB3 axis. EGFR ligands (EGF, EREG, NRG1) wer…"
+}
+]
+},
+"ssc_M3_026": {
+"support": [],
+"contrary": []
+},
+"ssc_M2_053": {
+"support": [
+{
+"pmid": "33487713",
+"title": "Superficial CD34-Positive Fibroblastic Tumor: Report of an Extremely Rare Entity.",
+"year": "2020",
+"journal": "Indian J Dermatol"
+},
+{
+"pmid": "16829517",
+"title": "Fli1 and Ets1 have distinct roles in connective tissue growth factor/CCN2 gene regulation and induction of the profibrotic gene program.",
+"year": "2006",
+"journal": "J Biol Chem"
+},
+{
+"pmid": "10935500",
+"title": "Tel, a frequent target of leukemic translocations, induces cellular aggregation and influences expression of extracellular matrix components.",
+"year": "1999",
+"journal": "Neoplasia"
+},
+{
+"pmid": "25562121",
+"title": "Wound healing genes and susceptibility to cutaneous leishmaniasis in Brazil: role of COL1A1.",
+"year": "2015",
+"journal": "Infect Genet Evol"
+},
+{
+"pmid": "34612781",
+"title": "Overexpression of EWSR1 (Ewing sarcoma breakpoint region 1/EWS RNA binding protein 1) predicts poor survival in patients with hepatocellular carcinoma.",
+"year": "2021",
+"journal": "Bioengineered"
+},
+{
+"pmid": "15500711",
+"title": "[Diagnostic significance and clinical application of specific chimeric genes in soft tissue sarcomas by RT-PCR using paraffin-embedded tissues: a study of 103 specimens].",
+"year": "2004",
+"journal": "Zhonghua Yi Xue Za Zhi"
+}
+],
+"contrary": []
+},
+"ssc_M2_054": {
+"support": [
+{
+"pmid": "39073023",
+"title": "Galectin 3-binding protein (LGALS3BP) depletion attenuates hepatic fibrosis by reducing transforming growth factor-β1 (TGF-β1) availability and inhibits hepatocarcinogenesis.",
+"year": "2024",
+"journal": "Cancer Commun (Lond)"
+},
+{
+"pmid": "35327386",
+"title": "Urinary Galectin-3 as a Novel Biomarker for the Prediction of Renal Fibrosis and Kidney Disease Progression.",
+"year": "2022",
+"journal": "Biomedicines"
+},
+{
+"pmid": "37958504",
+"title": "Pioglitazone Protects Tubular Epithelial Cells during Kidney Fibrosis by Attenuating miRNA Dysregulation and Autophagy Dysfunction Induced by TGF-β.",
+"year": "2023",
+"journal": "Int J Mol Sci"
+},
+{
+"pmid": "17852852",
+"title": "Multiple inflammatory-, tissue remodelling- and fibrosis genes are differentially transcribed in the livers of Abcb4 (-/ - ) mice harbouring chronic cholangitis.",
+"year": "2007",
+"journal": "Scand J Gastroenterol"
+},
+{
+"pmid": "42262404",
+"title": "Multiplexed targeted mRNA profiling of alcohol-related liver disease reveals stage-specific dysregulation of signaling pathways.",
+"year": "2026",
+"journal": "Mol Biol Rep"
+},
+{
+"pmid": "41572406",
+"title": "Macrophage surface protein Mac-2 mediates inflammatory and stromal stress pathways in doxorubicin-induced cardiac injury.",
+"year": "2026",
+"journal": "Cardiooncology"
+}
+],
+"contrary": [
+{
+"pmid": "35441327",
+"title": "Galectin-3 interferes with tissue repair and promotes cardiac dysfunction and comorbidities in a genetic heart failure model.",
+"year": "2022",
+"journal": "Cell Mol Life Sci",
+"cue": "protective",
+"snippet": "…on accompanying the acute inflammatory phase (4-week-old mice), whereas a more pronounced protective effect was observed in older mice, including the preservation of diastolic function. Inte…"
+}
+]
+},
+"ssc_M2_055": {
+"support": [
+{
+"pmid": "37264161",
+"title": "Single-nucleus multiregion transcriptomic analysis of brain vasculature in Alzheimer's disease.",
+"year": "2023",
+"journal": "Nat Neurosci"
+},
+{
+"pmid": "37196797",
+"title": "Apposition of Fibroblasts With Metaplastic Gastric Cells Promotes Dysplastic Transition.",
+"year": "2023",
+"journal": "Gastroenterology"
+},
+{
+"pmid": "32472305",
+"title": "Pemigatinib: First Approval.",
+"year": "2020",
+"journal": "Drugs"
+},
+{
+"pmid": "38239077",
+"title": "Inhibition of TGFβ1 activation prevents radiation-induced lung fibrosis.",
+"year": "2024",
+"journal": "Clin Transl Med"
+},
+{
+"pmid": "36196152",
+"title": "Irisin promotes fracture healing by improving osteogenesis and angiogenesis.",
+"year": "2022",
+"journal": "J Orthop Translat"
+},
+{
+"pmid": "36549436",
+"title": "Hepatocyte Ninjurin2 promotes hepatic stellate cell activation and liver fibrosis through the IGF1R/EGR1/PDGF-BB signaling pathway.",
+"year": "2023",
+"journal": "Metabolism"
+}
+],
+"contrary": [
+{
+"pmid": "34686668",
+"title": "A human multi-lineage hepatic organoid model for liver fibrosis.",
+"year": "2021",
+"journal": "Nat Commun",
+"cue": "anti-fibrotic",
+"snippet": "…mmonly occurring forms of liver fibrosis. PDGFRB pathway involvement was confirmed by the anti-fibrotic effect observed when ARPKD organoids were treated with PDGFRB inhibitors. Besides providi…"
+},
+{
+"pmid": "38652223",
+"title": "Exploring the impact of PDGFD in osteosarcoma metastasis through single-cell sequencing analysis.",
+"year": "2024",
+"journal": "Cell Oncol (Dordr)",
+"cue": "no significant",
+"snippet": "…correlating with extended metastasis-free and overall survival. PDGFRB expression showed no significant variation between non-metastatic and metastatic osteosarcoma, nor strong correlations wit…"
+},
+{
+"pmid": "24216753",
+"title": "Targeting of αv integrin identifies a core molecular pathway that regulates fibrosis in several organs.",
+"year": "2013",
+"journal": "Nat Med",
+"cue": "did not",
+"snippet": "…whereas global loss of β3, β5 or β6 integrins or conditional loss of β8 integrins in HSCs did not. We also found that Pdgfrb-Cre effectively targeted myofibroblasts in multiple organs, an…"
+}
+]
+},
+"ssc_M4_019": {
+"support": [
+{
+"pmid": "40269162",
+"title": "Spatial mapping of transcriptomic plasticity in metastatic pancreatic cancer.",
+"year": "2025",
+"journal": "Nature"
+},
+{
+"pmid": "39474980",
+"title": "PKM2-Driven Lactate Overproduction Triggers Endothelial-To-Mesenchymal Transition in Ischemic Flap via Mediating TWIST1 Lactylation.",
+"year": "2024",
+"journal": "Adv Sci (Weinh)"
+},
+{
+"pmid": "37978868",
+"title": "Autophagy activates EGR1 via MAPK/ERK to induce FGF2 in renal tubular cells for fibroblast activation and fibrosis during maladaptive kidney repair.",
+"year": "2024",
+"journal": "Autophagy"
+},
+{
+"pmid": "37752256",
+"title": "HK-2 cell response to TGF-β highly depends on cell culture medium formulations.",
+"year": "2024",
+"journal": "Histochem Cell Biol"
+},
+{
+"pmid": "39919897",
+"title": "ITGA5+ synovial fibroblasts orchestrate proinflammatory niche formation by remodelling the local immune microenvironment in rheumatoid arthritis.",
+"year": "2025",
+"journal": "Ann Rheum Dis"
+}
+],
+"contrary": [
+{
+"pmid": "35491858",
+"title": "Tubular cells produce FGF2 via autophagy after acute kidney injury leading to fibroblast activation and renal fibrosis.",
+"year": "2023",
+"journal": "Autophagy",
+"cue": "reduced fibrosis",
+"snippet": "…y deficiency induced after AKI suppressed the pro-fibrotic phenotype in tubular cells and reduced fibrosis. Among the major cytokines, tubular autophagy deficiency in iRT-atg7-KO mice specifically…"
+},
+{
+"pmid": "34349032",
+"title": "TGFβ2 and TGFβ3 isoforms drive fibrotic disease pathogenesis.",
+"year": "2021",
+"journal": "Sci Transl Med",
+"cue": "does not",
+"snippet": "…ently involved in mouse fibrosis models in vivo, and selective TGFβ2 and TGFβ3 inhibition does not lead to the increased inflammation observed with pan-TGFβ isoform inhibition. A cocrystal…"
+},
+{
+"pmid": "39373248",
+"title": "Fibroblast-specific TGF-β signaling mediates cardiac dysfunction, fibrosis, and hypertrophy in obese diabetic mice.",
+"year": "2024",
+"journal": "Cardiovasc Res",
+"cue": "protective",
+"snippet": "…blast-specific TbR2 loss attenuated systolic and diastolic dysfunction in db/db mice. The protective effects of fibroblast TbR2 loss in db/db mice were associated with attenuated fibrosis an…"
+},
+{
+"pmid": "38070245",
+"title": "Formononetin ameliorates isoproterenol induced cardiac fibrosis through improving mitochondrial dysfunction.",
+"year": "2024",
+"journal": "Biomed Pharmacother",
+"cue": "protective",
+"snippet": "…been extensively researched due to its various biological activities, including a potent protective effect on the cardiovascular system. However, the impact of formononetin on cardiac fibro…"
+},
+{
+"pmid": "40383937",
+"title": "TRIM16 mediates secretory autophagy in head and neck cancer-associated fibroblasts.",
+"year": "2025",
+"journal": "Autophagy",
+"cue": "independent of",
+"snippet": "…ncluding IL6, to the plasma membrane for secretion. Autophagy in CAFs is constitutive and independent of STAT3, MAPK1/ERK2-MAPK3/ERK1 and phosphoinositide 3-kinase (PI3K) signaling. Despite the…"
+}
+]
+},
+"ssc_M2_056": {
+"support": [
+{
+"pmid": "37690165",
+"title": "Oxidatively stressed extracellular microenvironment drives fibroblast activation and kidney fibrosis.",
+"year": "2023",
+"journal": "Redox Biol"
+},
+{
+"pmid": "38060313",
+"title": "Mitochondria- and NOX4-dependent antioxidant defense mitigates progression to nonalcoholic steatohepatitis in obesity.",
+"year": "2023",
+"journal": "J Clin Invest"
+},
+{
+"pmid": "37871532",
+"title": "Cardiomyocyte NOX4 regulates resident macrophage-mediated inflammation and diastolic dysfunction in stress cardiomyopathy.",
+"year": "2023",
+"journal": "Redox Biol"
+},
+{
+"pmid": "30262993",
+"title": "Polydatin attenuates diet-induced nonalcoholic steatohepatitis and fibrosis in mice.",
+"year": "2018",
+"journal": "Int J Biol Sci"
+},
+{
+"pmid": "35568871",
+"title": "SIRT1 prevents cigarette smoking-induced lung fibroblasts activation by regulating mitochondrial oxidative stress and lipid metabolism.",
+"year": "2022",
+"journal": "J Transl Med"
+},
+{
+"pmid": "32122909",
+"title": "NOX4 Inhibition Potentiates Immunotherapy by Overcoming Cancer-Associated Fibroblast-Mediated CD8 T-cell Exclusion from Tumors.",
+"year": "2020",
+"journal": "Cancer Res"
+}
+],
+"contrary": [
+{
+"pmid": "38844470",
+"title": "HOXD10 attenuates renal fibrosis by inhibiting NOX4-induced ferroptosis.",
+"year": "2024",
+"journal": "Cell Death Dis",
+"cue": "attenuated fibrosis",
+"snippet": "…SOD) were determined using respective assay kits. Treatment with AAV-HOXD10 significantly attenuated fibrosis and renal dysfunction in UUO model mice by inhibiting NOX4 transcription, ferroptosis pat…"
+},
+{
+"pmid": "37196773",
+"title": "NQO1 alleviates renal fibrosis by inhibiting the TLR4/NF-κB and TGF-β/Smad signaling pathways in diabetic nephropathy.",
+"year": "2023",
+"journal": "Cell Signal",
+"cue": "protective",
+"snippet": "…ss and damage caused by toxic quinones. In the present study, we aimed to investigate the protective effects of NQO1 against diabetes-induced renal inflammation and fibrosis and the underlyi…"
+},
+{
+"pmid": "38959606",
+"title": "The investigation of potential mechanism of Fuzhengkangfu Decoction against Diabetic myocardial injury based on a combined strategy of network pharmacology, transcriptomics, and experimental verification.",
+"year": "2024",
+"journal": "Biomed Pharmacother",
+"cue": "protective",
+"snippet": "…potential mechanisms of FZK are not fully understood. This study aims to investigate the protective effect and mechanisms of FZK against DCM. Rats were given a high-calorie diet along with…"
+}
+]
+},
+"ssc_M2_057": {
+"support": [
+{
+"pmid": "37904253",
+"title": "Preadipocytes in human granulation tissue: role in wound healing and response to macrophage polarization.",
+"year": "2023",
+"journal": "Inflamm Regen"
+},
+{
+"pmid": "22279205",
+"title": "Defective retinal vascular endothelial cell development as a consequence of impaired integrin αVβ8-mediated activation of transforming growth factor-β.",
+"year": "2012",
+"journal": "J Neurosci"
+}
+],
+"contrary": [
+{
+"pmid": "21984919",
+"title": "Diabetic impairment of C-kit bone marrow stem cells involves the disorders of inflammatory factors, cell adhesion and extracellular matrix molecules.",
+"year": "2011",
+"journal": "PLoS One",
+"cue": "did not",
+"snippet": "…endothelial differentiation; however, the production of the angiogenic growth factor VEGF did not differ between groups. A pathway-focused array showed that the c-kit+ stem cells from dia…"
+}
+]
+},
+"ssc_M3_027": {
+"support": [
+{
+"pmid": "36499658",
+"title": "Key Genetic Components of Fibrosis in Diabetic Nephropathy: An Updated Systematic Review and Meta-Analysis.",
+"year": "2022",
+"journal": "Int J Mol Sci"
+},
+{
+"pmid": "12021584",
+"title": "Endothelin A receptor blockade decreases expression of growth factors and collagen and improves matrix metalloproteinase-2 activity in kidneys from stroke-prone spontaneously hypertensive rats.",
+"year": "2002",
+"journal": "J Cardiovasc Pharmacol"
+},
+{
+"pmid": "28060893",
+"title": "Positioning of Tacrolimus for the Treatment of Diabetic Nephropathy Based on Computational Network Analysis.",
+"year": "2017",
+"journal": "PLoS One"
+},
+{
+"pmid": "36138766",
+"title": "Prediction of Regulatory SNPs in Putative Minor Genes of the Neuro-Cardiovascular Variant in Fabry Reveals Insights into Autophagy/Apoptosis and Fibrosis.",
+"year": "2022",
+"journal": "Biology (Basel)"
+}
+],
+"contrary": []
+},
+"ssc_M4_020": {
+"support": [
+{
+"pmid": "39013470",
+"title": "Allogeneic CD19-targeted CAR-T therapy in patients with severe myositis and systemic sclerosis.",
+"year": "2024",
+"journal": "Cell"
+},
+{
+"pmid": "38381673",
+"title": "CD19 CAR T-Cell Therapy in Autoimmune Disease - A Case Series with Follow-up.",
+"year": "2024",
+"journal": "N Engl J Med"
+},
+{
+"pmid": "40562027",
+"title": "An iPSC-derived CD19/BCMA CAR-NK therapy in a patient with systemic sclerosis.",
+"year": "2025",
+"journal": "Cell"
+},
+{
+"pmid": "39107407",
+"title": "Advancements and challenges in CAR T cell therapy in autoimmune diseases.",
+"year": "2024",
+"journal": "Nat Rev Rheumatol"
+},
+{
+"pmid": "41258618",
+"title": "CAR T Cell Therapy for Rheumatoid Arthritis.",
+"year": "2025",
+"journal": "Clin Rev Allergy Immunol"
+},
+{
+"pmid": "40592721",
+"title": "New horizons in systemic sclerosis treatment: advances and emerging therapies in 2025.",
+"year": "2025",
+"journal": "RMD Open"
+}
+],
+"contrary": [
+{
+"pmid": "39742256",
+"title": "CD19 CAR-T cell therapy: a new dawn for autoimmune rheumatic diseases?",
+"year": "2024",
+"journal": "Front Immunol",
+"cue": "do not",
+"snippet": "…nflammation and tissue damage. Despite advancements in clinical management, many patients do not respond to current treatments, which often show limited efficacy due to the persistence o…"
+},
+{
+"pmid": "39542003",
+"title": "CD19-targeting CAR T-cell therapy in patients with diffuse systemic sclerosis: a case series.",
+"year": "2025",
+"journal": "Lancet Rheumatol",
+"cue": "antifibrotic",
+"snippet": "…renal failure, onset of arterial hypertension, or initiation of new immunosuppressive or antifibrotic therapy. Event-free time or treatment intensification after study entry was the primary o…"
+},
+{
+"pmid": "29695500",
+"title": "Comparison of individually tailored versus fixed-schedule rituximab regimen to maintain ANCA-associated vasculitis remission: results of a multicentre, randomised controlled, phase III trial (MAINRITSAN2).",
+"year": "2018",
+"journal": "Ann Rheum Dis",
+"cue": "did not",
+"snippet": "…81 infusions, with medians (IQR) of 3 (2-4) vs 5 (5-5) administrations. AAV relapse rates did not differ significantly between individually tailored and fixed-schedule rituximab regimens.…"
+}
+]
+},
+"ssc_M2_058": {
+"support": [
+{
+"pmid": "32790210",
+"title": "UVA influenced the SIRT1-miR-27a-5p-SMAD2-MMP1/COL1/BCL2 axis in human skin primary fibroblasts.",
+"year": "2020",
+"journal": "J Cell Mol Med"
+},
+{
+"pmid": "28849139",
+"title": "A study of Sirt1 regulation and the effect of resveratrol on synoviocyte invasion and associated joint destruction in rheumatoid arthritis.",
+"year": "2017",
+"journal": "Mol Med Rep"
+},
+{
+"pmid": "34988225",
+"title": "Target Deconvolution of Fenofibrate in Nonalcoholic Fatty Liver Disease Using Bioinformatics Analysis.",
+"year": "2021",
+"journal": "Biomed Res Int"
+},
+{
+"pmid": "31269075",
+"title": "The effect of aging in primary human dermal fibroblasts.",
+"year": "2019",
+"journal": "PLoS One"
+}
+],
+"contrary": [
+{
+"pmid": "26126510",
+"title": "Protective effect of pyrroloquinoline quinine on ultraviolet A irradiation-induced human dermal fibroblast senescence in vitro proceeds via the anti-apoptotic sirtuin 1/nuclear factor-derived erythroid 2-related factor 2/heme oxygenase 1 pathway.",
+"year": "2015",
+"journal": "Mol Med Rep",
+"cue": "protective",
+"snippet": "…aim of the present study was to determine whether pyrroloquinoline quinine (PQQ) exerts a protective effect on ultraviolet A (UVA) irradiation‐induced senescence in human dermal fibroblasts…"
+}
+]
+}
+}

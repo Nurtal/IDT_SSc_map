@@ -1795,3 +1795,251 @@ réelle + raison :
   (SSc-adjacents, ré-inclusibles), IL-17→αSMA (résultat NÉGATIF, transparence sur le Yin/Yang),
   SMAD3→PINK1 / LOX→IL6 / SMAD3-AngII / LOXL2 (off-target non-SSc).
 Le reviewer peut ré-inclure n'importe laquelle via `review_decision`.
+
+### Support multi-sources + routage contradiction (gestion des doublons)
+
+Refonte de la dédup (G3) en **conscience de polarité** :
+- même paire + même signe + **même** PMID → `G3:REDUNDANT` (rejet, vrai doublon) ;
+- même paire + même signe + **nouveau** PMID → `G3:merge_into[rid]` → `promote` **cumule** la
+  preuve (ligne dans `curation/interaction_evidence.tsv` role=secondary + `secondary_pmids` sur
+  la réaction), **sans** créer de nouvelle réaction ;
+- même paire + **signe opposé** → `G3:contradicts[rid]` → `promote` crée une **réaction
+  séparée** avec note « CONTRADICTS … — kept for review » (le reviewer tranche).
+Démo réelle : `CTNNB1→COL1A1` (ssc_M2_033, PMID 25385294) + 2e source 22328737 → fusionnée
+(n_sources=2). La base `interaction_database.csv` expose `n_sources` + `secondary_pmids`.
+
+## 2026-06-16 — App de review « Tinder-like » (deck à swipe)
+
+Refonte ergonomique de l'app de review (`scripts/build_review_app.py` → `review/index.html`).
+On passe de la liste latérale + fiche détail à un **deck à carte unique** :
+- **une interaction à la fois**, carte large et lisible, pile de 2-3 cartes en profondeur ;
+- **swipe** droite = accepter / gauche = rejeter (drag souris + tactile, `touch-action:pan-y`
+  pour préserver le scroll vertical), avec tampons verts **Keep** / rouges **Drop** pendant le
+  drag et ruban KEPT/REJECTED sur les cartes décidées ;
+- sémantique « accepter » contextuelle : `in_map` → **confirm**, `discarded` → **re-include**
+  (même vocabulaire de décision qu'avant : confirm/reject/include) ;
+- boutons d'action circulaires (undo ↩ / reject ✗ / skip ⏭ / note ✎ / accept ✓) + raccourcis
+  clavier `→`/`A`, `←`/`R`, `↑` (skip), `Z` (undo), `N` (note) ;
+- la carte présente bien tout ce qui back l'interaction : régulateur→cible + type, mécanisme,
+  pertinence SSc, **phrase décisive** (flag « to complete » si absente), **article source**
+  (titre + journal/année + liens **PubMed/DOI** incl. sources secondaires), niveau de preuve /
+  ECO / provenance, et **recommandation IA** + rationnel ; raison du discard si écartée ;
+- barre de progression live, tiroir de filtres (statut / module / reco IA / décision + recherche),
+  écran de fin, **undo** avec historique. Persistance localStorage + export CSV/JSON inchangés.
+Données embarquées régénérées (144 interactions). Syntaxe JS validée (`node --check`), rendu
+vérifié en headless Chrome (carte 1 + avance après accept).
+
+### Extraction des citations verbatim depuis les PDF des articles
+
+Nouveau `scripts/mine_pdf_quotes.py` (PyMuPDF) : pour chaque réaction dont le PMID a un PDF dans
+`/home/drfox/data/IDT_SSc_map/article/<pmid>.pdf` (47 réactions concernées), il lit le full-text
+et choisit **la phrase qui supporte le mieux l'interaction** — celle qui mentionne le plus de
+participants (symboles géniques des reactants/products/modifiers + noms protéiques tirés du
+mécanisme, ce qui capte les synonymes type STING↔TMEM173), de préférence avec un verbe de
+relation (binds/induces/inhibits…). Filtres anti-bruit : dé-hyphénation, longueur 40-360, pénalités
+sur `et al`/`Fig.`/`Received:`/dates/citations. Cache texte par page hors-repo
+(`…/article_text/<pmid>.json`). Sortie : `curation/pdf_quotes.tsv`
+(reaction_id, pmid, pdf_page, match_score, supporting_quote). **35 phrases extraites** (12 PDF sans
+match confiant).
+
+Câblage pipeline : `build_interaction_db.py` charge ce cache via `load_pdf_quotes()` et l'insère
+dans `quote_for()` **au-dessus** des notes de full-text paraphrasées mais **en-dessous** des
+verbatims discovery (jamais d'écrasement d'un verbatim humain). Nouvelle colonne `pdf_page` dans
+`interaction_database.csv`. Bilan : **20 réactions passent en `verbatim (PDF-extracted)`** (les
+« evidence note » paraphrasées tombent de 29 → 9). L'app affiche la phrase avec un badge
+« 📄 extracted from article PDF — verify » + lien « ↗ PDF p.N » qui ouvre le PDF local à la page
+(const `ARTBASE` = `file://` du dossier articles injectée par le générateur). `make review` enchaîne
+désormais `pdf-quotes → interaction-db → review-app`. Ce sont des **propositions** que le reviewer
+valide. Rendu vérifié en headless Chrome (carte ssc_M2_014, p.6, TGF-β1→LOX).
+
+#### Améliorations extraction (synonymes + repli mono-gène + surlignage + phrase alternative)
+
+Diagnostic des 12 PDF sans match (tous avec du texte, ~40-60k car., donc pas scannés) : 2 causes —
+(1) **synonymes** (on stocke les symboles HGNC, l'article écrit « TGF-β », « galectin-3 »,
+« endothelin-1 », « HIF-1β »…) ; (2) **réactions mono-participant** (ex. STAT6 → STAT6 dimer) où la
+règle « ≥2 ancres » est inatteignable.
+
+Corrections dans `mine_pdf_quotes.py` :
+- **Matcher par concept + dico de synonymes** `SYN` (symbole HGNC → variantes regex du nom commun,
+  ~35 molécules SSc fréquentes) : chaque participant = un concept (symbole ∪ synonymes), on compte
+  les concepts distincts touchés (plus juste que compter des tokens). Capte STING↔TMEM173, etc.
+- **Repli mono-gène** : si la réaction n'a qu'un seul participant réel, on accepte une phrase à 1
+  concept **à condition** qu'elle porte un verbe de relation (sinon bruit).
+- **Pénalités anti-références** (`REFLIKE` : initiales d'auteur, `année;volume`, abréviations de
+  revues) + anti-légende-de-panel — évite de choisir une entrée de bibliographie.
+- Sortie enrichie : `hl_terms` (formes exactes touchées, pour le surlignage) + `alt_quote`/`alt_page`
+  (2ᵉ meilleure phrase, pour les cas ambigus).
+
+Bilan : **43 phrases extraites (12 → 4 sans match)** ; côté DB **25 réactions en
+`verbatim (PDF-extracted)`** (vs 20). Nouvelles colonnes `pdf_hl`, `pdf_alt_quote`, `pdf_alt_page`.
+
+Côté app (`build_review_app.py`) : les participants sont **surlignés en gras** dans la phrase
+(`hlQuote` + `rowTerms`, lookbehind JS), et un dépliant **« alternative sentence (p.N) »** montre la
+phrase de repli avec son propre lien PDF. Réponse à « pourquoi si peu » : seules 47/144 réactions ont
+un PDF (beaucoup sont des inférences curateur sans PMID récupérable) ; sans phrase explicite,
+l'interaction reste adossée au mécanisme curé + note de preuve + code ECO + PMID/DOI. Vérifié en
+headless Chrome (ssc_M3_002 : ET-1/ETA receptor/vasoconstriction surlignés + phrase alternative p.9).
+
+#### Repli en ligne : PMC full-text puis abstract PubMed quand pas de PDF local
+
+`mine_pdf_quotes.py` généralisé : pour un PMID **sans PDF local** (76 réactions, 60 PMID distincts),
+il va chercher le texte en ligne via NCBI E-utils, par ordre de préférence :
+1. **PMC full-text** open-access (`elink` pubmed→pmc puis `efetch` db=pmc, paragraphes `<p>`) ;
+2. **abstract PubMed** (`efetch` rettype=abstract, titre + `AbstractText` par section).
+Même extraction de phrase (synonymes, repli mono-gène, anti-références, surlignage, alternative).
+`get_sources()` renvoie les sources dispo dans l'ordre ; le `main` essaie PMC puis abstract (donc un
+full-text PMC sans phrase confiante retombe sur l'abstract). Cache hors-repo
+(`…/article_text/<pmid>.{pmc,abstract}.json`), `time.sleep` selon `NCBI_API_KEY`, flag `--offline`
+(PDF + cache only). Robustesse : NCBI émet parfois du JSON avec caractères de contrôle non échappés
+dans `elink` → `json.loads(..., strict=False)` sur le flux décodé. Nouvelle colonne `source`
+(pdf|pmc|abstract) dans `pdf_quotes.tsv`.
+
+Bilan miner : **68 phrases** (pdf=43, pmc=15, abstract=10 ; 55 sans match confiant, 10 réactions sans
+PMID). Côté DB, priorité dans `quote_for` : verbatim discovery (humain) > PDF > PMC > abstract > note
+ftlog paraphrasée > to_complete — donc l'extraction en ligne **remplit surtout les trous** :
+`to_complete` 57 → 51, « evidence note » 9 → 3, +7 réactions adossées à une vraie phrase PMC/abstract.
+Statuts distincts `verbatim (PMC full-text)` / `verbatim (abstract)` avec badges dédiés dans l'app.
+`build_interaction_db` lit le champ `source` (`SOURCE_STATUS`) ; `pdf_hl`/`pdf_alt_*` étendus à tous
+les statuts extraits (`FETCHED_STATUSES`). **80 cartes affichent désormais une phrase verbatim.**
+Vérifié en headless Chrome (ssc_M3_021, abstract PubMed : ZEB1/SIP1/ZEB2 surlignés). `pdf_quotes.tsv`
+reste commité → build DB reproductible hors-ligne sans re-fetch.
+
+#### Fix barre de progression + surlignage couleur par espèce
+
+- **Barre de progression** : elle affichait `décidées/144` (les décisions persistent en localStorage)
+  donc restait « là où on s'était arrêté » à la réouverture. Désormais elle suit la **position dans le
+  deck** (`idx/view.length`, `idx` non persisté → reset à la carte 1 à chaque ouverture) ; le compteur
+  gauche passe à « card X / N » et les décisions stockées sont reléguées à droite (« K/144 decided »).
+- **Surlignage couleur/espèce** : une **couleur distincte par participant** (palette de 8), **cohérente
+  entre le titre** régulateur→cible **et la phrase**. `speciesOf()` dérive une espèce par label (avant
+  `__`), `nodeChips()` colore les chips du titre, `hlQuote()` repasse en une seule passe (regex combinée
+  + callback qui retrouve la couleur de l'espèce). Le dico `SYN` est désormais **partagé** : importé de
+  `mine_pdf_quotes.py` et injecté dans le HTML (`/*__SYN__*/`) pour que la couleur attrape aussi le
+  synonyme (cGAS↔MB21D1…). `flexTok()` autorise un tiret/espace optionnel aux frontières lettre↔chiffre
+  → « IL6 » matche « IL-6 », « STAT3 » matche « STAT-3 », « IL13 » matche « IL-13 ». Seuls les
+  participants de la réaction sont colorés (pas les mots de contexte). Vérifié en node + headless Chrome
+  (ssc_M2_031 : IL-6 bleu, STAT3 vert ; ssc_M1_001 : dsDNA bleu, MB21D1/cGAS vert, cGAMP ambre).
+
+#### Aperçu « carte locale » à droite (page scindée en 2)
+
+L'app passe en **2 colonnes** (`.cols` grid, `max-width` 1180) : pile de cartes à gauche, **aperçu du
+voisinage** à droite. L'aperçu est un **mini-réseau force-directed calculé dans le navigateur** (aucune
+lib/CDN, rendu SVG) :
+- `buildEdges()` dérive une fois toutes les arêtes (espèce→espèce par réaction) depuis `DATA` ;
+  `neighborhood(r)` prend les espèces de la réaction courante + toutes les arêtes incidentes (1-hop),
+  triées (réaction courante puis même module), **plafonnées à 44 arêtes** pour rester lisible sur les
+  hubs (SMAD3, TGFB1…).
+- `layout()` : Fruchterman-Reingold maison (init sur cercle déterministe, 240 itérations, répulsion
+  O(n²) + attraction le long des arêtes + refroidissement, borné au cadre). ~50 nœuds max → <30 ms.
+- Rendu : arêtes grises, **arêtes de la réaction courante en bleu** (marqueurs flèche `→` / barre `⊣`
+  pour inhibition), nœuds focus colorés **comme sur la carte** (`speciesOf`), voisins en gris. Légende
+  + compteur « N nodes · M links ». **Clic sur une arête → saute à cette réaction** dans le deck si
+  présente dans la vue. Re-render sur resize. Masqué <860 px (deck seul).
+Vérifié en headless Chrome (ssc_M2_031 : IL6/STAT3→GREM1 surlignés, voisins SMAD3/COL1A1/LOX ;
+ssc_M2_023 hub multi-collagènes : plafond OK).
+
+#### Aperçu = module entier, zoomable (au lieu du voisinage 1-hop)
+
+Remplacement du voisinage 1-hop par **le graphe complet du module**, zoomé sur la réaction courante
+avec dézoom possible. `moduleGraph(r)` prend **toutes les arêtes du module** (`e.module===r.module`),
+calcule le layout une fois en espace virtuel 1000×760 et le **cache par module** (positions stables
+quand on navigue entre cartes du même module). `pv.view` est une fenêtre `{cx,cy,w}` dans cet espace ;
+`draw()` projette en **coordonnées écran** (`viewBox=0 0 cw ch`, 1 unité = 1 px) → **nœuds et labels à
+taille px constante, donc lisibles à n'importe quel zoom** (1ʳᵉ version en viewBox-scale rendait le
+texte minuscule au dézoom → « on voit rien »). `boxFocus()` cadre la réaction **+ son voisinage
+1-hop** (lisible, comme l'ancienne vue), `boxFit()` cadre tout le module. Interactions : **molette =
+zoom** (centré curseur, `zoomAt` borné par `fullW`), **glisser = pan**, **clic arête = saut** vers la
+réaction. Boutons : ◎ recentrer, **+/−**, **⤢ tout le module**. Nœuds de la réaction colorés (couleurs
+carte) ; labels masqués sous un seuil de zoom pour limiter l'encombrement. Re-zoom auto sur la réaction
+à chaque carte. Vérifié en headless Chrome (ssc_M2_031 : focus lisible IL6/STAT3/GREM1+voisins ; après
+`pvFit()` : M2 entier ~29 nœuds/33 liens, labels lisibles, réaction toujours en bleu).
+
+#### Dossier littérature par interaction (support + réfs contraires séparées)
+
+Nouveau `scripts/mine_evidence_dossier.py` : passe PubMed (E-utils) sur **toutes** les interactions
+pour donner au reviewer **un maximum de données avant de trancher**. Par réaction : requête
+co-mention des participants (symboles + synonymes `SYN`/`PLAINQ`, ex. IFNB1→« type I interferon »)
+**en contexte ScS/fibrose** (`CONTEXT` obligatoire), puis fetch des abstracts. Les hits co-mentionnant
+≥2 participants (ou ≥1 pour les réactions gène→phénotype) sont scindés en **support** (candidat) et,
+**liste séparée, « possibly contrary »** = abstract portant un **cue contraire** (`CONTRARY` : « no
+effect / not associated / did not / anti-fibrotic / protective / attenuates fibrosis »…), avec le cue
++ snippet. Ce sont des **références candidates réelles** (PMID issus d'esearch), **pas des verdicts**,
+**aucune inventée**. Résumable (le JSON est le cache), `--offline`, `--refresh`. Sortie
+`curation/evidence_dossier.json`. Passe complète : **133 réactions, 403 réfs support, 185 contraires**.
+
+Câblage : `build_interaction_db.py` charge le dossier (`load_dossier`) et émet 2 colonnes JSON
+compactes `lit_support` / `lit_contrary` (pmid/title/year[/cue]). L'app affiche une boîte **« Literature
+dossier »** à 2 colonnes (↑ Supporting vert / ⚠ Possibly contrary ambre) avec liens PubMed + badge cue
+rouge. 96 réactions ont au moins une réf support, 76 au moins une contraire. `make dossier` (réseau,
+séparé) ; `make review` lit le JSON commité (offline). Vérifié headless (ssc_M2_036 5-HT2B).
+
+#### Verdict reviewer IA : lecture réelle de chaque référence + adjudication
+
+Demande : que l'IA **lise réellement** chaque référence et **tranche** comme un reviewer humain, en
+indiquant son choix pour informer le reviewer. Mise en œuvre honnête (pas de comptage de cues — vraie
+lecture des abstracts) :
+- `scripts/build_reading_packets.py` : fetch des **591 abstracts** (refs dossier + PMID propres),
+  cache `curation/_dossier_abstracts.json`, et assemble une **fiche de lecture par réaction**
+  (claim + mécanisme + phrase décisive + chaque réf support/contraire avec son abstract) →
+  `curation/reading_packets.json`.
+- J'ai **lu les 133 fiches** (module par module) et écrit un verdict + justification + PMID retenus
+  dans `curation/ai_review_verdicts.json`. Vocabulaire : **validate** / **revise** (biologie correcte
+  mais citation à corriger) / **caution** (soutenu mais contesté) / reject.
+- **Bilan : 101 validate, 28 revise, 4 caution.** Trouvaille majeure (vérifiée par esummary direct) :
+  **~28 réactions de curation originale citent un PMID hors-sujet** (ex. M2_002 « Saccharomyces »,
+  M2_009 « Melbourne food survey », M2_010/011/crosstalk_008 PMID 16007098 « ubiquitin-associated
+  domain », M1_009 « tabagisme », M4_010 « PHD zinc-finger »…). La biologie sous-jacente (cascade
+  TGF-β/SMAD/collagène, BAFF-BCMA, JAK/STAT6…) est canonique — seule la **référence** est fausse et
+  doit être remplacée (PMID de remplacement proposés dans le verdict). Les 4 caution : `crosstalk_001`
+  (IFN-I→fibroblaste, rôle débattu), `M2_019` (FOSL2-TBX2, inférence non sourcée), `M2_041`
+  (auto-Ac anti-PDGFR agonistes, fameusement non reproduits), `M4_021` (IL-17 Yin/Yang).
+- Câblage : `build_interaction_db.py` charge les verdicts → colonnes `ai_verdict` /
+  `ai_verdict_rationale` / `ai_verdict_pmids`. L'app affiche une **boîte verdict colorée** (vert/ambre/
+  orange/rouge) sous la pertinence SSc, avec justification + liens PubMed, et un **filtre « AI call »**
+  pour trier (ex. sauter aux 28 « revise »). C'est **consultatif** — le reviewer humain tranche.
+Vérifié headless (M2_010 revise, M2_041 caution).
+
+#### Audit des arêtes `claude-reclassify` sans PMID + sourcing réel
+
+Suite à une question reviewer (l'arête IFN-I→fibroblaste `ssc_crosstalk_001` n'avait aucune source).
+Audit des **10 arêtes** `provenance=claude-reclassify` sans PMID via **PubMed réel** (E-utils esearch
++ lecture des abstracts — **aucune citation inventée**). Verdict : **non fabriquées** ; le PMID
+manquant traduisait leur nature de **nœuds de modélisation**, pas une invention.
+- **4 conceptual_bridge** → vraies citations attachées dans `ssc_curated_reactions.tsv` :
+  `crosstalk_001` IFN-I→fibroblaste = **soutenu mais contesté** → PMID 35686918 (+ caveat 31436583,
+  rôle IFN-I dans la fibrose débattu), ECO gardé 0000305 ; `crosstalk_003` IFN-I→pDC/B = PMID 40341181
+  (ECO 0000270) ; `M3_013` & `crosstalk_007` EndMT→myofibroblaste = PMID 28062404 (déjà dans la map,
+  ECO 0000270). `curation_status` reste `conceptual_bridge` (l'app affiche toujours « KEEP —
+  conceptual (verify reclassification) »).
+- **6 phenotype_aggregation** laissés en nœuds-puits définitionnels (pas d'interaction à sourcer).
+- Synonymes IFN ajoutés au miner (`IFNB1`/`IFNA1`/`IFNG` → « type I IFN », « IFN-α/β ») → citations
+  PMC extraites pour `crosstalk_001`/`003`. Audit consigné dans `curation/audit_reclassify_edges.md`.
+DB rebâtie (4 ponts désormais sourcés) ; `to_complete` 51→47.
+
+#### Réordonnancement carte + titre de module
+
+Ordre des blocs de la carte revu : la pertinence SSc reste **juste sous la réaction**, puis
+**Source article (titre + PubMed/DOI)** → **Deciding sentence (citation)** → **Evidence & AI** (avant :
+citation puis source). Affichage du **titre de module** (plus seulement le code) via `MODTITLE`
+(M1 Type-I IFN ; M2 TGF-β/fibroblast→myofibroblast ; M3 EndoMT & vasculopathy ; M4 IL-6/IL-4/IL-13 Th2
+& B cells ; crosstalk) + `modLabel(r)`, dans le chip de la carte **et** l'en-tête de l'aperçu module.
+
+#### Contrôles négatifs retirés du deck reviewer (aucune citation fabriquée affichée)
+
+Le negative control `cand_negctrl` (FOXP3→COL1A1) — edge **fabriqué exprès** (quote inventée + PMID
+décoy 31234888 sur un article ENA sans rapport) pour prouver que la gate de grounding G2 rejette les
+affirmations non sourcées — **remontait dans le deck** via `load_discarded()`, avec PMID/citation
+d'allure légitime → confusion pour le reviewer. Ajout de `is_test_fixture(c)` dans
+`build_interaction_db.py` (match `candidate_id` `cand_negctrl*` ou tout champ contenant « negative
+control » / « fabricat ») ; skip dans les deux sources de discarded (candidats staging + registre
+excluded). Le fixture **reste** dans `ssc_edge_candidates.tsv` + `validation_report.tsv`
+(REJECT G2:NOT_GROUNDED) → l'auto-test G2 est préservé, il ne touche simplement plus le reviewer.
+Base **144 → 143 interactions** ; plus aucune trace de `negctrl`/citation fabriquée dans la DB ni
+l'app. Règle actée : **ne jamais fabriquer de citation** (mémoire projet).
+
+Correctif layout : le 1ᵉʳ jet (init sur cercle + accumulation de vélocité amortie, sans
+refroidissement) **s'effondrait en quasi-1D**. Réécrit en **Fruchterman-Reingold standard** : init
+**pseudo-aléatoire 2D déterministe** (LCG seedé → reproductible), déplacement recalculé à neuf à
+chaque itération (répulsion `k²/d` toutes paires + attraction `d²/k` le long des arêtes), **borné par
+une température qui refroidit** (`temp*=0.985`, 320 itérations), espace carré 900×900. Étale
+correctement le graphe dans le plan. Vérifié headless (M1, M2 : nœuds répartis en 2D, plus de ligne).

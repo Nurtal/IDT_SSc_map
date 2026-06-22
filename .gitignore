@@ -80,6 +80,10 @@ data/raw/**/*.txt.gz
 minerva/local/
 minerva/cache/
 
+# --- Review-app build caches (regenerable from NCBI; deliverables tracked separately) ---
+curation/_dossier_abstracts.json
+curation/reading_packets.json
+
 # --- Cytoscape session backups ---
 *.cys.bak
 
