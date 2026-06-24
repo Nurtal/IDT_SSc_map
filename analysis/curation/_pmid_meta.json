@@ -658,5 +658,113 @@
 "title": "Amlexanox inhibits production of type I interferon and suppresses B cell differentiation in vitro: a possible therapeutic option for systemic lupus erythematosus and other systemic inflammatory diseases",
 "journal": "RMD Open",
 "year": "2025"
+},
+"10801128": {
+"doi": "10.1038/35010115",
+"title": "TACI and BCMA are receptors for a TNF homologue implicated in B-cell autoimmune disease",
+"journal": "Nature",
+"year": "2000"
+},
+"11907708": {
+"doi": "10.1007/s002230010032",
+"title": "The first stage of transforming growth factor beta1 activation is release of the large latent complex from the extracellular matrix of growth plate chondrocytes by matrix vesicle stromelysin-1 (MMP-3)",
+"journal": "Calcif Tissue Int",
+"year": "2002"
+},
+"12692549": {
+"doi": "10.1038/ni921",
+"title": "IKKepsilon and TBK1 are essential components of the IRF3 signaling pathway",
+"journal": "Nat Immunol",
+"year": "2003"
+},
+"12702545": {
+"doi": "10.1165/rcmb.2003-0063OC",
+"title": "Smad3 mediates transforming growth factor-beta-induced alpha-smooth muscle actin expression",
+"journal": "Am J Respir Cell Mol Biol",
+"year": "2003"
+},
+"12855817": {
+"doi": "10.1126/science.1087262",
+"title": "Role of adaptor TRIF in the MyD88-independent toll-like receptor signaling pathway",
+"journal": "Science",
+"year": "2003"
+},
+"15271999": {
+"doi": "10.1074/jbc.M406951200",
+"title": "Interleukin-13 stimulates the transcription of the human alpha2(I) collagen gene in human dermal fibroblasts",
+"journal": "J Biol Chem",
+"year": "2004"
+},
+"15361868": {
+"doi": "10.1038/ni1118",
+"title": "Interferon-alpha induction through Toll-like receptors involves a direct interaction of IRF7 with MyD88 and TRAF6",
+"journal": "Nat Immunol",
+"year": "2004"
+},
+"16153868": {
+"doi": "10.1016/j.molcel.2005.08.014",
+"title": "VISA is an adapter protein required for virus-triggered IFN-beta signaling",
+"journal": "Mol Cell",
+"year": "2005"
+},
+"18408251": {
+"doi": "10.1136/ard.2007.086850",
+"title": "Cartilage oligomeric matrix protein expression in systemic sclerosis reveals heterogeneity of dermal fibroblast responses to transforming growth factor beta",
+"journal": "Ann Rheum Dis",
+"year": "2009"
+},
+"23258412": {
+"doi": "10.1126/science.1229963",
+"title": "Cyclic GMP-AMP is an endogenous second messenger in innate immune signaling by cytosolic DNA",
+"journal": "Science",
+"year": "2013"
+},
+"24708674": {
+"doi": "10.1186/ar4529",
+"title": "Bosentan reverses the pro-fibrotic phenotype of systemic sclerosis dermal fibroblasts via increasing DNA binding ability of transcription factor Fli1",
+"journal": "Arthritis Res Ther",
+"year": "2014"
+},
+"24969754": {
+"doi": "10.3892/ijmm.2014.1818",
+"title": "Constitutively active Notch1 signaling promotes endothelial\u2011mesenchymal transition in a conditional transgenic mouse model",
+"journal": "Int J Mol Med",
+"year": "2014"
+},
+"25636800": {
+"doi": "10.1126/science.aaa2630",
+"title": "Phosphorylation of innate immune adaptor proteins MAVS, STING, and TRIF induces IRF3 activation",
+"journal": "Science",
+"year": "2015"
+},
+"27734393": {
+"doi": "10.1007/978-1-4939-6430-7_34",
+"title": "CCN2 in Skin Fibrosis",
+"journal": "Methods Mol Biol",
+"year": "2017"
+},
+"7929414": {
+"doi": "",
+"title": "The type 1 repeats of thrombospondin 1 activate latent transforming growth factor-beta",
+"journal": "J Biol Chem",
+"year": "1994"
+},
+"8047140": {
+"doi": "10.1038/370341a0",
+"title": "Mechanism of activation of the TGF-beta receptor",
+"journal": "Nature",
+"year": "1994"
+},
+"8980228": {
+"doi": "10.1016/s0092-8674(00)81817-6",
+"title": "MADR2 is a substrate of the TGFbeta receptor and its phosphorylation is required for nuclear accumulation and signaling",
+"journal": "Cell",
+"year": "1996"
+},
+"9311995": {
+"doi": "10.1093/emboj/16.17.5353",
+"title": "TGF-beta receptor-mediated signalling through Smad2, Smad3 and Smad4",
+"journal": "EMBO J",
+"year": "1997"
 }
 }

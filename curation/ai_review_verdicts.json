@@ -7,16 +7,16 @@
     ]
   },
   "ssc_M1_002": {
-    "verdict": "revise",
-    "rationale": "Biology (cGAMP binds STING, triggers ER-Golgi trafficking) is canonical, BUT the cited PMID 22094255 is an unrelated paper (oxidative damage / DNA methyltransferases in cancer). Citation must be replaced. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
+    "verdict": "validate",
+    "rationale": "[citation corrected 2026-06-24 -> PMID 23258412] Biology (cGAMP binds STING, triggers ER-Golgi trafficking) is canonical, BUT the cited PMID 22094255 is an unrelated paper (oxidative damage / DNA methyltransferases in cancer). Citation must be replaced. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
     "pmids": [
       "23258412",
       "27324217"
     ]
   },
   "ssc_M1_003": {
-    "verdict": "revise",
-    "rationale": "STING→TBK1→IRF3 phosphorylation is canonical, but cited PMID 22810585 is unrelated ('Viral immune modulators perturb the human molecular network'). Replace citation. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
+    "verdict": "validate",
+    "rationale": "[citation corrected 2026-06-24 -> PMID 25636800] STING→TBK1→IRF3 phosphorylation is canonical, but cited PMID 22810585 is unrelated ('Viral immune modulators perturb the human molecular network'). Replace citation. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
     "pmids": [
       "25636800"
     ]
@@ -29,15 +29,15 @@
     ]
   },
   "ssc_M1_005": {
-    "verdict": "revise",
-    "rationale": "TLR3/TRIF nucleic-acid sensing is real (classically →IRF3, also IRF7), but cited PMID 14528265 is unrelated (mitochondrial outer-membrane targeting signals). Replace citation; double-check IRF7 vs IRF3. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
+    "verdict": "validate",
+    "rationale": "[citation corrected 2026-06-24 -> PMID 12855817] TLR3/TRIF nucleic-acid sensing is real (classically →IRF3, also IRF7), but cited PMID 14528265 is unrelated (mitochondrial outer-membrane targeting signals). Replace citation; double-check IRF7 vs IRF3. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
     "pmids": [
       "12855817"
     ]
   },
   "ssc_M1_006": {
-    "verdict": "revise",
-    "rationale": "TLR7/9→MyD88→IRF7 is canonical, but cited PMID 15728479 is unrelated (GM-CSF/microglia). Replace citation (e.g. dossier 32111355, Spi-B/IFN-α4). [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
+    "verdict": "validate",
+    "rationale": "[citation corrected 2026-06-24 -> PMID 15361868] TLR7/9→MyD88→IRF7 is canonical, but cited PMID 15728479 is unrelated (GM-CSF/microglia). Replace citation (e.g. dossier 32111355, Spi-B/IFN-α4). [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
     "pmids": [
       "15361868"
     ]
@@ -48,15 +48,15 @@
     "pmids": []
   },
   "ssc_M1_008": {
-    "verdict": "revise",
-    "rationale": "RIG-I (DDX58) senses cytosolic dsRNA and recruits MAVS — canonical, but cited PMID 15208629 is unrelated (BubR1 / aging). Replace citation. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
+    "verdict": "validate",
+    "rationale": "[citation corrected 2026-06-24 -> PMID 16153868] RIG-I (DDX58) senses cytosolic dsRNA and recruits MAVS — canonical, but cited PMID 15208629 is unrelated (BubR1 / aging). Replace citation. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
     "pmids": [
       "16153868"
     ]
   },
   "ssc_M1_009": {
-    "verdict": "revise",
-    "rationale": "DDX58:MAVS→IKBKE→IRF3 is established, but cited PMID 17601859 is unrelated (tobacco-smoke biomarker in bar workers). Replace citation. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
+    "verdict": "validate",
+    "rationale": "[citation corrected 2026-06-24 -> PMID 12692549] DDX58:MAVS→IKBKE→IRF3 is established, but cited PMID 17601859 is unrelated (tobacco-smoke biomarker in bar workers). Replace citation. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
     "pmids": [
       "12692549"
     ]
@@ -137,81 +137,81 @@
     ]
   },
   "ssc_M2_001": {
-    "verdict": "revise",
-    "rationale": "Latent TGF-β1 (LAP+LTBP1) release/activation is canonical, but cited PMID 11257233 is unrelated (schizophrenia/rubella). The dossier's own 11907708 ('first stage of TGF-β1 activation is release of the large latent complex') is a precise replacement. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
+    "verdict": "validate",
+    "rationale": "[citation corrected 2026-06-24 -> PMID 11907708] Latent TGF-β1 (LAP+LTBP1) release/activation is canonical, but cited PMID 11257233 is unrelated (schizophrenia/rubella). The dossier's own 11907708 ('first stage of TGF-β1 activation is release of the large latent complex') is a precise replacement. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
     "pmids": [
       "11907708",
       "24216753"
     ]
   },
   "ssc_M2_002": {
-    "verdict": "revise",
-    "rationale": "Thrombospondin-1 activates latent TGF-β — established (Murphy-Ullrich), but cited PMID 7935446 is unrelated (yeast translation). Replace citation. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
+    "verdict": "validate",
+    "rationale": "[citation corrected 2026-06-24 -> PMID 7929414] Thrombospondin-1 activates latent TGF-β — established (Murphy-Ullrich), but cited PMID 7935446 is unrelated (yeast translation). Replace citation. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
     "pmids": [
       "7929414",
       "10708953"
     ]
   },
   "ssc_M2_003": {
-    "verdict": "revise",
-    "rationale": "TGF-β1 binds TGFBR2/TGFBR1 — textbook receptor biology, but cited PMID 7774572 is unrelated (gonococcal invasion). Replace with a TGF-β receptor reference. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
+    "verdict": "validate",
+    "rationale": "[citation corrected 2026-06-24 -> PMID 8047140] TGF-β1 binds TGFBR2/TGFBR1 — textbook receptor biology, but cited PMID 7774572 is unrelated (gonococcal invasion). Replace with a TGF-β receptor reference. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
     "pmids": [
       "8047140"
     ]
   },
   "ssc_M2_004": {
-    "verdict": "revise",
-    "rationale": "TGFBR1 phosphorylates SMAD2/3 — canonical, but cited PMID 8674513 is unrelated (retinal pigment epithelium). Replace citation. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
+    "verdict": "validate",
+    "rationale": "[citation corrected 2026-06-24 -> PMID 8980228] TGFBR1 phosphorylates SMAD2/3 — canonical, but cited PMID 8674513 is unrelated (retinal pigment epithelium). Replace citation. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
     "pmids": [
       "8980228"
     ]
   },
   "ssc_M2_005": {
-    "verdict": "revise",
-    "rationale": "pSMAD3:SMAD4 oligomerise and enter the nucleus — canonical; cited PMID 9748228 concerns BMP7/activin Smads (tangential). Replace with a TGF-β/SMAD3 reference. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
+    "verdict": "validate",
+    "rationale": "[citation corrected 2026-06-24 -> PMID 9311995] pSMAD3:SMAD4 oligomerise and enter the nucleus — canonical; cited PMID 9748228 concerns BMP7/activin Smads (tangential). Replace with a TGF-β/SMAD3 reference. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
     "pmids": [
       "9311995"
     ]
   },
   "ssc_M2_006": {
-    "verdict": "revise",
-    "rationale": "SMAD3:SMAD4 induces COL1A1 — textbook SSc fibrosis biology, but cited PMID 10497222 is unrelated (PKC-eta gene cloning). The M2_023 paper (16319104, Smad3/Sp1 collagen in SSc) is an apt replacement. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
+    "verdict": "validate",
+    "rationale": "[citation corrected 2026-06-24 -> PMID 16319104] SMAD3:SMAD4 induces COL1A1 — textbook SSc fibrosis biology, but cited PMID 10497222 is unrelated (PKC-eta gene cloning). The M2_023 paper (16319104, Smad3/Sp1 collagen in SSc) is an apt replacement. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
     "pmids": [
       "16319104"
     ]
   },
   "ssc_M2_007": {
-    "verdict": "revise",
-    "rationale": "SMAD3:SMAD4 induces COL3A1 — sound, but cited PMID 10497222 is unrelated (PKC-eta). Replace citation. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
+    "verdict": "validate",
+    "rationale": "[citation corrected 2026-06-24 -> PMID 16319104] SMAD3:SMAD4 induces COL3A1 — sound, but cited PMID 10497222 is unrelated (PKC-eta). Replace citation. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
     "pmids": [
       "16319104"
     ]
   },
   "ssc_M2_008": {
-    "verdict": "revise",
-    "rationale": "SMAD3:SMAD4 induces fibronectin (FN1) — sound, but cited PMID 10497222 is unrelated (PKC-eta). Replace citation. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
+    "verdict": "validate",
+    "rationale": "[citation corrected 2026-06-24 -> PMID 16319104] SMAD3:SMAD4 induces fibronectin (FN1) — sound, but cited PMID 10497222 is unrelated (PKC-eta). Replace citation. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
     "pmids": [
       "16319104"
     ]
   },
   "ssc_M2_009": {
-    "verdict": "revise",
-    "rationale": "SMAD3:SMAD4 induces ACTA2/αSMA — sound, but cited PMID 8616204 is unrelated (Melbourne food survey). Replace citation. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
+    "verdict": "validate",
+    "rationale": "[citation corrected 2026-06-24 -> PMID 12702545] SMAD3:SMAD4 induces ACTA2/αSMA — sound, but cited PMID 8616204 is unrelated (Melbourne food survey). Replace citation. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
     "pmids": [
       "12702545"
     ]
   },
   "ssc_M2_010": {
-    "verdict": "revise",
-    "rationale": "SMAD3:SMAD4 induces CTGF/CCN2 — sound, but cited PMID 16007098 is unrelated (ubiquitin-associated domain survey). Dossier 27734393 (CCN2 in skin fibrosis) / 11698729 (TGF-β & CTGF in scleroderma) are apt. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
+    "verdict": "validate",
+    "rationale": "[citation corrected 2026-06-24 -> PMID 27734393] SMAD3:SMAD4 induces CTGF/CCN2 — sound, but cited PMID 16007098 is unrelated (ubiquitin-associated domain survey). Dossier 27734393 (CCN2 in skin fibrosis) / 11698729 (TGF-β & CTGF in scleroderma) are apt. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
     "pmids": [
       "27734393",
       "11698729"
     ]
   },
   "ssc_M2_011": {
-    "verdict": "revise",
-    "rationale": "Autocrine CTGF/CCN2 amplifies the pro-fibrotic fibroblast — sound (pamrevlumab rationale), but cited PMID 16007098 is unrelated (ubiquitin domain). Replace with 27734393 / 28488090. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
+    "verdict": "validate",
+    "rationale": "[citation corrected 2026-06-24 -> PMID 27734393] Autocrine CTGF/CCN2 amplifies the pro-fibrotic fibroblast — sound (pamrevlumab rationale), but cited PMID 16007098 is unrelated (ubiquitin domain). Replace with 27734393 / 28488090. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
     "pmids": [
       "27734393",
       "11698729"
@@ -225,16 +225,16 @@
     ]
   },
   "ssc_M2_013": {
-    "verdict": "revise",
-    "rationale": "SMAD3:SMAD4 induces COMP — plausible (COMP is an SSc skin marker), but cited PMID 22197582 is unrelated (older-adult physical activity survey). Replace citation. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
+    "verdict": "validate",
+    "rationale": "[citation corrected 2026-06-24 -> PMID 18408251] SMAD3:SMAD4 induces COMP — plausible (COMP is an SSc skin marker), but cited PMID 22197582 is unrelated (older-adult physical activity survey). Replace citation. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
     "pmids": [
       "18408251",
       "16520029"
     ]
   },
   "ssc_M2_017": {
-    "verdict": "revise",
-    "rationale": "YAP/TAZ induce ACTA2 + CTGF — established mechanotransduction biology, but cited PMID 21343339 is unrelated (TRIM28/KAP1). Replace citation. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
+    "verdict": "validate",
+    "rationale": "[citation corrected 2026-06-24 -> PMID 21654799] YAP/TAZ induce ACTA2 + CTGF — established mechanotransduction biology, but cited PMID 21343339 is unrelated (TRIM28/KAP1). Replace citation. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
     "pmids": [
       "21654799"
     ]
@@ -559,15 +559,15 @@
     ]
   },
   "ssc_crosstalk_004": {
-    "verdict": "revise",
-    "rationale": "IL-6→STAT3→pro-fibrotic fibroblast/COL1A1 is well-supported (dossier 35628356 STAT3→COL1A1/FN1 in fibroblasts; map's own 24550394 IL-6→collagen in SSc) and underpins the tocilizumab/focuSSced rationale — BUT the cited PMID 27156434 is a generic Rheumatoid-arthritis seminar (wrong reference). Replace with 24550394. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
+    "verdict": "validate",
+    "rationale": "[citation corrected 2026-06-24 -> PMID 24550394] IL-6→STAT3→pro-fibrotic fibroblast/COL1A1 is well-supported (dossier 35628356 STAT3→COL1A1/FN1 in fibroblasts; map's own 24550394 IL-6→collagen in SSc) and underpins the tocilizumab/focuSSced rationale — BUT the cited PMID 27156434 is a generic Rheumatoid-arthritis seminar (wrong reference). Replace with 24550394. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
     "pmids": [
       "24550394"
     ]
   },
   "ssc_crosstalk_005": {
-    "verdict": "revise",
-    "rationale": "IL-13/STAT6→COL1A1/FN1 (Th2→fibroblast ECM, romilkimab rationale) is established biology, but the cited PMID 17050694 is unrelated (telencephalic neuroepithelium / Cdc42). Replace with a real IL-13/STAT6 fibrosis reference. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
+    "verdict": "validate",
+    "rationale": "[citation corrected 2026-06-24 -> PMID 15271999] IL-13/STAT6→COL1A1/FN1 (Th2→fibroblast ECM, romilkimab rationale) is established biology, but the cited PMID 17050694 is unrelated (telencephalic neuroepithelium / Cdc42). Replace with a real IL-13/STAT6 fibrosis reference. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
     "pmids": [
       "15271999"
     ]
@@ -588,8 +588,8 @@
     ]
   },
   "ssc_crosstalk_008": {
-    "verdict": "revise",
-    "rationale": "TGF-β1→CTGF/CCN2 autocrine amplifier loop is textbook fibrosis biology, but the cited PMID 16007098 is unrelated (ubiquitin-associated domain survey). Replace with 27734393 (CCN2 in skin fibrosis) / 11698729 (TGF-β & CTGF in scleroderma). [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
+    "verdict": "validate",
+    "rationale": "[citation corrected 2026-06-24 -> PMID 27734393] TGF-β1→CTGF/CCN2 autocrine amplifier loop is textbook fibrosis biology, but the cited PMID 16007098 is unrelated (ubiquitin-associated domain survey). Replace with 27734393 (CCN2 in skin fibrosis) / 11698729 (TGF-β & CTGF in scleroderma). [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
     "pmids": [
       "27734393",
       "11698729"
@@ -711,23 +711,23 @@
     "pmids": []
   },
   "ssc_M4_003": {
-    "verdict": "revise",
-    "rationale": "IL-4R/IL-13R complexes signal via JAK1/JAK2 to phosphorylate STAT6 — canonical JAK/STAT biology, but the cited PMID 11526389 is unrelated (essay on autoimmunity/infection). Replace citation. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
+    "verdict": "validate",
+    "rationale": "[citation corrected 2026-06-24 -> PMID 29930549] IL-4R/IL-13R complexes signal via JAK1/JAK2 to phosphorylate STAT6 — canonical JAK/STAT biology, but the cited PMID 11526389 is unrelated (essay on autoimmunity/infection). Replace citation. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
     "pmids": [
       "29930549"
     ]
   },
   "ssc_M4_005": {
-    "verdict": "revise",
-    "rationale": "Nuclear STAT6 induces ECM genes (COL1A1/COL3A1/FN1) in fibroblasts (IL-13→fibrosis) — supported biology (dossier 36757802 keloid JAK/STAT6 fibrosis), but the cited PMID 17050694 is unrelated (telencephalic neuroepithelium). Replace citation. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
+    "verdict": "validate",
+    "rationale": "[citation corrected 2026-06-24 -> PMID 15271999] Nuclear STAT6 induces ECM genes (COL1A1/COL3A1/FN1) in fibroblasts (IL-13→fibrosis) — supported biology (dossier 36757802 keloid JAK/STAT6 fibrosis), but the cited PMID 17050694 is unrelated (telencephalic neuroepithelium). Replace citation. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
     "pmids": [
       "15271999",
       "36757802"
     ]
   },
   "ssc_M4_010": {
-    "verdict": "revise",
-    "rationale": "BAFF (TNFSF13B) binds BCMA on plasma cells — established, but the cited PMID 11226167 is unrelated (PHD zinc-finger domain structure). Dossier 10801128 ('TACI and BCMA are receptors for' BAFF) is a precise replacement. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
+    "verdict": "validate",
+    "rationale": "[citation corrected 2026-06-24 -> PMID 10801128] BAFF (TNFSF13B) binds BCMA on plasma cells — established, but the cited PMID 11226167 is unrelated (PHD zinc-finger domain structure). Dossier 10801128 ('TACI and BCMA are receptors for' BAFF) is a precise replacement. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
     "pmids": [
       "10801128"
     ]
@@ -740,16 +740,16 @@
     ]
   },
   "ssc_M3_001": {
-    "verdict": "revise",
-    "rationale": "ET-1 binds EDNRA/EDNRB — canonical endothelin biology, but the cited PMID 8389755 is unrelated (erythrocyte chemokine binding). Replace citation (e.g. an endothelin-receptor reference). [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
+    "verdict": "validate",
+    "rationale": "[citation corrected 2026-06-24 -> PMID 24708674] ET-1 binds EDNRA/EDNRB — canonical endothelin biology, but the cited PMID 8389755 is unrelated (erythrocyte chemokine binding). Replace citation (e.g. an endothelin-receptor reference). [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
     "pmids": [
       "24708674",
       "21184655"
     ]
   },
   "ssc_M3_010": {
-    "verdict": "revise",
-    "rationale": "SMAD3 + Notch (NICD1) cooperatively induce SNAI2/ZEB1 — supported EMT/EndMT biology, but the cited PMID 24316708 is unrelated (peri-implant occlusal loading). Replace citation. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
+    "verdict": "validate",
+    "rationale": "[citation corrected 2026-06-24 -> PMID 24969754] SMAD3 + Notch (NICD1) cooperatively induce SNAI2/ZEB1 — supported EMT/EndMT biology, but the cited PMID 24316708 is unrelated (peri-implant occlusal loading). Replace citation. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
     "pmids": [
       "24969754",
       "28062404"
