@@ -1,922 +1,947 @@
 {
- "ssc_M1_001": {
-  "verdict": "validate",
-  "rationale": "cGAS senses cytosolic dsDNA and makes cGAMP — canonical innate-immunity fact; cited PMID 23258413 is the actual cGAS discovery (Sun et al). Dossier confirms cGAS-STING drives fibrosis across organs.",
-  "pmids": [
-   "23258413"
-  ]
- },
- "ssc_M1_002": {
-  "verdict": "revise",
-  "rationale": "Biology (cGAMP binds STING, triggers ER-Golgi trafficking) is canonical, BUT the cited PMID 22094255 is an unrelated paper (oxidative damage / DNA methyltransferases in cancer). Citation must be replaced.",
-  "pmids": [
-   "27324217"
-  ]
- },
- "ssc_M1_003": {
-  "verdict": "revise",
-  "rationale": "STING→TBK1→IRF3 phosphorylation is canonical, but cited PMID 22810585 is unrelated ('Viral immune modulators perturb the human molecular network'). Replace citation.",
-  "pmids": [
-   "36923406"
-  ]
- },
- "ssc_M1_004": {
-  "verdict": "validate",
-  "rationale": "Phospho-IRF3 induces IFN-β transcription — textbook. Cited PMID 11402134 returned no abstract (unverifiable here) but the biology is canonical and dossier supports the STING/IRF3/IFN-I axis.",
-  "pmids": [
-   "35686918"
-  ]
- },
- "ssc_M1_005": {
-  "verdict": "revise",
-  "rationale": "TLR3/TRIF nucleic-acid sensing is real (classically →IRF3, also IRF7), but cited PMID 14528265 is unrelated (mitochondrial outer-membrane targeting signals). Replace citation; double-check IRF7 vs IRF3.",
-  "pmids": []
- },
- "ssc_M1_006": {
-  "verdict": "revise",
-  "rationale": "TLR7/9→MyD88→IRF7 is canonical, but cited PMID 15728479 is unrelated (GM-CSF/microglia). Replace citation (e.g. dossier 32111355, Spi-B/IFN-α4).",
-  "pmids": [
-   "32111355"
-  ]
- },
- "ssc_M1_007": {
-  "verdict": "validate",
-  "rationale": "Phospho-IRF7 induces IFN-α — textbook. Cited PMID 11442765 had no abstract to verify, but biology canonical.",
-  "pmids": []
- },
- "ssc_M1_008": {
-  "verdict": "revise",
-  "rationale": "RIG-I (DDX58) senses cytosolic dsRNA and recruits MAVS — canonical, but cited PMID 15208629 is unrelated (BubR1 / aging). Replace citation.",
-  "pmids": []
- },
- "ssc_M1_009": {
-  "verdict": "revise",
-  "rationale": "DDX58:MAVS→IKBKE→IRF3 is established, but cited PMID 17601859 is unrelated (tobacco-smoke biomarker in bar workers). Replace citation.",
-  "pmids": []
- },
- "ssc_M1_010": {
-  "verdict": "validate",
-  "rationale": "CXCL4(PF4) primes pDCs to amplify IFN-α — cited PMID 24350901 is the van Bon SSc CXCL4 paper (correct). Strongly corroborated (34986347 CXCL4 drives fibrosis; 39464886 CXCL4-M4 macrophages in SSc).",
-  "pmids": [
-   "24350901",
-   "34986347"
-  ]
- },
- "ssc_M1_011": {
-  "verdict": "validate",
-  "rationale": "Activated pDC produces IFN-α — canonical; cited PMID 24350901 on-topic (SSc pDC). Supported by 37488975, 39152751 (anifrolumab DAISY trial).",
-  "pmids": [
-   "24350901",
-   "37488975"
-  ]
- },
- "ssc_M1_012": {
-  "verdict": "validate",
-  "rationale": "Phenotype-aggregation node: combined ISG response = IFN-signature readout (Whitfield/Tabib intrinsic subset). Definitional sink, not a mechanistic edge; appropriate as modelled.",
-  "pmids": [
-   "34282151"
-  ]
- },
- "ssc_M1_013": {
-  "verdict": "validate",
-  "rationale": "IRF7 cytosolic phospho-form translocates to nucleus — canonical; cited PMID 37251373 is an on-topic IRF7 review.",
-  "pmids": [
-   "37251373"
-  ]
- },
- "ssc_M1_014": {
-  "verdict": "validate",
-  "rationale": "SOCS1 (+PTPN2) negatively regulate JAK1/IFN signalling — canonical; cited PMID 11706989 is an on-topic SOCS review.",
-  "pmids": [
-   "11706989"
-  ]
- },
- "ssc_M1_015": {
-  "verdict": "validate",
-  "rationale": "TLR8 endosomal ssRNA sensing→IRF7 is established; cited PMID 31662487 (monocyte RNA-virus sensing) is on-topic. Contrary cue (16737960) only notes IRAK-independence of kinase activity — not a refutation.",
-  "pmids": [
-   "31662487"
-  ]
- },
- "ssc_M1_016": {
-  "verdict": "validate",
-  "rationale": "CXCL4 binds DNA/RNA and favours pDC IFN-α — cited PMID 32707718 on-topic (CXCL4 in SSc). Heavily corroborated (36053251, 35640018, 31043596). 'Contrary' hits actually reinforce the mechanism.",
-  "pmids": [
-   "32707718",
-   "31043596"
-  ]
- },
- "ssc_M1_017": {
-  "verdict": "validate",
-  "rationale": "IRF5 (top SSc GWAS locus) drives type-I IFN — cited PMID 20231204 is the IRF5-SSc association (correct); reinforced by 19116937, 19479858, 19644887. Links genetics to module M1.",
-  "pmids": [
-   "20231204",
-   "19644887"
-  ]
- },
- "ssc_M1_018": {
-  "verdict": "validate",
-  "rationale": "CXCL4 organises DNA for TLR9 sensing — cited PMID 32707718 on-topic; strongly supported (31043596 liquid-crystalline DNA/TLR9, 35640018 chemokine-DNA nanoparticles, 37773045 TLR9 ligand sequestration).",
-  "pmids": [
-   "31043596",
-   "35640018"
-  ]
- },
- "ssc_M1_019": {
-  "verdict": "validate",
-  "rationale": "AutoAb immune complexes induce pDC IFN-α (M4→M1) — well-established innate/adaptive crosstalk; cited PMID 32707718 on CXCL4/pDC IFN is adjacent support. Conceptual but sound.",
-  "pmids": [
-   "32707718"
-  ]
- },
- "ssc_M2_001": {
-  "verdict": "revise",
-  "rationale": "Latent TGF-β1 (LAP+LTBP1) release/activation is canonical, but cited PMID 11257233 is unrelated (schizophrenia/rubella). The dossier's own 11907708 ('first stage of TGF-β1 activation is release of the large latent complex') is a precise replacement.",
-  "pmids": [
-   "11907708",
-   "24216753"
-  ]
- },
- "ssc_M2_002": {
-  "verdict": "revise",
-  "rationale": "Thrombospondin-1 activates latent TGF-β — established (Murphy-Ullrich), but cited PMID 7935446 is unrelated (yeast translation). Replace citation.",
-  "pmids": []
- },
- "ssc_M2_003": {
-  "verdict": "revise",
-  "rationale": "TGF-β1 binds TGFBR2/TGFBR1 — textbook receptor biology, but cited PMID 7774572 is unrelated (gonococcal invasion). Replace with a TGF-β receptor reference.",
-  "pmids": []
- },
- "ssc_M2_004": {
-  "verdict": "revise",
-  "rationale": "TGFBR1 phosphorylates SMAD2/3 — canonical, but cited PMID 8674513 is unrelated (retinal pigment epithelium). Replace citation.",
-  "pmids": [
-   "31531112"
-  ]
- },
- "ssc_M2_005": {
-  "verdict": "revise",
-  "rationale": "pSMAD3:SMAD4 oligomerise and enter the nucleus — canonical; cited PMID 9748228 concerns BMP7/activin Smads (tangential). Replace with a TGF-β/SMAD3 reference.",
-  "pmids": [
-   "16319104"
-  ]
- },
- "ssc_M2_006": {
-  "verdict": "revise",
-  "rationale": "SMAD3:SMAD4 induces COL1A1 — textbook SSc fibrosis biology, but cited PMID 10497222 is unrelated (PKC-eta gene cloning). The M2_023 paper (16319104, Smad3/Sp1 collagen in SSc) is an apt replacement.",
-  "pmids": [
-   "16319104"
-  ]
- },
- "ssc_M2_007": {
-  "verdict": "revise",
-  "rationale": "SMAD3:SMAD4 induces COL3A1 — sound, but cited PMID 10497222 is unrelated (PKC-eta). Replace citation.",
-  "pmids": [
-   "16319104"
-  ]
- },
- "ssc_M2_008": {
-  "verdict": "revise",
-  "rationale": "SMAD3:SMAD4 induces fibronectin (FN1) — sound, but cited PMID 10497222 is unrelated (PKC-eta). Replace citation.",
-  "pmids": [
-   "16319104"
-  ]
- },
- "ssc_M2_009": {
-  "verdict": "revise",
-  "rationale": "SMAD3:SMAD4 induces ACTA2/αSMA — sound, but cited PMID 8616204 is unrelated (Melbourne food survey). Replace citation.",
-  "pmids": [
-   "16319104"
-  ]
- },
- "ssc_M2_010": {
-  "verdict": "revise",
-  "rationale": "SMAD3:SMAD4 induces CTGF/CCN2 — sound, but cited PMID 16007098 is unrelated (ubiquitin-associated domain survey). Dossier 27734393 (CCN2 in skin fibrosis) / 11698729 (TGF-β & CTGF in scleroderma) are apt.",
-  "pmids": [
-   "27734393",
-   "11698729"
-  ]
- },
- "ssc_M2_011": {
-  "verdict": "revise",
-  "rationale": "Autocrine CTGF/CCN2 amplifies the pro-fibrotic fibroblast — sound (pamrevlumab rationale), but cited PMID 16007098 is unrelated (ubiquitin domain). Replace with 27734393 / 28488090.",
-  "pmids": [
-   "27734393",
-   "28488090"
-  ]
- },
- "ssc_M2_012": {
-  "verdict": "revise",
-  "rationale": "SMAD3:SMAD4 induces POSTN — plausible, but cited PMID 22186371 is unrelated (Arabidopsis roots). Replace citation.",
-  "pmids": []
- },
- "ssc_M2_013": {
-  "verdict": "revise",
-  "rationale": "SMAD3:SMAD4 induces COMP — plausible (COMP is an SSc skin marker), but cited PMID 22197582 is unrelated (older-adult physical activity survey). Replace citation.",
-  "pmids": [
-   "34282151"
-  ]
- },
- "ssc_M2_017": {
-  "verdict": "revise",
-  "rationale": "YAP/TAZ induce ACTA2 + CTGF — established mechanotransduction biology, but cited PMID 21343339 is unrelated (TRIM28/KAP1). Replace citation.",
-  "pmids": []
- },
- "ssc_M2_014": {
-  "verdict": "validate",
-  "rationale": "SMAD3:SMAD4 induces LOX/LOXL2 — cited PMID 31317653 directly validates LOX regulation by TGF-β1/Smad2/3.",
-  "pmids": [
-   "31317653"
-  ]
- },
- "ssc_M2_015": {
-  "verdict": "validate",
-  "rationale": "LOX/LOXL2 cross-link collagens to stiffen ECM — cited PMID 31488698 is an on-topic LOX/ECM review.",
-  "pmids": [
-   "31488698"
-  ]
- },
- "ssc_M2_016": {
-  "verdict": "validate",
-  "rationale": "ECM stiffness → RHOA/ROCK → YAP/TAZ — cited PMID 21654799 is the seminal Dupont YAP/TAZ mechanotransduction paper; dossier 30135582 corroborates.",
-  "pmids": [
-   "21654799"
-  ]
- },
- "ssc_M2_018": {
-  "verdict": "validate",
-  "rationale": "FRA-2 (FOSL2) drives COL1A1/ACTA2 — FRA-2 transgenic phenocopies SSc fibrosis (Reich/Distler); citation lacks abstract but biology is well-established.",
-  "pmids": []
- },
- "ssc_M2_020": {
-  "verdict": "validate",
-  "rationale": "PDGF-AA/BB via PDGFRA/B drives fibroblast proliferation — cited PMID 9739761 is a legitimate PDGF signal-transduction review; nintedanib SSc-ILD rationale.",
-  "pmids": [
-   "9739761"
-  ]
- },
- "ssc_M2_023": {
-  "verdict": "validate",
-  "rationale": "SMAD3:SMAD4 induces extended ECM battery — cited PMID 16319104 directly shows Smad3/Sp1 driving collagen in SSc fibroblasts. Strong.",
-  "pmids": [
-   "16319104"
-  ]
- },
- "ssc_M2_024": {
-  "verdict": "validate",
-  "rationale": "YAP/TAZ co-activate mechanosensitive ECM genes — cited PMID 39329703 (YAP/TAZ in IPF) on-topic.",
-  "pmids": [
-   "39329703"
-  ]
- },
- "ssc_M2_025": {
-  "verdict": "validate",
-  "rationale": "YAP1/TAZ nuclear shuttling under mechanical signal — cited PMID 21654799 (Dupont) is canonical.",
-  "pmids": [
-   "21654799"
-  ]
- },
- "ssc_M2_026": {
-  "verdict": "validate",
-  "rationale": "SSc SFRP2hi/DPP4 progenitor fibroblasts give rise to myofibroblasts — cited PMID 34282151 (Tabib single-cell SSc) supports; 29080679 defines SFRP2/DPP4 populations.",
-  "pmids": [
-   "34282151",
-   "29080679"
-  ]
- },
- "ssc_M2_027": {
-  "verdict": "validate",
-  "rationale": "SFRP4/FNDC1 mark the committing SSc fibroblast fraction — cited PMID 34282151 (Tabib) supports.",
-  "pmids": [
-   "34282151"
-  ]
- },
- "ssc_M2_028": {
-  "verdict": "validate",
-  "rationale": "FOSL2/RUNX1/CREB3L1 regulons drive SSc myofibroblast differentiation — cited PMID 34282151 (Tabib regulon analysis) supports.",
-  "pmids": [
-   "34282151"
-  ]
- },
- "ssc_M2_029": {
-  "verdict": "validate",
-  "rationale": "TGF-β downregulates caveolin-1 (CAV1) — cited PMID 29259049 directly states TGF-β downregulation of Cav-1 in SSc.",
-  "pmids": [
-   "29259049"
-  ]
- },
- "ssc_M2_034": {
-  "verdict": "validate",
-  "rationale": "TGF-β upregulates GLI2 via SMAD3 (non-canonical Hedgehog) — cited PMID 27793816 (non-canonical Hh in SSc) supports.",
-  "pmids": [
-   "27793816"
-  ]
- },
- "ssc_M2_035": {
-  "verdict": "validate",
-  "rationale": "GLI2 mediates TGF-β-induced fibroblast activation — cited PMID 27793816 supports; 39182559 (FGF21/GLI2 in SSc) corroborates.",
-  "pmids": [
-   "27793816"
-  ]
- },
- "ssc_M2_036": {
-  "verdict": "validate",
-  "rationale": "Serotonin/5-HT2B (HTR2B) drives fibroblast ECM synthesis — cited PMID 21518801 (Dees, platelet-serotonin/5-HT2B links vascular damage to fibrosis) directly supports; antagonists reduce fibrosis (25667920).",
-  "pmids": [
-   "21518801",
-   "25667920"
-  ]
- },
- "ssc_M2_037": {
-  "verdict": "validate",
-  "rationale": "Autotaxin (ENPP2) generates LPA activating LPAR1 — cited PMID 39009409 supports the ATX-LPA-LPAR1 axis in SSc/IPF.",
-  "pmids": [
-   "39009409"
-  ]
- },
- "ssc_M2_038": {
-  "verdict": "validate",
-  "rationale": "LPAR1 activation contributes to SSc fibrosis — cited PMID 39009409 supports; LPAR1 antagonists are antifibrotic (40887574) — consistent, not contrary.",
-  "pmids": [
-   "39009409"
-  ]
- },
- "ssc_M2_039": {
-  "verdict": "validate",
-  "rationale": "TLR4 DAMP sensing sustains myofibroblast activation — cited PMID 28964818 (SSc DAMP/TLR4) supports; 17952090 (TLR4 enhances TGF-β/hepatic fibrosis) corroborates.",
-  "pmids": [
-   "28964818",
-   "17952090"
-  ]
- },
- "ssc_M2_040": {
-  "verdict": "validate",
-  "rationale": "Autocrine CCN2/CTGF maintains the fibrotic phenotype — cited PMID 10942593 (RDA scleroderma CTGF, Igarashi) directly supports.",
-  "pmids": [
-   "10942593",
-   "27734393"
-  ]
- },
- "ssc_M2_042": {
-  "verdict": "validate",
-  "rationale": "Adenosine A2A receptor (ADORA2A) stimulates collagen in SSc fibroblasts — cited PMID 22033526 directly supports.",
-  "pmids": [
-   "22033526"
-  ]
- },
- "ssc_M2_043": {
-  "verdict": "validate",
-  "rationale": "DKK1 antagonises Wnt/β-catenin and is epigenetically silenced in SSc — cited PMID 23698475 (Wnt antagonist hypermethylation in SSc) supports.",
-  "pmids": [
-   "23698475"
-  ]
- },
- "ssc_M2_044": {
-  "verdict": "validate",
-  "rationale": "mTOR/Akt stabilises JunB by failed degradation — cited PMID 25303440 (AP-1/JunB in SSc collagen) supports.",
-  "pmids": [
-   "25303440"
-  ]
- },
- "ssc_M2_045": {
-  "verdict": "validate",
-  "rationale": "Accumulated JunB drives type-I collagen overexpression in SSc — cited PMID 25303440 directly supports.",
-  "pmids": [
-   "25303440"
-  ]
- },
- "ssc_M2_046": {
-  "verdict": "validate",
-  "rationale": "Notch (NICD1) drives fibroblast activation/collagen in SSc — cited PMID 21450749 directly supports.",
-  "pmids": [
-   "21450749"
-  ]
- },
- "ssc_M2_047": {
-  "verdict": "validate",
-  "rationale": "Cadherin-11 (CDH11) mediates SSc dermal fibrosis — cited PMID 24757152 directly supports; 35662129 (CDH11 in tissue fibrosis) corroborates.",
-  "pmids": [
-   "24757152"
-  ]
- },
- "ssc_M2_048": {
-  "verdict": "validate",
-  "rationale": "Galectin-3 (LGALS3) is a pro-fibrotic regulator increased in SSc skin — cited PMID 36499646 supports.",
-  "pmids": [
-   "36499646"
-  ]
- },
- "ssc_M2_049": {
-  "verdict": "validate",
-  "rationale": "WNT5A/JNK/ROCK activates latent TGF-β — cited PMID 38747285 directly supports in SSc/IPF.",
-  "pmids": [
-   "38747285"
-  ]
- },
- "ssc_M2_050": {
-  "verdict": "validate",
-  "rationale": "GLI2 induces pro-fibrotic CLIC4 — cited PMID 35159339 supports (TGF-β/SMAD3 + Hh/GLI drive CLIC4).",
-  "pmids": [
-   "35159339"
-  ]
- },
- "ssc_M2_051": {
-  "verdict": "validate",
-  "rationale": "NOTCH2 promotes myofibroblast activation (miR-16-5p target) — cited PMID 33411678 (SSc) supports.",
-  "pmids": [
-   "33411678"
-  ]
- },
- "ssc_M2_052": {
-  "verdict": "validate",
-  "rationale": "DC-derived epiregulin (EREG)/EGFR maintains skin/lung fibrosis — cited PMID 36490328 (Sci Immunol, SSc) directly supports; 40961242 confirms EREG required for SSc skin fibrosis.",
-  "pmids": [
-   "36490328"
-  ]
- },
- "ssc_M2_053": {
-  "verdict": "validate",
-  "rationale": "FLI1 represses COL1A1; its epigenetic silencing derepresses collagen in SSc — cited PMID 19863377 is an SSc vascular review (weak for this edge); dossier 16829517 (Fli1 represses CCN2) and 25562121 (Fli1 suppresses Col1a1) are stronger.",
-  "pmids": [
-   "16829517",
-   "25562121"
-  ]
- },
- "ssc_M2_054": {
-  "verdict": "validate",
-  "rationale": "Galectin-3 (LGALS3) acts downstream of TGF-β1 — cited PMID 22700848 (scleroderma bleomycin/macrophage-galectin model) supports; direction plausible.",
-  "pmids": [
-   "22700848"
-  ]
- },
- "ssc_M2_055": {
-  "verdict": "validate",
-  "rationale": "Anti-PDGFR signalling / PDGFRB in SSc fibroblasts — cited PMID 16790699 (SSc) on-topic.",
-  "pmids": [
-   "16790699"
-  ]
- },
- "ssc_M2_058": {
-  "verdict": "validate",
-  "rationale": "MMP1/SIRT1 axis in SSc — cited PMID 29579252 (SSc) on-topic.",
-  "pmids": [
-   "29579252"
-  ]
- },
- "ssc_M2_021": {
-  "verdict": "validate",
-  "rationale": "Phenotype-aggregation node: ACTA2+ activated fibroblast = myofibroblast — definitional sink; cited PMID 34282151 (myofibroblast number tracks mRSS) appropriate.",
-  "pmids": [
-   "34282151"
-  ]
- },
- "ssc_M2_022": {
-  "verdict": "validate",
-  "rationale": "Phenotype-aggregation node: sustained collagen/FN1/POSTN/COMP/CTGF deposition = ECM-deposition phenotype (mRSS readout). Definitional; appropriate as modelled.",
-  "pmids": []
- },
- "ssc_M2_030": {
-  "verdict": "validate",
-  "rationale": "COMP/THBS1 track mRSS skin severity — clinical-axis link; cited PMID 34282151 + 30952646 (SSc skin compendium) support.",
-  "pmids": [
-   "34282151",
-   "30952646"
-  ]
- },
- "ssc_M2_031": {
-  "verdict": "validate",
-  "rationale": "IL-6 trans-signalling via STAT3 induces Gremlin — cited PMID 24550394 (IL-6/collagen in SSc) supports the IL-6→fibrosis arm.",
-  "pmids": [
-   "24550394"
-  ]
- },
- "ssc_M2_032": {
-  "verdict": "validate",
-  "rationale": "Gremlin promotes hyperactive TGF-β/SMAD3 — cited PMID 24550394 + dossier 18455002 (Gremlin/TGF-β/fibrosis) support.",
-  "pmids": [
-   "24550394",
-   "18455002"
-  ]
- },
- "ssc_M2_033": {
-  "verdict": "validate",
-  "rationale": "Sustained β-catenin (CTNNB1) upregulates collagen driving skin fibrosis — cited PMID 25385294 directly supports (Wnt/β-catenin in SSc/keloid/morphea).",
-  "pmids": [
-   "25385294"
-  ]
- },
- "ssc_M2_019": {
-  "verdict": "caution",
-  "rationale": "FRA-2 (FOSL2) physically binding TBX2 in SSc fibroblasts is a curator inference (ECO:0000305); cited PMID 25381232 is unrelated (cyanobacterial microcystin) and no dossier source establishes a FOSL2–TBX2 complex. Needs real evidence before confirming.",
-  "pmids": []
- },
- "ssc_M2_041": {
-  "verdict": "caution",
-  "rationale": "Agonistic/stimulatory anti-PDGFR autoantibodies activating PDGFRB (Baroni 2006, PMID 16990392) is a high-profile but CONTESTED claim — several groups could not reproduce the agonistic activity. Surface to reviewer as disputed.",
-  "pmids": [
-   "16990392"
-  ]
- },
- "ssc_crosstalk_001": {
-  "verdict": "caution",
-  "rationale": "IFN-I priming dermal fibroblasts toward a pro-fibrotic state: cited PMID 35686918 supports the innate-DNA/STING/type-I-IFN→SSc fibroblast-activation axis, and 37488975 (endothelial IFN-I→fibrosis in SSc) corroborates. BUT the IFN-I role in SSc skin fibrosis is genuinely debated (protective vs pathogenic, 31436583) — keep, flagged as contested.",
-  "pmids": [
-   "35686918",
-   "37488975",
-   "31436583"
-  ]
- },
- "ssc_crosstalk_002": {
-  "verdict": "validate",
-  "rationale": "CXCL4(PF4) acts directly on dermal fibroblasts driving fibrosis — cited PMID 24350901 (van Bon) is the CXCL4-SSc biomarker paper; dossier 34986347 (CXCL4-deficient mice show CXCL4 is essential for skin/lung/heart fibrosis) gives the direct mechanistic support.",
-  "pmids": [
-   "24350901",
-   "34986347"
-  ]
- },
- "ssc_crosstalk_003": {
-  "verdict": "validate",
-  "rationale": "IFN-I amplifies pDC/B-cell adaptive immunity (M1→M4) — cited PMID 40341181 (type-I IFN + autoreactive B cells) supports; well-established autoimmune crosstalk. Conceptual bridge, biologically sound.",
-  "pmids": [
-   "40341181"
-  ]
- },
- "ssc_crosstalk_004": {
-  "verdict": "revise",
-  "rationale": "IL-6→STAT3→pro-fibrotic fibroblast/COL1A1 is well-supported (dossier 35628356 STAT3→COL1A1/FN1 in fibroblasts; map's own 24550394 IL-6→collagen in SSc) and underpins the tocilizumab/focuSSced rationale — BUT the cited PMID 27156434 is a generic Rheumatoid-arthritis seminar (wrong reference). Replace with 24550394.",
-  "pmids": [
-   "24550394",
-   "35628356"
-  ]
- },
- "ssc_crosstalk_005": {
-  "verdict": "revise",
-  "rationale": "IL-13/STAT6→COL1A1/FN1 (Th2→fibroblast ECM, romilkimab rationale) is established biology, but the cited PMID 17050694 is unrelated (telencephalic neuroepithelium / Cdc42). Replace with a real IL-13/STAT6 fibrosis reference.",
-  "pmids": []
- },
- "ssc_crosstalk_006": {
-  "verdict": "validate",
-  "rationale": "TGF-β1/SMAD3 drives EndMT (SNAI1 up, VE-cadherin/CDH5 down) — canonical EndMT initiator; cited PMID 17656708 lacks an abstract to verify but the biology is well-established (and reinforced by the SSc EndoMT paper 28062404 used in M3).",
-  "pmids": [
-   "28062404"
-  ]
- },
- "ssc_crosstalk_007": {
-  "verdict": "validate",
-  "rationale": "EndMT-derived perivascular cells join the myofibroblast pool — cited PMID 28062404 (EndoMT→α-SMA myofibroblast in SSc dermis) directly supports.",
-  "pmids": [
-   "28062404",
-   "33772754"
-  ]
- },
- "ssc_crosstalk_008": {
-  "verdict": "revise",
-  "rationale": "TGF-β1→CTGF/CCN2 autocrine amplifier loop is textbook fibrosis biology, but the cited PMID 16007098 is unrelated (ubiquitin-associated domain survey). Replace with 27734393 (CCN2 in skin fibrosis) / 11698729 (TGF-β & CTGF in scleroderma).",
-  "pmids": [
-   "27734393",
-   "11698729"
-  ]
- },
- "ssc_M4_001": {
-  "verdict": "validate",
-  "rationale": "IL-4 binds IL-4Rα — cited PMID 29930549 (IL-4/IL-13 receptor review) directly covers the binding kinetics. Canonical.",
-  "pmids": [
-   "29930549"
-  ]
- },
- "ssc_M4_002": {
-  "verdict": "validate",
-  "rationale": "IL-13 binds IL-13Rα1/IL-4Rα heterodimer — cited PMID 29930549 supports; romilkimab target. Canonical.",
-  "pmids": [
-   "29930549"
-  ]
- },
- "ssc_M4_004": {
-  "verdict": "validate",
-  "rationale": "Phospho-STAT6 dimerises and translocates — cited PMID 33991851 (STAT6 review) on-topic. Canonical TF activation.",
-  "pmids": [
-   "33991851"
-  ]
- },
- "ssc_M4_006": {
-  "verdict": "validate",
-  "rationale": "GATA3 commits naïve CD4 T cells to Th2 — cited PMID 24786134 (GATA3 review) supports. Canonical.",
-  "pmids": [
-   "24786134"
-  ]
- },
- "ssc_M4_007": {
-  "verdict": "validate",
-  "rationale": "CD79A/B engagement activates BCR via Lyn/Syk/Btk — cited PMID 9852257 (BCR signaling review) on-topic; ibrutinib/BTK rationale.",
-  "pmids": [
-   "9852257"
-  ]
- },
- "ssc_M4_008": {
-  "verdict": "validate",
-  "rationale": "CD20 (MS4A1) is the rituximab target on B cells — cited PMID 37683180 (MS4A1/CD20 isoforms) on-topic; RECITAL trial rationale.",
-  "pmids": [
-   "37683180"
-  ]
- },
- "ssc_M4_009": {
-  "verdict": "validate",
-  "rationale": "BCR + CD40-CD40L induces BLIMP1/XBP1/IRF4 (plasma-cell program) — canonical immunology; cited PMID 7544499 lacks an abstract to verify but the TF battery is textbook.",
-  "pmids": []
- },
- "ssc_M4_012": {
-  "verdict": "validate",
-  "rationale": "BAFF + APRIL bind BCMA on plasma cells (survival) — cited PMID 38990948 directly supports; belimumab rationale.",
-  "pmids": [
-   "38990948",
-   "10801128"
-  ]
- },
- "ssc_M4_013": {
-  "verdict": "validate",
-  "rationale": "GATA3/TBX21/FOXP3/RORC anchor Th2/Th1/Treg/Th17 lineages — cited PMID 28847903 (Th differentiation review) supports. Canonical.",
-  "pmids": [
-   "28847903"
-  ]
- },
- "ssc_M4_014": {
-  "verdict": "validate",
-  "rationale": "BCR + CD40 + CD22 modulation induces IRF4/XBP1/BLIMP1 — cited PMID 34759017 (IRF4 in germinal-center/plasma-cell fate) supports.",
-  "pmids": [
-   "34759017"
-  ]
- },
- "ssc_M4_016": {
-  "verdict": "validate",
-  "rationale": "Anti-Topo-I/anti-CenpB autoantibodies induce pro-fibrotic markers in dermal fibroblasts — cited PMID 31234888 directly tests this pathogenic capacity in SSc.",
-  "pmids": [
-   "31234888"
-  ]
- },
- "ssc_M4_017": {
-  "verdict": "validate",
-  "rationale": "CXCL4(PF4)-nucleic-acid complexes stimulate B-cell/plasma-cell autoantibody output — cited PMID 32707718 shows CXCL4 is an SSc autoantigen with antibody reactivity; reasonable directionality.",
-  "pmids": [
-   "32707718"
-  ]
- },
- "ssc_M4_018": {
-  "verdict": "validate",
-  "rationale": "SSc fibroblasts overexpress CCL2/MCP-1 recruiting monocytes — cited PMID 18984611 (MCP-1/MCP-3 in SSc) directly supports.",
-  "pmids": [
-   "18984611"
-  ]
- },
- "ssc_M4_019": {
-  "verdict": "validate",
-  "rationale": "Pro-fibrotic macrophage-derived TGF-β stimulates myofibroblast ECM — cited PMID 27156795 (SSc macrophages as TGF-β source) supports.",
-  "pmids": [
-   "27156795"
-  ]
- },
- "ssc_M4_020": {
-  "verdict": "validate",
-  "rationale": "CD19+ plasma-cell axis drives autoantibodies/skin thickening/collagen — cited PMID 29956883 (CD19 inhibition reduces all three in SSc) directly supports; strongly reinforced by CD19 CAR-T case series (38381673, 39542003).",
-  "pmids": [
-   "29956883",
-   "38381673"
-  ]
- },
- "ssc_M4_011": {
-  "verdict": "validate",
-  "rationale": "Phenotype-aggregation node: plasma-cell TF battery (BLIMP1/XBP1/IRF4) → SSc-defining autoantibody output. Definitional sink; appropriate as modelled.",
-  "pmids": []
- },
- "ssc_M4_015": {
-  "verdict": "validate",
-  "rationale": "Phenotype-aggregation node: Th1/Th2/Th17/Treg balance shapes autoantibody output. Definitional; appropriate.",
-  "pmids": []
- },
- "ssc_M4_003": {
-  "verdict": "revise",
-  "rationale": "IL-4R/IL-13R complexes signal via JAK1/JAK2 to phosphorylate STAT6 — canonical JAK/STAT biology, but the cited PMID 11526389 is unrelated (essay on autoimmunity/infection). Replace citation.",
-  "pmids": [
-   "29930549"
-  ]
- },
- "ssc_M4_005": {
-  "verdict": "revise",
-  "rationale": "Nuclear STAT6 induces ECM genes (COL1A1/COL3A1/FN1) in fibroblasts (IL-13→fibrosis) — supported biology (dossier 36757802 keloid JAK/STAT6 fibrosis), but the cited PMID 17050694 is unrelated (telencephalic neuroepithelium). Replace citation.",
-  "pmids": [
-   "36757802"
-  ]
- },
- "ssc_M4_010": {
-  "verdict": "revise",
-  "rationale": "BAFF (TNFSF13B) binds BCMA on plasma cells — established, but the cited PMID 11226167 is unrelated (PHD zinc-finger domain structure). Dossier 10801128 ('TACI and BCMA are receptors for' BAFF) is a precise replacement.",
-  "pmids": [
-   "10801128"
-  ]
- },
- "ssc_M4_021": {
-  "verdict": "caution",
-  "rationale": "IL-17A as pro-fibrotic rests on a loss-of-function study (cited PMID 22833167: IL-17A deficiency attenuates bleomycin fibrosis), BUT IL-17A's role is genuinely Yin/Yang — direct studies found IL-17A did NOT induce αSMA in fibroblasts (the map's own ex_il17_neg). Context-dependent; surface as contested.",
-  "pmids": [
-   "22833167"
-  ]
- },
- "ssc_M3_001": {
-  "verdict": "revise",
-  "rationale": "ET-1 binds EDNRA/EDNRB — canonical endothelin biology, but the cited PMID 8389755 is unrelated (erythrocyte chemokine binding). Replace citation (e.g. an endothelin-receptor reference).",
-  "pmids": []
- },
- "ssc_M3_010": {
-  "verdict": "revise",
-  "rationale": "SMAD3 + Notch (NICD1) cooperatively induce SNAI2/ZEB1 — supported EMT/EndMT biology, but the cited PMID 24316708 is unrelated (peri-implant occlusal loading). Replace citation.",
-  "pmids": []
- },
- "ssc_M3_002": {
-  "verdict": "validate",
-  "rationale": "ET-1:EDNRA → Gq/PLC → Ca²⁺ → vasoconstriction — cited PMID 24412386 (smooth-muscle EDNRA KO) supports; bosentan/macitentan rationale.",
-  "pmids": [
-   "24412386"
-  ]
- },
- "ssc_M3_003": {
-  "verdict": "validate",
-  "rationale": "eNOS (NOS3) produces NO — cited PMID 26390975 (eNOS/NO review) supports. Canonical vasoprotective axis.",
-  "pmids": [
-   "26390975"
-  ]
- },
- "ssc_M3_004": {
-  "verdict": "validate",
-  "rationale": "NO activates sGC to make cGMP — cited PMID 37572934 (sGC/NO review) supports; riociguat rationale.",
-  "pmids": [
-   "37572934"
-  ]
- },
- "ssc_M3_005": {
-  "verdict": "validate",
-  "rationale": "PDE5A degrades cGMP to GMP — cited PMID 12135389 (PDE5 cGMP hydrolysis) supports; sildenafil/tadalafil rationale.",
-  "pmids": [
-   "12135389"
-  ]
- },
- "ssc_M3_006": {
-  "verdict": "validate",
-  "rationale": "Hypoxia activates HIF1A → nuclear translocation — cited PMID 9278140 (HIF-1 review) supports. Canonical.",
-  "pmids": [
-   "9278140"
-  ]
- },
- "ssc_M3_007": {
-  "verdict": "validate",
-  "rationale": "HIF1A induces EDN1 + VEGFA — cited PMID 9278140 (HIF-1 oxy-gene targets incl. VEGF) supports; EDN1 is a known HIF target.",
-  "pmids": [
-   "9278140"
-  ]
- },
- "ssc_M3_008": {
-  "verdict": "validate",
-  "rationale": "VEGFA binds KDR/VEGFR2 — cited PMID 30173249 (VEGF family review) supports. Canonical; impaired angiogenesis in SSc.",
-  "pmids": [
-   "30173249"
-  ]
- },
- "ssc_M3_009": {
-  "verdict": "validate",
-  "rationale": "TGF-β/SMAD3 induces SNAI1 (EndMT trigger) — canonical; cited PMID 17656708 lacks an abstract to verify but the biology is well-established (and consistent with the SSc EndoMT data 28062404).",
-  "pmids": [
-   "28062404"
-  ]
- },
- "ssc_M3_011": {
-  "verdict": "validate",
-  "rationale": "SNAI1/2 repress CDH5 (VE-cadherin) — cited PMID 28062404 (SSc EndoMT, VE-cadherin loss) supports.",
-  "pmids": [
-   "28062404"
-  ]
- },
- "ssc_M3_012": {
-  "verdict": "validate",
-  "rationale": "SNAI1/2 + TGF-β induce CDH2/FAP/FSP1 mesenchymal markers — cited PMID 28062404 (SSc EndoMT) supports.",
-  "pmids": [
-   "28062404"
-  ]
- },
- "ssc_M3_013": {
-  "verdict": "validate",
-  "rationale": "EndMT-derived cells join the myofibroblast pool — cited PMID 28062404 (EndoMT→α-SMA in SSc dermis) supports.",
-  "pmids": [
-   "28062404"
-  ]
- },
- "ssc_M3_014": {
-  "verdict": "validate",
-  "rationale": "Phenotype-aggregation node: reduced NO + elevated EDN1 + capillary loss = vascular-remodelling readout (nailfold capillaroscopy). Definitional; appropriate.",
-  "pmids": []
- },
- "ssc_M3_015": {
-  "verdict": "validate",
-  "rationale": "ANGPT1 binds TEK/Tie2 to stabilise quiescent vasculature — cited PMID 23182855 (Ang1/Tie2) supports. Reduced in SSc skin.",
-  "pmids": [
-   "23182855"
-  ]
- },
- "ssc_M3_016": {
-  "verdict": "validate",
-  "rationale": "ANGPT2 competes at TEK/Tie2, destabilising endothelium — cited PMID 40029709 (Ang2 antagonist conversion) supports; 33333969 shows Ang-2 activates SSc monocytes (SSc relevance).",
-  "pmids": [
-   "40029709",
-   "33333969"
-  ]
- },
- "ssc_M3_017": {
-  "verdict": "validate",
-  "rationale": "TGF-β/SMAD3 induces TWIST1 (EndMT master TF) — cited PMID 16123809 (TGF-β-driven EMT transcription factors) supports.",
-  "pmids": [
-   "16123809"
-  ]
- },
- "ssc_M3_018": {
-  "verdict": "validate",
-  "rationale": "SNAI1/2 repress the endothelial-identity panel (CDH5/CD31/VWF/TEK) — cited PMID 28062404 (SSc EndoMT) supports.",
-  "pmids": [
-   "28062404"
-  ]
- },
- "ssc_M3_019": {
-  "verdict": "validate",
-  "rationale": "COX-2/PTGS2 produces thromboxane TXA2 signalling via TBXA2R (vasoconstriction) — cited PMID 37321373 (thromboxane A2 receptor signalling review) supports; SSc digital ischaemia.",
-  "pmids": [
-   "37321373"
-  ]
- },
- "ssc_M3_020": {
-  "verdict": "validate",
-  "rationale": "HIF1A partners ARNT in the nucleus — cited PMID 7539918 is the classic Wang/Semenza HIF-1α/ARNT bHLH-PAS paper. Canonical, correct.",
-  "pmids": [
-   "7539918"
-  ]
- },
- "ssc_M3_021": {
-  "verdict": "validate",
-  "rationale": "TGF-β/SMAD3 induces ZEB2/SIP1 (EndMT TF) — cited PMID 19838011 (TGF-β-Smad induces ZEB1/ZEB2/Snail) directly supports.",
-  "pmids": [
-   "19838011"
-  ]
- },
- "ssc_M3_022": {
-  "verdict": "validate",
-  "rationale": "NOTCH3 engaged by JAG1 (pericyte/VSMC Notch) — cited PMID 31868216 (Notch3 in vascular smooth muscle) supports; NOTCH3/CADASIL pericyte axis.",
-  "pmids": [
-   "31868216"
-  ]
- },
- "ssc_M3_023": {
-  "verdict": "validate",
-  "rationale": "FLI1 maintains endothelial CDH5 identity; its SSc reduction permits EndoMT — cited PMID 28062404 + dossier 20228226 (endothelial Fli1 deficiency impairs vascular homeostasis in scleroderma vasculopathy) strongly support.",
-  "pmids": [
-   "20228226",
-   "28062404"
-  ]
- },
- "ssc_M3_024": {
-  "verdict": "validate",
-  "rationale": "MMP-12-dependent uPAR (PLAUR) cleavage drives SSc-serum-induced EndoMT — cited PMID 28062404 (SSc EndoMT, MMP-12/uPAR) supports.",
-  "pmids": [
-   "28062404"
-  ]
- },
- "ssc_M3_025": {
-  "verdict": "validate",
-  "rationale": "ET-1 enhances collagen I/III release by SSc dermal fibroblasts via EDNRA/B — cited PMID 9595482 directly states this. Profibrotic ET-1→fibroblast axis.",
-  "pmids": [
-   "9595482"
-  ]
- },
- "ssc_M3_026": {
-  "verdict": "validate",
-  "rationale": "Agonistic anti-AT1R/anti-ETAR autoantibodies induce endothelial TGF-β — cited PMID 26970493 (agonistic AT1R/ETAR autoAb in SSc, Riemekasten) supports; distinct from the contested anti-PDGFR claim.",
-  "pmids": [
-   "26970493"
-  ]
- },
- "ssc_M3_027": {
-  "verdict": "validate",
-  "rationale": "TGF-β1 upregulates EDN1 — cited PMID 19335743 (SSc TGF-β/ET-1 review) supports; 12021584 (ETA blockade lowers collagen) corroborates the ET-1/fibrosis link.",
-  "pmids": [
-   "19335743"
-  ]
- },
- "ssc_M2_056": {
-  "verdict": "validate",
-  "rationale": "NOX4-dependent H2O2 drives TGF-β1-induced myofibroblast differentiation — cited PMID 25040787 (Nox4 regulates the activated state of SSc dermal fibroblasts) directly supports.",
-  "pmids": [
-   "25040787"
-  ]
- },
- "ssc_M2_057": {
-  "verdict": "validate",
-  "rationale": "αv-containing integrins (ITGAV) bind/activate latent TGF-β — cited PMID 16436664 (αv integrins activate latent TGF-β in fibrosis) supports; canonical integrin-mediated TGF-β activation.",
-  "pmids": [
-   "16436664"
-  ]
- }
+  "ssc_M1_001": {
+    "verdict": "validate",
+    "rationale": "cGAS senses cytosolic dsDNA and makes cGAMP — canonical innate-immunity fact; cited PMID 23258413 is the actual cGAS discovery (Sun et al). Dossier confirms cGAS-STING drives fibrosis across organs.",
+    "pmids": [
+      "23258413"
+    ]
+  },
+  "ssc_M1_002": {
+    "verdict": "revise",
+    "rationale": "Biology (cGAMP binds STING, triggers ER-Golgi trafficking) is canonical, BUT the cited PMID 22094255 is an unrelated paper (oxidative damage / DNA methyltransferases in cancer). Citation must be replaced. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
+    "pmids": [
+      "23258412",
+      "27324217"
+    ]
+  },
+  "ssc_M1_003": {
+    "verdict": "revise",
+    "rationale": "STING→TBK1→IRF3 phosphorylation is canonical, but cited PMID 22810585 is unrelated ('Viral immune modulators perturb the human molecular network'). Replace citation. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
+    "pmids": [
+      "25636800"
+    ]
+  },
+  "ssc_M1_004": {
+    "verdict": "validate",
+    "rationale": "Phospho-IRF3 induces IFN-β transcription — textbook. Cited PMID 11402134 returned no abstract (unverifiable here) but the biology is canonical and dossier supports the STING/IRF3/IFN-I axis.",
+    "pmids": [
+      "35686918"
+    ]
+  },
+  "ssc_M1_005": {
+    "verdict": "revise",
+    "rationale": "TLR3/TRIF nucleic-acid sensing is real (classically →IRF3, also IRF7), but cited PMID 14528265 is unrelated (mitochondrial outer-membrane targeting signals). Replace citation; double-check IRF7 vs IRF3. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
+    "pmids": [
+      "12855817"
+    ]
+  },
+  "ssc_M1_006": {
+    "verdict": "revise",
+    "rationale": "TLR7/9→MyD88→IRF7 is canonical, but cited PMID 15728479 is unrelated (GM-CSF/microglia). Replace citation (e.g. dossier 32111355, Spi-B/IFN-α4). [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
+    "pmids": [
+      "15361868"
+    ]
+  },
+  "ssc_M1_007": {
+    "verdict": "validate",
+    "rationale": "Phospho-IRF7 induces IFN-α — textbook. Cited PMID 11442765 had no abstract to verify, but biology canonical.",
+    "pmids": []
+  },
+  "ssc_M1_008": {
+    "verdict": "revise",
+    "rationale": "RIG-I (DDX58) senses cytosolic dsRNA and recruits MAVS — canonical, but cited PMID 15208629 is unrelated (BubR1 / aging). Replace citation. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
+    "pmids": [
+      "16153868"
+    ]
+  },
+  "ssc_M1_009": {
+    "verdict": "revise",
+    "rationale": "DDX58:MAVS→IKBKE→IRF3 is established, but cited PMID 17601859 is unrelated (tobacco-smoke biomarker in bar workers). Replace citation. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
+    "pmids": [
+      "12692549"
+    ]
+  },
+  "ssc_M1_010": {
+    "verdict": "validate",
+    "rationale": "CXCL4(PF4) primes pDCs to amplify IFN-α — cited PMID 24350901 is the van Bon SSc CXCL4 paper (correct). Strongly corroborated (34986347 CXCL4 drives fibrosis; 39464886 CXCL4-M4 macrophages in SSc).",
+    "pmids": [
+      "24350901",
+      "34986347"
+    ]
+  },
+  "ssc_M1_011": {
+    "verdict": "validate",
+    "rationale": "Activated pDC produces IFN-α — canonical; cited PMID 24350901 on-topic (SSc pDC). Supported by 37488975, 39152751 (anifrolumab DAISY trial).",
+    "pmids": [
+      "24350901",
+      "37488975"
+    ]
+  },
+  "ssc_M1_012": {
+    "verdict": "validate",
+    "rationale": "Phenotype-aggregation node: combined ISG response = IFN-signature readout (Whitfield/Tabib intrinsic subset). Definitional sink, not a mechanistic edge; appropriate as modelled.",
+    "pmids": [
+      "34282151"
+    ]
+  },
+  "ssc_M1_013": {
+    "verdict": "validate",
+    "rationale": "IRF7 cytosolic phospho-form translocates to nucleus — canonical; cited PMID 37251373 is an on-topic IRF7 review.",
+    "pmids": [
+      "37251373"
+    ]
+  },
+  "ssc_M1_014": {
+    "verdict": "validate",
+    "rationale": "SOCS1 (+PTPN2) negatively regulate JAK1/IFN signalling — canonical; cited PMID 11706989 is an on-topic SOCS review.",
+    "pmids": [
+      "11706989"
+    ]
+  },
+  "ssc_M1_015": {
+    "verdict": "validate",
+    "rationale": "TLR8 endosomal ssRNA sensing→IRF7 is established; cited PMID 31662487 (monocyte RNA-virus sensing) is on-topic. Contrary cue (16737960) only notes IRAK-independence of kinase activity — not a refutation.",
+    "pmids": [
+      "31662487"
+    ]
+  },
+  "ssc_M1_016": {
+    "verdict": "validate",
+    "rationale": "CXCL4 binds DNA/RNA and favours pDC IFN-α — cited PMID 32707718 on-topic (CXCL4 in SSc). Heavily corroborated (36053251, 35640018, 31043596). 'Contrary' hits actually reinforce the mechanism.",
+    "pmids": [
+      "32707718",
+      "31043596"
+    ]
+  },
+  "ssc_M1_017": {
+    "verdict": "validate",
+    "rationale": "IRF5 (top SSc GWAS locus) drives type-I IFN — cited PMID 20231204 is the IRF5-SSc association (correct); reinforced by 19116937, 19479858, 19644887. Links genetics to module M1.",
+    "pmids": [
+      "20231204",
+      "19644887"
+    ]
+  },
+  "ssc_M1_018": {
+    "verdict": "validate",
+    "rationale": "CXCL4 organises DNA for TLR9 sensing — cited PMID 32707718 on-topic; strongly supported (31043596 liquid-crystalline DNA/TLR9, 35640018 chemokine-DNA nanoparticles, 37773045 TLR9 ligand sequestration).",
+    "pmids": [
+      "31043596",
+      "35640018"
+    ]
+  },
+  "ssc_M1_019": {
+    "verdict": "validate",
+    "rationale": "AutoAb immune complexes induce pDC IFN-α (M4→M1) — well-established innate/adaptive crosstalk; cited PMID 32707718 on CXCL4/pDC IFN is adjacent support. Conceptual but sound.",
+    "pmids": [
+      "32707718"
+    ]
+  },
+  "ssc_M2_001": {
+    "verdict": "revise",
+    "rationale": "Latent TGF-β1 (LAP+LTBP1) release/activation is canonical, but cited PMID 11257233 is unrelated (schizophrenia/rubella). The dossier's own 11907708 ('first stage of TGF-β1 activation is release of the large latent complex') is a precise replacement. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
+    "pmids": [
+      "11907708",
+      "24216753"
+    ]
+  },
+  "ssc_M2_002": {
+    "verdict": "revise",
+    "rationale": "Thrombospondin-1 activates latent TGF-β — established (Murphy-Ullrich), but cited PMID 7935446 is unrelated (yeast translation). Replace citation. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
+    "pmids": [
+      "7929414",
+      "10708953"
+    ]
+  },
+  "ssc_M2_003": {
+    "verdict": "revise",
+    "rationale": "TGF-β1 binds TGFBR2/TGFBR1 — textbook receptor biology, but cited PMID 7774572 is unrelated (gonococcal invasion). Replace with a TGF-β receptor reference. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
+    "pmids": [
+      "8047140"
+    ]
+  },
+  "ssc_M2_004": {
+    "verdict": "revise",
+    "rationale": "TGFBR1 phosphorylates SMAD2/3 — canonical, but cited PMID 8674513 is unrelated (retinal pigment epithelium). Replace citation. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
+    "pmids": [
+      "8980228"
+    ]
+  },
+  "ssc_M2_005": {
+    "verdict": "revise",
+    "rationale": "pSMAD3:SMAD4 oligomerise and enter the nucleus — canonical; cited PMID 9748228 concerns BMP7/activin Smads (tangential). Replace with a TGF-β/SMAD3 reference. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
+    "pmids": [
+      "9311995"
+    ]
+  },
+  "ssc_M2_006": {
+    "verdict": "revise",
+    "rationale": "SMAD3:SMAD4 induces COL1A1 — textbook SSc fibrosis biology, but cited PMID 10497222 is unrelated (PKC-eta gene cloning). The M2_023 paper (16319104, Smad3/Sp1 collagen in SSc) is an apt replacement. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
+    "pmids": [
+      "16319104"
+    ]
+  },
+  "ssc_M2_007": {
+    "verdict": "revise",
+    "rationale": "SMAD3:SMAD4 induces COL3A1 — sound, but cited PMID 10497222 is unrelated (PKC-eta). Replace citation. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
+    "pmids": [
+      "16319104"
+    ]
+  },
+  "ssc_M2_008": {
+    "verdict": "revise",
+    "rationale": "SMAD3:SMAD4 induces fibronectin (FN1) — sound, but cited PMID 10497222 is unrelated (PKC-eta). Replace citation. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
+    "pmids": [
+      "16319104"
+    ]
+  },
+  "ssc_M2_009": {
+    "verdict": "revise",
+    "rationale": "SMAD3:SMAD4 induces ACTA2/αSMA — sound, but cited PMID 8616204 is unrelated (Melbourne food survey). Replace citation. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
+    "pmids": [
+      "12702545"
+    ]
+  },
+  "ssc_M2_010": {
+    "verdict": "revise",
+    "rationale": "SMAD3:SMAD4 induces CTGF/CCN2 — sound, but cited PMID 16007098 is unrelated (ubiquitin-associated domain survey). Dossier 27734393 (CCN2 in skin fibrosis) / 11698729 (TGF-β & CTGF in scleroderma) are apt. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
+    "pmids": [
+      "27734393",
+      "11698729"
+    ]
+  },
+  "ssc_M2_011": {
+    "verdict": "revise",
+    "rationale": "Autocrine CTGF/CCN2 amplifies the pro-fibrotic fibroblast — sound (pamrevlumab rationale), but cited PMID 16007098 is unrelated (ubiquitin domain). Replace with 27734393 / 28488090. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
+    "pmids": [
+      "27734393",
+      "11698729"
+    ]
+  },
+  "ssc_M2_012": {
+    "verdict": "caution",
+    "rationale": "Cited PMID 22186371 is unrelated (Arabidopsis root microfluidics) — definitely wrong. BUT the mechanism itself needs expert review: POSTN/periostin is canonically induced by IL-4/IL-13 (PMID 16815144), not by a direct SMAD3:SMAD4 SBE — so this may be a mechanism/edge question, not just a citation swap. Flagged for the expert reviewer. [verified vs PubMed 2026-06-24]",
+    "pmids": [
+      "16815144"
+    ]
+  },
+  "ssc_M2_013": {
+    "verdict": "revise",
+    "rationale": "SMAD3:SMAD4 induces COMP — plausible (COMP is an SSc skin marker), but cited PMID 22197582 is unrelated (older-adult physical activity survey). Replace citation. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
+    "pmids": [
+      "18408251",
+      "16520029"
+    ]
+  },
+  "ssc_M2_017": {
+    "verdict": "revise",
+    "rationale": "YAP/TAZ induce ACTA2 + CTGF — established mechanotransduction biology, but cited PMID 21343339 is unrelated (TRIM28/KAP1). Replace citation. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
+    "pmids": [
+      "21654799"
+    ]
+  },
+  "ssc_M2_014": {
+    "verdict": "validate",
+    "rationale": "SMAD3:SMAD4 induces LOX/LOXL2 — cited PMID 31317653 directly validates LOX regulation by TGF-β1/Smad2/3.",
+    "pmids": [
+      "31317653"
+    ]
+  },
+  "ssc_M2_015": {
+    "verdict": "validate",
+    "rationale": "LOX/LOXL2 cross-link collagens to stiffen ECM — cited PMID 31488698 is an on-topic LOX/ECM review.",
+    "pmids": [
+      "31488698"
+    ]
+  },
+  "ssc_M2_016": {
+    "verdict": "validate",
+    "rationale": "ECM stiffness → RHOA/ROCK → YAP/TAZ — cited PMID 21654799 is the seminal Dupont YAP/TAZ mechanotransduction paper; dossier 30135582 corroborates.",
+    "pmids": [
+      "21654799"
+    ]
+  },
+  "ssc_M2_018": {
+    "verdict": "validate",
+    "rationale": "FRA-2 (FOSL2) drives COL1A1/ACTA2 — FRA-2 transgenic phenocopies SSc fibrosis (Reich/Distler); citation lacks abstract but biology is well-established.",
+    "pmids": []
+  },
+  "ssc_M2_020": {
+    "verdict": "validate",
+    "rationale": "PDGF-AA/BB via PDGFRA/B drives fibroblast proliferation — cited PMID 9739761 is a legitimate PDGF signal-transduction review; nintedanib SSc-ILD rationale.",
+    "pmids": [
+      "9739761"
+    ]
+  },
+  "ssc_M2_023": {
+    "verdict": "validate",
+    "rationale": "SMAD3:SMAD4 induces extended ECM battery — cited PMID 16319104 directly shows Smad3/Sp1 driving collagen in SSc fibroblasts. Strong.",
+    "pmids": [
+      "16319104"
+    ]
+  },
+  "ssc_M2_024": {
+    "verdict": "validate",
+    "rationale": "YAP/TAZ co-activate mechanosensitive ECM genes — cited PMID 39329703 (YAP/TAZ in IPF) on-topic.",
+    "pmids": [
+      "39329703"
+    ]
+  },
+  "ssc_M2_025": {
+    "verdict": "validate",
+    "rationale": "YAP1/TAZ nuclear shuttling under mechanical signal — cited PMID 21654799 (Dupont) is canonical.",
+    "pmids": [
+      "21654799"
+    ]
+  },
+  "ssc_M2_026": {
+    "verdict": "validate",
+    "rationale": "SSc SFRP2hi/DPP4 progenitor fibroblasts give rise to myofibroblasts — cited PMID 34282151 (Tabib single-cell SSc) supports; 29080679 defines SFRP2/DPP4 populations.",
+    "pmids": [
+      "34282151",
+      "29080679"
+    ]
+  },
+  "ssc_M2_027": {
+    "verdict": "validate",
+    "rationale": "SFRP4/FNDC1 mark the committing SSc fibroblast fraction — cited PMID 34282151 (Tabib) supports.",
+    "pmids": [
+      "34282151"
+    ]
+  },
+  "ssc_M2_028": {
+    "verdict": "validate",
+    "rationale": "FOSL2/RUNX1/CREB3L1 regulons drive SSc myofibroblast differentiation — cited PMID 34282151 (Tabib regulon analysis) supports.",
+    "pmids": [
+      "34282151"
+    ]
+  },
+  "ssc_M2_029": {
+    "verdict": "validate",
+    "rationale": "TGF-β downregulates caveolin-1 (CAV1) — cited PMID 29259049 directly states TGF-β downregulation of Cav-1 in SSc.",
+    "pmids": [
+      "29259049"
+    ]
+  },
+  "ssc_M2_034": {
+    "verdict": "validate",
+    "rationale": "TGF-β upregulates GLI2 via SMAD3 (non-canonical Hedgehog) — cited PMID 27793816 (non-canonical Hh in SSc) supports.",
+    "pmids": [
+      "27793816"
+    ]
+  },
+  "ssc_M2_035": {
+    "verdict": "validate",
+    "rationale": "GLI2 mediates TGF-β-induced fibroblast activation — cited PMID 27793816 supports; 39182559 (FGF21/GLI2 in SSc) corroborates.",
+    "pmids": [
+      "27793816"
+    ]
+  },
+  "ssc_M2_036": {
+    "verdict": "validate",
+    "rationale": "Serotonin/5-HT2B (HTR2B) drives fibroblast ECM synthesis — cited PMID 21518801 (Dees, platelet-serotonin/5-HT2B links vascular damage to fibrosis) directly supports; antagonists reduce fibrosis (25667920).",
+    "pmids": [
+      "21518801",
+      "25667920"
+    ]
+  },
+  "ssc_M2_037": {
+    "verdict": "validate",
+    "rationale": "Autotaxin (ENPP2) generates LPA activating LPAR1 — cited PMID 39009409 supports the ATX-LPA-LPAR1 axis in SSc/IPF.",
+    "pmids": [
+      "39009409"
+    ]
+  },
+  "ssc_M2_038": {
+    "verdict": "validate",
+    "rationale": "LPAR1 activation contributes to SSc fibrosis — cited PMID 39009409 supports; LPAR1 antagonists are antifibrotic (40887574) — consistent, not contrary.",
+    "pmids": [
+      "39009409"
+    ]
+  },
+  "ssc_M2_039": {
+    "verdict": "validate",
+    "rationale": "TLR4 DAMP sensing sustains myofibroblast activation — cited PMID 28964818 (SSc DAMP/TLR4) supports; 17952090 (TLR4 enhances TGF-β/hepatic fibrosis) corroborates.",
+    "pmids": [
+      "28964818",
+      "17952090"
+    ]
+  },
+  "ssc_M2_040": {
+    "verdict": "validate",
+    "rationale": "Autocrine CCN2/CTGF maintains the fibrotic phenotype — cited PMID 10942593 (RDA scleroderma CTGF, Igarashi) directly supports.",
+    "pmids": [
+      "10942593",
+      "27734393"
+    ]
+  },
+  "ssc_M2_042": {
+    "verdict": "validate",
+    "rationale": "Adenosine A2A receptor (ADORA2A) stimulates collagen in SSc fibroblasts — cited PMID 22033526 directly supports.",
+    "pmids": [
+      "22033526"
+    ]
+  },
+  "ssc_M2_043": {
+    "verdict": "validate",
+    "rationale": "DKK1 antagonises Wnt/β-catenin and is epigenetically silenced in SSc — cited PMID 23698475 (Wnt antagonist hypermethylation in SSc) supports.",
+    "pmids": [
+      "23698475"
+    ]
+  },
+  "ssc_M2_044": {
+    "verdict": "validate",
+    "rationale": "mTOR/Akt stabilises JunB by failed degradation — cited PMID 25303440 (AP-1/JunB in SSc collagen) supports.",
+    "pmids": [
+      "25303440"
+    ]
+  },
+  "ssc_M2_045": {
+    "verdict": "validate",
+    "rationale": "Accumulated JunB drives type-I collagen overexpression in SSc — cited PMID 25303440 directly supports.",
+    "pmids": [
+      "25303440"
+    ]
+  },
+  "ssc_M2_046": {
+    "verdict": "validate",
+    "rationale": "Notch (NICD1) drives fibroblast activation/collagen in SSc — cited PMID 21450749 directly supports.",
+    "pmids": [
+      "21450749"
+    ]
+  },
+  "ssc_M2_047": {
+    "verdict": "validate",
+    "rationale": "Cadherin-11 (CDH11) mediates SSc dermal fibrosis — cited PMID 24757152 directly supports; 35662129 (CDH11 in tissue fibrosis) corroborates.",
+    "pmids": [
+      "24757152"
+    ]
+  },
+  "ssc_M2_048": {
+    "verdict": "validate",
+    "rationale": "Galectin-3 (LGALS3) is a pro-fibrotic regulator increased in SSc skin — cited PMID 36499646 supports.",
+    "pmids": [
+      "36499646"
+    ]
+  },
+  "ssc_M2_049": {
+    "verdict": "validate",
+    "rationale": "WNT5A/JNK/ROCK activates latent TGF-β — cited PMID 38747285 directly supports in SSc/IPF.",
+    "pmids": [
+      "38747285"
+    ]
+  },
+  "ssc_M2_050": {
+    "verdict": "validate",
+    "rationale": "GLI2 induces pro-fibrotic CLIC4 — cited PMID 35159339 supports (TGF-β/SMAD3 + Hh/GLI drive CLIC4).",
+    "pmids": [
+      "35159339"
+    ]
+  },
+  "ssc_M2_051": {
+    "verdict": "validate",
+    "rationale": "NOTCH2 promotes myofibroblast activation (miR-16-5p target) — cited PMID 33411678 (SSc) supports.",
+    "pmids": [
+      "33411678"
+    ]
+  },
+  "ssc_M2_052": {
+    "verdict": "validate",
+    "rationale": "DC-derived epiregulin (EREG)/EGFR maintains skin/lung fibrosis — cited PMID 36490328 (Sci Immunol, SSc) directly supports; 40961242 confirms EREG required for SSc skin fibrosis.",
+    "pmids": [
+      "36490328"
+    ]
+  },
+  "ssc_M2_053": {
+    "verdict": "validate",
+    "rationale": "FLI1 represses COL1A1; its epigenetic silencing derepresses collagen in SSc — cited PMID 19863377 is an SSc vascular review (weak for this edge); dossier 16829517 (Fli1 represses CCN2) and 25562121 (Fli1 suppresses Col1a1) are stronger.",
+    "pmids": [
+      "16829517",
+      "25562121"
+    ]
+  },
+  "ssc_M2_054": {
+    "verdict": "validate",
+    "rationale": "Galectin-3 (LGALS3) acts downstream of TGF-β1 — cited PMID 22700848 (scleroderma bleomycin/macrophage-galectin model) supports; direction plausible.",
+    "pmids": [
+      "22700848"
+    ]
+  },
+  "ssc_M2_055": {
+    "verdict": "validate",
+    "rationale": "Anti-PDGFR signalling / PDGFRB in SSc fibroblasts — cited PMID 16790699 (SSc) on-topic.",
+    "pmids": [
+      "16790699"
+    ]
+  },
+  "ssc_M2_058": {
+    "verdict": "validate",
+    "rationale": "MMP1/SIRT1 axis in SSc — cited PMID 29579252 (SSc) on-topic.",
+    "pmids": [
+      "29579252"
+    ]
+  },
+  "ssc_M2_021": {
+    "verdict": "validate",
+    "rationale": "Phenotype-aggregation node: ACTA2+ activated fibroblast = myofibroblast — definitional sink; cited PMID 34282151 (myofibroblast number tracks mRSS) appropriate.",
+    "pmids": [
+      "34282151"
+    ]
+  },
+  "ssc_M2_022": {
+    "verdict": "validate",
+    "rationale": "Phenotype-aggregation node: sustained collagen/FN1/POSTN/COMP/CTGF deposition = ECM-deposition phenotype (mRSS readout). Definitional; appropriate as modelled.",
+    "pmids": []
+  },
+  "ssc_M2_030": {
+    "verdict": "validate",
+    "rationale": "COMP/THBS1 track mRSS skin severity — clinical-axis link; cited PMID 34282151 + 30952646 (SSc skin compendium) support.",
+    "pmids": [
+      "34282151",
+      "30952646"
+    ]
+  },
+  "ssc_M2_031": {
+    "verdict": "validate",
+    "rationale": "IL-6 trans-signalling via STAT3 induces Gremlin — cited PMID 24550394 (IL-6/collagen in SSc) supports the IL-6→fibrosis arm.",
+    "pmids": [
+      "24550394"
+    ]
+  },
+  "ssc_M2_032": {
+    "verdict": "validate",
+    "rationale": "Gremlin promotes hyperactive TGF-β/SMAD3 — cited PMID 24550394 + dossier 18455002 (Gremlin/TGF-β/fibrosis) support.",
+    "pmids": [
+      "24550394",
+      "18455002"
+    ]
+  },
+  "ssc_M2_033": {
+    "verdict": "validate",
+    "rationale": "Sustained β-catenin (CTNNB1) upregulates collagen driving skin fibrosis — cited PMID 25385294 directly supports (Wnt/β-catenin in SSc/keloid/morphea).",
+    "pmids": [
+      "25385294"
+    ]
+  },
+  "ssc_M2_019": {
+    "verdict": "caution",
+    "rationale": "FRA-2 (FOSL2) physically binding TBX2 in SSc fibroblasts is a curator inference (ECO:0000305); cited PMID 25381232 is unrelated (cyanobacterial microcystin) and no dossier source establishes a FOSL2–TBX2 complex. Needs real evidence before confirming.",
+    "pmids": []
+  },
+  "ssc_M2_041": {
+    "verdict": "caution",
+    "rationale": "Agonistic/stimulatory anti-PDGFR autoantibodies activating PDGFRB (Baroni 2006, PMID 16990392) is a high-profile but CONTESTED claim — several groups could not reproduce the agonistic activity. Surface to reviewer as disputed.",
+    "pmids": [
+      "16990392"
+    ]
+  },
+  "ssc_crosstalk_001": {
+    "verdict": "caution",
+    "rationale": "IFN-I priming dermal fibroblasts toward a pro-fibrotic state: cited PMID 35686918 supports the innate-DNA/STING/type-I-IFN→SSc fibroblast-activation axis, and 37488975 (endothelial IFN-I→fibrosis in SSc) corroborates. BUT the IFN-I role in SSc skin fibrosis is genuinely debated (protective vs pathogenic, 31436583) — keep, flagged as contested.",
+    "pmids": [
+      "35686918",
+      "37488975",
+      "31436583"
+    ]
+  },
+  "ssc_crosstalk_002": {
+    "verdict": "validate",
+    "rationale": "CXCL4(PF4) acts directly on dermal fibroblasts driving fibrosis — cited PMID 24350901 (van Bon) is the CXCL4-SSc biomarker paper; dossier 34986347 (CXCL4-deficient mice show CXCL4 is essential for skin/lung/heart fibrosis) gives the direct mechanistic support.",
+    "pmids": [
+      "24350901",
+      "34986347"
+    ]
+  },
+  "ssc_crosstalk_003": {
+    "verdict": "validate",
+    "rationale": "IFN-I amplifies pDC/B-cell adaptive immunity (M1→M4) — cited PMID 40341181 (type-I IFN + autoreactive B cells) supports; well-established autoimmune crosstalk. Conceptual bridge, biologically sound.",
+    "pmids": [
+      "40341181"
+    ]
+  },
+  "ssc_crosstalk_004": {
+    "verdict": "revise",
+    "rationale": "IL-6→STAT3→pro-fibrotic fibroblast/COL1A1 is well-supported (dossier 35628356 STAT3→COL1A1/FN1 in fibroblasts; map's own 24550394 IL-6→collagen in SSc) and underpins the tocilizumab/focuSSced rationale — BUT the cited PMID 27156434 is a generic Rheumatoid-arthritis seminar (wrong reference). Replace with 24550394. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
+    "pmids": [
+      "24550394"
+    ]
+  },
+  "ssc_crosstalk_005": {
+    "verdict": "revise",
+    "rationale": "IL-13/STAT6→COL1A1/FN1 (Th2→fibroblast ECM, romilkimab rationale) is established biology, but the cited PMID 17050694 is unrelated (telencephalic neuroepithelium / Cdc42). Replace with a real IL-13/STAT6 fibrosis reference. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
+    "pmids": [
+      "15271999"
+    ]
+  },
+  "ssc_crosstalk_006": {
+    "verdict": "validate",
+    "rationale": "TGF-β1/SMAD3 drives EndMT (SNAI1 up, VE-cadherin/CDH5 down) — canonical EndMT initiator; cited PMID 17656708 lacks an abstract to verify but the biology is well-established (and reinforced by the SSc EndoMT paper 28062404 used in M3).",
+    "pmids": [
+      "28062404"
+    ]
+  },
+  "ssc_crosstalk_007": {
+    "verdict": "validate",
+    "rationale": "EndMT-derived perivascular cells join the myofibroblast pool — cited PMID 28062404 (EndoMT→α-SMA myofibroblast in SSc dermis) directly supports.",
+    "pmids": [
+      "28062404",
+      "33772754"
+    ]
+  },
+  "ssc_crosstalk_008": {
+    "verdict": "revise",
+    "rationale": "TGF-β1→CTGF/CCN2 autocrine amplifier loop is textbook fibrosis biology, but the cited PMID 16007098 is unrelated (ubiquitin-associated domain survey). Replace with 27734393 (CCN2 in skin fibrosis) / 11698729 (TGF-β & CTGF in scleroderma). [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
+    "pmids": [
+      "27734393",
+      "11698729"
+    ]
+  },
+  "ssc_M4_001": {
+    "verdict": "validate",
+    "rationale": "IL-4 binds IL-4Rα — cited PMID 29930549 (IL-4/IL-13 receptor review) directly covers the binding kinetics. Canonical.",
+    "pmids": [
+      "29930549"
+    ]
+  },
+  "ssc_M4_002": {
+    "verdict": "validate",
+    "rationale": "IL-13 binds IL-13Rα1/IL-4Rα heterodimer — cited PMID 29930549 supports; romilkimab target. Canonical.",
+    "pmids": [
+      "29930549"
+    ]
+  },
+  "ssc_M4_004": {
+    "verdict": "validate",
+    "rationale": "Phospho-STAT6 dimerises and translocates — cited PMID 33991851 (STAT6 review) on-topic. Canonical TF activation.",
+    "pmids": [
+      "33991851"
+    ]
+  },
+  "ssc_M4_006": {
+    "verdict": "validate",
+    "rationale": "GATA3 commits naïve CD4 T cells to Th2 — cited PMID 24786134 (GATA3 review) supports. Canonical.",
+    "pmids": [
+      "24786134"
+    ]
+  },
+  "ssc_M4_007": {
+    "verdict": "validate",
+    "rationale": "CD79A/B engagement activates BCR via Lyn/Syk/Btk — cited PMID 9852257 (BCR signaling review) on-topic; ibrutinib/BTK rationale.",
+    "pmids": [
+      "9852257"
+    ]
+  },
+  "ssc_M4_008": {
+    "verdict": "validate",
+    "rationale": "CD20 (MS4A1) is the rituximab target on B cells — cited PMID 37683180 (MS4A1/CD20 isoforms) on-topic; RECITAL trial rationale.",
+    "pmids": [
+      "37683180"
+    ]
+  },
+  "ssc_M4_009": {
+    "verdict": "validate",
+    "rationale": "BCR + CD40-CD40L induces BLIMP1/XBP1/IRF4 (plasma-cell program) — canonical immunology; cited PMID 7544499 lacks an abstract to verify but the TF battery is textbook.",
+    "pmids": []
+  },
+  "ssc_M4_012": {
+    "verdict": "validate",
+    "rationale": "BAFF + APRIL bind BCMA on plasma cells (survival) — cited PMID 38990948 directly supports; belimumab rationale.",
+    "pmids": [
+      "38990948",
+      "10801128"
+    ]
+  },
+  "ssc_M4_013": {
+    "verdict": "validate",
+    "rationale": "GATA3/TBX21/FOXP3/RORC anchor Th2/Th1/Treg/Th17 lineages — cited PMID 28847903 (Th differentiation review) supports. Canonical.",
+    "pmids": [
+      "28847903"
+    ]
+  },
+  "ssc_M4_014": {
+    "verdict": "validate",
+    "rationale": "BCR + CD40 + CD22 modulation induces IRF4/XBP1/BLIMP1 — cited PMID 34759017 (IRF4 in germinal-center/plasma-cell fate) supports.",
+    "pmids": [
+      "34759017"
+    ]
+  },
+  "ssc_M4_016": {
+    "verdict": "validate",
+    "rationale": "Anti-Topo-I/anti-CenpB autoantibodies induce pro-fibrotic markers in dermal fibroblasts — cited PMID 31234888 directly tests this pathogenic capacity in SSc.",
+    "pmids": [
+      "31234888"
+    ]
+  },
+  "ssc_M4_017": {
+    "verdict": "validate",
+    "rationale": "CXCL4(PF4)-nucleic-acid complexes stimulate B-cell/plasma-cell autoantibody output — cited PMID 32707718 shows CXCL4 is an SSc autoantigen with antibody reactivity; reasonable directionality.",
+    "pmids": [
+      "32707718"
+    ]
+  },
+  "ssc_M4_018": {
+    "verdict": "validate",
+    "rationale": "SSc fibroblasts overexpress CCL2/MCP-1 recruiting monocytes — cited PMID 18984611 (MCP-1/MCP-3 in SSc) directly supports.",
+    "pmids": [
+      "18984611"
+    ]
+  },
+  "ssc_M4_019": {
+    "verdict": "validate",
+    "rationale": "Pro-fibrotic macrophage-derived TGF-β stimulates myofibroblast ECM — cited PMID 27156795 (SSc macrophages as TGF-β source) supports.",
+    "pmids": [
+      "27156795"
+    ]
+  },
+  "ssc_M4_020": {
+    "verdict": "validate",
+    "rationale": "CD19+ plasma-cell axis drives autoantibodies/skin thickening/collagen — cited PMID 29956883 (CD19 inhibition reduces all three in SSc) directly supports; strongly reinforced by CD19 CAR-T case series (38381673, 39542003).",
+    "pmids": [
+      "29956883",
+      "38381673"
+    ]
+  },
+  "ssc_M4_011": {
+    "verdict": "validate",
+    "rationale": "Phenotype-aggregation node: plasma-cell TF battery (BLIMP1/XBP1/IRF4) → SSc-defining autoantibody output. Definitional sink; appropriate as modelled.",
+    "pmids": []
+  },
+  "ssc_M4_015": {
+    "verdict": "validate",
+    "rationale": "Phenotype-aggregation node: Th1/Th2/Th17/Treg balance shapes autoantibody output. Definitional; appropriate.",
+    "pmids": []
+  },
+  "ssc_M4_003": {
+    "verdict": "revise",
+    "rationale": "IL-4R/IL-13R complexes signal via JAK1/JAK2 to phosphorylate STAT6 — canonical JAK/STAT biology, but the cited PMID 11526389 is unrelated (essay on autoimmunity/infection). Replace citation. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
+    "pmids": [
+      "29930549"
+    ]
+  },
+  "ssc_M4_005": {
+    "verdict": "revise",
+    "rationale": "Nuclear STAT6 induces ECM genes (COL1A1/COL3A1/FN1) in fibroblasts (IL-13→fibrosis) — supported biology (dossier 36757802 keloid JAK/STAT6 fibrosis), but the cited PMID 17050694 is unrelated (telencephalic neuroepithelium). Replace citation. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
+    "pmids": [
+      "15271999",
+      "36757802"
+    ]
+  },
+  "ssc_M4_010": {
+    "verdict": "revise",
+    "rationale": "BAFF (TNFSF13B) binds BCMA on plasma cells — established, but the cited PMID 11226167 is unrelated (PHD zinc-finger domain structure). Dossier 10801128 ('TACI and BCMA are receptors for' BAFF) is a precise replacement. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
+    "pmids": [
+      "10801128"
+    ]
+  },
+  "ssc_M4_021": {
+    "verdict": "caution",
+    "rationale": "IL-17A as pro-fibrotic rests on a loss-of-function study (cited PMID 22833167: IL-17A deficiency attenuates bleomycin fibrosis), BUT IL-17A's role is genuinely Yin/Yang — direct studies found IL-17A did NOT induce αSMA in fibroblasts (the map's own ex_il17_neg). Context-dependent; surface as contested.",
+    "pmids": [
+      "22833167"
+    ]
+  },
+  "ssc_M3_001": {
+    "verdict": "revise",
+    "rationale": "ET-1 binds EDNRA/EDNRB — canonical endothelin biology, but the cited PMID 8389755 is unrelated (erythrocyte chemokine binding). Replace citation (e.g. an endothelin-receptor reference). [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
+    "pmids": [
+      "24708674",
+      "21184655"
+    ]
+  },
+  "ssc_M3_010": {
+    "verdict": "revise",
+    "rationale": "SMAD3 + Notch (NICD1) cooperatively induce SNAI2/ZEB1 — supported EMT/EndMT biology, but the cited PMID 24316708 is unrelated (peri-implant occlusal loading). Replace citation. [replacement PMID(s) retrieved & verified vs PubMed 2026-06-24]",
+    "pmids": [
+      "24969754",
+      "28062404"
+    ]
+  },
+  "ssc_M3_002": {
+    "verdict": "validate",
+    "rationale": "ET-1:EDNRA → Gq/PLC → Ca²⁺ → vasoconstriction — cited PMID 24412386 (smooth-muscle EDNRA KO) supports; bosentan/macitentan rationale.",
+    "pmids": [
+      "24412386"
+    ]
+  },
+  "ssc_M3_003": {
+    "verdict": "validate",
+    "rationale": "eNOS (NOS3) produces NO — cited PMID 26390975 (eNOS/NO review) supports. Canonical vasoprotective axis.",
+    "pmids": [
+      "26390975"
+    ]
+  },
+  "ssc_M3_004": {
+    "verdict": "validate",
+    "rationale": "NO activates sGC to make cGMP — cited PMID 37572934 (sGC/NO review) supports; riociguat rationale.",
+    "pmids": [
+      "37572934"
+    ]
+  },
+  "ssc_M3_005": {
+    "verdict": "validate",
+    "rationale": "PDE5A degrades cGMP to GMP — cited PMID 12135389 (PDE5 cGMP hydrolysis) supports; sildenafil/tadalafil rationale.",
+    "pmids": [
+      "12135389"
+    ]
+  },
+  "ssc_M3_006": {
+    "verdict": "validate",
+    "rationale": "Hypoxia activates HIF1A → nuclear translocation — cited PMID 9278140 (HIF-1 review) supports. Canonical.",
+    "pmids": [
+      "9278140"
+    ]
+  },
+  "ssc_M3_007": {
+    "verdict": "validate",
+    "rationale": "HIF1A induces EDN1 + VEGFA — cited PMID 9278140 (HIF-1 oxy-gene targets incl. VEGF) supports; EDN1 is a known HIF target.",
+    "pmids": [
+      "9278140"
+    ]
+  },
+  "ssc_M3_008": {
+    "verdict": "validate",
+    "rationale": "VEGFA binds KDR/VEGFR2 — cited PMID 30173249 (VEGF family review) supports. Canonical; impaired angiogenesis in SSc.",
+    "pmids": [
+      "30173249"
+    ]
+  },
+  "ssc_M3_009": {
+    "verdict": "validate",
+    "rationale": "TGF-β/SMAD3 induces SNAI1 (EndMT trigger) — canonical; cited PMID 17656708 lacks an abstract to verify but the biology is well-established (and consistent with the SSc EndoMT data 28062404).",
+    "pmids": [
+      "28062404"
+    ]
+  },
+  "ssc_M3_011": {
+    "verdict": "validate",
+    "rationale": "SNAI1/2 repress CDH5 (VE-cadherin) — cited PMID 28062404 (SSc EndoMT, VE-cadherin loss) supports.",
+    "pmids": [
+      "28062404"
+    ]
+  },
+  "ssc_M3_012": {
+    "verdict": "validate",
+    "rationale": "SNAI1/2 + TGF-β induce CDH2/FAP/FSP1 mesenchymal markers — cited PMID 28062404 (SSc EndoMT) supports.",
+    "pmids": [
+      "28062404"
+    ]
+  },
+  "ssc_M3_013": {
+    "verdict": "validate",
+    "rationale": "EndMT-derived cells join the myofibroblast pool — cited PMID 28062404 (EndoMT→α-SMA in SSc dermis) supports.",
+    "pmids": [
+      "28062404"
+    ]
+  },
+  "ssc_M3_014": {
+    "verdict": "validate",
+    "rationale": "Phenotype-aggregation node: reduced NO + elevated EDN1 + capillary loss = vascular-remodelling readout (nailfold capillaroscopy). Definitional; appropriate.",
+    "pmids": []
+  },
+  "ssc_M3_015": {
+    "verdict": "validate",
+    "rationale": "ANGPT1 binds TEK/Tie2 to stabilise quiescent vasculature — cited PMID 23182855 (Ang1/Tie2) supports. Reduced in SSc skin.",
+    "pmids": [
+      "23182855"
+    ]
+  },
+  "ssc_M3_016": {
+    "verdict": "validate",
+    "rationale": "ANGPT2 competes at TEK/Tie2, destabilising endothelium — cited PMID 40029709 (Ang2 antagonist conversion) supports; 33333969 shows Ang-2 activates SSc monocytes (SSc relevance).",
+    "pmids": [
+      "40029709",
+      "33333969"
+    ]
+  },
+  "ssc_M3_017": {
+    "verdict": "validate",
+    "rationale": "TGF-β/SMAD3 induces TWIST1 (EndMT master TF) — cited PMID 16123809 (TGF-β-driven EMT transcription factors) supports.",
+    "pmids": [
+      "16123809"
+    ]
+  },
+  "ssc_M3_018": {
+    "verdict": "validate",
+    "rationale": "SNAI1/2 repress the endothelial-identity panel (CDH5/CD31/VWF/TEK) — cited PMID 28062404 (SSc EndoMT) supports.",
+    "pmids": [
+      "28062404"
+    ]
+  },
+  "ssc_M3_019": {
+    "verdict": "validate",
+    "rationale": "COX-2/PTGS2 produces thromboxane TXA2 signalling via TBXA2R (vasoconstriction) — cited PMID 37321373 (thromboxane A2 receptor signalling review) supports; SSc digital ischaemia.",
+    "pmids": [
+      "37321373"
+    ]
+  },
+  "ssc_M3_020": {
+    "verdict": "validate",
+    "rationale": "HIF1A partners ARNT in the nucleus — cited PMID 7539918 is the classic Wang/Semenza HIF-1α/ARNT bHLH-PAS paper. Canonical, correct.",
+    "pmids": [
+      "7539918"
+    ]
+  },
+  "ssc_M3_021": {
+    "verdict": "validate",
+    "rationale": "TGF-β/SMAD3 induces ZEB2/SIP1 (EndMT TF) — cited PMID 19838011 (TGF-β-Smad induces ZEB1/ZEB2/Snail) directly supports.",
+    "pmids": [
+      "19838011"
+    ]
+  },
+  "ssc_M3_022": {
+    "verdict": "validate",
+    "rationale": "NOTCH3 engaged by JAG1 (pericyte/VSMC Notch) — cited PMID 31868216 (Notch3 in vascular smooth muscle) supports; NOTCH3/CADASIL pericyte axis.",
+    "pmids": [
+      "31868216"
+    ]
+  },
+  "ssc_M3_023": {
+    "verdict": "validate",
+    "rationale": "FLI1 maintains endothelial CDH5 identity; its SSc reduction permits EndoMT — cited PMID 28062404 + dossier 20228226 (endothelial Fli1 deficiency impairs vascular homeostasis in scleroderma vasculopathy) strongly support.",
+    "pmids": [
+      "20228226",
+      "28062404"
+    ]
+  },
+  "ssc_M3_024": {
+    "verdict": "validate",
+    "rationale": "MMP-12-dependent uPAR (PLAUR) cleavage drives SSc-serum-induced EndoMT — cited PMID 28062404 (SSc EndoMT, MMP-12/uPAR) supports.",
+    "pmids": [
+      "28062404"
+    ]
+  },
+  "ssc_M3_025": {
+    "verdict": "validate",
+    "rationale": "ET-1 enhances collagen I/III release by SSc dermal fibroblasts via EDNRA/B — cited PMID 9595482 directly states this. Profibrotic ET-1→fibroblast axis.",
+    "pmids": [
+      "9595482"
+    ]
+  },
+  "ssc_M3_026": {
+    "verdict": "validate",
+    "rationale": "Agonistic anti-AT1R/anti-ETAR autoantibodies induce endothelial TGF-β — cited PMID 26970493 (agonistic AT1R/ETAR autoAb in SSc, Riemekasten) supports; distinct from the contested anti-PDGFR claim.",
+    "pmids": [
+      "26970493"
+    ]
+  },
+  "ssc_M3_027": {
+    "verdict": "validate",
+    "rationale": "TGF-β1 upregulates EDN1 — cited PMID 19335743 (SSc TGF-β/ET-1 review) supports; 12021584 (ETA blockade lowers collagen) corroborates the ET-1/fibrosis link.",
+    "pmids": [
+      "19335743"
+    ]
+  },
+  "ssc_M2_056": {
+    "verdict": "validate",
+    "rationale": "NOX4-dependent H2O2 drives TGF-β1-induced myofibroblast differentiation — cited PMID 25040787 (Nox4 regulates the activated state of SSc dermal fibroblasts) directly supports.",
+    "pmids": [
+      "25040787"
+    ]
+  },
+  "ssc_M2_057": {
+    "verdict": "validate",
+    "rationale": "αv-containing integrins (ITGAV) bind/activate latent TGF-β — cited PMID 16436664 (αv integrins activate latent TGF-β in fibrosis) supports; canonical integrin-mediated TGF-β activation.",
+    "pmids": [
+      "16436664"
+    ]
+  }
 }
