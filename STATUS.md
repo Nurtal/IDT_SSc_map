@@ -10,7 +10,8 @@
   every push); last local clean run was at the 526/260 state — re-run needs `python-libsbml`
   (not installed in the current shell).
 - **SSc-specific curated layer:** **133 reactions** (`curation/ssc_curated_reactions.tsv`), up from 85.
-  By module: M2 58 · M3 27 · M4 21 · M1 19 · crosstalk 8. Status: 123 confirmed, 6
+  By module: M2 58 · M3 27 · M4 11 (cytokine) · M5 10 (B-cell/autoreactivity) · M1 19 · crosstalk 8
+  (M4 split into M4+M5 on 2026-06-25, M5 validated — see analysis/overlay/M5_validation.md). Status: 122 confirmed, 6
   phenotype_aggregation (definitional sinks), 4 conceptual_bridge (now sourced).
 - **npj-SBA revision v1.1 MERGED** (`1116a3e`) — 23/25 reviewer E-items closed: pseudobulk NB-GLM
   DEG + BH-FDR, mixed-effects re-run (**MIM coverage 50% → 81.3%**), AUCell sign-blinded scoring
