@@ -93,11 +93,11 @@ stretch goal — the map content is the deliverable, hosting is one rendering of
     on the current 568/308/133 map + 5 modules needs the **raw scRNA-seq archives in `data/raw/`**
     (Zenodo input mirror, ~3 GB, gitignored). Once present: `make overlay-multi && make aucell`, then
     refresh manuscript §3.2/§4.4 and `coverage_v1.1.json`. **Blocker: raw data not in local tree.**
-  - **(b) SBML XML re-annotation + F1 5-panel** — the integrated `SSc_MIM_integrated.xml` still tags
-    the B-cell species `module=M4` in its CellDesigner notes (the split currently lives in
-    `species_annotations.tsv` + `ssc_curated_reactions.tsv`, which drive AUCell). Re-tag the XML
-    species notes to M5 and regenerate **F1** as a five-panel quadrant layout (`render_f1_quadrant.py`,
-    currently 4-quadrant; caption already flags this). No raw data needed — scriptable.
+  - ✅ **(b) SBML XML re-annotation + F1 5-panel — DONE (2026-06-25).** Re-tagged 25 species in
+    `SSc_MIM_integrated.xml` CellDesigner notes (19 B-cell → M5, 6 Th2 → M4) so the XML's internal
+    module annotation matches the split; XML well-formed, 568 species, `module=M5` present.
+    Regenerated **F1** as a five-module pentagon layout (`render_f1_quadrant.py`) and rebuilt the
+    F1-embedding decks (general + construction) + combined PDF.
 - 🔴 **Human-only blockers (binding)**:
   1. **Expert/co-author manual review** of the 143 interactions via the swipe-deck app
      (presentation to expert biologists scheduled 2026-06-25).

@@ -210,7 +210,7 @@ Two items remain:
 | Item | Lane | What | Blocker |
 |------|------|------|---------|
 | **(a) Overlay re-run on the 5-module map** | 🔴 data | Manuscript §3.2/§4.4 overlay numbers (coverage grid 49.5/81.3%, per-module M1–M4 coverage, 26 Gur species, AUCell contrasts) are a **flagged v1.1 snapshot** on the 198-symbol annotation. Re-derive on the current 568/308/133 + 5-module map: `make overlay-multi && make aucell`, then refresh §3.2/§4.4 + `coverage_v1.1.json`. | **Raw scRNA-seq archives** (~3 GB, Zenodo input mirror) must be placed in `data/raw/` — gitignored, not in the local tree. |
-| **(b) XML re-annotation + F1 5-panel** | 🟢 scriptable | Re-tag the B-cell species `module=M5` in `SSc_MIM_integrated.xml` CellDesigner notes (the split currently lives in `species_annotations.tsv` + `ssc_curated_reactions.tsv`, which drive AUCell). Regenerate **F1** as a five-panel quadrant layout (`scripts/render_f1_quadrant.py`, currently 4-quadrant; caption already flags this). | None — no raw data needed. |
+| **(b) XML re-annotation + F1 5-panel** | ✅ done (2026-06-25) | Re-tagged 25 species in `SSc_MIM_integrated.xml` notes (19 B-cell → M5, 6 Th2 → M4); XML well-formed, `module=M5` present. F1 regenerated as a five-module pentagon (`scripts/render_f1_quadrant.py`); F1-embedding decks + combined PDF rebuilt. | — |
 
 When (a) becomes unblocked, also re-tag the v1.1 snapshot framing out of the manuscript and regenerate
 F2 with an M5 panel. M5 should be scored on a **B/plasma-restricted pseudobulk**

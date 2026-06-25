@@ -43,22 +43,24 @@ MODULE_COLOURS = {
     "M2": "#d62728",  # red
     "M3": "#2ca02c",  # green
     "M4": "#9467bd",  # purple
+    "M5": "#e377c2",  # pink (B-cell / autoreactivity; distinct from ssc_tier1 orange)
     "ssc_tier1": "#ff7f0e",  # orange
     "?": "#cccccc",
 }
 
-# Quadrant centres in plot coordinates. Origin at (0, 0); each quadrant
-# occupies a 2×2 box. Sinks are centred on (0, 0).
+# Module centres arranged as a pentagon around the centred phenotype sinks
+# (five modules since the M4 -> M4 cytokine + M5 B-cell/autoreactivity split).
 QUADRANT_CENTRE = {
-    "M1": (-1.5, +1.5),
-    "M2": (+1.5, +1.5),
-    "M3": (+1.5, -1.5),
-    "M4": (-1.5, -1.5),
+    "M1": (-1.6, +1.5),
+    "M2": (+1.6, +1.5),
+    "M3": (+1.9, -1.1),
+    "M5": (0.0, -2.0),
+    "M4": (-1.9, -1.1),
     "ssc_tier1": (0.0, 0.0),
     "sink": (0.0, 0.0),
-    "?": (0.0, +2.5),
+    "?": (0.0, +2.6),
 }
-QUADRANT_RADIUS = 1.1
+QUADRANT_RADIUS = 0.95
 
 
 def primary_module(token: str) -> str:
@@ -185,7 +187,7 @@ def main() -> int:
         ax.add_patch(arrow)
 
     # Plot nodes by module
-    for mod in ["M1", "M2", "M3", "M4", "ssc_tier1", "?"]:
+    for mod in ["M1", "M2", "M3", "M4", "M5", "ssc_tier1", "?"]:
         nodes = [n for n in g.nodes()
                  if g.nodes[n].get("module") == mod and not is_sink(n)]
         if not nodes:
@@ -218,37 +220,35 @@ def main() -> int:
                                 ec="black", alpha=0.85, lw=0.5),
                      zorder=5)
 
-    # Quadrant labels in corners
+    # Module labels at the pentagon vertices
     quadrant_titles = {
-        (-1.5, +2.7): ("M1 — Type-I IFN / cGAS-STING", "M1"),
-        (+1.5, +2.7): ("M2 — TGF-β / fibroblast→myofibroblast", "M2"),
-        (-1.5, -2.7): ("M4 — IL-6 / Th2 / B-cell", "M4"),
-        (+1.5, -2.7): ("M3 — EndoMT / vasculopathy", "M3"),
+        (-1.7, +2.8): ("M1 — Type-I IFN / cGAS-STING", "M1"),
+        (+1.7, +2.8): ("M2 — TGF-β / fibroblast→myofibroblast", "M2"),
+        (+2.9, -1.1): ("M3 — EndoMT / vasculopathy", "M3"),
+        (0.0, -3.05): ("M5 — B-cell & autoreactivity", "M5"),
+        (-2.9, -1.1): ("M4 — Cytokines (IL-6/IL-4/IL-13)", "M4"),
     }
     for (qx, qy), (label, mod) in quadrant_titles.items():
         ax.text(qx, qy, label, ha="center", va="center",
-                fontsize=11, fontweight="bold",
+                fontsize=10.5, fontweight="bold",
                 color=MODULE_COLOURS[mod],
                 bbox=dict(boxstyle="round,pad=0.4", fc="white",
                           ec=MODULE_COLOURS[mod], lw=1.5, alpha=0.92))
-
-    # Quadrant separators (very faint)
-    ax.axhline(0, color="#aaa", lw=0.6, ls=":", alpha=0.5, zorder=0)
-    ax.axvline(0, color="#aaa", lw=0.6, ls=":", alpha=0.5, zorder=0)
 
     # Legend
     legend = [
         Patch(color=MODULE_COLOURS["M1"], label="M1 IFN-I"),
         Patch(color=MODULE_COLOURS["M2"], label="M2 TGF-β / fibrosis"),
         Patch(color=MODULE_COLOURS["M3"], label="M3 EndoMT / vasculopathy"),
-        Patch(color=MODULE_COLOURS["M4"], label="M4 IL-6 / Th2 / B-cell"),
+        Patch(color=MODULE_COLOURS["M4"], label="M4 Cytokines (IL-6/IL-4/IL-13)"),
+        Patch(color=MODULE_COLOURS["M5"], label="M5 B-cell & autoreactivity"),
         Patch(color=MODULE_COLOURS["ssc_tier1"], label="SSc Tier-1 (multi-module)"),
         Patch(color="#222", label="sink phenotype (centred)"),
     ]
     ax.legend(handles=legend, loc="lower left", fontsize=8,
               frameon=True, framealpha=0.95)
-    ax.set_xlim(-3, 3)
-    ax.set_ylim(-3, 3)
+    ax.set_xlim(-3.5, 3.5)
+    ax.set_ylim(-3.4, 3.2)
     ax.set_axis_off()
     plt.tight_layout()
 
