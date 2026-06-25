@@ -4,7 +4,7 @@
 
 [![SBML validate](https://github.com/Nurtal/IDT_SSc_map/actions/workflows/validate_sbml.yml/badge.svg)](https://github.com/Nurtal/IDT_SSc_map/actions)
 
-**Current state (2026-05-21):** Phase 4c complete; npj-SBA major-revision sprint cycle in progress on branch [`revision/v1.1`](https://github.com/Nurtal/IDT_SSc_map/tree/revision/v1.1). See [`reviewing/REVISION_ROADMAP.md`](reviewing/REVISION_ROADMAP.md) and [`reviewing/PROGRESS.md`](reviewing/PROGRESS.md) for live status.
+**Current state (2026-06):** npj-SBA revision **v1.1 merged into `main`**. The SSc-specific layer has grown to **133 hand-curated reactions**; an offline reviewer app (`review/index.html`) and an AI citation-QC pass have been added. See [`STATUS.md`](STATUS.md) and the detailed reference [`docs/SSc_MIM_construction_and_validation.md`](docs/SSc_MIM_construction_and_validation.md).
 
 **Lead author:** Nathan Foulquier — LBAI, UMR 1227 Inserm, CHU Brest. ORCID [0000-0003-4620-2794](https://orcid.org/0000-0003-4620-2794).
 
@@ -16,20 +16,21 @@
 
 ---
 
-## Headline numbers (Phase 4c, v1.0 baseline)
+## Headline numbers (current — `main`, 2026-06)
 
 | Quantity | Value | Notes |
 |---|---|---|
-| Species | **526** | 17 biologically meaningful compartments (20 raw SBML declarations) |
-| Reactions | **260** | **175 Reactome-backbone + 85 SSc-Tier-1** (the original SSc contribution); of the 85, 40 (47%) carry a PMID and 39 (46%) an experimental ECO code — the remaining **45 are curator inference** (see [`curation/curator_inference_register.tsv`](curation/curator_inference_register.tsv)). Full provenance split in [`docs/NUMBERS_RECONCILIATION.md`](docs/NUMBERS_RECONCILIATION.md). |
-| SBML validation | **0 errors** | libSBML L2v4 across 5 module XMLs + integrated |
-| Annotated HGNC species | **198** | 196 (99%) RNA-seq-detectable; 15 alias corrections + 13 non-gene removals applied |
-| Single-cell donors integrated | **197** | 117 SSc / 80 HC across 4 datasets |
+| Species | **568** | across 20 cell/tissue compartments |
+| Reactions | **308** | **133 are the hand-curated SSc-specific layer** (the original SSc contribution); 126/133 (95%) carry a primary PMID and 73 a direct-assay ECO code. Per module: M1 19 · M2 58 · M3 27 · M4 21 · crosstalk 8. Full evidence stratification in [`analysis/curation/evidence_stratification.md`](analysis/curation/evidence_stratification.md). |
+| SBML validation | **0 errors** | libSBML L2v4, enforced in CI (`validate_sbml`) on every push |
+| Annotated HGNC species | **236** | distinct HGNC symbols; 198 form the RNA-seq-detectable coverage denominator |
+| Single-cell donors integrated | **197** | **121 SSc / 76 HC** across 4 datasets |
 | Cells processed | **266 884** | Tabib skin / Gur skin multiome / GSE210395 PBMC / GSE128169 lung |
-| Cell-type clusters | **58** | per-(dataset, cluster) MINERVA overlay TSVs |
-| MIM coverage by transcriptomics | **≈50 % (robust) / 81.3 % (permissive)** | Effect-size-gated (≥2-fold, padj ≤ 0.01) = **49.5 % (98/198)**, ≈ the v1.0 Wilcoxon baseline (50 %); the 81.3 % NB-GLM figure is the permissive upper bound (\|log2FC\| ≥ 0.2). The 50→81 jump is a stringency/power effect, not biology — full grid in [`analysis/overlay/coverage_sensitivity.tsv`](analysis/overlay/coverage_sensitivity.tsv). |
-| Network communities | **38** | greedy modularity; 32 significant (community, module) hypergeometric tests at q < 0.05 (revision-v1.1) |
-| Druggable interactions | **21** | DGIdb v4 on top 20 hubs; 11 distinct molecular targets |
+| MINERVA overlays | **60** | per-(dataset, cluster) overlay TSVs from the multi-dataset run |
+| MIM coverage by transcriptomics | **≈50 % (robust) / 81.3 % (permissive)** | Effect-size-gated (≥2-fold, padj ≤ 0.01) = **49.5 % (98/198)**; the 81.3 % NB-GLM figure (161/198) is the permissive upper bound (\|log2FC\| ≥ 0.2). The 50→81 jump is a stringency/power effect, not biology — full grid in [`analysis/overlay/coverage_sensitivity.tsv`](analysis/overlay/coverage_sensitivity.tsv). Per module: M1 84 % · M2 88 % · M3 75 % · M4 71 %. |
+| Network communities | **39** | greedy modularity; significant (community, module) hypergeometric enrichment at q < 0.05 |
+| Druggable hub–drug interactions | **82** | DGIdb on top hubs; 28 distinct molecular targets |
+| Interactions queued for expert review | **143** | reviewer app `review/index.html`; AI verdicts 128 validate / 5 caution |
 
 ---
 
@@ -85,7 +86,7 @@ The map follows the Disease Maps Project guidelines (Mazein et al., 2018; Ostasz
 
 1. **Scoping** with domain experts (SSc clinicians).
 2. **Reactome import** of TGF-β, IFN-α/β, IL-6, Notch1, PDGF pathways → CellDesigner harmonisation.
-3. **SSc-specific Tier-1 curation** — 85 hand-curated reactions across the 4 modules (incl. 8 inter-module crosstalk; see [`manuscript/supplementary/S1_crosstalk_reactions.tsv`](manuscript/supplementary/S1_crosstalk_reactions.tsv)).
+3. **SSc-specific curation** — 133 hand-curated reactions across the 4 modules (incl. 8 inter-module crosstalk). New edges are added only through a gated edge-discovery pipeline (G0–G4 anti-nonsense gates + human ratification; see [`docs/edge_discovery_protocol.md`](docs/edge_discovery_protocol.md)).
 4. **Annotation** using the MI2CAST minimum information standard (HGNC, UniProt, PubMed/PMID, ECO evidence codes).
 5. **SBML validation** with libSBML 5.21 (L2v4); 0 errors maintained in CI.
 6. **Network analysis** — bipartite projection in NetworkX; degree, betweenness, eigenvector, and PageRank centralities; greedy-modularity communities; hypergeometric (community, module) enrichment.
@@ -103,7 +104,7 @@ The map follows the Disease Maps Project guidelines (Mazein et al., 2018; Ostasz
 | **SYSCID map** | Adaptation of shared immune modules (IFN, NF-κB) |
 | **WikiPathways** | EndMT-related pathways as scaffold for module M3 |
 
-Final split realised in v1.0: 67% Reactome-derived / 30% SSc-Tier-1 manually curated / 3% reused stubs.
+The SSc-specific layer has since grown to **133 hand-curated reactions** on top of the Reactome backbone; per-reaction Reactome overlap (originality of the SSc layer) is reported by `make reactome-novelty`.
 
 ## Translational use case
 
@@ -111,12 +112,12 @@ Four open-access transcriptomic datasets are overlaid on the MIM:
 
 | Dataset | Tissue | Donors (SSc / HC) | Cells | Source |
 |---|---|---|---|---|
-| Tabib 2021 (GSE138669) | dcSSc skin | 12 / 10 | 64 211 | scRNA-seq, 10× |
-| Gur 2022 (GSE195452) | SSc skin multiome | 98 / 58 | 100 538 | RNA arm; pre-annotated |
+| Tabib 2021 (GSE138669) | dcSSc skin | 12 / 10 | 64 211 | scRNA-seq, 10×; *Nat Commun* 12:4384 |
+| Gur 2022 (GSE195452) | SSc skin multiome | 97 / 57 | 100 538 | RNA arm; pre-annotated; *Cell* 185:1373 |
 | GSE210395 | SSc PBMC, pDC + monocyte-enriched | 4 / 4 | 34 619 | scRNA-seq |
-| GSE128169 (Morse 2019) | SSc-ILD lung | 8 / 5 | 67 516 | 10× MEX |
+| GSE128169 (Morse 2019) | SSc-ILD lung | 8 / 5 | 67 516 | 10× MEX; *Eur Respir J* 54:1802441 |
 
-Each cluster yields a MINERVA-format overlay TSV (`minerva/overlays/`, 58 files). Per-donor module activation scores (M1–M4 + SSc-Tier1) are computed from the pseudobulk DEG output; in revision v1.1 the sign-blinded **AUCell** score replaces the v1.0 DEG-sign-weighted score (see `reviewing/REVISION_ROADMAP.md` E2).
+**Total: 197 donors (121 SSc / 76 HC).** Each cluster yields a MINERVA-format overlay TSV (`minerva/overlays/`; 60 from the multi-dataset run). Per-donor module activation scores (M1–M4 + SSc-Tier1) are computed from the pseudobulk DEG output; the sign-blinded **AUCell** score (Aibar 2017) replaces the v1.0 DEG-sign-weighted score. Externally-defined patient clusters can be projected the same way to obtain per-cluster module fingerprints and mechanistic hypotheses (see the construction deck and reference doc).
 
 ## Repository layout
 
@@ -139,29 +140,34 @@ ssc-mim/
 ├── curation/
 │   ├── celldesigner/                  # SBML XMLs (5 module + 1 integrated)
 │   ├── imports/                       # Reactome / RA-map / SYSCID source XMLs
-│   ├── ssc_curated_reactions.tsv      # 85 SSc-specific Tier-1 reactions
-│   ├── pubmed_corpus.bib              # 362 BibTeX entries
+│   ├── ssc_curated_reactions.tsv      # 133 SSc-specific reactions
+│   ├── staging/                       # edge candidates + G0–G4 validation_report.tsv
+│   ├── ai_review_verdicts.json        # per-interaction advisory verdicts
+│   ├── pubmed_corpus.bib              # 398 BibTeX entries
 │   └── annotations/
-│       ├── species_annotations.tsv    # 526 rows; 198 HGNC propres
-│       └── reaction_evidence.tsv      # 244 rows; 198 with PMID (81%)
+│       ├── species_annotations.tsv    # 568 rows; 236 HGNC symbols
+│       └── reaction_evidence.tsv      # 292 rows; 281 with PMID (96%)
 ├── analysis/
 │   ├── network/                       # centrality, communities, hub_overlap, dangling_species, community_enrichment
 │   ├── overlay/                       # cluster_deg_multi*.tsv, patient_module_scores*.tsv, druggable_hubs.tsv
 │   ├── clinical/                      # donor_metadata, CLINICAL_METADATA_GAP.md, correlations (gap-banner v1.1)
 │   ├── baseline_v1.0/                 # frozen pre-revision snapshot
 │   └── boolean/                       # placeholder for v2.0 CaSQ work
+├── review/                           # offline reviewer swipe-deck app (index.html)
 ├── minerva/
-│   └── overlays/                      # 58 per-cluster TSVs
+│   └── overlays/                      # per-cluster overlay TSVs (60 multi-dataset)
 ├── figures/
 │   ├── F1_global_MIM.{svg,png}
 │   ├── F2_multi_overlay.{svg,png}     # 4-panel skin/skin-Gur/PBMC/lung
 │   ├── F3_druggable_targets.{svg,png}
 │   └── F_supp_hub_robustness.{svg,png}# Supplementary Figure S1 (E3)
-├── scripts/                           # 18 Python scripts; Makefile-orchestrated
+├── scripts/                           # 60 Python scripts; Makefile-orchestrated
 ├── docs/
-│   ├── historical_roadmap.md          # archived ACR-2026 plan (pre-pivot)
+│   ├── SSc_MIM_presentation.{pptx,pdf}            # general overview deck
+│   ├── SSc_MIM_construction_deck.{pptx,pdf}       # construction & validation deck
+│   ├── SSc_MIM_construction_and_validation.md     # detailed written reference
 │   ├── module_specs/                  # M1–M4 spec sheets
-│   ├── standups/                      # per-sprint co-author notes
+│   ├── edge_discovery_protocol.md     # the G0–G4 gating procedure
 │   ├── curation_guidelines.md
 │   └── mi2cast_checklist.md
 └── .github/workflows/                 # validate_sbml + lint + scripts-smoke
@@ -227,9 +233,10 @@ The repository ships an [RO-Crate 1.1](https://w3id.org/ro/crate/1.1) provenance
 ## Releases and DOIs
 
 - **v1.0-pre-review** (2026-05-20) — frozen baseline for the simulated peer-review run; numbers reproduced in `analysis/baseline_v1.0/`.
-- **v1.1** (planned 2026-09-30) — major-revision submission to npj Systems Biology and Applications; will mint a Zenodo DOI on tag push (webhook to be enabled).
+- **v1.1** (2026-05-22) — npj-SBA revision, **merged into `main`** (NB-GLM pseudobulk DEG, AUCell scoring, drug recalibration, Docker, RO-Crate); see `CHANGELOG.md`.
+- **v1.0 release** (planned) — GitHub + Zenodo DOI on `git tag v1.0` (webhook to be enabled).
 
-Citation metadata: `CITATION.cff` and `.zenodo.json` (co-author slot pending — `REPLACE_ME` placeholders to be filled before the v1.1 tag).
+Citation metadata: `CITATION.cff` and `.zenodo.json` (co-author slot pending — `REPLACE_ME` placeholders to be filled before the v1.0 tag).
 
 ## References
 
@@ -251,11 +258,12 @@ SSc systems-level work to acknowledge and extend:
 
 - Mahoney J.M. et al. *Systems Level Analysis of Systemic Sclerosis.* PLoS Comput Biol 2015.
 - Taroni J.N. et al. — multi-cohort consensus of SSc skin transcriptomes.
-- Tabib T. et al. *scRNAseq analysis of skin in SSc.* Nat Commun 2021.
-- Gur C. et al. *LGR5 expressing skin fibroblasts define a major cellular hub perturbed in scleroderma.* (GSE195452 multiome) 2022.
+- Tabib T. et al. *Myofibroblast transcriptome indicates SFRP2hi fibroblast progenitors in systemic sclerosis.* Nat Commun 2021;12:4384. PMID 34282151.
+- Gur C. et al. *LGR5 expressing skin fibroblasts define a major cellular hub perturbed in systemic sclerosis.* Cell 2022;185:1373-1388. PMID 35381199.
+- Morse C. et al. *Proliferating SPP1/MERTK-expressing macrophages in idiopathic pulmonary fibrosis.* Eur Respir J 2019;54:1802441. PMID 31221805. (GSE128169 lung)
 - Yang M. et al. *Clinical phenotypes of patients with systemic sclerosis with distinct molecular signatures in skin.* Arthritis Care Res (Hoboken) 2023;75:1469-1480. PMID 35997480.
 
-A full BibTeX corpus (362 entries) is maintained in `curation/pubmed_corpus.bib`.
+A full BibTeX corpus (398 entries) is maintained in `curation/pubmed_corpus.bib`.
 
 ## License
 
