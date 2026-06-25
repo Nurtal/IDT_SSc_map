@@ -85,6 +85,19 @@ stretch goal — the map content is the deliverable, hosting is one rendering of
   manuscript draft + v1.1 revision, growth batches (133 SSc reactions), review app + AI verdicts.
 - 🟡 **In progress**: citation integrity sweep (28 `revise` PMIDs → verified replacements);
   manuscript polish.
+- 🟡 **M5 split — propagation almost complete, 2 items remain** (M4 → M4 cytokines + M5 B-cell/
+  autoreactivity, validated; see `analysis/overlay/M5_validation.md`):
+  - **(a) Overlay re-run on the grown 5-module map** — the transcriptomic-overlay numbers in the
+    manuscript §3.2/§4.4 (coverage grid 49.5/81.3%, per-module M1–M4 coverage, 26 Gur species, AUCell
+    contrasts) are a **flagged v1.1 snapshot** computed on the 198-symbol annotation. Re-deriving them
+    on the current 568/308/133 map + 5 modules needs the **raw scRNA-seq archives in `data/raw/`**
+    (Zenodo input mirror, ~3 GB, gitignored). Once present: `make overlay-multi && make aucell`, then
+    refresh manuscript §3.2/§4.4 and `coverage_v1.1.json`. **Blocker: raw data not in local tree.**
+  - **(b) SBML XML re-annotation + F1 5-panel** — the integrated `SSc_MIM_integrated.xml` still tags
+    the B-cell species `module=M4` in its CellDesigner notes (the split currently lives in
+    `species_annotations.tsv` + `ssc_curated_reactions.tsv`, which drive AUCell). Re-tag the XML
+    species notes to M5 and regenerate **F1** as a five-panel quadrant layout (`render_f1_quadrant.py`,
+    currently 4-quadrant; caption already flags this). No raw data needed — scriptable.
 - 🔴 **Human-only blockers (binding)**:
   1. **Expert/co-author manual review** of the 143 interactions via the swipe-deck app
      (presentation to expert biologists scheduled 2026-06-25).

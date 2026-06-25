@@ -199,6 +199,23 @@ A clean GitHub release tagged `v1.0` (auto-DOI'd via the Zenodo↔GitHub webhook
 
 ## What's left
 
+### M5 module split — follow-up (2026-06-25)
+
+The old M4 ("IL-6/Th2/B") was split into **M4 (cytokines: IL-6/IL-4/IL-13)** and **M5 (B-cell &
+autoreactivity)**; M5 is validated (skin B/plasma p=0.046; external GSE45536 p=1.3×10⁻⁴, autoantigen
+core p=1.7×10⁻¹⁰ — `analysis/overlay/M5_validation.md`). The split is propagated into the annotation
+tables, AUCell, coverage, decks, README, reference doc, module specs and the manuscript architecture.
+Two items remain:
+
+| Item | Lane | What | Blocker |
+|------|------|------|---------|
+| **(a) Overlay re-run on the 5-module map** | 🔴 data | Manuscript §3.2/§4.4 overlay numbers (coverage grid 49.5/81.3%, per-module M1–M4 coverage, 26 Gur species, AUCell contrasts) are a **flagged v1.1 snapshot** on the 198-symbol annotation. Re-derive on the current 568/308/133 + 5-module map: `make overlay-multi && make aucell`, then refresh §3.2/§4.4 + `coverage_v1.1.json`. | **Raw scRNA-seq archives** (~3 GB, Zenodo input mirror) must be placed in `data/raw/` — gitignored, not in the local tree. |
+| **(b) XML re-annotation + F1 5-panel** | 🟢 scriptable | Re-tag the B-cell species `module=M5` in `SSc_MIM_integrated.xml` CellDesigner notes (the split currently lives in `species_annotations.tsv` + `ssc_curated_reactions.tsv`, which drive AUCell). Regenerate **F1** as a five-panel quadrant layout (`scripts/render_f1_quadrant.py`, currently 4-quadrant; caption already flags this). | None — no raw data needed. |
+
+When (a) becomes unblocked, also re-tag the v1.1 snapshot framing out of the manuscript and regenerate
+F2 with an M5 panel. M5 should be scored on a **B/plasma-restricted pseudobulk**
+(`scripts/build_bplasma_pseudobulk.py`), not whole-tissue.
+
 ### Phase 2 (curation) — remaining
 
 | Day | Step | Lane | Status |
