@@ -20,7 +20,7 @@
 | Mechanistic reactions | **308** |
 | Cell/tissue compartments | **20** |
 | Biological modules | **4** (+ crosstalk layer) |
-| Phenotype sinks | **4** |
+| Phenotype endpoints (sinks) | **6** |
 | Hand-curated SSc-specific reactions | **133** (126 with a primary PMID) |
 | PubMed references mined & filled | ~360 (`curation/pubmed_corpus.bib`) |
 | Patient single-cell datasets overlaid | **4** (197 donors: 121 SSc / 76 HC) |
@@ -60,8 +60,8 @@ map). Rules are in `docs/curation_guidelines.md`, adapted from Mazein *et al.* (
 
 ## 3. Map architecture
 
-Four biologically coherent modules plus a crosstalk layer, all draining into four phenotype **sinks**
-(the biological outputs of the disease):
+Four biologically coherent modules plus a crosstalk layer, all draining into six phenotype **endpoints**
+("sinks" — the biological and clinical outputs of the disease):
 
 | Module | Biology | Reactions |
 |---|---|---|
@@ -71,10 +71,23 @@ Four biologically coherent modules plus a crosstalk layer, all draining into fou
 | **M4 — IL-6 / Th2 / B cells** | IL-6/STAT3, IL-4/IL-13/STAT6, BAFF–BCMA, autoantibodies | 21 |
 | **crosstalk** | inter-module edges (e.g. IL-6→SMAD3, IFN-I→fibroblast) | 8 |
 
-**Phenotype sinks:** myofibroblast activation · ECM/collagen deposition · vascular remodelling ·
-ISG/interferon signature.
+**Six phenotype endpoints (sinks)** — the biological and clinical outputs the cascades converge on:
 
-**Modelling rule (verified by `make sink-check`):** every disease-relevant entity must reach a sink
+| Endpoint | Compartment | Module | Incoming reactions |
+|---|---|---|---|
+| Myofibroblast activation | cell | M2 (+M3) | 11 |
+| Autoantibody production (**autoreactivity**) | extracellular | M4 | 4 |
+| Vascular remodelling | cell | M3 | 2 |
+| Type-I IFN / ISG signature | cell | M1 | 1 |
+| ECM / collagen deposition | ECM | M2 | 1 |
+| Skin severity (mRSS) | cell | clinical | 1 |
+
+Four are the canonical biological sinks (myofibroblast, ECM, vascular, ISG); **autoantibody production
+captures SSc autoreactivity** (the M4 adaptive-immune output) and **skin severity (mRSS)** is the
+clinical-severity readout. Myofibroblast activation is the dominant convergence hub (11 incoming
+reactions, including M3→M2 EndoMT edges).
+
+**Modelling rule (verified by `make sink-check`):** every disease-relevant entity must reach an endpoint
 in **≤ 6 steps** — current map has **0 violations**. This turns the diagram into a testable model
 where any perturbation has a traceable path to a clinical-level read-out.
 

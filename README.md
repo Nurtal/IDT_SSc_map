@@ -80,7 +80,7 @@ These resources are **not mechanistic, not SBGN-curated, and not interoperable w
 | M3 | Endothelial-to-mesenchymal transition (EndoMT) and vasculopathy; Notch/DLL4/NICD1, endothelin, VEGF | Bridge between vasculopathy and fibrosis; SSc-specific | Brontictuzumab, ambrisentan, macitentan |
 | M4 | IL-6 / IL-4 / IL-13 Th2 axis and B-cell crosstalk | Validated targets in SSc trials | Tocilizumab, rituximab, dupilumab |
 
-**Output phenotypes (sink nodes):** myofibroblast activation, ECM deposition, vascular remodelling, ISG signature — analogous to the eight phenotype anchors used in RA-map.
+**Output phenotypes — six endpoints (sink nodes):** myofibroblast activation, ECM/collagen deposition, vascular remodelling, type-I IFN/ISG signature, **autoantibody production (autoreactivity)**, and skin severity (mRSS, clinical readout). The first four are the canonical biological sinks; autoantibody production captures SSc autoreactivity (M4) and mRSS the clinical-severity axis — analogous to the phenotype anchors used in RA-map.
 
 ## Methodology
 
