@@ -58,7 +58,7 @@ import numpy as np
 
 log = logging.getLogger("aucell")
 
-MODULES_ORDER = ["M1", "M2", "M3", "M4", "ssc_tier1"]
+MODULES_ORDER = ["M1", "M2", "M3", "M4", "M5", "ssc_tier1"]
 
 
 # ── Module gene sets ───────────────────────────────────────────────────────────
