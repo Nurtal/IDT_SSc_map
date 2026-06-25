@@ -12,6 +12,7 @@
 
 - 📊 **General overview deck** — [PDF](docs/SSc_MIM_presentation.pdf) · [PPTX](docs/SSc_MIM_presentation.pptx) — what the map is, the four modules, the single-cell overlay, and the endotype workflow.
 - 🛠️ **Construction & validation deck** — [PDF](docs/SSc_MIM_construction_deck.pdf) · [PPTX](docs/SSc_MIM_construction_deck.pptx) — how the map is built, the datasets used, and the interaction-validation process.
+- 🧬 **Validation & endotypes deck** — [PDF](docs/SSc_MIM_validation_endotypes.pdf) · [PPTX](docs/SSc_MIM_validation_endotypes.pptx) — construction, validation (G0–G4 gates + patient data: datasets, pseudobulk, AUCell), and using the map to characterise SSc endotypes.
 - 📄 Detailed written reference: [`docs/SSc_MIM_construction_and_validation.md`](docs/SSc_MIM_construction_and_validation.md).
 
 ---
