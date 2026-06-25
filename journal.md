@@ -2043,3 +2043,59 @@ refroidissement) **s'effondrait en quasi-1D**. Réécrit en **Fruchterman-Reingo
 chaque itération (répulsion `k²/d` toutes paires + attraction `d²/k` le long des arêtes), **borné par
 une température qui refroidit** (`temp*=0.985`, 320 itérations), espace carré 900×900. Étale
 correctement le graphe dans le plan. Vérifié headless (M1, M2 : nœuds répartis en 2D, plus de ligne).
+
+## 2026-06-25 — Présentations expertes, QC citations, et split M4 → M4/M5 (B-cell/auto-réactivité)
+
+### Intégrité des citations : 28 PMID hors-sujet corrigés
+La passe de verdict IA avait flaggé **28 réactions de curation dont le PMID cité pointe un article hors
+sujet** (biologie canonique, mais référence = erreur de saisie : ex. réaction TGF-β citée vers un
+article sur la rubéole, un sondage alimentaire de Melbourne, une puce microfluidique pour racines de
+plantes…). Pour chacune, un **PMID de remplacement réel a été retrouvé et vérifié contre PubMed live**
+(esearch/esummary — **aucun PMID cité de mémoire** ; plusieurs de mes candidats « de mémoire » étaient
+eux-mêmes faux et rejetés). Appliqué à `ssc_curated_reactions.tsv` (PMID primaire + secondaires +
+note de traçabilité), verdicts `revise`→`validate` (128 validate / 5 caution), rapport
+`curation/citation_revise_report.md`. Un seul cas (`ssc_M2_012` POSTN) gardé en `caution`/`to_complete`
+(question de mécanisme : POSTN induit par IL-4/IL-13, pas un élément SMAD3 direct). Règle réaffirmée :
+**ne jamais citer un PMID de mémoire — toujours vérifier sur PubMed**.
+
+### Présentations (3 decks + doc de référence)
+Trois présentations générées (python-pptx, charte commune, vérifiées en headless) + référence écrite :
+`docs/SSc_MIM_presentation.*` (vue d'ensemble + endotypes), `SSc_MIM_construction_deck.*` (technique :
+construction, gates, datasets, pseudobulk, AUCell), `SSc_MIM_validation_endotypes.*` (construction →
+validation [gates + data] → endotypes), `SSc_MIM_decks_combined.pdf` (combiné), et
+`docs/SSc_MIM_construction_and_validation.md` (référence exhaustive). README rafraîchi aux chiffres
+actuels (568/308/133, 197 donneurs 121/76…). **6 endpoints phénotypiques** harmonisés partout
+(les 4 sinks + autoantibody production [auto-réactivité] + skin severity mRSS).
+
+### Split M4 → M4 (cytokines) + M5 (B-cell & auto-réactivité)
+Découverte : le gene set AUCell de l'ancien M4 était **dominé par la famille IL-6/gp130**, tandis que
+le contenu B / auto-anticorps et IL-4/IL-13 vivait en `ssc_tier1` (bug d'annotation). Split appliqué :
+**M4 = cytokines** (IL-6 + IL-4/IL-13/STAT6/GATA3, 11 réactions / 25 gènes), **M5 = B-cell &
+auto-réactivité** (BCR, CD19/20/22/40, BAFF-APRIL/BCMA, PRDM1/XBP1/IRF4, auto-antigènes TOP1/CENPB ;
+10 réactions / 19 gènes). Colonne `module` uniquement — IDs de réaction intacts.
+
+### Validation de M5 (faisabilité d'abord recherchée, puis exécutée)
+Whole-tissue, M5 AUCell ≈ 0 en peau (artefact de dilution : B/plasmocytes rares). Recherche de datasets
+→ **les données existantes suffisent** (compartiment B/plasma déjà annoté). Validation propre :
+- **Interne** (`scripts/build_bplasma_pseudobulk.py` → pseudobulk B/plasma-restreint, AUCell officiel) :
+  M5 **ScS 0,085 vs HC 0,047, p=0,046** (Gur 61/19), **seul module significatif** dans ce compartiment.
+- **Externe** : récupération de **GSE45536** (Streicher, signature plasmocytaire en maladie auto-immune,
+  99 ScS / 24 HC sang total, GPL570 ; `scripts/validate_m5_gse45536.py`). M5 sépare ScS/HC **p=1,3e-4** ;
+  décomposition : **auto-antigènes TOP1/CENPB ↑ p=1,7e-10** (l'auto-réactivité), abondance B/plasma
+  circulante ↓ (lymphopénie B périphérique — fait ScS connu). Contrôle positif M1/IFN ↑ dans les deux.
+Rapport `analysis/overlay/M5_validation.md` + figure `figures/F7_M5_validation.png`.
+
+### Propagation complète à 5 modules
+Annotations + réactions (module col), `score_aucell.py` (émet M5), `coverage_v1.1.json` (M5 94 %, M4
+74 %, overall 81,3 % inchangé), scores AUCell canoniques régénérés, **réseau re-run** sur la carte
+actuelle (1011 arêtes, 39 communautés, hubs reclassés : état pro-fibrotique 17,4 / TGFB1 15,0 /
+récepteur-TGF-β 9,5 / SMAD3-SMAD4 9,2), README + doc réf + **3 decks** + **fiche spec M5** (+ M4 trim,
+linter OK) + **manuscrit** (architecture/modules/réseau actualisés ; overlay transcriptomique gardé en
+**snapshot v1.1 explicitement encadré** car son re-run exige les données brutes scRNA-seq).
+
+### Item (b) : re-annotation XML + F1 5-panneaux
+**XML re-taggé** : 25 espèces dans `SSc_MIM_integrated.xml` (19 B-cell → M5, 6 Th2 → M4) pour que
+l'annotation interne colle au split ; XML bien formé, `module=M5` présent. **F1 régénéré** en layout
+**pentagone à 5 modules** (`render_f1_quadrant.py`, M5 en rose distinct) ; decks embarquant F1 + combiné
+rebuild. STATUS + ROADMAP : (b) ✅ fait ; **(a) re-run overlay** reste bloqué sur les données brutes
+(`data/raw/`, miroir Zenodo) — seul item dépendant d'un input externe.
