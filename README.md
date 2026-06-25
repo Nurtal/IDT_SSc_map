@@ -8,6 +8,12 @@
 
 **Lead author:** Nathan Foulquier — LBAI, UMR 1227 Inserm, CHU Brest. ORCID [0000-0003-4620-2794](https://orcid.org/0000-0003-4620-2794).
 
+**Presentations & overview:**
+
+- 📊 **General overview deck** — [PDF](docs/SSc_MIM_presentation.pdf) · [PPTX](docs/SSc_MIM_presentation.pptx) — what the map is, the four modules, the single-cell overlay, and the endotype workflow.
+- 🛠️ **Construction & validation deck** — [PDF](docs/SSc_MIM_construction_deck.pdf) · [PPTX](docs/SSc_MIM_construction_deck.pptx) — how the map is built, the datasets used, and the interaction-validation process.
+- 📄 Detailed written reference: [`docs/SSc_MIM_construction_and_validation.md`](docs/SSc_MIM_construction_and_validation.md).
+
 ---
 
 ## Headline numbers (Phase 4c, v1.0 baseline)
