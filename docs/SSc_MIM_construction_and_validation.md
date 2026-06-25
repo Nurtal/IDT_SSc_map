@@ -19,7 +19,7 @@
 | Molecular species | **568** |
 | Mechanistic reactions | **308** |
 | Cell/tissue compartments | **20** |
-| Biological modules | **4** (+ crosstalk layer) |
+| Biological modules | **5** (+ crosstalk layer) |
 | Phenotype endpoints (sinks) | **6** |
 | Hand-curated SSc-specific reactions | **133** (126 with a primary PMID) |
 | PubMed references mined & filled | ~360 (`curation/pubmed_corpus.bib`) |
@@ -60,7 +60,7 @@ map). Rules are in `docs/curation_guidelines.md`, adapted from Mazein *et al.* (
 
 ## 3. Map architecture
 
-Four biologically coherent modules plus a crosstalk layer, all draining into six phenotype **endpoints**
+Five biologically coherent modules plus a crosstalk layer, all draining into six phenotype **endpoints**
 ("sinks" — the biological and clinical outputs of the disease):
 
 | Module | Biology | Reactions |
@@ -68,22 +68,27 @@ Four biologically coherent modules plus a crosstalk layer, all draining into six
 | **M1 — Type-I interferon** | cGAS–STING, RIG-I/MAVS, TLR3/7/9 → IRF3/7 → ISG signature | 19 |
 | **M2 — TGF-β & fibrosis** | latent TGF-β activation → SMAD2/3 → fibroblast→myofibroblast, collagen/ECM | 58 |
 | **M3 — EndoMT & vasculopathy** | endothelin, Notch, NO/sGC, HIF → endothelial-to-mesenchymal transition | 27 |
-| **M4 — IL-6 / Th2 / B cells** | IL-6/STAT3, IL-4/IL-13/STAT6, BAFF–BCMA, autoantibodies | 21 |
+| **M4 — Cytokines (IL-6 / IL-4 / IL-13)** | IL-6/STAT3, IL-4/IL-13/STAT6 → fibroblast/ECM (Th2 cytokine axis) | 11 |
+| **M5 — B-cell & autoreactivity** | BCR, CD19/20/22/40, BAFF–APRIL/BCMA, PRDM1/XBP1/IRF4 → autoantibodies | 10 |
 | **crosstalk** | inter-module edges (e.g. IL-6→SMAD3, IFN-I→fibroblast) | 8 |
+
+M4 (the old "IL-6/Th2/B" module) was split on 2026-06-25 into **M4 (cytokine)** and **M5 (B-cell /
+autoreactivity)** — this also fixed an annotation bug (IL-4/IL-13 had sat under `ssc_tier1`). M5 is
+independently validated (see §6.10).
 
 **Six phenotype endpoints (sinks)** — the biological and clinical outputs the cascades converge on:
 
 | Endpoint | Compartment | Module | Incoming reactions |
 |---|---|---|---|
 | Myofibroblast activation | cell | M2 (+M3) | 11 |
-| Autoantibody production (**autoreactivity**) | extracellular | M4 | 4 |
+| Autoantibody production (**autoreactivity**) | extracellular | M5 | 4 |
 | Vascular remodelling | cell | M3 | 2 |
 | Type-I IFN / ISG signature | cell | M1 | 1 |
 | ECM / collagen deposition | ECM | M2 | 1 |
 | Skin severity (mRSS) | cell | clinical | 1 |
 
 Four are the canonical biological sinks (myofibroblast, ECM, vascular, ISG); **autoantibody production
-captures SSc autoreactivity** (the M4 adaptive-immune output) and **skin severity (mRSS)** is the
+captures SSc autoreactivity** (the M5 B-cell output) and **skin severity (mRSS)** is the
 clinical-severity readout. Myofibroblast activation is the dominant convergence hub (11 incoming
 reactions, including M3→M2 EndoMT edges).
 
@@ -261,6 +266,19 @@ The final gate is **co-author / expert sign-off**: the corresponding author rati
 AI proposes and self-gates; the human decides. `make ratification-worksheet` produces a
 tick-and-correct sheet for the proposed SSc citations.
 
+### 6.10 Module-level validation (M5, B-cell / autoreactivity)
+When M4 was split, the new **M5** module was validated on patient data (full report:
+`analysis/overlay/M5_validation.md`, figure `figures/F7_M5_validation.png`):
+- **Internal** — on a B/plasma-restricted pseudobulk (Gur cohort, 61 SSc / 19 HC), M5 AUCell is
+  higher in SSc (0.085 vs 0.047, p=0.046) and is the **only** significant module in that compartment
+  → the signal is specific to autoreactivity (whole-tissue scoring missed it: B/plasma cells are too
+  rare to surface in the top-5 % ranking).
+- **External** — on **GSE45536** (Streicher *et al.*, 99 scleroderma / 24 healthy whole-blood, GPL570),
+  M5 separates SSc from HC (p=1.3×10⁻⁴). Sub-signatures: the SSc **autoantigen targets TOP1
+  (anti-Scl-70) and CENPB (anti-centromere) are strongly elevated** (p=1.7×10⁻¹⁰), while circulating
+  B/plasma abundance is reduced (peripheral lymphopenia). The M1/IFN positive control is elevated in
+  SSc in both datasets (p=3.8×10⁻⁵), validating the scoring method.
+
 ---
 
 ## 7. Patient data — what is used and how
@@ -288,12 +306,14 @@ Raw archives are SHA-256-pinned in `data/MIRROR.md` for a reproducible input env
    (Legacy Wilcoxon backend retained via `--deg-backend wilcoxon-v10`.)
 3. **Map onto species**: differentially-expressed genes are matched to map species → **coverage**.
 4. **Per-donor module scoring** with **AUCell** (`scripts/score_aucell.py`, `make aucell`): each
-   patient becomes a **4-module activation vector** (M1/M2/M3/M4 + Tier-1).
+   patient becomes a **5-module activation vector** (M1–M5 + Tier-1). M5 (B-cell) is scored on a
+   B/plasma-restricted pseudobulk (`scripts/build_bplasma_pseudobulk.py`), since B/plasma cells are
+   too rare to surface in a whole-tissue ranking.
 5. **MINERVA overlays** (60 TSVs in `minerva/overlays/`) colour the map by cluster/dataset.
 
 ### 7.3 Validation results
 - **Coverage = 81.3 %** of detectable map species observed in patient data
-  (`analysis/overlay/coverage_v1.1.json`): M1 84 % · M2 88 % · M3 75 % · M4 71 % · Tier-1 83 %.
+  (`analysis/overlay/coverage_v1.1.json`): M1 84 % · M2 88 % · M3 75 % · M4 74 % · M5 94 % · Tier-1 80 %.
 - **Biological check (AUCell, SSc vs HC, Mann-Whitney):** M1/type-I IFN significantly elevated in SSc
   **skin** — Gur p = 3.2×10⁻⁴, Tabib p = 0.011 (`module_score_contrasts_v1.1.json`).
 - **Cell-type annotation validated** independently with **CellTypist** (Adult_Human_Skin): κ = 0.92,
