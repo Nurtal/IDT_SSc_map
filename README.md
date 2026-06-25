@@ -171,7 +171,7 @@ ssc-mim/
 │   ├── SSc_MIM_presentation.{pptx,pdf}            # general overview deck
 │   ├── SSc_MIM_construction_deck.{pptx,pdf}       # construction & validation deck
 │   ├── SSc_MIM_construction_and_validation.md     # detailed written reference
-│   ├── module_specs/                  # M1–M4 spec sheets (M5 split from M4, 2026-06)
+│   ├── module_specs/                  # M1–M5 spec sheets (M5 split from M4, 2026-06)
 │   ├── edge_discovery_protocol.md     # the G0–G4 gating procedure
 │   ├── curation_guidelines.md
 │   └── mi2cast_checklist.md

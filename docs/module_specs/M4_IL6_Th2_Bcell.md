@@ -1,19 +1,23 @@
-# Module M4 — IL-6 / IL-4 / IL-13 Th2 axis and B-cell crosstalk
+# Module M4 — Cytokines (IL-6 / IL-4 / IL-13)
 
-> Status: **scoped, not curated**. [[ROADMAP]] § Phase 2, weeks 10–11.
-> Targets: ~50 species, ~80 reactions.
-> Lead imports: Reactome `R-HSA-1059683` *Interleukin-6 signaling*; RA-map IL-6 and B-cell modules; SYSCID NF-κB.
+> Status: **scoped + curated**. [[ROADMAP]] § Phase 2, weeks 10–11.
+> The B-cell / autoreactivity content was split out into **[[M5_Bcell_autoreactivity]]** on
+> 2026-06-25; this module now covers the cytokine→fibroblast axis only.
+> Lead imports: Reactome `R-HSA-1059683` *Interleukin-6 signaling*; RA-map IL-6 module; SYSCID NF-κB.
 
 ## 1. Biological scope
 
-Adaptive-immune and Th2-cytokine arm of SSc skin disease. Anchored on validated therapeutic targets (tocilizumab, rituximab) and the Th2 cytokines that drive fibroblast activation (IL-4, IL-13). Captures:
+The cytokine arm of SSc skin disease: pro-fibrotic and Th2 cytokines that signal to fibroblasts.
+Anchored on validated therapeutic targets (tocilizumab; the IL-13/IL-4 biologics romilkimab and
+dupilumab). Captures:
 
 - IL-6 / IL-6R / gp130 / JAK / STAT3.
 - IL-4 / IL-4Rα / JAK / STAT6; IL-13 / IL-13Rα1 / JAK / STAT6.
-- B-cell receptor signalling (BCR, CD19, BLK, SYK, BTK), CD20 (MS4A1) target.
-- Plasma cell differentiation (BLIMP1 / PRDM1, XBP1, IRF4) and autoantibody output (anti-Topo-I, anti-RNA-polymerase-III, anti-centromere).
 - Th cell skewing (GATA3 / Th2; TBX21 / Th1; FOXP3 / Treg; RORC / Th17 — relevant but tier-2 here).
-- B-cell ↔ fibroblast crosstalk (CD40-CD40L, IL-6, lymphotoxin).
+- Cytokine → fibroblast / ECM transcription (the M4→M2 crosstalk rationale).
+
+B-cell receptor signalling, plasma-cell differentiation, BAFF–BCMA and autoantibody output now live in
+**M5 (B-cell & autoreactivity)**.
 
 ## 2. Tier-1 entities (must include)
 
@@ -26,14 +30,10 @@ Adaptive-immune and Th2-cytokine arm of SSc skin disease. Anchored on validated 
 | IL4, IL4R, IL13, IL13RA1 | macromolecule | extracellular / plasma_membrane | ligand / receptor | manual + RA-map |
 | STAT6 | macromolecule | cytosol / nucleus | TF | Reactome |
 | GATA3, TBX21, FOXP3, RORC | macromolecule | nucleus | T-cell lineage TF | manual |
-| CD20 (MS4A1) | macromolecule | plasma_membrane | B-cell surface marker | manual |
-| CD19, CD22, CD79A, CD79B | macromolecule | plasma_membrane | BCR complex | manual |
-| BLK, SYK, BTK, LYN | macromolecule | cytosol | BCR kinases | manual |
-| CD40, CD40LG (CD154) | macromolecule | plasma_membrane | costim | manual |
-| PRDM1 (BLIMP1), XBP1, IRF4 | macromolecule | nucleus | plasma cell TF | manual |
-| TNFRSF17 (BCMA), BAFF (TNFSF13B), APRIL (TNFSF13) | macromolecule | extracellular / plasma_membrane | survival signals | manual |
-| autoAb: anti-TOP1, anti-POLR3A, anti-CENP-A/B | macromolecule | extracellular | output | manual |
 | NF-κB family (RELA, RELB, NFKB1, NFKB2, REL, NFKBIA, IKBKB) | macromolecule | cytosol / nucleus | TF | Reactome + SYSCID |
+
+> B-cell / plasma-cell / autoantibody entities (CD19/CD20/CD22/CD40, BCR kinases, BAFF–BCMA,
+> PRDM1/XBP1/IRF4, autoantigens) moved to the **M5** Tier-1 table on the split.
 
 ### Shared with other modules (resolves to home module on integration)
 
@@ -41,8 +41,8 @@ Adaptive-immune and Th2-cytokine arm of SSc skin disease. Anchored on validated 
 
 ## 3. Sink anchors
 
-- `phenotype_autoantibody_production` (Topo-I / RNA-pol-III / ACA).
-- Crosstalk edge into `phenotype_myofibroblast_activation` (IL-13 / STAT6 / fibroblast).
+- Crosstalk edge into `phenotype_myofibroblast_activation` and ECM deposition (IL-6/STAT3 and
+  IL-13/STAT6 → fibroblast). (The autoantibody endpoint is now anchored in **M5**.)
 
 ## 4. Druggable handles
 
@@ -50,17 +50,16 @@ Adaptive-immune and Th2-cytokine arm of SSc skin disease. Anchored on validated 
 |------|--------|---------------|
 | Tocilizumab | IL-6R | focuSSced (positive on FVC, negative on mRSS) |
 | Sarilumab | IL-6R | exploratory |
-| Rituximab | CD20 / MS4A1 | RECITAL trial; SSc-ILD use |
-| Belimumab | BAFF | exploratory |
 | Romilkimab | IL-13 | trial (SSc) |
 | Dupilumab | IL-4Rα | repurposing rationale |
-| Inebilizumab | CD19 | exploratory |
+
+(B-cell-directed agents — rituximab, belimumab, inebilizumab — are in **M5**.)
 
 ## 5. Crosstalk edges
 
-- **In:** M1 — IFN-I → pDC / B-cell class switching.
+- **In:** M1 — IFN-I priming of the cytokine milieu.
 - **Out:** M2 — IL-6 / STAT3 → fibroblast pro-fibrotic transcription; IL-4 / IL-13 / STAT6 → ECM transcription.
-- **Out:** M3 — endothelial chemokines (covered in M3); B-cell-driven endothelial inflammation.
+- **Out:** M5 — IL-6 supports plasmablast survival / germinal-centre output (cytokine → B-cell).
 
 ## 6. Tier-2 / Tier-3 candidates
 
