@@ -2146,3 +2146,40 @@ AUCell, 24 espèces, M3 vasculaire, KEGG 65/236). La **note « frozen v1.1 snaps
 données brutes »** est remplacée par un encadré « re-dérivé le 2026-06-26 sur la carte courante ». Scan
 final : plus aucun token périmé (161/198, 81,3 %, 49,5 %, 29,8 %, 3,2e-4…) hors les baselines v1.0
 historiques volontaires (« passé de 21 % (5/24) à … »). STATUS + ROADMAP : (a) ✅ fait — M5-split clos.
+
+## 2026-06-26 (2) — Ménage de printemps : présentation unifiée + réorganisation du repo
+
+Refactor de rangement demandé (« le repo est vieux, range tout proprement »). Périmètre choisi
+avec l'utilisateur : ménage **modéré** + deck **PDF seul via weasyprint**.
+
+### Présentation : 3 decks → 1 seul PDF reproductible (pptx supprimés)
+Les 3 présentations (overview / construction / validation-endotypes, chacune .pptx + .pdf) + le
+combiné avaient été générées ad hoc en python-pptx, **sans script committé** (non reproductible) et
+avec des chiffres périmés. Remplacées par **une seule présentation** :
+- `scripts/build_presentation.py` (weasyprint, même moteur que le manuscrit) + source
+  `docs/presentation.md` (13 slides, markdown+CSS, figures auto-embarquées via base_url) + cible
+  `make presentation`. Sortie unique `docs/SSc_MIM_presentation.pdf` (4,4 Mo).
+- **Supprimés** : 3 `.pptx` + `construction_deck.pdf` + `validation_endotypes.pdf` +
+  `decks_combined.pdf`. Plus aucun pptx dans le repo.
+- Chiffres du deck alignés sur l'overlay courant (couverture 82,6 %, M1 p=6,4e-8, M5 validé…).
+  Doc de référence `docs/SSc_MIM_construction_and_validation.md` aussi corrigée (81,3→82,6 %, per-module,
+  AUCell), ainsi que le tableau « Headline numbers » du README (couverture, 62 overlays, per-module).
+
+### Réorganisation docs/ par thème
+docs/ aplati → sous-dossiers : **docs/planning/** (curation_plan, scoping_notes, omics_decision,
+import_pilot, risks, historical_roadmap, coauthor_brief), **docs/curation/** (curation_guidelines,
+curation_decisions, curation_depth_pass, mi2cast_checklist, edge_discovery_protocol, crosstalk_matrix,
+NUMBERS_RECONCILIATION), **docs/release/** (biomodels_submission). Les 2 références top-level
+(presentation, construction_and_validation) restent à la racine de docs/. **32 fichiers** de références
+réécrits (Makefile, README, ROADMAP, CONTRIBUTING, manuscrit, 8 scripts dont le défaut runtime de
+`generate_crosstalk_scaffold.py`, curation/*.md, revision/*.md, un notebook, liens inter-docs).
+Vérifié : **aucun nouveau lien cassé** (les 5 liens cassés détectés sont des placeholders pré-existants
+type `2026-05-XX`). journal.md laissé tel quel (record historique).
+
+### Désambiguïsation review/ vs reviewing/ + gitignore logs
+`reviewing/` (matériel de réponse à la révision npj : R1/R2/R3, revision_plan, editor_decision,
+REVISION_ROADMAP) **renommé `revision/`** pour ne plus collisionner avec `review/` (l'app swipe-deck
+offline). 7 références non-journal mises à jour. `logs/` ajouté au `.gitignore` (logs de run ~50 Mo,
+régénérés par les cibles make). STATUS inventaire : 58→62 overlays.
+
+Commits : deck (`e91c1c7`), reorg docs (`3717364`), rename revision + gitignore (`6d6e330`).

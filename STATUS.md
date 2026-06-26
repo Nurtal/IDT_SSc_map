@@ -67,7 +67,7 @@
 | `curation/evidence_dossier.json` | 133 reactions | 403 support refs / 185 contrary refs (real PMIDs) |
 | `analysis/curation/interaction_database.csv` | **143 interactions** | reviewer-ready snapshot embedded in the app |
 | `analysis/overlay/` | cluster_deg_multi.tsv (4 338 entries), 197 donor scores | 4 datasets (skin Tabib+Gur / PBMC / lung), all REAL |
-| `minerva/overlays/` | 58 cluster TSVs | ready for MINERVA import |
+| `minerva/overlays/` | 62 cluster TSVs | ready for MINERVA import |
 | `figures/` | F1 + F2 (AUCell heatmap v1.1) + F3 + F2_multi | SVG + 300 dpi PNG |
 | `review/index.html` | 1 file (offline app) | swipe deck, no server/CDN needed |
 | `manuscript/SSc_MIM_manuscript_draft.md` (+ PDF) | resource-paper draft | npj-SBA revision numbers |
