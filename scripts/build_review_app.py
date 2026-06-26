@@ -220,7 +220,8 @@ const cleanNames=s=>(s||'').split(';').filter(Boolean).map(x=>x.split('__')[0]).
 const acceptKind=r=>r.inclusion_status==='discarded'?'include':'confirm';
 const ARTBASE=/*__ARTBASE__*/;
 const MODTITLE={M1:'Type-I IFN signalling',M2:'TGF-β / fibroblast→myofibroblast',
- M3:'EndoMT & vasculopathy',M4:'IL-6/IL-4/IL-13 Th2 & B cells',crosstalk:'inter-module crosstalk'};
+ M3:'EndoMT & vasculopathy',M4:'IL-6/IL-4/IL-13 cytokine axis',M5:'B-cell & autoreactivity',
+ crosstalk:'inter-module crosstalk'};
 const modLabel=r=>{const t=MODTITLE[r.module];return r.module?(r.module+(t?' · '+t:'')):(r.inclusion_status==='discarded'?'discarded':'—');};
 function quoteBadge(qs){
  const map={'verbatim (PDF-extracted)':['pdf','📄 extracted from article PDF — verify'],
