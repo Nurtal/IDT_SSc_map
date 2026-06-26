@@ -7,7 +7,7 @@ Reads:
   - analysis/network/sink_connectivity.summary.json        (connectivity)
   - curation/annotations/reaction_evidence.tsv             (annotation coverage)
 
-Writes manuscript/ACR2026_late_breaking_abstract.md as a 300-word IMRAD
+Writes docs/archive/ACR2026_late_breaking_abstract.md as a 300-word IMRAD
 scaffold with concrete volumetrics filled in. The Results section has
 explicit `[TO BE FILLED:` markers for the Phase 4 overlay numbers.
 
@@ -162,7 +162,7 @@ def main(argv: list[str]) -> int:
     ap.add_argument(
         "--out",
         type=Path,
-        default=Path("manuscript/ACR2026_late_breaking_abstract.md"),
+        default=Path("docs/archive/ACR2026_late_breaking_abstract.md"),
     )
     args = ap.parse_args(argv[1:])
 

@@ -136,7 +136,6 @@ ssc-mim/
 │   └── PROGRESS.md
 ├── manuscript/
 │   ├── SSc_MIM_manuscript_draft.md    # IMRAD draft, target: npj Syst Biol Appl
-│   ├── ACR2026_late_breaking_abstract.md
 │   └── supplementary/
 │       └── S1_crosstalk_reactions.tsv # 8 inter-module crosstalk reactions (E5)
 ├── curation/
@@ -172,7 +171,8 @@ ssc-mim/
 │   │                                  #   edge_discovery_protocol, crosstalk_matrix, …)
 │   ├── planning/                      # historical design/scoping (curation_plan, risks,
 │   │                                  #   scoping_notes, omics_decision, historical_roadmap, …)
-│   ├── release/                       # biomodels_submission
+│   ├── archive/                       # superseded submission drafts (ACR abstracts,
+│   │                                  #   cover letter, biomodels, numbers reconciliation)
 │   ├── decisions/  standups/          # dated decision records & stand-ups
 └── .github/workflows/                 # validate_sbml + lint + scripts-smoke
 ```

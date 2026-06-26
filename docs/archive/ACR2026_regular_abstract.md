@@ -76,7 +76,7 @@ pending.
   (the AUCell 4-panel heatmap with Mann–Whitney significance bars — most
   clinically eloquent panel and directly traces the headline statistic).
 - The companion late-breaking abstract (300 words) is preserved at
-  `manuscript/ACR2026_late_breaking_abstract.md` for the September deadline,
+  `docs/archive/ACR2026_late_breaking_abstract.md` for the September deadline,
   in case the regular June submission is missed.
 
 ## Difference vs the late-breaking draft
