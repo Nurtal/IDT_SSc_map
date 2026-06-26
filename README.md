@@ -8,12 +8,9 @@
 
 **Lead author:** Nathan Foulquier — LBAI, UMR 1227 Inserm, CHU Brest. ORCID [0000-0003-4620-2794](https://orcid.org/0000-0003-4620-2794).
 
-**Presentations & overview:**
+**Presentation & overview:**
 
-- 📊 **General overview deck** — [PDF](docs/SSc_MIM_presentation.pdf) · [PPTX](docs/SSc_MIM_presentation.pptx) — what the map is, the five modules, the single-cell overlay, and the endotype workflow.
-- 🛠️ **Construction & validation deck** — [PDF](docs/SSc_MIM_construction_deck.pdf) · [PPTX](docs/SSc_MIM_construction_deck.pptx) — how the map is built, the datasets used, and the interaction-validation process.
-- 🧬 **Validation & endotypes deck** — [PDF](docs/SSc_MIM_validation_endotypes.pdf) · [PPTX](docs/SSc_MIM_validation_endotypes.pptx) — construction, validation (G0–G4 gates + patient data: datasets, pseudobulk, AUCell), and using the map to characterise SSc endotypes.
-- 📚 **All three decks combined** — [PDF](docs/SSc_MIM_decks_combined.pdf) (52 pages, overview → construction → validation+endotypes).
+- 📊 **Presentation deck** — [PDF](docs/SSc_MIM_presentation.pdf) — one unified deck: why SSc-MIM, the five modules, construction & interaction-validation, the single-cell overlay (coverage 82.6 %), the M5 validation, endotypes, and druggable hubs. Source: [`docs/presentation.md`](docs/presentation.md) → `make presentation` (rebuilt from current data, figures auto-embedded).
 - 📄 Detailed written reference: [`docs/SSc_MIM_construction_and_validation.md`](docs/SSc_MIM_construction_and_validation.md).
 
 ---
@@ -168,8 +165,7 @@ ssc-mim/
 │   └── F_supp_hub_robustness.{svg,png}# Supplementary Figure S1 (E3)
 ├── scripts/                           # 60 Python scripts; Makefile-orchestrated
 ├── docs/
-│   ├── SSc_MIM_presentation.{pptx,pdf}            # general overview deck
-│   ├── SSc_MIM_construction_deck.{pptx,pdf}       # construction & validation deck
+│   ├── presentation.md → SSc_MIM_presentation.pdf # unified deck (make presentation)
 │   ├── SSc_MIM_construction_and_validation.md     # detailed written reference
 │   ├── module_specs/                  # M1–M5 spec sheets (M5 split from M4, 2026-06)
 │   ├── edge_discovery_protocol.md     # the G0–G4 gating procedure

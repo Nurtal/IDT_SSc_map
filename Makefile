@@ -158,6 +158,10 @@ manuscript-pdf:  ## Compile manuscript/SSc_MIM_manuscript_draft.md → PDF with 
 	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/build_manuscript_pdf.py; \
 	else $(PYTHON) scripts/build_manuscript_pdf.py; fi
 
+presentation:  ## Build the unified slide deck docs/presentation.md → docs/SSc_MIM_presentation.pdf.
+	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/build_presentation.py; \
+	else $(PYTHON) scripts/build_presentation.py; fi
+
 crosstalk-validate:  ## STRING-DB v12 independent validation of the 3 weak crosstalk rows.
 	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/validate_crosstalk_string.py; \
 	else $(PYTHON) scripts/validate_crosstalk_string.py; fi

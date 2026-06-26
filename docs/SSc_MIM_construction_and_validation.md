@@ -24,7 +24,7 @@
 | Hand-curated SSc-specific reactions | **133** (126 with a primary PMID) |
 | PubMed references mined & filled | ~360 (`curation/pubmed_corpus.bib`) |
 | Patient single-cell datasets overlaid | **4** (197 donors: 121 SSc / 76 HC) |
-| Map species measurable in patient data | **81.3 %** |
+| Map species measurable in patient data | **82.6 %** |
 | Interactions queued for expert review | **143** |
 
 The map is authored in **CellDesigner**, stored as **SBML Level 2 Version 4** with CellDesigner
@@ -312,10 +312,10 @@ Raw archives are SHA-256-pinned in `data/MIRROR.md` for a reproducible input env
 5. **MINERVA overlays** (60 TSVs in `minerva/overlays/`) colour the map by cluster/dataset.
 
 ### 7.3 Validation results
-- **Coverage = 81.3 %** of detectable map species observed in patient data
-  (`analysis/overlay/coverage_v1.1.json`): M1 84 % · M2 88 % · M3 75 % · M4 74 % · M5 94 % · Tier-1 80 %.
+- **Coverage = 82.6 %** of detectable map species observed in patient data (195/236;
+  `analysis/overlay/coverage_v1.1.json`): M1 82 % · M2 87 % · M3 79 % · M4 72 % · M5 100 % · Tier-1 80 %.
 - **Biological check (AUCell, SSc vs HC, Mann-Whitney):** M1/type-I IFN significantly elevated in SSc
-  **skin** — Gur p = 3.2×10⁻⁴, Tabib p = 0.011 (`module_score_contrasts_v1.1.json`).
+  **skin** — Gur p = 6.4×10⁻⁸, Tabib p = 5.8×10⁻³ (`module_score_contrasts_v1.1.json`).
 - **Cell-type annotation validated** independently with **CellTypist** (Adult_Human_Skin): κ = 0.92,
   ARI = 0.70 vs marker-based labels (`make celltypist`).
 - **Coverage sensitivity** swept over a (p-adj, |log2FC|) grid (`make coverage-sensitivity`).
