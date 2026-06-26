@@ -29,7 +29,7 @@ and (iii) the dates that need their bandwidth.
   / R3 reproducibility) all converge on **Major Revision**.
 - Editor synthesis: 5 themes, 25 essential revision items
   (E1–E25), 18-week window. See
-  `reviewing/editor_decision.md`.
+  `revision/editor_decision.md`.
 
 ### 2. The five revision themes (15 min)
 
@@ -81,7 +81,7 @@ red-line diff before S7.
 
 ### 4. Sprint plan (10 min)
 
-Walk through `reviewing/REVISION_ROADMAP.md`:
+Walk through `revision/REVISION_ROADMAP.md`:
 
 - 7 sprints × 2 weeks + 3-week write-up = 17 weeks of work.
 - Target submission: 2026-09-30.
@@ -135,13 +135,13 @@ Top 3 risks I want you to be aware of:
 
 ## Pre-read for the co-author (in priority order)
 
-1. `reviewing/editor_decision.md` — 15 min read. The single most
+1. `revision/editor_decision.md` — 15 min read. The single most
    important file.
-2. `reviewing/REVISION_ROADMAP.md` — 20 min skim. Sprint plan.
-3. `reviewing/R1_systems_biology.md` and
-   `reviewing/R2_scRNAseq_clinical.md` — 30 min total.
+2. `revision/REVISION_ROADMAP.md` — 20 min skim. Sprint plan.
+3. `revision/R1_systems_biology.md` and
+   `revision/R2_scRNAseq_clinical.md` — 30 min total.
    R3 is software-flavoured and can be skipped.
-4. `reviewing/PROGRESS.md` — 5 min. The dashboard we will track
+4. `revision/PROGRESS.md` — 5 min. The dashboard we will track
    together.
 
 ---

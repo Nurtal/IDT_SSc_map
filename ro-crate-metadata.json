@@ -78,8 +78,8 @@
         {"@id": "README.md"},
         {"@id": "STATUS.md"},
         {"@id": "ROADMAP.md"},
-        {"@id": "reviewing/REVISION_ROADMAP.md"},
-        {"@id": "reviewing/PROGRESS.md"}
+        {"@id": "revision/REVISION_ROADMAP.md"},
+        {"@id": "revision/PROGRESS.md"}
       ],
       "mentions": [
         {"@id": "#dataset-tabib-2021"},
@@ -348,13 +348,13 @@
       "encodingFormat": "text/markdown"
     },
     {
-      "@id": "reviewing/REVISION_ROADMAP.md",
+      "@id": "revision/REVISION_ROADMAP.md",
       "@type": "File",
       "name": "Revision-v1.1 sprint roadmap (7 sprints, 5 tracks, E1–E25)",
       "encodingFormat": "text/markdown"
     },
     {
-      "@id": "reviewing/PROGRESS.md",
+      "@id": "revision/PROGRESS.md",
       "@type": "File",
       "name": "Revision-v1.1 dashboard (E1–E25 status)",
       "encodingFormat": "text/markdown"

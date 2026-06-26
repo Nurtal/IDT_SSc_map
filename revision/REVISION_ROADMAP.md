@@ -88,7 +88,7 @@ target: **2026-09-30**.
   `analysis/baseline_v1.0/` so we can show diffs.
 - [ ] **S0.3** Tag the current state `v1.0-pre-review` for
   reproducibility of the submission.
-- [ ] **S0.4** Write a `reviewing/PROGRESS.md` that tracks
+- [ ] **S0.4** Write a `revision/PROGRESS.md` that tracks
   E1–E25 in a single table and is updated at every sprint
   gate.
 - [ ] **S0.5** Co-author kickoff meeting — share
@@ -100,7 +100,7 @@ target: **2026-09-30**.
 
 - `revision/v1.1` branch live.
 - `analysis/baseline_v1.0/` frozen.
-- `reviewing/PROGRESS.md` initial state (all E items
+- `revision/PROGRESS.md` initial state (all E items
   pending).
 - Meeting notes in `docs/standups/2026-05-2X.md`.
 
@@ -160,7 +160,7 @@ number in the manuscript flows from this output.
 - Refreshed `analysis/overlay/cluster_deg_multi.tsv`
   with `padj` and donor counts.
 - `analysis/overlay/coverage_v1.1.json` for traceability.
-- `reviewing/PROGRESS.md` updated: E1 ✅.
+- `revision/PROGRESS.md` updated: E1 ✅.
 
 ### Gate (S1)
 
@@ -619,7 +619,7 @@ The revision is ready when **all of the following** are true.
 
 ### Process
 
-- `reviewing/PROGRESS.md` shows all E1–E13 as ✅.
+- `revision/PROGRESS.md` shows all E1–E13 as ✅.
 - Point-by-point response covers every reviewer comment.
 - Co-author signs off in writing on the final draft.
 - Git tag `v1.1` pushed; Zenodo DOI minted; both cited in the

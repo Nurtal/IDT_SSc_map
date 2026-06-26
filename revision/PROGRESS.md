@@ -76,7 +76,7 @@ Legend: 🟢 done · 🟡 in progress · ⏳ pending · 🔴 blocked · ⚪ desc
 | S0.1 | Create branch `revision/v1.1` | 🟢 done | off `main` @ `e638a4d` |
 | S0.2 | Freeze `analysis/baseline_v1.0/` | 🟢 done | 5 files + SHA256SUMS |
 | S0.3 | Tag `v1.0-pre-review` | 🟢 done | annotated on `e638a4d` |
-| S0.4 | Create `reviewing/PROGRESS.md` | 🟢 done | this file |
+| S0.4 | Create `revision/PROGRESS.md` | 🟢 done | this file |
 | S0.5 | Co-author kickoff brief | 🟢 done | `docs/standups/2026-05-20_revision_kickoff.md` |
 | S0 gate | Co-author signs off on scope (E10, E18 descope decisions) | ☐ pending | **awaiting kickoff meeting** |
 

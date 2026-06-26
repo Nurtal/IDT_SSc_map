@@ -25,7 +25,7 @@ The revision was framed as a **statistical and FAIR consolidation, not a re-cura
 
 ## Status of the 25 essential revisions
 
-- **23 of 25 closed** at the data/code level. The cumulative dashboard is `reviewing/PROGRESS.md`; the live status of each E-item is tracked in `reviewing/REVISION_ROADMAP.md`.
+- **23 of 25 closed** at the data/code level. The cumulative dashboard is `revision/PROGRESS.md`; the live status of each E-item is tracked in `revision/REVISION_ROADMAP.md`.
 - **E7 and E12 — clinical metadata** — remain *gap-documented* rather than closed (see "Adoption of your resource-paper framing" below). We systematically parsed all four GEO `series_matrix.txt.gz` files (773 donor-samples in total) and found **zero** carrying mRSS, disease duration, age, sex, or anti-Scl70 / centromere specificity. The full audit is in `analysis/clinical/CLINICAL_METADATA_GAP.md`. The analytical pipeline (`scripts/clinical_correlation.py`, `scripts/demographic_match.py`) is in place and validated on synthetic data; it will execute the moment cohort metadata becomes available.
 
 ## Key quantitative outcomes of the revision
