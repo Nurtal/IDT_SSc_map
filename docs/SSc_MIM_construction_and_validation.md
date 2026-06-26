@@ -384,7 +384,7 @@ Raw archives are SHA-256-pinned in `data/MIRROR.md` for a reproducible input env
   hypothesis scaffold, not a statistically inferred network.
 - **Reactome backbone propagates curator-inference ECO** by default — the SSc-specific layer (133
   reactions) is the honest measure of new curation depth.
-- **Coverage ≠ validation of every edge.** 81.3 % means most map species are *measurable* in patient
+- **Coverage ≠ validation of every edge.** 82.6 % means most map species are *measurable* in patient
   data, not that every reaction is independently confirmed.
 - **Per-donor module deltas are modest outside M1/skin**; the strong, reproducible signal is the
   type-I IFN axis in skin. Endotype use is presented as a **capability/direction**, not a finished

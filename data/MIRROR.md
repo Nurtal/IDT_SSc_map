@@ -75,7 +75,7 @@ sha256sum -c data/MIRROR.sha256
 # Then re-run the pipeline:
 make overlay-multi --deg-backend mixed-v11 --fdr-q 0.05
 make aucell
-# coverage_v1.1.json should report mim_coverage_pct = 81.3
+# coverage_v1.1.json should report mim_coverage_pct = 82.6
 ```
 
 ## Status
