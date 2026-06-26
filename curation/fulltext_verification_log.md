@@ -57,7 +57,7 @@ These 3 remain `proposed` (abstract-level, PDFs not downloaded); 017/021 need a 
 
 The 5 reactions below are canonical, textbook mechanisms whose source PDFs are paywalled
 (`9278140`, `12135389`, `30173249`, `37321373`). Under the tiered evidence policy
-(`docs/mi2cast_checklist.md`), abstract-grade ECO:0000033 citation is sufficient for canonical
+(`docs/curation/mi2cast_checklist.md`), abstract-grade ECO:0000033 citation is sufficient for canonical
 edges — full-text verification is NOT required. They remain `proposed` (abstract-verified):
 
 - ssc_M3_005 (PDE5A hydrolyses cGMP) — 12135389

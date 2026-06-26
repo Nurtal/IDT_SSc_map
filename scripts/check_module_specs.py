@@ -7,7 +7,7 @@ Checks:
      duplicate species on integration). Entities that legitimately span
      modules belong in the crosstalk section, not in two Tier-1 tables.
   2. Compartment values come from the fixed vocabulary defined in
-     docs/curation_guidelines.md § Compartments.
+     docs/curation/curation_guidelines.md § Compartments.
   3. The "Source" column values are drawn from a small whitelist.
 
 Exit code:

@@ -22,7 +22,7 @@ Adopt a three-stage import workflow for every Reactome-derived module:
 1. **Fetch.** `scripts/reactome_pilot.py --pathway R-HSA-XXXX --module Mx` (idempotent; skips existing files).
 2. **Post-process.** Apply two transforms before manual curation:
    - **Rename species:** replace MINERVA UUIDs (`s_id_entityVertex_*`) with HGNC primary symbols using the existing `name` attribute. Collisions are resolved by appending a compartment or state-variable suffix.
-   - **Collapse cofactors:** ATP / ADP / GTP / GDP / ubiquitin / H₂O / Pi appear in many copies (one per reaction); collapse to one species per compartment, or — for ubiquitin — convert to a state variable on the substrate per `docs/curation_guidelines.md` § 5.
+   - **Collapse cofactors:** ATP / ADP / GTP / GDP / ubiquitin / H₂O / Pi appear in many copies (one per reaction); collapse to one species per compartment, or — for ubiquitin — convert to a state variable on the substrate per `docs/curation/curation_guidelines.md` § 5.
    - A dedicated post-processor will be implemented in week 4 (start of Phase 2) before M2 curation kicks off: `scripts/post_process_reactome.py`.
 3. **Curate.** Open the post-processed file in CellDesigner; add SSc-specific entities and reactions per the module spec; annotate per the MI2CAST checklist.
 

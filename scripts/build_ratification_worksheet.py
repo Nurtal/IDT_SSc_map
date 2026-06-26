@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Generate a co-author ratification worksheet for the SSc-Tier-1 evidence pass.
 
-Part of the curation-depth pass (see docs/curation_depth_pass.md). Turns the 34 `proposed`
+Part of the curation-depth pass (see docs/curation/curation_depth_pass.md). Turns the 34 `proposed`
 citations + 10 reclassifications + 1 `untested` backlog row into a tick-and-correct sheet so
 the co-author ratifies in minutes instead of re-opening every abstract.
 
@@ -110,7 +110,7 @@ def main() -> None:
               "expert-ratified. Tick `[x] confirm` to accept (sets `curation_status=confirmed`), "
               "or note a replacement/rejection. Tiered policy: review-grade `ECO:0000033` is "
               "accepted for canonical mechanisms; crosstalk needs primary/experimental — see "
-              "`docs/mi2cast_checklist.md`._\n")
+              "`docs/curation/mi2cast_checklist.md`._\n")
     md.append(f"**To ratify:** {len(proposed)} proposed citations · "
               f"{sum(1 for r in need if r['curation_status'].strip() in {'conceptual_bridge','phenotype_aggregation'})} "
               f"reclassifications · {sum(1 for r in need if r['curation_status'].strip()=='untested')} untested backlog.\n")

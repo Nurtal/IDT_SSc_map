@@ -22,11 +22,11 @@
 | Species | **568** | across 20 cell/tissue compartments |
 | Reactions | **308** | **133 are the hand-curated SSc-specific layer** (the original SSc contribution); 126/133 (95%) carry a primary PMID and 73 a direct-assay ECO code. Per module: M1 19 · M2 58 · M3 27 · M4 11 · M5 10 · crosstalk 8. Full evidence stratification in [`analysis/curation/evidence_stratification.md`](analysis/curation/evidence_stratification.md). |
 | SBML validation | **0 errors** | libSBML L2v4, enforced in CI (`validate_sbml`) on every push |
-| Annotated HGNC species | **236** | distinct HGNC symbols; 198 form the RNA-seq-detectable coverage denominator |
+| Annotated HGNC species | **236** | distinct RNA-seq-detectable HGNC symbols (the coverage denominator) |
 | Single-cell donors integrated | **197** | **121 SSc / 76 HC** across 4 datasets |
 | Cells processed | **266 884** | Tabib skin / Gur skin multiome / GSE210395 PBMC / GSE128169 lung |
-| MINERVA overlays | **60** | per-(dataset, cluster) overlay TSVs from the multi-dataset run |
-| MIM coverage by transcriptomics | **≈50 % (robust) / 81.3 % (permissive)** | Effect-size-gated (≥2-fold, padj ≤ 0.01) = **49.5 % (98/198)**; the 81.3 % NB-GLM figure (161/198) is the permissive upper bound (\|log2FC\| ≥ 0.2). The 50→81 jump is a stringency/power effect, not biology — full grid in [`analysis/overlay/coverage_sensitivity.tsv`](analysis/overlay/coverage_sensitivity.tsv). Per module: M1 84 % · M2 88 % · M3 75 % · M4 74 % · M5 94 %. |
+| MINERVA overlays | **62** | per-(dataset, cluster) overlay TSVs from the multi-dataset run |
+| MIM coverage by transcriptomics | **53.0 % (robust) / 82.6 % (permissive)** | Effect-size-gated (≥2-fold, padj ≤ 0.01) = **53.0 % (125/236)**; the permissive NB-GLM figure (195/236) is the upper bound (\|log2FC\| ≥ 0.2). The robust→permissive spread is a stringency/power effect, not biology — full grid in [`analysis/overlay/coverage_sensitivity.tsv`](analysis/overlay/coverage_sensitivity.tsv). Per module: M1 82 % · M2 87 % · M3 79 % · M4 72 % · M5 100 %. |
 | Network communities | **39** | greedy modularity; significant (community, module) hypergeometric enrichment at q < 0.05 |
 | Druggable hub–drug interactions | **82** | DGIdb on top hubs; 28 distinct molecular targets |
 | Interactions queued for expert review | **143** | reviewer app `review/index.html`; AI verdicts 128 validate / 5 caution |
@@ -48,7 +48,7 @@
 - [References](#references)
 - [License](#license)
 
-The original 2026 ACR-timeline plan and pre-pivot risk register are archived in [`docs/historical_roadmap.md`](docs/historical_roadmap.md).
+The original 2026 ACR-timeline plan and pre-pivot risk register are archived in [`docs/planning/historical_roadmap.md`](docs/planning/historical_roadmap.md).
 
 ---
 
@@ -88,7 +88,7 @@ The map follows the Disease Maps Project guidelines (Mazein et al., 2018; Ostasz
 
 1. **Scoping** with domain experts (SSc clinicians).
 2. **Reactome import** of TGF-β, IFN-α/β, IL-6, Notch1, PDGF pathways → CellDesigner harmonisation.
-3. **SSc-specific curation** — 133 hand-curated reactions across the 5 modules (incl. 8 inter-module crosstalk). New edges are added only through a gated edge-discovery pipeline (G0–G4 anti-nonsense gates + human ratification; see [`docs/edge_discovery_protocol.md`](docs/edge_discovery_protocol.md)).
+3. **SSc-specific curation** — 133 hand-curated reactions across the 5 modules (incl. 8 inter-module crosstalk). New edges are added only through a gated edge-discovery pipeline (G0–G4 anti-nonsense gates + human ratification; see [`docs/curation/edge_discovery_protocol.md`](docs/curation/edge_discovery_protocol.md)).
 4. **Annotation** using the MI2CAST minimum information standard (HGNC, UniProt, PubMed/PMID, ECO evidence codes).
 5. **SBML validation** with libSBML 5.21 (L2v4); 0 errors maintained in CI.
 6. **Network analysis** — bipartite projection in NetworkX; degree, betweenness, eigenvector, and PageRank centralities; greedy-modularity communities; hypergeometric (community, module) enrichment.
@@ -168,9 +168,12 @@ ssc-mim/
 │   ├── presentation.md → SSc_MIM_presentation.pdf # unified deck (make presentation)
 │   ├── SSc_MIM_construction_and_validation.md     # detailed written reference
 │   ├── module_specs/                  # M1–M5 spec sheets (M5 split from M4, 2026-06)
-│   ├── edge_discovery_protocol.md     # the G0–G4 gating procedure
-│   ├── curation_guidelines.md
-│   └── mi2cast_checklist.md
+│   ├── curation/                      # curation specs & process (guidelines, mi2cast,
+│   │                                  #   edge_discovery_protocol, crosstalk_matrix, …)
+│   ├── planning/                      # historical design/scoping (curation_plan, risks,
+│   │                                  #   scoping_notes, omics_decision, historical_roadmap, …)
+│   ├── release/                       # biomodels_submission
+│   ├── decisions/  standups/          # dated decision records & stand-ups
 └── .github/workflows/                 # validate_sbml + lint + scripts-smoke
 ```
 

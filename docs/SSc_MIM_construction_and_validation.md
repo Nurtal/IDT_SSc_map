@@ -37,7 +37,7 @@ layered on top — they do not define the map structure.**
 ## 2. Standards & conventions
 
 Curation is deliberately **deterministic** (two curators following the rules should produce the same
-map). Rules are in `docs/curation_guidelines.md`, adapted from Mazein *et al.* (*Front Bioinform*
+map). Rules are in `docs/curation/curation_guidelines.md`, adapted from Mazein *et al.* (*Front Bioinform*
 2023) and the Disease Maps Project conventions.
 
 - **Editor / notation:** CellDesigner v4.4, SBGN Process Description glyphs (macromolecule, simple
@@ -190,7 +190,7 @@ Validation is layered: **machine gates → automated review → human ratificati
 is *the curated map is never written speculatively.*
 
 ### 6.1 Edge-discovery protocol (adding a new interaction)
-`docs/edge_discovery_protocol.md`. Pipeline:
+`docs/curation/edge_discovery_protocol.md`. Pipeline:
 ```
 SSc papers → candidate edges (staging) → G0–G4 gates → human ratification → promote → wire/audit/lint
 ```
@@ -372,7 +372,7 @@ Raw archives are SHA-256-pinned in `data/MIRROR.md` for a reproducible input env
 | `minerva/overlays/` | 60 MINERVA overlay TSVs |
 | `review/index.html` | offline reviewer swipe-deck app |
 | `docs/module_specs/M*.md` | per-module scope + Tier-1 tables |
-| `docs/curation_guidelines.md`, `docs/edge_discovery_protocol.md` | the rules + the gate procedure |
+| `docs/curation/curation_guidelines.md`, `docs/curation/edge_discovery_protocol.md` | the rules + the gate procedure |
 | `figures/` | F1 map, F2 AUCell overlay, F3 druggable hubs, F6 endotype profiles |
 | `STATUS.md`, `ROADMAP.md` | state + plan |
 

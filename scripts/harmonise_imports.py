@@ -3,7 +3,7 @@
 
 This is the third step of the import pipeline, after fetch (reactome_pilot)
 and post-process (post_process_reactome). It targets the "import-cleanup
-backlog" documented in docs/import_pilot.md.
+backlog" documented in docs/planning/import_pilot.md.
 
 It does only **identifier-level** transformations (rename species ids,
 rewrite references). Any structural change (splitting a family species

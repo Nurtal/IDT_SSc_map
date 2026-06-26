@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """CI guard for SSc-Tier-1 evidence depth (regression lock-in).
 
-Part of the curation-depth pass (see docs/curation_depth_pass.md). Implements the
-open CI-lint item in docs/mi2cast_checklist.md §"Open items".
+Part of the curation-depth pass (see docs/curation/curation_depth_pass.md). Implements the
+open CI-lint item in docs/curation/mi2cast_checklist.md §"Open items".
 
-Encodes the **tiered evidence policy** of `docs/mi2cast_checklist.md` §"Evidence policy
+Encodes the **tiered evidence policy** of `docs/curation/mi2cast_checklist.md` §"Evidence policy
 (tiered)", which follows the GO/GOA gold standard (honest ECO-coded provenance), NOT a
 "primary-only" rule. Review citations (`ECO:0000033`, traceable author statement) are
 accepted for canonical mechanisms; the higher bar (primary/experimental evidence) is

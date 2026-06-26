@@ -120,7 +120,7 @@ Rationale:
 
 ### Crosstalk (inter-module) — final 8 edges
 
-From the auto-extracted `docs/crosstalk_matrix.md` (14 edges, redundancy across specs), I retain 8 distinct ones to wire as explicit reactions:
+From the auto-extracted `docs/curation/crosstalk_matrix.md` (14 edges, redundancy across specs), I retain 8 distinct ones to wire as explicit reactions:
 
 | # | Edge | Mechanism | PMID strategy |
 |---|------|-----------|---------------|

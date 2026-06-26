@@ -179,7 +179,7 @@ def main(argv: list[str]) -> int:
             encoding="utf-8",
         )
         print(f"[log]  wrote {log_path}")
-        print("\nReview docs/import_pilot.md for the expected outcomes.")
+        print("\nReview docs/planning/import_pilot.md for the expected outcomes.")
         return 1
     print("\n[done] pilot succeeded — review the output before treating this as the canonical import.")
     return 0

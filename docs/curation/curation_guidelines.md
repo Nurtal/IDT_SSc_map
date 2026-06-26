@@ -91,7 +91,7 @@ Every reaction must have:
 - Reaction type (per SBGN-PD).
 - Participants (with role: substrate / product / catalyst / modulator).
 - Mechanism (free text, ≤2 sentences).
-- ≥1 PMID with an evidence code (see `docs/mi2cast_checklist.md`).
+- ≥1 PMID with an evidence code (see `docs/curation/mi2cast_checklist.md`).
 - Module assignment.
 
 ## 9. Common pitfalls (lessons from RA-map / SjD map)
@@ -99,7 +99,7 @@ Every reaction must have:
 - **Duplicate species** with different `id` but same HGNC symbol after integration. Always check after merge.
 - **Floating species** with no inbound or outbound edge after manual additions. Add a `dangling` check before each commit.
 - **Sign drift** between Cytoscape export and CellDesigner notation. Always preserve sign during round-trip.
-- **Evidence tiering, not blanket "replace reviews".** Reviews are an accepted evidence category (`ECO:0000033`, traceable author statement) for **canonical** mechanisms — do *not* spend effort swapping them for primary sources. Reserve primary/experimental evidence for the **SSc-specific novelty** layer (inter-module crosstalk, contested claims). This matches the GO/GOA gold standard; the full tiered policy lives in [`docs/mi2cast_checklist.md`](mi2cast_checklist.md) §"Evidence policy (tiered)".
+- **Evidence tiering, not blanket "replace reviews".** Reviews are an accepted evidence category (`ECO:0000033`, traceable author statement) for **canonical** mechanisms — do *not* spend effort swapping them for primary sources. Reserve primary/experimental evidence for the **SSc-specific novelty** layer (inter-module crosstalk, contested claims). This matches the GO/GOA gold standard; the full tiered policy lives in [`docs/curation/mi2cast_checklist.md`](mi2cast_checklist.md) §"Evidence policy (tiered)".
 
 ## 10. Versioning
 

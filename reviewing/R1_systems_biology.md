@@ -211,7 +211,7 @@ graphical correctness (layout, glyph orientation) is then verified.
 A pie chart or histogram of ECO code distribution across the 244
 reactions in `reaction_evidence.tsv` would visually anchor the
 evidence-grade claim. The house rule "every reaction must have an
-ECO code stricter than 0000305" (from `docs/mi2cast_checklist.md`)
+ECO code stricter than 0000305" (from `docs/curation/mi2cast_checklist.md`)
 should be tested and reported.
 
 ### m7. Reference to CaSQ paper

@@ -88,7 +88,7 @@ Option C : **Papier méthodo d'abord, ACR 2027 ensuite** (fallback explicite dan
 - **Snapshot état projet :** `STATUS.md` à la racine
 - **Plan détaillé :** `ROADMAP.md` à la racine — section "Pivot" explique pourquoi on cible GitHub+Zenodo au lieu de MINERVA Luxembourg
 - **Spécifs par module :** `docs/module_specs/M*.md` (la base à challenger)
-- **Crosstalk inter-module :** `docs/crosstalk_matrix.md` (14 edges auto-extraites — à valider)
+- **Crosstalk inter-module :** `docs/curation/crosstalk_matrix.md` (14 edges auto-extraites — à valider)
 
 Je peux te générer un export PDF de tout ça si plus pratique à lire.
 

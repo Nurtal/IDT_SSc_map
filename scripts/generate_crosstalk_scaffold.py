@@ -2,7 +2,7 @@
 """Generate the crosstalk matrix scaffold from module specs.
 
 Parses the "Crosstalk edges" / "Crosstalk edges in/out of MX" sections of
-each docs/module_specs/M*.md and emits docs/crosstalk_matrix.md — a single
+each docs/module_specs/M*.md and emits docs/curation/crosstalk_matrix.md — a single
 table with one row per declared crosstalk edge.
 
 Each crosstalk bullet in a spec follows a loose convention:
@@ -143,7 +143,7 @@ def main(argv: list[str]) -> int:
     ap.add_argument(
         "--out",
         type=Path,
-        default=Path("docs/crosstalk_matrix.md"),
+        default=Path("docs/curation/crosstalk_matrix.md"),
     )
     args = ap.parse_args(argv[1:])
 

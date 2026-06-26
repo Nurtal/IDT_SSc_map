@@ -68,7 +68,7 @@ network:  ## Run network analysis (centrality + hubs + communities). Needs netwo
 sink-check:  ## Sink-node connectivity audit on the integrated map.
 	$(PYTHON) scripts/sink_connectivity.py
 
-crosstalk:  ## Regenerate docs/crosstalk_matrix.md from module specs.
+crosstalk:  ## Regenerate docs/curation/crosstalk_matrix.md from module specs.
 	$(PYTHON) scripts/generate_crosstalk_scaffold.py
 
 phase3:  integrate pmids crosstalk network sink-check  ## Run the whole Phase 3 automation pipeline.

@@ -11,7 +11,7 @@ Writes:
   - curation/celldesigner/SSc_MIM_integrated.wire_report.json
   - curation/annotations/reaction_evidence.tsv        (append curated rows)
 
-Species creation policy (per docs/curation_plan.md):
+Species creation policy (per docs/planning/curation_plan.md):
   - id with __cyto / __nuc / __ext / __ecm / __pm / __er / __endo / __mito
     / __golgi / __cell suffix → infer compartment from suffix.
   - id starting with `phenotype_` → SBGN Phenotype glyph.

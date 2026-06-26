@@ -36,8 +36,8 @@
 
 Per user direction, the lead curator acts as stand-in for the co-author's biological calls until the post-hoc review. Three documents pin this down:
 
-- **[docs/curation_plan.md](docs/curation_plan.md)** — strategy (granularity, citation policy with three ECO tiers, reaction-density targets, success metrics).
-- **[docs/curation_decisions.md](docs/curation_decisions.md)** — answers to brief's Q1 (scope holds), Q2 (per-module Tier-1 add/remove/promote with rationale), Q3 (ACR-only ambition; methods paper deferred to 2027).
+- **[docs/planning/curation_plan.md](docs/planning/curation_plan.md)** — strategy (granularity, citation policy with three ECO tiers, reaction-density targets, success metrics).
+- **[docs/curation/curation_decisions.md](docs/curation/curation_decisions.md)** — answers to brief's Q1 (scope holds), Q2 (per-module Tier-1 add/remove/promote with rationale), Q3 (ACR-only ambition; methods paper deferred to 2027).
 - **[curation/ssc_curated_reactions.tsv](curation/ssc_curated_reactions.tsv)** — source-of-truth: 67 SSc-specific reactions across M1 (12) + M2 (22) + M3 (13) + M4 (11) + crosstalk (8) + sink-feeding (1). Each row has mechanism + PMID + ECO code.
 
 `scripts/wire_ssc_tier1.py` applies the TSV to the integrated map. Result on first run:
@@ -93,7 +93,7 @@ Reversibility: every reaction is one row in the TSV. Co-author overrides at revi
 | H1 | "260 reactions" is mostly imported Reactome backbone; the original SSc layer is 85 reactions, **45/85 are curator-inference (ECO:0000305, no PMID)**, and **159/244** `reaction_evidence` rows have `type=TODO`. | `scripts/evidence_audit.py` — formally splits *Reactome-backbone* vs *SSc-Tier-1* provenance, quantifies the ECO×PMID matrix per layer, and classifies the 159 `TODO` reaction types from their mechanism text (reversible, keyword rules). | 🟢 | `analysis/curation/evidence_stratification.{tsv,json,md}`; updated `reaction_evidence.tsv` |
 | H2 | MIM coverage jumps **50 % → 81.3 %** purely from a Wilcoxon→NB-GLM method switch — i.e. the metric tracks statistical power, not biology. | `scripts/coverage_sensitivity.py` — recomputes coverage over a grid of (`padj`, `\|log2FC\|`) thresholds from `cluster_deg_multi_v11.tsv`; reports a **robust, effect-size-gated** headline alongside the permissive one. | 🟢 | `analysis/overlay/coverage_sensitivity.{tsv,json}` |
 | H3 | The 8 inter-module crosstalks are the genuine SSc-specific novelty, yet 3 are curator-inference and 2 are STRING-not-confirmed; more broadly 45 SSc reactions lack a PMID. | `scripts/build_inference_register.py` — emits a structured register of every ECO:0000305/no-PMID SSc reaction with a `validation_status` and `lit_search_needed` flag, making the weak surface explicit and actionable for the co-author lit pass. | 🟢 | `curation/curator_inference_register.tsv` |
-| H4 | Headline numbers diverge across files (526 vs 385 species, 260 vs 175 vs 85 reactions, 17 vs 20 compartments, 50 vs 81 %). | `docs/NUMBERS_RECONCILIATION.md` — single canonical table mapping every published figure to its definition and source artefact; README headline gains an explicit provenance split. | 🟢 | `docs/NUMBERS_RECONCILIATION.md`, README edit |
+| H4 | Headline numbers diverge across files (526 vs 385 species, 260 vs 175 vs 85 reactions, 17 vs 20 compartments, 50 vs 81 %). | `docs/curation/NUMBERS_RECONCILIATION.md` — single canonical table mapping every published figure to its definition and source artefact; README headline gains an explicit provenance split. | 🟢 | `docs/curation/NUMBERS_RECONCILIATION.md`, README edit |
 | H5 | Resource is framed as community/expert-curated but co-author + clinician sign-off on the 85 Tier-1 rows **has not happened** (`.zenodo.json` still `REPLACE_ME`). | Prepare the review packet (H1+H3 outputs) for the co-author; the biological sign-off itself stays out of scope for automation. | 🔴 | (handover queue item 1) |
 
 **Acceptance for this sprint:** all four AUTO scripts run clean offline; `reaction_evidence` TODO-type count drops to ≤ 20; the manuscript Methods §2.4 / §2.6 and README cite the reconciled numbers and the effect-size-gated coverage; nothing in the curated map content is silently altered (only annotation completeness + provenance docs).
@@ -101,7 +101,7 @@ Reversibility: every reaction is one row in the TSV. Co-author overrides at revi
 ### Curation-depth pass follow-up (2026-06-05) — addresses H1 + de-risks H5
 
 Beyond merely *quantifying* the weak SSc layer (H1), a depth pass paid most of it down
-(`docs/curation_depth_pass.md`). A new candidate miner (`scripts/mine_lit_candidates.py`,
+(`docs/curation/curation_depth_pass.md`). A new candidate miner (`scripts/mine_lit_candidates.py`,
 NCBI E-utils) + abstract-verified assignment raised SSc-Tier-1 PMID coverage **47% → 87.1%**
 (40 → 74/85, across two same-day passes) and dropped undeclared inference debt **45 → 0**
 (34 cited `proposed`, 10 honestly reclassified as conceptual bridges / phenotype
@@ -160,7 +160,7 @@ the real article text. This makes fabrication structurally hard, not just discou
 
 | # | Phase | Lane | Deliverable |
 |---|-------|------|-------------|
-| G1 | **Pipeline + gates** — `scripts/fetch_ssc_corpus.py`, `validate_edge_candidates.py`, `promote_edges.py`, `curation/staging/`, `docs/edge_discovery_protocol.md` | 🟢 | gated staging machinery |
+| G1 | **Pipeline + gates** — `scripts/fetch_ssc_corpus.py`, `validate_edge_candidates.py`, `promote_edges.py`, `curation/staging/`, `docs/curation/edge_discovery_protocol.md` | 🟢 | gated staging machinery |
 | G2 | **Originality metric** — `scripts/reactome_novelty.py`: per-reaction Reactome-overlap; quantifies "% of the 85 absent from Reactome" (turns the criticism into a measured number) | 🟢 | `analysis/network/reactome_novelty.{tsv,json}` |
 | G3 | **Pilot — autoantibody module** — assemble authoritative SSc-autoAb PMIDs, fetch OA full text, extract verbatim-grounded candidate edges → staging → gates → ratification worksheet → conservative promotion (tagged `AI-proposed (discovery)`) | 🟡→🔴 | first validated growth batch |
 | G4 | **Scale by category** — batches 2–6, one ratification cycle each; expert/co-author sign-off per batch | 🔴 | toward 200–250 SSc reactions |

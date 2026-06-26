@@ -11,7 +11,7 @@
 The SSc-Tier-1 layer (85 reactions in `curation/ssc_curated_reactions.tsv`) is what makes
 this a *curated SSc map* rather than a Reactome re-export. Of those, only 40 carried a
 primary PMID; 45 rested on `ECO:0000305` (curator inference). The house rule
-(`docs/mi2cast_checklist.md`) requires every reaction to carry a citation stricter than
+(`docs/curation/mi2cast_checklist.md`) requires every reaction to carry a citation stricter than
 `ECO:0000305`. This pass closes most of that gap.
 
 ## Method

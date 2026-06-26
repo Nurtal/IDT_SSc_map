@@ -485,7 +485,7 @@ finalise methods completeness.
   annotations.
 - [ ] **S7.5 (E22)** Dependency citation table in §2.9.
 - [ ] **S7.6 (E23)** README refresh — move legacy timeline to
-  `docs/historical_roadmap.md`.
+  `docs/planning/historical_roadmap.md`.
 - [ ] **S7.7 (E25)** Confirm Hinchcliff 2023 PMID/DOI.
 
 ### Optional (T5)

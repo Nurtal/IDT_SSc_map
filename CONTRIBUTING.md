@@ -21,7 +21,7 @@ Open an issue using the **curation_request** template (`.github/ISSUE_TEMPLATE/c
 - **Claimed interaction** — entity A → entity B, sign (activation / inhibition / binding / state change), mechanism if known.
 - **Evidence excerpt** — quoted text or figure caption.
 - **Proposed module** — M1 / M2 / M3 / M4 / cross-module.
-- **MI2CAST fields you can pre-fill** (see `docs/mi2cast_checklist.md`).
+- **MI2CAST fields you can pre-fill** (see `docs/curation/mi2cast_checklist.md`).
 
 Curation requests are triaged weekly. Accepted requests become commits with one of:
 
@@ -60,7 +60,7 @@ PRs that touch only `analysis/**` (scripts, notebooks) must additionally:
 ## 4. Coding and documentation style
 
 - **Naming.** HGNC primary symbol for genes/proteins; UniProt accession for proteoforms or non-human entities. SBO terms for reaction types where applicable.
-- **Compartments.** Vocabulary fixed in `docs/curation_guidelines.md` (`extracellular`, `plasma_membrane`, `cytosol`, `nucleus`, `ECM`, `endosome`, `ER`, `mitochondrion`).
+- **Compartments.** Vocabulary fixed in `docs/curation/curation_guidelines.md` (`extracellular`, `plasma_membrane`, `cytosol`, `nucleus`, `ECM`, `endosome`, `ER`, `mitochondrion`).
 - **Citations.** Cite PMIDs in `reaction_evidence.tsv`; the corresponding BibTeX entry must exist in `curation/pubmed_corpus.bib`.
 - **Markdown.** GitHub-flavoured. No tabs; LF line endings.
 - **Python.** Format with `ruff format`; lint with `ruff check`. Type hints encouraged.

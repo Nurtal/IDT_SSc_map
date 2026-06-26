@@ -150,7 +150,7 @@ The README still describes the project as if Phase 2 curation
 were ongoing, with "Phase 2 — Module curation (weeks 4–11)"
 language and a "go / no-go week 7" gate that has passed. Please
 refresh README to reflect the actual Phase 4c-complete state and
-move the original timeline to `docs/historical_roadmap.md` if it
+move the original timeline to `docs/planning/historical_roadmap.md` if it
 should be preserved.
 
 ### m2. `pip install -e .` package metadata

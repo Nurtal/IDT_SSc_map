@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Discover candidate PubMed PMIDs for the curator-inference SSc reactions (P2).
 
-Part of the curation-depth pass (see docs/curation_depth_pass.md).
+Part of the curation-depth pass (see docs/curation/curation_depth_pass.md).
 
 `scripts/bib_lookup.py` fills metadata for PMIDs already known; it cannot *find*
 a PMID from a mechanism. This script closes that gap: for every SSc-curated

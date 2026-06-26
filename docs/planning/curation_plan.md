@@ -20,9 +20,9 @@ The Reactome imports give the integrated map the **canonical signalling backbone
 ## Scope rules
 
 - **Periphery:** skin fibrosis in dcSSc. Lung / kidney / GI / vascular peripheries are out of scope for v1.0.
-- **Granularity:** per `docs/curation_guidelines.md` § 6 — one reaction per ligand-receptor binding, one per kinase-substrate pair, one per TF-target transcription. No multi-step collapsing unless intermediates are absent.
-- **Compartments:** fixed vocabulary (`docs/curation_guidelines.md` § 3).
-- **Naming:** HGNC primary symbol for genes/proteins; phosphoforms encoded as state variables (`@P`) on the substrate, not as separate species. Reactome's `p-X` species in the imports remain as legacy (already documented in `docs/import_pilot.md`); new reactions use the state-variable convention.
+- **Granularity:** per `docs/curation/curation_guidelines.md` § 6 — one reaction per ligand-receptor binding, one per kinase-substrate pair, one per TF-target transcription. No multi-step collapsing unless intermediates are absent.
+- **Compartments:** fixed vocabulary (`docs/curation/curation_guidelines.md` § 3).
+- **Naming:** HGNC primary symbol for genes/proteins; phosphoforms encoded as state variables (`@P`) on the substrate, not as separate species. Reactome's `p-X` species in the imports remain as legacy (already documented in `docs/planning/import_pilot.md`); new reactions use the state-variable convention.
 
 ## Citation strategy
 
@@ -38,7 +38,7 @@ The co-author re-grades each reaction at the review session. The `notes` column 
 
 ## Reaction-density targets per module
 
-The Reactome imports already contribute 175 reactions. SSc-specific additions target ~50-70 reactions to get to a credible v1.0 density (~225-245 reactions total, comfortably inside the 300-450 target band from `docs/scoping_notes.md`).
+The Reactome imports already contribute 175 reactions. SSc-specific additions target ~50-70 reactions to get to a credible v1.0 density (~225-245 reactions total, comfortably inside the 300-450 target band from `docs/planning/scoping_notes.md`).
 
 | Module | Reactome contribution | SSc-specific target | Rationale |
 |--------|----------------------|---------------------|-----------|
@@ -46,7 +46,7 @@ The Reactome imports already contribute 175 reactions. SSc-specific additions ta
 | M2 TGF-β / fibrosis | 77 | 20-25 | latent TGF-β activation + SMAD3 → ECM transcription battery + FRA-2 + autocrine loops + ECM cross-linking |
 | M3 EndoMT / vasculopathy | 39 | 12-15 | endothelin axis + NO/sGC/cGMP + TGF-β → SNAI → CDH5 loss + HIF1A/VEGF inputs |
 | M4 IL-6 / Th2 / B-cell | 34 | 10-12 | IL-4/IL-13 → STAT6 → ECM; plasma cell differentiation; autoAb output |
-| Crosstalk (inter-module) | 0 | 5-8 | the 14 declared edges from `docs/crosstalk_matrix.md`, distilled |
+| Crosstalk (inter-module) | 0 | 5-8 | the 14 declared edges from `docs/curation/crosstalk_matrix.md`, distilled |
 
 ## Phenotype sink anchors
 
@@ -118,7 +118,7 @@ These remain on `docs/module_specs/M*.md` as Tier-2/3 entries; v1.1 picks them u
 
 ## Process
 
-1. Curator (acting stand-in) tranches Q1/Q2/Q3 → `docs/curation_decisions.md`.
+1. Curator (acting stand-in) tranches Q1/Q2/Q3 → `docs/curation/curation_decisions.md`.
 2. Curator builds `curation/ssc_curated_reactions.tsv` per the strategy above.
 3. `scripts/wire_ssc_tier1.py` applies the TSV to the integrated map.
 4. `make preflight + network + sink-check + figures + abstract` re-runs the AUTO lane on the curated map.

@@ -2,7 +2,7 @@
 """Sink-node connectivity audit on the integrated SSc-MIM.
 
 Verifies the "every Tier-1 species reaches a sink in ≤ 6 steps" rule from
-docs/scoping_notes.md. Sinks are looked up by id-prefix patterns matching
+docs/planning/scoping_notes.md. Sinks are looked up by id-prefix patterns matching
 the four planned phenotype anchors:
 
   M1  ISG signature        — ISG_signature, IFI44*, ISG15, IFIT1, OAS_family,

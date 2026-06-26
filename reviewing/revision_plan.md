@@ -238,10 +238,10 @@ follow-up if R2-themes consume more time than budgeted.
 
 ### E23 — README refresh
 
-- **What**: Move legacy timeline to `docs/historical_roadmap.md`;
+- **What**: Move legacy timeline to `docs/planning/historical_roadmap.md`;
   update README front-matter to reflect Phase 4c complete + Zenodo
   DOI + BioModels deposit (when assigned).
-- **Files**: `README.md`, `docs/historical_roadmap.md` (new).
+- **Files**: `README.md`, `docs/planning/historical_roadmap.md` (new).
 - **Status**: ☐ not started.
 
 ### E24 — Doublet / cell-cycle / resolution

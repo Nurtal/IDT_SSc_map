@@ -56,5 +56,5 @@ Analogous to the eight phenotype anchors of RA-map. Each Tier-1 species must rea
 
 - [ ] Kickoff meeting with SSc rheumatologist (Phase 1 / week 1).
 - [ ] Co-authorship confirmation email (file under `docs/`).
-- [ ] Reactome pilot import outcome (see `docs/import_pilot.md`).
-- [ ] Omics dataset decision (see `docs/omics_decision.md` — created in week 3).
+- [ ] Reactome pilot import outcome (see `docs/planning/import_pilot.md`).
+- [ ] Omics dataset decision (see `docs/planning/omics_decision.md` — created in week 3).

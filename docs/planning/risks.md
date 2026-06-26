@@ -22,7 +22,7 @@
 - **Mitigation:**
   - De-risk in week 1 on `TGF-beta receptor signaling activates SMADs`.
   - If round-trip fails, fall back to manual recreation guided by Reactome's SBGN-PD rendering.
-  - Document conversion gotchas in `docs/import_pilot.md`.
+  - Document conversion gotchas in `docs/planning/import_pilot.md`.
 - **Owner:** lead curator.
 
 ## R3 — Late expert validation

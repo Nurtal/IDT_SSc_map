@@ -44,7 +44,7 @@ Stated honestly:
 | Reactome backbone (pure-Reactome) | 159 | 158 (99.4%) | 0 (0.0%) |
 | **SSc-Tier-1 (the original contribution)** | **85** | **74 (87.1%)** | **50 (58.8%)** |
 
-After the 2026-06-05 curation-depth pass (`docs/curation_depth_pass.md`), the SSc-specific
+After the 2026-06-05 curation-depth pass (`docs/curation/curation_depth_pass.md`), the SSc-specific
 layer carries both more citations (87.1%, up from 47.1%) and a *much higher* fraction of
 experimental/review-grade ECO codes (58.8%) than the Reactome backbone. The residual
 backlog is **1 declared `untested` row** (down from 45), with a candidate-PMID pool,
