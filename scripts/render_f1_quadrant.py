@@ -152,7 +152,7 @@ def main() -> int:
 
     fig, ax = plt.subplots(figsize=(13, 11), dpi=110)
     ax.set_title(
-        "Figure 1 — SSc-MIM global view (quadrant layout)\n"
+        "Figure 1 — SSc-MIM global view (five-module pentagon layout)\n"
         f"{g.number_of_nodes()} species · {g.number_of_edges()} edges · "
         "modules in fixed positions · phenotype sinks centred · "
         "inter-module edges shown as curved arcs",
