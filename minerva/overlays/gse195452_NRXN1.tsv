@@ -1,2 +1,4 @@
 species_id	log2fc	color
-FSP1__pm	-1.361	#2c7fb8
+AGTR1__pm	-2.327	#2c7fb8
+FSP1__pm	-1.291	#2c7fb8
+LYN__cyto	29.377	#d7191c

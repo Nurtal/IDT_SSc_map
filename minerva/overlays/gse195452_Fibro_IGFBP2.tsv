@@ -1,5 +1,6 @@
 species_id	log2fc	color
-ACTA2__cyto	0.955	#d7191c
-FSP1__pm	-0.843	#2c7fb8
+FSP1__pm	-0.808	#2c7fb8
+HES1__nuc	1.575	#d7191c
 IFI27__mito	1.933	#d7191c
-POSTN__ecm	1.381	#d7191c
+PCAF__nuc	0.414	#d7191c
+POSTN__ecm	1.431	#d7191c

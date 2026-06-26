@@ -1,3 +1,5 @@
 species_id	log2fc	color
-POSTN__ecm	31.235	#d7191c
-TGFBR2__cyto	31.235	#d7191c
+CCL2__ext	29.916	#d7191c
+HIF1A__nuc	29.916	#d7191c
+IFNAR2_iso2__cyto	29.916	#d7191c
+TOP1__ext	1.206	#d7191c

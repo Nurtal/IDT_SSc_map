@@ -1,3 +1,4 @@
 species_id	log2fc	color
-IFI27__mito	29.511	#d7191c
-PSMB8__nuc	29.511	#d7191c
+COX_2__er	31.015	#d7191c
+GATA3__nuc	29.572	#d7191c
+PLAUR__pm	31.015	#d7191c

@@ -2,6 +2,7 @@ species_id	log2fc	color
 ABCE1__mito	0.915	#d7191c
 ACTA2__cyto	2.838	#d7191c
 CBL__cyto	0.691	#d7191c
+CENPB__ext	1.138	#d7191c
 COL1A1__ext	3.725	#d7191c
 COL1A2__ext	5.130	#d7191c
 COL3A1__ext	2.822	#d7191c
@@ -12,6 +13,7 @@ IL6__ext	-1.803	#2c7fb8
 IRF7__cyto	-0.831	#2c7fb8
 JAG1__cyto	1.183	#d7191c
 JAG2__cyto	1.325	#d7191c
+JUNB__nuc	-0.605	#2c7fb8
 KPNA1__cyto	0.803	#d7191c
 LIF__ext	-3.299	#2c7fb8
 MAVS__cyto	0.632	#d7191c

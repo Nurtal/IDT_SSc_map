@@ -1,6 +1,5 @@
 species_id	log2fc	color
-CREBBP__nuc	30.173	#d7191c
-EP300__nuc	30.173	#d7191c
-HES1__nuc	30.173	#d7191c
-IRF9__cyto	30.173	#d7191c
-JAK1__cyto	-1.981	#2c7fb8
+CAV1__pm	-2.932	#2c7fb8
+JAK1__cyto	-1.894	#2c7fb8
+TMEM173__cyto	30.228	#d7191c
+XAF1__cyto	30.228	#d7191c

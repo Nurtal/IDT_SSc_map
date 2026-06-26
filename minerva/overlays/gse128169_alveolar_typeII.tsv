@@ -1,5 +1,6 @@
 species_id	log2fc	color
 ADAR__nuc	0.506	#d7191c
+AGTR1__pm	2.435	#d7191c
 ARNT__cyto	0.591	#d7191c
 CD19__pm	-2.031	#2c7fb8
 COL5A2__ext	3.146	#d7191c
@@ -11,10 +12,13 @@ IL13RA1__ext	0.490	#d7191c
 ISG20__nuc	-0.921	#2c7fb8
 JAG1__cyto	0.837	#d7191c
 LOXL2__ecm	3.392	#d7191c
+LPAR1__pm	1.475	#d7191c
 LTBP1__ecm	1.497	#d7191c
 LTBP4__ext	1.210	#d7191c
 MAVS__cyto	0.486	#d7191c
+MMP1__ext	6.906	#d7191c
 MTMR4__endo	0.861	#d7191c
+MTOR__cyto	0.662	#d7191c
 MYC__nuc	-0.647	#2c7fb8
 NOTCH3__pm	2.326	#d7191c
 PDE5A__cyto	2.106	#d7191c

@@ -1,3 +1,4 @@
 species_id	log2fc	color
-IFITM1__cyto	29.160	#d7191c
-XBP1__nuc	29.160	#d7191c
+BLIMP1__nuc	26.068	#d7191c
+PLAUR__pm	27.511	#d7191c
+ZEB2__nuc	26.068	#d7191c

@@ -2099,3 +2099,50 @@ l'annotation interne colle au split ; XML bien formé, `module=M5` présent. **F
 **pentagone à 5 modules** (`render_f1_quadrant.py`, M5 en rose distinct) ; decks embarquant F1 + combiné
 rebuild. STATUS + ROADMAP : (b) ✅ fait ; **(a) re-run overlay** reste bloqué sur les données brutes
 (`data/raw/`, miroir Zenodo) — seul item dépendant d'un input externe.
+
+## 2026-06-26 — Item (a) débloqué : re-run complet de l'overlay sur la carte 5-modules
+
+### Données brutes présentes → re-run end-to-end (plus de blocage Zenodo)
+Le STATUS marquait (a) bloqué sur l'absence des archives scRNA-seq brutes. Vérification : les 5 archives
+sont en fait **présentes dans `data/raw/`** et leurs **SHA-256 collent à `data/MIRROR.sha256` (5/5 OK)**
+— Tabib GSE138669, Gur GSE195452 (+ métadonnées), PBMC GSE210395, lung GSE128169. Le dépôt Zenodo n'est
+pas encore créé (DOI `REPLACE_ME`), mais la source réelle (GEO) est déjà miroitée localement. J'ai donc
+relancé `make overlay-multi --deg-backend mixed-v11 --fdr-q 0.05` puis `make aucell` **bout-en-bout**
+sur la carte courante (568/308/133, 5 modules). Run ~50 min (fitting NB-GLM par gène, statsmodels), les
+4 datasets en mode **REAL** (266 884 cellules / 197 donneurs, comptes cellulaires identiques au snapshot).
+
+### Nouveaux chiffres (carte 236 symboles vs ancien snapshot 198)
+- **Couverture** : permissive **82,6 % (195/236)** [était 81,3 % / 161/198] ; robuste (≥2-fold, padj≤0,01)
+  **53,0 % (125/236)** [était 49,5 % / 98/198]. 258 689 tests, 27 840 significatifs.
+- **Par module** : M1 81,6 (31/38) · M2 86,9 (53/61) · M3 78,6 (22/28) · M4 72,0 (18/25) · **M5 100 (19/19)**
+  · Tier-1 79,7 (51/64). M3 reste le plus gros gain vs v1.0 (21 %→78,6 %).
+- **AUCell** : M1/IFN ↑ robuste en ScS — Gur skin ∆=+0,077 **p=6,4e-8** (encore plus net que l'ancien
+  3,2e-4), Tabib ∆=+0,080 p=5,8e-3 ; Z-score Gur M1 ∆=+0,084 p=6,6e-6. M2 whole-tissue paradoxalement ↓
+  (∆=−0,041 p=7,3e-4) = artefact de dilution myofibroblaste (déjà documenté). M5 whole-tissue ≈ 0
+  (B/plasma rares) — le vrai signal M5 reste validé sur pseudobulk B/plasma-restreint (cf M5_validation).
+- **Gur-incrémental** : 24 espèces nouvelles (était 26), liste recalculée (PDGFRA/EGFR/SFRP4 M2 ;
+  DLL4/HES1/RBPJ/MMP12 M3 ; IRF9/RSAD2/XAF1 M1 ; PRDM1/TNFSF13/CD40LG M5…).
+
+### Sous-analyses dépendantes régénérées (toutes recalculées, aucun chiffre laissé périmé)
+- `coverage_v1.1.json` (réécrit, méthodo `load_species_modules`, caveat snapshot retiré),
+  `coverage_sensitivity.{tsv,json}` (grille re-courue), `module_score_contrasts_v1.1.json` (réécrit depuis
+  les nouveaux scores AUCell+Z), `m3_vascular_subset.tsv` (panel EndoMT × clusters vasculaires Gur),
+  novelty KEGG (`compute_novelty.py` → **65/236 = 27,5 %** dans ≥1 des 3 voies KEGG, était 59/198).
+- Figures : F2_multi_overlay, F2_multi_overlay_aucell, F5_M3_vascular régénérées ; **62 overlays MINERVA**
+  (2 nouveaux clusters Gur vs 58).
+
+### M3 vasculaire : les gènes significatifs ont changé → manuscrit corrigé
+Le re-run donne, dans les sous-ensembles vasculaires Gur, **3 gènes significatifs (q≤0,05), tous en
+péricytes** : **EDN1 ↑** (endothéline-1, log2FC +0,81 Peri_RGS5), **ANGPT2 ↑** (log2FC +1,26 Peri_TGFBI),
+**S100A4 ↓** (les deux clusters péricytes). Les 2 clusters endothéliaux : 0 hit. L'ancien texte citait
+NOS3↓/PECAM1↑ — **non reproduits** ; NOS3 fait désormais partie des **5** gènes du panel jamais significatifs
+sur les **70** combinaisons (dataset, cluster) : ZEB1, PRRX1, CDH2, EDNRA, NOS3 (l'ancien disait 6 dont
+CDH5/DLL4, désormais détectés). Le récit (pas d'EndoMT franc en endothélium pseudobulk, signal en
+péricytes/non-endothélium) tient, avec des marqueurs de vasculopathie même plus canoniques (EDN1, ANGPT2).
+
+### Manuscrit rafraîchi (§3.2, §4.4, §4.5, abstract, Methods §2.6) + note de versioning supprimée
+Tous les nombres d'overlay actualisés et rendus mutuellement cohérents (82,6/53,0 %, 236/234, contrastes
+AUCell, 24 espèces, M3 vasculaire, KEGG 65/236). La **note « frozen v1.1 snapshot / re-run bloqué sur
+données brutes »** est remplacée par un encadré « re-dérivé le 2026-06-26 sur la carte courante ». Scan
+final : plus aucun token périmé (161/198, 81,3 %, 49,5 %, 29,8 %, 3,2e-4…) hors les baselines v1.0
+historiques volontaires (« passé de 21 % (5/24) à … »). STATUS + ROADMAP : (a) ✅ fait — M5-split clos.

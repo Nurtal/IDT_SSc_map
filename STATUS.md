@@ -81,18 +81,21 @@ stretch goal — the map content is the deliverable, hosting is one rendering of
 ## What's left
 
 - ✅ 🟢 **Auto lanes COMPLETE**: integration, SBML QC, network analysis, real scRNA-seq overlay
-  (4 datasets, MIM coverage 81.3%), HGNC annotations, DGIdb drug prioritisation, all figures,
+  (4 datasets, MIM coverage 82.6% on the current 236-symbol 5-module map), HGNC annotations, DGIdb drug prioritisation, all figures,
   manuscript draft + v1.1 revision, growth batches (133 SSc reactions), review app + AI verdicts.
 - 🟡 **In progress**: citation integrity sweep (28 `revise` PMIDs → verified replacements);
   manuscript polish.
-- 🟡 **M5 split — propagation almost complete, 2 items remain** (M4 → M4 cytokines + M5 B-cell/
-  autoreactivity, validated; see `analysis/overlay/M5_validation.md`):
-  - **(a) Overlay re-run on the grown 5-module map** — the transcriptomic-overlay numbers in the
-    manuscript §3.2/§4.4 (coverage grid 49.5/81.3%, per-module M1–M4 coverage, 26 Gur species, AUCell
-    contrasts) are a **flagged v1.1 snapshot** computed on the 198-symbol annotation. Re-deriving them
-    on the current 568/308/133 map + 5 modules needs the **raw scRNA-seq archives in `data/raw/`**
-    (Zenodo input mirror, ~3 GB, gitignored). Once present: `make overlay-multi && make aucell`, then
-    refresh manuscript §3.2/§4.4 and `coverage_v1.1.json`. **Blocker: raw data not in local tree.**
+- ✅ 🟢 **M5 split — propagation COMPLETE** (M4 → M4 cytokines + M5 B-cell/autoreactivity, validated;
+  see `analysis/overlay/M5_validation.md`):
+  - ✅ **(a) Overlay re-run on the grown 5-module map — DONE (2026-06-26).** The raw scRNA-seq archives
+    were present in `data/raw/` (SHA-256 verified against `data/MIRROR.sha256`, 5/5 OK), so
+    `make overlay-multi && make aucell` were re-run end-to-end on the current 568/308/133 + 5-module
+    map (all four datasets REAL: Tabib, Gur, PBMC, lung; 266 884 cells / 197 donors). New numbers:
+    **coverage 82.6% (195/236) permissive · 53.0% (125/236) robust** (was 81.3/49.5% on 198 symbols);
+    per-module M1 81.6 / M2 86.9 / M3 78.6 / M4 72.0 / M5 100 / Tier-1 79.7%; Gur M1 AUCell ∆=+0.077
+    p=6.4e-8. Regenerated `coverage_v1.1.json`, `coverage_sensitivity.*`, `module_score_contrasts_v1.1.json`,
+    `m3_vascular_subset.tsv`, F2/F2-aucell/F5 figures, 62 MINERVA overlays, KEGG novelty (65/236). Manuscript
+    §3.2/§4.4/§4.5 + abstract + Methods refreshed and the v1.1-snapshot caveat removed.
   - ✅ **(b) SBML XML re-annotation + F1 5-panel — DONE (2026-06-25).** Re-tagged 25 species in
     `SSc_MIM_integrated.xml` CellDesigner notes (19 B-cell → M5, 6 Th2 → M4) so the XML's internal
     module annotation matches the split; XML well-formed, 568 species, `module=M5` present.

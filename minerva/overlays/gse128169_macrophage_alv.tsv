@@ -1,4 +1,5 @@
 species_id	log2fc	color
+CAV1__pm	-1.159	#2c7fb8
 CLCF1__ext	-1.360	#2c7fb8
 COL1A1__ext	3.962	#d7191c
 COL1A2__ext	2.480	#d7191c
@@ -15,6 +16,7 @@ NOTCH1__cyto	-0.902	#2c7fb8
 POSTN__ecm	2.508	#d7191c
 PTPN2__cyto	0.309	#d7191c
 SAMHD1__nuc	0.779	#d7191c
+SFRP2__ext	1.587	#d7191c
 SMURF1__nuc	-0.401	#2c7fb8
 SNAI2__nuc	-1.784	#2c7fb8
 STAT1__cyto	0.628	#d7191c

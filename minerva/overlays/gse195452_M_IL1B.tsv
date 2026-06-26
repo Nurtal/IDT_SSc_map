@@ -1,4 +1,6 @@
 species_id	log2fc	color
-IRF4__nuc	28.963	#d7191c
-LTBP4__ext	28.963	#d7191c
-STAT6__cyto	-2.725	#2c7fb8
+LTBP4__ext	29.174	#d7191c
+PDGFRA__cyto	29.174	#d7191c
+RBPJ__pm	-0.647	#2c7fb8
+STAT3__cyto	30.616	#d7191c
+STAT6__cyto	-2.654	#2c7fb8

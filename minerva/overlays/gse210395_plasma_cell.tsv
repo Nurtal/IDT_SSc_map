@@ -3,6 +3,8 @@ ANGPT2__ext	1.888	#d7191c
 BCMA__ext	1.929	#d7191c
 CD31__pm	-0.800	#2c7fb8
 COX_2__er	2.161	#d7191c
+EREG__ext	2.149	#d7191c
+FLI1__nuc	1.170	#d7191c
 IFIT2__cyto	-1.076	#2c7fb8
 IL6R__cyto	1.594	#d7191c
 IL6ST__cyto	-1.007	#2c7fb8
@@ -12,12 +14,14 @@ MS4A1__pm	2.198	#d7191c
 MTMR4__endo	1.006	#d7191c
 MYC__nuc	2.653	#d7191c
 NUMB__cyto	0.491	#d7191c
+PLAUR__pm	-1.735	#2c7fb8
 PLCG1__cyto	2.369	#d7191c
 PSMB8__nuc	0.400	#d7191c
 PTPN1__cyto	-0.668	#2c7fb8
 PTPN6__cyto	0.700	#d7191c
 RNASEL__cyto	1.578	#d7191c
 ROCK2__cyto	0.937	#d7191c
+SIRT1__nuc	-0.995	#2c7fb8
 SOCS3__cyto	0.675	#d7191c
 TGFB1__ext	-0.516	#2c7fb8
 THBS1__ecm	4.247	#d7191c

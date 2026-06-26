@@ -1,5 +1,6 @@
 species_id	log2fc	color
 ANGPT2__ext	0.781	#d7191c
+CCL2__ext	-0.864	#2c7fb8
 EDNRB__pm	-1.070	#2c7fb8
 FKBP1A__cyto	0.763	#d7191c
 IFI6__cyto	0.905	#d7191c
@@ -7,6 +8,7 @@ IFITM2__cyto	0.490	#d7191c
 IFITM3__cyto	0.632	#d7191c
 ISG15__cyto	0.700	#d7191c
 LTBP4__ext	-0.956	#2c7fb8
+NOX4__cyto	0.857	#d7191c
 POSTN__ecm	1.084	#d7191c
 TBXA2R__pm	1.090	#d7191c
 TGFB1__ext	0.748	#d7191c

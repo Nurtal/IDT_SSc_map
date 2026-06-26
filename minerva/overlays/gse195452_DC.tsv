@@ -1,6 +1,4 @@
 species_id	log2fc	color
-BCMA__ext	30.567	#d7191c
-IFI6__cyto	1.498	#d7191c
-IFITM1__cyto	0.693	#d7191c
-IFITM3__cyto	0.662	#d7191c
-PDE5A__cyto	32.010	#d7191c
+IFI6__cyto	1.543	#d7191c
+IFITM1__cyto	0.724	#d7191c
+IFITM3__cyto	0.705	#d7191c

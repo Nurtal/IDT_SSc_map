@@ -1,4 +1,6 @@
 species_id	log2fc	color
-GATA3__nuc	-2.911	#2c7fb8
-LTBP1__ecm	-0.989	#2c7fb8
-MAVS__cyto	-1.095	#2c7fb8
+EGFR__pm	-1.373	#2c7fb8
+GATA3__nuc	-2.721	#2c7fb8
+ITGAV__pm	-0.874	#2c7fb8
+LTBP1__ecm	-0.953	#2c7fb8
+MAVS__cyto	-1.066	#2c7fb8

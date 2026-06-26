@@ -1,5 +1,5 @@
 species_id	log2fc	color
-ANGPT2__ext	30.389	#d7191c
-FSP1__pm	-1.119	#2c7fb8
-IL4R__ext	28.946	#d7191c
-SOCS3__cyto	0.203	#d7191c
+DLL1__cyto	29.003	#d7191c
+FSP1__pm	-1.069	#2c7fb8
+IFNAR2_iso2__cyto	29.003	#d7191c
+IL4R__ext	29.003	#d7191c

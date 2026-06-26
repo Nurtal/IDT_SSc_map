@@ -4,6 +4,7 @@ ARRB__cyto	0.413	#d7191c
 COX_2__er	2.567	#d7191c
 DDX58__cyto	1.578	#d7191c
 EDN1__ext	2.637	#d7191c
+FLI1__nuc	0.291	#d7191c
 FURIN__golgi	-0.707	#2c7fb8
 HIF1A__nuc	-1.225	#2c7fb8
 IFI35__cyto	0.800	#d7191c
@@ -16,9 +17,12 @@ PTPN6__cyto	0.741	#d7191c
 RAPGEF1__cyto	-0.495	#2c7fb8
 RASA1__cyto	0.636	#d7191c
 RNASEL__cyto	1.858	#d7191c
+SIRT1__nuc	-0.442	#2c7fb8
 SMAD3__cyto	-1.391	#2c7fb8
 SMAD7__cyto	-1.015	#2c7fb8
 STAT6__cyto	0.299	#d7191c
 SYK__cyto	0.595	#d7191c
 TGFBR2__cyto	0.571	#d7191c
+TLR4__pm	1.874	#d7191c
+TOP1__ext	0.358	#d7191c
 XPO1__nuc	0.590	#d7191c

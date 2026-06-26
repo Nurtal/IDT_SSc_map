@@ -6,6 +6,7 @@ COL1A2__ext	1.244	#d7191c
 COL3A1__ext	1.336	#d7191c
 COL5A2__ext	1.176	#d7191c
 EGR1__cyto	0.625	#d7191c
+ENPP2__ext	1.655	#d7191c
 FKBP1A__cyto	0.549	#d7191c
 IFI27__mito	1.867	#d7191c
 IFI35__cyto	0.929	#d7191c
@@ -25,6 +26,7 @@ LOX__ecm	1.564	#d7191c
 LYN__cyto	1.037	#d7191c
 OSMR__cyto	0.921	#d7191c
 PSMB8__nuc	0.459	#d7191c
+RUNX1__nuc	1.246	#d7191c
 SAMHD1__nuc	0.888	#d7191c
 SNAI1__nuc	1.571	#d7191c
 TMEM173__cyto	0.525	#d7191c

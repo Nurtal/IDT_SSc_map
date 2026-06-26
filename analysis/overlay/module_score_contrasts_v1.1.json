@@ -1,6 +1,7 @@
 {
   "metric_primary": "AUCell (top 5% rank per donor)",
   "metric_secondary": "Tabib-style sign-blinded Z-score",
+  "regenerated": "2026-06-26 on current 568/308/133 five-module map (all four datasets REAL)",
   "n_donors_total": 197,
   "n_ssc_total": 121,
   "n_hc_total": 76,
@@ -11,86 +12,102 @@
       "tissue": "lung",
       "aucell": {
         "M1": {
-          "ssc_mean": 0.3722125,
-          "ssc_sd": 0.10131386081310466,
-          "hc_mean": 0.32,
-          "hc_sd": 0.14622872494828093,
-          "delta_ssc_minus_hc": 0.052212499999999995,
-          "mann_whitney_p_two_sided": 0.46298
+          "ssc_mean": 0.23295,
+          "ssc_sd": 0.07342,
+          "hc_mean": 0.16668,
+          "hc_sd": 0.09337,
+          "delta_ssc_minus_hc": 0.06627,
+          "mann_whitney_p_two_sided": 0.376477
         },
         "M2": {
-          "ssc_mean": 0.0638625,
-          "ssc_sd": 0.04189735543989791,
-          "hc_mean": 0.1289,
-          "hc_sd": 0.0289912917959859,
-          "delta_ssc_minus_hc": -0.06503749999999998,
-          "mann_whitney_p_two_sided": 0.02619
+          "ssc_mean": 0.32006,
+          "ssc_sd": 0.06359,
+          "hc_mean": 0.41818,
+          "hc_sd": 0.05212,
+          "delta_ssc_minus_hc": -0.09812,
+          "mann_whitney_p_two_sided": 0.022704
         },
         "M3": {
-          "ssc_mean": 0.00555,
-          "ssc_sd": 0.010276603107475323,
-          "hc_mean": 0.0,
-          "hc_sd": 0.0,
-          "delta_ssc_minus_hc": 0.00555,
-          "mann_whitney_p_two_sided": 0.29327
+          "ssc_mean": 0.02464,
+          "ssc_sd": 0.02727,
+          "hc_mean": 0.05758,
+          "hc_sd": 0.03882,
+          "delta_ssc_minus_hc": -0.03294,
+          "mann_whitney_p_two_sided": 0.17409
         },
         "M4": {
-          "ssc_mean": 0.066675,
-          "ssc_sd": 0.07789877589355487,
-          "hc_mean": 0.06666000000000001,
-          "hc_sd": 0.04714046032868156,
-          "delta_ssc_minus_hc": 1.4999999999987246e-05,
-          "mann_whitney_p_two_sided": 0.70939
+          "ssc_mean": 0.12311,
+          "ssc_sd": 0.08751,
+          "hc_mean": 0.07276,
+          "hc_sd": 0.04735,
+          "delta_ssc_minus_hc": 0.05035,
+          "mann_whitney_p_two_sided": 0.302163
+        },
+        "M5": {
+          "ssc_mean": 0.0,
+          "ssc_sd": 0.0,
+          "hc_mean": 0.0091,
+          "hc_sd": 0.01213,
+          "delta_ssc_minus_hc": -0.0091,
+          "mann_whitney_p_two_sided": 0.080893
         },
         "ssc_tier1": {
-          "ssc_mean": 0.4916625,
-          "ssc_sd": 0.13721631449753238,
-          "hc_mean": 0.4844399999999999,
-          "hc_sd": 0.12009081147198564,
-          "delta_ssc_minus_hc": 0.007222500000000076,
-          "mann_whitney_p_two_sided": 0.94141
+          "ssc_mean": 0.31439,
+          "ssc_sd": 0.12234,
+          "hc_mean": 0.32424,
+          "hc_sd": 0.05637,
+          "delta_ssc_minus_hc": -0.00985,
+          "mann_whitney_p_two_sided": 0.552677
         }
       },
       "zscore": {
         "M1": {
-          "ssc_mean": 0.5213,
-          "ssc_sd": 0.05750018633510181,
-          "hc_mean": 0.5693,
-          "hc_sd": 0.07539486056754799,
-          "delta_ssc_minus_hc": -0.04800000000000004,
-          "mann_whitney_p_two_sided": 0.35431
+          "ssc_mean": 0.4489,
+          "ssc_sd": 0.05416,
+          "hc_mean": 0.50264,
+          "hc_sd": 0.06805,
+          "delta_ssc_minus_hc": -0.05374,
+          "mann_whitney_p_two_sided": 0.222222
         },
         "M2": {
-          "ssc_mean": 0.1073625,
-          "ssc_sd": 0.07857629481683936,
-          "hc_mean": 0.10706,
-          "hc_sd": 0.033645475178692305,
-          "delta_ssc_minus_hc": 0.0003024999999999972,
-          "mann_whitney_p_two_sided": 0.6216
+          "ssc_mean": 0.029,
+          "ssc_sd": 0.04123,
+          "hc_mean": 0.02268,
+          "hc_sd": 0.02607,
+          "delta_ssc_minus_hc": 0.00632,
+          "mann_whitney_p_two_sided": 0.943279
         },
         "M3": {
-          "ssc_mean": -0.3566125,
-          "ssc_sd": 0.1190844410791891,
-          "hc_mean": -0.2923,
-          "hc_sd": 0.03679531220142043,
-          "delta_ssc_minus_hc": -0.0643125,
-          "mann_whitney_p_two_sided": 0.43512
+          "ssc_mean": -0.28209,
+          "ssc_sd": 0.08754,
+          "hc_mean": -0.21832,
+          "hc_sd": 0.0235,
+          "delta_ssc_minus_hc": -0.06377,
+          "mann_whitney_p_two_sided": 0.17094
         },
         "M4": {
-          "ssc_mean": -0.232925,
-          "ssc_sd": 0.09530721378783455,
-          "hc_mean": -0.18394,
-          "hc_sd": 0.046007314635827204,
-          "delta_ssc_minus_hc": -0.048985,
-          "mann_whitney_p_two_sided": 0.43512
+          "ssc_mean": -0.20356,
+          "ssc_sd": 0.05631,
+          "hc_mean": -0.12342,
+          "hc_sd": 0.02336,
+          "delta_ssc_minus_hc": -0.08014,
+          "mann_whitney_p_two_sided": 0.018648
+        },
+        "M5": {
+          "ssc_mean": -0.3145,
+          "ssc_sd": 0.11135,
+          "hc_mean": -0.12556,
+          "hc_sd": 0.01723,
+          "delta_ssc_minus_hc": -0.18894,
+          "mann_whitney_p_two_sided": 0.010878
         },
         "ssc_tier1": {
-          "ssc_mean": -0.1351,
-          "ssc_sd": 0.07278736154031139,
-          "hc_mean": -0.1832,
-          "hc_sd": 0.011572812968332291,
-          "delta_ssc_minus_hc": 0.048100000000000004,
-          "mann_whitney_p_two_sided": 0.5237
+          "ssc_mean": 0.00146,
+          "ssc_sd": 0.09764,
+          "hc_mean": -0.13044,
+          "hc_sd": 0.01471,
+          "delta_ssc_minus_hc": 0.1319,
+          "mann_whitney_p_two_sided": 0.006216
         }
       }
     },
@@ -100,86 +117,102 @@
       "tissue": "skin_gur",
       "aucell": {
         "M1": {
-          "ssc_mean": 0.26987525773195875,
-          "ssc_sd": 0.10092506711967035,
-          "hc_mean": 0.21208070175438595,
-          "hc_sd": 0.0635606893297278,
-          "delta_ssc_minus_hc": 0.0577945559775728,
-          "mann_whitney_p_two_sided": 0.00032
+          "ssc_mean": 0.24852,
+          "ssc_sd": 0.09854,
+          "hc_mean": 0.17173,
+          "hc_sd": 0.05571,
+          "delta_ssc_minus_hc": 0.07679,
+          "mann_whitney_p_two_sided": 0.0
         },
         "M2": {
-          "ssc_mean": 0.010306185567010311,
-          "ssc_sd": 0.032083695282913924,
-          "hc_mean": 0.0027280701754385964,
-          "hc_sd": 0.013325053663600933,
-          "delta_ssc_minus_hc": 0.007578115391571714,
-          "mann_whitney_p_two_sided": 0.07705
+          "ssc_mean": 0.09546,
+          "ssc_sd": 0.05826,
+          "hc_mean": 0.15259,
+          "hc_sd": 0.0489,
+          "delta_ssc_minus_hc": -0.05713,
+          "mann_whitney_p_two_sided": 0.0
         },
         "M3": {
-          "ssc_mean": 0.0,
-          "ssc_sd": 0.0,
-          "hc_mean": 0.003119298245614035,
-          "hc_sd": 0.017028069668685412,
-          "delta_ssc_minus_hc": -0.003119298245614035,
-          "mann_whitney_p_two_sided": 0.06557
+          "ssc_mean": 0.00391,
+          "ssc_sd": 0.02189,
+          "hc_mean": 0.00213,
+          "hc_sd": 0.01115,
+          "delta_ssc_minus_hc": 0.00178,
+          "mann_whitney_p_two_sided": 0.648248
         },
         "M4": {
-          "ssc_mean": 0.00045773195876288664,
-          "ssc_sd": 0.004508136973193269,
-          "hc_mean": 0.001949122807017544,
-          "hc_sd": 0.01052522688603463,
-          "delta_ssc_minus_hc": -0.0014913908482546573,
-          "mann_whitney_p_two_sided": 0.2843
+          "ssc_mean": 0.02437,
+          "ssc_sd": 0.04551,
+          "hc_mean": 0.01489,
+          "hc_sd": 0.03255,
+          "delta_ssc_minus_hc": 0.00948,
+          "mann_whitney_p_two_sided": 0.292152
+        },
+        "M5": {
+          "ssc_mean": 0.00031,
+          "ssc_sd": 0.00216,
+          "hc_mean": 0.0,
+          "hc_sd": 0.0,
+          "delta_ssc_minus_hc": 0.00031,
+          "mann_whitney_p_two_sided": 0.280984
         },
         "ssc_tier1": {
-          "ssc_mean": 0.7193567010309277,
-          "ssc_sd": 0.12036916557963162,
-          "hc_mean": 0.780122807017544,
-          "hc_sd": 0.0742589124462124,
-          "delta_ssc_minus_hc": -0.06076610598661625,
-          "mann_whitney_p_two_sided": 0.00043
+          "ssc_mean": 0.62747,
+          "ssc_sd": 0.10593,
+          "hc_mean": 0.6587,
+          "hc_sd": 0.07203,
+          "delta_ssc_minus_hc": -0.03123,
+          "mann_whitney_p_two_sided": 0.067199
         }
       },
       "zscore": {
         "M1": {
-          "ssc_mean": 0.3061030927835051,
-          "ssc_sd": 0.11894999864579678,
-          "hc_mean": 0.2272859649122807,
-          "hc_sd": 0.07474539746603726,
-          "delta_ssc_minus_hc": 0.07881712787122441,
-          "mann_whitney_p_two_sided": 2e-05
+          "ssc_mean": 0.23444,
+          "ssc_sd": 0.12347,
+          "hc_mean": 0.15089,
+          "hc_sd": 0.0715,
+          "delta_ssc_minus_hc": 0.08355,
+          "mann_whitney_p_two_sided": 7e-06
         },
         "M2": {
-          "ssc_mean": 0.007096907216494847,
-          "ssc_sd": 0.07550378778247961,
-          "hc_mean": 0.0496,
-          "hc_sd": 0.07526891551535164,
-          "delta_ssc_minus_hc": -0.04250309278350515,
-          "mann_whitney_p_two_sided": 0.00044
+          "ssc_mean": 0.02801,
+          "ssc_sd": 0.07526,
+          "hc_mean": 0.06912,
+          "hc_sd": 0.06129,
+          "delta_ssc_minus_hc": -0.04111,
+          "mann_whitney_p_two_sided": 0.000727
         },
         "M3": {
-          "ssc_mean": -0.3817113402061856,
-          "ssc_sd": 0.09110815788149895,
-          "hc_mean": -0.3232456140350877,
-          "hc_sd": 0.10723448284379863,
-          "delta_ssc_minus_hc": -0.058465726171097854,
-          "mann_whitney_p_two_sided": 0.00046
+          "ssc_mean": -0.33833,
+          "ssc_sd": 0.07026,
+          "hc_mean": -0.30157,
+          "hc_sd": 0.08276,
+          "delta_ssc_minus_hc": -0.03676,
+          "mann_whitney_p_two_sided": 0.012831
         },
         "M4": {
-          "ssc_mean": -0.26706907216494846,
-          "ssc_sd": 0.08854416666371547,
-          "hc_mean": -0.25030877192982454,
-          "hc_sd": 0.09259917517509414,
-          "delta_ssc_minus_hc": -0.016760300235123926,
-          "mann_whitney_p_two_sided": 0.31593
+          "ssc_mean": -0.25202,
+          "ssc_sd": 0.08539,
+          "hc_mean": -0.22695,
+          "hc_sd": 0.09394,
+          "delta_ssc_minus_hc": -0.02507,
+          "mann_whitney_p_two_sided": 0.155039
+        },
+        "M5": {
+          "ssc_mean": -0.47366,
+          "ssc_sd": 0.21325,
+          "hc_mean": -0.53972,
+          "hc_sd": 0.15295,
+          "delta_ssc_minus_hc": 0.06606,
+          "mann_whitney_p_two_sided": 0.037305
         },
         "ssc_tier1": {
-          "ssc_mean": 0.012003092783505157,
-          "ssc_sd": 0.047778090458232544,
-          "hc_mean": 0.006457894736842107,
-          "hc_sd": 0.049383256804625374,
-          "delta_ssc_minus_hc": 0.00554519804666305,
-          "mann_whitney_p_two_sided": 0.77754
+          "ssc_mean": 0.21524,
+          "ssc_sd": 0.09161,
+          "hc_mean": 0.21466,
+          "hc_sd": 0.05626,
+          "delta_ssc_minus_hc": 0.00058,
+          "mann_whitney_p_two_sided": 0.380217
         }
       }
     },
@@ -189,86 +222,102 @@
       "tissue": "pbmc",
       "aucell": {
         "M1": {
-          "ssc_mean": 0.349975,
-          "ssc_sd": 0.04927415651231385,
-          "hc_mean": 0.283325,
-          "hc_sd": 0.22544998521475518,
-          "delta_ssc_minus_hc": 0.06664999999999999,
-          "mann_whitney_p_two_sided": 0.30942
+          "ssc_mean": 0.30302,
+          "ssc_sd": 0.03861,
+          "hc_mean": 0.24243,
+          "hc_sd": 0.16142,
+          "delta_ssc_minus_hc": 0.0606,
+          "mann_whitney_p_two_sided": 0.38363
         },
         "M2": {
-          "ssc_mean": 0.00555,
-          "ssc_sd": 0.0111,
-          "hc_mean": 0.038875,
-          "hc_sd": 0.05250240470683225,
-          "delta_ssc_minus_hc": -0.033325,
-          "mann_whitney_p_two_sided": 0.40835
+          "ssc_mean": 0.16287,
+          "ssc_sd": 0.0197,
+          "hc_mean": 0.20077,
+          "hc_sd": 0.0529,
+          "delta_ssc_minus_hc": -0.0379,
+          "mann_whitney_p_two_sided": 0.278446
         },
         "M3": {
-          "ssc_mean": 0.0,
-          "ssc_sd": 0.0,
+          "ssc_mean": 0.0038,
+          "ssc_sd": 0.00658,
           "hc_mean": 0.0,
           "hc_sd": 0.0,
-          "delta_ssc_minus_hc": 0.0,
-          "mann_whitney_p_two_sided": 1.0
+          "delta_ssc_minus_hc": 0.0038,
+          "mann_whitney_p_two_sided": 0.453255
         },
         "M4": {
           "ssc_mean": 0.0,
           "ssc_sd": 0.0,
-          "hc_mean": 0.00555,
-          "hc_sd": 0.0111,
-          "delta_ssc_minus_hc": -0.00555,
-          "mann_whitney_p_two_sided": 0.45325
+          "hc_mean": 0.00758,
+          "hc_sd": 0.01312,
+          "delta_ssc_minus_hc": -0.00758,
+          "mann_whitney_p_two_sided": 0.453255
+        },
+        "M5": {
+          "ssc_mean": 0.0379,
+          "ssc_sd": 0.01693,
+          "hc_mean": 0.072,
+          "hc_sd": 0.04592,
+          "delta_ssc_minus_hc": -0.0341,
+          "mann_whitney_p_two_sided": 0.465124
         },
         "ssc_tier1": {
-          "ssc_mean": 0.644475,
-          "ssc_sd": 0.04444999999999999,
-          "hc_mean": 0.672225,
-          "hc_sd": 0.18537371937071698,
-          "delta_ssc_minus_hc": -0.02774999999999994,
-          "mann_whitney_p_two_sided": 0.30052
+          "ssc_mean": 0.49243,
+          "ssc_sd": 0.01696,
+          "hc_mean": 0.47728,
+          "hc_sd": 0.08335,
+          "delta_ssc_minus_hc": 0.01515,
+          "mann_whitney_p_two_sided": 0.380746
         }
       },
       "zscore": {
         "M1": {
-          "ssc_mean": 0.7270000000000001,
-          "ssc_sd": 0.10239241508367049,
-          "hc_mean": 0.641275,
-          "hc_sd": 0.15608897836383795,
-          "delta_ssc_minus_hc": 0.08572500000000005,
-          "mann_whitney_p_two_sided": 0.48571
+          "ssc_mean": 0.74055,
+          "ssc_sd": 0.07815,
+          "hc_mean": 0.66255,
+          "hc_sd": 0.13227,
+          "delta_ssc_minus_hc": 0.078,
+          "mann_whitney_p_two_sided": 0.485714
         },
         "M2": {
-          "ssc_mean": 0.025625000000000002,
-          "ssc_sd": 0.054773434862775104,
-          "hc_mean": 0.06865,
-          "hc_sd": 0.05704761169409285,
-          "delta_ssc_minus_hc": -0.043025,
-          "mann_whitney_p_two_sided": 0.34286
+          "ssc_mean": -0.09317,
+          "ssc_sd": 0.02702,
+          "hc_mean": -0.07475,
+          "hc_sd": 0.02633,
+          "delta_ssc_minus_hc": -0.01842,
+          "mann_whitney_p_two_sided": 0.685714
         },
         "M3": {
-          "ssc_mean": -0.2791,
-          "ssc_sd": 0.04152726012312073,
-          "hc_mean": -0.24245,
-          "hc_sd": 0.03471834289440286,
-          "delta_ssc_minus_hc": -0.036650000000000016,
+          "ssc_mean": -0.21357,
+          "ssc_sd": 0.03299,
+          "hc_mean": -0.18233,
+          "hc_sd": 0.02534,
+          "delta_ssc_minus_hc": -0.03125,
           "mann_whitney_p_two_sided": 0.2
         },
         "M4": {
-          "ssc_mean": -0.39962499999999995,
-          "ssc_sd": 0.057700454937547926,
-          "hc_mean": -0.37875000000000003,
-          "hc_sd": 0.03152422349030452,
-          "delta_ssc_minus_hc": -0.02087499999999992,
-          "mann_whitney_p_two_sided": 1.0
+          "ssc_mean": -0.34537,
+          "ssc_sd": 0.0358,
+          "hc_mean": -0.33095,
+          "hc_sd": 0.02196,
+          "delta_ssc_minus_hc": -0.01442,
+          "mann_whitney_p_two_sided": 0.885714
+        },
+        "M5": {
+          "ssc_mean": 0.55065,
+          "ssc_sd": 0.11455,
+          "hc_mean": 0.57527,
+          "hc_sd": 0.10165,
+          "delta_ssc_minus_hc": -0.02462,
+          "mann_whitney_p_two_sided": 0.885714
         },
         "ssc_tier1": {
-          "ssc_mean": -0.184325,
-          "ssc_sd": 0.021430410635356476,
-          "hc_mean": -0.17804999999999999,
-          "hc_sd": 0.031653804405368614,
-          "delta_ssc_minus_hc": -0.006275000000000003,
-          "mann_whitney_p_two_sided": 0.88571
+          "ssc_mean": -0.29712,
+          "ssc_sd": 0.01735,
+          "hc_mean": -0.30165,
+          "hc_sd": 0.00754,
+          "delta_ssc_minus_hc": 0.00453,
+          "mann_whitney_p_two_sided": 1.0
         }
       }
     },
@@ -278,86 +327,102 @@
       "tissue": "skin",
       "aucell": {
         "M1": {
-          "ssc_mean": 0.24445833333333333,
-          "ssc_sd": 0.09331481864520703,
-          "hc_mean": 0.15334,
-          "hc_sd": 0.055884269303226604,
-          "delta_ssc_minus_hc": 0.09111833333333333,
-          "mann_whitney_p_two_sided": 0.0105
+          "ssc_mean": 0.13637,
+          "ssc_sd": 0.06027,
+          "hc_mean": 0.05609,
+          "hc_sd": 0.0434,
+          "delta_ssc_minus_hc": 0.08028,
+          "mann_whitney_p_two_sided": 0.005754
         },
         "M2": {
-          "ssc_mean": 0.0037,
-          "ssc_sd": 0.012817175976009693,
-          "hc_mean": 0.0,
-          "hc_sd": 0.0,
-          "delta_ssc_minus_hc": 0.0037,
-          "mann_whitney_p_two_sided": 0.41131
+          "ssc_mean": 0.30177,
+          "ssc_sd": 0.05373,
+          "hc_mean": 0.38333,
+          "hc_sd": 0.09065,
+          "delta_ssc_minus_hc": -0.08156,
+          "mann_whitney_p_two_sided": 0.034294
         },
         "M3": {
-          "ssc_mean": 0.14814166666666664,
-          "ssc_sd": 0.11656192625173604,
-          "hc_mean": 0.14444,
-          "hc_sd": 0.09784621948070689,
-          "delta_ssc_minus_hc": 0.003701666666666631,
-          "mann_whitney_p_two_sided": 0.94719
+          "ssc_mean": 0.08839,
+          "ssc_sd": 0.07672,
+          "hc_mean": 0.05758,
+          "hc_sd": 0.05937,
+          "delta_ssc_minus_hc": 0.03081,
+          "mann_whitney_p_two_sided": 0.713035
         },
         "M4": {
-          "ssc_mean": 0.06111666666666666,
-          "ssc_sd": 0.06223827868228148,
-          "hc_mean": 0.11999,
-          "hc_sd": 0.10328290651302266,
-          "delta_ssc_minus_hc": -0.05887333333333334,
-          "mann_whitney_p_two_sided": 0.13513
+          "ssc_mean": 0.12502,
+          "ssc_sd": 0.07554,
+          "hc_mean": 0.18182,
+          "hc_sd": 0.1023,
+          "delta_ssc_minus_hc": -0.0568,
+          "mann_whitney_p_two_sided": 0.261231
+        },
+        "M5": {
+          "ssc_mean": 0.0,
+          "ssc_sd": 0.0,
+          "hc_mean": 0.0,
+          "hc_sd": 0.0,
+          "delta_ssc_minus_hc": 0.0,
+          "mann_whitney_p_two_sided": 1.0
         },
         "ssc_tier1": {
-          "ssc_mean": 0.5425916666666666,
-          "ssc_sd": 0.18986274208841852,
-          "hc_mean": 0.58224,
-          "hc_sd": 0.17175904440038475,
-          "delta_ssc_minus_hc": -0.039648333333333396,
-          "mann_whitney_p_two_sided": 0.59523
+          "ssc_mean": 0.34849,
+          "ssc_sd": 0.15734,
+          "hc_mean": 0.32122,
+          "hc_sd": 0.13101,
+          "delta_ssc_minus_hc": 0.02727,
+          "mann_whitney_p_two_sided": 0.597429
         }
       },
       "zscore": {
         "M1": {
-          "ssc_mean": 0.2829333333333333,
-          "ssc_sd": 0.073575926563632,
-          "hc_mean": 0.27034,
-          "hc_sd": 0.03483144173492297,
-          "delta_ssc_minus_hc": 0.01259333333333329,
-          "mann_whitney_p_two_sided": 0.71686
-        },
-        "M2": {
-          "ssc_mean": 0.13176666666666667,
-          "ssc_sd": 0.0955407607762099,
-          "hc_mean": 0.13427,
-          "hc_sd": 0.0669788863913265,
-          "delta_ssc_minus_hc": -0.0025033333333333296,
-          "mann_whitney_p_two_sided": 0.66822
-        },
-        "M3": {
-          "ssc_mean": -0.17480833333333334,
-          "ssc_sd": 0.10445882580174252,
-          "hc_mean": -0.16455000000000003,
-          "hc_sd": 0.0887337872515312,
-          "delta_ssc_minus_hc": -0.010258333333333314,
+          "ssc_mean": 0.20297,
+          "ssc_sd": 0.06823,
+          "hc_mean": 0.18641,
+          "hc_sd": 0.03887,
+          "delta_ssc_minus_hc": 0.01656,
           "mann_whitney_p_two_sided": 1.0
         },
+        "M2": {
+          "ssc_mean": 0.0449,
+          "ssc_sd": 0.04347,
+          "hc_mean": 0.0214,
+          "hc_sd": 0.03871,
+          "delta_ssc_minus_hc": 0.0235,
+          "mann_whitney_p_two_sided": 0.306762
+        },
+        "M3": {
+          "ssc_mean": -0.15277,
+          "ssc_sd": 0.08057,
+          "hc_mean": -0.12869,
+          "hc_sd": 0.06185,
+          "delta_ssc_minus_hc": -0.02408,
+          "mann_whitney_p_two_sided": 0.766679
+        },
         "M4": {
-          "ssc_mean": -0.24502500000000005,
-          "ssc_sd": 0.08372045611872449,
-          "hc_mean": -0.19113000000000002,
-          "hc_sd": 0.060093927406278835,
-          "delta_ssc_minus_hc": -0.053895000000000026,
-          "mann_whitney_p_two_sided": 0.03211
+          "ssc_mean": -0.18088,
+          "ssc_sd": 0.05639,
+          "hc_mean": -0.12293,
+          "hc_sd": 0.03642,
+          "delta_ssc_minus_hc": -0.05794,
+          "mann_whitney_p_two_sided": 0.02718
+        },
+        "M5": {
+          "ssc_mean": -0.60053,
+          "ssc_sd": 0.06789,
+          "hc_mean": -0.61291,
+          "hc_sd": 0.10965,
+          "delta_ssc_minus_hc": 0.01238,
+          "mann_whitney_p_two_sided": 0.276605
         },
         "ssc_tier1": {
-          "ssc_mean": -0.08854166666666667,
-          "ssc_sd": 0.059104629234685985,
-          "hc_mean": -0.0991,
-          "hc_sd": 0.04710904607633466,
-          "delta_ssc_minus_hc": 0.010558333333333322,
-          "mann_whitney_p_two_sided": 0.71686
+          "ssc_mean": 0.14028,
+          "ssc_sd": 0.05377,
+          "hc_mean": 0.13595,
+          "hc_sd": 0.03659,
+          "delta_ssc_minus_hc": 0.00433,
+          "mann_whitney_p_two_sided": 0.668216
         }
       }
     }

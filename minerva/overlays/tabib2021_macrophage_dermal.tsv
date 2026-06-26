@@ -1,6 +1,7 @@
 species_id	log2fc	color
 BST2__ext	0.703	#d7191c
 CD79A__pm	4.092	#d7191c
+CLIC4__cyto	0.849	#d7191c
 IFI27__mito	2.845	#d7191c
 IFI6__cyto	1.975	#d7191c
 IFITM1__cyto	3.206	#d7191c

@@ -1,3 +1,4 @@
 species_id	log2fc	color
-CD154__pm	-1.204	#2c7fb8
-IFI6__cyto	1.620	#d7191c
+CD154__pm	-1.171	#2c7fb8
+IFI6__cyto	1.689	#d7191c
+XBP1__nuc	0.694	#d7191c

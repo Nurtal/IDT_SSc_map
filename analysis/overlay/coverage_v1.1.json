@@ -2,45 +2,45 @@
   "backend": "mixed-v11 (statsmodels NB GLM)",
   "fdr_q": 0.05,
   "overall": {
-    "hit": 161,
-    "denom": 198,
-    "pct": 81.3
+    "hit": 195,
+    "denom": 236,
+    "pct": 82.6
   },
   "per_module": {
     "M1": {
-      "denom": 37,
+      "denom": 38,
       "hit": 31,
-      "pct": 83.8
+      "pct": 81.6
     },
     "M2": {
-      "denom": 32,
-      "hit": 28,
-      "pct": 87.5
+      "denom": 61,
+      "hit": 53,
+      "pct": 86.9
     },
     "M3": {
-      "denom": 24,
-      "hit": 18,
-      "pct": 75.0
+      "denom": 28,
+      "hit": 22,
+      "pct": 78.6
     },
     "M4": {
-      "denom": 23,
-      "hit": 17,
-      "pct": 73.9
+      "denom": 25,
+      "hit": 18,
+      "pct": 72.0
+    },
+    "M5": {
+      "denom": 19,
+      "hit": 19,
+      "pct": 100.0
     },
     "crosstalk": {
-      "denom": 2,
+      "denom": 1,
       "hit": 1,
-      "pct": 50.0
+      "pct": 100.0
     },
     "ssc_tier1": {
       "denom": 64,
       "hit": 51,
       "pct": 79.7
-    },
-    "M5": {
-      "denom": 17,
-      "hit": 16,
-      "pct": 94.1
     }
   },
   "baseline_v1.0": {
@@ -76,5 +76,5 @@
     ]
   },
   "source": "analysis/overlay/build_overlay_multi.report.json",
-  "note": "M4 split into M4 (cytokine) + M5 (B-cell/autoreactivity) on 2026-06-25; M1/M2/M3 species unchanged so their pct is unchanged; M4/M5/ssc_tier1 recomputed (gene-set DE-coverage); overall species set is relabelled not changed, so overall pct unchanged. M5 AUCell signal is validated on a B/plasma-restricted pseudobulk (see analysis/overlay/M5_validation.md), not whole-tissue."
+  "note": "Re-derived 2026-06-26 on the current 568/308/133 + 5-module map (236 RNA-detectable HGNC symbols), all four scRNA-seq datasets REAL (Tabib GSE138669, Gur GSE195452, PBMC GSE210395, lung GSE128169). Backend mixed-v11 (statsmodels NB GLM pseudobulk DEG, BH-FDR q<=0.05). Coverage = MIM symbol with >=1 DEG hit across datasets; per-module denom = distinct HGNC symbols whose first module token is that module (load_species_modules semantics). Supersedes the flagged v1.1 198-symbol snapshot. M5 whole-tissue AUCell is near-zero by B/plasma dilution; M5 signal is validated on a B/plasma-restricted pseudobulk (Gur internal p=0.046) and externally on GSE45536 (p=1.3e-4) \u2014 see analysis/overlay/M5_validation.md."
 }

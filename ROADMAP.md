@@ -205,16 +205,15 @@ The old M4 ("IL-6/Th2/B") was split into **M4 (cytokines: IL-6/IL-4/IL-13)** and
 autoreactivity)**; M5 is validated (skin B/plasma p=0.046; external GSE45536 p=1.3×10⁻⁴, autoantigen
 core p=1.7×10⁻¹⁰ — `analysis/overlay/M5_validation.md`). The split is propagated into the annotation
 tables, AUCell, coverage, decks, README, reference doc, module specs and the manuscript architecture.
-Two items remain:
+**Both follow-up items are now DONE:**
 
-| Item | Lane | What | Blocker |
+| Item | Lane | What | Status |
 |------|------|------|---------|
-| **(a) Overlay re-run on the 5-module map** | 🔴 data | Manuscript §3.2/§4.4 overlay numbers (coverage grid 49.5/81.3%, per-module M1–M4 coverage, 26 Gur species, AUCell contrasts) are a **flagged v1.1 snapshot** on the 198-symbol annotation. Re-derive on the current 568/308/133 + 5-module map: `make overlay-multi && make aucell`, then refresh §3.2/§4.4 + `coverage_v1.1.json`. | **Raw scRNA-seq archives** (~3 GB, Zenodo input mirror) must be placed in `data/raw/` — gitignored, not in the local tree. |
+| **(a) Overlay re-run on the 5-module map** | ✅ done (2026-06-26) | Raw scRNA-seq archives were present in `data/raw/` (SHA-256 verified, 5/5 OK); re-ran `make overlay-multi && make aucell` end-to-end on the current 568/308/133 + 5-module map (4 REAL datasets, 266 884 cells / 197 donors). New coverage **82.6% (195/236) permissive · 53.0% (125/236) robust**; per-module M1 81.6 / M2 86.9 / M3 78.6 / M4 72.0 / M5 100 / Tier-1 79.7%. Regenerated `coverage_v1.1.json`, `coverage_sensitivity.*`, `module_score_contrasts_v1.1.json`, `m3_vascular_subset.tsv`, F2/F2-aucell/F5, 62 MINERVA overlays, KEGG novelty (65/236). Manuscript §3.2/§4.4/§4.5 + abstract + Methods refreshed; v1.1-snapshot caveat removed. | — |
 | **(b) XML re-annotation + F1 5-panel** | ✅ done (2026-06-25) | Re-tagged 25 species in `SSc_MIM_integrated.xml` notes (19 B-cell → M5, 6 Th2 → M4); XML well-formed, `module=M5` present. F1 regenerated as a five-module pentagon (`scripts/render_f1_quadrant.py`); F1-embedding decks + combined PDF rebuilt. | — |
 
-When (a) becomes unblocked, also re-tag the v1.1 snapshot framing out of the manuscript and regenerate
-F2 with an M5 panel. M5 should be scored on a **B/plasma-restricted pseudobulk**
-(`scripts/build_bplasma_pseudobulk.py`), not whole-tissue.
+Note: whole-tissue AUCell for M5 remains near-zero by B/plasma dilution; the validated M5 signal lives
+in the **B/plasma-restricted pseudobulk** (`scripts/build_bplasma_pseudobulk.py`) — see M5_validation.md.
 
 ### Phase 2 (curation) — remaining
 

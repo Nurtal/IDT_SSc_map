@@ -62,7 +62,7 @@ tabib2021	skin	T_lymphocyte	NPDC1			3.091
 tabib2021	skin	T_lymphocyte	IFITM2	IFITM2__cyto	M1	0.547
 tabib2021	skin	T_lymphocyte	IRF7	IRF7__cyto	ssc_tier1	0.685
 tabib2021	skin	T_lymphocyte	TPP1			0.864
-tabib2021	skin	T_lymphocyte	MS4A1	MS4A1__pm	ssc_tier1	-1.630
+tabib2021	skin	T_lymphocyte	MS4A1	MS4A1__pm	M5	-1.630
 tabib2021	skin	T_lymphocyte	COX8A			0.556
 tabib2021	skin	T_lymphocyte	EHD1			0.502
 tabib2021	skin	T_lymphocyte	SIPA1			1.416
@@ -98,7 +98,7 @@ tabib2021	skin	T_lymphocyte	BRMS1L			-0.900
 tabib2021	skin	T_lymphocyte	GNG2			0.764
 tabib2021	skin	T_lymphocyte	PTGER2			1.165
 tabib2021	skin	T_lymphocyte	GCH1			0.858
-tabib2021	skin	T_lymphocyte	LGALS3			-1.196
+tabib2021	skin	T_lymphocyte	LGALS3	LGALS3__ext	M2	-1.196
 tabib2021	skin	T_lymphocyte	PPM1A			0.914
 tabib2021	skin	T_lymphocyte	DCAF5			-0.880
 tabib2021	skin	T_lymphocyte	RAB27A			0.737
@@ -561,7 +561,7 @@ tabib2021	skin	endothelial_vascular	PRCP			0.978
 tabib2021	skin	endothelial_vascular	HIKESHI			0.288
 tabib2021	skin	endothelial_vascular	PRSS23			0.979
 tabib2021	skin	endothelial_vascular	FZD4			0.523
-tabib2021	skin	endothelial_vascular	NOX4			0.857
+tabib2021	skin	endothelial_vascular	NOX4	NOX4__cyto	M2	0.857
 tabib2021	skin	endothelial_vascular	SLC35F2			0.944
 tabib2021	skin	endothelial_vascular	TIMM8B			0.481
 tabib2021	skin	endothelial_vascular	ZBTB16			-1.331
@@ -767,7 +767,7 @@ tabib2021	skin	endothelial_vascular	SPECC1			-0.898
 tabib2021	skin	endothelial_vascular	LGALS9			1.292
 tabib2021	skin	endothelial_vascular	SSH2			0.558
 tabib2021	skin	endothelial_vascular	CPD			0.652
-tabib2021	skin	endothelial_vascular	CCL2			-0.864
+tabib2021	skin	endothelial_vascular	CCL2	CCL2__ext	M4	-0.864
 tabib2021	skin	endothelial_vascular	ZNF830			-0.413
 tabib2021	skin	endothelial_vascular	SLFN11			-0.786
 tabib2021	skin	endothelial_vascular	CCL5			2.155
@@ -1112,7 +1112,7 @@ tabib2021	skin	fibroblast_other	SPC25			3.323
 tabib2021	skin	fibroblast_other	PPIG			-0.332
 tabib2021	skin	fibroblast_other	SP5			-1.116
 tabib2021	skin	fibroblast_other	PDE1A			1.064
-tabib2021	skin	fibroblast_other	ITGAV			0.908
+tabib2021	skin	fibroblast_other	ITGAV	ITGAV__pm	M2	0.908
 tabib2021	skin	fibroblast_other	COL5A2	COL5A2__ext	ssc_tier1	1.559
 tabib2021	skin	fibroblast_other	STAT1	STAT1__cyto	M1	1.485
 tabib2021	skin	fibroblast_other	CAVIN2			-1.377
@@ -1343,7 +1343,7 @@ tabib2021	skin	fibroblast_other	COL10A1			3.205
 tabib2021	skin	fibroblast_other	CEP85L			-0.739
 tabib2021	skin	fibroblast_other	GJA1			1.109
 tabib2021	skin	fibroblast_other	ENPP3			-3.281
-tabib2021	skin	fibroblast_other	CTGF	CTGF__ext	M2	0.807
+tabib2021	skin	fibroblast_other	CTGF			0.807
 tabib2021	skin	fibroblast_other	ABRACL			0.686
 tabib2021	skin	fibroblast_other	AL035446.1			-3.330
 tabib2021	skin	fibroblast_other	RMND1			-0.381
@@ -1557,7 +1557,7 @@ tabib2021	skin	fibroblast_other	SAA1			3.381
 tabib2021	skin	fibroblast_other	LUZP2			2.838
 tabib2021	skin	fibroblast_other	DEPDC7			0.631
 tabib2021	skin	fibroblast_other	CAT			-0.857
-tabib2021	skin	fibroblast_other	CREB3L1			0.882
+tabib2021	skin	fibroblast_other	CREB3L1	CREB3L1__nuc	M2	0.882
 tabib2021	skin	fibroblast_other	MDK			1.066
 tabib2021	skin	fibroblast_other	ARHGAP1			0.552
 tabib2021	skin	fibroblast_other	MTCH2			0.638
@@ -1595,7 +1595,7 @@ tabib2021	skin	fibroblast_other	SYTL2			1.080
 tabib2021	skin	fibroblast_other	ME3			1.532
 tabib2021	skin	fibroblast_other	PRSS23			2.697
 tabib2021	skin	fibroblast_other	CTSC			1.838
-tabib2021	skin	fibroblast_other	NOX4			2.373
+tabib2021	skin	fibroblast_other	NOX4	NOX4__cyto	M2	2.373
 tabib2021	skin	fibroblast_other	SMCO4			0.790
 tabib2021	skin	fibroblast_other	CWC15			-0.336
 tabib2021	skin	fibroblast_other	ENDOD1			-0.936
@@ -1613,7 +1613,7 @@ tabib2021	skin	fibroblast_other	DPAGT1			0.517
 tabib2021	skin	fibroblast_other	THY1			1.578
 tabib2021	skin	fibroblast_other	FEZ1			-0.656
 tabib2021	skin	fibroblast_other	FAM118B			0.832
-tabib2021	skin	fibroblast_other	FLI1			1.016
+tabib2021	skin	fibroblast_other	FLI1	FLI1__nuc	M3	1.016
 tabib2021	skin	fibroblast_other	AKR1C2			-0.669
 tabib2021	skin	fibroblast_other	SEC61A2			0.909
 tabib2021	skin	fibroblast_other	CACNB2			2.058
@@ -1760,7 +1760,7 @@ tabib2021	skin	fibroblast_other	CDKN3			2.367
 tabib2021	skin	fibroblast_other	CNIH1			0.475
 tabib2021	skin	fibroblast_other	CGRRF1			-0.511
 tabib2021	skin	fibroblast_other	GCH1			1.212
-tabib2021	skin	fibroblast_other	LGALS3			-0.573
+tabib2021	skin	fibroblast_other	LGALS3	LGALS3__ext	M2	-0.573
 tabib2021	skin	fibroblast_other	DLGAP5			2.934
 tabib2021	skin	fibroblast_other	PELI2			-0.883
 tabib2021	skin	fibroblast_other	PPP1R36			-1.174
@@ -1783,7 +1783,7 @@ tabib2021	skin	fibroblast_other	ZFYVE21			-0.444
 tabib2021	skin	fibroblast_other	NUDT14			0.851
 tabib2021	skin	fibroblast_other	IGHG2			1.886
 tabib2021	skin	fibroblast_other	KLF13			-0.704
-tabib2021	skin	fibroblast_other	GREM1			1.329
+tabib2021	skin	fibroblast_other	GREM1	GREM1__ext	M2	1.329
 tabib2021	skin	fibroblast_other	NOP10			0.441
 tabib2021	skin	fibroblast_other	THBS1	THBS1__ecm	ssc_tier1	1.953
 tabib2021	skin	fibroblast_other	GCHFR			-1.004
@@ -1844,7 +1844,7 @@ tabib2021	skin	fibroblast_other	AC007728.2			1.953
 tabib2021	skin	fibroblast_other	FTO			0.577
 tabib2021	skin	fibroblast_other	MT2A			1.400
 tabib2021	skin	fibroblast_other	NLRC5			0.804
-tabib2021	skin	fibroblast_other	CDH11			0.980
+tabib2021	skin	fibroblast_other	CDH11	CDH11__pm	M2	0.980
 tabib2021	skin	fibroblast_other	CMTM3			0.430
 tabib2021	skin	fibroblast_other	B3GNT9			1.041
 tabib2021	skin	fibroblast_other	E2F4			0.383
@@ -2069,7 +2069,7 @@ tabib2021	skin	fibroblast_other	ARSA			1.299
 tabib2021	skin	fibroblast_other	EVA1C			-0.930
 tabib2021	skin	fibroblast_other	IFNAR2	IFNAR2_iso2__cyto	M1	0.628
 tabib2021	skin	fibroblast_other	CLIC6			1.413
-tabib2021	skin	fibroblast_other	RUNX1			1.462
+tabib2021	skin	fibroblast_other	RUNX1	RUNX1__nuc	M2	1.462
 tabib2021	skin	fibroblast_other	CBR1			-0.614
 tabib2021	skin	fibroblast_other	AP000692.2			-0.764
 tabib2021	skin	fibroblast_other	KCNJ15			2.815
@@ -2315,7 +2315,7 @@ tabib2021	skin	keratinocyte	TMEM50B			0.416
 tabib2021	skin	macrophage_dermal	ISG15	ISG15__cyto	M1	1.008
 tabib2021	skin	macrophage_dermal	CEP104			-1.090
 tabib2021	skin	macrophage_dermal	PLA2G2A			33.719
-tabib2021	skin	macrophage_dermal	CLIC4			0.849
+tabib2021	skin	macrophage_dermal	CLIC4	CLIC4__cyto	M2	0.849
 tabib2021	skin	macrophage_dermal	SH3BGRL3			0.644
 tabib2021	skin	macrophage_dermal	CD52			0.724
 tabib2021	skin	macrophage_dermal	IFI6	IFI6__cyto	M1	1.975
@@ -2524,7 +2524,7 @@ tabib2021	skin	macrophage_dermal	TPM4			0.529
 tabib2021	skin	macrophage_dermal	BST2	BST2__ext	M1	0.703
 tabib2021	skin	macrophage_dermal	MAP1S			1.038
 tabib2021	skin	macrophage_dermal	TGFB1	TGFB1__ext	M2	0.677
-tabib2021	skin	macrophage_dermal	CD79A	CD79A__pm	ssc_tier1	4.092
+tabib2021	skin	macrophage_dermal	CD79A	CD79A__pm	M5	4.092
 tabib2021	skin	macrophage_dermal	ETHE1			0.777
 tabib2021	skin	macrophage_dermal	ZNF234			-2.513
 tabib2021	skin	macrophage_dermal	NAPA			0.765
@@ -2863,7 +2863,7 @@ tabib2021	skin	myofibroblast_FAP_CTHRC1	BEX2			-1.375
 tabib2021	skin	myofibroblast_FAP_CTHRC1	TCEAL7			-1.437
 tabib2021	skin	myofibroblast_FAP_CTHRC1	COL4A6			-1.282
 tabib2021	skin	myofibroblast_FAP_CTHRC1	ALG13			-1.232
-tabib2021	skin	myofibroblast_FAP_CTHRC1	IL13RA1	IL13RA1__ext	ssc_tier1	0.560
+tabib2021	skin	myofibroblast_FAP_CTHRC1	IL13RA1	IL13RA1__ext	M4	0.560
 tabib2021	skin	myofibroblast_FAP_CTHRC1	CXorf40B			-0.858
 tabib2021	skin	myofibroblast_FAP_CTHRC1	BGN			1.241
 tabib2021	skin	myofibroblast_FAP_CTHRC1	IRAK1			0.895
@@ -2876,7 +2876,7 @@ tabib2021	skin	myofibroblast_FAP_CTHRC1	LOXL2	LOXL2__ecm	ssc_tier1	0.914
 tabib2021	skin	myofibroblast_FAP_CTHRC1	ENTPD4			0.851
 tabib2021	skin	myofibroblast_FAP_CTHRC1	NEFM			-2.214
 tabib2021	skin	myofibroblast_FAP_CTHRC1	LEPROTL1			0.626
-tabib2021	skin	myofibroblast_FAP_CTHRC1	LYN	LYN__cyto	ssc_tier1	1.037
+tabib2021	skin	myofibroblast_FAP_CTHRC1	LYN	LYN__cyto	M5	1.037
 tabib2021	skin	myofibroblast_FAP_CTHRC1	CHCHD7			-0.363
 tabib2021	skin	myofibroblast_FAP_CTHRC1	LACTB2			0.618
 tabib2021	skin	myofibroblast_FAP_CTHRC1	MSC			1.460
@@ -2890,7 +2890,7 @@ tabib2021	skin	myofibroblast_FAP_CTHRC1	SNX31			2.240
 tabib2021	skin	myofibroblast_FAP_CTHRC1	AC027031.2			0.950
 tabib2021	skin	myofibroblast_FAP_CTHRC1	EIF3H			-0.392
 tabib2021	skin	myofibroblast_FAP_CTHRC1	TNFRSF11B			2.519
-tabib2021	skin	myofibroblast_FAP_CTHRC1	ENPP2			1.655
+tabib2021	skin	myofibroblast_FAP_CTHRC1	ENPP2	ENPP2__ext	M2	1.655
 tabib2021	skin	myofibroblast_FAP_CTHRC1	DSCC1			1.415
 tabib2021	skin	myofibroblast_FAP_CTHRC1	LY6E			1.526
 tabib2021	skin	myofibroblast_FAP_CTHRC1	GPAA1			0.384
@@ -3050,7 +3050,7 @@ tabib2021	skin	myofibroblast_FAP_CTHRC1	CYSLTR2			-1.764
 tabib2021	skin	myofibroblast_FAP_CTHRC1	PHF11			0.669
 tabib2021	skin	myofibroblast_FAP_CTHRC1	SPRY2			0.743
 tabib2021	skin	myofibroblast_FAP_CTHRC1	ABHD13			0.748
-tabib2021	skin	myofibroblast_FAP_CTHRC1	TNFSF13B	TNFSF13B__ext	ssc_tier1	3.481
+tabib2021	skin	myofibroblast_FAP_CTHRC1	TNFSF13B	TNFSF13B__ext	M5	3.481
 tabib2021	skin	myofibroblast_FAP_CTHRC1	COL4A1			1.691
 tabib2021	skin	myofibroblast_FAP_CTHRC1	COL4A2			1.324
 tabib2021	skin	myofibroblast_FAP_CTHRC1	ANKRD10			0.634
@@ -3286,7 +3286,7 @@ tabib2021	skin	myofibroblast_FAP_CTHRC1	FBLN1			1.230
 tabib2021	skin	myofibroblast_FAP_CTHRC1	TYMP			0.955
 tabib2021	skin	myofibroblast_FAP_CTHRC1	IFNAR2	IFNAR2_iso2__cyto	M1	1.190
 tabib2021	skin	myofibroblast_FAP_CTHRC1	ATP5PO			-0.281
-tabib2021	skin	myofibroblast_FAP_CTHRC1	RUNX1			1.246
+tabib2021	skin	myofibroblast_FAP_CTHRC1	RUNX1	RUNX1__nuc	M2	1.246
 tabib2021	skin	myofibroblast_FAP_CTHRC1	LINC01423			33.280
 tabib2021	skin	myofibroblast_FAP_CTHRC1	AP001043.1			-2.896
 tabib2021	skin	myofibroblast_FAP_CTHRC1	HMGN1			0.339
@@ -3503,7 +3503,7 @@ gse210395	pbmc	B_lymphocyte	BICD2			0.769
 gse210395	pbmc	B_lymphocyte	BIN1			1.068
 gse210395	pbmc	B_lymphocyte	BIRC3			0.670
 gse210395	pbmc	B_lymphocyte	BLCAP			0.527
-gse210395	pbmc	B_lymphocyte	BLK	BLK__cyto	ssc_tier1	0.303
+gse210395	pbmc	B_lymphocyte	BLK	BLK__cyto	M5	0.303
 gse210395	pbmc	B_lymphocyte	BLNK			1.629
 gse210395	pbmc	B_lymphocyte	BLOC1S1			0.576
 gse210395	pbmc	B_lymphocyte	BLOC1S5			1.079
@@ -3524,7 +3524,7 @@ gse210395	pbmc	B_lymphocyte	BST2	BST2__ext	M1	0.981
 gse210395	pbmc	B_lymphocyte	BTBD2			0.540
 gse210395	pbmc	B_lymphocyte	BTD			1.202
 gse210395	pbmc	B_lymphocyte	BTG3			-0.859
-gse210395	pbmc	B_lymphocyte	BTK	BTK__cyto	ssc_tier1	0.635
+gse210395	pbmc	B_lymphocyte	BTK	BTK__cyto	M5	0.635
 gse210395	pbmc	B_lymphocyte	BTN3A1			0.900
 gse210395	pbmc	B_lymphocyte	BTN3A2			1.710
 gse210395	pbmc	B_lymphocyte	BTN3A3			1.238
@@ -3601,18 +3601,18 @@ gse210395	pbmc	B_lymphocyte	CCT7			0.818
 gse210395	pbmc	B_lymphocyte	CD164			0.491
 gse210395	pbmc	B_lymphocyte	CD180			1.504
 gse210395	pbmc	B_lymphocyte	CD1D			0.823
-gse210395	pbmc	B_lymphocyte	CD22	CD22__pm	ssc_tier1	0.680
+gse210395	pbmc	B_lymphocyte	CD22	CD22__pm	M5	0.680
 gse210395	pbmc	B_lymphocyte	CD24			1.068
 gse210395	pbmc	B_lymphocyte	CD2BP2			0.654
 gse210395	pbmc	B_lymphocyte	CD38			1.399
 gse210395	pbmc	B_lymphocyte	CD3EAP			1.648
-gse210395	pbmc	B_lymphocyte	CD40	CD40__pm	ssc_tier1	0.607
+gse210395	pbmc	B_lymphocyte	CD40	CD40__pm	M5	0.607
 gse210395	pbmc	B_lymphocyte	CD46			0.436
 gse210395	pbmc	B_lymphocyte	CD53			0.730
 gse210395	pbmc	B_lymphocyte	CD59			0.877
 gse210395	pbmc	B_lymphocyte	CD70			-1.006
 gse210395	pbmc	B_lymphocyte	CD72			1.350
-gse210395	pbmc	B_lymphocyte	CD79B	CD79B__pm	ssc_tier1	0.861
+gse210395	pbmc	B_lymphocyte	CD79B	CD79B__pm	M5	0.861
 gse210395	pbmc	B_lymphocyte	CDADC1			-0.833
 gse210395	pbmc	B_lymphocyte	CDC123			0.626
 gse210395	pbmc	B_lymphocyte	CDC16			0.939
@@ -3868,7 +3868,7 @@ gse210395	pbmc	B_lymphocyte	EMG1			0.750
 gse210395	pbmc	B_lymphocyte	EML4			-0.520
 gse210395	pbmc	B_lymphocyte	EMP3			-0.530
 gse210395	pbmc	B_lymphocyte	ENC1			-1.694
-gse210395	pbmc	B_lymphocyte	ENPP2			2.233
+gse210395	pbmc	B_lymphocyte	ENPP2	ENPP2__ext	M2	2.233
 gse210395	pbmc	B_lymphocyte	ENTPD1			1.015
 gse210395	pbmc	B_lymphocyte	EPB41L2			0.645
 gse210395	pbmc	B_lymphocyte	EPB41L4A-AS1			-0.397
@@ -3951,7 +3951,7 @@ gse210395	pbmc	B_lymphocyte	FKBP15			0.961
 gse210395	pbmc	B_lymphocyte	FKBP2			0.944
 gse210395	pbmc	B_lymphocyte	FKBP3			0.706
 gse210395	pbmc	B_lymphocyte	FKBP4			1.323
-gse210395	pbmc	B_lymphocyte	FLI1			1.098
+gse210395	pbmc	B_lymphocyte	FLI1	FLI1__nuc	M3	1.098
 gse210395	pbmc	B_lymphocyte	FLOT2			0.543
 gse210395	pbmc	B_lymphocyte	FMNL1			-0.752
 gse210395	pbmc	B_lymphocyte	FOPNL			0.818
@@ -4100,7 +4100,7 @@ gse210395	pbmc	B_lymphocyte	IKBKB			0.692
 gse210395	pbmc	B_lymphocyte	IKZF1			1.048
 gse210395	pbmc	B_lymphocyte	IKZF3			0.921
 gse210395	pbmc	B_lymphocyte	IL10RA			-0.611
-gse210395	pbmc	B_lymphocyte	IL13RA1	IL13RA1__ext	ssc_tier1	0.852
+gse210395	pbmc	B_lymphocyte	IL13RA1	IL13RA1__ext	M4	0.852
 gse210395	pbmc	B_lymphocyte	IL16			0.529
 gse210395	pbmc	B_lymphocyte	IL21R			1.273
 gse210395	pbmc	B_lymphocyte	IL27RA			0.861
@@ -4323,7 +4323,7 @@ gse210395	pbmc	B_lymphocyte	MRPS34			0.717
 gse210395	pbmc	B_lymphocyte	MRPS35			0.864
 gse210395	pbmc	B_lymphocyte	MRPS9			0.739
 gse210395	pbmc	B_lymphocyte	MRTO4			0.926
-gse210395	pbmc	B_lymphocyte	MS4A1	MS4A1__pm	ssc_tier1	0.368
+gse210395	pbmc	B_lymphocyte	MS4A1	MS4A1__pm	M5	0.368
 gse210395	pbmc	B_lymphocyte	MS4A7			1.106
 gse210395	pbmc	B_lymphocyte	MSRB1			1.342
 gse210395	pbmc	B_lymphocyte	MT-ATP6			-0.241
@@ -4965,7 +4965,7 @@ gse210395	pbmc	B_lymphocyte	SURF2			0.589
 gse210395	pbmc	B_lymphocyte	SURF6			0.574
 gse210395	pbmc	B_lymphocyte	SWAP70			0.635
 gse210395	pbmc	B_lymphocyte	SWI5			1.103
-gse210395	pbmc	B_lymphocyte	SYK	SYK__cyto	ssc_tier1	0.578
+gse210395	pbmc	B_lymphocyte	SYK	SYK__cyto	M5	0.578
 gse210395	pbmc	B_lymphocyte	SYNE1			0.501
 gse210395	pbmc	B_lymphocyte	SYNJ2			-1.056
 gse210395	pbmc	B_lymphocyte	SYNJ2BP			0.662
@@ -5073,7 +5073,7 @@ gse210395	pbmc	B_lymphocyte	TMX2			0.886
 gse210395	pbmc	B_lymphocyte	TNFAIP8			1.261
 gse210395	pbmc	B_lymphocyte	TNFRSF10B			-0.801
 gse210395	pbmc	B_lymphocyte	TNFRSF13C			-0.584
-gse210395	pbmc	B_lymphocyte	TNFRSF17	BCMA__ext	ssc_tier1	1.382
+gse210395	pbmc	B_lymphocyte	TNFRSF17	BCMA__ext	M5	1.382
 gse210395	pbmc	B_lymphocyte	TNFSF10			1.407
 gse210395	pbmc	B_lymphocyte	TNFSF9			-1.377
 gse210395	pbmc	B_lymphocyte	TNNI2			1.124
@@ -5828,7 +5828,7 @@ gse210395	pbmc	NK_cell	CD53			0.753
 gse210395	pbmc	NK_cell	CD58			0.926
 gse210395	pbmc	NK_cell	CD63			0.373
 gse210395	pbmc	NK_cell	CD69			-1.020
-gse210395	pbmc	NK_cell	CD79A	CD79A__pm	ssc_tier1	-1.458
+gse210395	pbmc	NK_cell	CD79A	CD79A__pm	M5	-1.458
 gse210395	pbmc	NK_cell	CDC123			0.311
 gse210395	pbmc	NK_cell	CDC16			0.662
 gse210395	pbmc	NK_cell	CDC26			0.617
@@ -6338,7 +6338,7 @@ gse210395	pbmc	NK_cell	FKBP3			0.946
 gse210395	pbmc	NK_cell	FKBP4			0.896
 gse210395	pbmc	NK_cell	FLAD1			0.598
 gse210395	pbmc	NK_cell	FLCN			1.365
-gse210395	pbmc	NK_cell	FLI1			1.033
+gse210395	pbmc	NK_cell	FLI1	FLI1__nuc	M3	1.033
 gse210395	pbmc	NK_cell	FLOT1			0.334
 gse210395	pbmc	NK_cell	FLOT2			0.384
 gse210395	pbmc	NK_cell	FLYWCH2			0.592
@@ -6613,7 +6613,7 @@ gse210395	pbmc	NK_cell	IL10RA			0.529
 gse210395	pbmc	NK_cell	IL16			0.292
 gse210395	pbmc	NK_cell	IL27RA			0.826
 gse210395	pbmc	NK_cell	IL2RG			0.276
-gse210395	pbmc	NK_cell	IL4R	IL4R__ext	ssc_tier1	-0.661
+gse210395	pbmc	NK_cell	IL4R	IL4R__ext	M4	-0.661
 gse210395	pbmc	NK_cell	IL6ST	IL6ST__cyto	M4	-1.270
 gse210395	pbmc	NK_cell	ILVBL			0.762
 gse210395	pbmc	NK_cell	IMMT			0.651
@@ -6665,7 +6665,7 @@ gse210395	pbmc	NK_cell	JPT2			1.813
 gse210395	pbmc	NK_cell	JPX			0.401
 gse210395	pbmc	NK_cell	JRK			1.109
 gse210395	pbmc	NK_cell	JUN			-1.278
-gse210395	pbmc	NK_cell	JUNB			-0.653
+gse210395	pbmc	NK_cell	JUNB	JUNB__nuc	M2	-0.653
 gse210395	pbmc	NK_cell	JUND			-0.899
 gse210395	pbmc	NK_cell	KANK3			1.131
 gse210395	pbmc	NK_cell	KANSL2			-0.481
@@ -6752,7 +6752,7 @@ gse210395	pbmc	NK_cell	LEO1			0.780
 gse210395	pbmc	NK_cell	LEPROTL1			-1.205
 gse210395	pbmc	NK_cell	LEXM			1.370
 gse210395	pbmc	NK_cell	LFNG			0.916
-gse210395	pbmc	NK_cell	LGALS3			1.151
+gse210395	pbmc	NK_cell	LGALS3	LGALS3__ext	M2	1.151
 gse210395	pbmc	NK_cell	LGALS3BP			-1.428
 gse210395	pbmc	NK_cell	LGALS8			-0.455
 gse210395	pbmc	NK_cell	LGALS9B			2.141
@@ -7130,7 +7130,7 @@ gse210395	pbmc	NK_cell	NOP14			0.350
 gse210395	pbmc	NK_cell	NOP56			0.658
 gse210395	pbmc	NK_cell	NOP58			-0.302
 gse210395	pbmc	NK_cell	NOSIP			0.643
-gse210395	pbmc	NK_cell	NOTCH2			0.568
+gse210395	pbmc	NK_cell	NOTCH2	NOTCH2__pm	M2	0.568
 gse210395	pbmc	NK_cell	NOTCH2NL			1.018
 gse210395	pbmc	NK_cell	NPRL2			0.575
 gse210395	pbmc	NK_cell	NQO2			0.787
@@ -8151,7 +8151,7 @@ gse210395	pbmc	NK_cell	TMX3			0.473
 gse210395	pbmc	NK_cell	TNFAIP3			-0.853
 gse210395	pbmc	NK_cell	TNFAIP8			1.434
 gse210395	pbmc	NK_cell	TNFAIP8L2			2.912
-gse210395	pbmc	NK_cell	TNFRSF17	BCMA__ext	ssc_tier1	2.763
+gse210395	pbmc	NK_cell	TNFRSF17	BCMA__ext	M5	2.763
 gse210395	pbmc	NK_cell	TNFRSF1B			-0.647
 gse210395	pbmc	NK_cell	TNFRSF21			0.697
 gse210395	pbmc	NK_cell	TNFRSF25			-1.671
@@ -8166,7 +8166,7 @@ gse210395	pbmc	NK_cell	TOLLIP			0.517
 gse210395	pbmc	NK_cell	TOMM20			-0.254
 gse210395	pbmc	NK_cell	TOMM40			0.505
 gse210395	pbmc	NK_cell	TOMM5			-0.673
-gse210395	pbmc	NK_cell	TOP1			0.238
+gse210395	pbmc	NK_cell	TOP1	TOP1__ext	M5	0.238
 gse210395	pbmc	NK_cell	TOP2A			2.681
 gse210395	pbmc	NK_cell	TOP2B			0.331
 gse210395	pbmc	NK_cell	TOR1AIP2			-0.372
@@ -8392,7 +8392,7 @@ gse210395	pbmc	NK_cell	WDR92			1.936
 gse210395	pbmc	NK_cell	WIPF1			-0.315
 gse210395	pbmc	NK_cell	WTAP			-0.306
 gse210395	pbmc	NK_cell	XAB2			0.502
-gse210395	pbmc	NK_cell	XBP1	XBP1__nuc	ssc_tier1	0.480
+gse210395	pbmc	NK_cell	XBP1	XBP1__nuc	M5	0.480
 gse210395	pbmc	NK_cell	XIAP			0.482
 gse210395	pbmc	NK_cell	XIST			0.281
 gse210395	pbmc	NK_cell	XKR8			-0.534
@@ -9120,7 +9120,7 @@ gse210395	pbmc	monocyte_classical	BTBD6			0.440
 gse210395	pbmc	monocyte_classical	BTBD7			0.255
 gse210395	pbmc	monocyte_classical	BTBD8			1.568
 gse210395	pbmc	monocyte_classical	BTG2			1.382
-gse210395	pbmc	monocyte_classical	BTK	BTK__cyto	ssc_tier1	0.330
+gse210395	pbmc	monocyte_classical	BTK	BTK__cyto	M5	0.330
 gse210395	pbmc	monocyte_classical	BTLA			1.570
 gse210395	pbmc	monocyte_classical	BTN3A1			0.769
 gse210395	pbmc	monocyte_classical	BTN3A2			1.183
@@ -9260,7 +9260,7 @@ gse210395	pbmc	monocyte_classical	CCDC9			0.431
 gse210395	pbmc	monocyte_classical	CCDC90B			0.958
 gse210395	pbmc	monocyte_classical	CCDC92			0.293
 gse210395	pbmc	monocyte_classical	CCDC97			0.936
-gse210395	pbmc	monocyte_classical	CCL2			5.026
+gse210395	pbmc	monocyte_classical	CCL2	CCL2__ext	M4	5.026
 gse210395	pbmc	monocyte_classical	CCL3			2.015
 gse210395	pbmc	monocyte_classical	CCL3L1			3.184
 gse210395	pbmc	monocyte_classical	CCL4			3.026
@@ -9522,7 +9522,7 @@ gse210395	pbmc	monocyte_classical	CTBP2			0.440
 gse210395	pbmc	monocyte_classical	CTCF			0.341
 gse210395	pbmc	monocyte_classical	CTDSPL2			-0.337
 gse210395	pbmc	monocyte_classical	CTIF			-0.476
-gse210395	pbmc	monocyte_classical	CTNNB1			-0.390
+gse210395	pbmc	monocyte_classical	CTNNB1	CTNNB1__nuc	M2	-0.390
 gse210395	pbmc	monocyte_classical	CTNS			0.701
 gse210395	pbmc	monocyte_classical	CTR9			0.927
 gse210395	pbmc	monocyte_classical	CTSC			0.373
@@ -9768,7 +9768,7 @@ gse210395	pbmc	monocyte_classical	ENDOD1			1.012
 gse210395	pbmc	monocyte_classical	ENDOG			0.539
 gse210395	pbmc	monocyte_classical	ENG			-0.568
 gse210395	pbmc	monocyte_classical	ENOX2			0.519
-gse210395	pbmc	monocyte_classical	ENPP2			1.691
+gse210395	pbmc	monocyte_classical	ENPP2	ENPP2__ext	M2	1.691
 gse210395	pbmc	monocyte_classical	ENTPD1-AS1			0.425
 gse210395	pbmc	monocyte_classical	ENTPD3-AS1			0.705
 gse210395	pbmc	monocyte_classical	ENTR1			0.437
@@ -9921,7 +9921,7 @@ gse210395	pbmc	monocyte_classical	FKRP			0.624
 gse210395	pbmc	monocyte_classical	FKTN			0.993
 gse210395	pbmc	monocyte_classical	FLAD1			0.515
 gse210395	pbmc	monocyte_classical	FLCN			0.654
-gse210395	pbmc	monocyte_classical	FLI1			0.270
+gse210395	pbmc	monocyte_classical	FLI1	FLI1__nuc	M3	0.270
 gse210395	pbmc	monocyte_classical	FLNA			0.219
 gse210395	pbmc	monocyte_classical	FLOT1			-0.273
 gse210395	pbmc	monocyte_classical	FLT3LG			0.785
@@ -10282,8 +10282,8 @@ gse210395	pbmc	monocyte_classical	IREB2			-0.469
 gse210395	pbmc	monocyte_classical	IRF2			1.110
 gse210395	pbmc	monocyte_classical	IRF2BPL			-0.563
 gse210395	pbmc	monocyte_classical	IRF3			0.329
-gse210395	pbmc	monocyte_classical	IRF4	IRF4__nuc	ssc_tier1	-1.052
-gse210395	pbmc	monocyte_classical	IRF5			0.286
+gse210395	pbmc	monocyte_classical	IRF4	IRF4__nuc	M5	-1.052
+gse210395	pbmc	monocyte_classical	IRF5	IRF5__nuc	M1	0.286
 gse210395	pbmc	monocyte_classical	ISCA2			0.856
 gse210395	pbmc	monocyte_classical	ISG20L2			0.282
 gse210395	pbmc	monocyte_classical	ISOC1			0.549
@@ -10494,7 +10494,7 @@ gse210395	pbmc	monocyte_classical	LMOD3			-1.560
 gse210395	pbmc	monocyte_classical	LNPEP			0.400
 gse210395	pbmc	monocyte_classical	LNPK			-0.245
 gse210395	pbmc	monocyte_classical	LONP1			0.580
-gse210395	pbmc	monocyte_classical	LPAR1			1.434
+gse210395	pbmc	monocyte_classical	LPAR1	LPAR1__pm	M2	1.434
 gse210395	pbmc	monocyte_classical	LPCAT3			0.439
 gse210395	pbmc	monocyte_classical	LPIN2			0.995
 gse210395	pbmc	monocyte_classical	LPP-AS2			1.136
@@ -11629,7 +11629,7 @@ gse210395	pbmc	monocyte_classical	RTN4IP1			0.997
 gse210395	pbmc	monocyte_classical	RUFY1			0.537
 gse210395	pbmc	monocyte_classical	RUFY2			0.265
 gse210395	pbmc	monocyte_classical	RUFY4			0.826
-gse210395	pbmc	monocyte_classical	RUNX1			-0.432
+gse210395	pbmc	monocyte_classical	RUNX1	RUNX1__nuc	M2	-0.432
 gse210395	pbmc	monocyte_classical	RUNX3			-0.486
 gse210395	pbmc	monocyte_classical	RUSC1-AS1			0.995
 gse210395	pbmc	monocyte_classical	RUVBL1			0.654
@@ -11977,7 +11977,7 @@ gse210395	pbmc	monocyte_classical	STAMBP			0.506
 gse210395	pbmc	monocyte_classical	STAP1			1.155
 gse210395	pbmc	monocyte_classical	STAT4			-1.186
 gse210395	pbmc	monocyte_classical	STAT5A			-0.468
-gse210395	pbmc	monocyte_classical	STAT6	STAT6__cyto	crosstalk	0.456
+gse210395	pbmc	monocyte_classical	STAT6	STAT6__cyto	M4	0.456
 gse210395	pbmc	monocyte_classical	STAU1			-0.241
 gse210395	pbmc	monocyte_classical	STEAP4			1.946
 gse210395	pbmc	monocyte_classical	STIMATE			0.479
@@ -12124,7 +12124,7 @@ gse210395	pbmc	monocyte_classical	TLK2			-0.215
 gse210395	pbmc	monocyte_classical	TLNRD1			0.579
 gse210395	pbmc	monocyte_classical	TLR1			0.745
 gse210395	pbmc	monocyte_classical	TLR10			0.880
-gse210395	pbmc	monocyte_classical	TLR4			1.590
+gse210395	pbmc	monocyte_classical	TLR4	TLR4__pm	M2	1.590
 gse210395	pbmc	monocyte_classical	TLR5			1.198
 gse210395	pbmc	monocyte_classical	TLR6			0.751
 gse210395	pbmc	monocyte_classical	TLR7	TLR7__endo	ssc_tier1	1.254
@@ -12205,7 +12205,7 @@ gse210395	pbmc	monocyte_classical	TNFAIP8			0.553
 gse210395	pbmc	monocyte_classical	TNFAIP8L2			1.544
 gse210395	pbmc	monocyte_classical	TNFRSF10C			0.875
 gse210395	pbmc	monocyte_classical	TNFRSF12A			-0.854
-gse210395	pbmc	monocyte_classical	TNFRSF17	BCMA__ext	ssc_tier1	2.031
+gse210395	pbmc	monocyte_classical	TNFRSF17	BCMA__ext	M5	2.031
 gse210395	pbmc	monocyte_classical	TNFRSF1B			-0.563
 gse210395	pbmc	monocyte_classical	TNFRSF8			0.957
 gse210395	pbmc	monocyte_classical	TNFSF12			0.467
@@ -13532,7 +13532,7 @@ gse210395	pbmc	monocyte_nonclassical	FIP1L1			0.486
 gse210395	pbmc	monocyte_nonclassical	FKBP15			0.948
 gse210395	pbmc	monocyte_nonclassical	FKBP3			0.518
 gse210395	pbmc	monocyte_nonclassical	FLAD1			0.413
-gse210395	pbmc	monocyte_nonclassical	FLI1			0.291
+gse210395	pbmc	monocyte_nonclassical	FLI1	FLI1__nuc	M3	0.291
 gse210395	pbmc	monocyte_nonclassical	FLT3LG			0.548
 gse210395	pbmc	monocyte_nonclassical	FLYWCH2			0.781
 gse210395	pbmc	monocyte_nonclassical	FMNL1			-0.462
@@ -14626,7 +14626,7 @@ gse210395	pbmc	monocyte_nonclassical	SIK3			-0.302
 gse210395	pbmc	monocyte_nonclassical	SIN3A			-0.345
 gse210395	pbmc	monocyte_nonclassical	SINHCAF			0.322
 gse210395	pbmc	monocyte_nonclassical	SIRPB2			0.950
-gse210395	pbmc	monocyte_nonclassical	SIRT1			-0.442
+gse210395	pbmc	monocyte_nonclassical	SIRT1	SIRT1__nuc	M2	-0.442
 gse210395	pbmc	monocyte_nonclassical	SIRT5			0.799
 gse210395	pbmc	monocyte_nonclassical	SKA2			0.441
 gse210395	pbmc	monocyte_nonclassical	SKAP2			0.350
@@ -14755,7 +14755,7 @@ gse210395	pbmc	monocyte_nonclassical	ST6GAL1			0.879
 gse210395	pbmc	monocyte_nonclassical	ST8SIA4			0.468
 gse210395	pbmc	monocyte_nonclassical	STAM2			0.951
 gse210395	pbmc	monocyte_nonclassical	STARD3NL			0.375
-gse210395	pbmc	monocyte_nonclassical	STAT6	STAT6__cyto	crosstalk	0.299
+gse210395	pbmc	monocyte_nonclassical	STAT6	STAT6__cyto	M4	0.299
 gse210395	pbmc	monocyte_nonclassical	STIP1			0.933
 gse210395	pbmc	monocyte_nonclassical	STK19			0.348
 gse210395	pbmc	monocyte_nonclassical	STK26			0.406
@@ -14775,7 +14775,7 @@ gse210395	pbmc	monocyte_nonclassical	SULT1B1			0.727
 gse210395	pbmc	monocyte_nonclassical	SUMO3			-0.355
 gse210395	pbmc	monocyte_nonclassical	SUPT16H			0.411
 gse210395	pbmc	monocyte_nonclassical	SUPT20H			0.479
-gse210395	pbmc	monocyte_nonclassical	SYK	SYK__cyto	ssc_tier1	0.595
+gse210395	pbmc	monocyte_nonclassical	SYK	SYK__cyto	M5	0.595
 gse210395	pbmc	monocyte_nonclassical	SYNCRIP			0.336
 gse210395	pbmc	monocyte_nonclassical	SYNE3			-0.361
 gse210395	pbmc	monocyte_nonclassical	SYNRG			0.480
@@ -14838,7 +14838,7 @@ gse210395	pbmc	monocyte_nonclassical	TLDC1			-0.673
 gse210395	pbmc	monocyte_nonclassical	TLE3			-0.472
 gse210395	pbmc	monocyte_nonclassical	TLR1			1.314
 gse210395	pbmc	monocyte_nonclassical	TLR2			0.536
-gse210395	pbmc	monocyte_nonclassical	TLR4			1.874
+gse210395	pbmc	monocyte_nonclassical	TLR4	TLR4__pm	M2	1.874
 gse210395	pbmc	monocyte_nonclassical	TM2D2			0.432
 gse210395	pbmc	monocyte_nonclassical	TMA16			0.713
 gse210395	pbmc	monocyte_nonclassical	TMA7			0.308
@@ -14906,7 +14906,7 @@ gse210395	pbmc	monocyte_nonclassical	TNFSF9			-2.201
 gse210395	pbmc	monocyte_nonclassical	TNK2-AS1			-1.166
 gse210395	pbmc	monocyte_nonclassical	TOB1			-1.142
 gse210395	pbmc	monocyte_nonclassical	TOB2			-0.528
-gse210395	pbmc	monocyte_nonclassical	TOP1			0.358
+gse210395	pbmc	monocyte_nonclassical	TOP1	TOP1__ext	M5	0.358
 gse210395	pbmc	monocyte_nonclassical	TOP2B			0.373
 gse210395	pbmc	monocyte_nonclassical	TOP3A			-0.401
 gse210395	pbmc	monocyte_nonclassical	TOR1AIP1			0.289
@@ -15780,7 +15780,7 @@ gse210395	pbmc	pDC	BTBD7			0.343
 gse210395	pbmc	pDC	BTF3L4			0.516
 gse210395	pbmc	pDC	BTG2			0.741
 gse210395	pbmc	pDC	BTG3			-1.160
-gse210395	pbmc	pDC	BTK	BTK__cyto	ssc_tier1	0.703
+gse210395	pbmc	pDC	BTK	BTK__cyto	M5	0.703
 gse210395	pbmc	pDC	BTLA			0.909
 gse210395	pbmc	pDC	BTN2A1			-0.372
 gse210395	pbmc	pDC	BTN3A2			1.196
@@ -16635,7 +16635,7 @@ gse210395	pbmc	pDC	FKBP4			1.034
 gse210395	pbmc	pDC	FKTN			0.744
 gse210395	pbmc	pDC	FLAD1			0.767
 gse210395	pbmc	pDC	FLCN			0.588
-gse210395	pbmc	pDC	FLI1			1.236
+gse210395	pbmc	pDC	FLI1	FLI1__nuc	M3	1.236
 gse210395	pbmc	pDC	FLII			0.394
 gse210395	pbmc	pDC	FLOT1			0.234
 gse210395	pbmc	pDC	FLVCR1			-0.424
@@ -17024,8 +17024,8 @@ gse210395	pbmc	pDC	IRF1			-0.743
 gse210395	pbmc	pDC	IRF2			1.424
 gse210395	pbmc	pDC	IRF2BP2			-0.325
 gse210395	pbmc	pDC	IRF3			0.426
-gse210395	pbmc	pDC	IRF4	IRF4__nuc	ssc_tier1	-0.967
-gse210395	pbmc	pDC	IRF5			0.679
+gse210395	pbmc	pDC	IRF4	IRF4__nuc	M5	-0.967
+gse210395	pbmc	pDC	IRF5	IRF5__nuc	M1	0.679
 gse210395	pbmc	pDC	IRF7	IRF7__cyto	ssc_tier1	0.767
 gse210395	pbmc	pDC	IRGQ			-1.622
 gse210395	pbmc	pDC	ISCA2			1.014
@@ -17710,7 +17710,7 @@ gse210395	pbmc	pDC	NOP56			0.423
 gse210395	pbmc	pDC	NOP58			-0.267
 gse210395	pbmc	pDC	NOSIP			0.886
 gse210395	pbmc	pDC	NOSTRIN			-0.838
-gse210395	pbmc	pDC	NOTCH2			0.570
+gse210395	pbmc	pDC	NOTCH2	NOTCH2__pm	M2	0.570
 gse210395	pbmc	pDC	NOTCH2NL			0.731
 gse210395	pbmc	pDC	NPC1			0.560
 gse210395	pbmc	pDC	NPEPL1			-0.721
@@ -17956,7 +17956,7 @@ gse210395	pbmc	pDC	PLA2G2D			1.208
 gse210395	pbmc	pDC	PLA2G4C			2.603
 gse210395	pbmc	pDC	PLAC8			0.389
 gse210395	pbmc	pDC	PLAU			-0.980
-gse210395	pbmc	pDC	PLAUR			-1.432
+gse210395	pbmc	pDC	PLAUR	PLAUR__pm	M3	-1.432
 gse210395	pbmc	pDC	PLCE1			0.586
 gse210395	pbmc	pDC	PLEKHA2			0.356
 gse210395	pbmc	pDC	PLEKHA7			1.154
@@ -18825,7 +18825,7 @@ gse210395	pbmc	pDC	STAMBP			0.828
 gse210395	pbmc	pDC	STAMBPL1			0.366
 gse210395	pbmc	pDC	STAT4			-0.816
 gse210395	pbmc	pDC	STAT5A			-0.623
-gse210395	pbmc	pDC	STAT6	STAT6__cyto	crosstalk	0.209
+gse210395	pbmc	pDC	STAT6	STAT6__cyto	M4	0.209
 gse210395	pbmc	pDC	STAU2			0.318
 gse210395	pbmc	pDC	STIM1			-0.272
 gse210395	pbmc	pDC	STIP1			1.523
@@ -18881,7 +18881,7 @@ gse210395	pbmc	pDC	SWI5			0.828
 gse210395	pbmc	pDC	SYAP1			-0.480
 gse210395	pbmc	pDC	SYCE2			-3.049
 gse210395	pbmc	pDC	SYCP2L			2.121
-gse210395	pbmc	pDC	SYK	SYK__cyto	ssc_tier1	0.246
+gse210395	pbmc	pDC	SYK	SYK__cyto	M5	0.246
 gse210395	pbmc	pDC	SYNRG			0.383
 gse210395	pbmc	pDC	SYPL1			0.284
 gse210395	pbmc	pDC	SYS1			0.448
@@ -19021,7 +19021,7 @@ gse210395	pbmc	pDC	TLDC1			1.527
 gse210395	pbmc	pDC	TLE1	TLE__nuc	M3	0.839
 gse210395	pbmc	pDC	TLE3			-0.355
 gse210395	pbmc	pDC	TLN1			0.326
-gse210395	pbmc	pDC	TLR4			1.576
+gse210395	pbmc	pDC	TLR4	TLR4__pm	M2	1.576
 gse210395	pbmc	pDC	TM2D2			0.987
 gse210395	pbmc	pDC	TM7SF2			0.435
 gse210395	pbmc	pDC	TM7SF3			0.361
@@ -19090,7 +19090,7 @@ gse210395	pbmc	pDC	TMX1			0.412
 gse210395	pbmc	pDC	TMX2			0.499
 gse210395	pbmc	pDC	TNFAIP8L2			1.644
 gse210395	pbmc	pDC	TNFRSF11B			1.940
-gse210395	pbmc	pDC	TNFRSF17	BCMA__ext	ssc_tier1	1.838
+gse210395	pbmc	pDC	TNFRSF17	BCMA__ext	M5	1.838
 gse210395	pbmc	pDC	TNFRSF4			1.553
 gse210395	pbmc	pDC	TNKS2			-0.204
 gse210395	pbmc	pDC	TNPO1			-0.514
@@ -19100,7 +19100,7 @@ gse210395	pbmc	pDC	TOGARAM1			-0.339
 gse210395	pbmc	pDC	TOM1L2			0.904
 gse210395	pbmc	pDC	TOMM22			0.254
 gse210395	pbmc	pDC	TOMM40			0.706
-gse210395	pbmc	pDC	TOP1			0.528
+gse210395	pbmc	pDC	TOP1	TOP1__ext	M5	0.528
 gse210395	pbmc	pDC	TOP2A			-0.890
 gse210395	pbmc	pDC	TOP2B			0.564
 gse210395	pbmc	pDC	TOPORS			-0.413
@@ -19397,7 +19397,7 @@ gse210395	pbmc	pDC	WRAP73			0.486
 gse210395	pbmc	pDC	WRB			0.473
 gse210395	pbmc	pDC	WTAP			-0.531
 gse210395	pbmc	pDC	WWP2			0.296
-gse210395	pbmc	pDC	XBP1	XBP1__nuc	ssc_tier1	-0.320
+gse210395	pbmc	pDC	XBP1	XBP1__nuc	M5	-0.320
 gse210395	pbmc	pDC	XIAP			0.317
 gse210395	pbmc	pDC	XPNPEP3			0.756
 gse210395	pbmc	pDC	XPO1	XPO1__nuc	M2	0.936
@@ -20085,7 +20085,7 @@ gse210395	pbmc	plasma_cell	EPHB6			1.364
 gse210395	pbmc	plasma_cell	EPM2A			0.763
 gse210395	pbmc	plasma_cell	EPRS			1.010
 gse210395	pbmc	plasma_cell	ERCC4			0.797
-gse210395	pbmc	plasma_cell	EREG			2.149
+gse210395	pbmc	plasma_cell	EREG	EREG__ext	M2	2.149
 gse210395	pbmc	plasma_cell	ERLIN1			2.457
 gse210395	pbmc	plasma_cell	ESCO2			3.744
 gse210395	pbmc	plasma_cell	ESPL1			2.627
@@ -20136,7 +20136,7 @@ gse210395	pbmc	plasma_cell	FH			0.862
 gse210395	pbmc	plasma_cell	FHIT			0.887
 gse210395	pbmc	plasma_cell	FKBP4			1.169
 gse210395	pbmc	plasma_cell	FKTN			1.112
-gse210395	pbmc	plasma_cell	FLI1			1.170
+gse210395	pbmc	plasma_cell	FLI1	FLI1__nuc	M3	1.170
 gse210395	pbmc	plasma_cell	FLT3LG			1.932
 gse210395	pbmc	plasma_cell	FNBP4			-0.577
 gse210395	pbmc	plasma_cell	FNDC10			3.022
@@ -20297,7 +20297,7 @@ gse210395	pbmc	plasma_cell	IQSEC3			1.955
 gse210395	pbmc	plasma_cell	IRF2			1.263
 gse210395	pbmc	plasma_cell	IRF2BP1			1.130
 gse210395	pbmc	plasma_cell	IRF2BP2			-0.860
-gse210395	pbmc	plasma_cell	IRF4	IRF4__nuc	ssc_tier1	-1.152
+gse210395	pbmc	plasma_cell	IRF4	IRF4__nuc	M5	-1.152
 gse210395	pbmc	plasma_cell	IRGQ			-1.704
 gse210395	pbmc	plasma_cell	ISCA2			0.609
 gse210395	pbmc	plasma_cell	ISOC2			0.921
@@ -20393,7 +20393,7 @@ gse210395	pbmc	plasma_cell	LSM8			-0.437
 gse210395	pbmc	plasma_cell	LTN1			0.996
 gse210395	pbmc	plasma_cell	LTV1			-0.752
 gse210395	pbmc	plasma_cell	LXN			1.725
-gse210395	pbmc	plasma_cell	LYN	LYN__cyto	ssc_tier1	-0.488
+gse210395	pbmc	plasma_cell	LYN	LYN__cyto	M5	-0.488
 gse210395	pbmc	plasma_cell	LYRM2			0.631
 gse210395	pbmc	plasma_cell	LYRM7			0.741
 gse210395	pbmc	plasma_cell	LZTR1			1.168
@@ -20483,7 +20483,7 @@ gse210395	pbmc	plasma_cell	MRPS22			0.980
 gse210395	pbmc	plasma_cell	MRPS26			1.310
 gse210395	pbmc	plasma_cell	MRPS6			0.668
 gse210395	pbmc	plasma_cell	MRPS7			0.446
-gse210395	pbmc	plasma_cell	MS4A1	MS4A1__pm	ssc_tier1	2.198
+gse210395	pbmc	plasma_cell	MS4A1	MS4A1__pm	M5	2.198
 gse210395	pbmc	plasma_cell	MS4A7			2.108
 gse210395	pbmc	plasma_cell	MSH2			1.913
 gse210395	pbmc	plasma_cell	MSH3			0.724
@@ -20655,7 +20655,7 @@ gse210395	pbmc	plasma_cell	PITPNA-AS1			1.154
 gse210395	pbmc	plasma_cell	PITPNM2			3.207
 gse210395	pbmc	plasma_cell	PLA2G12A			1.565
 gse210395	pbmc	plasma_cell	PLAGL1			0.589
-gse210395	pbmc	plasma_cell	PLAUR			-1.735
+gse210395	pbmc	plasma_cell	PLAUR	PLAUR__pm	M3	-1.735
 gse210395	pbmc	plasma_cell	PLCG1	PLCG1__cyto	M2	2.369
 gse210395	pbmc	plasma_cell	PLD3			0.601
 gse210395	pbmc	plasma_cell	PLEKHF1			2.166
@@ -20916,7 +20916,7 @@ gse210395	pbmc	plasma_cell	SHMT1			1.987
 gse210395	pbmc	plasma_cell	SHMT2			1.263
 gse210395	pbmc	plasma_cell	SHTN1			-0.961
 gse210395	pbmc	plasma_cell	SIGIRR			1.166
-gse210395	pbmc	plasma_cell	SIRT1			-0.995
+gse210395	pbmc	plasma_cell	SIRT1	SIRT1__nuc	M2	-0.995
 gse210395	pbmc	plasma_cell	SIVA1			-0.761
 gse210395	pbmc	plasma_cell	SKA2			1.285
 gse210395	pbmc	plasma_cell	SLA2			-0.863
@@ -21115,7 +21115,7 @@ gse210395	pbmc	plasma_cell	TMEM67			1.539
 gse210395	pbmc	plasma_cell	TMEM87A			0.633
 gse210395	pbmc	plasma_cell	TMEM8B			-1.317
 gse210395	pbmc	plasma_cell	TNFAIP8			0.440
-gse210395	pbmc	plasma_cell	TNFRSF17	BCMA__ext	ssc_tier1	1.929
+gse210395	pbmc	plasma_cell	TNFRSF17	BCMA__ext	M5	1.929
 gse210395	pbmc	plasma_cell	TNFRSF18			1.842
 gse210395	pbmc	plasma_cell	TNFRSF1B			-1.115
 gse210395	pbmc	plasma_cell	TNFRSF4			2.933
@@ -21407,7 +21407,7 @@ gse128169	lung	T_lymphocyte	LAMTOR3			-0.667
 gse128169	lung	T_lymphocyte	PGRMC2			-0.735
 gse128169	lung	T_lymphocyte	INPP4B			1.456
 gse128169	lung	T_lymphocyte	KIAA0922			1.325
-gse128169	lung	T_lymphocyte	SFRP2			2.430
+gse128169	lung	T_lymphocyte	SFRP2	SFRP2__ext	M2	2.430
 gse128169	lung	T_lymphocyte	C4orf46			-0.916
 gse128169	lung	T_lymphocyte	SLC25A4			-0.975
 gse128169	lung	T_lymphocyte	MRPL36			-0.408
@@ -21445,7 +21445,7 @@ gse128169	lung	T_lymphocyte	HLA-DQA2			-37.220
 gse128169	lung	T_lymphocyte	PHF1			-0.465
 gse128169	lung	T_lymphocyte	C6orf89			0.565
 gse128169	lung	T_lymphocyte	MAD2L1BP			-0.951
-gse128169	lung	T_lymphocyte	IL17A			-2.850
+gse128169	lung	T_lymphocyte	IL17A	IL17A__ext	M4	-2.850
 gse128169	lung	T_lymphocyte	SLC35A1			-0.731
 gse128169	lung	T_lymphocyte	TUBE1			-0.892
 gse128169	lung	T_lymphocyte	ASF1A			-0.558
@@ -21750,14 +21750,14 @@ gse128169	lung	T_lymphocyte	PRMT1			-0.554
 gse128169	lung	T_lymphocyte	C19orf48			-0.590
 gse128169	lung	T_lymphocyte	ZNF667-AS1			-1.772
 gse128169	lung	T_lymphocyte	UFD1L			-0.361
-gse128169	lung	T_lymphocyte	XBP1	XBP1__nuc	ssc_tier1	-0.629
+gse128169	lung	T_lymphocyte	XBP1	XBP1__nuc	M5	-0.629
 gse128169	lung	T_lymphocyte	YWHAH			-0.554
 gse128169	lung	T_lymphocyte	DDX17			0.765
 gse128169	lung	T_lymphocyte	SNU13			-0.431
 gse128169	lung	T_lymphocyte	TNFRSF13C			-1.268
 gse128169	lung	T_lymphocyte	BIK			-1.787
 gse128169	lung	T_lymphocyte	HSPA13			-0.762
-gse128169	lung	T_lymphocyte	RUNX1			0.465
+gse128169	lung	T_lymphocyte	RUNX1	RUNX1__nuc	M2	0.465
 gse128169	lung	T_lymphocyte	PIGP			0.462
 gse128169	lung	T_lymphocyte	PSMG1			-0.528
 gse128169	lung	T_lymphocyte	COL18A1			1.822
@@ -21775,7 +21775,7 @@ gse128169	lung	alveolar_typeII	NOL9			0.554
 gse128169	lung	alveolar_typeII	SLC25A33			-0.478
 gse128169	lung	alveolar_typeII	CTNNBIP1			-0.678
 gse128169	lung	alveolar_typeII	EXOSC10			0.497
-gse128169	lung	alveolar_typeII	MTOR			0.662
+gse128169	lung	alveolar_typeII	MTOR	MTOR__cyto	M2	0.662
 gse128169	lung	alveolar_typeII	MFN2			0.436
 gse128169	lung	alveolar_typeII	FBLIM1			2.061
 gse128169	lung	alveolar_typeII	FBXO42			0.631
@@ -22046,7 +22046,7 @@ gse128169	lung	alveolar_typeII	TOPBP1			0.718
 gse128169	lung	alveolar_typeII	RYK			0.624
 gse128169	lung	alveolar_typeII	ATR			0.956
 gse128169	lung	alveolar_typeII	PLSCR4			0.856
-gse128169	lung	alveolar_typeII	AGTR1			2.435
+gse128169	lung	alveolar_typeII	AGTR1	AGTR1__pm	M3	2.435
 gse128169	lung	alveolar_typeII	HLTF			0.745
 gse128169	lung	alveolar_typeII	SERP1			-0.483
 gse128169	lung	alveolar_typeII	AADAC			-1.287
@@ -22338,7 +22338,7 @@ gse128169	lung	alveolar_typeII	BEX1			-2.499
 gse128169	lung	alveolar_typeII	TCEAL3			0.369
 gse128169	lung	alveolar_typeII	NRK			32.294
 gse128169	lung	alveolar_typeII	COL4A6			2.552
-gse128169	lung	alveolar_typeII	IL13RA1	IL13RA1__ext	ssc_tier1	0.490
+gse128169	lung	alveolar_typeII	IL13RA1	IL13RA1__ext	M4	0.490
 gse128169	lung	alveolar_typeII	SLC25A43			0.629
 gse128169	lung	alveolar_typeII	RNF113A			-0.324
 gse128169	lung	alveolar_typeII	RHOXF1-AS1			-1.632
@@ -22426,7 +22426,7 @@ gse128169	lung	alveolar_typeII	ANKS6			0.819
 gse128169	lung	alveolar_typeII	COL15A1			3.892
 gse128169	lung	alveolar_typeII	STX17			0.572
 gse128169	lung	alveolar_typeII	RNF20			0.738
-gse128169	lung	alveolar_typeII	LPAR1			1.475
+gse128169	lung	alveolar_typeII	LPAR1	LPAR1__pm	M2	1.475
 gse128169	lung	alveolar_typeII	FKBP15			0.549
 gse128169	lung	alveolar_typeII	ALAD			0.428
 gse128169	lung	alveolar_typeII	COL27A1			1.217
@@ -22511,7 +22511,7 @@ gse128169	lung	alveolar_typeII	ARHGAP42			1.509
 gse128169	lung	alveolar_typeII	TRPC6			3.089
 gse128169	lung	alveolar_typeII	BIRC2			0.384
 gse128169	lung	alveolar_typeII	MMP7			3.363
-gse128169	lung	alveolar_typeII	MMP1			6.906
+gse128169	lung	alveolar_typeII	MMP1	MMP1__ext	M2	6.906
 gse128169	lung	alveolar_typeII	CASP4			-0.372
 gse128169	lung	alveolar_typeII	GUCY1A2			2.770
 gse128169	lung	alveolar_typeII	SIK2			0.677
@@ -22631,7 +22631,7 @@ gse128169	lung	alveolar_typeII	HNRNPA1			-0.316
 gse128169	lung	alveolar_typeII	ITGA7			2.835
 gse128169	lung	alveolar_typeII	DGKA			1.199
 gse128169	lung	alveolar_typeII	STAT2	STAT2__cyto	M1	0.828
-gse128169	lung	alveolar_typeII	STAT6	STAT6__cyto	crosstalk	0.263
+gse128169	lung	alveolar_typeII	STAT6	STAT6__cyto	M4	0.263
 gse128169	lung	alveolar_typeII	NDUFA4L2			3.311
 gse128169	lung	alveolar_typeII	TSPAN31			0.292
 gse128169	lung	alveolar_typeII	RP11-631N16.2			0.992
@@ -22808,7 +22808,7 @@ gse128169	lung	alveolar_typeII	KNOP1			0.558
 gse128169	lung	alveolar_typeII	CTD-3203P2.3			-0.988
 gse128169	lung	alveolar_typeII	IL27			-2.987
 gse128169	lung	alveolar_typeII	ATP2A1			30.851
-gse128169	lung	alveolar_typeII	CD19	CD19__pm	ssc_tier1	-2.031
+gse128169	lung	alveolar_typeII	CD19	CD19__pm	M5	-2.031
 gse128169	lung	alveolar_typeII	BCL7C			0.597
 gse128169	lung	alveolar_typeII	PRSS8			-0.738
 gse128169	lung	alveolar_typeII	FUS			0.409
@@ -23974,7 +23974,7 @@ gse128169	lung	endothelial	NFATC1			-0.427
 gse128169	lung	endothelial	PQLC1			0.758
 gse128169	lung	endothelial	PARD6G			-1.862
 gse128169	lung	endothelial	TMEM74B			2.130
-gse128169	lung	endothelial	CENPB			1.138
+gse128169	lung	endothelial	CENPB	CENPB__ext	M5	1.138
 gse128169	lung	endothelial	MAVS	MAVS__cyto	ssc_tier1	0.632
 gse128169	lung	endothelial	PLCB1			1.797
 gse128169	lung	endothelial	SNAP25			3.718
@@ -24014,7 +24014,7 @@ gse128169	lung	endothelial	FBXL12			-0.598
 gse128169	lung	endothelial	DNMT1			1.022
 gse128169	lung	endothelial	KRI1			0.987
 gse128169	lung	endothelial	ZNF563			-1.143
-gse128169	lung	endothelial	JUNB			-0.605
+gse128169	lung	endothelial	JUNB	JUNB__nuc	M2	-0.605
 gse128169	lung	endothelial	IER2			-0.665
 gse128169	lung	endothelial	CTD-3252C9.4			-0.886
 gse128169	lung	endothelial	DNAJB1			-1.705
@@ -24051,7 +24051,7 @@ gse128169	lung	endothelial	CLDN5			-0.668
 gse128169	lung	endothelial	GGT5			-2.307
 gse128169	lung	endothelial	GUCD1			-0.463
 gse128169	lung	endothelial	LRP5L			-1.347
-gse128169	lung	endothelial	XBP1	XBP1__nuc	ssc_tier1	-0.929
+gse128169	lung	endothelial	XBP1	XBP1__nuc	M5	-0.929
 gse128169	lung	endothelial	LIF	LIF__ext	M4	-3.299
 gse128169	lung	endothelial	SEC14L2			-1.792
 gse128169	lung	endothelial	TCN2			-0.449
@@ -24187,7 +24187,7 @@ gse128169	lung	fibroblast_CXCL12	WIPF1			1.328
 gse128169	lung	fibroblast_CXCL12	CHN1			4.317
 gse128169	lung	fibroblast_CXCL12	ATP5G3			0.690
 gse128169	lung	fibroblast_CXCL12	PDE1A			2.356
-gse128169	lung	fibroblast_CXCL12	ITGAV			0.832
+gse128169	lung	fibroblast_CXCL12	ITGAV	ITGAV__pm	M2	0.832
 gse128169	lung	fibroblast_CXCL12	COL5A2	COL5A2__ext	ssc_tier1	1.939
 gse128169	lung	fibroblast_CXCL12	STAT1	STAT1__cyto	M1	1.256
 gse128169	lung	fibroblast_CXCL12	NABP1			-1.581
@@ -24232,7 +24232,7 @@ gse128169	lung	fibroblast_CXCL12	SLC12A8			5.651
 gse128169	lung	fibroblast_CXCL12	ALDH1L1			-3.232
 gse128169	lung	fibroblast_CXCL12	NCK1			-0.836
 gse128169	lung	fibroblast_CXCL12	COPB2			0.752
-gse128169	lung	fibroblast_CXCL12	AGTR1			-2.288
+gse128169	lung	fibroblast_CXCL12	AGTR1	AGTR1__pm	M3	-2.288
 gse128169	lung	fibroblast_CXCL12	PFN2			1.163
 gse128169	lung	fibroblast_CXCL12	P2RY14			-3.517
 gse128169	lung	fibroblast_CXCL12	AADACL2			-3.565
@@ -24408,7 +24408,7 @@ gse128169	lung	fibroblast_CXCL12	SH3BGRL			0.700
 gse128169	lung	fibroblast_CXCL12	CENPI			29.848
 gse128169	lung	fibroblast_CXCL12	ARMCX1			-0.773
 gse128169	lung	fibroblast_CXCL12	RNF128			31.291
-gse128169	lung	fibroblast_CXCL12	IL13RA1	IL13RA1__ext	ssc_tier1	1.568
+gse128169	lung	fibroblast_CXCL12	IL13RA1	IL13RA1__ext	M4	1.568
 gse128169	lung	fibroblast_CXCL12	ZDHHC9			-0.868
 gse128169	lung	fibroblast_CXCL12	UTP14A			1.691
 gse128169	lung	fibroblast_CXCL12	SLC6A8			2.571
@@ -24448,7 +24448,7 @@ gse128169	lung	fibroblast_CXCL12	ALDH1A1			-1.456
 gse128169	lung	fibroblast_CXCL12	PCSK5			-1.188
 gse128169	lung	fibroblast_CXCL12	GAS1			-1.504
 gse128169	lung	fibroblast_CXCL12	C9orf47			-1.764
-gse128169	lung	fibroblast_CXCL12	SYK	SYK__cyto	ssc_tier1	29.848
+gse128169	lung	fibroblast_CXCL12	SYK	SYK__cyto	M5	29.848
 gse128169	lung	fibroblast_CXCL12	NFIL3			-1.139
 gse128169	lung	fibroblast_CXCL12	ASPN			3.462
 gse128169	lung	fibroblast_CXCL12	COL15A1			2.570
@@ -24510,7 +24510,7 @@ gse128169	lung	fibroblast_CXCL12	MAP3K8			-1.430
 gse128169	lung	fibroblast_CXCL12	ITGB1			0.787
 gse128169	lung	fibroblast_CXCL12	LINC00839			2.232
 gse128169	lung	fibroblast_CXCL12	CSGALNACT2			1.722
-gse128169	lung	fibroblast_CXCL12	DKK1			-3.900
+gse128169	lung	fibroblast_CXCL12	DKK1	DKK1__ext	M2	-3.900
 gse128169	lung	fibroblast_CXCL12	BICC1			0.868
 gse128169	lung	fibroblast_CXCL12	TET1			2.998
 gse128169	lung	fibroblast_CXCL12	H2AFY2			1.403
@@ -24755,7 +24755,7 @@ gse128169	lung	fibroblast_CXCL12	AURKC			29.848
 gse128169	lung	fibroblast_CXCL12	A1BG			1.413
 gse128169	lung	fibroblast_CXCL12	DGCR6L			0.921
 gse128169	lung	fibroblast_CXCL12	SCARF2			1.138
-gse128169	lung	fibroblast_CXCL12	XBP1	XBP1__nuc	ssc_tier1	-1.327
+gse128169	lung	fibroblast_CXCL12	XBP1	XBP1__nuc	M5	-1.327
 gse128169	lung	fibroblast_CXCL12	EMID1			1.969
 gse128169	lung	fibroblast_CXCL12	PES1			0.863
 gse128169	lung	fibroblast_CXCL12	RBFOX2			0.817
@@ -25044,7 +25044,7 @@ gse128169	lung	macrophage_SPP1	HOPX			-2.136
 gse128169	lung	macrophage_SPP1	STAP1			32.312
 gse128169	lung	macrophage_SPP1	STATH			30.869
 gse128169	lung	macrophage_SPP1	PPBP			6.130
-gse128169	lung	macrophage_SPP1	EREG			-1.462
+gse128169	lung	macrophage_SPP1	EREG	EREG__ext	M2	-1.462
 gse128169	lung	macrophage_SPP1	CXCL10			3.335
 gse128169	lung	macrophage_SPP1	CXCL11			3.024
 gse128169	lung	macrophage_SPP1	SCARB2			0.465
@@ -25068,7 +25068,7 @@ gse128169	lung	macrophage_SPP1	NAA15			0.376
 gse128169	lung	macrophage_SPP1	MAML3			-0.553
 gse128169	lung	macrophage_SPP1	SCOC			0.472
 gse128169	lung	macrophage_SPP1	GATB			0.378
-gse128169	lung	macrophage_SPP1	SFRP2			2.047
+gse128169	lung	macrophage_SPP1	SFRP2	SFRP2__ext	M2	2.047
 gse128169	lung	macrophage_SPP1	DDX60			1.128
 gse128169	lung	macrophage_SPP1	HMGB2			-1.276
 gse128169	lung	macrophage_SPP1	RP11-326I11.3			1.172
@@ -25425,7 +25425,7 @@ gse128169	lung	macrophage_SPP1	RAB5B			-0.394
 gse128169	lung	macrophage_SPP1	RPL41			-0.502
 gse128169	lung	macrophage_SPP1	IL23A			-2.153
 gse128169	lung	macrophage_SPP1	HSD17B6			-2.699
-gse128169	lung	macrophage_SPP1	STAT6	STAT6__cyto	crosstalk	-0.387
+gse128169	lung	macrophage_SPP1	STAT6	STAT6__cyto	M4	-0.387
 gse128169	lung	macrophage_SPP1	ARHGAP9			-0.727
 gse128169	lung	macrophage_SPP1	CTDSP2			-0.474
 gse128169	lung	macrophage_SPP1	RAB3IP			-0.927
@@ -25489,7 +25489,7 @@ gse128169	lung	macrophage_SPP1	RPL36AL			-0.344
 gse128169	lung	macrophage_SPP1	VCPKMT			-0.525
 gse128169	lung	macrophage_SPP1	CDKN3			1.608
 gse128169	lung	macrophage_SPP1	MAPK1IP1L			-0.362
-gse128169	lung	macrophage_SPP1	LGALS3			0.904
+gse128169	lung	macrophage_SPP1	LGALS3	LGALS3__ext	M2	0.904
 gse128169	lung	macrophage_SPP1	DLGAP5			3.026
 gse128169	lung	macrophage_SPP1	FBXO34			-0.620
 gse128169	lung	macrophage_SPP1	PELI2			-0.694
@@ -25748,7 +25748,7 @@ gse128169	lung	macrophage_SPP1	RSPH14			30.869
 gse128169	lung	macrophage_SPP1	CHCHD10			0.567
 gse128169	lung	macrophage_SPP1	LRP5L			-1.189
 gse128169	lung	macrophage_SPP1	MN1			-2.208
-gse128169	lung	macrophage_SPP1	XBP1	XBP1__nuc	ssc_tier1	-0.644
+gse128169	lung	macrophage_SPP1	XBP1	XBP1__nuc	M5	-0.644
 gse128169	lung	macrophage_SPP1	EWSR1			-0.258
 gse128169	lung	macrophage_SPP1	MTMR3			-0.327
 gse128169	lung	macrophage_SPP1	CCDC157			-1.013
@@ -26099,7 +26099,7 @@ gse128169	lung	macrophage_alv	INTU			1.148
 gse128169	lung	macrophage_alv	C4orf33			0.642
 gse128169	lung	macrophage_alv	CLGN			3.329
 gse128169	lung	macrophage_alv	MND1			1.852
-gse128169	lung	macrophage_alv	SFRP2			1.587
+gse128169	lung	macrophage_alv	SFRP2	SFRP2__ext	M2	1.587
 gse128169	lung	macrophage_alv	FAM198B			1.355
 gse128169	lung	macrophage_alv	NEIL3			2.544
 gse128169	lung	macrophage_alv	TRAPPC11			0.433
@@ -26172,7 +26172,7 @@ gse128169	lung	macrophage_alv	RANBP17			1.775
 gse128169	lung	macrophage_alv	SIMC1			0.826
 gse128169	lung	macrophage_alv	HNRNPH1			-0.326
 gse128169	lung	macrophage_alv	ZFP62			-0.406
-gse128169	lung	macrophage_alv	IRF4	IRF4__nuc	ssc_tier1	-1.121
+gse128169	lung	macrophage_alv	IRF4	IRF4__nuc	M5	-1.121
 gse128169	lung	macrophage_alv	CDYL			-0.517
 gse128169	lung	macrophage_alv	PPP1R3G			2.052
 gse128169	lung	macrophage_alv	RBM24			-2.424
@@ -26291,7 +26291,7 @@ gse128169	lung	macrophage_alv	IFT22			0.552
 gse128169	lung	macrophage_alv	ORC5			0.529
 gse128169	lung	macrophage_alv	SRPK2			0.308
 gse128169	lung	macrophage_alv	DNAJB9			-0.747
-gse128169	lung	macrophage_alv	CAV1			-1.159
+gse128169	lung	macrophage_alv	CAV1	CAV1__pm	M2	-1.159
 gse128169	lung	macrophage_alv	GCC1			-0.606
 gse128169	lung	macrophage_alv	HILPDA			-0.976
 gse128169	lung	macrophage_alv	FAM71F2			1.074
@@ -26367,7 +26367,7 @@ gse128169	lung	macrophage_alv	GOLGA7			-0.319
 gse128169	lung	macrophage_alv	THAP1			-0.470
 gse128169	lung	macrophage_alv	SNAI2	SNAI2__nuc	ssc_tier1	-1.784
 gse128169	lung	macrophage_alv	TMEM68			-0.378
-gse128169	lung	macrophage_alv	LYN	LYN__cyto	ssc_tier1	0.222
+gse128169	lung	macrophage_alv	LYN	LYN__cyto	M5	0.222
 gse128169	lung	macrophage_alv	NSMAF			-0.474
 gse128169	lung	macrophage_alv	C8orf44			-0.465
 gse128169	lung	macrophage_alv	HEY1	HEY__nuc	M3	-1.691
@@ -26525,7 +26525,7 @@ gse128169	lung	macrophage_alv	ACAD8			-0.442
 gse128169	lung	macrophage_alv	AKR1C2			-3.199
 gse128169	lung	macrophage_alv	AKR1C1			-4.406
 gse128169	lung	macrophage_alv	AKR1C3			-1.391
-gse128169	lung	macrophage_alv	GATA3	GATA3__nuc	ssc_tier1	-1.310
+gse128169	lung	macrophage_alv	GATA3	GATA3__nuc	M4	-1.310
 gse128169	lung	macrophage_alv	SFTA1P			-1.647
 gse128169	lung	macrophage_alv	MCM10			2.084
 gse128169	lung	macrophage_alv	TRDMT1			0.608
@@ -27031,7 +27031,7 @@ gse128169	lung	macrophage_alv	CRYBB1			2.768
 gse128169	lung	macrophage_alv	MIATNB			-0.902
 gse128169	lung	macrophage_alv	LINC01422			31.989
 gse128169	lung	macrophage_alv	MN1			-1.249
-gse128169	lung	macrophage_alv	XBP1	XBP1__nuc	ssc_tier1	-0.718
+gse128169	lung	macrophage_alv	XBP1	XBP1__nuc	M5	-0.718
 gse128169	lung	macrophage_alv	EWSR1			-0.240
 gse128169	lung	macrophage_alv	RASL10A			1.640
 gse128169	lung	macrophage_alv	AP1B1			0.678
@@ -27074,235 +27074,286 @@ gse128169	lung	macrophage_alv	YBEY			-1.178
 gse128169	lung	macrophage_alv	C21orf58			1.360
 gse128169	lung	macrophage_alv	MT-CO3			0.475
 gse128169	lung	macrophage_alv	AC004556.1			4.967
-gse195452	skin_gur	B	STAT1	STAT1__cyto	M1	31.072
-gse195452	skin_gur	B	STAT2	STAT2__cyto	M1	29.629
-gse195452	skin_gur	DC	IFI6	IFI6__cyto	M1	1.498
-gse195452	skin_gur	DC	IFITM1	IFITM1__cyto	M1	0.693
-gse195452	skin_gur	DC	IFITM3	IFITM3__cyto	M1	0.662
-gse195452	skin_gur	DC	PDE5A	PDE5A__cyto	ssc_tier1	32.010
-gse195452	skin_gur	DC	TNFRSF17	BCMA__ext	ssc_tier1	30.567
-gse195452	skin_gur	DC_CCL22	FN1	FN1__ecm	ssc_tier1	29.611
-gse195452	skin_gur	DC_CCL22	TGFB1	TGFB1__ext	M2	29.611
-gse195452	skin_gur	DC_CXCL10	IFI27	IFI27__mito	M1	29.511
-gse195452	skin_gur	DC_CXCL10	PSMB8	PSMB8__nuc	M1	29.511
-gse195452	skin_gur	DC_XCR1	IFIT3	IFIT3__cyto	M1	30.474
-gse195452	skin_gur	Fibro_ACTA2	IFI27	IFI27__mito	M1	1.777
-gse195452	skin_gur	Fibro_ACTA2	SMAD3	SMAD3__cyto	M2	-0.732
-gse195452	skin_gur	Fibro_Bad	ANGPT2	ANGPT2__ext	ssc_tier1	30.389
-gse195452	skin_gur	Fibro_Bad	IL4R	IL4R__ext	ssc_tier1	28.946
-gse195452	skin_gur	Fibro_Bad	S100A4	FSP1__pm	ssc_tier1	-1.119
-gse195452	skin_gur	Fibro_Bad	SOCS3	SOCS3__cyto	M4	0.203
-gse195452	skin_gur	Fibro_COCH	COL5A2	COL5A2__ext	ssc_tier1	0.521
-gse195452	skin_gur	Fibro_COCH	EGR1	EGR1__cyto	M1	0.984
-gse195452	skin_gur	Fibro_COCH	IFI6	IFI6__cyto	M1	1.517
-gse195452	skin_gur	Fibro_COCH	ISG15	ISG15__cyto	M1	1.562
-gse195452	skin_gur	Fibro_COCH	LOXL2	LOXL2__ecm	ssc_tier1	1.445
-gse195452	skin_gur	Fibro_COMP	ACTA2	ACTA2__cyto	ssc_tier1	1.374
-gse195452	skin_gur	Fibro_COMP	IFI27	IFI27__mito	M1	1.803
-gse195452	skin_gur	Fibro_COMP	IFI6	IFI6__cyto	M1	1.100
-gse195452	skin_gur	Fibro_COMP	IFITM1	IFITM1__cyto	M1	0.760
-gse195452	skin_gur	Fibro_COMP	IFITM3	IFITM3__cyto	M1	0.527
-gse195452	skin_gur	Fibro_COMP	ISG15	ISG15__cyto	M1	1.756
-gse195452	skin_gur	Fibro_COMP	LTBP4	LTBP4__ext	M2	-0.981
-gse195452	skin_gur	Fibro_COMP	PECAM1	CD31__pm	ssc_tier1	2.420
-gse195452	skin_gur	Fibro_COMP	S100A4	FSP1__pm	ssc_tier1	-0.736
-gse195452	skin_gur	Fibro_COMP	SAMHD1	SAMHD1__nuc	M1	0.836
-gse195452	skin_gur	Fibro_COMP	SOCS3	SOCS3__cyto	M4	0.745
-gse195452	skin_gur	Fibro_IGFBP2	ACTA2	ACTA2__cyto	ssc_tier1	0.955
+gse195452	skin_gur	DC	IFI6	IFI6__cyto	M1	1.543
+gse195452	skin_gur	DC	IFITM1	IFITM1__cyto	M1	0.724
+gse195452	skin_gur	DC	IFITM3	IFITM3__cyto	M1	0.705
+gse195452	skin_gur	DC_CCL22	STAT1	STAT1__cyto	M1	31.123
+gse195452	skin_gur	DC_CCL22	TGFB1	TGFB1__ext	M2	29.681
+gse195452	skin_gur	DC_CXCL10	GATA3	GATA3__nuc	M4	29.572
+gse195452	skin_gur	DC_CXCL10	PLAUR	PLAUR__pm	M3	31.015
+gse195452	skin_gur	DC_CXCL10	PTGS2	COX_2__er	ssc_tier1	31.015
+gse195452	skin_gur	DC_XCR1	PMEPA1	PMEPA1__cyto	M2	30.487
+gse195452	skin_gur	DC_XCR1	STAT3	STAT3__cyto	crosstalk	30.487
+gse195452	skin_gur	Fibro_ACTA2	CNTN1	CNTN1__cyto	M3	-1.685
+gse195452	skin_gur	Fibro_ACTA2	IFI27	IFI27__mito	M1	1.765
+gse195452	skin_gur	Fibro_ACTA2	LYN	LYN__cyto	M5	30.791
+gse195452	skin_gur	Fibro_ACTA2	PIK3CA	PI3K__cyto	M2	0.528
+gse195452	skin_gur	Fibro_ACTA2	SFRP2	SFRP2__ext	M2	-0.446
+gse195452	skin_gur	Fibro_ACTA2	TNFSF13	TNFSF13__ext	M5	-1.258
+gse195452	skin_gur	Fibro_Bad	DLL1	DLL1__cyto	M3	29.003
+gse195452	skin_gur	Fibro_Bad	IFNAR2	IFNAR2_iso2__cyto	M1	29.003
+gse195452	skin_gur	Fibro_Bad	IL4R	IL4R__ext	M4	29.003
+gse195452	skin_gur	Fibro_Bad	S100A4	FSP1__pm	ssc_tier1	-1.069
+gse195452	skin_gur	Fibro_COCH	COL5A2	COL5A2__ext	ssc_tier1	0.542
+gse195452	skin_gur	Fibro_COCH	EGR1	EGR1__cyto	M1	0.999
+gse195452	skin_gur	Fibro_COCH	IFI6	IFI6__cyto	M1	1.527
+gse195452	skin_gur	Fibro_COCH	ISG15	ISG15__cyto	M1	1.586
+gse195452	skin_gur	Fibro_COCH	LOXL2	LOXL2__ecm	ssc_tier1	1.459
+gse195452	skin_gur	Fibro_COMP	ACTA2	ACTA2__cyto	ssc_tier1	1.361
+gse195452	skin_gur	Fibro_COMP	IFI27	IFI27__mito	M1	1.829
+gse195452	skin_gur	Fibro_COMP	IFI6	IFI6__cyto	M1	1.123
+gse195452	skin_gur	Fibro_COMP	IFITM1	IFITM1__cyto	M1	0.777
+gse195452	skin_gur	Fibro_COMP	IFITM3	IFITM3__cyto	M1	0.548
+gse195452	skin_gur	Fibro_COMP	LTBP4	LTBP4__ext	M2	-0.965
+gse195452	skin_gur	Fibro_COMP	PECAM1	CD31__pm	ssc_tier1	2.429
+gse195452	skin_gur	Fibro_COMP	S100A4	FSP1__pm	ssc_tier1	-0.712
+gse195452	skin_gur	Fibro_COMP	SFRP4	SFRP4__ext	M2	1.831
+gse195452	skin_gur	Fibro_IGFBP2	HES1	HES1__nuc	M3	1.575
 gse195452	skin_gur	Fibro_IGFBP2	IFI27	IFI27__mito	M1	1.933
-gse195452	skin_gur	Fibro_IGFBP2	POSTN	POSTN__ecm	ssc_tier1	1.381
-gse195452	skin_gur	Fibro_IGFBP2	S100A4	FSP1__pm	ssc_tier1	-0.843
-gse195452	skin_gur	Fibro_LGR5	ANGPT2	ANGPT2__ext	ssc_tier1	1.010
-gse195452	skin_gur	Fibro_LGR5	ARRB1	ARRB__cyto	M3	-0.879
-gse195452	skin_gur	Fibro_LGR5	CNTFR	CNTFR__cyto	M4	-1.026
-gse195452	skin_gur	Fibro_LGR5	CNTN1	CNTN1__cyto	M3	-0.560
-gse195452	skin_gur	Fibro_LGR5	COL5A2	COL5A2__ext	ssc_tier1	0.376
-gse195452	skin_gur	Fibro_LGR5	COMP	COMP__ecm	ssc_tier1	1.372
-gse195452	skin_gur	Fibro_LGR5	CRLF1	CRLF1__cyto	M4	1.318
-gse195452	skin_gur	Fibro_LGR5	CTGF	CTGF__ext	M2	0.526
-gse195452	skin_gur	Fibro_LGR5	IFI27	IFI27__mito	M1	1.162
-gse195452	skin_gur	Fibro_LGR5	IFI6	IFI6__cyto	M1	0.835
-gse195452	skin_gur	Fibro_LGR5	IL13RA1	IL13RA1__ext	ssc_tier1	-0.470
-gse195452	skin_gur	Fibro_LGR5	LOX	LOX__ecm	ssc_tier1	-0.411
-gse195452	skin_gur	Fibro_LGR5	LTBP1	LTBP1__ecm	ssc_tier1	-0.750
-gse195452	skin_gur	Fibro_LGR5	LTBP4	LTBP4__ext	M2	-0.813
-gse195452	skin_gur	Fibro_LGR5	MAVS	MAVS__cyto	ssc_tier1	-0.439
-gse195452	skin_gur	Fibro_LGR5	PDGFRA	PDGFRA__cyto	M2	-0.428
-gse195452	skin_gur	Fibro_LGR5	PECAM1	CD31__pm	ssc_tier1	0.622
-gse195452	skin_gur	Fibro_LGR5	POSTN	POSTN__ecm	ssc_tier1	0.698
-gse195452	skin_gur	Fibro_LGR5	PRDM1	BLIMP1__nuc	ssc_tier1	0.415
-gse195452	skin_gur	Fibro_LGR5	RAPGEF1	RAPGEF1__cyto	M2	-0.579
-gse195452	skin_gur	Fibro_LGR5	RHOA	RHOA__cyto	ssc_tier1	-0.423
-gse195452	skin_gur	Fibro_LGR5	S100A4	FSP1__pm	ssc_tier1	-0.677
-gse195452	skin_gur	Fibro_LGR5	SMAD3	SMAD3__cyto	M2	-0.598
-gse195452	skin_gur	Fibro_LGR5	SOCS1	SOCS1__cyto	ssc_tier1	-1.128
-gse195452	skin_gur	Fibro_LGR5	STAT1	STAT1__cyto	M1	0.660
-gse195452	skin_gur	Fibro_LGR5	STAT6	STAT6__cyto	crosstalk	-0.409
-gse195452	skin_gur	Fibro_LGR5	TNC	TNC__ecm	ssc_tier1	0.981
-gse195452	skin_gur	Fibro_LGR5	TWIST1	TWIST1__nuc	ssc_tier1	-0.397
-gse195452	skin_gur	Fibro_LGR5	VWF	VWF__pm	ssc_tier1	1.318
-gse195452	skin_gur	Fibro_LGR5	XAF1	XAF1__cyto	M1	0.764
-gse195452	skin_gur	Fibro_MYOC1	CBL	CBL__cyto	M2	1.272
-gse195452	skin_gur	Fibro_MYOC1	CNTFR	CNTFR__cyto	M4	-1.025
-gse195452	skin_gur	Fibro_MYOC1	COL1A2	COL1A2__ext	ssc_tier1	-0.296
-gse195452	skin_gur	Fibro_MYOC1	COL5A2	COL5A2__ext	ssc_tier1	0.365
-gse195452	skin_gur	Fibro_MYOC1	COMP	COMP__ecm	ssc_tier1	1.168
-gse195452	skin_gur	Fibro_MYOC1	IFI27	IFI27__mito	M1	1.795
-gse195452	skin_gur	Fibro_MYOC1	IFI6	IFI6__cyto	M1	0.785
-gse195452	skin_gur	Fibro_MYOC1	IFITM1	IFITM1__cyto	M1	0.667
-gse195452	skin_gur	Fibro_MYOC1	IFITM3	IFITM3__cyto	M1	0.509
-gse195452	skin_gur	Fibro_MYOC1	ISG15	ISG15__cyto	M1	1.471
-gse195452	skin_gur	Fibro_MYOC1	LOX	LOX__ecm	ssc_tier1	-0.441
-gse195452	skin_gur	Fibro_MYOC1	LTBP1	LTBP1__ecm	ssc_tier1	-0.532
-gse195452	skin_gur	Fibro_MYOC1	PDGFA	PDGFA__ext	M2	1.171
-gse195452	skin_gur	Fibro_MYOC1	S100A4	FSP1__pm	ssc_tier1	-0.501
-gse195452	skin_gur	Fibro_MYOC1	SMAD3	SMAD3__cyto	M2	-0.651
-gse195452	skin_gur	Fibro_MYOC1	STAT6	STAT6__cyto	crosstalk	-0.471
-gse195452	skin_gur	Fibro_MYOC1	TBX2	TBX2__nuc	ssc_tier1	1.518
-gse195452	skin_gur	Fibro_MYOC1	TICAM1	TICAM1__cyto	ssc_tier1	-0.928
-gse195452	skin_gur	Fibro_MYOC1	TWIST1	TWIST1__nuc	ssc_tier1	-0.575
-gse195452	skin_gur	Fibro_MYOC1	XAF1	XAF1__cyto	M1	0.830
-gse195452	skin_gur	Fibro_MYOC2	ANGPT2	ANGPT2__ext	ssc_tier1	1.048
-gse195452	skin_gur	Fibro_MYOC2	BST2	BST2__ext	M1	1.111
-gse195452	skin_gur	Fibro_MYOC2	CNTN1	CNTN1__cyto	M3	-0.714
-gse195452	skin_gur	Fibro_MYOC2	COL1A2	COL1A2__ext	ssc_tier1	-0.248
-gse195452	skin_gur	Fibro_MYOC2	COL5A2	COL5A2__ext	ssc_tier1	0.298
-gse195452	skin_gur	Fibro_MYOC2	COMP	COMP__ecm	ssc_tier1	1.408
-gse195452	skin_gur	Fibro_MYOC2	CRLF1	CRLF1__cyto	M4	1.517
-gse195452	skin_gur	Fibro_MYOC2	CTGF	CTGF__ext	M2	0.834
-gse195452	skin_gur	Fibro_MYOC2	HIF1A	HIF1A__nuc	M3	0.855
-gse195452	skin_gur	Fibro_MYOC2	IFI27	IFI27__mito	M1	1.837
-gse195452	skin_gur	Fibro_MYOC2	IFI6	IFI6__cyto	M1	0.759
-gse195452	skin_gur	Fibro_MYOC2	IFITM1	IFITM1__cyto	M1	0.500
-gse195452	skin_gur	Fibro_MYOC2	ISG15	ISG15__cyto	M1	1.527
+gse195452	skin_gur	Fibro_IGFBP2	KAT2B	PCAF__nuc	M3	0.414
+gse195452	skin_gur	Fibro_IGFBP2	POSTN	POSTN__ecm	ssc_tier1	1.431
+gse195452	skin_gur	Fibro_IGFBP2	S100A4	FSP1__pm	ssc_tier1	-0.808
+gse195452	skin_gur	Fibro_LGR5	ANGPT2	ANGPT2__ext	ssc_tier1	1.041
+gse195452	skin_gur	Fibro_LGR5	ARRB1	ARRB__cyto	M3	-0.850
+gse195452	skin_gur	Fibro_LGR5	CNTFR	CNTFR__cyto	M4	-0.992
+gse195452	skin_gur	Fibro_LGR5	CNTN1	CNTN1__cyto	M3	-0.532
+gse195452	skin_gur	Fibro_LGR5	COL5A2	COL5A2__ext	ssc_tier1	0.404
+gse195452	skin_gur	Fibro_LGR5	COMP	COMP__ecm	ssc_tier1	1.403
+gse195452	skin_gur	Fibro_LGR5	CREB3L1	CREB3L1__nuc	M2	-0.484
+gse195452	skin_gur	Fibro_LGR5	CRLF1	CRLF1__cyto	M4	1.340
+gse195452	skin_gur	Fibro_LGR5	DPP4	DPP4__pm	M2	-1.020
+gse195452	skin_gur	Fibro_LGR5	EGFR	EGFR__pm	M2	-0.409
+gse195452	skin_gur	Fibro_LGR5	EGR1	EGR1__cyto	M1	0.624
+gse195452	skin_gur	Fibro_LGR5	FNDC1	FNDC1__ext	M2	0.831
+gse195452	skin_gur	Fibro_LGR5	IFI27	IFI27__mito	M1	1.193
+gse195452	skin_gur	Fibro_LGR5	IFI6	IFI6__cyto	M1	0.872
+gse195452	skin_gur	Fibro_LGR5	IL13RA1	IL13RA1__ext	M4	-0.447
+gse195452	skin_gur	Fibro_LGR5	JUNB	JUNB__nuc	M2	0.736
+gse195452	skin_gur	Fibro_LGR5	LGALS3	LGALS3__ext	M2	-0.409
+gse195452	skin_gur	Fibro_LGR5	LTBP1	LTBP1__ecm	ssc_tier1	-0.718
+gse195452	skin_gur	Fibro_LGR5	LTBP4	LTBP4__ext	M2	-0.784
+gse195452	skin_gur	Fibro_LGR5	NOTCH2	NOTCH2__pm	M2	-0.352
+gse195452	skin_gur	Fibro_LGR5	PDGFRA	PDGFRA__cyto	M2	-0.409
+gse195452	skin_gur	Fibro_LGR5	PECAM1	CD31__pm	ssc_tier1	1.387
+gse195452	skin_gur	Fibro_LGR5	POSTN	POSTN__ecm	ssc_tier1	0.726
+gse195452	skin_gur	Fibro_LGR5	RHOA	RHOA__cyto	ssc_tier1	-0.394
+gse195452	skin_gur	Fibro_LGR5	S100A4	FSP1__pm	ssc_tier1	-0.650
+gse195452	skin_gur	Fibro_LGR5	SFRP2	SFRP2__ext	M2	-0.567
+gse195452	skin_gur	Fibro_LGR5	SMAD3	SMAD3__cyto	M2	-0.571
+gse195452	skin_gur	Fibro_LGR5	SOCS1	SOCS1__cyto	ssc_tier1	-1.102
+gse195452	skin_gur	Fibro_LGR5	STAT1	STAT1__cyto	M1	0.690
+gse195452	skin_gur	Fibro_LGR5	STAT6	STAT6__cyto	M4	-0.380
+gse195452	skin_gur	Fibro_LGR5	TNC	TNC__ecm	ssc_tier1	1.009
+gse195452	skin_gur	Fibro_LGR5	TWIST1	TWIST1__nuc	ssc_tier1	-0.368
+gse195452	skin_gur	Fibro_LGR5	XAF1	XAF1__cyto	M1	0.792
+gse195452	skin_gur	Fibro_MYOC1	ANGPT2	ANGPT2__ext	ssc_tier1	1.086
+gse195452	skin_gur	Fibro_MYOC1	CBL	CBL__cyto	M2	1.281
+gse195452	skin_gur	Fibro_MYOC1	COL1A2	COL1A2__ext	ssc_tier1	-0.287
+gse195452	skin_gur	Fibro_MYOC1	COL5A2	COL5A2__ext	ssc_tier1	0.387
+gse195452	skin_gur	Fibro_MYOC1	COMP	COMP__ecm	ssc_tier1	1.184
+gse195452	skin_gur	Fibro_MYOC1	CREB3L1	CREB3L1__nuc	M2	-0.706
+gse195452	skin_gur	Fibro_MYOC1	DPP4	DPP4__pm	M2	-1.106
+gse195452	skin_gur	Fibro_MYOC1	FLI1	FLI1__nuc	M3	1.329
+gse195452	skin_gur	Fibro_MYOC1	FNDC1	FNDC1__ext	M2	1.197
+gse195452	skin_gur	Fibro_MYOC1	IFI27	IFI27__mito	M1	1.806
+gse195452	skin_gur	Fibro_MYOC1	IFI6	IFI6__cyto	M1	0.803
+gse195452	skin_gur	Fibro_MYOC1	IFITM1	IFITM1__cyto	M1	0.674
+gse195452	skin_gur	Fibro_MYOC1	IFITM3	IFITM3__cyto	M1	0.513
+gse195452	skin_gur	Fibro_MYOC1	ISG15	ISG15__cyto	M1	1.487
+gse195452	skin_gur	Fibro_MYOC1	JUNB	JUNB__nuc	M2	0.904
+gse195452	skin_gur	Fibro_MYOC1	LGALS3	LGALS3__ext	M2	-0.398
+gse195452	skin_gur	Fibro_MYOC1	LTBP1	LTBP1__ecm	ssc_tier1	-0.515
+gse195452	skin_gur	Fibro_MYOC1	NOTCH2	NOTCH2__pm	M2	-0.479
+gse195452	skin_gur	Fibro_MYOC1	PDGFA	PDGFA__ext	M2	1.178
+gse195452	skin_gur	Fibro_MYOC1	PLAUR	PLAUR__pm	M3	1.443
+gse195452	skin_gur	Fibro_MYOC1	RUNX1	RUNX1__nuc	M2	0.941
+gse195452	skin_gur	Fibro_MYOC1	S100A4	FSP1__pm	ssc_tier1	-0.491
+gse195452	skin_gur	Fibro_MYOC1	SFRP2	SFRP2__ext	M2	-0.565
+gse195452	skin_gur	Fibro_MYOC1	SFRP4	SFRP4__ext	M2	1.348
+gse195452	skin_gur	Fibro_MYOC1	SMAD3	SMAD3__cyto	M2	-0.629
+gse195452	skin_gur	Fibro_MYOC1	STAT6	STAT6__cyto	M4	-0.450
+gse195452	skin_gur	Fibro_MYOC1	TBX2	TBX2__nuc	ssc_tier1	1.532
+gse195452	skin_gur	Fibro_MYOC1	TICAM1	TICAM1__cyto	ssc_tier1	-0.915
+gse195452	skin_gur	Fibro_MYOC1	TWIST1	TWIST1__nuc	ssc_tier1	-0.556
+gse195452	skin_gur	Fibro_MYOC1	VWF	VWF__pm	ssc_tier1	1.289
+gse195452	skin_gur	Fibro_MYOC1	XAF1	XAF1__cyto	M1	0.848
+gse195452	skin_gur	Fibro_MYOC2	ANGPT2	ANGPT2__ext	ssc_tier1	1.064
+gse195452	skin_gur	Fibro_MYOC2	BST2	BST2__ext	M1	1.130
+gse195452	skin_gur	Fibro_MYOC2	CDH5	CDH5__pm	ssc_tier1	0.732
+gse195452	skin_gur	Fibro_MYOC2	CNTN1	CNTN1__cyto	M3	-0.702
+gse195452	skin_gur	Fibro_MYOC2	COL1A2	COL1A2__ext	ssc_tier1	-0.237
+gse195452	skin_gur	Fibro_MYOC2	COL5A2	COL5A2__ext	ssc_tier1	0.313
+gse195452	skin_gur	Fibro_MYOC2	COMP	COMP__ecm	ssc_tier1	1.407
+gse195452	skin_gur	Fibro_MYOC2	CREB3L1	CREB3L1__nuc	M2	-0.549
+gse195452	skin_gur	Fibro_MYOC2	CRLF1	CRLF1__cyto	M4	1.513
+gse195452	skin_gur	Fibro_MYOC2	DPP4	DPP4__pm	M2	-1.224
+gse195452	skin_gur	Fibro_MYOC2	FLI1	FLI1__nuc	M3	1.343
+gse195452	skin_gur	Fibro_MYOC2	HIF1A	HIF1A__nuc	M3	0.864
+gse195452	skin_gur	Fibro_MYOC2	IFI27	IFI27__mito	M1	1.862
+gse195452	skin_gur	Fibro_MYOC2	IFI6	IFI6__cyto	M1	0.787
+gse195452	skin_gur	Fibro_MYOC2	IFITM1	IFITM1__cyto	M1	0.516
+gse195452	skin_gur	Fibro_MYOC2	IFITM3	IFITM3__cyto	M1	0.342
+gse195452	skin_gur	Fibro_MYOC2	ISG15	ISG15__cyto	M1	1.552
 gse195452	skin_gur	Fibro_MYOC2	JAG1	JAG1__cyto	M3	0.751
-gse195452	skin_gur	Fibro_MYOC2	LTBP1	LTBP1__ecm	ssc_tier1	-0.610
-gse195452	skin_gur	Fibro_MYOC2	LTBP4	LTBP4__ext	M2	-0.769
-gse195452	skin_gur	Fibro_MYOC2	OSMR	OSMR__cyto	M4	0.577
-gse195452	skin_gur	Fibro_MYOC2	PECAM1	CD31__pm	ssc_tier1	2.065
-gse195452	skin_gur	Fibro_MYOC2	PRDM1	BLIMP1__nuc	ssc_tier1	1.442
-gse195452	skin_gur	Fibro_MYOC2	RHOA	RHOA__cyto	ssc_tier1	-0.351
-gse195452	skin_gur	Fibro_MYOC2	RSAD2	RSAD2__er	M1	2.041
-gse195452	skin_gur	Fibro_MYOC2	S100A4	FSP1__pm	ssc_tier1	-0.642
-gse195452	skin_gur	Fibro_MYOC2	STAT1	STAT1__cyto	M1	0.791
-gse195452	skin_gur	Fibro_MYOC2	TGFBR2	TGFBR2__cyto	M2	0.445
-gse195452	skin_gur	Fibro_MYOC2	VWF	VWF__pm	ssc_tier1	1.872
-gse195452	skin_gur	Fibro_POSTN	BST2	BST2__ext	M1	1.622
-gse195452	skin_gur	Fibro_POSTN	CNTFR	CNTFR__cyto	M4	-1.282
-gse195452	skin_gur	Fibro_POSTN	COL1A2	COL1A2__ext	ssc_tier1	-0.243
-gse195452	skin_gur	Fibro_POSTN	CRLF1	CRLF1__cyto	M4	1.411
-gse195452	skin_gur	Fibro_POSTN	CTGF	CTGF__ext	M2	0.952
-gse195452	skin_gur	Fibro_POSTN	IFI27	IFI27__mito	M1	2.200
-gse195452	skin_gur	Fibro_POSTN	IFITM1	IFITM1__cyto	M1	0.629
-gse195452	skin_gur	Fibro_POSTN	ISG15	ISG15__cyto	M1	1.219
-gse195452	skin_gur	Fibro_POSTN	JAG1	JAG1__cyto	M3	0.788
-gse195452	skin_gur	Fibro_POSTN	LTBP4	LTBP4__ext	M2	-0.581
-gse195452	skin_gur	Fibro_POSTN	PECAM1	CD31__pm	ssc_tier1	1.466
-gse195452	skin_gur	Fibro_POSTN	S100A4	FSP1__pm	ssc_tier1	-0.623
-gse195452	skin_gur	Fibro_POSTN	TBX2	TBX2__nuc	ssc_tier1	1.780
-gse195452	skin_gur	Fibro_POSTN	VWF	VWF__pm	ssc_tier1	1.970
-gse195452	skin_gur	Fibro_POSTN	XAF1	XAF1__cyto	M1	1.236
-gse195452	skin_gur	Fibro_POSTN_PTGDS	COL1A2	COL1A2__ext	ssc_tier1	-0.274
-gse195452	skin_gur	Fibro_POSTN_PTGDS	CTGF	CTGF__ext	M2	1.205
-gse195452	skin_gur	Fibro_POSTN_PTGDS	IFI27	IFI27__mito	M1	1.845
+gse195452	skin_gur	Fibro_MYOC2	JUNB	JUNB__nuc	M2	0.867
+gse195452	skin_gur	Fibro_MYOC2	LGALS3	LGALS3__ext	M2	-0.450
+gse195452	skin_gur	Fibro_MYOC2	LTBP1	LTBP1__ecm	ssc_tier1	-0.600
+gse195452	skin_gur	Fibro_MYOC2	LTBP4	LTBP4__ext	M2	-0.758
+gse195452	skin_gur	Fibro_MYOC2	MMP1	MMP1__ext	M2	32.419
+gse195452	skin_gur	Fibro_MYOC2	OSMR	OSMR__cyto	M4	0.596
+gse195452	skin_gur	Fibro_MYOC2	PECAM1	CD31__pm	ssc_tier1	2.073
+gse195452	skin_gur	Fibro_MYOC2	PRDM1	BLIMP1__nuc	M5	1.455
+gse195452	skin_gur	Fibro_MYOC2	RHOA	RHOA__cyto	ssc_tier1	-0.333
+gse195452	skin_gur	Fibro_MYOC2	RSAD2	RSAD2__er	M1	2.057
+gse195452	skin_gur	Fibro_MYOC2	RUNX1	RUNX1__nuc	M2	0.798
+gse195452	skin_gur	Fibro_MYOC2	S100A4	FSP1__pm	ssc_tier1	-0.628
+gse195452	skin_gur	Fibro_MYOC2	STAT1	STAT1__cyto	M1	0.806
+gse195452	skin_gur	Fibro_MYOC2	TGFBR2	TGFBR2__cyto	M2	0.461
+gse195452	skin_gur	Fibro_MYOC2	VWF	VWF__pm	ssc_tier1	1.884
+gse195452	skin_gur	Fibro_POSTN	BST2	BST2__ext	M1	1.628
+gse195452	skin_gur	Fibro_POSTN	CNTFR	CNTFR__cyto	M4	-1.259
+gse195452	skin_gur	Fibro_POSTN	CREB3L1	CREB3L1__nuc	M2	-0.566
+gse195452	skin_gur	Fibro_POSTN	CRLF1	CRLF1__cyto	M4	1.402
+gse195452	skin_gur	Fibro_POSTN	DLL4	DLL4__cyto	M3	30.720
+gse195452	skin_gur	Fibro_POSTN	IFI27	IFI27__mito	M1	2.202
+gse195452	skin_gur	Fibro_POSTN	IFITM1	IFITM1__cyto	M1	0.639
+gse195452	skin_gur	Fibro_POSTN	IFITM3	IFITM3__cyto	M1	0.425
+gse195452	skin_gur	Fibro_POSTN	ISG15	ISG15__cyto	M1	1.235
+gse195452	skin_gur	Fibro_POSTN	JAG1	JAG1__cyto	M3	0.791
+gse195452	skin_gur	Fibro_POSTN	LTBP4	LTBP4__ext	M2	-0.569
+gse195452	skin_gur	Fibro_POSTN	NOTCH3	NOTCH3__pm	ssc_tier1	0.796
+gse195452	skin_gur	Fibro_POSTN	PECAM1	CD31__pm	ssc_tier1	1.484
+gse195452	skin_gur	Fibro_POSTN	S100A4	FSP1__pm	ssc_tier1	-0.610
+gse195452	skin_gur	Fibro_POSTN	TBX2	TBX2__nuc	ssc_tier1	1.786
+gse195452	skin_gur	Fibro_POSTN	VWF	VWF__pm	ssc_tier1	1.963
+gse195452	skin_gur	Fibro_POSTN_PTGDS	CREB3L1	CREB3L1__nuc	M2	-0.926
+gse195452	skin_gur	Fibro_POSTN_PTGDS	IFI27	IFI27__mito	M1	1.852
 gse195452	skin_gur	Fibro_POSTN_PTGDS	IFIT3	IFIT3__cyto	M1	1.300
-gse195452	skin_gur	Fibro_POSTN_PTGDS	JAG1	JAG1__cyto	M3	1.496
-gse195452	skin_gur	Fibro_PTGDS	BST2	BST2__ext	M1	2.501
-gse195452	skin_gur	Fibro_PTGDS	IFI27	IFI27__mito	M1	1.506
-gse195452	skin_gur	Fibro_PTGDS	KAT2B	PCAF__nuc	M3	-0.533
-gse195452	skin_gur	Fibro_PTGDS	LTBP4	LTBP4__ext	M2	-0.647
-gse195452	skin_gur	Fibro_PTGDS	PDGFRA	PDGFRA__cyto	M2	-0.570
-gse195452	skin_gur	Fibro_PTGDS	RHOA	RHOA__cyto	ssc_tier1	-0.353
-gse195452	skin_gur	Fibro_PTGDS	S100A4	FSP1__pm	ssc_tier1	-0.620
-gse195452	skin_gur	Fibro_PTGDS	STAT1	STAT1__cyto	M1	0.820
-gse195452	skin_gur	Fibro_PTGDS	XAF1	XAF1__cyto	M1	1.042
-gse195452	skin_gur	GBP1	CTGF	CTGF__ext	M2	-1.442
-gse195452	skin_gur	GBP1	IFITM3	IFITM3__cyto	M1	1.164
-gse195452	skin_gur	GBP1	ISG15	ISG15__cyto	M1	31.018
-gse195452	skin_gur	KRT14_ACTA2	IFITM3	IFITM3__cyto	M1	0.824
-gse195452	skin_gur	KRT14_ACTA2	TBX2	TBX2__nuc	ssc_tier1	-1.261
-gse195452	skin_gur	KRT14_S100A2_GJA1	CTGF	CTGF__ext	M2	1.892
-gse195452	skin_gur	KRT14_S100A2_GJA1	LTBP4	LTBP4__ext	M2	-3.411
-gse195452	skin_gur	KRT14_S100A2_GJA1	OSMR	OSMR__cyto	M4	1.518
-gse195452	skin_gur	KRT1_KRT10	LYN	LYN__cyto	ssc_tier1	-1.604
-gse195452	skin_gur	M_CD16_IL1B	BST2	BST2__ext	M1	-3.695
-gse195452	skin_gur	M_CD16_IL1B	IRF4	IRF4__nuc	ssc_tier1	30.514
-gse195452	skin_gur	M_CD16_IL1B	KPNB1	KPNB1__nuc	M1	30.514
-gse195452	skin_gur	M_CD16_IL1B	STAT1	STAT1__cyto	M1	30.514
-gse195452	skin_gur	M_CD16_IL1B	VEGFA	VEGFA__ext	ssc_tier1	29.071
-gse195452	skin_gur	M_IL1B	IRF4	IRF4__nuc	ssc_tier1	28.963
-gse195452	skin_gur	M_IL1B	LTBP4	LTBP4__ext	M2	28.963
-gse195452	skin_gur	M_IL1B	STAT6	STAT6__cyto	crosstalk	-2.725
-gse195452	skin_gur	Mast	FOXP3	FOXP3__nuc	ssc_tier1	-0.930
-gse195452	skin_gur	Mast	LIF	LIF__ext	M4	-2.635
-gse195452	skin_gur	Mf	ANGPT2	ANGPT2__ext	ssc_tier1	1.370
-gse195452	skin_gur	Mf	IFI27	IFI27__mito	M1	1.865
-gse195452	skin_gur	Mf	IFI6	IFI6__cyto	M1	1.394
-gse195452	skin_gur	Mf	IFITM2	IFITM2__cyto	M1	0.547
-gse195452	skin_gur	Mf	IFITM3	IFITM3__cyto	M1	0.683
-gse195452	skin_gur	Mf	ISG15	ISG15__cyto	M1	1.917
-gse195452	skin_gur	Mf_TREM2	CREBBP	CREBBP__nuc	M3	30.173
-gse195452	skin_gur	Mf_TREM2	EP300	EP300__nuc	M3	30.173
-gse195452	skin_gur	Mf_TREM2	HES1	HES1__nuc	M3	30.173
-gse195452	skin_gur	Mf_TREM2	IRF9	IRF9__cyto	M1	30.173
-gse195452	skin_gur	Mf_TREM2	JAK1	JAK1__cyto	M4	-1.981
-gse195452	skin_gur	Mo	POSTN	POSTN__ecm	ssc_tier1	31.235
-gse195452	skin_gur	Mo	TGFBR2	TGFBR2__cyto	M2	31.235
-gse195452	skin_gur	Mo_CD16	COL3A1	COL3A1__ext	ssc_tier1	32.149
-gse195452	skin_gur	Mo_CD16	POSTN	POSTN__ecm	ssc_tier1	32.149
-gse195452	skin_gur	NK	COL5A2	COL5A2__ext	ssc_tier1	30.280
-gse195452	skin_gur	NK	LTBP4	LTBP4__ext	M2	28.837
-gse195452	skin_gur	NK	SMURF1	SMURF1__nuc	M2	-3.186
-gse195452	skin_gur	NK_XCL1	COL1A2	COL1A2__ext	ssc_tier1	3.053
-gse195452	skin_gur	NRXN1	S100A4	FSP1__pm	ssc_tier1	-1.361
-gse195452	skin_gur	Peri_RGS5	ANGPT2	ANGPT2__ext	ssc_tier1	1.459
-gse195452	skin_gur	Peri_RGS5	COL5A2	COL5A2__ext	ssc_tier1	0.632
-gse195452	skin_gur	Peri_RGS5	CTGF	CTGF__ext	M2	0.979
-gse195452	skin_gur	Peri_RGS5	IFI27	IFI27__mito	M1	1.746
-gse195452	skin_gur	Peri_RGS5	IFI6	IFI6__cyto	M1	1.537
-gse195452	skin_gur	Peri_RGS5	IFITM3	IFITM3__cyto	M1	0.435
-gse195452	skin_gur	Peri_RGS5	LTBP1	LTBP1__ecm	ssc_tier1	-0.689
-gse195452	skin_gur	Peri_RGS5	LTBP4	LTBP4__ext	M2	-0.920
-gse195452	skin_gur	Peri_RGS5	PECAM1	CD31__pm	ssc_tier1	0.448
-gse195452	skin_gur	Peri_RGS5	S100A4	FSP1__pm	ssc_tier1	-0.726
-gse195452	skin_gur	Peri_RGS5	SMURF1	SMURF1__nuc	M2	-0.222
-gse195452	skin_gur	Peri_RGS5	SOCS1	SOCS1__cyto	ssc_tier1	-0.646
-gse195452	skin_gur	Peri_RGS5	VWF	VWF__pm	ssc_tier1	0.771
-gse195452	skin_gur	Peri_TGFBI	ANGPT2	ANGPT2__ext	ssc_tier1	1.232
-gse195452	skin_gur	Peri_TGFBI	BST2	BST2__ext	M1	1.508
-gse195452	skin_gur	Peri_TGFBI	CNTFR	CNTFR__cyto	M4	-1.467
-gse195452	skin_gur	Peri_TGFBI	CNTN1	CNTN1__cyto	M3	-0.734
-gse195452	skin_gur	Peri_TGFBI	COL1A2	COL1A2__ext	ssc_tier1	-0.295
-gse195452	skin_gur	Peri_TGFBI	COL5A2	COL5A2__ext	ssc_tier1	0.477
-gse195452	skin_gur	Peri_TGFBI	CTGF	CTGF__ext	M2	0.777
-gse195452	skin_gur	Peri_TGFBI	HIF1A	HIF1A__nuc	M3	1.120
-gse195452	skin_gur	Peri_TGFBI	IFI27	IFI27__mito	M1	1.250
-gse195452	skin_gur	Peri_TGFBI	IFITM3	IFITM3__cyto	M1	0.395
-gse195452	skin_gur	Peri_TGFBI	LOX	LOX__ecm	ssc_tier1	-0.762
-gse195452	skin_gur	Peri_TGFBI	LTBP1	LTBP1__ecm	ssc_tier1	-0.924
-gse195452	skin_gur	Peri_TGFBI	NOS3	NOS3__pm	ssc_tier1	-0.255
-gse195452	skin_gur	Peri_TGFBI	OSMR	OSMR__cyto	M4	1.214
-gse195452	skin_gur	Peri_TGFBI	PDGFRA	PDGFRA__cyto	M2	-0.620
-gse195452	skin_gur	Peri_TGFBI	PECAM1	CD31__pm	ssc_tier1	0.598
-gse195452	skin_gur	Peri_TGFBI	S100A4	FSP1__pm	ssc_tier1	-0.442
-gse195452	skin_gur	Peri_TGFBI	SMAD3	SMAD3__cyto	M2	-0.841
-gse195452	skin_gur	Peri_TGFBI	THBS1	THBS1__ecm	ssc_tier1	1.038
-gse195452	skin_gur	Plasma	COL1A1	COL1A1__ext	ssc_tier1	1.312
-gse195452	skin_gur	Plasma	MYC	MYC__nuc	M3	29.215
-gse195452	skin_gur	Plasma	PDGFB	PDGFB__ext	M2	29.215
-gse195452	skin_gur	Plasma	TLR7	TLR7__endo	ssc_tier1	29.215
-gse195452	skin_gur	T_GD	IFITM1	IFITM1__cyto	M1	29.160
-gse195452	skin_gur	T_GD	XBP1	XBP1__nuc	ssc_tier1	29.160
-gse195452	skin_gur	T_Naive	IFITM3	IFITM3__cyto	M1	0.982
-gse195452	skin_gur	UN	BST2	BST2__ext	M1	-1.721
-gse195452	skin_gur	Vascular_ACKR1	GATA3	GATA3__nuc	ssc_tier1	-2.911
-gse195452	skin_gur	Vascular_ACKR1	LTBP1	LTBP1__ecm	ssc_tier1	-0.989
-gse195452	skin_gur	Vascular_ACKR1	MAVS	MAVS__cyto	ssc_tier1	-1.095
-gse195452	skin_gur	pDC_CXCR4	COL3A1	COL3A1__ext	ssc_tier1	31.119
-gse195452	skin_gur	sT	CD40LG	CD154__pm	ssc_tier1	-1.204
-gse195452	skin_gur	sT	IFI6	IFI6__cyto	M1	1.620
-gse195452	skin_gur	sT_Effector	IFITM2	IFITM2__cyto	M1	0.624
-gse195452	skin_gur	sTreg	IFITM1	IFITM1__cyto	M1	1.903
-gse195452	skin_gur	sTreg	IFITM3	IFITM3__cyto	M1	1.949
-gse195452	skin_gur	sTreg	IL13	IL13__ext	ssc_tier1	31.448
-gse195452	skin_gur	sTreg_CXCR4	ABCE1	ABCE1__mito	M1	31.251
+gse195452	skin_gur	Fibro_POSTN_PTGDS	JAG1	JAG1__cyto	M3	1.504
+gse195452	skin_gur	Fibro_POSTN_PTGDS	JUNB	JUNB__nuc	M2	1.272
+gse195452	skin_gur	Fibro_PTGDS	BST2	BST2__ext	M1	2.520
+gse195452	skin_gur	Fibro_PTGDS	DPP4	DPP4__pm	M2	-1.107
+gse195452	skin_gur	Fibro_PTGDS	IFI27	IFI27__mito	M1	1.560
+gse195452	skin_gur	Fibro_PTGDS	IFI6	IFI6__cyto	M1	0.851
+gse195452	skin_gur	Fibro_PTGDS	ISG15	ISG15__cyto	M1	1.131
+gse195452	skin_gur	Fibro_PTGDS	LGALS3	LGALS3__ext	M2	-0.423
+gse195452	skin_gur	Fibro_PTGDS	LTBP4	LTBP4__ext	M2	-0.623
+gse195452	skin_gur	Fibro_PTGDS	OSMR	OSMR__cyto	M4	0.814
+gse195452	skin_gur	Fibro_PTGDS	PDGFRA	PDGFRA__cyto	M2	-0.543
+gse195452	skin_gur	Fibro_PTGDS	RHOA	RHOA__cyto	ssc_tier1	-0.326
+gse195452	skin_gur	Fibro_PTGDS	S100A4	FSP1__pm	ssc_tier1	-0.597
+gse195452	skin_gur	Fibro_PTGDS	STAT1	STAT1__cyto	M1	0.841
+gse195452	skin_gur	Fibro_PTGDS	XAF1	XAF1__cyto	M1	1.060
+gse195452	skin_gur	GBP1	AGTR1	AGTR1__pm	M3	-0.726
+gse195452	skin_gur	GBP1	EIF2AK2	EIF2AK2__cyto	M1	30.904
+gse195452	skin_gur	GBP1	IRF9	IRF9__cyto	M1	29.462
+gse195452	skin_gur	KRT14_ACTA2	IFITM3	IFITM3__cyto	M1	0.839
+gse195452	skin_gur	KRT14_ACTA2	WNT5A	WNT5A__ext	M2	31.951
+gse195452	skin_gur	KRT14_S100A2_GJA1	CREBBP	CREBBP__nuc	M3	-0.709
+gse195452	skin_gur	KRT14_S100A2_GJA1	LTBP4	LTBP4__ext	M2	-3.358
+gse195452	skin_gur	KRT1_KRT10	ANGPT2	ANGPT2__ext	ssc_tier1	1.912
+gse195452	skin_gur	M_CD16_IL1B	BST2	BST2__ext	M1	-3.696
+gse195452	skin_gur	M_IL1B	LTBP4	LTBP4__ext	M2	29.174
+gse195452	skin_gur	M_IL1B	PDGFRA	PDGFRA__cyto	M2	29.174
+gse195452	skin_gur	M_IL1B	RBPJ	RBPJ__pm	ssc_tier1	-0.647
+gse195452	skin_gur	M_IL1B	STAT3	STAT3__cyto	crosstalk	30.616
+gse195452	skin_gur	M_IL1B	STAT6	STAT6__cyto	M4	-2.654
+gse195452	skin_gur	Mast	LIF	LIF__ext	M4	-2.565
+gse195452	skin_gur	Mf	ACTA2	ACTA2__cyto	ssc_tier1	0.367
+gse195452	skin_gur	Mf	IFI27	IFI27__mito	M1	1.894
+gse195452	skin_gur	Mf	IFI6	IFI6__cyto	M1	1.402
+gse195452	skin_gur	Mf	IFITM2	IFITM2__cyto	M1	0.550
+gse195452	skin_gur	Mf	IFITM3	IFITM3__cyto	M1	0.684
+gse195452	skin_gur	Mf	ISG15	ISG15__cyto	M1	1.912
+gse195452	skin_gur	Mf	JAK2	JAK2__cyto	M4	0.795
+gse195452	skin_gur	Mf_TREM2	CAV1	CAV1__pm	M2	-2.932
+gse195452	skin_gur	Mf_TREM2	JAK1	JAK1__cyto	M4	-1.894
+gse195452	skin_gur	Mf_TREM2	TMEM173	TMEM173__cyto	ssc_tier1	30.228
+gse195452	skin_gur	Mf_TREM2	XAF1	XAF1__cyto	M1	30.228
+gse195452	skin_gur	Mo	CCL2	CCL2__ext	M4	29.916
+gse195452	skin_gur	Mo	HIF1A	HIF1A__nuc	M3	29.916
+gse195452	skin_gur	Mo	IFNAR2	IFNAR2_iso2__cyto	M1	29.916
+gse195452	skin_gur	Mo	TOP1	TOP1__ext	M5	1.206
+gse195452	skin_gur	Mo_CD16	EIF2AK2	EIF2AK2__cyto	M1	29.238
+gse195452	skin_gur	NK	COL1A2	COL1A2__ext	ssc_tier1	2.875
+gse195452	skin_gur	NK	IFITM2	IFITM2__cyto	M1	1.079
+gse195452	skin_gur	NK	LGALS3	LGALS3__ext	M2	-0.828
+gse195452	skin_gur	NK	MAVS	MAVS__cyto	ssc_tier1	1.689
+gse195452	skin_gur	NK	MS4A1	MS4A1__pm	M5	28.963
+gse195452	skin_gur	NK	NOTCH1	NOTCH1__cyto	M3	30.406
+gse195452	skin_gur	NK	RASA1	RASA1__cyto	M2	30.406
+gse195452	skin_gur	NK	SFRP2	SFRP2__ext	M2	30.406
+gse195452	skin_gur	NK	SMURF1	SMURF1__nuc	M2	-3.121
+gse195452	skin_gur	NK_XCL1_CXCR4	HES1	HES1__nuc	M3	31.129
+gse195452	skin_gur	NK_XCL1_CXCR4	IL6R	IL6R__cyto	M4	-1.990
+gse195452	skin_gur	NK_XCL1_CXCR4	PTPN2	PTPN2__cyto	ssc_tier1	1.028
+gse195452	skin_gur	NRXN1	AGTR1	AGTR1__pm	M3	-2.327
+gse195452	skin_gur	NRXN1	LYN	LYN__cyto	M5	29.377
+gse195452	skin_gur	NRXN1	S100A4	FSP1__pm	ssc_tier1	-1.291
+gse195452	skin_gur	Peri_RGS5	COL5A2	COL5A2__ext	ssc_tier1	0.648
+gse195452	skin_gur	Peri_RGS5	CRLF1	CRLF1__cyto	M4	1.539
+gse195452	skin_gur	Peri_RGS5	DPP4	DPP4__pm	M2	-1.342
+gse195452	skin_gur	Peri_RGS5	EDN1	EDN1__ext	ssc_tier1	0.813
+gse195452	skin_gur	Peri_RGS5	IFI27	IFI27__mito	M1	1.768
+gse195452	skin_gur	Peri_RGS5	IFI6	IFI6__cyto	M1	1.572
+gse195452	skin_gur	Peri_RGS5	IFITM3	IFITM3__cyto	M1	0.463
+gse195452	skin_gur	Peri_RGS5	LTBP4	LTBP4__ext	M2	-0.897
+gse195452	skin_gur	Peri_RGS5	S100A4	FSP1__pm	ssc_tier1	-0.700
+gse195452	skin_gur	Peri_RGS5	SFRP4	SFRP4__ext	M2	2.089
+gse195452	skin_gur	Peri_RGS5	VWF	VWF__pm	ssc_tier1	0.786
+gse195452	skin_gur	Peri_TGFBI	ANGPT2	ANGPT2__ext	ssc_tier1	1.257
+gse195452	skin_gur	Peri_TGFBI	BST2	BST2__ext	M1	1.528
+gse195452	skin_gur	Peri_TGFBI	CNTFR	CNTFR__cyto	M4	-1.451
+gse195452	skin_gur	Peri_TGFBI	CNTN1	CNTN1__cyto	M3	-0.713
+gse195452	skin_gur	Peri_TGFBI	COL1A2	COL1A2__ext	ssc_tier1	-0.281
+gse195452	skin_gur	Peri_TGFBI	COL5A2	COL5A2__ext	ssc_tier1	0.500
+gse195452	skin_gur	Peri_TGFBI	DPP4	DPP4__pm	M2	-1.170
+gse195452	skin_gur	Peri_TGFBI	EREG	EREG__ext	M2	30.978
+gse195452	skin_gur	Peri_TGFBI	HIF1A	HIF1A__nuc	M3	1.132
+gse195452	skin_gur	Peri_TGFBI	IFI27	IFI27__mito	M1	1.273
+gse195452	skin_gur	Peri_TGFBI	IFITM3	IFITM3__cyto	M1	0.417
+gse195452	skin_gur	Peri_TGFBI	IRF9	IRF9__cyto	M1	1.074
+gse195452	skin_gur	Peri_TGFBI	JUNB	JUNB__nuc	M2	0.868
+gse195452	skin_gur	Peri_TGFBI	LGALS3	LGALS3__ext	M2	-0.420
+gse195452	skin_gur	Peri_TGFBI	LOX	LOX__ecm	ssc_tier1	-0.744
+gse195452	skin_gur	Peri_TGFBI	LTBP1	LTBP1__ecm	ssc_tier1	-0.901
+gse195452	skin_gur	Peri_TGFBI	OSMR	OSMR__cyto	M4	1.233
+gse195452	skin_gur	Peri_TGFBI	PDGFRA	PDGFRA__cyto	M2	-0.604
+gse195452	skin_gur	Peri_TGFBI	RUNX1	RUNX1__nuc	M2	1.241
+gse195452	skin_gur	Peri_TGFBI	S100A4	FSP1__pm	ssc_tier1	-0.430
+gse195452	skin_gur	Peri_TGFBI	SMAD3	SMAD3__cyto	M2	-0.824
+gse195452	skin_gur	Peri_TGFBI	THBS1	THBS1__ecm	ssc_tier1	1.062
+gse195452	skin_gur	Plasma	IFIT2	IFIT2__cyto	M1	29.310
+gse195452	skin_gur	Plasma	SYK	SYK__cyto	M5	29.310
+gse195452	skin_gur	T_Effector	CBL	CBL__cyto	M2	0.399
+gse195452	skin_gur	T_Effector	TOP1	TOP1__ext	M5	-1.727
+gse195452	skin_gur	T_GD	PLAUR	PLAUR__pm	M3	27.511
+gse195452	skin_gur	T_GD	PRDM1	BLIMP1__nuc	M5	26.068
+gse195452	skin_gur	T_GD	ZEB2	ZEB2__nuc	ssc_tier1	26.068
+gse195452	skin_gur	T_Naive	IFITM3	IFITM3__cyto	M1	0.978
+gse195452	skin_gur	UN	CD40	CD40__pm	M5	29.956
+gse195452	skin_gur	UN	IFI27	IFI27__mito	M1	32.842
+gse195452	skin_gur	Vascular_ACKR1	EGFR	EGFR__pm	M2	-1.373
+gse195452	skin_gur	Vascular_ACKR1	GATA3	GATA3__nuc	M4	-2.721
+gse195452	skin_gur	Vascular_ACKR1	ITGAV	ITGAV__pm	M2	-0.874
+gse195452	skin_gur	Vascular_ACKR1	LTBP1	LTBP1__ecm	ssc_tier1	-0.953
+gse195452	skin_gur	Vascular_ACKR1	MAVS	MAVS__cyto	ssc_tier1	-1.066
+gse195452	skin_gur	Vascular_RBP7	DPP4	DPP4__pm	M2	-1.240
+gse195452	skin_gur	Vascular_RBP7	IFITM3	IFITM3__cyto	M1	0.517
+gse195452	skin_gur	Vascular_RBP7	LPAR1	LPAR1__pm	M2	-0.978
+gse195452	skin_gur	Vascular_RBP7	POSTN	POSTN__ecm	ssc_tier1	1.002
+gse195452	skin_gur	Vascular_RBP7	SMAD3	SMAD3__cyto	M2	-1.187
+gse195452	skin_gur	pDC	IFITM1	IFITM1__cyto	M1	28.252
+gse195452	skin_gur	pDC_CXCR4	ACTA2	ACTA2__cyto	ssc_tier1	29.759
+gse195452	skin_gur	pDC_CXCR4	GBP2	GBP2__cyto	M1	29.759
+gse195452	skin_gur	sT	CD40LG	CD154__pm	M5	-1.171
+gse195452	skin_gur	sT	IFI6	IFI6__cyto	M1	1.689
+gse195452	skin_gur	sT	XBP1	XBP1__nuc	M5	0.694
+gse195452	skin_gur	sT_Effector	IFI27	IFI27__mito	M1	32.014
+gse195452	skin_gur	sT_Effector	IFITM2	IFITM2__cyto	M1	0.691
+gse195452	skin_gur	sT_Effector	MMP12	MMP12__ext	M3	30.572
+gse195452	skin_gur	sTreg	IFIT3	IFIT3__cyto	M1	29.955
+gse195452	skin_gur	sTreg	IFITM1	IFITM1__cyto	M1	1.934
+gse195452	skin_gur	sTreg	IFITM3	IFITM3__cyto	M1	1.959
+gse195452	skin_gur	sTreg	PTPN2	PTPN2__cyto	ssc_tier1	1.961
+gse195452	skin_gur	sTreg_CXCR4	XAF1	XAF1__cyto	M1	31.148

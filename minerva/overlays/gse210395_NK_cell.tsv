@@ -5,6 +5,7 @@ ARRB__cyto	0.844	#d7191c
 BCMA__ext	2.763	#d7191c
 BST2__ext	0.687	#d7191c
 CD79A__pm	-1.458	#2c7fb8
+FLI1__nuc	1.033	#d7191c
 FOSL2__nuc	-1.396	#2c7fb8
 FURIN__golgi	-0.641	#2c7fb8
 HIF1A__nuc	-1.189	#2c7fb8
@@ -16,6 +17,9 @@ IL6ST__cyto	-1.270	#2c7fb8
 IRF7__cyto	0.982	#d7191c
 JAG1__cyto	-2.236	#2c7fb8
 JAK2__cyto	0.607	#d7191c
+JUNB__nuc	-0.653	#2c7fb8
+LGALS3__ext	1.151	#d7191c
+NOTCH2__pm	0.568	#d7191c
 NUMB__cyto	0.778	#d7191c
 PSMB8__nuc	0.876	#d7191c
 PTPN6__cyto	1.736	#d7191c
@@ -30,5 +34,6 @@ TAZ__cyto	0.378	#d7191c
 TBX21__nuc	0.292	#d7191c
 TGFB1__ext	-0.370	#2c7fb8
 TMEM173__cyto	0.915	#d7191c
+TOP1__ext	0.238	#d7191c
 XBP1__nuc	0.480	#d7191c
 XPO1__nuc	0.842	#d7191c
