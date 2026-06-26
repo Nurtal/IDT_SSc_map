@@ -24,12 +24,14 @@
   2. **Swipe-deck review app** (`review/index.html`, offline, self-contained) — **143 interactions**
      adjudicable one-by-one, with verbatim deciding sentence (PDF/PMC/abstract), in-browser module
      map, literature dossier (403 support / 185 contrary refs), and an **advisory AI verdict per
-     interaction**: **101 validate / 28 revise / 4 caution**.
-- **Citation integrity (June, in progress)** — the AI verdict pass detected **28 reactions whose
-  cited PMID points to an unrelated paper** (the biology is canonical; only the reference is wrong —
+     interaction**: **128 validate / 5 caution** (post citation-integrity sweep). App rebuilt on the
+     5-module map (M5 present; verified consistent with `ssc_curated_reactions.tsv`).
+- ✅ **Citation integrity (June) — DONE** — the AI verdict pass detected **28 reactions whose
+  cited PMID pointed to an unrelated paper** (the biology is canonical; only the reference was wrong —
   e.g. TGF-β/SMAD reactions cited to a rubella, a Melbourne food survey, or a plant-microfluidics
-  paper). Replacement PMIDs are being verified against live PubMed. See
-  `curation/ai_review_verdicts.json` (`verdict=revise`).
+  paper). All 28 replacement PMIDs were retrieved and **verified against live PubMed** (verdicts
+  `revise`→`validate`); one POSTN case kept as `caution`. See `curation/citation_revise_report.md`
+  and `curation/ai_review_verdicts.json` (now 128 validate / 5 caution).
 - **Lead-author metadata filled** — `CITATION.cff` + `.zenodo.json` (Nathan Foulquier,
   ORCID 0000-0003-4620-2794, LBAI U1227 Inserm CDC CHU Brest). Co-author slot still REPLACE_ME.
 
@@ -63,7 +65,7 @@
 | `curation/ssc_curated_reactions.tsv` | **133 reactions** | SSc-specific layer (M2 58 / M3 27 / M4 21 / M1 19 / crosstalk 8) |
 | `curation/annotations/species_annotations.tsv` | 526 rows, 198 HGNC symbols | 196/198 detectable by RNA-seq |
 | `curation/pubmed_corpus.bib` | 361 BibTeX entries | 358 filled; 3 seed TODOs |
-| `curation/ai_review_verdicts.json` | 133 verdicts | 101 validate / 28 revise / 4 caution |
+| `curation/ai_review_verdicts.json` | 133 verdicts | 128 validate / 5 caution (post sweep) |
 | `curation/evidence_dossier.json` | 133 reactions | 403 support refs / 185 contrary refs (real PMIDs) |
 | `analysis/curation/interaction_database.csv` | **143 interactions** | reviewer-ready snapshot embedded in the app |
 | `analysis/overlay/` | cluster_deg_multi.tsv (4 338 entries), 197 donor scores | 4 datasets (skin Tabib+Gur / PBMC / lung), all REAL |
@@ -83,8 +85,8 @@ stretch goal — the map content is the deliverable, hosting is one rendering of
 - ✅ 🟢 **Auto lanes COMPLETE**: integration, SBML QC, network analysis, real scRNA-seq overlay
   (4 datasets, MIM coverage 82.6% on the current 236-symbol 5-module map), HGNC annotations, DGIdb drug prioritisation, all figures,
   manuscript draft + v1.1 revision, growth batches (133 SSc reactions), review app + AI verdicts.
-- 🟡 **In progress**: citation integrity sweep (28 `revise` PMIDs → verified replacements);
-  manuscript polish.
+- ✅ **Citation integrity sweep DONE** (28 `revise` PMIDs → verified replacements, 128 validate /
+  5 caution). 🟡 **In progress**: manuscript polish.
 - ✅ 🟢 **M5 split — propagation COMPLETE** (M4 → M4 cytokines + M5 B-cell/autoreactivity, validated;
   see `analysis/overlay/M5_validation.md`):
   - ✅ **(a) Overlay re-run on the grown 5-module map — DONE (2026-06-26).** The raw scRNA-seq archives
