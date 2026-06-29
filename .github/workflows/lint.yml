@@ -9,6 +9,9 @@ on:
       - "scripts/check_module_specs.py"
       - "scripts/check_bib.py"
       - "scripts/check_evidence_depth.py"
+      - "scripts/check_data_manifest.py"
+      - "scripts/**.py"
+      - "data/MIRROR.sha256"
       - ".github/workflows/lint.yml"
   pull_request:
     paths:
@@ -18,6 +21,9 @@ on:
       - "scripts/check_module_specs.py"
       - "scripts/check_bib.py"
       - "scripts/check_evidence_depth.py"
+      - "scripts/check_data_manifest.py"
+      - "scripts/**.py"
+      - "data/MIRROR.sha256"
       - ".github/workflows/lint.yml"
 
 jobs:
@@ -56,3 +62,15 @@ jobs:
           python-version: "3.11"
       - name: Guard SSc evidence-depth triage (no undeclared inference debt)
         run: python scripts/check_evidence_depth.py
+
+  manifest-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Guard data provenance (every dataset used is in data/MIRROR.sha256)
+        run: python scripts/check_data_manifest.py

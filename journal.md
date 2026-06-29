@@ -2183,3 +2183,38 @@ offline). 7 références non-journal mises à jour. `logs/` ajouté au `.gitigno
 régénérés par les cibles make). STATUS inventaire : 58→62 overlays.
 
 Commits : deck (`e91c1c7`), reorg docs (`3717364`), rename revision + gitignore (`6d6e330`).
+
+## 2026-06-29 — Provenance : GSE45536 (5ᵉ dataset, validation M5) remis au manifeste + garde-fou
+
+Audit déclenché par une question de l'utilisateur (« il me semble qu'il y a un 5ᵉ dataset, whole
+blood, pour M5 »). Confirmé : **GSE45536** (Streicher, *Plasma Cell Signature in Autoimmune Disease II*,
+99 ScS / 24 HC sang total, GPL570) porte les chiffres de validation externe de M5 — mais il était
+**hors `data/MIRROR.sha256`, absent du disque**, et la figure F7 lit des valeurs **codées en dur**
+copiées de `M5_validation.md` (pas re-calculées). Bref : un résultat publié reposait sur un jeu de
+données non figé et non reproductible, sans que rien ne le détecte.
+
+### Colmatage
+- **Téléchargé les 2 fichiers réels** depuis GEO (`GSE45536_series_matrix.txt.gz` 14,4 Mo +
+  `GPL570_table.txt` 79,5 Mo) et **re-exécuté `validate_m5_gse45536.py` AVANT de figer** : reproduit
+  à l'identique 123 échantillons (99 ScS / 24 HC), **M5 p = 1,3×10⁻⁴ (Δ z = −0,291)**, M1/IFN
+  p = 3,8×10⁻⁵. Données authentiques → checksums de confiance.
+- **`data/MIRROR.sha256`** : +2 lignes (SHA-256 vérifiés). Manifeste passe à **7 fichiers / 3,18 Go**.
+- **`data/MIRROR.md`** : recadré (4 datasets overlay + 1 cohorte validation externe), inventaire scindé
+  en section A (overlay) / B (M5), provenance + URLs GSE45536, total mis à jour, **commande de vérif
+  corrigée** (elle disait `cd data/raw` alors que les chemins sont relatifs à `data/`), entrée de statut datée.
+- **`scripts/fetch_gse45536.py`** (neuf) : fetch reproductible des 2 fichiers + `--verify` (SHA-256 vs
+  manifeste). `make fetch-gse45536`, `make validate-m5`.
+
+### Que ça ne se reproduise plus (le vrai correctif)
+- **`scripts/check_data_manifest.py`** (neuf) : garde-fou CI. Toute accession `GSE\d+`/`GPL\d+`
+  référencée dans un script `scripts/*.py` **doit** figurer dans `data/MIRROR.sha256`, sinon le build
+  échoue. Fragments d'URL tronqués (`GSE138` ⊂ `GSE138669`) ignorés par élagage de préfixe ;
+  exclusions conscientes via une `ALLOWLIST` documentée (sous-plateformes cliniques GPL18573/GPL24676,
+  couvertes par le parent GSE195452). Vérifié : **échoue (exit 1)** quand le dataset manque, **passe**
+  après ajout au manifeste.
+- Branché dans `make lint` (cible `check-manifest`) **et** en job CI `manifest-check` du workflow `lint.yml`.
+
+### Reste (non fait, signalé)
+- Figure `F7_M5_validation.png` toujours alimentée par des valeurs en dur dans `make_m5_validation_fig.py`
+  (les chiffres correspondent à la réalité re-vérifiée aujourd'hui, mais le découplage script↔figure
+  subsiste). À rebrancher sur la sortie live de `validate_m5_gse45536.py` si on veut fermer ce angle.

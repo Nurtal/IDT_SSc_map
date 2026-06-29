@@ -7,10 +7,12 @@ Builds a per-sample M5 signature score (mean of z-scored M5 probe expression)
 and tests scleroderma vs healthy donor (Mann-Whitney). An IFN (M1) control
 signature is scored the same way to show specificity.
 
-Inputs (under data/raw/gse45536/):
+Inputs (under data/raw/gse45536/ — fetch with `make fetch-gse45536`):
   GSE45536_series_matrix.txt.gz   expression matrix + phenotypes
-  GPL570_family.soft.gz           probe -> gene symbol
+  GPL570_table.txt                probe -> gene symbol (plain platform table)
   curation/annotations/species_annotations.tsv  module gene sets
+
+Both raw files are pinned (size + SHA-256) in data/MIRROR.sha256.
 """
 from __future__ import annotations
 import csv, gzip, sys

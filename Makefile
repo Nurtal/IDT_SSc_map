@@ -107,6 +107,13 @@ tabib-probe:  ## Check what's available on GEO for Tabib 2021 (GSE138669).
 tabib-fetch:  ## Download the Tabib GSE138669 raw counts (594 MB).
 	$(PYTHON) scripts/fetch_tabib.py --untar
 
+fetch-gse45536:  ## Download the GSE45536 whole-blood cohort for M5 external validation (~94 MB).
+	$(PYTHON) scripts/fetch_gse45536.py
+
+validate-m5:  ## External validation of module M5 on GSE45536 (reproduces p=1.3e-4).
+	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/validate_m5_gse45536.py; \
+	else $(PYTHON) scripts/validate_m5_gse45536.py; fi
+
 overlay:  ## Build scRNAseq overlay (real if data present, synthetic-grounded otherwise).
 	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/build_overlay.py; \
 	else $(PYTHON) scripts/build_overlay.py; fi
@@ -231,7 +238,10 @@ boolean:  ## CaSQ Boolean inference -> SBML-qual for GINsim/BioLQM/MaBoSS.
 release:  ## Pre-flight a v1.x release (checks + CHANGELOG; doesn't tag).
 	$(PYTHON) scripts/release_prep.py
 
-lint: specs-check bib-check  ## Run all repo-content linters (no SBML files needed).
+check-manifest:  ## Guard: every GSE/GPL accession used by a script is in data/MIRROR.sha256.
+	$(PYTHON) scripts/check_data_manifest.py
+
+lint: specs-check bib-check check-manifest  ## Run all repo-content linters (no SBML files needed).
 
 auto:  lint validate harmonise seed integrate pmids crosstalk ssc-stubs wire network sink-check druggable overlay boolean preflight figures abstract  ## Run the entire AUTO lane end-to-end.
 	@echo ">> Full AUTO pipeline complete."
