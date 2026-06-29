@@ -23,9 +23,9 @@
   },
   "ssc_M1_004": {
     "verdict": "validate",
-    "rationale": "Phospho-IRF3 induces IFN-β transcription — textbook. Cited PMID 11402134 returned no abstract (unverifiable here) but the biology is canonical and dossier supports the STING/IRF3/IFN-I axis.",
+    "rationale": "Phospho-IRF3 induces IFN-β transcription — textbook. Citation corrected 2026-06-29 to PMID 9566918 (Lin et al., virus-dependent IRF-3 phosphorylation drives transactivation of the IFN-α/β promoters).",
     "pmids": [
-      "35686918"
+      "9566918"
     ]
   },
   "ssc_M1_005": {
@@ -44,8 +44,10 @@
   },
   "ssc_M1_007": {
     "verdict": "validate",
-    "rationale": "Phospho-IRF7 induces IFN-α — textbook. Cited PMID 11442765 had no abstract to verify, but biology canonical.",
-    "pmids": []
+    "rationale": "Phospho-IRF7 induces IFN-α — textbook. Citation corrected 2026-06-29 to PMID 15800576 (Honda et al., Nature: IRF-7 is the master regulator of type-I interferon responses).",
+    "pmids": [
+      "15800576"
+    ]
   },
   "ssc_M1_008": {
     "verdict": "validate",
@@ -262,8 +264,10 @@
   },
   "ssc_M2_018": {
     "verdict": "validate",
-    "rationale": "FRA-2 (FOSL2) drives COL1A1/ACTA2 — FRA-2 transgenic phenocopies SSc fibrosis (Reich/Distler); citation lacks abstract but biology is well-established.",
-    "pmids": []
+    "rationale": "FRA-2 (FOSL2) drives COL1A1/ACTA2 — FRA-2 transgenics phenocopy SSc fibrosis. Citation corrected 2026-06-29 to PMID 20039427 (Reich/Distler: Fra-2 regulates extracellular-matrix production in systemic sclerosis).",
+    "pmids": [
+      "20039427"
+    ]
   },
   "ssc_M2_020": {
     "verdict": "validate",
@@ -524,7 +528,7 @@
   },
   "ssc_M2_019": {
     "verdict": "caution",
-    "rationale": "FRA-2 (FOSL2) physically binding TBX2 in SSc fibroblasts is a curator inference (ECO:0000305); cited PMID 25381232 is unrelated (cyanobacterial microcystin) and no dossier source establishes a FOSL2–TBX2 complex. Needs real evidence before confirming.",
+    "rationale": "FRA-2 (FOSL2) physically binding TBX2 in SSc fibroblasts is a curator inference (ECO:0000305). The previously cited PMID 25381232 (off-topic — cyanobacterial microcystin) was removed 2026-06-29; no primary source establishes a direct FRA-2/TBX2 interaction, so this edge is an unsourced inference pending validation.",
     "pmids": []
   },
   "ssc_M2_041": {
@@ -574,9 +578,9 @@
   },
   "ssc_crosstalk_006": {
     "verdict": "validate",
-    "rationale": "TGF-β1/SMAD3 drives EndMT (SNAI1 up, VE-cadherin/CDH5 down) — canonical EndMT initiator; cited PMID 17656708 lacks an abstract to verify but the biology is well-established (and reinforced by the SSc EndoMT paper 28062404 used in M3).",
+    "rationale": "TGF-β1/SMAD3 drives EndMT (SNAI1 up, VE-cadherin down) — canonical. Citation corrected 2026-06-29 to PMID 21425122 (TGF-β induction of endothelial–mesenchymal transition in systemic sclerosis, Arthritis Rheum).",
     "pmids": [
-      "28062404"
+      "21425122"
     ]
   },
   "ssc_crosstalk_007": {
@@ -639,8 +643,10 @@
   },
   "ssc_M4_009": {
     "verdict": "validate",
-    "rationale": "BCR + CD40-CD40L induces BLIMP1/XBP1/IRF4 (plasma-cell program) — canonical immunology; cited PMID 7544499 lacks an abstract to verify but the TF battery is textbook.",
-    "pmids": []
+    "rationale": "BCR + CD40–CD40L induces BLIMP1/XBP1/IRF4 (plasma-cell program) — canonical immunology. Citation corrected 2026-06-29 to PMID 36081178 (regulatory network of the BLIMP1/IRF4/XBP1 triad in plasmacytic differentiation).",
+    "pmids": [
+      "36081178"
+    ]
   },
   "ssc_M4_012": {
     "verdict": "validate",
@@ -806,9 +812,9 @@
   },
   "ssc_M3_009": {
     "verdict": "validate",
-    "rationale": "TGF-β/SMAD3 induces SNAI1 (EndMT trigger) — canonical; cited PMID 17656708 lacks an abstract to verify but the biology is well-established (and consistent with the SSc EndoMT data 28062404).",
+    "rationale": "TGF-β/SMAD3 induces SNAI1 as an EndMT trigger — canonical. Citation corrected 2026-06-29 to PMID 18796538 (Kokudo et al.: Snail is required for TGF-β-induced endothelial–mesenchymal transition).",
     "pmids": [
-      "28062404"
+      "18796538"
     ]
   },
   "ssc_M3_011": {

@@ -766,5 +766,41 @@
 "title": "TGF-beta receptor-mediated signalling through Smad2, Smad3 and Smad4",
 "journal": "EMBO J",
 "year": "1997"
+},
+"15800576": {
+"doi": "10.1038/nature03464",
+"title": "IRF-7 is the master regulator of type-I interferon-dependent immune responses",
+"journal": "Nature",
+"year": "2005"
+},
+"18796538": {
+"doi": "10.1242/jcs.028282",
+"title": "Snail is required for TGFbeta-induced endothelial-mesenchymal transition of embryonic stem cell-derived endothelial cells",
+"journal": "J Cell Sci",
+"year": "2008"
+},
+"20039427": {
+"doi": "10.1002/art.25056",
+"title": "The transcription factor Fra-2 regulates the production of extracellular matrix in systemic sclerosis",
+"journal": "Arthritis Rheum",
+"year": "2010"
+},
+"21425122": {
+"doi": "10.1002/art.30317",
+"title": "Protein kinase C\u03b4 and c-Abl kinase are required for transforming growth factor \u03b2 induction of endothelial-mesenchymal transition in vitro",
+"journal": "Arthritis Rheum",
+"year": "2011"
+},
+"36081178": {
+"doi": "10.1016/j.cellimm.2022.104594",
+"title": "Regulatory network of BLIMP1, IRF4, and XBP1 triad in plasmacytic differentiation and multiple myeloma pathogenesis",
+"journal": "Cell Immunol",
+"year": "2022"
+},
+"9566918": {
+"doi": "10.1128/MCB.18.5.2986",
+"title": "Virus-dependent phosphorylation of the IRF-3 transcription factor regulates nuclear translocation, transactivation potential, and proteasome-mediated degradation",
+"journal": "Mol Cell Biol",
+"year": "1998"
 }
 }
