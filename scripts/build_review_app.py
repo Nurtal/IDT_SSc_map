@@ -15,6 +15,7 @@ from __future__ import annotations
 
 import csv
 import json
+import os
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -217,6 +218,9 @@ const $=s=>document.querySelector(s);
 const pubmed=p=>`https://pubmed.ncbi.nlm.nih.gov/${p}/`;
 const esc=s=>(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const cleanNames=s=>(s||'').split(';').filter(Boolean).map(x=>x.split('__')[0]).join(' + ')||'?';
+// drop exact-duplicate participants (some reactions list a species as both reactant and modifier),
+// so the headline/sub-ids never render "X + X".
+const dedupParts=f=>[...new Set((f||'').split(';').map(x=>x.trim()).filter(Boolean))].join(';');
 const acceptKind=r=>r.inclusion_status==='discarded'?'include':'confirm';
 const ARTBASE=/*__ARTBASE__*/;
 const MODTITLE={M1:'Type-I IFN signalling',M2:'TGF-β / fibroblast→myofibroblast',
@@ -232,6 +236,9 @@ function quoteBadge(qs){
  const e=map[qs];return e?`<span class="qb ${e[0]}">${e[1]}</span>`:'';
 }
 function pdfLink(r,page){
+ // PDF deep-links resolve only against a local article mirror (ARTBASE); they break on any other
+ // machine, so they are disabled in the distributed app. The verbatim quote + PubMed/DOI links remain.
+ if(!ARTBASE)return '';
  const p=page||r.pdf_page||1;
  return (r.quote_status==='verbatim (PDF-extracted)'&&r.pmid)
   ?`<a class="pdflink" href="${ARTBASE}${r.pmid}.pdf#page=${p}" target="_blank" rel="noopener" title="Open the source PDF at this page">↗ PDF p.${esc(String(page||r.pdf_page||'?'))}</a>`:'';
@@ -268,7 +275,7 @@ function hlQuote(text,specs){
   return `<span class="hl" style="color:${c};background:${c}22">${m}</span>`;});
 }
 function nodeChips(field,specs){
- return field.split(';').filter(Boolean).map(x=>{const l=(x.split('__')[0]||'').trim();
+ return dedupParts(field).split(';').filter(Boolean).map(x=>{const l=(x.split('__')[0]||'').trim();
   const sp=specs.find(s=>s.label===l);const c=sp?sp.color:'var(--fg)';
   return `<span style="color:${c}">${esc(l)}</span>`;}).join(' <span class="plus">+</span> ')||'?';
 }
@@ -349,7 +356,7 @@ function cardHTML(r){
    <div class="inter"><span class="node">${nodeChips(r.regulator,specs)}</span>
     <span class="arrow ${inhib}"><span class="ln">${inhib?'⊣':'→'}</span>${esc(r.interaction_type)}</span>
     <span class="node">${nodeChips(r.target,specs)}</span></div>
-   <div class="subids">${esc(r.regulator)} → ${esc(r.target)}</div>
+   <div class="subids">${esc(dedupParts(r.regulator))} → ${esc(dedupParts(r.target))}</div>
    <div class="mech">${esc(r.mechanism)||'<i>(reclassification / no mechanism text)</i>'}</div>
    ${r.ssc_relevance?`<div class="rel"><b>SSc relevance:</b> ${esc(r.ssc_relevance)}</div>`:''}
    ${aiVerdict(r)}
@@ -618,7 +625,9 @@ document.addEventListener('keydown',e=>{
 def main() -> None:
     rows = list(csv.DictReader(DB.open()))
     OUT.parent.mkdir(parents=True, exist_ok=True)
-    artbase = ARTICLE_DIR.resolve().as_uri() + "/"
+    # PDF deep-links resolve only against a private local article mirror and 404 on any other machine,
+    # so the distributed app ships with them off. Set SSC_REVIEW_ARTBASE=1 for a curator-only local build.
+    artbase = (ARTICLE_DIR.resolve().as_uri() + "/") if os.environ.get("SSC_REVIEW_ARTBASE") else ""
     html = (HTML.replace("/*__DATA__*/", json.dumps(rows, ensure_ascii=False))
                 .replace("/*__ARTBASE__*/", json.dumps(artbase))
                 .replace("/*__SYN__*/", json.dumps(SYN, ensure_ascii=False)))

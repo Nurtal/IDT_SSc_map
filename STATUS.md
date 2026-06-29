@@ -63,8 +63,8 @@
 |----------|-------|-------|
 | `curation/celldesigner/SSc_MIM_integrated.xml` | **568 species / 308 reactions / 20 compartments** | CI-validated SBML L2V4 |
 | `curation/ssc_curated_reactions.tsv` | **133 reactions** | SSc-specific layer (M2 58 / M3 27 / M1 19 / M4 11 / M5 10 / crosstalk 8) |
-| `curation/annotations/species_annotations.tsv` | 526 rows, 198 HGNC symbols | 196/198 detectable by RNA-seq |
-| `curation/pubmed_corpus.bib` | 361 BibTeX entries | 358 filled; 3 seed TODOs |
+| `curation/annotations/species_annotations.tsv` | 568 rows, 236 HGNC symbols | 234/236 detectable by RNA-seq |
+| `curation/pubmed_corpus.bib` | 398 BibTeX entries | 395 filled; 3 seed TODOs |
 | `curation/ai_review_verdicts.json` | 133 verdicts | 128 validate / 5 caution (post sweep) |
 | `curation/evidence_dossier.json` | 133 reactions | 403 support refs / 185 contrary refs (real PMIDs) |
 | `analysis/curation/interaction_database.csv` | **143 interactions** | reviewer-ready snapshot embedded in the app |

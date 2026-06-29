@@ -309,7 +309,7 @@ Raw archives are SHA-256-pinned in `data/MIRROR.md` for a reproducible input env
    patient becomes a **5-module activation vector** (M1–M5 + Tier-1). M5 (B-cell) is scored on a
    B/plasma-restricted pseudobulk (`scripts/build_bplasma_pseudobulk.py`), since B/plasma cells are
    too rare to surface in a whole-tissue ranking.
-5. **MINERVA overlays** (60 TSVs in `minerva/overlays/`) colour the map by cluster/dataset.
+5. **MINERVA overlays** (62 TSVs in `minerva/overlays/`) colour the map by cluster/dataset.
 
 ### 7.3 Validation results
 - **Coverage = 82.6 %** of detectable map species observed in patient data (195/236;
@@ -369,7 +369,7 @@ Raw archives are SHA-256-pinned in `data/MIRROR.md` for a reproducible input env
 | `analysis/curation/interaction_database.csv` | reviewer-ready 143-interaction database |
 | `analysis/overlay/` | DEG, coverage, per-donor AUCell scores, contrasts |
 | `analysis/network/` | hubs, communities, novelty |
-| `minerva/overlays/` | 60 MINERVA overlay TSVs |
+| `minerva/overlays/` | 62 MINERVA overlay TSVs |
 | `review/index.html` | offline reviewer swipe-deck app |
 | `docs/module_specs/M*.md` | per-module scope + Tier-1 tables |
 | `docs/curation/curation_guidelines.md`, `docs/curation/edge_discovery_protocol.md` | the rules + the gate procedure |

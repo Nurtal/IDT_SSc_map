@@ -51,7 +51,7 @@ ambiguous a collapsible **“alternative sentence”** offers the runner-up. The
 proposals — confirm or correct them.
 
 The top progress bar tracks your **position in the deck** (card *X* / *N*) and resets to the first
-card each time you open the app; stored decisions are shown separately as *“K/144 decided”*.
+card each time you open the app; stored decisions are shown separately as *“K/143 decided”*.
 
 The matcher knows the common name↔symbol synonyms used in papers (e.g. `TGFB1`→“TGF-β”,
 `LGALS3`→“galectin-3”, `EDN1`→“endothelin-1”, `ARNT`→“HIF-1β”), so it still finds the sentence
