@@ -110,9 +110,13 @@ tabib-fetch:  ## Download the Tabib GSE138669 raw counts (594 MB).
 fetch-gse45536:  ## Download the GSE45536 whole-blood cohort for M5 external validation (~94 MB).
 	$(PYTHON) scripts/fetch_gse45536.py
 
-validate-m5:  ## External validation of module M5 on GSE45536 (reproduces p=1.3e-4).
+validate-m5:  ## External validation of module M5 on GSE45536 (reproduces p=1.3e-4; writes JSON).
 	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/validate_m5_gse45536.py; \
 	else $(PYTHON) scripts/validate_m5_gse45536.py; fi
+
+fig-m5: validate-m5  ## Render F7 (M5 validation) from the live validate-m5 JSON output.
+	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/make_m5_validation_fig.py; \
+	else $(PYTHON) scripts/make_m5_validation_fig.py; fi
 
 overlay:  ## Build scRNAseq overlay (real if data present, synthetic-grounded otherwise).
 	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/build_overlay.py; \

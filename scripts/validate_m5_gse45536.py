@@ -15,7 +15,7 @@ Inputs (under data/raw/gse45536/ — fetch with `make fetch-gse45536`):
 Both raw files are pinned (size + SHA-256) in data/MIRROR.sha256.
 """
 from __future__ import annotations
-import csv, gzip, sys
+import csv, gzip, json, sys
 from pathlib import Path
 import numpy as np
 from scipy.stats import mannwhitneyu
@@ -24,6 +24,16 @@ ROOT = Path(__file__).resolve().parents[1]
 MAT = ROOT / "data/raw/gse45536/GSE45536_series_matrix.txt.gz"
 SOFT = ROOT / "data/raw/gse45536/GPL570_table.txt"   # plain platform table from acc.cgi
 ANN = ROOT / "curation/annotations/species_annotations.tsv"
+OUT = ROOT / "analysis/overlay/m5_gse45536_validation.json"
+
+# Sub-signatures of the M5 gene set, used for the decomposition in Panel B of
+# figures/F7_M5_validation.png (see analysis/overlay/M5_validation.md). The
+# remaining M5 genes (CD40, CD40LG) belong to none of the three sub-sets.
+SUBSIGS = {
+    "autoantigens": {"TOP1", "CENPB"},
+    "plasma_core":  {"PRDM1", "XBP1", "TNFRSF17", "IRF4", "TNFSF13B", "TNFSF13"},
+    "b_surface":    {"CD19", "CD22", "CD79A", "CD79B", "MS4A1", "BLK", "BTK", "LYN", "SYK"},
+}
 
 
 def module_genes(mod: str) -> set[str]:
@@ -98,26 +108,59 @@ def sig_score(rows, p2s, samples):
     return np.nanmean(z, axis=0), mat.shape[0]
 
 
+def score_signature(rows, samples, grp, genes: set[str]) -> dict | None:
+    """Score one signature on the cohort; return summary stats or None."""
+    p2s = probe_to_symbol(genes)
+    sc = sig_score(rows, p2s, samples)
+    if sc is None:
+        return None
+    score, nprobe = sc
+    s = score[grp == "SSc"]; h = score[grp == "HC"]
+    s = s[~np.isnan(s)]; h = h[~np.isnan(h)]
+    p = float(mannwhitneyu(s, h, alternative="two-sided").pvalue)
+    return {
+        "genes_mapped": sorted(set(p2s.values())),
+        "n_genes": len(genes),
+        "n_genes_mapped": len(set(p2s.values())),
+        "n_probes": int(nprobe),
+        "n_ssc": int(len(s)), "n_hc": int(len(h)),
+        "ssc_mean_z": float(np.mean(s)), "hc_mean_z": float(np.mean(h)),
+        "delta": float(np.mean(s) - np.mean(h)), "p": p,
+    }
+
+
 def main():
     samples, phen, rows = load_matrix()
     grp = np.array(["SSc" if "scleroderma" in (p or "").lower() else
                     ("HC" if "healthy" in (p or "").lower() else "other") for p in phen])
-    print(f"GSE45536: {len(samples)} samples | SSc={np.sum(grp=='SSc')} HC={np.sum(grp=='HC')} other={np.sum(grp=='other')}")
-    for mod in ("M5", "M1"):
-        genes = module_genes(mod)
-        p2s = probe_to_symbol(genes)
-        mapped = sorted(set(p2s.values()))
-        sc = sig_score(rows, p2s, samples)
-        if sc is None:
-            print(f"{mod}: no probes mapped"); continue
-        score, nprobe = sc
-        s = score[grp == "SSc"]; h = score[grp == "HC"]
-        s = s[~np.isnan(s)]; h = h[~np.isnan(h)]
-        p = mannwhitneyu(s, h, alternative="two-sided").pvalue
-        print(f"\n=== {mod} signature ({len(mapped)}/{len(genes)} genes, {nprobe} probes) ===")
-        print(f"  genes mapped: {mapped}")
-        print(f"  SSc mean z={np.mean(s):+.3f} (n={len(s)})  vs  HC mean z={np.mean(h):+.3f} (n={len(h)})"
-              f"  Δ={np.mean(s)-np.mean(h):+.3f}  p={p:.3g}{' *' if p<0.05 else ''}")
+    n_ssc = int(np.sum(grp == "SSc")); n_hc = int(np.sum(grp == "HC"))
+    print(f"GSE45536: {len(samples)} samples | SSc={n_ssc} HC={n_hc} other={np.sum(grp=='other')}")
+
+    # Full M5 + M1 control, then the M5 sub-signature decomposition.
+    sigs: dict[str, set[str]] = {"M5": module_genes("M5"), "M1": module_genes("M1")}
+    sigs.update(SUBSIGS)
+
+    results: dict[str, dict] = {}
+    for name, genes in sigs.items():
+        r = score_signature(rows, samples, grp, genes)
+        if r is None:
+            print(f"{name}: no probes mapped"); continue
+        results[name] = r
+        star = " *" if r["p"] < 0.05 else ""
+        print(f"\n=== {name} signature ({r['n_genes_mapped']}/{r['n_genes']} genes, {r['n_probes']} probes) ===")
+        print(f"  genes mapped: {r['genes_mapped']}")
+        print(f"  SSc mean z={r['ssc_mean_z']:+.3f} (n={r['n_ssc']})  vs  "
+              f"HC mean z={r['hc_mean_z']:+.3f} (n={r['n_hc']})  "
+              f"Δ={r['delta']:+.3f}  p={r['p']:.3g}{star}")
+
+    OUT.parent.mkdir(parents=True, exist_ok=True)
+    OUT.write_text(json.dumps({
+        "dataset": "GSE45536",
+        "description": "Streicher et al., whole-blood; external validation of module M5",
+        "n_ssc": n_ssc, "n_hc": n_hc,
+        "signatures": results,
+    }, indent=2))
+    print(f"\n[ok] wrote {OUT.relative_to(ROOT)}")
 
 
 if __name__ == "__main__":

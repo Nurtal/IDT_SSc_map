@@ -2218,3 +2218,14 @@ données non figé et non reproductible, sans que rien ne le détecte.
 - Figure `F7_M5_validation.png` toujours alimentée par des valeurs en dur dans `make_m5_validation_fig.py`
   (les chiffres correspondent à la réalité re-vérifiée aujourd'hui, mais le découplage script↔figure
   subsiste). À rebrancher sur la sortie live de `validate_m5_gse45536.py` si on veut fermer ce angle.
+
+### Suite (même jour) — F7 rebranchée sur la sortie live
+Le « restant » ci-dessus est fermé. `validate_m5_gse45536.py` calcule désormais aussi la
+**décomposition en sous-signatures** (autoantigens TOP1/CENPB, plasma-cell core, B-surface) + contrôle
+M1 et **écrit `analysis/overlay/m5_gse45536_validation.json`**. Vérifié : reproduit exactement
+`M5_validation.md` (autoantigens Δ=+1,071 p=1,71e-10 ; plasma_core Δ=−0,428 p=2,02e-6 ;
+b_surface Δ=−0,337 p=1,8e-3 ; M1 Δ=+0,420 p=3,8e-5).
+`make_m5_validation_fig.py` (F7) **lit ce JSON** pour Panel B (plus aucune valeur en dur) ; Panel A
+calcule aussi son p live depuis le TSV bplasma commité (p=0,046). Au passage : **corrigé le `ROOT`
+codé en dur** (`/home/n765/...` → repo-relatif) qui empêchait le script de tourner sur cette machine.
+Nouvelle cible `make fig-m5` (= `validate-m5` puis rendu). F7 régénérée.
