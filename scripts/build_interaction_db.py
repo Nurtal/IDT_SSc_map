@@ -221,14 +221,17 @@ def is_test_fixture(c: dict) -> bool:
 
 def load_discarded(curated_rows: list[dict]) -> list[dict]:
     """Considered-but-not-included interactions, with the deciding quote and discard reason."""
-    cur = {(r["type"], r["reactants"], r["products"], r["pmid"].strip()) for r in curated_rows}
+    # Identity of a promoted edge is its (type, reactants, products) — NOT the PMID. Keying on the
+    # PMID would unsuppress a candidate's staging origin whenever the curated reaction's citation is
+    # later corrected, resurfacing it as a spurious "discarded" duplicate.
+    cur = {(r["type"], r["reactants"], r["products"]) for r in curated_rows}
     # PMIDs that were merged in as secondary evidence (cumulated, not discarded)
     merged_pmids = {p for ps in load_secondary_evidence().values() for p in ps}
     out: list[dict] = []
     # (a) staged candidates that never reached the map
     if STAGING.exists():
         for c in csv.DictReader(STAGING.open(), delimiter="\t"):
-            key = (c["type"], c["reactants"], c["products"], c["source_pmid"].strip())
+            key = (c["type"], c["reactants"], c["products"])
             if key in cur or c["source_pmid"].strip() in merged_pmids:
                 continue
             if is_test_fixture(c):  # fabricated negative-control test fixtures never reach the reviewer

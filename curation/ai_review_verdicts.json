@@ -457,10 +457,9 @@
   },
   "ssc_M2_053": {
     "verdict": "validate",
-    "rationale": "FLI1 represses COL1A1; its epigenetic silencing derepresses collagen in SSc — cited PMID 19863377 is an SSc vascular review (weak for this edge); dossier 16829517 (Fli1 represses CCN2) and 25562121 (Fli1 suppresses Col1a1) are stronger.",
+    "rationale": "FLI1 represses collagen; its epigenetic silencing derepresses collagen in SSc. Citation corrected 2026-06-29 to PMID 12875977 (Kubo et al., Am J Pathol: Fli1, a suppressor of collagen transcription, persistently down-regulated in scleroderma skin).",
     "pmids": [
-      "16829517",
-      "25562121"
+      "12875977"
     ]
   },
   "ssc_M2_054": {
@@ -479,9 +478,9 @@
   },
   "ssc_M2_058": {
     "verdict": "validate",
-    "rationale": "MMP1/SIRT1 axis in SSc — cited PMID 29579252 (SSc) on-topic.",
+    "rationale": "SIRT1 negatively regulates MMP transcription. Citation corrected 2026-06-29 to PMID 20812964 (primary: Sirt1 negatively regulates stress-induced MMP-9 in skin); note the primary evidence is MMP-9/UV-skin rather than SSc-specific MMP1.",
     "pmids": [
-      "29579252"
+      "20812964"
     ]
   },
   "ssc_M2_021": {
@@ -798,9 +797,10 @@
   },
   "ssc_M3_007": {
     "verdict": "validate",
-    "rationale": "HIF1A induces EDN1 + VEGFA — cited PMID 9278140 (HIF-1 oxy-gene targets incl. VEGF) supports; EDN1 is a known HIF target.",
+    "rationale": "HIF1A directly induces EDN1 and VEGFA. Citation corrected 2026-06-29 to PMID 9588211 (HIF-1 binding site drives the endothelin-1 gene) with PMID 8756616 (Forsythe: HIF-1 activates VEGF gene transcription) as the VEGFA primary source.",
     "pmids": [
-      "9278140"
+      "9588211",
+      "8756616"
     ]
   },
   "ssc_M3_008": {
