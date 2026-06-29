@@ -2229,3 +2229,87 @@ b_surface Δ=−0,337 p=1,8e-3 ; M1 Δ=+0,420 p=3,8e-5).
 calcule aussi son p live depuis le TSV bplasma commité (p=0,046). Au passage : **corrigé le `ROOT`
 codé en dur** (`/home/n765/...` → repo-relatif) qui empêchait le script de tourner sur cette machine.
 Nouvelle cible `make fig-m5` (= `validate-m5` puis rendu). F7 régénérée.
+
+## 2026-06-29 (2) — Relecture finale avant envoi de l'app review aux biologistes
+
+« C'est le grand jour » : l'utilisateur envoie l'app swipe-deck (`review/index.html`) à des
+collègues biologistes pour la revue humaine de la carte. Objectif : **0 coquille**. Une passe de
+cohérence intégrale (discours / données / analyses / structure) a tourné en plusieurs vagues, chacune
+ayant débusqué un bug réel.
+
+### Vague 1 — Nettoyage du deck + cohérence inventaire + ménage overlays (`c996f61`)
+- **App** : (1) **dédup des participants** — 22 cartes affichaient « SMAD3p_SMAD4 + SMAD3p_SMAD4 »
+  (la même espèce listée comme reactant ET modifier, concaténée sans dédup). Corrigé à l'affichage
+  (`build_review_app.py` + live HTML). (2) **Liens « ↗ PDF » locaux désactivés** (ARTBASE vidé) : ils
+  pointaient vers `file:///home/drfox/...` et auraient 404 chez les collègues ; la phrase verbatim +
+  liens PubMed/DOI restent. Flag `SSC_REVIEW_ARTBASE=1` pour un build local-curateur. (3) Chemin
+  `/home/drfox` retiré du fichier livré. (4) `review/README.md` « K/144 » → « K/143 ».
+- **Garde-fou env** : `make review` ne doit PAS tourner sur cette machine (PyMuPDF/`fitz` absent →
+  perte du surlignage synonymes `SYN`). Corrigé plus tard en rendant `import fitz` paresseux.
+- **STATUS.md** : inventaire rafraîchi (species_annotations 526→**568** / 198→**236 HGNC** ;
+  pubmed_corpus.bib 361→**398**).
+- **Ménage overlays** : `minerva/overlays/` contenait **77** TSV alors que les docs disaient 58/60/62.
+  Diagnostic : 15 fichiers périmés de runs pré-26-juin (9 `tabib_*` de mai + 6 clusters `gse195452_*`
+  superseded). Supprimés → **62** (le run courant du 26 juin), aligné dans README/STATUS/doc construction.
+  Le « 58 » du manuscrit n'était PAS une erreur : c'est le nombre de **clusters annotés** (≠ 62 fichiers
+  overlay, qui incluent 4 clusters non-annotés type `Fibro_Bad`, `UN`, `fibroblast_other`).
+
+### Vague 2 — Bug d'intégrité des citations dans `fetch_pmc` (`44a1315`)
+Déclenché par une demande de test du mining PMC. **Découverte majeure** : `mine_pdf_quotes.fetch_pmc`
+suivait le lien elink `pubmed_pmc_refs` (les articles qui **citent** le PMID) au lieu de `pubmed_pmc`
+(l'article lui-même) — boucle sans `break` qui gardait le dernier lien. Résultat : **8 des 9 phrases
+« verbatim (PMC full-text) » du deck venaient du MAUVAIS article** (un papier cGAS 2013 « citant » les
+systèmes antiphage CBASS ; un papier PDGF 1998 « citant » HCC/PI3K-AKT). Preuve : PMID 23258413
+résolvait PMC 13299237 (citant) au lieu de 3863629 (self).
+- **Fix** : self-link `pubmed_pmc` uniquement + `break` ; `import fitz` rendu paresseux (le mineur
+  PMC/abstract et la régén de l'app tournent sans PyMuPDF).
+- **Re-mine contrôlé** des 18 lignes PMC (purge) + 39 in-map sans phrase (gain), merge dans
+  `pdf_quotes.tsv` en préservant les 43 PDF + abstracts. Toutes les phrases PMC re-vérifiées
+  **présentes dans l'article cité (13/13)**. 8 contaminées purgées (5 remplacées, 3 vidées) ;
+  13 cartes ont gagné une vraie phrase. `to_complete` in-map 46→36.
+- **Cache empoisonné purgé** : `article_text/*.pmc.json` (62 fichiers) contenaient encore le texte
+  des articles citants ; `get_sources` les lit AVANT le réseau → un `make review` les aurait
+  ré-injectés. Supprimés (hors-repo). Piège noté en mémoire `pmc-quote-mining-self-link-only`.
+
+### Vague 3 — Audit concordance réaction↔PMID : 6 faux PMID (`5d1d2f6`)
+Sur demande « je veux pas de réf qui pointe vers Arabidopsis ». Titre+abstract réels récupérés pour
+les **95 PMID distincts** (126 cartes). **6 références pointaient vers des articles hors-sujet** ayant
+survécu à la passe d'intégrité précédente :
+
+| Carte | Faux PMID (pointait vers…) | → Remplacement vérifié sur abstract |
+|---|---|---|
+| `ssc_M1_004` | 11402134 *(microcéphalie/pyridostigmine)* | **9566918** (Lin 1998, phospho-IRF-3 → promoteur IFN) |
+| `ssc_M1_007` | 11442765 *(récepteur mélanocortine)* | **15800576** (Honda 2005, IRF-7 master regulator IFN-I) |
+| `ssc_M2_018` | 19638503 *(cancer poumon EGFR, brève)* | **20039427** (Fra-2 régule l'ECM dans la SSc) |
+| `ssc_M2_019` | 25381232 *(cyanobactérie Microcystis)* | **(retiré)** — aucun papier FOSL2↔TBX2 n'existe → inférence ECO:0000305 |
+| `ssc_M3_009` | 17656708 *(« Materials science »)* | **18796538** (Kokudo, Snail requis pour EndMT TGF-β) |
+| `ssc_crosstalk_006` | 17656708 *(idem)* | **21425122** (EndMT induite par TGF-β, SSc) |
+| `ssc_M4_009` | 7544499 *(VHC/greffe foie)* | **36081178** (triade BLIMP1/IRF4/XBP1 plasmocyte) |
+
+Règle « jamais inventer » respectée : `ssc_M2_019` laissé sans PMID (3 recherches PubMed → 0 résultat).
+Rationales IA mises à jour (elles citaient encore les vieux PMID). 4/6 nouveaux PMID ont reçu une
+phrase verbatim minée.
+
+### Vague 4 — 3 revues → sources primaires + fix dedup (`ad40764`)
+3 cartes citaient une **revue** où le gène n'était pas dans l'abstract → sources primaires vérifiées :
+`ssc_M2_053` 19863377→**12875977** (Kubo 2003, Fli1 suppresseur de collagène) ; `ssc_M2_058`
+29579252→**20812964** (Sirt1 ⊣ MMP-9) ; `ssc_M3_007` 9278140→**9588211** (HIF-1 → gène EDN1) +
+secondaire **8756616** (Forsythe, HIF-1 → VEGF). NB : `9278140` reste légitimement sur `ssc_M3_006`
+(« l'hypoxie active HIF1A »).
+- **Bug latent trouvé** : `build_interaction_db` déduplique les arêtes promues sur
+  `(type, réactants, produits, PMID)`. Corriger un PMID « ré-exposait » son candidat de staging comme
+  doublon *discarded* (cand_fli1_col, cand_sirt1_mmp avec les vieux PMID) → deck monté à 145. **Corrigé** :
+  identité = `(type, réactants, produits)` seulement. Deck revenu à **143**.
+- Phrase « discovery » périmée de M2_053/M2_058 (extraite du vieux papier) neutralisée dans `notes` →
+  les cartes affichent désormais la phrase minée du **bon** article.
+
+### Vague 5 — STATUS.md (`b54a75d`)
+Section « Citation-integrity hardening (2026-06-29) — DONE » ajoutée (les 3 vagues citations).
+
+### État final vérifié + tag v1.0 reporté
+Deck **143** (133 in_map + 10 discarded) == source TSV · verdicts **128/5/10** · in_map avec PMID
+**125/133** · **0 faux PMID en citation primaire** · faux contrôle négatif `cand_negctrl` absent du
+deck · app intègre (143, SYN, 0 fuite locale, 0 placeholder). Tous les commits poussés sur `main`.
+**Tag `v1.0` demandé puis reporté** : `.zenodo.json` contient encore le placeholder co-auteur
+(`REPLACE_ME, Co-author` + affiliation + ORCID `0000-...`) — bloque les critères d'acceptation v1.0.
+À résoudre (remplir le co-auteur, ou release mono-auteur) avant de tagger.
