@@ -32,6 +32,26 @@
   paper). All 28 replacement PMIDs were retrieved and **verified against live PubMed** (verdicts
   `revise`→`validate`); one POSTN case kept as `caution`. See `curation/citation_revise_report.md`
   and `curation/ai_review_verdicts.json` (now 128 validate / 5 caution).
+- ✅ **Citation-integrity hardening (2026-06-29) — DONE** (pre-send pass on the reviewer deck):
+  1. **`fetch_pmc` bug fixed** (`44a1315`) — the PMC quote miner followed the `pubmed_pmc_refs`
+     (citing-article) elink instead of the `pubmed_pmc` self-link, so **8/9 "verbatim (PMC full-text)"
+     quotes in the deck were sentences from the wrong paper** (a 2013 cGAS paper "quoting" antiphage
+     CBASS; a 1998 PDGF paper "quoting" HCC/PI3K-AKT). Now self-link-only + `break`; `import fitz` made
+     lazy. Re-mined all 18 PMC rows → every PMC quote re-verified present in the cited article (13/13).
+     The poisoned on-disk PMC cache (`article_text/*.pmc.json`, 62 files) was purged so a future
+     `make review` re-fetches clean. See memory `pmc-quote-mining-self-link-only`.
+  2. **Per-card reaction↔PMID concordance audit** (`5d1d2f6`) — fetched real title+abstract for all 95
+     distinct PMIDs; found **6 references still pointing to off-topic articles** that survived the
+     earlier sweep (e.g. an IRF3→IFNB1 edge citing a *pyridostigmine-microcephaly* paper; a FRA-2/TBX2
+     edge citing a *Microcystis* cyanobacteria paper; two EndMT edges citing a "Materials science"
+     news blurb). All 6 replaced with **PubMed-verified primary sources**; **1** (`ssc_M2_019`
+     FRA-2/TBX2) had no primary source in existence → PMID removed, kept as ECO:0000305 curator
+     inference (never fabricated).
+  3. **3 review citations upgraded to primary sources** (`ad40764`) — `ssc_M2_053` (FLI1→collagen,
+     Kubo 2003), `ssc_M2_058` (SIRT1→MMP), `ssc_M3_007` (HIF1A→EDN1/VEGFA). Also fixed a latent
+     `build_interaction_db` dedup keyed on PMID that resurfaced staging duplicates when a citation was
+     corrected (identity is now type+reactants+products only). Deck steady at 143; `to_complete`
+     36→32; **0 false PMID as a primary citation**, every PMC/abstract quote verified in its article.
 - **Lead-author metadata filled** — `CITATION.cff` + `.zenodo.json` (Nathan Foulquier,
   ORCID 0000-0003-4620-2794, LBAI U1227 Inserm CDC CHU Brest). Co-author slot still REPLACE_ME.
 
