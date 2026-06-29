@@ -39,7 +39,9 @@ import urllib.request
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
-import fitz  # PyMuPDF
+# NOTE: PyMuPDF (`fitz`) is imported lazily inside pages_text() — it is needed only to read local
+# PDFs. Keeping it out of module import means the PMC/abstract miner (and `from mine_pdf_quotes
+# import SYN` in build_review_app.py) work in environments without PyMuPDF installed.
 
 ROOT = Path(__file__).resolve().parents[1]
 SSC = ROOT / "curation/ssc_curated_reactions.tsv"
@@ -81,6 +83,7 @@ def pages_text(pmid: str) -> list[str]:
     cf = CACHE / f"{pmid}.json"
     if cf.exists():
         return json.loads(cf.read_text())
+    import fitz  # PyMuPDF — only required when reading a local PDF
     doc = fitz.open(ART / f"{pmid}.pdf")
     pages = [clean(p.get_text("text")) for p in doc]
     doc.close()
@@ -116,8 +119,14 @@ def fetch_pmc(pmid: str) -> list[str]:
     pmcid = None
     for ls in link.get("linksets", []):
         for db in ls.get("linksetdbs", []):
-            if db.get("dbto") == "pmc" and db.get("links"):
+            # ONLY the article's own PMC record (`pubmed_pmc`). NEVER `pubmed_pmc_refs`, which lists
+            # the (often hundreds of) articles that *cite* this PMID — picking one of those would
+            # attribute a citing paper's sentence to the cited PMID (a citation-integrity bug).
+            if db.get("linkname") == "pubmed_pmc" and db.get("links"):
                 pmcid = db["links"][0]
+                break
+        if pmcid:
+            break
     if not pmcid:
         return []
     root = ET.fromstring(_eutils("efetch", db="pmc", id=pmcid))
