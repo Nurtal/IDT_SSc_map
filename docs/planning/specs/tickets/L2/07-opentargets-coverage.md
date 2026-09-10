@@ -21,4 +21,4 @@ core, because it has no decision to make.
 
 ## Blocked by
 
-- {{T1}}
+- {{L2-T1}}

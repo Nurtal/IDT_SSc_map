@@ -21,4 +21,4 @@ the curated graph, so it partly measures curation density.
 
 ## Blocked by
 
-- {{T1}}
+- {{L2-T1}}

@@ -30,4 +30,4 @@ nothing about GEO, GWAS Catalog or OpenTargets; source-specific parsing stays in
 
 ## Blocked by
 
-- {{T1}}
+- {{L2-T1}}
