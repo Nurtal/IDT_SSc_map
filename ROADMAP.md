@@ -1,5 +1,17 @@
 # ROADMAP — SSc-MIM (Skin Fibrosis Molecular Interaction Map)
 
+> ⚠️ **HISTORICAL DOCUMENT — DOES NOT DESCRIBE CURRENT WORK.** Frozen 2026-09-10.
+>
+> The calendar below targets ACR Convergence 2026, a track that was **abandoned**. Its milestones
+> (M6–M12), go/no-go gates (G2–G5) and handover queue are **stale** and in several places wrong: the
+> dates have passed, the co-author review never took place, and no clinician returned the reviewer
+> deck sent on 2026-06-29. Read it as a record of what was intended between May and June 2026, not as
+> a plan.
+>
+> **The current plan is [`docs/planning/npj_submission_plan.md`](docs/planning/npj_submission_plan.md).**
+> Project vocabulary: [`CONTEXT.md`](CONTEXT.md). Validation methodology:
+> [`docs/planning/external_validation_prespec.md`](docs/planning/external_validation_prespec.md).
+
 > **Revised on 2026-05-16 (pivot).** Primary delivery is **a functional, robust map hosted on GitHub + Zenodo (citable DOI)**, before ACR submission. MINERVA Luxembourg deployment is moved to a **post-publication stretch goal**. Co-author is locked (médecine interne, ARD-published SSc collaboration).
 
 - **Window:** 15 May 2026 → 22 September 2026 (18 weeks).

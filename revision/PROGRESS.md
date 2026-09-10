@@ -1,5 +1,19 @@
 # PROGRESS — npj-SBA revision
 
+> ⚠️ **CLOSED — INTERNAL EXERCISE, NOT A JOURNAL REVISION.** Frozen 2026-09-10.
+>
+> This dashboard tracks the **simulated** peer-review run of 2026-05-20 (see `README.md` in this
+> folder). **The manuscript has never been submitted to any journal and has never been peer
+> reviewed.** "Reviewer", "editor", "E-item" and "revision" below refer to that internal exercise
+> only.
+>
+> The sprint table is stale: S4–WR are marked ⏳ pending although the underlying work was completed in
+> June 2026, and the 2026-09-30 submission target was self-imposed and has been dropped. The E1–E25
+> items are of historical interest — they did drive real methodological improvements — but they are
+> not an open worklist.
+>
+> **The current plan is [`../docs/planning/npj_submission_plan.md`](../docs/planning/npj_submission_plan.md).**
+
 > One-screen dashboard for the revision. Updated at every sprint
 > gate. Authoritative status of the E1–E25 essential revisions
 > from `editor_decision.md`.

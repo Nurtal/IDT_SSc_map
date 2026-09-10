@@ -1,5 +1,13 @@
 # REVISION ROADMAP — npj Systems Biology and Applications
 
+> ⚠️ **CLOSED — INTERNAL EXERCISE, NOT A JOURNAL REVISION.** Frozen 2026-09-10.
+>
+> Execution plan for the **simulated** peer-review run of 2026-05-20 (see `README.md` in this folder).
+> **The manuscript has never been submitted to any journal and has never been peer reviewed.** The
+> seven sprints, five tracks and nine gates below are closed and superseded.
+>
+> **The current plan is [`../docs/planning/npj_submission_plan.md`](../docs/planning/npj_submission_plan.md).**
+
 > Detailed action plan to address the simulated peer-review run
 > (`R1_systems_biology.md`, `R2_scRNAseq_clinical.md`,
 > `R3_reproducibility.md`, `editor_decision.md`).
