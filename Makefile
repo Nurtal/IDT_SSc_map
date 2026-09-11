@@ -245,7 +245,10 @@ release:  ## Pre-flight a v1.x release (checks + CHANGELOG; doesn't tag).
 check-manifest:  ## Guard: every GSE/GPL accession used by a script is in data/MIRROR.sha256.
 	$(PYTHON) scripts/check_data_manifest.py
 
-lint: specs-check bib-check check-manifest  ## Run all repo-content linters (no SBML files needed).
+check-claims:  ## Guard: no document claims anything untrue about how the work was reviewed.
+	$(PYTHON) scripts/check_claims.py
+
+lint: specs-check bib-check check-manifest check-claims  ## Run all repo-content linters (no SBML files needed).
 
 auto:  lint validate harmonise seed integrate pmids crosstalk ssc-stubs wire network sink-check druggable overlay boolean preflight figures abstract  ## Run the entire AUTO lane end-to-end.
 	@echo ">> Full AUTO pipeline complete."

@@ -12,6 +12,14 @@ on:
       - "scripts/check_data_manifest.py"
       - "scripts/**.py"
       - "data/MIRROR.sha256"
+      - "**.md"
+      - "**.html"
+      - "**.txt"
+      - "**.tex"
+      - "**.rst"
+      - "**.cff"
+      - ".zenodo.json"
+      - "ro-crate-metadata.json"
       - ".github/workflows/lint.yml"
   pull_request:
     paths:
@@ -24,6 +32,14 @@ on:
       - "scripts/check_data_manifest.py"
       - "scripts/**.py"
       - "data/MIRROR.sha256"
+      - "**.md"
+      - "**.html"
+      - "**.txt"
+      - "**.tex"
+      - "**.rst"
+      - "**.cff"
+      - ".zenodo.json"
+      - "ro-crate-metadata.json"
       - ".github/workflows/lint.yml"
 
 jobs:
@@ -74,3 +90,15 @@ jobs:
           python-version: "3.11"
       - name: Guard data provenance (every dataset used is in data/MIRROR.sha256)
         run: python scripts/check_data_manifest.py
+
+  claims-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Guard review-status claims (nothing untrue about how the work was reviewed)
+        run: python scripts/check_claims.py

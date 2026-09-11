@@ -19,7 +19,7 @@ out of five.
 
 Two things make this urgent rather than merely desirable. First, the intended human check will not
 happen: the reviewer deck went out and nothing came back, so **no reaction in the map is ratified by
-anyone**, and the resource cannot honestly be described as expert-curated. Second, the project has
+anyone**, and the resource cannot honestly be described as expert-curated. Second, the project has <!-- claims-guard: mention -->
 already been burned by circularity — a module contrast reported as Δ≈+0.27 collapsed to +0.058 once
 the score was made sign-blind, a fivefold inflation caused by using the same contrast to select genes
 and to sign the score. Without machinery that enforces the decision rules, a well-meaning analysis

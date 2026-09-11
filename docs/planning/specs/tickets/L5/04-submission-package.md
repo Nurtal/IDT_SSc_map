@@ -9,7 +9,7 @@ Everything the journal receives, framed as what it is: a first submission.
 - [ ] The cover letter is written as a first submission, with no mention of a revision, reviewers or an editor
 - [ ] The data availability statement quotes the minted identifier
 - [ ] The author list matches the deposition metadata
-- [ ] Nothing in the package claims peer review, expert validation or a revision cycle
+- [ ] Nothing in the package claims peer review, expert validation or a revision cycle <!-- claims-guard: mention -->
 
 ## Blocked by
 

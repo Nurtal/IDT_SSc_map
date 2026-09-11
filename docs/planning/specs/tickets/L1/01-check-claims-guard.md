@@ -3,7 +3,7 @@
 ## What to build
 
 The build fails when a document claims something untrue about how this work has been reviewed. Until
-now the only thing preventing "npj-SBA revision merged" or "expert-curated" from reappearing was
+now the only thing preventing "npj-SBA revision merged" or "expert-curated" from reappearing was <!-- claims-guard: mention -->
 someone noticing.
 
 The guard ships **before** the cleanup it enforces, carrying an explicit allowlist of the files that
@@ -13,7 +13,7 @@ cleanup ticket is not done until the allowlist is empty.
 
 ## Acceptance criteria
 
-- [ ] Forbidden phrasings are detected case-insensitively: peer review / peer-reviewed, expert-validated, expert-curated, community-curated, as requested by the reviewer or editor, major revision
+- [ ] Forbidden phrasings are detected case-insensitively: peer review / peer-reviewed, expert-validated, expert-curated, community-curated, as requested by the reviewer or editor, major revision <!-- claims-guard: mention -->
 - [ ] The guard reports the file, the line and the matched phrase, so a violation is actionable without searching
 - [ ] The internally generated critique folder and the historical journal are exempt **by documented rule**, not by silent omission
 - [ ] Files that are dirty today are listed in an explicit allowlist, each entry naming the ticket that will remove it

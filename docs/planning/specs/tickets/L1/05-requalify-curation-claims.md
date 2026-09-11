@@ -2,7 +2,7 @@
 
 ## What to build
 
-The resource is described as community- and expert-curated, and its methodology claims scoping with
+The resource is described as community- and expert-curated, and its methodology claims scoping with <!-- claims-guard: mention -->
 clinicians. No reaction has been ratified by anyone, the reviewer deck came back empty, and the
 co-author brief was never answered.
 

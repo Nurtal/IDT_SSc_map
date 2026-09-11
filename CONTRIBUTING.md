@@ -63,6 +63,7 @@ PRs that touch only `analysis/**` (scripts, notebooks) must additionally:
 - **Compartments.** Vocabulary fixed in `docs/curation/curation_guidelines.md` (`extracellular`, `plasma_membrane`, `cytosol`, `nucleus`, `ECM`, `endosome`, `ER`, `mitochondrion`).
 - **Citations.** Cite PMIDs in `reaction_evidence.tsv`; the corresponding BibTeX entry must exist in `curation/pubmed_corpus.bib`.
 - **Markdown.** GitHub-flavoured. No tabs; LF line endings.
+- **Review status.** The manuscript has never been submitted and no reaction has been ratified (see `CONTEXT.md`). `make check-claims` (`scripts/check_claims.py`, also a CI job) fails on any document saying otherwise. Its docstring lists the forbidden phrasings and the structural exemptions: the historical journal, bannered files of the simulated pre-submission review, and — in the glossary and the planning documents only — a line marker for a sentence that names a phrasing only to forbid or deny it. Its allowlist of files dirty today is temporary and **must be empty before submission**.
 - **Python.** Format with `ruff format`; lint with `ruff check`. Type hints encouraged.
 - **R.** Tidyverse style; one file per analysis step.
 

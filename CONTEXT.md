@@ -85,10 +85,10 @@ Auditing the two separately is what surfaced the wrong-citation problem.
 
 **AI verdict** — an advisory call (`validate` / `revise` / `caution` / `reject`) produced by reading
 the deciding quote and the retrieved abstracts. **Advisory only.** It is a documented QC layer; it is
-not review, not ratification, and it does not make the map expert-validated.
+not review, not ratification, and it does not make the map expert-validated. <!-- claims-guard: mention -->
 
 **Ratification** — a named human expert accepting a reaction into the map. **No reaction is ratified
-to date.** "Expert-curated" and "community-curated" must not be used of this resource until that
+to date.** "Expert-curated" and "community-curated" must not be used of this resource until that <!-- claims-guard: mention -->
 changes.
 
 ## Curation lifecycle
@@ -150,8 +150,8 @@ else".
 
 **Simulated pre-submission review** — the internal critical read of 2026-05-20 (`presubmission_review/`):
 three reviewer personae and an editor synthesis, all generated internally, **before any journal
-submission**. The manuscript has never been submitted to any journal and has never been peer
-reviewed. "Reviewer", "editor", "revision" and "E-item" refer to this internal exercise **only**, and
+submission**. The manuscript has never been submitted to any journal and has never been
+peer reviewed. "Reviewer", "editor", "revision" and "E-item" refer to this internal exercise **only**, and <!-- claims-guard: mention -->
 any document using them must say so on the same page.
 
 **E-item** — one action item derived from that internal exercise. Not a journal requirement.
