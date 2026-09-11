@@ -8,7 +8,7 @@ before anything is deposited or sent.
 ## Acceptance criteria
 
 - [ ] SBML validation reports zero errors
-- [ ] Every guard passes: data manifest, evidence depth, untrue-claims, stale-numbers
+- [ ] Every guard passes: data manifest, evidence depth, untrue-claims in strict mode (`scripts/check_claims.py --strict`, so its allowlist is empty), stale-numbers
 - [ ] The test suite passes
 - [ ] The readiness check passes
 - [ ] All of the above from a clean checkout, with no manual fix-ups

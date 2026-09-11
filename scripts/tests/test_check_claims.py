@@ -51,6 +51,12 @@ def _problems(documents, allowlist=None):
         "major revision",
         "Major Revision",
         "minor-to-major revision",
+        "npj-SBA revision v1.1 MERGED",
+        "npj-SBA revision, **merged into `main`**",
+        "23/25 reviewer E-items closed",
+        "17/25 E-items closed",
+        "reframed per editor",
+        "framed per the Editor",
     ],
 )
 def test_forbidden_phrasings_detected_case_insensitively(phrase):
@@ -67,6 +73,9 @@ def test_forbidden_phrasings_detected_case_insensitively(phrase):
         "No expert validation has happened.",
         "A peer of the curator reviewed nothing.",
         "Curated by one curator; the community may adjudicate.",
+        "Aggregate DEG across datasets → merged cluster_deg.tsv",
+        "Same biology as the revision above. The two rows were merged.",
+        "Written per editorial policy.",
     ],
 )
 def test_innocuous_text_not_flagged(text):
@@ -206,6 +215,15 @@ def test_run_exits_nonzero_on_a_violation_and_zero_when_clean():
     assert cc.run({"README.md": "The map is expert-validated.\n"}, {}, out=out) == 1
     assert 'README.md:1: "expert-validated"' in out.getvalue()
     assert cc.run({"README.md": "A curated map.\n"}, {}, out=io.StringIO()) == 0
+
+
+def test_strict_mode_fails_while_the_allowlist_is_not_empty():
+    pinned = {"README.md": (2, "#7 (L1-T3)")}
+    assert cc.run(DIRTY, pinned, out=io.StringIO()) == 0
+    out = io.StringIO()
+    assert cc.run(DIRTY, pinned, strict=True, out=out) == 1
+    assert "must be empty" in out.getvalue()
+    assert cc.run({"README.md": "clean\n"}, {}, strict=True, out=io.StringIO()) == 0
 
 
 def test_real_tree_passes():

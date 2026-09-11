@@ -10,7 +10,9 @@ proofreading pass could catch such a claim reappearing.
 
 Rule: no scanned document may contain one of the FORBIDDEN phrasings —
 matched case-insensitively, with a space, hyphen or line break between the
-words. Each hit is reported as `path:line: "phrase"`.
+words — nor one of the three revision-cycle assertions ticket #7 retires (a
+revision "merged", E-items "closed", framing "per the editor"). Each hit is
+reported as `path:line: "phrase"`.
 
 Scanned: every git-tracked file with a prose suffix (SCANNED_SUFFIXES), plus
 the deposition metadata files (SCANNED_NAMES). Code and data files are not
@@ -31,7 +33,8 @@ Structural exemptions — permanent, and the only ones:
 ALLOWLIST — temporary. See the comment above it.
 
 Run:
-    python3 scripts/check_claims.py     # exit 1 on any violation
+    python3 scripts/check_claims.py            # exit 1 on any violation
+    python3 scripts/check_claims.py --strict   # also exit 1 while ALLOWLIST is non-empty
 or  make check-claims
 """
 
@@ -77,6 +80,13 @@ FORBIDDEN: dict[str, re.Pattern[str]] = {
         re.IGNORECASE,
     ),
     "major revision": re.compile(rf"\bmajor{_SEP}revisions?\b", re.IGNORECASE),
+    # Ticket #7's revision-cycle assertions, "in any form". A dot ends the span
+    # unless it sits inside a version number ("revision v1.1 MERGED").
+    "revision … merged": re.compile(
+        r"\brevision\b(?:[^.]|\.(?=\d)){0,40}?\bmerged\b", re.IGNORECASE
+    ),
+    "E-items … closed": re.compile(r"\bE-items?\b[^.]{0,30}?\bclosed\b", re.IGNORECASE),
+    "per the editor": re.compile(rf"\bper{_WS}(?:the{_WS})?editors?\b", re.IGNORECASE),
 }
 
 # Files dirty today — TEMPORARY. Each entry pins the file's exact occurrence
@@ -88,7 +98,7 @@ FORBIDDEN: dict[str, re.Pattern[str]] = {
 # not done until it is; entries outside any ticket's named files fall to it.
 ALLOWLIST: dict[str, tuple[int, str]] = {
     # The simulated pre-submission review: bannering a file exempts it.
-    "revision/PROGRESS.md": (2, "#6 (L1-T2)"),
+    "revision/PROGRESS.md": (9, "#6 (L1-T2)"),
     "revision/R1_systems_biology.md": (1, "#6 (L1-T2)"),
     "revision/R2_scRNAseq_clinical.md": (1, "#6 (L1-T2)"),
     "revision/R3_reproducibility.md": (1, "#6 (L1-T2)"),
@@ -97,16 +107,17 @@ ALLOWLIST: dict[str, tuple[int, str]] = {
     "revision/editor_decision.md": (4, "#6 (L1-T2)"),
     "revision/revision_plan.md": (2, "#6 (L1-T2)"),
     # The project documents a newcomer reads.
-    "CHANGELOG.md": (2, "#7 (L1-T3)"),
-    "README.md": (2, "#7 (L1-T3)"),
+    "CHANGELOG.md": (3, "#7 (L1-T3)"),
+    "README.md": (4, "#7 (L1-T3)"),
     "ROADMAP.md": (2, "#7 (L1-T3)"),
+    "STATUS.md": (3, "#7 (L1-T3)"),
+    # Dated records carrying the same vocabulary.
+    "analysis/baseline_v1.0/README.md": (1, "#7 (L1-T3)"),
+    "docs/archive/biomodels_submission.md": (1, "#7 (L1-T3)"),
+    "docs/planning/historical_roadmap.md": (2, "#7 (L1-T3)"),
+    "docs/standups/2026-05-20_revision_kickoff.md": (3, "#7 (L1-T3)"),
     # The manuscript.
-    "manuscript/SSc_MIM_manuscript_draft.md": (2, "#8 (L1-T4)"),
-    # Named by no ticket: they fall to the one that closes the lot.
-    "analysis/baseline_v1.0/README.md": (1, "#16 (L1-T5)"),
-    "docs/archive/biomodels_submission.md": (1, "#16 (L1-T5)"),
-    "docs/planning/historical_roadmap.md": (2, "#16 (L1-T5)"),
-    "docs/standups/2026-05-20_revision_kickoff.md": (3, "#16 (L1-T5)"),
+    "manuscript/SSc_MIM_manuscript_draft.md": (3, "#8 (L1-T4)"),
 }
 
 
@@ -223,9 +234,15 @@ def load_documents(root: Path) -> dict[str, str]:
 def run(
     documents: dict[str, str],
     allowlist: dict[str, tuple[int, str]],
+    strict: bool = False,
     out: TextIO = sys.stdout,
 ) -> int:
     report = check(documents, allowlist)
+    if strict and allowlist:
+        report.problems.append(
+            f"strict mode: ALLOWLIST still holds {len(allowlist)} file(s) — "
+            "it must be empty before submission"
+        )
     print(
         f"documents scanned: {len(documents)}  (exempt: {len(report.exempt)})", file=out
     )
@@ -261,10 +278,16 @@ def run(
 
 
 def main(argv: list[str] | None = None) -> int:
-    argparse.ArgumentParser(
+    parser = argparse.ArgumentParser(
         description="Fail when a document claims something untrue about how this work was reviewed."
-    ).parse_args(argv)
-    return run(load_documents(ROOT), ALLOWLIST)
+    )
+    parser.add_argument(
+        "--strict",
+        action="store_true",
+        help="also fail while the allowlist is non-empty (the pre-submission gate)",
+    )
+    args = parser.parse_args(argv)
+    return run(load_documents(ROOT), ALLOWLIST, strict=args.strict)
 
 
 if __name__ == "__main__":
