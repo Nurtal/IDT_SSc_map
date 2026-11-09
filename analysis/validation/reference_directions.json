@@ -1,0 +1,70 @@
+{
+  "source": "analysis/overlay/pseudobulk_multi.tsv (frozen single-cell run of 2026-06-26)",
+  "dataset": "GSE195452 (Gur 2022 skin)",
+  "metric": "AUCell per donor (score_aucell.score_donors), frozen gene sets",
+  "fibroblast_cell_types": [
+    "Fibro_ACTA2",
+    "Fibro_COCH",
+    "Fibro_COMP",
+    "Fibro_IGFBP2",
+    "Fibro_LGR5",
+    "Fibro_MYOC1",
+    "Fibro_MYOC2",
+    "Fibro_POSTN",
+    "Fibro_POSTN_PTGDS",
+    "Fibro_PTGDS"
+  ],
+  "rule": "direction = sign of the rank-biserial SSc-vs-HC effect; M2 from fibroblast types only",
+  "modules": {
+    "M1": {
+      "scope": "whole_tissue",
+      "direction": "up",
+      "effect_size": 0.5217941761620546,
+      "delta": 0.0767894555977573,
+      "p": 6.402953835863255e-08,
+      "n_ssc": 97,
+      "n_hc": 57,
+      "auc_max_rank": 11
+    },
+    "M3": {
+      "scope": "whole_tissue",
+      "direction": "down",
+      "effect_size": -0.26514740459395914,
+      "delta": -0.013508193163320747,
+      "p": 0.004455893702390605,
+      "n_ssc": 97,
+      "n_hc": 57,
+      "auc_max_rank": 11
+    },
+    "M4": {
+      "scope": "whole_tissue",
+      "direction": "up",
+      "effect_size": 0.01772472418158788,
+      "delta": 0.0023790016277807635,
+      "p": 0.8549001675075905,
+      "n_ssc": 97,
+      "n_hc": 57,
+      "auc_max_rank": 11
+    },
+    "M5": {
+      "scope": "whole_tissue",
+      "direction": "up",
+      "effect_size": 0.020618556701030855,
+      "delta": 0.0003134020618556701,
+      "p": 0.2809835642246211,
+      "n_ssc": 97,
+      "n_hc": 57,
+      "auc_max_rank": 11
+    },
+    "M2": {
+      "scope": "fibroblast_restricted",
+      "direction": "down",
+      "effect_size": -0.2352723915050785,
+      "delta": -0.037738947368421205,
+      "p": 0.015204196260636973,
+      "n_ssc": 95,
+      "n_hc": 57,
+      "auc_max_rank": 11
+    }
+  }
+}
