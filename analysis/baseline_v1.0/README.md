@@ -2,7 +2,8 @@
 
 > Frozen pre-review artefacts. Used by Sprints S1–S2 as the
 > comparison baseline when the DEG / scoring / network analyses are
-> re-run with the corrections from the simulated peer review.
+> re-run with the corrections from the simulated pre-submission review
+> (internal exercise; the manuscript has never been submitted).
 
 **Pinned commit**: tag `v1.0-pre-review` (= `e638a4d` on `main`).
 **Frozen on**: 2026-05-20.

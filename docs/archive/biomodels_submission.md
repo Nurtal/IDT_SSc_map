@@ -28,8 +28,9 @@
 > ORCID 0000-0003-4620-2794), co-author REPLACE_ME (rheumatology
 > co-author to confirm at v1.1 submission).
 >
-> **Companion manuscript:** *npj Systems Biology and Applications*, in
-> revision (cycle v1.1, simulated peer-review run 2026-05-20). The
+> **Companion manuscript:** *npj Systems Biology and Applications* — draft,
+> never submitted (cycle v1.1 followed the simulated pre-submission review of 2026-05-20, an
+> internal exercise). The
 > manuscript references this BioModels entry in the Data Availability
 > Statement.
 >

@@ -96,16 +96,6 @@ FORBIDDEN: dict[str, re.Pattern[str]] = {
 # RULE: the allowlist MUST be empty before submission. Ticket #16 (L1-T5) is
 # not done until it is; entries outside any ticket's named files fall to it.
 ALLOWLIST: dict[str, tuple[int, str]] = {
-    # The project documents a newcomer reads.
-    "CHANGELOG.md": (3, "#7 (L1-T3)"),
-    "README.md": (3, "#7 (L1-T3)"),
-    "ROADMAP.md": (2, "#7 (L1-T3)"),
-    "STATUS.md": (3, "#7 (L1-T3)"),
-    # Dated records carrying the same vocabulary.
-    "analysis/baseline_v1.0/README.md": (1, "#7 (L1-T3)"),
-    "docs/archive/biomodels_submission.md": (1, "#7 (L1-T3)"),
-    "docs/planning/historical_roadmap.md": (2, "#7 (L1-T3)"),
-    "docs/standups/2026-05-20_revision_kickoff.md": (3, "#7 (L1-T3)"),
     # The manuscript.
     "manuscript/SSc_MIM_manuscript_draft.md": (3, "#8 (L1-T4)"),
 }

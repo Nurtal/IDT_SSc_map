@@ -3,6 +3,14 @@
 > Snapshot for orientation. Updated on every batch.
 > Authoritative source for completion state is the git log; this file gives one-screen context.
 
+## Current phase  *(2026-11-09)*
+
+- **Nothing has been submitted to any journal.** Work now follows the first-submission plan
+  [`docs/planning/npj_submission_plan.md`](docs/planning/npj_submission_plan.md) (lots L1–L5, GitHub
+  issues #1–#26, ceiling end of November 2026). The clinicians never returned the reviewer deck sent on
+  2026-06-29; no reaction has been ratified by anyone (see `CONTEXT.md`).
+- The snapshot below dates from June 2026; its numbers are still the audited ones.
+
 ## Headline  *(updated 2026-06-24)*
 
 - **Integrated map:** **568 species, 308 reactions, 20 compartments** (grew from 526/260 via the
@@ -13,11 +21,12 @@
   By module: M2 58 · M3 27 · M4 11 (cytokine) · M5 10 (B-cell/autoreactivity) · M1 19 · crosstalk 8
   (M4 split into M4+M5 on 2026-06-25, M5 validated — see analysis/overlay/M5_validation.md). Status: 122 confirmed, 6
   phenotype_aggregation (definitional sinks), 4 conceptual_bridge (now sourced).
-- **npj-SBA revision v1.1 MERGED** (`1116a3e`) — 23/25 reviewer E-items closed: pseudobulk NB-GLM
+- **Internal-audit consolidation, tag `v1.1`** (`1116a3e`, 2026-05-22) — the simulated pre-submission review of 2026-05-20 (an internal exercise, `presubmission_review/`; the manuscript has never been submitted to any journal)
+  produced 25 action items; 23 were implemented: pseudobulk NB-GLM
   DEG + BH-FDR, mixed-effects re-run (**MIM coverage 50% → 81.3%**), AUCell sign-blinded scoring
   (M1 IFN p=3.2e-4 in Gur cohort), hub robustness (E3), community enrichment (E4), drug-target
   recalibration vs SSc trial reality, CellTypist validation (κ=0.92, ARI=0.70), Docker, RO-Crate,
-  pytest+CI, BioModels submission package. Manuscript reframed per editor as a **resource paper**.
+  pytest+CI, BioModels submission package. Manuscript reframed as a **resource paper** following that internal critique.
 - **Reviewer-facing interaction QC (June)** — two new lanes, see below:
   1. **Network growth** — systematic literature worklist (77 papers, 24 themes) + co-author PDF
      mining → SSc reactions 85 → 133.
@@ -70,7 +79,7 @@
 | 4b | **HGNC alias fix** — 15 alias corrigés, 13 métabolites/isoformes vidés | `c5cb945` |
 | 4c | **GSE195452 skin multiome** (Gur 2022) — 154 donors, 100 538 cells; coverage 50%; 58 overlays | `9a40565` |
 | 5 | **IMRAD manuscript draft** (Frontiers/npj, ~5 500 words) | `2930648` |
-| rev | **npj-SBA revision v1.1** — 23/25 E-items, MIM coverage → 81.3%, AUCell, drug recal, Docker | `1116a3e` |
+| audit | **Internal-audit consolidation (tag v1.1)** — 23/25 audit items implemented, MIM coverage → 81.3%, AUCell, drug recal, Docker | `1116a3e` |
 | pdf | Compile manuscript to PDF with embedded figures | `29a5afc` |
 | growth | Systematic lit worklist (77 papers) + OA/non-OA PDF mining → SSc reactions 85 → 133 | `536d36e` |
 | review | Contradiction detector + tidy interaction database (CSV) + discarded/excluded enrichment | `f23706d` |
@@ -92,7 +101,7 @@
 | `minerva/overlays/` | 62 cluster TSVs | ready for MINERVA import |
 | `figures/` | F1 + F2 (AUCell heatmap v1.1) + F3 + F2_multi | SVG + 300 dpi PNG |
 | `review/index.html` | 1 file (offline app) | swipe deck, no server/CDN needed |
-| `manuscript/SSc_MIM_manuscript_draft.md` (+ PDF) | resource-paper draft | npj-SBA revision numbers |
+| `manuscript/SSc_MIM_manuscript_draft.md` (+ PDF) | resource-paper draft | post-audit (v1.1) numbers, refreshed 2026-06-26 |
 
 ## Delivery target
 
@@ -104,7 +113,7 @@ stretch goal — the map content is the deliverable, hosting is one rendering of
 
 - ✅ 🟢 **Auto lanes COMPLETE**: integration, SBML QC, network analysis, real scRNA-seq overlay
   (4 datasets, MIM coverage 82.6% on the current 236-symbol 5-module map), HGNC annotations, DGIdb drug prioritisation, all figures,
-  manuscript draft + v1.1 revision, growth batches (133 SSc reactions), review app + AI verdicts.
+  manuscript draft + v1.1 post-audit consolidation, growth batches (133 SSc reactions), review app + AI verdicts.
 - ✅ **Citation integrity sweep DONE** (28 `revise` PMIDs → verified replacements, 128 validate /
   5 caution). 🟡 **In progress**: manuscript polish.
 - ✅ 🟢 **M5 split — propagation COMPLETE** (M4 → M4 cytokines + M5 B-cell/autoreactivity, validated;

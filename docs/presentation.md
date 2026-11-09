@@ -217,7 +217,7 @@ Source deck: <code>docs/presentation.md</code> → <code>make presentation</code
 
 - Integrated map, SBML QC, 5-module split (M5 validated).
 - Real scRNA-seq overlay on 4 cohorts, coverage 82.6 %, AUCell endotypes.
-- Network/druggability, all figures, manuscript (npj-SBA revision v1.1), reviewer swipe-deck app (143 interactions).
+- Network/druggability, all figures, manuscript draft (not yet submitted; v1.1 = internal-audit consolidation), reviewer swipe-deck app (143 interactions).
 
 </div>
 <div markdown="1">

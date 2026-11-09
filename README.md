@@ -4,7 +4,7 @@
 
 [![SBML validate](https://github.com/Nurtal/IDT_SSc_map/actions/workflows/validate_sbml.yml/badge.svg)](https://github.com/Nurtal/IDT_SSc_map/actions)
 
-**Current state (2026-06):** npj-SBA revision **v1.1 merged into `main`**. The SSc-specific layer has grown to **133 hand-curated reactions**; an offline reviewer app (`review/index.html`) and an AI citation-QC pass have been added. See [`STATUS.md`](STATUS.md) and the detailed reference [`docs/SSc_MIM_construction_and_validation.md`](docs/SSc_MIM_construction_and_validation.md).
+**Current state (2026-11):** manuscript in preparation for a **first submission** to *npj Systems Biology and Applications* — nothing has been submitted to any journal yet (plan: [`docs/planning/npj_submission_plan.md`](docs/planning/npj_submission_plan.md)). The analysis pipeline was consolidated in May 2026 (tag `v1.1`) after the simulated pre-submission review of 2026-05-20 (an internal exercise, `presubmission_review/`; the manuscript has never been submitted to any journal). The SSc-specific layer has grown to **133 hand-curated reactions**; an offline reviewer app (`review/index.html`) and an AI citation-QC pass have been added. See [`STATUS.md`](STATUS.md) and the detailed reference [`docs/SSc_MIM_construction_and_validation.md`](docs/SSc_MIM_construction_and_validation.md).
 
 **Lead author:** Nathan Foulquier — LBAI, UMR 1227 Inserm, CHU Brest. ORCID [0000-0003-4620-2794](https://orcid.org/0000-0003-4620-2794).
 
@@ -92,7 +92,7 @@ The map follows the Disease Maps Project guidelines (Mazein et al., 2018; Ostasz
 4. **Annotation** using the MI2CAST minimum information standard (HGNC, UniProt, PubMed/PMID, ECO evidence codes).
 5. **SBML validation** with libSBML 5.21 (L2v4); 0 errors maintained in CI.
 6. **Network analysis** — bipartite projection in NetworkX; degree, betweenness, eigenvector, and PageRank centralities; greedy-modularity communities; hypergeometric (community, module) enrichment.
-7. **Multi-tissue single-cell overlay** — scanpy 1.12 pipeline on 4 datasets, pseudobulk DEG with mixed-effects negative-binomial GLM and BH-FDR (revision v1.1; v1.0 baseline used Wilcoxon).
+7. **Multi-tissue single-cell overlay** — scanpy 1.12 pipeline on 4 datasets, pseudobulk DEG with mixed-effects negative-binomial GLM and BH-FDR (adopted in the May 2026 consolidation, tag `v1.1`; the `v1.0-pre-review` baseline used Wilcoxon).
 8. **Drug-target prioritisation** via DGIdb v4 against the top 20 hubs.
 
 ## Reuse strategy
@@ -154,7 +154,7 @@ ssc-mim/
 │   ├── network/                       # centrality, communities, hub_overlap, dangling_species, community_enrichment
 │   ├── overlay/                       # cluster_deg_multi*.tsv, patient_module_scores*.tsv, druggable_hubs.tsv
 │   ├── clinical/                      # donor_metadata, CLINICAL_METADATA_GAP.md, correlations (gap-banner v1.1)
-│   ├── baseline_v1.0/                 # frozen pre-revision snapshot
+│   ├── baseline_v1.0/                 # frozen pre-audit snapshot
 │   └── boolean/                       # placeholder for v2.0 CaSQ work
 ├── review/                           # offline reviewer swipe-deck app (index.html)
 ├── minerva/
@@ -184,7 +184,7 @@ ssc-mim/
 ```bash
 git clone https://github.com/Nurtal/IDT_SSc_map.git
 cd IDT_SSc_map
-git checkout v1.0-pre-review   # or v1.1 once the revision tag lands
+git checkout v1.0-pre-review   # or v1.1 (post-audit consolidation)
 
 # environment
 mamba env create -f environment.yml
@@ -216,12 +216,12 @@ See `Makefile` (`make help` for the full target list) and the Methods §2.9 tabl
 | Annotation | MI2CAST | — | `species_annotations.tsv`, `reaction_evidence.tsv` |
 | Network analysis | NetworkX | 3.6.1 | centrality + communities |
 | scRNA-seq pipeline | scanpy + anndata | 1.12.1 / 0.12.16 | per-cluster pseudobulks |
-| Pseudobulk DEG (revision) | statsmodels NB GLM + BH-FDR | 0.14.6 | `cluster_deg_multi_v11.tsv` |
-| Module scoring (revision) | AUCell (sign-blinded) + Tabib Z-score | — | `patient_module_scores_aucell.tsv` |
+| Pseudobulk DEG (v1.1) | statsmodels NB GLM + BH-FDR | 0.14.6 | `cluster_deg_multi_v11.tsv` |
+| Module scoring (v1.1) | AUCell (sign-blinded) + Tabib Z-score | — | `patient_module_scores_aucell.tsv` |
 | Tabular I/O | pandas | 2.3.3 | TSVs in `analysis/` and `manuscript/supplementary/` |
 | Figures | matplotlib | 3.10.9 | F1/F2/F3 + supplementary |
 | Drug-target prioritisation | DGIdb v4 | (offline JSON) | `druggable_hubs.tsv` |
-| Boolean modelling (v2.0 stretch) | CaSQ → SBML-qual → MaBoSS | — | descoped from revision; planned for follow-up paper |
+| Boolean modelling (v2.0 stretch) | CaSQ → SBML-qual → MaBoSS | — | descoped from the v1.1 consolidation; planned for follow-up paper |
 | Hosting (post-publication) | MINERVA Platform | LCSB | overlays in `minerva/overlays/` |
 
 ## How to contribute
@@ -234,12 +234,12 @@ This repository follows the Disease Maps Project conventions.
 
 ## RO-Crate
 
-The repository ships an [RO-Crate 1.1](https://w3id.org/ro/crate/1.1) provenance manifest at the root (`ro-crate-metadata.json`) describing every curated artefact, derived analysis output, figure, and pipeline script — plus the four source GEO datasets and the corresponding author. This is the structured-metadata answer to R3-M6 and is intended to be the canonical entry point for FAIR-aware tooling (e.g. ELIXIR data catalogues, WorkflowHub).
+The repository ships an [RO-Crate 1.1](https://w3id.org/ro/crate/1.1) provenance manifest at the root (`ro-crate-metadata.json`) describing every curated artefact, derived analysis output, figure, and pipeline script — plus the four source GEO datasets and the corresponding author. It is intended to be the canonical entry point for FAIR-aware tooling (e.g. ELIXIR data catalogues, WorkflowHub).
 
 ## Releases and DOIs
 
-- **v1.0-pre-review** (2026-05-20) — frozen baseline for the simulated peer-review run; numbers reproduced in `analysis/baseline_v1.0/`.
-- **v1.1** (2026-05-22) — npj-SBA revision, **merged into `main`** (NB-GLM pseudobulk DEG, AUCell scoring, drug recalibration, Docker, RO-Crate); see `CHANGELOG.md`.
+- **v1.0-pre-review** (2026-05-20) — frozen baseline taken before the simulated pre-submission review (internal exercise; nothing was submitted); numbers reproduced in `analysis/baseline_v1.0/`.
+- **v1.1** (2026-05-22) — post-audit consolidation, on `main` (NB-GLM pseudobulk DEG, AUCell scoring, drug recalibration, Docker, RO-Crate); see `CHANGELOG.md`.
 - **v1.0 release** (planned) — GitHub + Zenodo DOI on `git tag v1.0` (webhook to be enabled).
 
 Citation metadata: `CITATION.cff` and `.zenodo.json` (co-author slot pending — `REPLACE_ME` placeholders to be filled before the v1.0 tag).

@@ -1,5 +1,9 @@
 # Co-author kickoff — npj-SBA revision
 
+> Dated record. "Revision", "reviewer", "editor" and "E-item" below refer to the **simulated
+> pre-submission review** of 2026-05-20 — an internal exercise. The manuscript has never been
+> submitted to any journal. No record shows that this meeting took place.
+
 **Date proposed**: week of 2026-05-25 (Sprint S0, before S1 starts
 on 2026-05-28).
 **Duration**: 60 min.
@@ -10,7 +14,7 @@ on 2026-05-28).
 
 ## Why this meeting
 
-The npj-SBA peer-review run returned a **Major Revision** with
+The simulated pre-submission review concluded that the draft needed substantial rework, with
 non-trivial methodological work (statistical re-analysis +
 clinical validation + FAIR deposition). Before committing nine
 weeks of curator effort to the revision plan, we need explicit
@@ -26,7 +30,7 @@ and (iii) the dates that need their bandwidth.
 - Where we are: v1.0 submission package frozen at git tag
   `v1.0-pre-review` (commit `e638a4d`, 2026-05-20). Three
   simulated reviewers (R1 systems biology / R2 scRNA-seq+clinical
-  / R3 reproducibility) all converge on **Major Revision**.
+  / R3 reproducibility) all converge on the same verdict: substantial rework.
 - Editor synthesis: 5 themes, 25 essential revision items
   (E1–E25), 18-week window. See
   `presubmission_review/editor_decision.md`.
