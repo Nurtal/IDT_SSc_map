@@ -1,5 +1,7 @@
 # Reviewer 1 — Systems Biology / Disease Maps
 
+> ⚠️ **Internally generated pre-submission critique — not a journal review. The manuscript has never been submitted to any journal.**
+
 **Manuscript**: SSc-MIM: A Curated, SBGN-Compliant Molecular Interaction
 Map of Skin Fibrosis in Diffuse Cutaneous Systemic Sclerosis
 **Author**: N. Foulquier

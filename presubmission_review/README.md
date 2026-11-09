@@ -1,5 +1,7 @@
 # Reviewing — npj Systems Biology and Applications submission
 
+> ⚠️ **Internally generated pre-submission critique — not a journal review. The manuscript has never been submitted to any journal.**
+
 > Simulated peer-review run for the manuscript draft
 > `manuscript/SSc_MIM_manuscript_draft.md` (v0.1, 2026-05-19).
 > Generated 2026-05-20, prior to first journal submission.

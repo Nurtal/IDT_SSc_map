@@ -1,5 +1,7 @@
 # Revision plan — author-side action checklist
 
+> ⚠️ **Internally generated pre-submission critique — not a journal review. The manuscript has never been submitted to any journal.**
+
 > Companion to `editor_decision.md`. Maps each essential revision
 > item (E1–E25) to a concrete change in code / curation / text, the
 > approximate effort, the touched files, and a status flag.

@@ -54,8 +54,7 @@ SCANNED_SUFFIXES = {".md", ".txt", ".rst", ".tex", ".html", ".cff"}
 SCANNED_NAMES = {".zenodo.json", "ro-crate-metadata.json"}
 
 JOURNAL = "journal.md"
-# Ticket #6 (L1-T2) renames this folder: update the constant in the same commit.
-PRESUBMISSION_REVIEW_DIR = "revision/"
+PRESUBMISSION_REVIEW_DIR = "presubmission_review/"
 BANNER_LINES = 5
 BANNER_MARKS = ("internally generated", "not a journal review", "never been submitted")
 
@@ -97,18 +96,9 @@ FORBIDDEN: dict[str, re.Pattern[str]] = {
 # RULE: the allowlist MUST be empty before submission. Ticket #16 (L1-T5) is
 # not done until it is; entries outside any ticket's named files fall to it.
 ALLOWLIST: dict[str, tuple[int, str]] = {
-    # The simulated pre-submission review: bannering a file exempts it.
-    "revision/PROGRESS.md": (9, "#6 (L1-T2)"),
-    "revision/R1_systems_biology.md": (1, "#6 (L1-T2)"),
-    "revision/R2_scRNAseq_clinical.md": (1, "#6 (L1-T2)"),
-    "revision/R3_reproducibility.md": (1, "#6 (L1-T2)"),
-    "revision/README.md": (2, "#6 (L1-T2)"),
-    "revision/REVISION_ROADMAP.md": (7, "#6 (L1-T2)"),
-    "revision/editor_decision.md": (4, "#6 (L1-T2)"),
-    "revision/revision_plan.md": (2, "#6 (L1-T2)"),
     # The project documents a newcomer reads.
     "CHANGELOG.md": (3, "#7 (L1-T3)"),
-    "README.md": (4, "#7 (L1-T3)"),
+    "README.md": (3, "#7 (L1-T3)"),
     "ROADMAP.md": (2, "#7 (L1-T3)"),
     "STATUS.md": (3, "#7 (L1-T3)"),
     # Dated records carrying the same vocabulary.

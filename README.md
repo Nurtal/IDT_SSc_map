@@ -130,7 +130,7 @@ ssc-mim/
 ├── README.md                          # this file
 ├── STATUS.md                          # one-screen project status (updated per batch)
 ├── ROADMAP.md                         # forward-looking phases (Phase 5+ / v1.0 release)
-├── revision/                         # simulated peer-review + revision-v1.1 sprint plan
+├── presubmission_review/             # internally generated pre-submission critique (not a journal review)
 │   ├── editor_decision.md
 │   ├── R{1,2,3}_*.md
 │   ├── REVISION_ROADMAP.md

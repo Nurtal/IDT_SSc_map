@@ -1,5 +1,7 @@
 # Editor decision — npj Systems Biology and Applications
 
+> ⚠️ **Internally generated pre-submission critique — not a journal review. The manuscript has never been submitted to any journal.**
+
 **Manuscript ID** (placeholder): NPJSBA-2026-MS-XXXX
 **Title**: SSc-MIM: A Curated, SBGN-Compliant Molecular Interaction
 Map of Skin Fibrosis in Diffuse Cutaneous Systemic Sclerosis
