@@ -248,7 +248,13 @@ check-manifest:  ## Guard: every GSE/GPL accession used by a script is in data/M
 check-claims:  ## Guard: no document claims anything untrue about how the work was reviewed.
 	$(PYTHON) scripts/check_claims.py
 
-lint: specs-check bib-check check-manifest check-claims  ## Run all repo-content linters (no SBML files needed).
+genesets:  ## L2-01: freeze the five module gene sets (analysis/validation/module_genesets.*).
+	$(PYTHON) scripts/build_module_genesets.py
+
+genesets-check:  ## Guard: the frozen module gene sets still match the map (amend the pre-spec to change them).
+	$(PYTHON) scripts/build_module_genesets.py --check
+
+lint: specs-check bib-check check-manifest check-claims genesets-check  ## Run all repo-content linters (no SBML files needed).
 
 auto:  lint validate harmonise seed integrate pmids crosstalk ssc-stubs wire network sink-check druggable overlay boolean preflight figures abstract  ## Run the entire AUTO lane end-to-end.
 	@echo ">> Full AUTO pipeline complete."

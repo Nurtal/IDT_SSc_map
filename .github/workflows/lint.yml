@@ -102,3 +102,15 @@ jobs:
           python-version: "3.11"
       - name: Guard review-status claims (nothing untrue about how the work was reviewed)
         run: python scripts/check_claims.py
+
+  genesets-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Guard frozen module gene sets (L2 baseline; change only via a pre-spec amendment)
+        run: python scripts/build_module_genesets.py --check

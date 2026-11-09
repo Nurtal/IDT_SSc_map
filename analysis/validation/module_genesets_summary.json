@@ -1,0 +1,140 @@
+{
+  "definition": "union of (a) species_annotations `module` labels and (b) symbols of species in reactions whose ssc_curated_reactions `module` column names the module; reaction IDs are never read for membership",
+  "detectable_definition": "symbol measured as a gene in the frozen single-cell pseudobulk (analysis/overlay/pseudobulk_multi.tsv, run of 2026-06-26)",
+  "min_detectable_symbols": 10,
+  "floor_rule": "a module with fewer detectable symbols than the floor is not testable and is excluded from the multiple-testing family (pre-spec §2)",
+  "modules": [
+    "M1",
+    "M2",
+    "M3",
+    "M4",
+    "M5"
+  ],
+  "per_module": {
+    "M1": {
+      "n_symbols": 52,
+      "n_detectable": 52,
+      "n_from_annotation": 38,
+      "n_from_curated_layer": 18,
+      "n_from_both": 4,
+      "not_detectable": [],
+      "testable": true
+    },
+    "M2": {
+      "n_symbols": 85,
+      "n_detectable": 84,
+      "n_from_annotation": 62,
+      "n_from_curated_layer": 61,
+      "n_from_both": 38,
+      "not_detectable": [
+        "CCN2"
+      ],
+      "testable": true
+    },
+    "M3": {
+      "n_symbols": 57,
+      "n_detectable": 56,
+      "n_from_annotation": 28,
+      "n_from_curated_layer": 35,
+      "n_from_both": 6,
+      "not_detectable": [
+        "NEXT1"
+      ],
+      "testable": true
+    },
+    "M4": {
+      "n_symbols": 32,
+      "n_detectable": 32,
+      "n_from_annotation": 25,
+      "n_from_curated_layer": 16,
+      "n_from_both": 9,
+      "not_detectable": [],
+      "testable": true
+    },
+    "M5": {
+      "n_symbols": 20,
+      "n_detectable": 20,
+      "n_from_annotation": 19,
+      "n_from_curated_layer": 20,
+      "n_from_both": 19,
+      "not_detectable": [],
+      "testable": true
+    }
+  },
+  "not_testable": [],
+  "n_distinct_symbols": 236,
+  "n_distinct_detectable": 234,
+  "pairwise_overlap": {
+    "M1|M2": 0,
+    "M1|M3": 0,
+    "M1|M4": 0,
+    "M1|M5": 1,
+    "M2|M3": 4,
+    "M2|M4": 5,
+    "M2|M5": 0,
+    "M3|M4": 3,
+    "M3|M5": 0,
+    "M4|M5": 0
+  },
+  "multi_module_symbols": {
+    "COL1A1": [
+      "M2",
+      "M3",
+      "M4"
+    ],
+    "COL3A1": [
+      "M2",
+      "M3",
+      "M4"
+    ],
+    "FLI1": [
+      "M2",
+      "M3"
+    ],
+    "FN1": [
+      "M2",
+      "M4"
+    ],
+    "IL6": [
+      "M2",
+      "M4"
+    ],
+    "PF4": [
+      "M1",
+      "M5"
+    ],
+    "TGFB1": [
+      "M2",
+      "M3",
+      "M4"
+    ]
+  },
+  "crosstalk_symbols": [
+    "CCN2",
+    "CDH2",
+    "COL1A1",
+    "FAP",
+    "FN1",
+    "IFNA1",
+    "IFNB1",
+    "IL13",
+    "IL6",
+    "PF4",
+    "SNAI1",
+    "STAT3",
+    "STAT6",
+    "TGFB1"
+  ],
+  "crosstalk_symbols_in_no_module": [],
+  "inputs": {
+    "curation/annotations/species_annotations.tsv": {
+      "sha256": "eb6cfe317c45c8e2d8829a28f4194da20162c06bc027dece792f78dc4fa1abf2"
+    },
+    "curation/ssc_curated_reactions.tsv": {
+      "sha256": "faf02ea775294e90de624340c1ab3006055851abf364351eeee3ca6d38ca025e"
+    },
+    "analysis/overlay/pseudobulk_multi.tsv": {
+      "sha256": "619d0d5893800a4b3a46a58c462f9ae30f39bef0b2e8613ef70a5e5a9a867860"
+    }
+  }
+}
