@@ -183,7 +183,7 @@ Source deck: <code>docs/presentation.md</code> → <code>make presentation</code
 <div class="cols" markdown="1">
 <div markdown="1">
 
-- Network analysis (centrality + Leiden communities; **1011 edges, 39 communities**) surfaces hubs that match known SSc biology:
+- Network analysis (centrality + greedy-modularity communities; **1011 edges, 39 communities**) surfaces hubs that match known SSc biology:
   **pro-fibrotic state, TGFB1, TGF-β receptor, SMAD3–SMAD4, ISG core**.
 - Hubs are cross-referenced against **DGIdb** for druggability and recalibrated against **SSc clinical-trial reality** (e.g. nintedanib, tocilizumab, JAK inhibitors).
 - The map is exported as a **Boolean network** (CaSQ → SBML-qual) — substrate for a future dynamic-perturbation study.

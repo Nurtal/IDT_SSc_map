@@ -7,18 +7,22 @@ graph (species <-> reaction nodes) and computes:
   - Per-species degree, betweenness, closeness, PageRank, eigenvector.
   - Top-20 "hubs" by combined rank (degree + betweenness, z-score sum).
   - Top-20 robustness check: same ranking under degree, betweenness,
-    PageRank, eigenvector → hub_overlap.tsv with Jaccard + rank corr
-    (addresses reviewer R1-M3, revision item E3).
-  - Community detection via greedy modularity. Hypergeometric per
-    (community, module) BH-corrected over all 38 × 5 tests
-    (addresses reviewer R1-M2, revision item E4).
+    PageRank, eigenvector → hub_overlap.tsv with Jaccard + rank corr.
+  - Community detection via greedy modularity, then hypergeometric
+    (community, module) enrichment, BH-corrected over every community of
+    size >= 3 × the five modules. Module membership is read from the frozen
+    gene sets (analysis/validation/module_genesets.tsv, tag prespec-baseline):
+    a species belongs to every module whose frozen set holds its HGNC symbol;
+    the universe is the gene-bearing species of the map.
+    This is an INTERNAL CONSISTENCY CHECK, not independent evidence: community
+    detection runs on the curated graph, so it partly measures curation density.
 
 Outputs:
   analysis/network/centrality.tsv          # one row per species
   analysis/network/hubs.tsv                # top-20 hubs
-  analysis/network/hub_overlap.tsv         # robustness across metrics (E3)
+  analysis/network/hub_overlap.tsv         # robustness across metrics
   analysis/network/communities.tsv         # detected community + module
-  analysis/network/community_enrichment.tsv  # hypergeometric tests (E4)
+  analysis/network/community_enrichment.tsv  # hypergeometric tests (internal consistency check)
   analysis/network/summary.json            # global graph statistics
   figures/F_supp_hub_robustness.svg/png    # scatter plot (E3 supp)
 
@@ -131,6 +135,72 @@ def zscore(values: list[float]) -> list[float]:
     return [(v - mu) / sigma for v in values]
 
 
+INTERNAL_CHECK = "internal_consistency_check"
+INTERNAL_CHECK_NOTE = (
+    "Internal consistency check, not independent evidence: community detection runs "
+    "on the curated graph, so community-module agreement partly measures curation density."
+)
+FROZEN_MODULES = ("M1", "M2", "M3", "M4", "M5")
+
+
+def load_frozen_membership(genesets_tsv: Path, annotations_tsv: Path,
+                           species_ids: list[str]) -> dict[str, set[str]]:
+    """{species_id: frozen modules} for every gene-bearing species in the graph."""
+    import csv
+    sym_modules: dict[str, set[str]] = {}
+    with genesets_tsv.open() as fh:
+        for r in csv.DictReader(fh, delimiter="\t"):
+            sym_modules.setdefault(r["hgnc_symbol"], set()).add(r["module"])
+    with annotations_tsv.open() as fh:
+        sp_sym = {r["species_id"]: (r.get("hgnc_symbol") or "").strip()
+                  for r in csv.DictReader(fh, delimiter="\t")}
+    return {s: sym_modules.get(sp_sym[s], set())
+            for s in species_ids if sp_sym.get(s)}
+
+
+def community_module_enrichment(communities: list[set[str]],
+                                membership: dict[str, set[str]],
+                                modules=FROZEN_MODULES, min_size: int = 3) -> list[dict]:
+    """Hypergeometric enrichment of each module in each community, BH over the family.
+
+    Universe = species in `membership` (gene-bearing). Every (community >= min_size,
+    module) pair is tested and kept, including zero intersections, so the family
+    the correction runs over is the one declared.
+    """
+    from scipy.stats import hypergeom
+    universe = set(membership)
+    N = len(universe)
+    K = {m: sum(1 for s in universe if m in membership[s]) for m in modules}
+    tests = []
+    for ci, c in enumerate(communities):
+        cu = c & universe
+        n_c = len(cu)
+        if n_c < min_size:
+            continue
+        for m in modules:
+            x = sum(1 for s in cu if m in membership[s])
+            expected = K[m] * n_c / N if N else 0.0
+            tests.append({
+                "community": ci, "module": m, "n_community": n_c, "n_module": K[m],
+                "n_intersection": x, "expected": round(expected, 2),
+                "fold_enrichment": round(x / expected, 2) if expected > 0 else float("inf"),
+                "pvalue": float(hypergeom.sf(x - 1, N, K[m], n_c)) if x > 0 else 1.0,
+            })
+    if tests:
+        pvs = sorted(range(len(tests)), key=lambda i: tests[i]["pvalue"])
+        m_tests = len(tests)
+        running = 1.0
+        padj = [0.0] * m_tests
+        for rank in range(m_tests - 1, -1, -1):
+            i = pvs[rank]
+            running = min(running, tests[i]["pvalue"] * m_tests / (rank + 1))
+            padj[i] = min(running, 1.0)
+        for t, q in zip(tests, padj):
+            t["padj"] = q
+            t["significant"] = q < 0.05
+    return tests
+
+
 def main(argv: list[str]) -> int:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument(
@@ -143,6 +213,10 @@ def main(argv: list[str]) -> int:
         type=Path,
         default=Path("analysis/network"),
     )
+    ap.add_argument("--genesets", type=Path,
+                    default=Path("analysis/validation/module_genesets.tsv"))
+    ap.add_argument("--annotations", type=Path,
+                    default=Path("curation/annotations/species_annotations.tsv"))
     args = ap.parse_args(argv[1:])
 
     args.out_dir.mkdir(parents=True, exist_ok=True)
@@ -248,7 +322,9 @@ def main(argv: list[str]) -> int:
     top_by: dict[str, list[str]] = {}
     rank_by: dict[str, dict[str, int]] = {}
     for name, scores in metrics.items():
-        ordered = sorted(eligible, key=lambda s: scores[s], reverse=True)
+        # Round before ranking: the eigenvector solver starts from a random vector, so
+        # near-tied scores differ run to run at ~1e-12; ties then break on species id.
+        ordered = sorted(eligible, key=lambda s: (-round(scores[s], 9), s))
         top_by[name] = ordered[:20]
         rank_by[name] = {s: i + 1 for i, s in enumerate(ordered)}
 
@@ -312,77 +388,34 @@ def main(argv: list[str]) -> int:
         for s in c:
             comm_of[s] = ci
 
+    frozen = load_frozen_membership(args.genesets, args.annotations, species_ids)
+
     comm_path = args.out_dir / "communities.tsv"
     with comm_path.open("w", encoding="utf-8") as fh:
-        fh.write("species\tdetected_community\tmanual_module\n")
+        fh.write("species\tdetected_community\tmanual_module\tfrozen_modules\trole\n")
         for s in species_ids:
-            fh.write(f"{s}\t{comm_of.get(s, -1)}\t{modules.get(s, '?')}\n")
+            fm = ",".join(sorted(frozen.get(s, ())))
+            fh.write(f"{s}\t{comm_of.get(s, -1)}\t{modules.get(s, '?')}\t{fm}\t{INTERNAL_CHECK}\n")
     print(f"  wrote {comm_path}")
 
-    # ---- Community–module hypergeometric enrichment (E4) ------------------
-    # For each (community c, module m): N=total species, K=species in
-    # module m, n=community size, x=intersection. Hypergeometric SF on x-1.
-    # BH-FDR across all (community × module) tests.
-    print("computing community–module enrichment …")
-    from scipy.stats import hypergeom
-    N = len(species_ids)
-    n_in_module: dict[str, int] = {}
-    for s in species_ids:
-        m = modules.get(s, "?")
-        n_in_module[m] = n_in_module.get(m, 0) + 1
-    # Use single-label modules (drop joined "M1,M2" labels for cleanliness)
-    test_modules = [m for m in sorted(n_in_module) if m and "," not in m and m != "?"]
-
-    enrichment_tests = []
-    for ci, c in enumerate(communities):
-        n_c = len(c)
-        if n_c < 3:
-            continue
-        for m in test_modules:
-            K = n_in_module[m]
-            x = sum(1 for s in c if modules.get(s) == m)
-            if x == 0:
-                continue
-            pv = float(hypergeom.sf(x - 1, N, K, n_c))
-            expected = (K * n_c) / N
-            enrichment_tests.append({
-                "community": ci, "module": m, "n_community": n_c,
-                "n_module": K, "n_intersection": x,
-                "expected": round(expected, 2),
-                "fold_enrichment": round(x / expected, 2) if expected > 0 else float("inf"),
-                "pvalue": pv,
-            })
-
-    # BH-FDR
-    if enrichment_tests:
-        import numpy as _np
-        pvs = _np.array([t["pvalue"] for t in enrichment_tests])
-        m_tests = len(pvs)
-        order = _np.argsort(pvs)
-        ranked = pvs[order]
-        bh = ranked * m_tests / (_np.arange(m_tests) + 1)
-        bh = _np.minimum.accumulate(bh[::-1])[::-1]
-        bh = _np.clip(bh, 0, 1)
-        padj = _np.empty_like(bh)
-        padj[order] = bh
-        for t, q in zip(enrichment_tests, padj):
-            t["padj"] = float(q)
-            t["significant"] = bool(q < 0.05)
+    # ---- Community–module enrichment (internal consistency check) ---------
+    print("computing community–module enrichment on the frozen gene sets …")
+    enrichment_tests = community_module_enrichment(communities, frozen)
 
     enrich_path = args.out_dir / "community_enrichment.tsv"
     cols = ["community","module","n_community","n_module","n_intersection",
-            "expected","fold_enrichment","pvalue","padj","significant"]
+            "expected","fold_enrichment","pvalue","padj","significant","role"]
     with enrich_path.open("w", encoding="utf-8") as fh:
         fh.write("\t".join(cols) + "\n")
-        for t in sorted(enrichment_tests, key=lambda r: r["pvalue"]):
+        for t in sorted(enrichment_tests, key=lambda r: (r["pvalue"], r["community"], r["module"])):
             fh.write("\t".join([
                 str(t["community"]), t["module"],
                 str(t["n_community"]), str(t["n_module"]), str(t["n_intersection"]),
                 str(t["expected"]), str(t["fold_enrichment"]),
                 f"{t['pvalue']:.4g}", f"{t['padj']:.4g}",
-                "true" if t["significant"] else "false",
+                "true" if t["significant"] else "false", INTERNAL_CHECK,
             ]) + "\n")
-    print(f"  wrote {enrich_path}")
+    print(f"  wrote {enrich_path}  ({INTERNAL_CHECK_NOTE})")
 
     sig_tests = [t for t in enrichment_tests if t.get("significant")]
     sig_communities = sorted({t["community"] for t in sig_tests})
@@ -416,6 +449,15 @@ def main(argv: list[str]) -> int:
             f"comm{ci}__{mod}": n for (ci, mod), n in sorted(contingency.items())
         },
         "community_enrichment": {
+            "role": INTERNAL_CHECK,
+            "note": INTERNAL_CHECK_NOTE,
+            "membership": "frozen gene sets (analysis/validation/module_genesets.tsv, tag prespec-baseline)",
+            "universe_gene_bearing_species": len(frozen),
+            "modules_tested": list(FROZEN_MODULES),
+            "per_module_significant_communities": {
+                m: sorted(t["community"] for t in enrichment_tests
+                          if t["module"] == m and t["significant"]) for m in FROZEN_MODULES
+            },
             "n_tests": len(enrichment_tests),
             "n_significant_at_q05": len(sig_tests),
             "n_communities_significant": len(sig_communities),

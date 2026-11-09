@@ -27,7 +27,7 @@
 | Cells processed | **266 884** | Tabib skin / Gur skin multiome / GSE210395 PBMC / GSE128169 lung |
 | MINERVA overlays | **62** | per-(dataset, cluster) overlay TSVs from the multi-dataset run |
 | MIM coverage by transcriptomics | **53.0 % (robust) / 82.6 % (permissive)** | Effect-size-gated (≥2-fold, padj ≤ 0.01) = **53.0 % (125/236)**; the permissive NB-GLM figure (195/236) is the upper bound (\|log2FC\| ≥ 0.2). The robust→permissive spread is a stringency/power effect, not biology — full grid in [`analysis/overlay/coverage_sensitivity.tsv`](analysis/overlay/coverage_sensitivity.tsv). Per module: M1 82 % · M2 87 % · M3 79 % · M4 72 % · M5 100 %. |
-| Network communities | **39** | greedy modularity; significant (community, module) hypergeometric enrichment at q < 0.05 |
+| Network communities | **39** | greedy modularity; 14 significant (community, module) enrichments at q < 0.05, all five modules represented — internal consistency check, not independent evidence |
 | Druggable hub–drug interactions | **82** | DGIdb on top hubs; 28 distinct molecular targets |
 | Interactions offered for adjudication (reviewer app) | **143** | reviewer app `review/index.html`; AI verdicts 128 validate / 5 caution |
 
