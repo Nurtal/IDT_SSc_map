@@ -18,9 +18,10 @@ from __future__ import annotations
 import csv, gzip, json, sys
 from pathlib import Path
 import numpy as np
-from scipy.stats import mannwhitneyu
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
+import validation_core as vc  # noqa: E402
 MAT = ROOT / "data/raw/gse45536/GSE45536_series_matrix.txt.gz"
 SOFT = ROOT / "data/raw/gse45536/GPL570_table.txt"   # plain platform table from acc.cgi
 ANN = ROOT / "curation/annotations/species_annotations.tsv"
@@ -38,9 +39,10 @@ SUBSIGS = {
 
 def module_genes(mod: str) -> set[str]:
     out = set()
-    for r in csv.DictReader(ANN.open(), delimiter="\t"):
-        if mod in (r["module"] or "").split(",") and r["hgnc_symbol"].strip():
-            out.add(r["hgnc_symbol"].strip())
+    with ANN.open() as fh:
+        for r in csv.DictReader(fh, delimiter="\t"):
+            if mod in (r["module"] or "").split(",") and r["hgnc_symbol"].strip():
+                out.add(r["hgnc_symbol"].strip())
     return out
 
 
@@ -95,37 +97,27 @@ def load_matrix():
     return samples, phen, rows
 
 
-def sig_score(rows, p2s, samples):
-    """mean of per-probe z-scores across the signature, per sample."""
+def score_signature(rows, samples, grp, genes: set[str]) -> dict | None:
+    """Score one signature on the cohort through the validation core.
+
+    Cohort parsing (probes, phenotypes) stays here; scoring and the contrast
+    are the core's (`validation_core.zscore_score`, `validation_core.contrast`).
+    """
+    p2s = probe_to_symbol(genes)
     mat = np.array([v for pid, v in rows if pid in p2s], dtype=float)  # probes x samples
     if mat.size == 0:
         return None
-    # z-score each probe across samples, then average probes per sample
-    mu = np.nanmean(mat, axis=1, keepdims=True)
-    sd = np.nanstd(mat, axis=1, keepdims=True)
-    sd[sd == 0] = 1
-    z = (mat - mu) / sd
-    return np.nanmean(z, axis=0), mat.shape[0]
-
-
-def score_signature(rows, samples, grp, genes: set[str]) -> dict | None:
-    """Score one signature on the cohort; return summary stats or None."""
-    p2s = probe_to_symbol(genes)
-    sc = sig_score(rows, p2s, samples)
-    if sc is None:
-        return None
-    score, nprobe = sc
-    s = score[grp == "SSc"]; h = score[grp == "HC"]
-    s = s[~np.isnan(s)]; h = h[~np.isnan(h)]
-    p = float(mannwhitneyu(s, h, alternative="two-sided").pvalue)
+    score = vc.zscore_score(mat, np.ones(mat.shape[0], dtype=bool))
+    c = vc.contrast(score[grp == "SSc"], score[grp == "HC"])
     return {
         "genes_mapped": sorted(set(p2s.values())),
         "n_genes": len(genes),
         "n_genes_mapped": len(set(p2s.values())),
-        "n_probes": int(nprobe),
-        "n_ssc": int(len(s)), "n_hc": int(len(h)),
-        "ssc_mean_z": float(np.mean(s)), "hc_mean_z": float(np.mean(h)),
-        "delta": float(np.mean(s) - np.mean(h)), "p": p,
+        "n_probes": int(mat.shape[0]),
+        "n_ssc": c.n_case, "n_hc": c.n_control,
+        "ssc_mean_z": c.mean_case, "hc_mean_z": c.mean_control,
+        "delta": c.delta, "p": c.p,
+        "rank_biserial": c.effect_size,
     }
 
 
