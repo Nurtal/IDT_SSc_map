@@ -29,7 +29,7 @@
 | MIM coverage by transcriptomics | **53.0 % (robust) / 82.6 % (permissive)** | Effect-size-gated (≥2-fold, padj ≤ 0.01) = **53.0 % (125/236)**; the permissive NB-GLM figure (195/236) is the upper bound (\|log2FC\| ≥ 0.2). The robust→permissive spread is a stringency/power effect, not biology — full grid in [`analysis/overlay/coverage_sensitivity.tsv`](analysis/overlay/coverage_sensitivity.tsv). Per module: M1 82 % · M2 87 % · M3 79 % · M4 72 % · M5 100 %. |
 | Network communities | **39** | greedy modularity; significant (community, module) hypergeometric enrichment at q < 0.05 |
 | Druggable hub–drug interactions | **82** | DGIdb on top hubs; 28 distinct molecular targets |
-| Interactions queued for expert review | **143** | reviewer app `review/index.html`; AI verdicts 128 validate / 5 caution |
+| Interactions offered for adjudication (reviewer app) | **143** | reviewer app `review/index.html`; AI verdicts 128 validate / 5 caution |
 
 ---
 
@@ -86,9 +86,9 @@ The old M4 ("IL-6/Th2/B") was split (2026-06-25) into **M4 (cytokine)** and **M5
 
 The map follows the Disease Maps Project guidelines (Mazein et al., 2018; Ostaszewski et al., 2021; Mazein et al., 2023):
 
-1. **Scoping** with domain experts (SSc clinicians).
+1. **Scoping** — five modules defined from the SSc literature (an expert-defined reading frame, Disease Maps convention).
 2. **Reactome import** of TGF-β, IFN-α/β, IL-6, Notch1, PDGF pathways → CellDesigner harmonisation.
-3. **SSc-specific curation** — 133 hand-curated reactions across the 5 modules (incl. 8 inter-module crosstalk). New edges are added only through a gated edge-discovery pipeline (G0–G4 anti-nonsense gates + human ratification; see [`docs/curation/edge_discovery_protocol.md`](docs/curation/edge_discovery_protocol.md)).
+3. **SSc-specific curation** — 133 hand-curated reactions across the 5 modules (incl. 8 inter-module crosstalk). New edges are added only through a gated edge-discovery pipeline (G0–G4 anti-nonsense gates + acceptance by the curator; see [`docs/curation/edge_discovery_protocol.md`](docs/curation/edge_discovery_protocol.md)).
 4. **Annotation** using the MI2CAST minimum information standard (HGNC, UniProt, PubMed/PMID, ECO evidence codes).
 5. **SBML validation** with libSBML 5.21 (L2v4); 0 errors maintained in CI.
 6. **Network analysis** — bipartite projection in NetworkX; degree, betweenness, eigenvector, and PageRank centralities; greedy-modularity communities; hypergeometric (community, module) enrichment.

@@ -23,7 +23,7 @@ Source deck: <code>docs/presentation.md</code> → <code>make presentation</code
 | Hand-curated SSc-specific reactions | **133** (126 with a primary PMID) |
 | Patient single-cell datasets overlaid | **4** — 197 donors (121 SSc / 76 HC) |
 | Map species measurable in patient data | **82.6 %** |
-| Interactions queued for expert review | **143** |
+| Interactions offered for adjudication (reviewer app) | **143** |
 
 ---
 

@@ -2,7 +2,7 @@
 
 > **Purpose.** A single, exhaustive reference describing *how the SSc Molecular Interaction Map
 > (SSc-MIM) is built, what data feeds it, how that data is used, and how every interaction is
-> validated.* It is written for expert reviewers and co-authors.
+> evidenced and checked.* It is written for expert reviewers and co-authors.
 >
 > **Scope.** First module-set of a curated, SBGN-compliant disease map for **diffuse cutaneous
 > systemic sclerosis (dcSSc) skin fibrosis**.
@@ -25,7 +25,7 @@
 | PubMed references mined & filled | ~360 (`curation/pubmed_corpus.bib`) |
 | Patient single-cell datasets overlaid | **4** (197 donors: 121 SSc / 76 HC) |
 | Map species measurable in patient data | **82.6 %** |
-| Interactions queued for expert review | **143** |
+| Interactions offered for adjudication (reviewer app) | **143** |
 
 The map is authored in **CellDesigner**, stored as **SBML Level 2 Version 4** with CellDesigner
 annotations (`curation/celldesigner/SSc_MIM_integrated.xml`), annotated to the **MI2CAST** standard,
@@ -260,10 +260,13 @@ database** (`analysis/curation/interaction_database.csv`, **143 interactions**, 
 dossier, and an in-browser module map. Reviewer decisions (accept/reject/note) persist locally and
 export to CSV/JSON. Discarded/excluded edges are included so the reviewer keeps full control.
 
-### 6.9 Human ratification (binding)
-The final gate is **co-author / expert sign-off**: the corresponding author ratifies the biology
-(`decision=promote`, per-row `ratification` tag) and adjudicates the 143 interactions via the app.
-AI proposes and self-gates; the human decides. `make ratification-worksheet` produces a
+### 6.9 Human ratification (designed, not yet exercised)
+The pipeline reserves a final human gate: a named domain expert accepting each reaction. **No
+reaction has been ratified to date**; the 143 interactions are offered for adjudication via the app,
+and decisions returned through it will be recorded as a separate `human_verdict` layer. Promotion
+into the curated layer is decided by the curator (`decision=promote`, per-row `ratification` tag,
+which records provenance — human-original or AI-assisted and checked by the curator).
+AI proposes and self-gates; the curator decides. `make ratification-worksheet` produces a
 tick-and-correct sheet for the proposed SSc citations.
 
 ### 6.10 Module-level validation (M5, B-cell / autoreactivity)

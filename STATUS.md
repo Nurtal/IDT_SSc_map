@@ -106,8 +106,8 @@
 ## Delivery target
 
 **Primary v1.0 delivery: GitHub repo + Zenodo DOI release.** MINERVA deployment is a post-publication
-stretch goal — the map content is the deliverable, hosting is one rendering of it. Co-author is locked
-(médecine interne, ARD-published on SSc).
+stretch goal — the map content is the deliverable, hosting is one rendering of it. No co-author is confirmed;
+the `.zenodo.json` co-author slot stays deliberately empty until one is.
 
 ## What's left
 
@@ -133,8 +133,8 @@ stretch goal — the map content is the deliverable, hosting is one rendering of
     Regenerated **F1** as a five-module pentagon layout (`render_f1_quadrant.py`) and rebuilt the
     F1-embedding decks (general + construction) + combined PDF.
 - 🔴 **Human-only blockers (binding)**:
-  1. **Expert/co-author manual review** of the 143 interactions via the swipe-deck app
-     (presentation to expert biologists scheduled 2026-06-25).
+  1. **Expert adjudication** of the 143 interactions via the swipe-deck app — deck sent 2026-06-29,
+     no decision returned; off the critical path (see the plan, §1).
   2. CellDesigner GUI wiring (visual round-trip; outstanding stubs).
   3. `.zenodo.json` co-author slot (2× REPLACE_ME).
   4. GitHub → Zenodo webhook toggle (one-time) + `git tag v1.0 && git push --tags`.
