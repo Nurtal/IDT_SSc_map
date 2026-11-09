@@ -96,8 +96,6 @@ FORBIDDEN: dict[str, re.Pattern[str]] = {
 # RULE: the allowlist MUST be empty before submission. Ticket #16 (L1-T5) is
 # not done until it is; entries outside any ticket's named files fall to it.
 ALLOWLIST: dict[str, tuple[int, str]] = {
-    # The manuscript.
-    "manuscript/SSc_MIM_manuscript_draft.md": (3, "#8 (L1-T4)"),
 }
 
 
