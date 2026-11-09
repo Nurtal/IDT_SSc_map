@@ -53,7 +53,21 @@ sha256sum --check MIRROR.sha256   # paths in the manifest are relative to data/
 | GSE45536 (Streicher) — expression + phenotypes | `gse45536/GSE45536_series_matrix.txt.gz` | 14 420 384 B (14.4 MB) | `af6624e157a32ba589dfe6bf8f8d5c926ca9bce3db719793dade655c7c00df0c` |
 | GPL570 (Affymetrix) — probe → gene table | `gse45536/GPL570_table.txt` | 79 501 528 B (79.5 MB) | `ebb6df22d8e0b00a5029151329e5ba37f4dbad54a1866c7469b22b2c9dd3394b` |
 
-Total payload: **3.18 GB** — within the 50 GB Zenodo per-record quota.
+### C. Independent bulk skin cohorts and references (feed `make screen-cohorts` → L2 Analysis A)
+
+Screened against the pre-spec §3.2 criteria on 2026-11-09 (`analysis/validation/cohort_screening.json`).
+Fetched by `python3 scripts/screen_cohorts.py --fetch`.
+
+| Accession / source | File | Size | Role | SHA-256 |
+|---|---|---|---|---|
+| GSE130955 (Skaug 2020, PRESS) | `gse130955/GSE130955_series_matrix.txt.gz` | 8 263 B | phenotypes; **frozen cohort** | `9e212d4b499839a8cb93b3c417f9606d66b961fa22b8c266d935ebbf42af26a5` |
+| GSE130955 | `gse130955/GSE130955_RAW.tar` | 32 317 440 B (32.3 MB) | per-sample FPKM (Ensembl) | `960052faf266157fcf31c605f36f1a0a2e86b4953a9784518dceb24da2c469c8` |
+| GSE58095 (Assassi 2015, GENISOS) | `gse58095/GSE58095_series_matrix.txt.gz` | 18 421 721 B (18.4 MB) | expression + phenotypes; **frozen cohort** | `ff12f722c5d23064f7041ec08876fe5cfb5b56fef6ce4f62c3e0a178ff825f24` |
+| GSE95065 | `gse95065/GSE95065_series_matrix.txt.gz` | 2 380 822 B (2.4 MB) | screened, **rejected** (criterion 1: 15 HC) | `b26b86776b500fdb6e2d319571f8e6c9b98ef1115cbc5e0b657efe97b6e9cf24` |
+| GPL10558 (Illumina HT-12 v4) | `gpl10558/GPL10558.annot.gz` | 7 290 886 B (7.3 MB) | probe → gene symbol | `c914fdbe1130906ce3b9c97f5a75280591c89c617c168fb687c641f683e76b45` |
+| HGNC complete set (snapshot 2026-11-09) | `hgnc/hgnc_complete_set.txt` | 16 994 064 B (17.0 MB) | Ensembl → symbol; previous-symbol resolution | `3944cdad7affce5bc2c7d63d7079d7e68762ed28ef414fc287cc0f57c4b0d78f` |
+
+Total payload: **3.18 GB** for sections A–B, plus 77 MB for section C — within the 50 GB Zenodo per-record quota.
 
 ## Provenance of each file
 

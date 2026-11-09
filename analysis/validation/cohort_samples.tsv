@@ -1,0 +1,194 @@
+cohort	gsm	title	arm	reason
+GSE130955	GSM3757031	S001_P	SSc	diagnosis: SSc patient, first biopsy
+GSE130955	GSM3757032	S002_P	excluded	repeat biopsy (number 2) of an already-included subject
+GSE130955	GSM3757033	S003_P	excluded	repeat biopsy (number 3) of an already-included subject
+GSE130955	GSM3757034	S004_N	HC	diagnosis: healthy control
+GSE130955	GSM3757035	S005_P	SSc	diagnosis: SSc patient, first biopsy
+GSE130955	GSM3757036	S006_P	SSc	diagnosis: SSc patient, first biopsy
+GSE130955	GSM3757037	S007_N	HC	diagnosis: healthy control
+GSE130955	GSM3757038	S009_P	SSc	diagnosis: SSc patient, first biopsy
+GSE130955	GSM3757039	S010_N	HC	diagnosis: healthy control
+GSE130955	GSM3757040	S011_P	SSc	diagnosis: SSc patient, first biopsy
+GSE130955	GSM3757041	S012_P	excluded	repeat biopsy (number 2) of an already-included subject
+GSE130955	GSM3757042	S013_N	HC	diagnosis: healthy control
+GSE130955	GSM3757043	S014_P	SSc	diagnosis: SSc patient, first biopsy
+GSE130955	GSM3757044	S015_P	SSc	diagnosis: SSc patient, first biopsy
+GSE130955	GSM3757045	S016_N	HC	diagnosis: healthy control
+GSE130955	GSM3757046	S019_N	HC	diagnosis: healthy control
+GSE130955	GSM3757047	S020_P	SSc	diagnosis: SSc patient, first biopsy
+GSE130955	GSM3757048	S021_P	SSc	diagnosis: SSc patient, first biopsy
+GSE130955	GSM3757049	S022_N	HC	diagnosis: healthy control
+GSE130955	GSM3757050	S023_P	SSc	diagnosis: SSc patient, first biopsy
+GSE130955	GSM3757051	S025_N	HC	diagnosis: healthy control
+GSE130955	GSM3757052	S026_P	SSc	diagnosis: SSc patient, first biopsy
+GSE130955	GSM3757053	S027_P	SSc	diagnosis: SSc patient, first biopsy
+GSE130955	GSM3757054	S028_N	HC	diagnosis: healthy control
+GSE130955	GSM3757055	S029_P	SSc	diagnosis: SSc patient, first biopsy
+GSE130955	GSM3757056	S031_N	HC	diagnosis: healthy control
+GSE130955	GSM3757057	S032_P	SSc	diagnosis: SSc patient, first biopsy
+GSE130955	GSM3757058	S033_P	SSc	diagnosis: SSc patient, first biopsy
+GSE130955	GSM3757059	S034_N	HC	diagnosis: healthy control
+GSE130955	GSM3757060	S035_P	SSc	diagnosis: SSc patient, first biopsy
+GSE130955	GSM3757061	S036_P	SSc	diagnosis: SSc patient, first biopsy
+GSE130955	GSM3757062	S037_N	HC	diagnosis: healthy control
+GSE130955	GSM3757063	S038_P	SSc	diagnosis: SSc patient, first biopsy
+GSE130955	GSM3757064	S039_P	excluded	repeat biopsy (number 2) of an already-included subject
+GSE130955	GSM3757065	S040_N	HC	diagnosis: healthy control
+GSE130955	GSM3757066	S041_P	SSc	diagnosis: SSc patient, first biopsy
+GSE130955	GSM3757067	S044_N	HC	diagnosis: healthy control
+GSE130955	GSM3757068	S047_N	HC	diagnosis: healthy control
+GSE130955	GSM3757069	S049_P	SSc	diagnosis: SSc patient, first biopsy
+GSE130955	GSM3757070	S050_N	HC	diagnosis: healthy control
+GSE130955	GSM3757071	S053_N	HC	diagnosis: healthy control
+GSE130955	GSM3757072	S054_P	SSc	diagnosis: SSc patient, first biopsy
+GSE130955	GSM3757073	S055_P	excluded	repeat biopsy (number 2) of an already-included subject
+GSE130955	GSM3757074	S056_N	HC	diagnosis: healthy control
+GSE130955	GSM3757075	S057_P	SSc	diagnosis: SSc patient, first biopsy
+GSE130955	GSM3757076	S058_P	SSc	diagnosis: SSc patient, first biopsy
+GSE130955	GSM3757077	S059_N	HC	diagnosis: healthy control
+GSE130955	GSM3757078	S060_P	SSc	diagnosis: SSc patient, first biopsy
+GSE130955	GSM3757079	S061_P	excluded	repeat biopsy (number 3) of an already-included subject
+GSE130955	GSM3757080	S062_P	excluded	repeat biopsy (number 2) of an already-included subject
+GSE130955	GSM3757081	S063_N	HC	diagnosis: healthy control
+GSE130955	GSM3757082	S064_P	SSc	diagnosis: SSc patient, first biopsy
+GSE130955	GSM3757083	S065_P	SSc	diagnosis: SSc patient, first biopsy
+GSE130955	GSM3757084	S066_N	HC	diagnosis: healthy control
+GSE130955	GSM3757085	S067_P	SSc	diagnosis: SSc patient, first biopsy
+GSE130955	GSM3757086	S069_N	HC	diagnosis: healthy control
+GSE130955	GSM3757087	S070_P	SSc	diagnosis: SSc patient, first biopsy
+GSE130955	GSM3757088	S071_P	excluded	repeat biopsy (number 2) of an already-included subject
+GSE130955	GSM3757089	S072_N	HC	diagnosis: healthy control
+GSE130955	GSM3757090	S073_P	SSc	diagnosis: SSc patient, first biopsy
+GSE130955	GSM3757091	S074_P	SSc	diagnosis: SSc patient, first biopsy
+GSE130955	GSM3757092	S075_N	HC	diagnosis: healthy control
+GSE130955	GSM3757093	S076_P	SSc	diagnosis: SSc patient, first biopsy
+GSE130955	GSM3757094	S077_P	SSc	diagnosis: SSc patient, first biopsy
+GSE130955	GSM3757095	S078_N	HC	diagnosis: healthy control
+GSE130955	GSM3757096	S079_P	SSc	diagnosis: SSc patient, first biopsy
+GSE130955	GSM3757097	S080_P	SSc	diagnosis: SSc patient, first biopsy
+GSE130955	GSM3757098	S081_P	SSc	diagnosis: SSc patient, first biopsy
+GSE130955	GSM3757099	S082_N	HC	diagnosis: healthy control
+GSE130955	GSM3757100	S083_P	SSc	diagnosis: SSc patient, first biopsy
+GSE130955	GSM3757101	S084_P	SSc	diagnosis: SSc patient, first biopsy
+GSE130955	GSM3757102	S085_N	HC	diagnosis: healthy control
+GSE130955	GSM3757103	S086_P	SSc	diagnosis: SSc patient, first biopsy
+GSE130955	GSM3757104	S087_P	SSc	diagnosis: SSc patient, first biopsy
+GSE130955	GSM3757105	S088_N	HC	diagnosis: healthy control
+GSE130955	GSM3757106	S089_P	SSc	diagnosis: SSc patient, first biopsy
+GSE130955	GSM3757107	S091_N	HC	diagnosis: healthy control
+GSE130955	GSM3757108	S092_P	SSc	diagnosis: SSc patient, first biopsy
+GSE130955	GSM3757109	S093_P	SSc	diagnosis: SSc patient, first biopsy
+GSE130955	GSM3757110	S094_N	HC	diagnosis: healthy control
+GSE130955	GSM3757111	S095_P	SSc	diagnosis: SSc patient, first biopsy
+GSE130955	GSM3757112	S096_P	SSc	diagnosis: SSc patient, first biopsy
+GSE130955	GSM3757113	S097_P	excluded	repeat biopsy (number 2) of an already-included subject
+GSE130955	GSM3757114	S098_N	HC	diagnosis: healthy control
+GSE130955	GSM3757115	S099_P	SSc	diagnosis: SSc patient, first biopsy
+GSE130955	GSM3757116	S100_P	excluded	repeat biopsy (number 2) of an already-included subject
+GSE130955	GSM3757117	S101_P	SSc	diagnosis: SSc patient, first biopsy
+GSE130955	GSM3757118	S102_N	HC	diagnosis: healthy control
+GSE130955	GSM3757119	S103_P	SSc	diagnosis: SSc patient, first biopsy
+GSE130955	GSM3757120	S104_P	SSc	diagnosis: SSc patient, first biopsy
+GSE130955	GSM3757121	S105_N	HC	diagnosis: healthy control
+GSE58095	GSM1145868	PATIENT01	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1145869	PATIENT02	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1145870	PATIENT03	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1145871	PATIENT04	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1145872	PATIENT05	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1145873	PATIENT06	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1145874	PATIENT07	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1145875	PATIENT08	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1145876	PATIENT09	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1145877	PATIENT10	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1145878	PATIENT11	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1145879	PATIENT12	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1145880	PATIENT13	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1145881	PATIENT14	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1145882	PATIENT15	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1145883	PATIENT16	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1145884	PATIENT17	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1145885	PATIENT18	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1145886	PATIENT19	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1145887	PATIENT20	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1145888	PATIENT21	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1145889	PATIENT22	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1145890	PATIENT23	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1145891	PATIENT24	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1145892	PATIENT25	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1145893	PATIENT26	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1145894	PATIENT27	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1145895	PATIENT28	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1145896	PATIENT29	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1145897	PATIENT30	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1145898	PATIENT31	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1145899	PATIENT32	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1145900	PATIENT33	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1145901	PATIENT34	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1145902	PATIENT35	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1145903	PATIENT36	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1145904	PATIENT37	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1145905	PATIENT38	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1145906	PATIENT39	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1145907	PATIENT40	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1145908	PATIENT41	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1145909	PATIENT42	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1145910	PATIENT43	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1145911	PATIENT44	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1145912	PATIENT45	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1145913	PATIENT46	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1145914	PATIENT47	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1145915	PATIENT48	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1145916	PATIENT49	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1145917	PATIENT50	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1145918	PATIENT51	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1145919	PATIENT52	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1145920	PATIENT53	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1145921	PATIENT54	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1145922	PATIENT55	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1145923	PATIENT56	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1145924	PATIENT57	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1145925	PATIENT58	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1145926	PATIENT59	SSc	PATIENT series (SSc baseline)
+GSE58095	GSM1400698	SAMPLE060	HC	group: Control
+GSE58095	GSM1400699	SAMPLE061	excluded	longitudinal re-sample (time point: Late)
+GSE58095	GSM1400700	SAMPLE062	HC	group: Control
+GSE58095	GSM1400701	SAMPLE063	HC	group: Control
+GSE58095	GSM1400702	SAMPLE064	HC	group: Control
+GSE58095	GSM1400703	SAMPLE065	HC	group: Control
+GSE58095	GSM1400704	SAMPLE066	HC	group: Control
+GSE58095	GSM1400705	SAMPLE067	HC	group: Control
+GSE58095	GSM1400706	SAMPLE068	HC	group: Control
+GSE58095	GSM1400707	SAMPLE069	HC	group: Control
+GSE58095	GSM1400708	SAMPLE070	excluded	longitudinal re-sample (time point: Late)
+GSE58095	GSM1400709	SAMPLE071	HC	group: Control
+GSE58095	GSM1400710	SAMPLE072	HC	group: Control
+GSE58095	GSM1400711	SAMPLE073	HC	group: Control
+GSE58095	GSM1400712	SAMPLE074	HC	group: Control
+GSE58095	GSM1400713	SAMPLE075	HC	group: Control
+GSE58095	GSM1400714	SAMPLE076	HC	group: Control
+GSE58095	GSM1400715	SAMPLE077	HC	group: Control
+GSE58095	GSM1400716	SAMPLE078	HC	group: Control
+GSE58095	GSM1400717	SAMPLE079	HC	group: Control
+GSE58095	GSM1400718	SAMPLE080	HC	group: Control
+GSE58095	GSM1400719	SAMPLE081	HC	group: Control
+GSE58095	GSM1400720	SAMPLE082	excluded	longitudinal re-sample (time point: Early)
+GSE58095	GSM1400721	SAMPLE083	HC	group: Control
+GSE58095	GSM1400722	SAMPLE084	excluded	longitudinal re-sample (time point: Late)
+GSE58095	GSM1400723	SAMPLE085	HC	group: Control
+GSE58095	GSM1400724	SAMPLE086	excluded	longitudinal re-sample (time point: Late)
+GSE58095	GSM1400725	SAMPLE087	HC	group: Control
+GSE58095	GSM1400726	SAMPLE088	SSc	group: SSc
+GSE58095	GSM1400727	SAMPLE089	HC	group: Control
+GSE58095	GSM1400728	SAMPLE090	HC	group: Control
+GSE58095	GSM1400729	SAMPLE091	HC	group: Control
+GSE58095	GSM1400730	SAMPLE092	HC	group: Control
+GSE58095	GSM1400731	SAMPLE093	SSc	group: SSc
+GSE58095	GSM1400732	SAMPLE094	HC	group: Control
+GSE58095	GSM1400733	SAMPLE095	HC	group: Control
+GSE58095	GSM1400734	SAMPLE096	HC	group: Control
+GSE58095	GSM1400735	SAMPLE097	HC	group: Control
+GSE58095	GSM1400736	SAMPLE098	HC	group: Control
+GSE58095	GSM1400737	SAMPLE099	HC	group: Control
+GSE58095	GSM1400738	SAMPLE100	HC	group: Control
+GSE58095	GSM1400739	SAMPLE101	HC	group: Control
+GSE58095	GSM1400740	SAMPLE102	HC	group: Control

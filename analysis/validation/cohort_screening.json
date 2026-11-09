@@ -1,0 +1,254 @@
+{
+  "prespec": "docs/planning/external_validation_prespec.md §3.2 (criteria applied in order)",
+  "screened_on": "2026-11-09",
+  "candidates": [
+    {
+      "accession": "GSE130955",
+      "title": "Global skin gene expression profile of early diffuse cutaneous systemic sclerosis shows a prominent innate and adaptive immunity profile",
+      "platform": [
+        "GPL16791"
+      ],
+      "type": [
+        "Expression profiling by high throughput sequencing"
+      ],
+      "pubmed_ids": [
+        "31767698",
+        "32603313"
+      ],
+      "n_samples_total": 91,
+      "tissue_labels": [
+        "skin biopsy"
+      ],
+      "n_ssc": 48,
+      "n_hc": 33,
+      "n_excluded_samples": 10,
+      "criteria": [
+        {
+          "criterion": 1,
+          "passed": true,
+          "detail": "tissue ['skin biopsy']; 48 SSc / 33 HC after one-sample-per-subject (floor 20 per arm)"
+        },
+        {
+          "criterion": 2,
+          "passed": true,
+          "detail": "per-sample condition labels present in the series matrix"
+        },
+        {
+          "criterion": 3,
+          "passed": true,
+          "detail": "not contradicted (residual risk declared): PRESS registry, multicentre; the PMID 31767698 author list includes the University of Pittsburgh (affiliation 19), the centre of Tabib 2021 (GSE138669). Tabib 2021 (PMID 34282151) recruited 12 SSc / 10 HC under the UPMC IRB and does not mention PRESS. No public record links any GSE130955 donor to a single-cell dataset; overlap is neither shown nor excludable. At most the 12 Tabib SSc donors could be shared with the 48 PRESS SSc donors."
+        },
+        {
+          "criterion": 4,
+          "passed": true,
+          "detail": "not found in the curated layer, curation docs or manuscript"
+        }
+      ],
+      "verdict": "verified",
+      "donor_overlap_decision": "retained with the residual risk declared (curator decision 2026-11-09); carried into the Analysis A limitations",
+      "expression": {
+        "platform": "GPL16791",
+        "kind": "RNA-seq FPKM per sample (Ensembl gene IDs) in GSE130955_RAW.tar",
+        "normalisation": "log2(FPKM + 1); raw counts are not deposited, so TMM/vst is not available (singscore is rank-based and unaffected; the z-score sensitivity sees log2 FPKM)"
+      },
+      "n_platform_symbols": 41100
+    },
+    {
+      "accession": "GSE58095",
+      "title": "Dissecting the heterogeneity of skin gene expression patterns in systemic sclerosis.",
+      "platform": [
+        "GPL10558"
+      ],
+      "type": [
+        "Expression profiling by array"
+      ],
+      "pubmed_ids": [
+        "26238292",
+        "34654463"
+      ],
+      "n_samples_total": 102,
+      "tissue_labels": [
+        "skin biopsy"
+      ],
+      "n_ssc": 61,
+      "n_hc": 36,
+      "n_excluded_samples": 5,
+      "criteria": [
+        {
+          "criterion": 1,
+          "passed": true,
+          "detail": "tissue ['skin biopsy']; 61 SSc / 36 HC after one-sample-per-subject (floor 20 per arm)"
+        },
+        {
+          "criterion": 2,
+          "passed": true,
+          "detail": "per-sample condition labels present in the series matrix"
+        },
+        {
+          "criterion": 3,
+          "passed": true,
+          "detail": "no overlap: GENISOS cohort and an open-label imatinib study; contributors from UTHealth Houston, UCLA and the University of Michigan; no Pittsburgh or Israeli site."
+        },
+        {
+          "criterion": 4,
+          "passed": true,
+          "detail": "not found in the curated layer, curation docs or manuscript"
+        }
+      ],
+      "verdict": "verified",
+      "donor_overlap_decision": "passes",
+      "expression": {
+        "platform": "GPL10558",
+        "kind": "Illumina HT-12 v4 series matrix",
+        "normalisation": "as deposited (log2 scale, normalised by the submitters)"
+      },
+      "n_platform_symbols": 20729
+    },
+    {
+      "accession": "GSE95065",
+      "title": "Expression data from skin biopsies in patients with systemic sclerosis",
+      "platform": [
+        "GPL23080"
+      ],
+      "type": [
+        "Expression profiling by array"
+      ],
+      "pubmed_ids": [],
+      "n_samples_total": 33,
+      "tissue_labels": [
+        "skin"
+      ],
+      "n_ssc": 18,
+      "n_hc": 15,
+      "n_excluded_samples": 0,
+      "criteria": [
+        {
+          "criterion": 1,
+          "passed": false,
+          "detail": "tissue ['skin']; 18 SSc / 15 HC after one-sample-per-subject (floor 20 per arm)"
+        }
+      ],
+      "verdict": "rejected (criterion 1)",
+      "donor_overlap_decision": "—"
+    }
+  ],
+  "held_out": {
+    "GSE45536": "M5 positive control (whole blood); not counted as a new cohort (pre-spec §3.2)"
+  },
+  "single_cell_datasets_used": {
+    "GSE138669": "Tabib 2021 skin, 12 SSc / 10 HC; University of Pittsburgh (UPMC) IRB; PRESS not mentioned (PMID 34282151)",
+    "GSE195452": "Gur 2022 skin+blood, 97 SSc / 56 HC; two medical centres in Israel (GEO overall design)",
+    "GSE128169": "Morse 2019 lung explants, SSc-ILD; University of Pittsburgh",
+    "GSE210395": "PBMC, 4 SSc / 4 HC; Hospital for Special Surgery, New York"
+  },
+  "frozen_cohorts": [
+    "GSE130955",
+    "GSE58095"
+  ],
+  "frozen_rule": "the verified list is frozen: a cohort may not be dropped after its result is known",
+  "symbol_resolution": {
+    "rule": "map symbols and platform symbols are both resolved to current approved HGNC symbols (unique previous-symbol successor) before matching; curated overrides first",
+    "overrides": {
+      "TAZ": "WWTR1"
+    },
+    "override_reason": {
+      "TAZ": "the map's TAZ is the YAP co-activator (WWTR1); HGNC previous symbol TAZ is TAFAZZIN, an unrelated gene"
+    },
+    "renamed": {
+      "DDX58": "RIGI",
+      "MB21D1": "CGAS",
+      "TAZ": "WWTR1",
+      "TMEM173": "STING1"
+    }
+  },
+  "platform_coverage": {
+    "GSE130955": {
+      "M1": {
+        "n_symbols": 52,
+        "n_on_platform": 52,
+        "missing": [],
+        "testable": true
+      },
+      "M2": {
+        "n_symbols": 85,
+        "n_on_platform": 85,
+        "missing": [],
+        "testable": true
+      },
+      "M3": {
+        "n_symbols": 57,
+        "n_on_platform": 56,
+        "missing": [
+          "NEXT1"
+        ],
+        "testable": true
+      },
+      "M4": {
+        "n_symbols": 32,
+        "n_on_platform": 32,
+        "missing": [],
+        "testable": true
+      },
+      "M5": {
+        "n_symbols": 20,
+        "n_on_platform": 20,
+        "missing": [],
+        "testable": true
+      }
+    },
+    "GSE58095": {
+      "M1": {
+        "n_symbols": 52,
+        "n_on_platform": 52,
+        "missing": [],
+        "testable": true
+      },
+      "M2": {
+        "n_symbols": 85,
+        "n_on_platform": 85,
+        "missing": [],
+        "testable": true
+      },
+      "M3": {
+        "n_symbols": 57,
+        "n_on_platform": 56,
+        "missing": [
+          "NEXT1"
+        ],
+        "testable": true
+      },
+      "M4": {
+        "n_symbols": 32,
+        "n_on_platform": 31,
+        "missing": [
+          "IL11RA"
+        ],
+        "testable": true
+      },
+      "M5": {
+        "n_symbols": 20,
+        "n_on_platform": 20,
+        "missing": [],
+        "testable": true
+      }
+    }
+  },
+  "family": {
+    "unit": "module x cohort",
+    "min_detectable_symbols": 10,
+    "testable": [
+      "M1|GSE130955",
+      "M2|GSE130955",
+      "M3|GSE130955",
+      "M4|GSE130955",
+      "M5|GSE130955",
+      "M1|GSE58095",
+      "M2|GSE58095",
+      "M3|GSE58095",
+      "M4|GSE58095",
+      "M5|GSE58095"
+    ],
+    "excluded_not_testable": []
+  },
+  "gap": null
+}

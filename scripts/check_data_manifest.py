@@ -45,6 +45,10 @@ ALLOWLIST: dict[str, str] = {
     # not an input to any published number.
     "GPL18573": "Gur sub-platform; auxiliary clinical metadata only (parent GSE195452 mirrored)",
     "GPL24676": "Gur sub-platform; auxiliary clinical metadata only (parent GSE195452 mirrored)",
+    # Platform IDs named as metadata in scripts/screen_cohorts.py; no file of
+    # theirs is read. GSE130955 expression comes from its mirrored RAW.tar.
+    "GPL16791": "Illumina HiSeq 2500 sequencer ID of GSE130955; no platform table needed (RAW.tar mirrored)",
+    "GPL23080": "platform of GSE95065, rejected at screening (criterion 1); its series matrix is mirrored",
 }
 
 
