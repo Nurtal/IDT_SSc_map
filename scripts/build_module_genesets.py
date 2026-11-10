@@ -31,7 +31,7 @@ Outputs (deterministic — no timestamps; input files identified by SHA-256):
 
 Run:
     python3 scripts/build_module_genesets.py          # write the artefacts
-    python3 scripts/build_module_genesets.py --check  # exit 1 if they would change
+    python3 scripts/build_module_genesets.py --check  # exit 1 if module membership would change
 or  make genesets / make genesets-check
 """
 
@@ -217,8 +217,18 @@ def main(argv: list[str] | None = None) -> int:
     tsv, js = render(rows, summary, inputs)
 
     if args.check:
-        stale = [p for p, text in ((OUT_TSV, tsv), (OUT_JSON, js))
-                 if not p.exists() or p.read_text() != text]
+        # Membership is what is frozen. The recorded input hashes are the baseline's
+        # provenance (tag prespec-baseline): an edit to an input that leaves every
+        # module's membership unchanged (a note, a PMID) is not a change to the sets.
+        def _sets_only(text: str) -> dict:
+            d = json.loads(text)
+            d.pop("inputs", None)
+            return d
+        stale = []
+        if not OUT_TSV.exists() or OUT_TSV.read_text() != tsv:
+            stale.append(OUT_TSV)
+        if not OUT_JSON.exists() or _sets_only(OUT_JSON.read_text()) != _sets_only(js):
+            stale.append(OUT_JSON)
         if stale:
             for p in stale:
                 print(f"[FAIL] {p.relative_to(ROOT)} differs from a fresh build — the frozen "
