@@ -125,7 +125,7 @@
     {
       "@id": "#dataset-gse128169",
       "@type": "Dataset",
-      "name": "Morse et al. 2019 — SSc-ILD lung scRNA-seq (GSE128169)",
+      "name": "Valenzi et al. 2019 — SSc-ILD lung scRNA-seq (GSE128169)",
       "identifier": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE128169",
       "citation": "Morse C, et al. Proliferating SPP1/MERTK-expressing macrophages in idiopathic pulmonary fibrosis. Eur Respir J 2019;54:1802441."
     },

@@ -100,7 +100,7 @@ Source deck: <code>docs/presentation.md</code> → <code>make presentation</code
 |---|---|---|---|
 | **GSE195452** | Gur *et al.* **Cell** 2022 (PMID 35381199) | Skin (multiome) | 154 (97 / 57) |
 | **GSE138669** | Tabib *et al.* **Nat Commun** 2021 (PMID 34282151) | Skin | 22 (12 / 10) |
-| **GSE128169** | Morse *et al.* **Eur Respir J** 2019 (PMID 31221805) | Lung (ILD) | 13 (8 / 5) |
+| **GSE128169** | Valenzi *et al.* **Ann Rheum Dis** 2019 (PMID 31405848) | Lung (ILD) | 13 (8 / 5) |
 | **GSE210395** | GEO (no linked publication) | PBMC | 8 (4 / 4) |
 
 - **Total: 197 donors (121 SSc / 76 HC), 266,884 cells.** Raw archives are **SHA-256-pinned** (`data/MIRROR.md`) for a reproducible input envelope.

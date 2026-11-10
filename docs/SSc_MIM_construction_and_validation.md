@@ -294,7 +294,7 @@ When M4 was split, the new **M5** module was validated on patient data (full rep
 |---|---|---|---|---|
 | **GSE195452** | Gur C *et al.* **Cell** 2022;185:1373-1388 (PMID 35381199) | Skin (multiome) | scRNA-seq | 154 (97 / 57) |
 | **GSE138669** | Tabib T *et al.* **Nat Commun** 2021;12:4384 (PMID 34282151) | Skin | 10x scRNA-seq | 22 (12 / 10) |
-| **GSE128169** | Morse C *et al.* **Eur Respir J** 2019;54:1802441 (PMID 31221805) | Lung (ILD) | 10x scRNA-seq | 13 (8 / 5) |
+| **GSE128169** | Valenzi E *et al.* **Ann Rheum Dis** 2019;78:1379-1387 (PMID 31405848) | Lung (ILD) | 10x scRNA-seq | 13 (8 / 5) |
 | **GSE210395** | GEO — no linked publication | PBMC | scRNA-seq | 8 (4 / 4) |
 
 **Total: 197 donors (121 SSc / 76 HC).** Skin cohorts (≈100k and 64k annotated cells) give the

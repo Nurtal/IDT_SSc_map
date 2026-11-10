@@ -266,7 +266,7 @@ SSc systems-level work to acknowledge and extend:
 - Taroni J.N. et al. — multi-cohort consensus of SSc skin transcriptomes.
 - Tabib T. et al. *Myofibroblast transcriptome indicates SFRP2hi fibroblast progenitors in systemic sclerosis.* Nat Commun 2021;12:4384. PMID 34282151.
 - Gur C. et al. *LGR5 expressing skin fibroblasts define a major cellular hub perturbed in systemic sclerosis.* Cell 2022;185:1373-1388. PMID 35381199.
-- Morse C. et al. *Proliferating SPP1/MERTK-expressing macrophages in idiopathic pulmonary fibrosis.* Eur Respir J 2019;54:1802441. PMID 31221805. (GSE128169 lung)
+- Valenzi E. et al. *Single-cell analysis reveals fibroblast heterogeneity and myofibroblasts in systemic sclerosis-associated interstitial lung disease.* Ann Rheum Dis 2019;78(10):1379-1387. PMID 31405848. (GSE128169 lung)
 - Yang M. et al. *Clinical phenotypes of patients with systemic sclerosis with distinct molecular signatures in skin.* Arthritis Care Res (Hoboken) 2023;75:1469-1480. PMID 35997480.
 
 A full BibTeX corpus (398 entries) is maintained in `curation/pubmed_corpus.bib`.
