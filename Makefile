@@ -245,6 +245,9 @@ release:  ## Pre-flight a v1.x release (checks + CHANGELOG; doesn't tag).
 check-manifest:  ## Guard: every GSE/GPL accession used by a script is in data/MIRROR.sha256.
 	$(PYTHON) scripts/check_data_manifest.py
 
+check-numbers:  ## Guard: headline numbers in manuscript/README/STATUS/deck match their artefacts.
+	$(PYTHON) scripts/check_numbers.py
+
 check-claims:  ## Guard: no document claims anything untrue about how the work was reviewed.
 	$(PYTHON) scripts/check_claims.py
 
@@ -274,7 +277,7 @@ validation-figures:  ## Render F8 (independent validation) + F3b (community conc
 genesets-check:  ## Guard: the frozen module gene sets still match the map (amend the pre-spec to change them).
 	$(PYTHON) scripts/build_module_genesets.py --check
 
-lint: specs-check bib-check check-manifest check-claims genesets-check  ## Run all repo-content linters (no SBML files needed).
+lint: specs-check bib-check check-manifest check-claims check-numbers genesets-check  ## Run all repo-content linters (no SBML files needed).
 
 auto:  lint validate harmonise seed integrate pmids crosstalk ssc-stubs wire network sink-check druggable overlay boolean preflight figures abstract  ## Run the entire AUTO lane end-to-end.
 	@echo ">> Full AUTO pipeline complete."

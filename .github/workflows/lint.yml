@@ -114,3 +114,15 @@ jobs:
           python-version: "3.11"
       - name: Guard frozen module gene sets (L2 baseline; change only via a pre-spec amendment)
         run: python scripts/build_module_genesets.py --check
+
+  numbers-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Guard headline numbers (documents agree with their artefacts)
+        run: python scripts/check_numbers.py
