@@ -267,6 +267,10 @@ opentargets-coverage:  ## L2 Analysis C: OpenTargets coverage + UpSet (descripti
 	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/opentargets_coverage.py; \
 	else $(PYTHON) scripts/opentargets_coverage.py; fi
 
+validation-figures:  ## Render F8 (independent validation) + F3b (community concordance) from committed results.
+	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/render_validation_figures.py; \
+	else $(PYTHON) scripts/render_validation_figures.py; fi
+
 genesets-check:  ## Guard: the frozen module gene sets still match the map (amend the pre-spec to change them).
 	$(PYTHON) scripts/build_module_genesets.py --check
 
