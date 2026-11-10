@@ -79,6 +79,13 @@ def _csv_rows(path: str) -> int:
         return sum(1 for _ in csv.DictReader(fh))
 
 
+def _primary_pmid() -> tuple[int, int]:
+    with (ROOT / "curation/ssc_curated_reactions.tsv").open() as fh:
+        rows = list(csv.DictReader(fh, delimiter="\t"))
+    n = sum(1 for r in rows if r["pmid"].strip())
+    return n, round(100 * n / len(rows))
+
+
 def _verdicts() -> dict[str, int]:
     out: dict[str, int] = {}
     for v in _json("curation/ai_review_verdicts.json").values():
@@ -115,6 +122,11 @@ FACTS = [
          re.compile(r"\b(\d+) (?:hand-curated|SSc-curated|SSc-specific curated) reactions\b"
                     r"|\bssc_curated_reactions\.tsv`? \| \*\*(\d+) reactions\*\*"),
          lambda m: (int(m.group(1) or m.group(2)),)),
+    Fact("SSc-curated reactions with a primary PubMed identifier", "curation/ssc_curated_reactions.tsv",
+         lambda: _primary_pmid(),
+         re.compile(r"\b(\d+)(?:/133)? \((\d+) ?%\)(?: of SSc-curated reactions)? (?:with|carry|carrying|cite) a primary (?:PubMed identifier|PMID)"
+                    r"|\((\d+) ?% primary-PMID-cited"),
+         lambda m: (int(m.group(1)), int(m.group(2))) if m.group(1) else (None, int(m.group(3)))),
     Fact("interactions offered for adjudication", "analysis/curation/interaction_database.csv",
          lambda: (_csv_rows("analysis/curation/interaction_database.csv"),),
          re.compile(r"\b(\d+) interactions\b|Interactions offered for adjudication[^|\n]*\| \*\*(\d+)\*\*"),
@@ -193,7 +205,10 @@ def check(documents: dict[str, str]) -> list[str]:
                         problems.append(f"{doc}:{line}: {f.name} — quotes {got[0]}/{got[1]} ({got[2]} %), "
                                         f"not a fraction in {f.artefact}")
                     continue
-                if got != values[f.name]:
+                want = values[f.name]
+                if None in got:   # partial quote (percentage only): compare the quoted parts
+                    want = tuple(None if g is None else w for g, w in zip(got, want))
+                if got != want:
                     problems.append(f"{doc}:{line}: {f.name} — quotes {got}, {f.artefact} says {values[f.name]}")
     return problems
 

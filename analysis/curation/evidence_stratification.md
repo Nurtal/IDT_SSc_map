@@ -9,9 +9,9 @@ The integrated map's reaction annotations come from two distinct layers. Conflat
 | Layer | Reactions | With PMID | Experimental ECO (314/270/353) |
 |---|---|---|---|
 | **Reactome backbone** (pure-Reactome rows of `reaction_evidence.tsv`) | 159 | 158 (99.4%) | 0 (0.0%) |
-| **SSc-Tier-1** (`ssc_curated_reactions.tsv`) | 86 | 76 (88.4%) | 51 (59.3%) |
+| **SSc-Tier-1** (`ssc_curated_reactions.tsv`) | 133 | 125 (94.0%) | 95 (71.4%) |
 
-**Read this as:** the headline reaction count is dominated by the imported Reactome backbone, which propagates `ECO:0000305` (curator inference) by default. The genuinely SSc-specific layer is 86 reactions, of which 76 carry a primary PMID and 51 carry an experimental ECO code. This is the honest denominator for 'how much new SSc curation does this resource contribute'.
+**Read this as:** the headline reaction count is dominated by the imported Reactome backbone, which propagates `ECO:0000305` (curator inference) by default. The genuinely SSc-specific layer is 133 reactions, of which 125 carry a primary PMID and 95 carry an experimental ECO code. This is the honest denominator for 'how much new SSc curation does this resource contribute'.
 
 ## 1b. SSc-Tier-1 curation status (depth pass)
 
@@ -19,9 +19,10 @@ Each SSc reaction carries a `curation_status`. `proposed` rows received a litera
 
 | status | n |
 |---|---|
-| confirmed | 76 |
+| confirmed | 121 |
 | phenotype_aggregation | 6 |
 | conceptual_bridge | 4 |
+| untested | 2 |
 
 ## 2. TODO reaction-type classification
 
@@ -33,16 +34,16 @@ Type distribution after classification:
 
 | type | n |
 |---|---|
-| binding | 80 |
-| transcription | 36 |
+| binding | 81 |
+| transcription | 48 |
 | phosphorylation | 31 |
-| state_change | 24 |
-| activation | 19 |
-| catalysis | 15 |
+| activation | 29 |
+| state_change | 25 |
+| contributes | 24 |
+| catalysis | 18 |
 | degradation | 13 |
+| inhibition | 11 |
 | transport | 9 |
-| contributes | 8 |
-| inhibition | 7 |
 | dissociation | 3 |
 
 ## 3. Full provenance × ECO × PMID matrix
@@ -53,8 +54,9 @@ See `evidence_stratification.tsv`. Per (layer, ECO):
 |---|---|---|---|---|
 | reactome_backbone | ECO:0000305 | 158 | 158 | 0 |
 | reactome_backbone | TODO | 1 | 0 | 1 |
-| ssc_tier1 | ECO:0000033 | 24 | 24 | 0 |
-| ssc_tier1 | ECO:0000270 | 10 | 10 | 0 |
-| ssc_tier1 | ECO:0000305 | 11 | 1 | 10 |
-| ssc_tier1 | ECO:0000314 | 39 | 39 | 0 |
+| ssc_tier1 | ECO:0000033 | 26 | 26 | 0 |
+| ssc_tier1 | ECO:0000270 | 19 | 19 | 0 |
+| ssc_tier1 | ECO:0000305 | 10 | 2 | 8 |
+| ssc_tier1 | ECO:0000314 | 74 | 74 | 0 |
+| ssc_tier1 | ECO:0000315 | 2 | 2 | 0 |
 | ssc_tier1 | ECO:0000353 | 2 | 2 | 0 |

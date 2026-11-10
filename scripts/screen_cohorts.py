@@ -304,9 +304,11 @@ def frozen_genesets() -> dict[str, set[str]]:
 # ── criterion 4: not used in curation ──────────────────────────────────────────
 
 def used_in_curation(accession: str, pmids: list[str]) -> list[str]:
-    """git-grep the curated layer, curation docs and manuscript for the accession or its PMIDs."""
+    """git-grep the curation sources (curated layer, curation docs, module specs) for the
+    accession or its PMIDs. The manuscript is not a curation source: it cites the frozen
+    cohorts as validation data, which is not use during curation."""
     terms = [accession] + pmids
-    paths = ["curation", "docs/curation", "docs/module_specs", "manuscript"]
+    paths = ["curation", "docs/curation", "docs/module_specs"]
     hits = []
     for term in terms:
         r = subprocess.run(["git", "grep", "-l", "-w", term, "--", *paths],
@@ -357,7 +359,7 @@ def screen(accession: str) -> tuple[dict, list[dict]]:
         ok = crit(3, bool(d["passes"]), f"{d['status']}: " + " ".join(d["evidence"]))
     if ok:
         hits = used_in_curation(accession, pmids)
-        ok = crit(4, not hits, "not found in the curated layer, curation docs or manuscript"
+        ok = crit(4, not hits, "not found in the curated layer, curation docs or module specs"
                   if not hits else f"used: {hits}")
     failed = next((c["criterion"] for c in rec["criteria"] if not c["passed"]), None)
     rec["verdict"] = "verified" if failed is None else f"rejected (criterion {failed})"

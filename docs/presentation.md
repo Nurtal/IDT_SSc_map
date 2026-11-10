@@ -57,7 +57,7 @@ Source deck: <code>docs/presentation.md</code> → <code>make presentation</code
 - **Annotation standard:** **MI2CAST** (identifiers, evidence ECO codes, taxonomy, provenance).
 - **Two provenance layers — the honest denominator:**
   - *Reactome backbone* (imported, harmonised) vs *SSc-specific curated layer* (the novel content, **133 reactions**).
-- **Tiered citation policy (GO-style ECO codes):** 126/133 carry a primary PMID — 73 at direct-assay codes, the rest at expression / physical-interaction / review-traceable codes.
+- **Tiered citation policy (GO-style ECO codes):** 125/133 carry a primary PMID — 74 at direct-assay codes, the rest at expression / physical-interaction / review-traceable codes.
 - **Citation integrity:** an AI verdict pass flagged **28 reactions citing an off-topic PMID** (canonical biology, wrong reference); each was replaced with a PMID **verified against live PubMed** — *no citation is ever fabricated*.
 
 ---

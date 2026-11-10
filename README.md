@@ -20,7 +20,7 @@
 | Quantity | Value | Notes |
 |---|---|---|
 | Species | **568** | across 20 cell/tissue compartments |
-| Reactions | **308** | **133 are the hand-curated SSc-specific layer** (the original SSc contribution); 126/133 (95%) carry a primary PMID and 73 a direct-assay ECO code. Per module: M1 19 · M2 58 · M3 27 · M4 11 · M5 10 · crosstalk 8. Full evidence stratification in [`analysis/curation/evidence_stratification.md`](analysis/curation/evidence_stratification.md). |
+| Reactions | **308** | **133 are the hand-curated SSc-specific layer** (the original SSc contribution); 125/133 (94%) carry a primary PMID and 74 a direct-assay ECO code. Per module: M1 19 · M2 58 · M3 27 · M4 11 · M5 10 · crosstalk 8. Full evidence stratification in [`analysis/curation/evidence_stratification.md`](analysis/curation/evidence_stratification.md). |
 | SBML validation | **0 errors** | libSBML L2v4, enforced in CI (`validate_sbml`) on every push |
 | Annotated HGNC species | **236** | distinct RNA-seq-detectable HGNC symbols (the coverage denominator) |
 | Single-cell donors integrated | **197** | **121 SSc / 76 HC** across 4 datasets |

@@ -6,16 +6,16 @@
     "n_by_rule": 0,
     "n_by_fallback": 0,
     "type_distribution_after": {
-      "binding": 80,
-      "transcription": 36,
+      "binding": 81,
+      "transcription": 48,
       "phosphorylation": 31,
-      "state_change": 24,
-      "activation": 19,
-      "catalysis": 15,
+      "activation": 29,
+      "state_change": 25,
+      "contributes": 24,
+      "catalysis": 18,
       "degradation": 13,
+      "inhibition": 11,
       "transport": 9,
-      "contributes": 8,
-      "inhibition": 7,
       "dissociation": 3
     }
   },
@@ -28,17 +28,18 @@
       "pct_experimental_eco": 0.0
     },
     "ssc_tier1": {
-      "n_reactions": 86,
-      "n_with_pmid": 76,
-      "pct_with_pmid": 88.4,
-      "n_experimental_eco": 51,
-      "pct_experimental_eco": 59.3
+      "n_reactions": 133,
+      "n_with_pmid": 125,
+      "pct_with_pmid": 94.0,
+      "n_experimental_eco": 95,
+      "pct_experimental_eco": 71.4
     }
   },
   "ssc_curation_status": {
-    "confirmed": 76,
+    "confirmed": 121,
     "phenotype_aggregation": 6,
-    "conceptual_bridge": 4
+    "conceptual_bridge": 4,
+    "untested": 2
   },
   "inferences": []
 }
