@@ -55,6 +55,10 @@ OUT = VAL / "external_replication.json"
 MODULES = vc_modules = ("M1", "M2", "M3", "M4", "M5")
 REFERENCE_DATASET = "gse195452"
 FIBROBLAST_RESTRICTED = {"M2"}
+# Pre-spec §8 amendment of 2026-11-10 (before any bulk scoring): a reference
+# whose own single-cell contrast is not significant defines no direction; that
+# module is reported descriptively, without a replication verdict.
+REFERENCE_ALPHA = 0.05
 EXCLUDED_FIBRO_TYPES = {"Fibro_Bad"}
 
 # Pre-spec §3.6, verbatim (registered 2026-09-10, before execution).
@@ -207,7 +211,9 @@ def score_cohort(accession, genes, samples, mat, arms, sets, hgnc, refs, score_f
 
 
 def run() -> dict:
-    refs = json.loads(REFERENCES.read_text())["modules"]
+    raw_refs = json.loads(REFERENCES.read_text())["modules"]
+    refs = {m: {**v, "direction": v["direction"] if v["p"] <= REFERENCE_ALPHA else None,
+                "reference_defined": v["p"] <= REFERENCE_ALPHA} for m, v in raw_refs.items()}
     screening = json.loads((VAL / "cohort_screening.json").read_text())
     frozen = screening["frozen_cohorts"]
     sets = frozen_sets()
@@ -233,7 +239,8 @@ def run() -> dict:
         verdicts = vc.decide(decidable)
         report[label] = {
             "family": family,
-            "verdicts": {m: verdicts.get(m, "undecidable: no reference direction") for m in MODULES},
+            "verdicts": {m: verdicts.get(m, "descriptive only: reference not significant (p > 0.05)")
+                         for m in MODULES},
             "results": [r.to_dict() for r in results],
         }
     return {
@@ -241,7 +248,12 @@ def run() -> dict:
         "prespec": "docs/planning/external_validation_prespec.md §3",
         "decision_rule": "padj <= 0.05 and reference direction in every testable cohort -> replicated; "
                          "some but not all -> partial; none -> not_replicated; any significant opposite -> "
-                         "contradicted (validation_core.decide)",
+                         "contradicted (validation_core.decide). A module whose single-cell reference has "
+                         "p > 0.05 gets no verdict (pre-spec §8, 2026-11-10).",
+        "m2_reference_note": "The M2 reference is DOWN even when restricted to fibroblasts: AUCell ranks a "
+                             "donor's genes within the 234 map genes only, so it measures relative rank; "
+                             "a bulk M2 increase therefore reads as a contradiction of that reference, "
+                             "not of the registered prediction (up).",
         "cohorts": {acc: {"n_ssc": int(sum(a == "SSc" for a in cohort_arms(acc).values())),
                           "n_hc": int(sum(a == "HC" for a in cohort_arms(acc).values())),
                           "n_genes_scored": len(expr[acc][0])} for acc in frozen},
