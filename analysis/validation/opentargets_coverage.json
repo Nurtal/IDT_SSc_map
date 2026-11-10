@@ -1,0 +1,311 @@
+{
+  "analysis": "C — OpenTargets coverage (descriptive)",
+  "role": "Corroboration, not validation: a description of how far OpenTargets' SSc-associated targets are covered by the map. OpenTargets aggregates literature the curation may have drawn on.",
+  "source": {
+    "api": "https://api.platform.opentargets.org/api/v4/graphql",
+    "downloaded": "2026-11-10",
+    "data_version": "26.09",
+    "disease": {
+      "count": 3031,
+      "id": "MONDO_0005100",
+      "name": "systemic sclerosis"
+    }
+  },
+  "n_targets": 3015,
+  "n_map_symbols": 236,
+  "n_covered": 190,
+  "fraction_of_targets_covered": 0.063,
+  "fraction_of_map_in_opentargets": 0.8051,
+  "per_evidence_type": {
+    "animal_model": {
+      "n_targets": 418,
+      "n_covered": 38,
+      "fraction_covered": 0.0909
+    },
+    "clinical": {
+      "n_targets": 154,
+      "n_covered": 24,
+      "fraction_covered": 0.1558
+    },
+    "genetic_association": {
+      "n_targets": 125,
+      "n_covered": 5,
+      "fraction_covered": 0.04
+    },
+    "genetic_literature": {
+      "n_targets": 1,
+      "n_covered": 0,
+      "fraction_covered": 0.0
+    },
+    "literature": {
+      "n_targets": 2669,
+      "n_covered": 187,
+      "fraction_covered": 0.0701
+    }
+  },
+  "per_module": {
+    "M1": {
+      "n_symbols": 52,
+      "n_in_opentargets": 37
+    },
+    "M2": {
+      "n_symbols": 85,
+      "n_in_opentargets": 71
+    },
+    "M3": {
+      "n_symbols": 57,
+      "n_in_opentargets": 44
+    },
+    "M4": {
+      "n_symbols": 32,
+      "n_in_opentargets": 29
+    },
+    "M5": {
+      "n_symbols": 20,
+      "n_in_opentargets": 19
+    }
+  },
+  "covered_intersections": [
+    {
+      "evidence_types": [
+        "literature"
+      ],
+      "n": 129
+    },
+    {
+      "evidence_types": [
+        "animal_model",
+        "literature"
+      ],
+      "n": 29
+    },
+    {
+      "evidence_types": [
+        "clinical",
+        "literature"
+      ],
+      "n": 19
+    },
+    {
+      "evidence_types": [
+        "animal_model",
+        "clinical",
+        "literature"
+      ],
+      "n": 5
+    },
+    {
+      "evidence_types": [
+        "genetic_association",
+        "literature"
+      ],
+      "n": 4
+    },
+    {
+      "evidence_types": [
+        "animal_model"
+      ],
+      "n": 3
+    },
+    {
+      "evidence_types": [
+        "animal_model",
+        "genetic_association",
+        "literature"
+      ],
+      "n": 1
+    }
+  ],
+  "covered_targets": [
+    "ACTA2",
+    "ADAR",
+    "ADORA2A",
+    "AGTR1",
+    "ANGPT1",
+    "ANGPT2",
+    "ARRB1",
+    "BLK",
+    "BST2",
+    "BTK",
+    "CAV1",
+    "CBL",
+    "CCL2",
+    "CCN2",
+    "CD19",
+    "CD22",
+    "CD40",
+    "CD40LG",
+    "CD79A",
+    "CDH11",
+    "CDH2",
+    "CDH5",
+    "CENPB",
+    "CGAS",
+    "CLIC4",
+    "CNTF",
+    "CNTFR",
+    "COL1A1",
+    "COL1A2",
+    "COL3A1",
+    "COL5A1",
+    "COL5A2",
+    "COMP",
+    "CREB3L1",
+    "CTNNB1",
+    "DKK1",
+    "DLL4",
+    "DNER",
+    "DPP4",
+    "DTX1",
+    "EDN1",
+    "EDNRA",
+    "EDNRB",
+    "EGFR",
+    "EGR1",
+    "EIF2AK2",
+    "ENPP2",
+    "EP300",
+    "EREG",
+    "FAP",
+    "FKBP1A",
+    "FLI1",
+    "FN1",
+    "FNDC1",
+    "FOSL2",
+    "FOXP3",
+    "GATA3",
+    "GLI2",
+    "GREM1",
+    "HES1",
+    "HEY1",
+    "HIF1A",
+    "HTR2B",
+    "IFI27",
+    "IFI35",
+    "IFI6",
+    "IFIT1",
+    "IFIT2",
+    "IFIT3",
+    "IFITM1",
+    "IFITM3",
+    "IFNA1",
+    "IFNAR2",
+    "IFNB1",
+    "IKBKE",
+    "IL11",
+    "IL11RA",
+    "IL13",
+    "IL13RA1",
+    "IL17A",
+    "IL4",
+    "IL4R",
+    "IL6",
+    "IL6R",
+    "IL6ST",
+    "IRF4",
+    "IRF5",
+    "IRF7",
+    "ISG15",
+    "ITGAV",
+    "JAG1",
+    "JAG2",
+    "JAK1",
+    "JAK2",
+    "JUNB",
+    "KDR",
+    "LGALS3",
+    "LIF",
+    "LIFR",
+    "LOX",
+    "LOXL2",
+    "LPAR1",
+    "LTBP1",
+    "LTBP4",
+    "LYN",
+    "MMP1",
+    "MMP12",
+    "MS4A1",
+    "MTOR",
+    "MYC",
+    "NEDD4L",
+    "NOS3",
+    "NOTCH1",
+    "NOTCH2",
+    "NOTCH3",
+    "NOX4",
+    "NUMB",
+    "OSM",
+    "OSMR",
+    "PDE5A",
+    "PDGFA",
+    "PDGFB",
+    "PDGFRA",
+    "PDGFRB",
+    "PECAM1",
+    "PF4",
+    "PIK3CA",
+    "PLAUR",
+    "PLCG1",
+    "POSTN",
+    "PRDM1",
+    "PSMB8",
+    "PTGS2",
+    "PTPN1",
+    "PTPN11",
+    "RBPJ",
+    "RHOA",
+    "RIGI",
+    "ROCK1",
+    "ROCK2",
+    "RORC",
+    "RSAD2",
+    "RUNX1",
+    "S100A4",
+    "SFRP2",
+    "SFRP4",
+    "SIRT1",
+    "SMAD2",
+    "SMAD3",
+    "SMAD4",
+    "SMAD7",
+    "SNAI1",
+    "SNAI2",
+    "SOCS1",
+    "SOCS3",
+    "STAT1",
+    "STAT2",
+    "STAT3",
+    "STAT6",
+    "STING1",
+    "STUB1",
+    "SYK",
+    "TBK1",
+    "TBX21",
+    "TBXA2R",
+    "TEK",
+    "TGFB1",
+    "TGFBR2",
+    "THBS1",
+    "TICAM1",
+    "TLR3",
+    "TLR4",
+    "TLR7",
+    "TLR8",
+    "TLR9",
+    "TNC",
+    "TNFRSF17",
+    "TNFSF13",
+    "TNFSF13B",
+    "TOP1",
+    "TWIST1",
+    "USP18",
+    "VEGFA",
+    "VWF",
+    "WNT5A",
+    "WWTR1",
+    "XBP1",
+    "YAP1",
+    "ZEB1",
+    "ZFYVE9"
+  ]
+}

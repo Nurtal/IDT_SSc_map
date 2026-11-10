@@ -263,6 +263,10 @@ validate-genetic:  ## L2 Analysis B: GWAS Catalog enrichment per module (snapsho
 	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/validate_genetic_support.py; \
 	else $(PYTHON) scripts/validate_genetic_support.py; fi
 
+opentargets-coverage:  ## L2 Analysis C: OpenTargets coverage + UpSet (descriptive; corroboration, not validation).
+	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/opentargets_coverage.py; \
+	else $(PYTHON) scripts/opentargets_coverage.py; fi
+
 genesets-check:  ## Guard: the frozen module gene sets still match the map (amend the pre-spec to change them).
 	$(PYTHON) scripts/build_module_genesets.py --check
 

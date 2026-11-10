@@ -67,6 +67,7 @@ data/raw/**/*.txt.gz
 data/raw/gpl*/
 data/raw/hgnc/
 data/raw/gwas/
+data/raw/opentargets/
 # FASTQ
 *.fastq
 *.fastq.gz
