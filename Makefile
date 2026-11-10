@@ -255,6 +255,10 @@ screen-cohorts:  ## L2-04: screen + freeze the independent skin cohorts (fetches
 	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/screen_cohorts.py --fetch; \
 	else $(PYTHON) scripts/screen_cohorts.py --fetch; fi
 
+validate-external:  ## L2 Analysis A: replicate the modules in the frozen bulk skin cohorts (needs make screen-cohorts).
+	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/validate_external_cohorts.py; \
+	else $(PYTHON) scripts/validate_external_cohorts.py; fi
+
 genesets-check:  ## Guard: the frozen module gene sets still match the map (amend the pre-spec to change them).
 	$(PYTHON) scripts/build_module_genesets.py --check
 
