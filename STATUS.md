@@ -3,12 +3,24 @@
 > Snapshot for orientation. Updated on every batch.
 > Authoritative source for completion state is the git log; this file gives one-screen context.
 
-## Current phase  *(2026-11-09)*
+## Current phase  *(2026-11-10)*
 
 - **Nothing has been submitted to any journal.** Work now follows the first-submission plan
   [`docs/planning/npj_submission_plan.md`](docs/planning/npj_submission_plan.md) (lots L1–L5, GitHub
   issues #1–#26, ceiling end of November 2026). The clinicians never returned the reviewer deck sent on
   2026-06-29; no reaction has been ratified by anyone (see `CONTEXT.md`).
+- **G1 cleared** (L1 closed; `check_claims --strict` green). **G2 cleared**: the four mandatory
+  independent analyses have results, in `analysis/validation/` (pre-spec amendments logged in its §8):
+  - *A, bulk skin replication* (GSE130955 48 SSc / 33 HC; GSE58095 61 SSc / 36 HC): M1 replicated;
+    M2 and M3 up in bulk, i.e. contradicting their DOWN single-cell references (M2 matches its
+    registered prediction); M4, M5 descriptive (null references). Every module rises in bulk SSc skin.
+  - *B, genetic support* (GWAS Catalog): M1 and M5 enriched, M2–M4 not — the registered split holds;
+    not significant within the map; DisGeNET not executed (needs an API key).
+  - *C, OpenTargets* (descriptive): 190 of 3 015 SSc targets in the map.
+  - *D, community concordance* (internal check): 14 significant enrichments, every module represented.
+- Guards in `make lint`: claims, numbers, data manifest, frozen gene sets, specs/bib.
+- **Open**: L4 manuscript sections (#14, #15, #19, #20, #22 — the curator's to write), #4 deciding
+  sentences (re-mining gave no gain and worse picks; sacrificeable per plan §4), L5 (#23–#26).
 - The snapshot below dates from June 2026; its numbers are still the audited ones.
 
 ## Headline  *(updated 2026-06-24)*
