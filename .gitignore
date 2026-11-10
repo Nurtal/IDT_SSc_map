@@ -66,6 +66,7 @@ data/raw/**/*.txt.gz
 # Platform annotation tables and reference gene sets (mirrored in data/MIRROR.sha256)
 data/raw/gpl*/
 data/raw/hgnc/
+data/raw/gwas/
 # FASTQ
 *.fastq
 *.fastq.gz

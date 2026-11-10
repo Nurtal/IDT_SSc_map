@@ -1,0 +1,818 @@
+{
+  "analysis": "B — genetic support for the module structure",
+  "prespec": "docs/planning/external_validation_prespec.md §4",
+  "gwas_catalog": {
+    "api": "https://www.ebi.ac.uk/gwas/rest/api/v2",
+    "downloaded": "2026-11-10",
+    "traits": {
+      "EFO_0008536": "anti-centromere-antibody-positive systemic scleroderma",
+      "EFO_0008537": "anti-topoisomerase-I-antibody-positive systemic scleroderma",
+      "EFO_1001017": "limited scleroderma",
+      "MONDO_0005019": "diffuse scleroderma",
+      "MONDO_0005100": "systemic sclerosis",
+      "MONDO_0016358": "limited cutaneous systemic sclerosis"
+    },
+    "threshold": 5e-08,
+    "n_associations_snapshot": 246,
+    "n_gwas_genes_protein_coding": 90,
+    "genes": {
+      "AHNAK2": [
+        "GCST90319682",
+        "GCST90319683"
+      ],
+      "ANKRD37": [
+        "GCST011709"
+      ],
+      "AP4B1": [
+        "GCST007278"
+      ],
+      "ARHGAP31": [
+        "GCST009131",
+        "GCST90319682"
+      ],
+      "ARL14": [
+        "GCST007278"
+      ],
+      "ATG5": [
+        "GCST004202",
+        "GCST005534",
+        "GCST007278",
+        "GCST009131",
+        "GCST90319682"
+      ],
+      "BAK1": [
+        "GCST010124"
+      ],
+      "BLK": [
+        "GCST002069",
+        "GCST005554",
+        "GCST007278",
+        "GCST009131",
+        "GCST009876",
+        "GCST90319682"
+      ],
+      "CCDC116": [
+        "GCST007278"
+      ],
+      "CD247": [
+        "GCST000650",
+        "GCST009131"
+      ],
+      "CD80": [
+        "GCST009131"
+      ],
+      "CDHR5": [
+        "GCST009131"
+      ],
+      "CHD7": [
+        "GCST009131"
+      ],
+      "CSK": [
+        "GCST002069",
+        "GCST009131",
+        "GCST90319682"
+      ],
+      "CXCR5": [
+        "GCST009876"
+      ],
+      "DDX6": [
+        "GCST009131",
+        "GCST90319682"
+      ],
+      "DGKQ": [
+        "GCST007278",
+        "GCST009131",
+        "GCST90319682"
+      ],
+      "DNASE1L3": [
+        "GCST005533",
+        "GCST005534",
+        "GCST007278",
+        "GCST009131",
+        "GCST009876"
+      ],
+      "DRD4": [
+        "GCST007278"
+      ],
+      "EIF4H": [
+        "GCST007278"
+      ],
+      "ESR1": [
+        "GCST90319682"
+      ],
+      "FAM167A": [
+        "GCST002069",
+        "GCST007278",
+        "GCST009131",
+        "GCST90319682"
+      ],
+      "FCGR2B": [
+        "GCST005552",
+        "GCST005554",
+        "GCST005555"
+      ],
+      "FCGR2C": [
+        "GCST005552",
+        "GCST005554",
+        "GCST005555"
+      ],
+      "FCGR3B": [
+        "GCST005552",
+        "GCST005554",
+        "GCST005555"
+      ],
+      "FLG2": [
+        "GCST011709"
+      ],
+      "FLNB": [
+        "GCST009131",
+        "GCST90319682"
+      ],
+      "GLS": [
+        "GCST007278"
+      ],
+      "GRB2": [
+        "GCST009131"
+      ],
+      "GSDMA": [
+        "GCST004202"
+      ],
+      "GSDMB": [
+        "GCST004202",
+        "GCST009131",
+        "GCST90319682"
+      ],
+      "HLA-DPA1": [
+        "GCST001156",
+        "GCST90319685",
+        "GCST90319687",
+        "GCST90319688"
+      ],
+      "HLA-DPB1": [
+        "GCST001156",
+        "GCST90319685",
+        "GCST90319687",
+        "GCST90319688"
+      ],
+      "HLA-DQA1": [
+        "GCST001156"
+      ],
+      "HLA-DQB1": [
+        "GCST000650",
+        "GCST001146",
+        "GCST001156"
+      ],
+      "HLA-DRA": [
+        "GCST001156"
+      ],
+      "HLA-DRB1": [
+        "GCST001156",
+        "GCST006493"
+      ],
+      "HLA-DRB5": [
+        "GCST90319684",
+        "GCST90319686"
+      ],
+      "IKZF3": [
+        "GCST009131"
+      ],
+      "IL12A": [
+        "GCST005533",
+        "GCST005534",
+        "GCST009131"
+      ],
+      "IL12RB1": [
+        "GCST009131",
+        "GCST009876",
+        "GCST90319682"
+      ],
+      "IL12RB2": [
+        "GCST007278",
+        "GCST009131",
+        "GCST010124"
+      ],
+      "IRF1": [
+        "GCST010124"
+      ],
+      "IRF5": [
+        "GCST000650",
+        "GCST001156",
+        "GCST001160",
+        "GCST002069",
+        "GCST005334",
+        "GCST005335",
+        "GCST005336",
+        "GCST005534",
+        "GCST005554",
+        "GCST007278",
+        "GCST009131",
+        "GCST009876",
+        "GCST90319682"
+      ],
+      "IRF7": [
+        "GCST009131"
+      ],
+      "IRF8": [
+        "GCST001160",
+        "GCST002069",
+        "GCST005334",
+        "GCST007278",
+        "GCST009131"
+      ],
+      "ITGAM": [
+        "GCST002069"
+      ],
+      "JAZF1": [
+        "GCST002069"
+      ],
+      "KCP": [
+        "GCST009876"
+      ],
+      "KIAA0319L": [
+        "GCST002069"
+      ],
+      "LIMK1": [
+        "GCST007278"
+      ],
+      "LRP2BP": [
+        "GCST011709"
+      ],
+      "LRRC3C": [
+        "GCST004202"
+      ],
+      "NAB1": [
+        "GCST007278",
+        "GCST009131"
+      ],
+      "NBEA": [
+        "GCST90319688"
+      ],
+      "NCF2": [
+        "GCST007278"
+      ],
+      "NFKB1": [
+        "GCST009131",
+        "GCST90319682"
+      ],
+      "NOTCH4": [
+        "GCST001156"
+      ],
+      "NUP85": [
+        "GCST009131",
+        "GCST90319682"
+      ],
+      "ORMDL3": [
+        "GCST004202"
+      ],
+      "PHTF1": [
+        "GCST007278"
+      ],
+      "POGLUT1": [
+        "GCST009131"
+      ],
+      "PRDM1": [
+        "GCST004202"
+      ],
+      "PRDX6": [
+        "GCST009131"
+      ],
+      "PRR12": [
+        "GCST007278"
+      ],
+      "PSORS1C1": [
+        "GCST001146"
+      ],
+      "PSORS1C2": [
+        "GCST001146"
+      ],
+      "PTPN11": [
+        "GCST007278"
+      ],
+      "PTPN22": [
+        "GCST007278"
+      ],
+      "PXK": [
+        "GCST002069",
+        "GCST005534",
+        "GCST009131",
+        "GCST90319682"
+      ],
+      "RAB2A": [
+        "GCST009131"
+      ],
+      "RSBN1": [
+        "GCST007278"
+      ],
+      "RTEL1": [
+        "GCST90319686"
+      ],
+      "SCHIP1": [
+        "GCST005533",
+        "GCST005534"
+      ],
+      "SCT": [
+        "GCST007278"
+      ],
+      "SLC12A5": [
+        "GCST90319682"
+      ],
+      "SMG7": [
+        "GCST007278"
+      ],
+      "STAT1": [
+        "GCST005554",
+        "GCST005555"
+      ],
+      "STAT3": [
+        "GCST010124"
+      ],
+      "STAT4": [
+        "GCST000650",
+        "GCST001146",
+        "GCST002069",
+        "GCST004202",
+        "GCST005534",
+        "GCST005552",
+        "GCST005554",
+        "GCST005555",
+        "GCST007278",
+        "GCST009131",
+        "GCST011709",
+        "GCST90319682",
+        "GCST90319683",
+        "GCST90319684",
+        "GCST90319686"
+      ],
+      "TIMMDC1": [
+        "GCST009131"
+      ],
+      "TNFAIP3": [
+        "GCST002069",
+        "GCST007278",
+        "GCST90319682",
+        "GCST90319683"
+      ],
+      "TNFSF4": [
+        "GCST007278",
+        "GCST009131",
+        "GCST90319682"
+      ],
+      "TNIP1": [
+        "GCST001146",
+        "GCST002069",
+        "GCST007278",
+        "GCST009131",
+        "GCST009876",
+        "GCST90319682"
+      ],
+      "TNPO3": [
+        "GCST000650",
+        "GCST001156",
+        "GCST001160",
+        "GCST002069",
+        "GCST005334",
+        "GCST005335",
+        "GCST005336",
+        "GCST005534",
+        "GCST005551",
+        "GCST005554",
+        "GCST007278",
+        "GCST009131"
+      ],
+      "TSPAN32": [
+        "GCST009131"
+      ],
+      "TYK2": [
+        "GCST007278"
+      ],
+      "UFSP2": [
+        "GCST011709"
+      ],
+      "YDJC": [
+        "GCST007278"
+      ],
+      "ZBTB9": [
+        "GCST010124"
+      ]
+    }
+  },
+  "map": {
+    "n_symbols": 236,
+    "n_gwas_in_map": 8,
+    "map_vs_protein_coding": {
+      "n_universe": 19299,
+      "n_gwas_in_universe": 90,
+      "n_members": 235,
+      "n_overlap": 8,
+      "expected": 1.096,
+      "fold": 7.3,
+      "p": 1.4090780490414114e-05,
+      "overlap_genes": [
+        "BLK",
+        "IRF5",
+        "IRF7",
+        "NBEA",
+        "PRDM1",
+        "PTPN11",
+        "STAT1",
+        "STAT3"
+      ]
+    },
+    "reactome_backbone_vs_protein_coding": {
+      "n_universe": 19299,
+      "n_gwas_in_universe": 90,
+      "n_members": 99,
+      "n_overlap": 3,
+      "expected": 0.462,
+      "fold": 6.498,
+      "p": 0.011146138298660112,
+      "overlap_genes": [
+        "NBEA",
+        "PTPN11",
+        "STAT1"
+      ]
+    }
+  },
+  "primary_protein_coding": {
+    "family": {
+      "method": "Benjamini-Hochberg",
+      "alpha": 0.05,
+      "members": [
+        "M1|GWAS Catalog | primary_protein_coding",
+        "M2|GWAS Catalog | primary_protein_coding",
+        "M3|GWAS Catalog | primary_protein_coding",
+        "M4|GWAS Catalog | primary_protein_coding",
+        "M5|GWAS Catalog | primary_protein_coding"
+      ],
+      "excluded_not_testable": []
+    },
+    "results": [
+      {
+        "module": "M1",
+        "source": "GWAS Catalog | primary_protein_coding",
+        "testable": true,
+        "n_detectable": 52,
+        "reference_direction": null,
+        "registered_prediction": "strong",
+        "direction": "enriched",
+        "effect_size": 16.495,
+        "delta": null,
+        "n_case": null,
+        "n_control": null,
+        "p": 0.00010089845674126063,
+        "padj": 0.0005044922837063031,
+        "outcome": null,
+        "verdict": null,
+        "extra": {
+          "n_universe": 19299,
+          "n_gwas_in_universe": 90,
+          "n_members": 52,
+          "n_overlap": 4,
+          "expected": 0.242,
+          "fold": 16.495,
+          "p": 0.00010089845674126063,
+          "overlap_genes": [
+            "IRF5",
+            "IRF7",
+            "PTPN11",
+            "STAT1"
+          ],
+          "significant": true,
+          "prediction_met": true
+        }
+      },
+      {
+        "module": "M2",
+        "source": "GWAS Catalog | primary_protein_coding",
+        "testable": true,
+        "n_detectable": 85,
+        "reference_direction": null,
+        "registered_prediction": "absent or weak",
+        "direction": "enriched",
+        "effect_size": 2.523,
+        "delta": null,
+        "n_case": null,
+        "n_control": null,
+        "p": 0.32846558254980796,
+        "padj": 0.41058197818725994,
+        "outcome": null,
+        "verdict": null,
+        "extra": {
+          "n_universe": 19299,
+          "n_gwas_in_universe": 90,
+          "n_members": 85,
+          "n_overlap": 1,
+          "expected": 0.396,
+          "fold": 2.523,
+          "p": 0.32846558254980796,
+          "overlap_genes": [
+            "STAT3"
+          ],
+          "significant": false,
+          "prediction_met": true
+        }
+      },
+      {
+        "module": "M3",
+        "source": "GWAS Catalog | primary_protein_coding",
+        "testable": true,
+        "n_detectable": 56,
+        "reference_direction": null,
+        "registered_prediction": "absent or weak",
+        "direction": "enriched",
+        "effect_size": 3.829,
+        "delta": null,
+        "n_case": null,
+        "n_control": null,
+        "p": 0.23059582210677376,
+        "padj": 0.3843263701779563,
+        "outcome": null,
+        "verdict": null,
+        "extra": {
+          "n_universe": 19299,
+          "n_gwas_in_universe": 90,
+          "n_members": 56,
+          "n_overlap": 1,
+          "expected": 0.261,
+          "fold": 3.829,
+          "p": 0.23059582210677376,
+          "overlap_genes": [
+            "NBEA"
+          ],
+          "significant": false,
+          "prediction_met": true
+        }
+      },
+      {
+        "module": "M4",
+        "source": "GWAS Catalog | primary_protein_coding",
+        "testable": true,
+        "n_detectable": 32,
+        "reference_direction": null,
+        "registered_prediction": "weak to moderate",
+        "direction": "not enriched",
+        "effect_size": 0.0,
+        "delta": null,
+        "n_case": null,
+        "n_control": null,
+        "p": 1.0,
+        "padj": 1.0,
+        "outcome": null,
+        "verdict": null,
+        "extra": {
+          "n_universe": 19299,
+          "n_gwas_in_universe": 90,
+          "n_members": 32,
+          "n_overlap": 0,
+          "expected": 0.149,
+          "fold": 0.0,
+          "p": 1.0,
+          "overlap_genes": [],
+          "significant": false,
+          "prediction_met": null
+        }
+      },
+      {
+        "module": "M5",
+        "source": "GWAS Catalog | primary_protein_coding",
+        "testable": true,
+        "n_detectable": 20,
+        "reference_direction": null,
+        "registered_prediction": "strong",
+        "direction": "enriched",
+        "effect_size": 21.443,
+        "delta": null,
+        "n_case": null,
+        "n_control": null,
+        "p": 0.003869068134713266,
+        "padj": 0.009672670336783165,
+        "outcome": null,
+        "verdict": null,
+        "extra": {
+          "n_universe": 19299,
+          "n_gwas_in_universe": 90,
+          "n_members": 20,
+          "n_overlap": 2,
+          "expected": 0.093,
+          "fold": 21.443,
+          "p": 0.003869068134713266,
+          "overlap_genes": [
+            "BLK",
+            "PRDM1"
+          ],
+          "significant": true,
+          "prediction_met": true
+        }
+      }
+    ]
+  },
+  "control_within_map": {
+    "family": {
+      "method": "Benjamini-Hochberg",
+      "alpha": 0.05,
+      "members": [
+        "M1|GWAS Catalog | control_within_map",
+        "M2|GWAS Catalog | control_within_map",
+        "M3|GWAS Catalog | control_within_map",
+        "M4|GWAS Catalog | control_within_map",
+        "M5|GWAS Catalog | control_within_map"
+      ],
+      "excluded_not_testable": []
+    },
+    "results": [
+      {
+        "module": "M1",
+        "source": "GWAS Catalog | control_within_map",
+        "testable": true,
+        "n_detectable": 52,
+        "reference_direction": null,
+        "registered_prediction": "strong",
+        "direction": "enriched",
+        "effect_size": 2.26,
+        "delta": null,
+        "n_case": null,
+        "n_control": null,
+        "p": 0.07440070253136871,
+        "padj": 0.353327512431211,
+        "outcome": null,
+        "verdict": null,
+        "extra": {
+          "n_universe": 235,
+          "n_gwas_in_universe": 8,
+          "n_members": 52,
+          "n_overlap": 4,
+          "expected": 1.77,
+          "fold": 2.26,
+          "p": 0.07440070253136871,
+          "overlap_genes": [
+            "IRF5",
+            "IRF7",
+            "PTPN11",
+            "STAT1"
+          ],
+          "significant": false,
+          "prediction_met": null
+        }
+      },
+      {
+        "module": "M2",
+        "source": "GWAS Catalog | control_within_map",
+        "testable": true,
+        "n_detectable": 85,
+        "reference_direction": null,
+        "registered_prediction": "absent or weak",
+        "direction": "not enriched",
+        "effect_size": 0.346,
+        "delta": null,
+        "n_case": null,
+        "n_control": null,
+        "p": 0.9742937815197663,
+        "padj": 1.0,
+        "outcome": null,
+        "verdict": null,
+        "extra": {
+          "n_universe": 235,
+          "n_gwas_in_universe": 8,
+          "n_members": 85,
+          "n_overlap": 1,
+          "expected": 2.894,
+          "fold": 0.346,
+          "p": 0.9742937815197663,
+          "overlap_genes": [
+            "STAT3"
+          ],
+          "significant": false,
+          "prediction_met": null
+        }
+      },
+      {
+        "module": "M3",
+        "source": "GWAS Catalog | control_within_map",
+        "testable": true,
+        "n_detectable": 56,
+        "reference_direction": null,
+        "registered_prediction": "absent or weak",
+        "direction": "not enriched",
+        "effect_size": 0.525,
+        "delta": null,
+        "n_case": null,
+        "n_control": null,
+        "p": 0.8909355926882945,
+        "padj": 1.0,
+        "outcome": null,
+        "verdict": null,
+        "extra": {
+          "n_universe": 235,
+          "n_gwas_in_universe": 8,
+          "n_members": 56,
+          "n_overlap": 1,
+          "expected": 1.906,
+          "fold": 0.525,
+          "p": 0.8909355926882945,
+          "overlap_genes": [
+            "NBEA"
+          ],
+          "significant": false,
+          "prediction_met": null
+        }
+      },
+      {
+        "module": "M4",
+        "source": "GWAS Catalog | control_within_map",
+        "testable": true,
+        "n_detectable": 32,
+        "reference_direction": null,
+        "registered_prediction": "weak to moderate",
+        "direction": "not enriched",
+        "effect_size": 0.0,
+        "delta": null,
+        "n_case": null,
+        "n_control": null,
+        "p": 1.0,
+        "padj": 1.0,
+        "outcome": null,
+        "verdict": null,
+        "extra": {
+          "n_universe": 235,
+          "n_gwas_in_universe": 8,
+          "n_members": 32,
+          "n_overlap": 0,
+          "expected": 1.089,
+          "fold": 0.0,
+          "p": 1.0,
+          "overlap_genes": [],
+          "significant": false,
+          "prediction_met": null
+        }
+      },
+      {
+        "module": "M5",
+        "source": "GWAS Catalog | control_within_map",
+        "testable": true,
+        "n_detectable": 20,
+        "reference_direction": null,
+        "registered_prediction": "strong",
+        "direction": "enriched",
+        "effect_size": 2.938,
+        "delta": null,
+        "n_case": null,
+        "n_control": null,
+        "p": 0.1413310049724844,
+        "padj": 0.353327512431211,
+        "outcome": null,
+        "verdict": null,
+        "extra": {
+          "n_universe": 235,
+          "n_gwas_in_universe": 8,
+          "n_members": 20,
+          "n_overlap": 2,
+          "expected": 0.681,
+          "fold": 2.938,
+          "p": 0.1413310049724844,
+          "overlap_genes": [
+            "BLK",
+            "PRDM1"
+          ],
+          "significant": false,
+          "prediction_met": null
+        }
+      }
+    ]
+  },
+  "registered_predictions": {
+    "M1": {
+      "prediction": "strong",
+      "expect_significant": true
+    },
+    "M5": {
+      "prediction": "strong",
+      "expect_significant": true
+    },
+    "M4": {
+      "prediction": "weak to moderate",
+      "expect_significant": null
+    },
+    "M2": {
+      "prediction": "absent or weak",
+      "expect_significant": false
+    },
+    "M3": {
+      "prediction": "absent or weak",
+      "expect_significant": false
+    }
+  },
+  "falsification_check": {
+    "rule": "the §4.5 prediction is falsified if enrichment is uniform across modules",
+    "significant_modules_primary": [
+      "M1",
+      "M5"
+    ],
+    "uniform": false
+  },
+  "non_independence": "Partly non-independent: the curated layer was built from SSc literature, some of it genetic, so a locus can be in the map because it was a GWAS hit (pre-spec §4.4). Mitigated, not removed, by the within-map control and by reading the per-module pattern rather than the global overlap.",
+  "secondary_source": {
+    "name": "DisGeNET",
+    "status": "not executed",
+    "reason": "the DisGeNET API now requires an authenticated account (API key); no key is configured for this pipeline. Reported as a gap; no substitute source is merged into the primary result."
+  }
+}

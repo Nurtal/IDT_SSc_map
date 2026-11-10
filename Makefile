@@ -259,6 +259,10 @@ validate-external:  ## L2 Analysis A: replicate the modules in the frozen bulk s
 	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/validate_external_cohorts.py; \
 	else $(PYTHON) scripts/validate_external_cohorts.py; fi
 
+validate-genetic:  ## L2 Analysis B: GWAS Catalog enrichment per module (snapshot in data/raw/gwas/; --fetch to refresh).
+	@if [ -x .venv/bin/python ]; then .venv/bin/python scripts/validate_genetic_support.py; \
+	else $(PYTHON) scripts/validate_genetic_support.py; fi
+
 genesets-check:  ## Guard: the frozen module gene sets still match the map (amend the pre-spec to change them).
 	$(PYTHON) scripts/build_module_genesets.py --check
 

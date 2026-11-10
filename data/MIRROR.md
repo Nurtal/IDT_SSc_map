@@ -66,6 +66,7 @@ Fetched by `python3 scripts/screen_cohorts.py --fetch`.
 | GSE95065 | `gse95065/GSE95065_series_matrix.txt.gz` | 2 380 822 B (2.4 MB) | screened, **rejected** (criterion 1: 15 HC) | `b26b86776b500fdb6e2d319571f8e6c9b98ef1115cbc5e0b657efe97b6e9cf24` |
 | GPL10558 (Illumina HT-12 v4) | `gpl10558/GPL10558.annot.gz` | 7 290 886 B (7.3 MB) | probe → gene symbol | `c914fdbe1130906ce3b9c97f5a75280591c89c617c168fb687c641f683e76b45` |
 | HGNC complete set (snapshot 2026-11-09) | `hgnc/hgnc_complete_set.txt` | 16 994 064 B (17.0 MB) | Ensembl → symbol; previous-symbol resolution | `3944cdad7affce5bc2c7d63d7079d7e68762ed28ef414fc287cc0f57c4b0d78f` |
+| GWAS Catalog v2, SSc + 5 EFO descendants (snapshot 2026-11-10) | `gwas/gwas_catalog_ssc_associations.json` | 311 891 B | Analysis B (`make validate-genetic`; refresh with `--fetch`) | `80ef3474d1ff37624f2719820aa59e57c120e10d6b752b7cdc6de096b99c6324` |
 
 Total payload: **3.18 GB** for sections A–B, plus 77 MB for section C — within the 50 GB Zenodo per-record quota.
 
